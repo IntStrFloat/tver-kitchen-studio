@@ -1,0 +1,134 @@
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Phone, MessageCircle, Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import CallbackModal from "./CallbackModal";
+
+const navItems = [
+  { label: "Каталог", href: "#catalog" },
+  { label: "Наши работы", href: "#portfolio" },
+  { label: "Калькулятор", href: "#quiz" },
+  { label: "О нас", href: "#about" },
+  { label: "Контакты", href: "#contacts" },
+];
+
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isCallbackOpen, setIsCallbackOpen] = useState(false);
+
+  return (
+    <>
+      <motion.header
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        className="fixed top-0 left-0 right-0 z-50 glass-header"
+      >
+        <div className="container-custom">
+          <div className="flex items-center justify-between h-16 md:h-20">
+            {/* Logo */}
+            <a href="/" className="flex items-center gap-2">
+              <span className="text-xl md:text-2xl font-bold text-primary">
+                TverKuhni
+              </span>
+            </a>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center gap-8">
+              {navItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+
+            {/* Desktop Actions */}
+            <div className="hidden lg:flex items-center gap-4">
+              <a
+                href="tel:+74951234567"
+                className="flex items-center gap-2 text-sm font-medium"
+              >
+                <Phone className="w-4 h-4 text-primary" />
+                +7 (495) 123-45-67
+              </a>
+              <a
+                href="https://wa.me/74951234567"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-whatsapp flex items-center justify-center text-whatsapp-foreground hover:opacity-90 transition-opacity"
+              >
+                <MessageCircle className="w-5 h-5" />
+              </a>
+              <Button onClick={() => setIsCallbackOpen(true)}>
+                Заказать звонок
+              </Button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              className="lg:hidden p-2"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle menu"
+            >
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              className="lg:hidden bg-card border-t"
+            >
+              <div className="container-custom py-4 space-y-4">
+                {navItems.map((item) => (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="block py-2 text-foreground/80 hover:text-primary transition-colors"
+                  >
+                    {item.label}
+                  </a>
+                ))}
+                <div className="pt-4 border-t space-y-3">
+                  <a
+                    href="tel:+74951234567"
+                    className="flex items-center gap-2 font-medium"
+                  >
+                    <Phone className="w-4 h-4 text-primary" />
+                    +7 (495) 123-45-67
+                  </a>
+                  <Button
+                    onClick={() => {
+                      setIsCallbackOpen(true);
+                      setIsOpen(false);
+                    }}
+                    className="w-full"
+                  >
+                    Заказать звонок
+                  </Button>
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.header>
+
+      <CallbackModal isOpen={isCallbackOpen} onClose={() => setIsCallbackOpen(false)} />
+    </>
+  );
+};
+
+export default Header;
