@@ -17,8 +17,13 @@ const kitchens = [
     name: "Лофт",
     price: "от 28 000 ₽/п.м.",
     image: kitchenLoft,
-    description: "Индустриальный стиль с кирпичными стенами и металлическими акцентами",
-    materials: ["МДФ с покрытием Soft-touch", "Столешница из массива дуба", "Фурнитура Blum"],
+    description:
+      "Индустриальный стиль с кирпичными стенами и металлическими акцентами",
+    materials: [
+      "МДФ с покрытием Soft-touch",
+      "Столешница из массива дуба",
+      "Фурнитура Blum",
+    ],
     size: "large",
   },
   {
@@ -27,7 +32,11 @@ const kitchens = [
     price: "от 25 000 ₽/п.м.",
     image: kitchenScandi,
     description: "Минимализм и функциональность северного дизайна",
-    materials: ["Крашеный МДФ", "Столешница из искусственного камня", "Фурнитура Hettich"],
+    materials: [
+      "Крашеный МДФ",
+      "Столешница из искусственного камня",
+      "Фурнитура Hettich",
+    ],
     size: "medium",
   },
   {
@@ -45,7 +54,11 @@ const kitchens = [
     price: "от 30 000 ₽/п.м.",
     image: kitchenModern,
     description: "Чистые линии и скрытые системы хранения",
-    materials: ["Акриловые фасады", "Столешница Dekton", "Системы push-to-open"],
+    materials: [
+      "Акриловые фасады",
+      "Столешница Dekton",
+      "Системы push-to-open",
+    ],
     size: "medium",
   },
   {
@@ -54,7 +67,11 @@ const kitchens = [
     price: "от 38 000 ₽/п.м.",
     image: kitchenEmerald,
     description: "Роскошный изумрудный цвет с латунными акцентами",
-    materials: ["Крашеный МДФ Emerald", "Кварцевая столешница", "Латунная фурнитура"],
+    materials: [
+      "Крашеный МДФ Emerald",
+      "Кварцевая столешница",
+      "Латунная фурнитура",
+    ],
     size: "large",
   },
   {
@@ -63,16 +80,26 @@ const kitchens = [
     price: "от 45 000 ₽/п.м.",
     image: heroKitchen,
     description: "Эксклюзивные материалы и индивидуальный дизайн",
-    materials: ["Итальянские фасады", "Натуральный мрамор", "Фурнитура премиум-класса"],
+    materials: [
+      "Итальянские фасады",
+      "Натуральный мрамор",
+      "Фурнитура премиум-класса",
+    ],
     size: "medium",
   },
 ];
 
 const Catalog = () => {
-  const [selectedKitchen, setSelectedKitchen] = useState<typeof kitchens[0] | null>(null);
+  const [selectedKitchen, setSelectedKitchen] = useState<
+    (typeof kitchens)[0] | null
+  >(null);
 
   return (
-    <section id="catalog" className="section-padding bg-secondary/30">
+    <section
+      id="catalog"
+      className="section-padding bg-secondary/30"
+      aria-label="Каталог кухонь"
+    >
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -88,14 +115,15 @@ const Catalog = () => {
             Популярные стили кухонь
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Выберите стиль, который вам нравится, и мы адаптируем его под ваши размеры и пожелания
+            Выберите стиль, который вам нравится, и мы адаптируем его под ваши
+            размеры и пожелания
           </p>
         </motion.div>
 
         {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {kitchens.map((kitchen, index) => (
-            <motion.div
+            <motion.article
               key={kitchen.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -103,20 +131,34 @@ const Catalog = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`bento-item group ${kitchen.size === "large" ? "md:col-span-2 lg:col-span-1" : ""}`}
               onClick={() => setSelectedKitchen(kitchen)}
+              role="button"
+              tabIndex={0}
+              aria-label={`Кухня ${kitchen.name} — ${kitchen.price}`}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  setSelectedKitchen(kitchen);
+                }
+              }}
             >
               <div className="aspect-square overflow-hidden">
                 <img
                   src={kitchen.image}
-                  alt={kitchen.name}
+                  alt={`Кухня в стиле ${kitchen.name} на заказ в Твери — ${kitchen.price}`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  width={600}
+                  height={600}
+                  loading="lazy"
                 />
               </div>
-              
+
               {/* Content overlay */}
               <div className="absolute inset-0 flex flex-col justify-end p-6 z-10">
                 <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                   <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-bold text-card">{kitchen.name}</h3>
+                    <h3 className="text-xl font-bold text-card">
+                      {kitchen.name}
+                    </h3>
                     <span className="px-3 py-1 rounded-full bg-card/90 text-foreground text-sm font-medium">
                       {kitchen.price}
                     </span>
@@ -127,13 +169,15 @@ const Catalog = () => {
                   <Button
                     variant="secondary"
                     className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    tabIndex={-1}
+                    aria-hidden="true"
                   >
                     Подробнее
-                    <ArrowRight className="ml-2 w-4 h-4" />
+                    <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
                   </Button>
                 </div>
               </div>
-            </motion.div>
+            </motion.article>
           ))}
         </div>
       </div>

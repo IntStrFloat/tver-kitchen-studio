@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Star, MapPin } from "lucide-react";
+import JsonLd from "@/components/seo/JsonLd";
+import { SITE_CONFIG } from "@/lib/seo";
 
 import kitchenLoft from "@/assets/kitchen-loft.jpg";
 import kitchenScandi from "@/assets/kitchen-scandi.jpg";
@@ -9,12 +11,32 @@ import kitchenEmerald from "@/assets/kitchen-emerald.jpg";
 import heroKitchen from "@/assets/hero-kitchen.jpg";
 
 const projects = [
-  { id: 1, image: kitchenLoft, location: "ул. Радищева, Тверь" },
-  { id: 2, image: kitchenScandi, location: "Пролетарский р-н, Тверь" },
-  { id: 3, image: kitchenClassic, location: "ул. Советская, Торжок" },
-  { id: 4, image: kitchenModern, location: "мкр. Южный, Тверь" },
-  { id: 5, image: kitchenEmerald, location: "г. Конаково" },
-  { id: 6, image: heroKitchen, location: "ул. Горького, Ржев" },
+  { id: 1, image: kitchenLoft, location: "ул. Радищева, Тверь", style: "лофт" },
+  {
+    id: 2,
+    image: kitchenScandi,
+    location: "Пролетарский р-н, Тверь",
+    style: "скандинавский",
+  },
+  {
+    id: 3,
+    image: kitchenClassic,
+    location: "ул. Советская, Торжок",
+    style: "классика",
+  },
+  {
+    id: 4,
+    image: kitchenModern,
+    location: "мкр. Южный, Тверь",
+    style: "минимализм",
+  },
+  { id: 5, image: kitchenEmerald, location: "г. Конаково", style: "изумруд" },
+  {
+    id: 6,
+    image: heroKitchen,
+    location: "ул. Горького, Ржев",
+    style: "премиум",
+  },
 ];
 
 const testimonials = [
@@ -41,10 +63,40 @@ const testimonials = [
   },
 ];
 
+// JSON-LD для отзывов (Review schema)
+const reviewsSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": `${SITE_CONFIG.url}/#localbusiness`,
+  name: SITE_CONFIG.name,
+  review: testimonials.map((t) => ({
+    "@type": "Review",
+    author: {
+      "@type": "Person",
+      name: t.name,
+    },
+    reviewBody: t.text,
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: t.rating,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    datePublished: "2025-01-15",
+  })),
+};
+
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="section-padding bg-secondary/30">
+    <section
+      id="portfolio"
+      className="section-padding bg-secondary/30"
+      aria-label="Портфолио и отзывы"
+    >
       <div className="container-custom">
+        {/* Reviews Schema */}
+        <JsonLd data={reviewsSchema} />
+
         {/* Portfolio Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -66,7 +118,7 @@ const Portfolio = () => {
         {/* Masonry Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-16">
           {projects.map((project, index) => (
-            <motion.div
+            <motion.figure
               key={project.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -76,21 +128,26 @@ const Portfolio = () => {
                 index === 0 || index === 5 ? "row-span-2" : ""
               }`}
             >
-              <div className={`relative ${index === 0 || index === 5 ? "aspect-[3/4]" : "aspect-square"}`}>
+              <div
+                className={`relative ${index === 0 || index === 5 ? "aspect-[3/4]" : "aspect-square"}`}
+              >
                 <img
                   src={project.image}
-                  alt={project.location}
+                  alt={`Кухня в стиле ${project.style} — ${project.location}, установка TverKuhni`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  width={400}
+                  height={index === 0 || index === 5 ? 533 : 400}
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                <figcaption className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                   <div className="flex items-center gap-2 text-card text-sm">
-                    <MapPin className="w-4 h-4" />
+                    <MapPin className="w-4 h-4" aria-hidden="true" />
                     {project.location}
                   </div>
-                </div>
+                </figcaption>
               </div>
-            </motion.div>
+            </motion.figure>
           ))}
         </div>
 
@@ -111,32 +168,51 @@ const Portfolio = () => {
 
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
-            <motion.div
+            <motion.article
               key={testimonial.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="premium-card p-6"
+              itemScope
+              itemType="https://schema.org/Review"
             >
-              <div className="flex items-center gap-1 mb-4">
+              <div
+                className="flex items-center gap-1 mb-4"
+                aria-label={`Оценка: ${testimonial.rating} из 5`}
+              >
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                  <Star
+                    key={i}
+                    className="w-5 h-5 fill-primary text-primary"
+                    aria-hidden="true"
+                  />
                 ))}
               </div>
-              <p className="text-foreground/90 mb-4 leading-relaxed">
-                "{testimonial.text}"
-              </p>
+              <blockquote
+                className="text-foreground/90 mb-4 leading-relaxed"
+                itemProp="reviewBody"
+              >
+                &laquo;{testimonial.text}&raquo;
+              </blockquote>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold">
+                <div
+                  className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold"
+                  aria-hidden="true"
+                >
                   {testimonial.name[0]}
                 </div>
                 <div>
-                  <div className="font-medium">{testimonial.name}</div>
-                  <div className="text-sm text-muted-foreground">{testimonial.location}</div>
+                  <div className="font-medium" itemProp="author">
+                    {testimonial.name}
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {testimonial.location}
+                  </div>
                 </div>
               </div>
-            </motion.div>
+            </motion.article>
           ))}
         </div>
       </div>

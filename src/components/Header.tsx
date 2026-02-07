@@ -9,6 +9,7 @@ const navItems = [
   { label: "Наши работы", href: "#portfolio" },
   { label: "Калькулятор", href: "#quiz" },
   { label: "О нас", href: "#about" },
+  { label: "FAQ", href: "#faq" },
   { label: "Контакты", href: "#contacts" },
 ];
 
@@ -22,18 +23,26 @@ const Header = () => {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         className="fixed top-0 left-0 right-0 z-50 glass-header"
+        role="banner"
       >
         <div className="container-custom">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <a href="/" className="flex items-center gap-2">
+            <a
+              href="/"
+              className="flex items-center gap-2"
+              aria-label="TverKuhni — на главную"
+            >
               <span className="text-xl md:text-2xl font-bold text-primary">
                 TverKuhni
               </span>
             </a>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-8">
+            <nav
+              className="hidden lg:flex items-center gap-8"
+              aria-label="Основная навигация"
+            >
               {navItems.map((item) => (
                 <a
                   key={item.href}
@@ -50,8 +59,9 @@ const Header = () => {
               <a
                 href="tel:+79036302909"
                 className="flex items-center gap-2 text-sm font-medium"
+                aria-label="Позвонить: +7 903 630 29 09"
               >
-                <Phone className="w-4 h-4 text-primary" />
+                <Phone className="w-4 h-4 text-primary" aria-hidden="true" />
                 +7 903 630 29 09
               </a>
               <a
@@ -59,8 +69,9 @@ const Header = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-whatsapp flex items-center justify-center text-whatsapp-foreground hover:opacity-90 transition-opacity"
+                aria-label="Написать в WhatsApp"
               >
-                <MessageCircle className="w-5 h-5" />
+                <MessageCircle className="w-5 h-5" aria-hidden="true" />
               </a>
               <Button onClick={() => setIsCallbackOpen(true)}>
                 Заказать звонок
@@ -71,12 +82,13 @@ const Header = () => {
             <button
               className="lg:hidden p-2"
               onClick={() => setIsOpen(!isOpen)}
-              aria-label="Toggle menu"
+              aria-label={isOpen ? "Закрыть меню" : "Открыть меню"}
+              aria-expanded={isOpen}
             >
               {isOpen ? (
-                <X className="w-6 h-6" />
+                <X className="w-6 h-6" aria-hidden="true" />
               ) : (
-                <Menu className="w-6 h-6" />
+                <Menu className="w-6 h-6" aria-hidden="true" />
               )}
             </button>
           </div>
@@ -91,7 +103,10 @@ const Header = () => {
               exit={{ opacity: 0, height: 0 }}
               className="lg:hidden bg-card border-t"
             >
-              <div className="container-custom py-4 space-y-4">
+              <nav
+                className="container-custom py-4 space-y-4"
+                aria-label="Мобильная навигация"
+              >
                 {navItems.map((item) => (
                   <a
                     key={item.href}
@@ -106,8 +121,12 @@ const Header = () => {
                   <a
                     href="tel:+79036302909"
                     className="flex items-center gap-2 font-medium"
+                    aria-label="Позвонить: +7 903 630 29 09"
                   >
-                    <Phone className="w-4 h-4 text-primary" />
+                    <Phone
+                      className="w-4 h-4 text-primary"
+                      aria-hidden="true"
+                    />
                     +7 903 630 29 09
                   </a>
                   <Button
@@ -120,7 +139,7 @@ const Header = () => {
                     Заказать звонок
                   </Button>
                 </div>
-              </div>
+              </nav>
             </motion.div>
           )}
         </AnimatePresence>

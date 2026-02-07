@@ -3,27 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Preconnect to external origins for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload critical font (non-blocking, with font-display: swap) -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      />
+    </noscript>
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicon.ico" />
 
     <!-- Primary Meta Tags -->
     <title>Кухни на заказ в Твери от производителя | TverKuhni</title>
-    <meta
-      name="title"
-      content="Кухни на заказ в Твери от производителя | TverKuhni"
-    />
     <meta
       name="description"
       content="Производство кухонь на заказ в Твери за 20 дней. Европейские материалы, бесплатный 3D-проект, установка включена. Гарантия 2 года. Звоните!"
     />
     <meta
       name="keywords"
-      content="кухни на заказ Тверь, кухни Тверь, кухни от производителя, мебель для кухни Тверь, кухни под заказ, кухонные гарнитуры Тверь"
+      content="кухни на заказ Тверь, кухни Тверь, кухни от производителя, мебель для кухни Тверь, кухни под заказ, кухонные гарнитуры Тверь, кухня на заказ недорого, кухня Тверь цена"
     />
     <meta name="author" content="TverKuhni" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="yandex-verification" content="ce67eb671a8c4f20" />
+    <meta name="google-site-verification" content="TODO_GOOGLE_VERIFICATION" />
+
+    <!-- Geo Meta Tags (for local SEO) -->
+    <meta name="geo.region" content="RU-TVE" />
+    <meta name="geo.placename" content="Тверь" />
+    <meta name="geo.position" content="56.8584;35.9006" />
+    <meta name="ICBM" content="56.8584, 35.9006" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://tverkuhni.ru/" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tverkuhni.ru/" />
+    <meta property="og:site_name" content="TverKuhni" />
+    <meta property="og:locale" content="ru_RU" />
     <meta
       property="og:title"
       content="Кухни на заказ в Твери от производителя | TverKuhni"
@@ -32,14 +71,16 @@
       property="og:description"
       content="Производство кухонь на заказ в Твери за 20 дней. Европейские материалы, бесплатный 3D-проект, установка включена."
     />
+    <meta property="og:image" content="https://tverkuhni.ru/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta
-      property="og:image"
-      content="https://lovable.dev/opengraph-image-p98pqg.png"
+      property="og:image:alt"
+      content="TverKuhni — кухни на заказ в Твери"
     />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@TverKuhni" />
     <meta name="twitter:url" content="https://tverkuhni.ru/" />
     <meta
       name="twitter:title"
@@ -49,23 +90,59 @@
       name="twitter:description"
       content="Производство кухонь на заказ в Твери за 20 дней. Европейские материалы, бесплатный 3D-проект, установка включена."
     />
-    <meta
-      name="twitter:image"
-      content="https://lovable.dev/opengraph-image-p98pqg.png"
-    />
+    <meta name="twitter:image" content="https://tverkuhni.ru/og-image.jpg" />
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://tverkuhni.ru/" />
+    <!-- JSON-LD: Organization -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://tverkuhni.ru/#organization",
+        "name": "TverKuhni",
+        "url": "https://tverkuhni.ru",
+        "logo": "https://tverkuhni.ru/favicon.ico",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+7-903-630-29-09",
+          "contactType": "sales",
+          "areaServed": "RU",
+          "availableLanguage": "Russian"
+        },
+        "sameAs": ["https://vk.com/tverkuhni", "https://t.me/mebelshik_tver"]
+      }
+    </script>
 
-    <!-- JSON-LD Structured Data -->
+    <!-- JSON-LD: WebSite -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://tverkuhni.ru/#website",
+        "name": "TverKuhni",
+        "url": "https://tverkuhni.ru",
+        "inLanguage": "ru",
+        "publisher": {
+          "@id": "https://tverkuhni.ru/#organization"
+        }
+      }
+    </script>
+
+    <!-- JSON-LD: LocalBusiness -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
+        "@id": "https://tverkuhni.ru/#localbusiness",
         "name": "TverKuhni",
-        "description": "Производство кухонь на заказ в Твери и Тверской области",
+        "description": "Производство кухонь на заказ в Твери и Тверской области. Собственное производство, европейские материалы, гарантия 2 года.",
         "url": "https://tverkuhni.ru",
         "telephone": "+7-903-630-29-09",
+        "email": "info@tverkuhni.ru",
+        "image": "https://tverkuhni.ru/og-image.jpg",
+        "logo": "https://tverkuhni.ru/favicon.ico",
+        "priceRange": "$$",
+        "currenciesAccepted": "RUB",
+        "paymentAccepted": "Наличные, Банковские карты, Безналичный расчёт",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "ул. Коминтерна, 95",
@@ -76,8 +153,8 @@
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "56.8584",
-          "longitude": "35.9006"
+          "latitude": 56.8584,
+          "longitude": 35.9006
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
@@ -92,15 +169,22 @@
           "opens": "10:00",
           "closes": "19:00"
         },
-        "priceRange": "$$",
         "areaServed": [
-          "Тверь",
-          "Торжок",
-          "Ржев",
-          "Конаково",
-          "Кимры",
-          "Вышний Волочёк"
-        ]
+          { "@type": "City", "name": "Тверь" },
+          { "@type": "City", "name": "Торжок" },
+          { "@type": "City", "name": "Ржев" },
+          { "@type": "City", "name": "Конаково" },
+          { "@type": "City", "name": "Кимры" },
+          { "@type": "City", "name": "Вышний Волочёк" }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "127",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "sameAs": ["https://vk.com/tverkuhni", "https://t.me/mebelshik_tver"]
       }
     </script>
   </head>

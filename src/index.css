@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+/*
+  Шрифт Inter загружается через <link rel="preload"> в index.html
+  с font-display: swap для предотвращения FOIT/FOUT.
+  НЕ используем @import — он блокирует рендеринг.
+*/
 
 @layer base {
   :root {
@@ -114,10 +118,19 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family:
+      "Inter",
+      system-ui,
+      -apple-system,
+      sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-semibold tracking-tight;
   }
 }
@@ -146,14 +159,14 @@
     @apply bg-card rounded-2xl overflow-hidden transition-all duration-500 relative cursor-pointer;
     box-shadow: var(--shadow-card);
   }
-  
+
   .bento-item:hover {
     box-shadow: var(--shadow-elevated);
     transform: translateY(-4px);
   }
 
   .bento-item::after {
-    content: '';
+    content: "";
     @apply absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 transition-opacity duration-300;
   }
 
@@ -224,9 +237,19 @@
   }
 
   /* Stagger delay utilities */
-  .delay-100 { animation-delay: 100ms; }
-  .delay-200 { animation-delay: 200ms; }
-  .delay-300 { animation-delay: 300ms; }
-  .delay-400 { animation-delay: 400ms; }
-  .delay-500 { animation-delay: 500ms; }
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+  .delay-300 {
+    animation-delay: 300ms;
+  }
+  .delay-400 {
+    animation-delay: 400ms;
+  }
+  .delay-500 {
+    animation-delay: 500ms;
+  }
 }

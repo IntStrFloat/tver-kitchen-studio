@@ -13,13 +13,20 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20">
-      {/* Background Image */}
+    <section
+      className="relative min-h-screen flex items-center pt-20"
+      aria-label="Главный баннер"
+    >
+      {/* Background Image with fixed dimensions to prevent CLS */}
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
-          alt="Современная кухня"
+          alt="Современная кухня на заказ в интерьере — производство TverKuhni в Твери"
           className="w-full h-full object-cover"
+          width={1920}
+          height={1080}
+          loading="eager"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent" />
       </div>
@@ -73,7 +80,7 @@ const Hero = () => {
               onClick={scrollToCatalog}
               className="group"
             >
-              <Play className="mr-2 w-5 h-5" />
+              <Play className="mr-2 w-5 h-5" aria-hidden="true" />
               Смотреть каталог
             </Button>
           </motion.div>
@@ -84,6 +91,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.5 }}
             className="mt-12 grid grid-cols-3 gap-4 max-w-md"
+            aria-label="Ключевые преимущества"
           >
             {[
               { value: "10+", label: "лет на рынке" },
@@ -94,7 +102,9 @@ const Hero = () => {
                 <div className="text-2xl md:text-3xl font-bold text-primary">
                   {stat.value}
                 </div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+                <div className="text-sm text-muted-foreground">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </motion.div>
