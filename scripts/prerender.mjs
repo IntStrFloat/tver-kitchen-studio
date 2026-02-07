@@ -107,9 +107,47 @@ async function prerender() {
   const server = await createStaticServer(DIST_DIR, PORT);
 
   try {
+    // Пытаемся использовать системный Chromium, если он установлен
+    let executablePath;
+    try {
+      const { execSync } = await import("child_process");
+      try {
+        const chromiumPath = execSync("which chromium", {
+          encoding: "utf-8",
+        }).trim();
+        if (chromiumPath) {
+          executablePath = chromiumPath;
+          console.log(`[prerender] Using system Chromium: ${executablePath}`);
+        }
+      } catch {
+        // chromium не найден, пробуем chromium-browser
+        try {
+          const chromiumBrowserPath = execSync("which chromium-browser", {
+            encoding: "utf-8",
+          }).trim();
+          if (chromiumBrowserPath) {
+            executablePath = chromiumBrowserPath;
+            console.log(`[prerender] Using system Chromium: ${executablePath}`);
+          }
+        } catch {
+          // Используем Chrome из Puppeteer
+        }
+      }
+    } catch {
+      // Используем Chrome из Puppeteer
+    }
+
     const browser = await puppeteer.default.launch({
       headless: true,
-      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+      executablePath,
+      args: [
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage",
+        "--disable-gpu",
+        "--disable-software-rasterizer",
+        "--disable-extensions",
+      ],
     });
 
     for (const route of ROUTES) {
@@ -147,6 +185,41 @@ async function prerender() {
     console.log("[prerender] All routes prerendered successfully!");
   } catch (error) {
     console.error("[prerender] Error during prerendering:", error);
+
+    // Проверяем, является ли это ошибкой отсутствующих библиотек
+    if (error.message && error.message.includes("shared libraries")) {
+      console.error(
+        "\n[prerender] ⚠️  Отсутствуют системные библиотеки для Chrome/Chromium.",
+      );
+      console.error("[prerender] Установите зависимости:");
+      console.error("\n  Рекомендуемый способ (Ubuntu 24.04+):");
+      console.error("    sudo apt-get update");
+      console.error("    sudo apt-get install -y chromium chromium-driver");
+      console.error("\n  Для Ubuntu 24.04+ (все зависимости):");
+      console.error("    sudo apt-get update");
+      console.error("    sudo apt-get install -y \\");
+      console.error("      chromium \\");
+      console.error("      libnspr4 \\");
+      console.error("      libnss3 \\");
+      console.error("      libatk1.0-0t64 \\");
+      console.error("      libatk-bridge2.0-0t64 \\");
+      console.error("      libcups2t64 \\");
+      console.error("      libdrm2 \\");
+      console.error("      libxkbcommon0 \\");
+      console.error("      libxcomposite1 \\");
+      console.error("      libxdamage1 \\");
+      console.error("      libxfixes3 \\");
+      console.error("      libxrandr2 \\");
+      console.error("      libgbm1 \\");
+      console.error("      libasound2t64");
+      console.error("\n  Для Ubuntu 20.04/22.04:");
+      console.error("    sudo apt-get update");
+      console.error("    sudo apt-get install -y chromium-browser");
+      console.error(
+        "\n[prerender] После установки скрипт автоматически использует системный Chromium.",
+      );
+    }
+
     process.exit(1);
   } finally {
     server.close();
