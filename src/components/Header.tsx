@@ -48,14 +48,14 @@ const Header = () => {
             {/* Desktop Actions */}
             <div className="hidden lg:flex items-center gap-4">
               <a
-                href="tel:+74951234567"
+                href="tel:+79036302909"
                 className="flex items-center gap-2 text-sm font-medium"
               >
                 <Phone className="w-4 h-4 text-primary" />
-                +7 (495) 123-45-67
+                +7 903 630 29 09
               </a>
               <a
-                href="https://wa.me/74951234567"
+                href="https://wa.me/79036302909"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-whatsapp flex items-center justify-center text-whatsapp-foreground hover:opacity-90 transition-opacity"
@@ -104,11 +104,11 @@ const Header = () => {
                 ))}
                 <div className="pt-4 border-t space-y-3">
                   <a
-                    href="tel:+74951234567"
+                    href="tel:+79036302909"
                     className="flex items-center gap-2 font-medium"
                   >
                     <Phone className="w-4 h-4 text-primary" />
-                    +7 (495) 123-45-67
+                    +7 903 630 29 09
                   </a>
                   <Button
                     onClick={() => {
@@ -126,7 +126,10 @@ const Header = () => {
         </AnimatePresence>
       </motion.header>
 
-      <CallbackModal isOpen={isCallbackOpen} onClose={() => setIsCallbackOpen(false)} />
+      <CallbackModal
+        isOpen={isCallbackOpen}
+        onClose={() => setIsCallbackOpen(false)}
+      />
     </>
   );
 };
