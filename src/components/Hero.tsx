@@ -1,7 +1,8 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-kitchen.jpg";
 
 const Hero = () => {
   const scrollToQuiz = () => {
@@ -20,7 +21,7 @@ const Hero = () => {
       {/* Background Image with fixed dimensions to prevent CLS */}
       <div className="absolute inset-0 z-0">
         <img
-          src={heroImage}
+          src="/images/hero-kitchen.jpg"
           alt="Современная кухня на заказ в интерьере — производство TverKuhni в Твери"
           className="w-full h-full object-cover"
           width={1920}

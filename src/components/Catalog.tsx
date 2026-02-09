@@ -1,22 +1,17 @@
+"use client";
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CatalogModal from "./CatalogModal";
 
-import kitchenLoft from "@/assets/kitchen-loft.jpg";
-import kitchenScandi from "@/assets/kitchen-scandi.jpg";
-import kitchenClassic from "@/assets/kitchen-classic.jpg";
-import kitchenModern from "@/assets/kitchen-modern.jpg";
-import kitchenEmerald from "@/assets/kitchen-emerald.jpg";
-import heroKitchen from "@/assets/hero-kitchen.jpg";
-
 const kitchens = [
   {
     id: 1,
     name: "Лофт",
     price: "от 28 000 ₽/п.м.",
-    image: kitchenLoft,
+    image: "/images/kitchen-loft.jpg",
     description:
       "Индустриальный стиль с кирпичными стенами и металлическими акцентами",
     materials: [
@@ -30,7 +25,7 @@ const kitchens = [
     id: 2,
     name: "Скандинавский",
     price: "от 25 000 ₽/п.м.",
-    image: kitchenScandi,
+    image: "/images/kitchen-scandi.jpg",
     description: "Минимализм и функциональность северного дизайна",
     materials: [
       "Крашеный МДФ",
@@ -43,7 +38,7 @@ const kitchens = [
     id: 3,
     name: "Классика",
     price: "от 35 000 ₽/п.м.",
-    image: kitchenClassic,
+    image: "/images/kitchen-classic.jpg",
     description: "Вечная элегантность с современными удобствами",
     materials: ["Массив ясеня", "Мраморная столешница", "Фурнитура Blum"],
     size: "medium",
@@ -52,7 +47,7 @@ const kitchens = [
     id: 4,
     name: "Минимализм",
     price: "от 30 000 ₽/п.м.",
-    image: kitchenModern,
+    image: "/images/kitchen-modern.jpg",
     description: "Чистые линии и скрытые системы хранения",
     materials: [
       "Акриловые фасады",
@@ -65,7 +60,7 @@ const kitchens = [
     id: 5,
     name: "Изумруд",
     price: "от 38 000 ₽/п.м.",
-    image: kitchenEmerald,
+    image: "/images/kitchen-emerald.jpg",
     description: "Роскошный изумрудный цвет с латунными акцентами",
     materials: [
       "Крашеный МДФ Emerald",
@@ -78,7 +73,7 @@ const kitchens = [
     id: 6,
     name: "Премиум",
     price: "от 45 000 ₽/п.м.",
-    image: heroKitchen,
+    image: "/images/hero-kitchen.jpg",
     description: "Эксклюзивные материалы и индивидуальный дизайн",
     materials: [
       "Итальянские фасады",

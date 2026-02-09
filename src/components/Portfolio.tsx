@@ -1,39 +1,34 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Star, MapPin } from "lucide-react";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_CONFIG } from "@/lib/seo";
 
-import kitchenLoft from "@/assets/kitchen-loft.jpg";
-import kitchenScandi from "@/assets/kitchen-scandi.jpg";
-import kitchenClassic from "@/assets/kitchen-classic.jpg";
-import kitchenModern from "@/assets/kitchen-modern.jpg";
-import kitchenEmerald from "@/assets/kitchen-emerald.jpg";
-import heroKitchen from "@/assets/hero-kitchen.jpg";
-
 const projects = [
-  { id: 1, image: kitchenLoft, location: "ул. Радищева, Тверь", style: "лофт" },
+  { id: 1, image: "/images/kitchen-loft.jpg", location: "ул. Радищева, Тверь", style: "лофт" },
   {
     id: 2,
-    image: kitchenScandi,
+    image: "/images/kitchen-scandi.jpg",
     location: "Пролетарский р-н, Тверь",
     style: "скандинавский",
   },
   {
     id: 3,
-    image: kitchenClassic,
+    image: "/images/kitchen-classic.jpg",
     location: "ул. Советская, Торжок",
     style: "классика",
   },
   {
     id: 4,
-    image: kitchenModern,
+    image: "/images/kitchen-modern.jpg",
     location: "мкр. Южный, Тверь",
     style: "минимализм",
   },
-  { id: 5, image: kitchenEmerald, location: "г. Конаково", style: "изумруд" },
+  { id: 5, image: "/images/kitchen-emerald.jpg", location: "г. Конаково", style: "изумруд" },
   {
     id: 6,
-    image: heroKitchen,
+    image: "/images/hero-kitchen.jpg",
     location: "ул. Горького, Ржев",
     style: "премиум",
   },
