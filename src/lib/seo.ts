@@ -65,8 +65,8 @@ export function generateLocalBusinessSchema() {
     telephone: SITE_CONFIG.phone,
     email: SITE_CONFIG.email,
     image: SITE_CONFIG.defaultOgImage,
-    logo: `${SITE_CONFIG.url}/favicon.ico`,
-    priceRange: "$$",
+  logo: `${SITE_CONFIG.url}/favicon.svg`,
+  priceRange: "$$",
     currenciesAccepted: "RUB",
     paymentAccepted: "Наличные, Банковские карты, Безналичный расчёт",
     address: {
@@ -121,7 +121,7 @@ export function generateOrganizationSchema() {
     "@id": `${SITE_CONFIG.url}/#organization`,
     name: SITE_CONFIG.name,
     url: SITE_CONFIG.url,
-    logo: `${SITE_CONFIG.url}/favicon.ico`,
+    logo: `${SITE_CONFIG.url}/favicon.svg`,
     contactPoint: {
       "@type": "ContactPoint",
       telephone: SITE_CONFIG.phone,
@@ -251,6 +251,78 @@ export function generateReviewSchema(
       ratingValue,
       bestRating: 5,
       worstRating: 1,
+    },
+  };
+}
+
+export function generateServiceSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "Производство кухонь на заказ",
+    description:
+      "Изготовление кухонной мебели на заказ по индивидуальным размерам. Бесплатный замер, 3D-проект, доставка и установка.",
+    provider: {
+      "@type": "LocalBusiness",
+      "@id": `${SITE_CONFIG.url}/#localbusiness`,
+      name: SITE_CONFIG.name,
+    },
+    areaServed: {
+      "@type": "State",
+      name: "Тверская область",
+    },
+    serviceType: "Производство мебели",
+    offers: {
+      "@type": "AggregateOffer",
+      lowPrice: "25000",
+      highPrice: "150000",
+      priceCurrency: "RUB",
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Каталог кухонь",
+      itemListElement: [
+        { "@type": "OfferCatalog", name: "Кухни в стиле лофт" },
+        { "@type": "OfferCatalog", name: "Скандинавские кухни" },
+        { "@type": "OfferCatalog", name: "Классические кухни" },
+        { "@type": "OfferCatalog", name: "Кухни в стиле минимализм" },
+        { "@type": "OfferCatalog", name: "Премиум кухни" },
+      ],
+    },
+  };
+}
+
+export function generateArticleSchema(
+  title: string,
+  description: string,
+  image: string,
+  datePublished: string,
+  url: string,
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: title,
+    description,
+    image,
+    datePublished,
+    dateModified: datePublished,
+    author: {
+      "@type": "Organization",
+      name: SITE_CONFIG.name,
+      url: SITE_CONFIG.url,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_CONFIG.name,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_CONFIG.url}/favicon.svg`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
     },
   };
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -20,14 +21,14 @@ const Hero = () => {
     >
       {/* Background Image with fixed dimensions to prevent CLS */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="/images/hero-kitchen.jpg"
           alt="Современная кухня на заказ в интерьере — производство TverKuhni в Твери"
           className="w-full h-full object-cover"
           width={1920}
           height={1080}
-          loading="eager"
-          fetchPriority="high"
+          priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent" />
       </div>

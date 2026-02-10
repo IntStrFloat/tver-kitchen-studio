@@ -11,7 +11,7 @@ const nextConfig = {
 
   // Настройка изображений
   images: {
-    unoptimized: true,
+    formats: ["image/avif", "image/webp"],
   },
 };
 

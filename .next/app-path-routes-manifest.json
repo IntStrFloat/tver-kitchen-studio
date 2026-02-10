@@ -1,5 +1,18 @@
 {
+  "/(main)/about/page": "/about",
+  "/(main)/blog/[slug]/page": "/blog/[slug]",
+  "/(main)/blog/page": "/blog",
+  "/(main)/catalog/[style]/page": "/catalog/[style]",
+  "/(main)/catalog/page": "/catalog",
+  "/(main)/contacts/page": "/contacts",
+  "/(main)/dostavka/page": "/dostavka",
+  "/(main)/faq/page": "/faq",
+  "/(main)/kuhni/[city]/page": "/kuhni/[city]",
+  "/(main)/page": "/",
+  "/(main)/portfolio/page": "/portfolio",
+  "/(main)/price/page": "/price",
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
-  "/page": "/"
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml"
 }

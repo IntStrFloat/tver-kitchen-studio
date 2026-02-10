@@ -7,12 +7,12 @@ import { Button } from "@/components/ui/button";
 import CallbackModal from "./CallbackModal";
 
 const navItems = [
-  { label: "Каталог", href: "#catalog" },
-  { label: "Наши работы", href: "#portfolio" },
-  { label: "Калькулятор", href: "#quiz" },
-  { label: "О нас", href: "#about" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Контакты", href: "#contacts" },
+  { label: "Каталог", href: "/catalog" },
+  { label: "Наши работы", href: "/portfolio" },
+  { label: "Цены", href: "/price" },
+  { label: "О нас", href: "/about" },
+  { label: "Блог", href: "/blog" },
+  { label: "Контакты", href: "/contacts" },
 ];
 
 const Header = () => {

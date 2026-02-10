@@ -1,5 +1,18 @@
 {
+  "/(main)/about/page": "app/(main)/about/page.js",
+  "/(main)/blog/[slug]/page": "app/(main)/blog/[slug]/page.js",
+  "/(main)/blog/page": "app/(main)/blog/page.js",
+  "/(main)/catalog/[style]/page": "app/(main)/catalog/[style]/page.js",
+  "/(main)/catalog/page": "app/(main)/catalog/page.js",
+  "/(main)/contacts/page": "app/(main)/contacts/page.js",
+  "/(main)/dostavka/page": "app/(main)/dostavka/page.js",
+  "/(main)/faq/page": "app/(main)/faq/page.js",
+  "/(main)/kuhni/[city]/page": "app/(main)/kuhni/[city]/page.js",
+  "/(main)/page": "app/(main)/page.js",
+  "/(main)/portfolio/page": "app/(main)/portfolio/page.js",
+  "/(main)/price/page": "app/(main)/price/page.js",
   "/_global-error/page": "app/_global-error/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js"
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js"
 }

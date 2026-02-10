@@ -27,6 +27,7 @@
     "disableStaticImages": false,
     "minimumCacheTTL": 14400,
     "formats": [
+      "image/avif",
       "image/webp"
     ],
     "maximumRedirects": 3,
@@ -45,7 +46,7 @@
     "qualities": [
       75
     ],
-    "unoptimized": true,
+    "unoptimized": false,
     "sizes": [
       640,
       750,

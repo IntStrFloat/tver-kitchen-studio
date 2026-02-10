@@ -1,0 +1,12 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+User-Agent: Yandex
+Allow: /
+Crawl-delay: 1
+
+Host: https://tverkuhni.ru
+Sitemap: https://tverkuhni.ru/sitemap.xml

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -137,13 +138,14 @@ const Catalog = () => {
               }}
             >
               <div className="aspect-square overflow-hidden">
-                <img
+                <Image
                   src={kitchen.image}
                   alt={`Кухня в стиле ${kitchen.name} на заказ в Твери — ${kitchen.price}`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   width={600}
                   height={600}
                   loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
 

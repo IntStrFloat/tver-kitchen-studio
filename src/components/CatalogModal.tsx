@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -71,10 +72,13 @@ const CatalogModal = ({ kitchen, isOpen, onClose }: CatalogModalProps) => {
             <div className="grid md:grid-cols-2">
               {/* Image */}
               <div className="aspect-square md:aspect-auto">
-                <img
+                <Image
                   src={kitchen.image}
-                  alt={kitchen.name}
+                  alt={`Кухня «${kitchen.name}» на заказ в Твери — TverKuhni`}
                   className="w-full h-full object-cover"
+                  width={600}
+                  height={600}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
 

@@ -146,12 +146,14 @@ const Footer = () => {
             <nav aria-label="Навигация в подвале">
               <ul className="space-y-3">
                 {[
-                  { label: "Каталог", href: "#catalog" },
-                  { label: "Наши работы", href: "#portfolio" },
-                  { label: "Калькулятор", href: "#quiz" },
-                  { label: "О компании", href: "#about" },
-                  { label: "Вопросы и ответы", href: "#faq" },
-                  { label: "Контакты", href: "#contacts" },
+                  { label: "Каталог", href: "/catalog" },
+                  { label: "Наши работы", href: "/portfolio" },
+                  { label: "Цены", href: "/price" },
+                  { label: "О компании", href: "/about" },
+                  { label: "Доставка", href: "/dostavka" },
+                  { label: "Блог", href: "/blog" },
+                  { label: "Вопросы и ответы", href: "/faq" },
+                  { label: "Контакты", href: "/contacts" },
                 ].map((link) => (
                   <li key={link.href}>
                     <a
@@ -174,10 +176,27 @@ const Footer = () => {
             transition={{ delay: 0.3 }}
           >
             <h3 className="font-semibold mb-4">Работаем по всей области</h3>
-            <p className="text-background/70 text-sm leading-relaxed">
-              Тверь, Торжок, Ржев, Конаково, Кимры, Вышний Волочёк, Бежецк,
-              Нелидово и другие города Тверской области.
-            </p>
+            <ul className="space-y-2 text-sm">
+              {[
+                { name: "Тверь", href: "/kuhni/tveri" },
+                { name: "Торжок", href: "/kuhni/torzhke" },
+                { name: "Ржев", href: "/kuhni/rzheve" },
+                { name: "Конаково", href: "/kuhni/konakovo" },
+                { name: "Кимры", href: "/kuhni/kimrah" },
+                { name: "Вышний Волочёк", href: "/kuhni/vyshnem-volochke" },
+                { name: "Бежецк", href: "/kuhni/bezhecke" },
+                { name: "Нелидово", href: "/kuhni/nelidovo" },
+              ].map((city) => (
+                <li key={city.href}>
+                  <a
+                    href={city.href}
+                    className="text-background/70 hover:text-background transition-colors"
+                  >
+                    Кухни {city.name === "Тверь" ? "в Твери" : `в ${city.name === "Кимры" ? "Кимрах" : city.name}`}
+                  </a>
+                </li>
+              ))}
+            </ul>
             <p className="text-background/50 text-sm mt-4">
               Доставка и установка по всей Тверской области.
             </p>
