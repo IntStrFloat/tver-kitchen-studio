@@ -38,11 +38,11 @@ export const metadata: Metadata = {
     yandex: "ce67eb671a8c4f20",
   },
   alternates: {
-    canonical: "https://tverkuhni.ru/",
+    canonical: "https://kuhnitver.ru/",
   },
   openGraph: {
     type: "website",
-    url: "https://tverkuhni.ru/",
+    url: "https://kuhnitver.ru/",
     siteName: "TverKuhni",
     locale: "ru_RU",
     title: SITE_CONFIG.defaultTitle,
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
       "Производство кухонь на заказ в Твери за 20 дней. Европейские материалы, бесплатный 3D-проект, установка включена.",
     images: [
       {
-        url: "https://tverkuhni.ru/og-image.jpg",
+        url: "https://kuhnitver.ru/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "TverKuhni — кухни на заказ в Твери",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: SITE_CONFIG.defaultTitle,
     description:
       "Производство кухонь на заказ в Твери за 20 дней. Европейские материалы, бесплатный 3D-проект, установка включена.",
-    images: ["https://tverkuhni.ru/og-image.jpg"],
+    images: ["https://kuhnitver.ru/og-image.jpg"],
   },
   icons: {
     icon: [

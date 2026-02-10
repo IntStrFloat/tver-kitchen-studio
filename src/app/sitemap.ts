@@ -3,7 +3,7 @@ import { kitchenStyles } from "@/lib/data";
 import { cities } from "@/lib/data";
 import { blogPosts } from "@/lib/data";
 
-const BASE_URL = "https://tverkuhni.ru";
+const BASE_URL = "https://kuhnitver.ru";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

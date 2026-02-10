@@ -3,17 +3,17 @@
 
 export const SITE_CONFIG = {
   name: "TverKuhni",
-  url: "https://tverkuhni.ru",
+  url: "https://kuhnitver.ru",
   defaultTitle: "Кухни на заказ в Твери от производителя | TverKuhni",
   titleTemplate: "%s | TverKuhni",
   defaultDescription:
     "Производство кухонь на заказ в Твери за 20 дней. Европейские материалы, бесплатный 3D-проект, установка включена. Гарантия 2 года.",
-  defaultOgImage: "https://tverkuhni.ru/og-image.jpg",
+  defaultOgImage: "https://kuhnitver.ru/og-image.jpg",
   locale: "ru_RU",
   language: "ru",
   phone: "+7-903-630-29-09",
   phoneClean: "+79036302909",
-  email: "info@tverkuhni.ru",
+  email: "info@kuhnitver.ru",
   address: {
     street: "ул. Коминтерна, 95",
     locality: "Тверь",

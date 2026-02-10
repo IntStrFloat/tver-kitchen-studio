@@ -14,7 +14,7 @@ export default function robots(): MetadataRoute.Robots {
         crawlDelay: 1,
       },
     ],
-    sitemap: "https://tverkuhni.ru/sitemap.xml",
-    host: "https://tverkuhni.ru",
+    sitemap: "https://kuhnitver.ru/sitemap.xml",
+    host: "https://kuhnitver.ru",
   };
 }
