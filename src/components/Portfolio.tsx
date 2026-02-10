@@ -18,7 +18,7 @@ const projects = [
     id: 3,
     image: "/images/kitchen-classic.jpg",
     location: "ул. Советская, Торжок",
-    style: "классика",
+    style: "современная классика",
   },
   {
     id: 4,
@@ -26,7 +26,7 @@ const projects = [
     location: "мкр. Южный, Тверь",
     style: "минимализм",
   },
-  { id: 5, image: "/images/kitchen-emerald.jpg", location: "г. Конаково", style: "изумруд" },
+  { id: 5, image: "/images/kitchen-emerald.jpg", location: "г. Конаково", style: "современный" },
   {
     id: 6,
     image: "/images/hero-kitchen.jpg",
@@ -55,7 +55,7 @@ const testimonials = [
     name: "Елена С.",
     location: "Конаково",
     rating: 5,
-    text: "Бесплатный 3D-проект помог визуализировать идею. Дизайнер учёл все наши пожелания. Рекомендую!",
+    text: "Эскиз проекта помог визуализировать идею. Дизайнер учёл все наши пожелания. Рекомендую!",
   },
 ];
 

@@ -11,7 +11,7 @@ const kitchens = [
   {
     id: 1,
     name: "Лофт",
-    price: "от 28 000 ₽/п.м.",
+    price: "",
     image: "/images/kitchen-loft.jpg",
     description:
       "Индустриальный стиль с кирпичными стенами и металлическими акцентами",
@@ -25,7 +25,7 @@ const kitchens = [
   {
     id: 2,
     name: "Скандинавский",
-    price: "от 25 000 ₽/п.м.",
+    price: "",
     image: "/images/kitchen-scandi.jpg",
     description: "Минимализм и функциональность северного дизайна",
     materials: [
@@ -37,17 +37,8 @@ const kitchens = [
   },
   {
     id: 3,
-    name: "Классика",
-    price: "от 35 000 ₽/п.м.",
-    image: "/images/kitchen-classic.jpg",
-    description: "Вечная элегантность с современными удобствами",
-    materials: ["Массив ясеня", "Мраморная столешница", "Фурнитура Blum"],
-    size: "medium",
-  },
-  {
-    id: 4,
     name: "Минимализм",
-    price: "от 30 000 ₽/п.м.",
+    price: "",
     image: "/images/kitchen-modern.jpg",
     description: "Чистые линии и скрытые системы хранения",
     materials: [
@@ -58,22 +49,9 @@ const kitchens = [
     size: "medium",
   },
   {
-    id: 5,
-    name: "Изумруд",
-    price: "от 38 000 ₽/п.м.",
-    image: "/images/kitchen-emerald.jpg",
-    description: "Роскошный изумрудный цвет с латунными акцентами",
-    materials: [
-      "Крашеный МДФ Emerald",
-      "Кварцевая столешница",
-      "Латунная фурнитура",
-    ],
-    size: "large",
-  },
-  {
-    id: 6,
+    id: 4,
     name: "Премиум",
-    price: "от 45 000 ₽/п.м.",
+    price: "",
     image: "/images/hero-kitchen.jpg",
     description: "Эксклюзивные материалы и индивидуальный дизайн",
     materials: [
@@ -129,7 +107,7 @@ const Catalog = () => {
               onClick={() => setSelectedKitchen(kitchen)}
               role="button"
               tabIndex={0}
-              aria-label={`Кухня ${kitchen.name} — ${kitchen.price}`}
+              aria-label={`Кухня ${kitchen.name}`}
               onKeyDown={(e) => {
                 if (e.key === "Enter" || e.key === " ") {
                   e.preventDefault();
@@ -140,7 +118,7 @@ const Catalog = () => {
               <div className="aspect-square overflow-hidden">
                 <Image
                   src={kitchen.image}
-                  alt={`Кухня в стиле ${kitchen.name} на заказ в Твери — ${kitchen.price}`}
+                  alt={`Кухня в стиле ${kitchen.name} на заказ в Твери`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   width={600}
                   height={600}
@@ -156,9 +134,11 @@ const Catalog = () => {
                     <h3 className="text-xl font-bold text-card">
                       {kitchen.name}
                     </h3>
-                    <span className="px-3 py-1 rounded-full bg-card/90 text-foreground text-sm font-medium">
-                      {kitchen.price}
-                    </span>
+                    {kitchen.price && (
+                      <span className="px-3 py-1 rounded-full bg-card/90 text-foreground text-sm font-medium">
+                        {kitchen.price}
+                      </span>
+                    )}
                   </div>
                   <p className="text-card/80 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     {kitchen.description}

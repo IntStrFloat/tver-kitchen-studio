@@ -6,9 +6,9 @@ import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
 import { priceData, kitchenStyles } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Цены на кухни на заказ в Твери — от 25 000 ₽/п.м. | TverKuhni",
+  title: "Цены на кухни на заказ в Твери | TverKuhni",
   description:
-    "Цены на кухни на заказ в Твери от производителя: от 25 000 ₽ за погонный метр. Таблица цен по стилям, планировкам и материалам. Рассрочка без переплат.",
+    "Цены на кухни на заказ в Твери от производителя ООО БТМ. Таблица цен по планировкам и материалам. Индивидуальный расчёт.",
   keywords:
     "цены кухни Тверь, сколько стоит кухня на заказ, стоимость кухни Тверь, кухня цена за метр",
   alternates: {
@@ -21,7 +21,7 @@ export default function PricePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     name: "Кухни на заказ в Твери",
-    description: "Кухни на заказ от производителя TverKuhni. Цены от 25 000 ₽/п.м.",
+    description: "Кухни на заказ от производителя ООО БТМ (TverKuhni). Индивидуальный расчёт.",
     brand: { "@type": "Brand", name: SITE_CONFIG.name },
     offers: kitchenStyles.map((style) => ({
       "@type": "Offer",
@@ -41,7 +41,7 @@ export default function PricePage() {
       <JsonLd
         data={generateWebPageSchema(
           "Цены на кухни на заказ в Твери",
-          "Цены на кухни от производителя: от 25 000 ₽/п.м.",
+          "Цены на кухни от производителя ООО БТМ. Индивидуальный расчёт.",
           `${SITE_CONFIG.url}/price`,
         )}
       />
@@ -58,8 +58,7 @@ export default function PricePage() {
             Цены на кухни на заказ в Твери
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Прозрачные цены от производителя. Стоимость фиксируется в договоре.
-            Рассрочка без переплат до 12 месяцев.
+            Прозрачные цены от производителя ООО БТМ. Стоимость фиксируется в договоре.
           </p>
         </div>
 
@@ -106,9 +105,9 @@ export default function PricePage() {
               },
               {
                 title: "П-образная кухня 4 м",
-                style: "Классика",
+                style: "Премиум",
                 price: "180 000 — 250 000 ₽",
-                includes: ["Массив ясеня", "Мраморная столешница", "Фурнитура Blum"],
+                includes: ["Итальянские фасады", "Натуральный мрамор", "Фурнитура Blum"],
               },
             ].map((example, i) => (
               <div key={i} className="premium-card p-6">
@@ -139,7 +138,7 @@ export default function PricePage() {
             Рассчитайте стоимость вашей кухни
           </h2>
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            Ответьте на 4 вопроса и получите точный расчёт + бесплатный 3D-проект
+            Ответьте на 4 вопроса и получите предварительный расчёт стоимости
           </p>
           <Link
             href="/#quiz"

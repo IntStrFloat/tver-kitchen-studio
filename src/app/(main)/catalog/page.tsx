@@ -9,7 +9,7 @@ import { kitchenStyles } from "@/lib/data";
 export const metadata: Metadata = {
   title: "Каталог кухонь на заказ в Твери — стили и цены | TverKuhni",
   description:
-    "Каталог кухонь на заказ в Твери: лофт, классика, минимализм, скандинавский стиль, премиум. Цены от 25 000 ₽/п.м. Собственное производство, бесплатный 3D-проект.",
+    "Каталог кухонь на заказ в Твери: лофт, минимализм, скандинавский стиль, премиум. Собственное производство ООО БТМ.",
   keywords:
     "каталог кухонь Тверь, кухни на заказ стили, кухни фото цены Тверь, кухонные гарнитуры каталог",
   alternates: {
@@ -40,7 +40,7 @@ export default function CatalogPage() {
       <JsonLd
         data={generateWebPageSchema(
           "Каталог кухонь на заказ в Твери",
-          "Каталог кухонь на заказ: лофт, классика, минимализм, скандинавский. Цены от 25 000 ₽/п.м.",
+          "Каталог кухонь на заказ: лофт, минимализм, скандинавский, премиум. Производство ООО БТМ.",
           `${SITE_CONFIG.url}/catalog`,
         )}
       />
@@ -58,8 +58,7 @@ export default function CatalogPage() {
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Выберите стиль кухни, который вам нравится. Мы адаптируем любой
-            дизайн под ваши размеры и пожелания. Цены от 25 000 ₽ за погонный
-            метр.
+            дизайн под ваши размеры и пожелания.
           </p>
         </div>
 
@@ -73,7 +72,7 @@ export default function CatalogPage() {
               <div className="aspect-[4/3] overflow-hidden">
                 <Image
                   src={style.image}
-                  alt={`Кухня в стиле ${style.name} на заказ в Твери — ${style.price}`}
+                  alt={`Кухня в стиле ${style.name} на заказ в Твери`}
                   width={600}
                   height={450}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -83,9 +82,11 @@ export default function CatalogPage() {
               <div className="p-6">
                 <div className="flex items-center justify-between mb-2">
                   <h2 className="text-xl font-bold">{style.name}</h2>
-                  <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
-                    {style.price}
-                  </span>
+                  {style.price && (
+                    <span className="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                      {style.price}
+                    </span>
+                  )}
                 </div>
                 <p className="text-muted-foreground text-sm mb-4">
                   {style.description}

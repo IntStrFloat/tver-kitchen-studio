@@ -77,7 +77,7 @@ const Quiz = () => {
               Ответьте на 4 вопроса
             </h2>
             <p className="text-muted-foreground">
-              Получите предварительный расчёт стоимости и бесплатный 3D-проект в подарок
+              Получите предварительный расчёт стоимости кухни
             </p>
           </div>
 
@@ -155,7 +155,7 @@ const Quiz = () => {
                       Отлично! Почти готово
                     </h3>
                     <p className="text-muted-foreground mb-6">
-                      Оставьте номер телефона и получите расчёт стоимости + бесплатный 3D-проект
+                      Оставьте номер телефона и получите расчёт стоимости
                     </p>
 
                     <form onSubmit={handleSubmit} className="max-w-sm mx-auto space-y-4">
@@ -201,7 +201,7 @@ const Quiz = () => {
                   </p>
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-accent-foreground">
                     <Gift className="w-4 h-4" />
-                    <span className="text-sm font-medium">3D-проект в подарок!</span>
+                    <span className="text-sm font-medium">Мы скоро свяжемся с вами!</span>
                   </div>
                 </motion.div>
               )}

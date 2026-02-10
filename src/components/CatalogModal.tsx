@@ -86,9 +86,11 @@ const CatalogModal = ({ kitchen, isOpen, onClose }: CatalogModalProps) => {
               <div className="p-6 md:p-8">
                 {!submitted ? (
                   <>
-                    <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-                      {kitchen.price}
-                    </span>
+                    {kitchen.price && (
+                      <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+                        {kitchen.price}
+                      </span>
+                    )}
                     <h3 className="text-2xl md:text-3xl font-bold mb-3">
                       Кухня «{kitchen.name}»
                     </h3>

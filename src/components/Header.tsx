@@ -10,8 +10,8 @@ const navItems = [
   { label: "Каталог", href: "/catalog" },
   { label: "Наши работы", href: "/portfolio" },
   { label: "Цены", href: "/price" },
+  { label: "Для бизнеса", href: "/b2b" },
   { label: "О нас", href: "/about" },
-  { label: "Блог", href: "/blog" },
   { label: "Контакты", href: "/contacts" },
 ];
 

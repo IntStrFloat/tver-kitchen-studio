@@ -122,7 +122,7 @@ export default async function BlogPostPage({ params }: Props) {
               Готовы заказать кухню мечты?
             </h2>
             <p className="text-muted-foreground mb-4">
-              Бесплатный замер, 3D-проект и расчёт стоимости
+              Замер, расчёт стоимости кухни
             </p>
             <Link
               href="/#quiz"

@@ -22,14 +22,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `Кухни на заказ ${city.nameIn} от производителя | TverKuhni`,
-    description: `Кухни на заказ ${city.nameIn} от производителя TverKuhni. Цены от 25 000 ₽/п.м. Бесплатный замер, 3D-проект, доставка ${city.deliveryCost === "Бесплатно" ? "бесплатно" : city.deliveryCost}. Гарантия 2 года.`,
+    description: `Кухни на заказ ${city.nameIn} от производителя ООО БТМ (TverKuhni). Замер, эскиз проекта, доставка ${city.deliveryCost === "Бесплатно" ? "бесплатно" : city.deliveryCost}. Гарантия 1 год.`,
     keywords: `кухни на заказ ${city.name}, купить кухню ${city.nameIn}, кухни ${city.name} цены, кухонный гарнитур ${city.name}`,
     alternates: {
       canonical: `${SITE_CONFIG.url}/kuhni/${city.slug}`,
     },
     openGraph: {
       title: `Кухни на заказ ${city.nameIn} от производителя`,
-      description: `Производство кухонь на заказ с доставкой ${city.nameIn}. Цены от 25 000 ₽/п.м.`,
+      description: `Производство кухонь на заказ с доставкой ${city.nameIn}. ООО БТМ (TverKuhni).`,
       url: `${SITE_CONFIG.url}/kuhni/${city.slug}`,
     },
   };
@@ -79,16 +79,16 @@ export default async function CityPage({ params }: Props) {
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Производим кухни в Твери и доставляем {city.nameIn}. Европейские
-            материалы, бесплатный 3D-проект, гарантия 2 года.
+            материалы, гарантия 1 год.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mb-16">
           <div className="premium-card p-6 text-center">
             <div className="text-3xl font-bold text-primary mb-2">
-              от 25 000 ₽
+              от 20 дней
             </div>
-            <div className="text-muted-foreground">за погонный метр</div>
+            <div className="text-muted-foreground">срок изготовления</div>
           </div>
           <div className="premium-card p-6 text-center">
             <div className="text-3xl font-bold text-primary mb-2">
@@ -114,13 +114,12 @@ export default async function CityPage({ params }: Props) {
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                "Бесплатный замер на дому",
-                "3D-проект в подарок",
-                "Изготовление за 20 дней",
+                "Замер — 1 500 ₽ (вычитается при заказе)",
+                "Эскиз проекта после заключения договора",
+                "Изготовление от 20 рабочих дней",
                 "Европейская фурнитура Blum, Hettich",
-                "Доставка и установка",
-                "Гарантия 2 года",
-                "Рассрочка без переплат",
+                "Доставка и сборка",
+                "Гарантия 1 год",
                 "Любые стили и размеры",
               ].map((feature, i) => (
                 <div key={i} className="flex items-center gap-3">
@@ -158,7 +157,7 @@ export default async function CityPage({ params }: Props) {
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold">{style.name}</h3>
-                  <p className="text-sm text-primary">{style.price}</p>
+                  {style.price && <p className="text-sm text-primary">{style.price}</p>}
                 </div>
               </Link>
             ))}
@@ -225,7 +224,7 @@ export default async function CityPage({ params }: Props) {
             Закажите кухню {city.nameIn}
           </h2>
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            Бесплатный замер, 3D-проект и расчёт стоимости с учётом доставки
+            Замер, расчёт стоимости с учётом доставки
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

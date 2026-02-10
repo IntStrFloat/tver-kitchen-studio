@@ -62,8 +62,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl"
           >
-            Готовность за 20 дней. Европейские материалы, бесплатный 3D-проект,
-            установка включена в стоимость.
+            Готовность от 20 дней. Европейские материалы, установка включена в стоимость.
           </motion.p>
 
           <motion.div
@@ -98,7 +97,7 @@ const Hero = () => {
             {[
               { value: "10+", label: "лет на рынке" },
               { value: "500+", label: "проектов" },
-              { value: "2", label: "года гарантии" },
+              { value: "1", label: "год гарантии" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-primary">

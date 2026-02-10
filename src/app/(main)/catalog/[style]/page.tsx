@@ -74,9 +74,11 @@ export default async function StylePage({ params }: Props) {
           </div>
 
           <div>
-            <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-              {style.price}
-            </span>
+            {style.price && (
+              <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+                {style.price}
+              </span>
+            )}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
               Кухни в стиле {style.name}
               <span className="text-primary"> на заказ в Твери</span>
@@ -141,7 +143,7 @@ export default async function StylePage({ params }: Props) {
             Закажите кухню «{style.name}» по своим размерам
           </h2>
           <p className="text-muted-foreground mb-2">
-            Бесплатный замер, 3D-проект, изготовление за 20 дней
+            Замер, эскиз проекта после договора, изготовление от 20 дней
           </p>
           <p className="text-muted-foreground mb-6">
             Доставка и установка по Твери и Тверской области
@@ -179,9 +181,11 @@ export default async function StylePage({ params }: Props) {
                   </div>
                   <div className="p-3 text-center">
                     <span className="font-medium text-sm">{s.name}</span>
-                    <span className="block text-xs text-muted-foreground">
-                      {s.price}
-                    </span>
+                    {s.price && (
+                      <span className="block text-xs text-muted-foreground">
+                        {s.price}
+                      </span>
+                    )}
                   </div>
                 </Link>
               ))}
