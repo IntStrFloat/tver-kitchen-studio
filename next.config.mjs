@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Standalone-режим для продакшн-деплоя за nginx
+  // Создаёт автономную сборку в .next/standalone
+  output: "standalone",
+
   // Транспиляция пакетов, которые поставляются как ESM
   transpilePackages: [
     "framer-motion",
