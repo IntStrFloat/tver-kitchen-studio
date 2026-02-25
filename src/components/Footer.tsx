@@ -211,7 +211,7 @@ const Footer = () => {
       <div className="border-t border-background/10">
         <div className="container-custom py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-background/50">
-            <p>&copy; {currentYear} ООО БТМ (TverKuhni). Все права защищены.</p>
+            <p>&copy; {currentYear} (TverKuhni). Все права защищены.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-background transition-colors">
                 Политика конфиденциальности

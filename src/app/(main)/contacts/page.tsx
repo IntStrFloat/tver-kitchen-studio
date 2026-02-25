@@ -4,11 +4,11 @@ import JsonLd from "@/components/seo/JsonLd";
 import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Контакты TverKuhni — адрес, телефон, режим работы | TverKuhni",
+  title: "Контакты TverKuhni — адрес, телефон, режим работы в Твери | TverKuhni",
   description:
-    "Контакты TverKuhni в Твери: адрес ул. Коминтерна 95, телефон +7 903 630 29 09, режим работы Пн-Сб 10:00-19:00. Шоурум кухонь, бесплатная консультация.",
+    "Свяжитесь с TverKuhni: телефон +7 903 630 29 09, email m-btd@mail.ru. Режим работы Пн-Сб 10:00–19:00. WhatsApp, Telegram для быстрой связи. Бесплатная консультация по выбору кухни. Обслуживаем Тверь, Торжок, Ржев, Конаково и всю Тверскую область.",
   keywords:
-    "контакты TverKuhni, адрес TverKuhni, телефон кухни Тверь, шоурум кухонь Тверь",
+    "контакты TverKuhni, адрес TverKuhni Тверь, телефон кухни Тверь, шоурум кухонь Тверь, кухни Тверь WhatsApp, заказать кухню Тверь",
   alternates: {
     canonical: `${SITE_CONFIG.url}/contacts`,
   },

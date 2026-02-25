@@ -21,15 +21,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!city) return {};
 
   return {
-    title: `Кухни на заказ ${city.nameIn} от производителя | TverKuhni`,
-    description: `Кухни на заказ ${city.nameIn} от производителя ООО БТМ (TverKuhni). Замер, эскиз проекта, доставка ${city.deliveryCost === "Бесплатно" ? "бесплатно" : city.deliveryCost}. Гарантия 1 год.`,
-    keywords: `кухни на заказ ${city.name}, купить кухню ${city.nameIn}, кухни ${city.name} цены, кухонный гарнитур ${city.name}`,
+    title: `Кухни на заказ ${city.nameIn} от производителя — доставка и установка | TverKuhni`,
+    description: `Кухни на заказ ${city.nameIn} от производителя . Собственное производство в Твери, готовность от 20 рабочих дней. Доставка ${city.nameIn} — ${city.deliveryCost === "Бесплатно" ? "бесплатно" : city.deliveryCost}, срок ${city.deliveryTime}. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено.`,
+    keywords: `кухни на заказ ${city.name}, купить кухню ${city.nameIn}, кухни ${city.name} цены, кухонный гарнитур ${city.name}, кухни от производителя ${city.name}, доставка кухни ${city.name}`,
     alternates: {
       canonical: `${SITE_CONFIG.url}/kuhni/${city.slug}`,
     },
     openGraph: {
       title: `Кухни на заказ ${city.nameIn} от производителя`,
-      description: `Производство кухонь на заказ с доставкой ${city.nameIn}. ООО БТМ (TverKuhni).`,
+      description: `Производство кухонь на заказ с доставкой ${city.nameIn}.  (TverKuhni).`,
       url: `${SITE_CONFIG.url}/kuhni/${city.slug}`,
     },
   };
@@ -67,7 +67,10 @@ export default async function CityPage({ params }: Props) {
       <div className="container-custom">
         <Breadcrumbs
           items={[
-            { name: `Кухни ${city.nameIn}`, url: `${SITE_CONFIG.url}/kuhni/${city.slug}` },
+            {
+              name: `Кухни ${city.nameIn}`,
+              url: `${SITE_CONFIG.url}/kuhni/${city.slug}`,
+            },
           ]}
           className="mb-8"
         />
@@ -123,8 +126,18 @@ export default async function CityPage({ params }: Props) {
                 "Любые стили и размеры",
               ].map((feature, i) => (
                 <div key={i} className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  <svg
+                    className="w-5 h-5 text-primary flex-shrink-0"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
                   </svg>
                   <span className="text-sm">{feature}</span>
                 </div>
@@ -157,7 +170,9 @@ export default async function CityPage({ params }: Props) {
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold">{style.name}</h3>
-                  {style.price && <p className="text-sm text-primary">{style.price}</p>}
+                  {style.price && (
+                    <p className="text-sm text-primary">{style.price}</p>
+                  )}
                 </div>
               </Link>
             ))}

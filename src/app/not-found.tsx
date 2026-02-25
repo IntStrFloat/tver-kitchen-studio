@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/button";
 import { SITE_CONFIG } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Страница не найдена — 404 | TverKuhni",
+  title: "Страница не найдена — 404 | TverKuhni — кухни на заказ в Твери",
   description:
-    "Запрашиваемая страница не найдена. Перейдите на главную страницу TverKuhni для заказа кухни в Твери.",
+    "Запрашиваемая страница не найдена или была перемещена. Перейдите на главную страницу TverKuhni, чтобы заказать кухню в Твери, посмотреть каталог стилей или рассчитать стоимость онлайн. Телефон: +7 903 630 29 09.",
   robots: {
     index: false,
     follow: false,

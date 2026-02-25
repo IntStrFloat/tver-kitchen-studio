@@ -1,16 +1,20 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
-import { SITE_CONFIG, generateWebPageSchema, generateFAQSchema } from "@/lib/seo";
+import {
+  SITE_CONFIG,
+  generateWebPageSchema,
+  generateFAQSchema,
+} from "@/lib/seo";
 import { extendedFaqData } from "@/lib/data";
 import FaqAccordion from "./FaqAccordion";
 
 export const metadata: Metadata = {
-  title: "Вопросы и ответы о кухнях на заказ в Твери | TverKuhni",
+  title: "Вопросы и ответы о кухнях на заказ в Твери — FAQ | TverKuhni",
   description:
-    "Ответы на частые вопросы о заказе кухонь в Твери: цены, сроки, материалы, доставка, гарантия, рассрочка. Полезная информация от производителя TverKuhni.",
+    "Ответы на частые вопросы о заказе кухонь в Твери от производителя . Сколько стоит кухня? Какие сроки изготовления? Какие материалы используете? Есть ли гарантия? Как проходит замер и установка? Подробные ответы на все вопросы о кухнях на заказ.",
   keywords:
-    "кухни вопросы ответы, FAQ кухни Тверь, сколько стоит кухня, сроки изготовления кухни",
+    "кухни вопросы ответы, FAQ кухни Тверь, сколько стоит кухня на заказ, сроки изготовления кухни, материалы кухни, гарантия на кухню, замер кухни Тверь",
   alternates: {
     canonical: `${SITE_CONFIG.url}/faq`,
   },
@@ -39,8 +43,8 @@ export default function FaqPage() {
             Вопросы и ответы
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Собрали ответы на самые популярные вопросы о заказе кухонь в Твери
-            и Тверской области
+            Собрали ответы на самые популярные вопросы о заказе кухонь в Твери и
+            Тверской области
           </p>
         </div>
 

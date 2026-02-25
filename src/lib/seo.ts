@@ -7,7 +7,7 @@ export const SITE_CONFIG = {
   defaultTitle: "Кухни на заказ в Твери от производителя | TverKuhni",
   titleTemplate: "%s | TverKuhni",
   defaultDescription:
-    "Производство кухонь на заказ в Твери от 20 дней. Европейские материалы, установка включена. Гарантия 1 год.",
+    "Кухни на заказ в Твери от производителя . Собственное производство, готовность от 20 рабочих дней. Фурнитура Blum и Hettich. Бесплатная доставка и установка. Гарантия 1 год по договору.",
   defaultOgImage: "https://kuhnitver.ru/og-image.jpg",
   locale: "ru_RU",
   language: "ru",
@@ -27,6 +27,8 @@ export const SITE_CONFIG = {
   },
   social: {
     telegram: "https://t.me/mebelshik_tver",
+    whatsapp: "https://wa.me/79036302909",
+    vk: "https://vk.com/tverkuhni",
   },
 } as const;
 
@@ -35,17 +37,17 @@ export const SEO_TEMPLATES = {
   home: {
     title: "Кухни на заказ в Твери от производителя",
     description:
-      "Производство кухонь на заказ в Твери от 20 дней. Европейские материалы, установка включена. Гарантия 1 год. Звоните!",
+      "Кухни на заказ в Твери от производителя . Собственное производство, готовность от 20 дней. Фурнитура Blum и Hettich, бесплатная доставка и установка. Гарантия 1 год.",
   },
   catalog: {
-    title: "Каталог кухонь — стили и цены",
+    title: "Каталог кухонь — стили, фото, цены",
     description:
-      "Каталог кухонь на заказ: лофт, минимализм, скандинавский стиль, премиум. Индивидуальный дизайн.",
+      "Каталог кухонь на заказ в Твери: лофт, минимализм, скандинавский стиль, премиум. Фото реальных проектов с ценами. Индивидуальный дизайн под ваши размеры.",
   },
   notFound: {
     title: "Страница не найдена — 404",
     description:
-      "Запрашиваемая страница не найдена. Перейдите на главную страницу TverKuhni.",
+      "Запрашиваемая страница не найдена. Перейдите на главную страницу TverKuhni для заказа кухни в Твери.",
   },
 } as const;
 
@@ -101,7 +103,11 @@ export function generateLocalBusinessSchema() {
       { "@type": "City", name: "Кимры" },
       { "@type": "City", name: "Вышний Волочёк" },
     ],
-    sameAs: [SITE_CONFIG.social.telegram],
+    sameAs: [
+      SITE_CONFIG.social.telegram,
+      SITE_CONFIG.social.whatsapp,
+      SITE_CONFIG.social.vk,
+    ],
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
@@ -127,7 +133,11 @@ export function generateOrganizationSchema() {
       areaServed: "RU",
       availableLanguage: "Russian",
     },
-    sameAs: [SITE_CONFIG.social.telegram],
+    sameAs: [
+      SITE_CONFIG.social.telegram,
+      SITE_CONFIG.social.whatsapp,
+      SITE_CONFIG.social.vk,
+    ],
   };
 }
 

@@ -6,11 +6,12 @@ import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
 import { priceData, kitchenStyles } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Цены на кухни на заказ в Твери | TverKuhni",
+  title:
+    "Цены на кухни на заказ в Твери — прайс-лист от производителя | TverKuhni",
   description:
-    "Цены на кухни на заказ в Твери от производителя ООО БТМ. Таблица цен по планировкам и материалам. Индивидуальный расчёт.",
+    "Актуальные цены на кухни на заказ в Твери от производителя . Прямая кухня от 25 000 ₽/м.п., угловая от 30 000 ₽/м.п. Подробная таблица цен по планировкам и материалам (МДФ, массив, акрил). Стоимость фиксируется в договоре. Онлайн-расчёт за 1 минуту.",
   keywords:
-    "цены кухни Тверь, сколько стоит кухня на заказ, стоимость кухни Тверь, кухня цена за метр",
+    "цены кухни Тверь, сколько стоит кухня на заказ, стоимость кухни Тверь, кухня цена за метр, прайс кухни Тверь, недорогие кухни Тверь, кухня в рассрочку Тверь",
   alternates: {
     canonical: `${SITE_CONFIG.url}/price`,
   },
@@ -21,7 +22,8 @@ export default function PricePage() {
     "@context": "https://schema.org",
     "@type": "Product",
     name: "Кухни на заказ в Твери",
-    description: "Кухни на заказ от производителя ООО БТМ (TverKuhni). Индивидуальный расчёт.",
+    description:
+      "Кухни на заказ от производителя  (TverKuhni). Индивидуальный расчёт.",
     brand: { "@type": "Brand", name: SITE_CONFIG.name },
     offers: kitchenStyles.map((style) => ({
       "@type": "Offer",
@@ -41,7 +43,7 @@ export default function PricePage() {
       <JsonLd
         data={generateWebPageSchema(
           "Цены на кухни на заказ в Твери",
-          "Цены на кухни от производителя ООО БТМ. Индивидуальный расчёт.",
+          "Цены на кухни от производителя . Индивидуальный расчёт.",
           `${SITE_CONFIG.url}/price`,
         )}
       />
@@ -58,7 +60,7 @@ export default function PricePage() {
             Цены на кухни на заказ в Твери
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Прозрачные цены от производителя ООО БТМ. Стоимость фиксируется в договоре.
+            Прозрачные цены от производителя . Стоимость фиксируется в договоре.
           </p>
         </div>
 
@@ -95,19 +97,31 @@ export default function PricePage() {
                 title: "Прямая кухня 2.5 м",
                 style: "Скандинавский",
                 price: "62 500 — 80 000 ₽",
-                includes: ["Крашеный МДФ", "Искусственный камень", "Фурнитура Hettich"],
+                includes: [
+                  "Крашеный МДФ",
+                  "Искусственный камень",
+                  "Фурнитура Hettich",
+                ],
               },
               {
                 title: "Угловая кухня 3 м",
                 style: "Лофт",
                 price: "95 000 — 130 000 ₽",
-                includes: ["МДФ Soft-touch", "Столешница из дуба", "Фурнитура Blum"],
+                includes: [
+                  "МДФ Soft-touch",
+                  "Столешница из дуба",
+                  "Фурнитура Blum",
+                ],
               },
               {
                 title: "П-образная кухня 4 м",
                 style: "Премиум",
                 price: "180 000 — 250 000 ₽",
-                includes: ["Итальянские фасады", "Натуральный мрамор", "Фурнитура Blum"],
+                includes: [
+                  "Итальянские фасады",
+                  "Натуральный мрамор",
+                  "Фурнитура Blum",
+                ],
               },
             ].map((example, i) => (
               <div key={i} className="premium-card p-6">
@@ -120,9 +134,22 @@ export default function PricePage() {
                 </div>
                 <ul className="space-y-2">
                   {example.includes.map((item, j) => (
-                    <li key={j} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <svg className="w-4 h-4 text-primary flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    <li
+                      key={j}
+                      className="flex items-center gap-2 text-sm text-muted-foreground"
+                    >
+                      <svg
+                        className="w-4 h-4 text-primary flex-shrink-0"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                       {item}
                     </li>
