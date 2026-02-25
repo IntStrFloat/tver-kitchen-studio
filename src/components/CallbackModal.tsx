@@ -15,10 +15,24 @@ const CallbackModal = ({ isOpen, onClose }: CallbackModalProps) => {
   const [name, setName] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would send the data to your backend
     setSubmitted(true);
+
+    try {
+      await fetch("/api/telegram", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          phone,
+          name,
+          source: "Заказать звонок (шапка сайта)",
+        }),
+      });
+    } catch {
+      // не блокируем UX при ошибке отправки
+    }
+
     setTimeout(() => {
       setSubmitted(false);
       setPhone("");

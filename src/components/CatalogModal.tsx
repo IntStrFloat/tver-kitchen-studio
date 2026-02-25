@@ -27,9 +27,29 @@ const CatalogModal = ({ kitchen, isOpen, onClose }: CatalogModalProps) => {
 
   if (!kitchen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
+
+    try {
+      await fetch("/api/telegram", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          phone,
+          source: "Каталог — карточка кухни",
+          details: {
+            "Кухня": kitchen.name,
+            ...(kitchen.price ? { "Цена": kitchen.price } : {}),
+            "Описание": kitchen.description,
+            "Материалы": kitchen.materials.join(", "),
+          },
+        }),
+      });
+    } catch {
+      // не блокируем UX при ошибке отправки
+    }
+
     setTimeout(() => {
       setSubmitted(false);
       setPhone("");

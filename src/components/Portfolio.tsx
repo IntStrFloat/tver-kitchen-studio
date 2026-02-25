@@ -121,11 +121,11 @@ const Portfolio = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className={`premium-card overflow-hidden group ${
-                index === 0 || index === 5 ? "row-span-2" : ""
+                index === 0 || index === 5 ? "md:row-span-2" : ""
               }`}
             >
               <div
-                className={`relative ${index === 0 || index === 5 ? "aspect-[3/4]" : "aspect-square"}`}
+                className={`relative ${index === 0 || index === 5 ? "aspect-square md:aspect-[3/4]" : "aspect-square"}`}
               >
                 <Image
                   src={project.image}

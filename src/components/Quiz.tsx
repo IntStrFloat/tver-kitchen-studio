@@ -51,9 +51,32 @@ const Quiz = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
+
+    const answerLabels: Record<string, string> = {};
+    for (const step of steps) {
+      const selectedId = answers[step.id];
+      if (selectedId) {
+        const option = step.options.find((o) => o.id === selectedId);
+        answerLabels[step.question] = option?.label ?? selectedId;
+      }
+    }
+
+    try {
+      await fetch("/api/telegram", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          phone,
+          source: "Квиз — расчёт стоимости",
+          details: answerLabels,
+        }),
+      });
+    } catch {
+      // не блокируем UX при ошибке отправки
+    }
   };
 
   const isLastStep = currentStep === steps.length;

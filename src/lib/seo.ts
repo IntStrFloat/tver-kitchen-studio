@@ -13,7 +13,7 @@ export const SITE_CONFIG = {
   language: "ru",
   phone: "+7-903-630-29-09",
   phoneClean: "+79036302909",
-  email: "info@kuhnitver.ru",
+  email: "m-btd@mail.ru",
   address: {
     street: "ул. Коминтерна, 95",
     locality: "Тверь",
@@ -26,9 +26,7 @@ export const SITE_CONFIG = {
     longitude: 35.9006,
   },
   social: {
-    vk: "https://vk.com/tverkuhni",
     telegram: "https://t.me/mebelshik_tver",
-    whatsapp: "https://wa.me/79036302909",
   },
 } as const;
 
@@ -65,8 +63,8 @@ export function generateLocalBusinessSchema() {
     telephone: SITE_CONFIG.phone,
     email: SITE_CONFIG.email,
     image: SITE_CONFIG.defaultOgImage,
-  logo: `${SITE_CONFIG.url}/favicon.svg`,
-  priceRange: "$$",
+    logo: `${SITE_CONFIG.url}/favicon.svg`,
+    priceRange: "$$",
     currenciesAccepted: "RUB",
     paymentAccepted: "Наличные, Банковские карты, Безналичный расчёт",
     address: {
@@ -103,7 +101,7 @@ export function generateLocalBusinessSchema() {
       { "@type": "City", name: "Кимры" },
       { "@type": "City", name: "Вышний Волочёк" },
     ],
-    sameAs: [SITE_CONFIG.social.vk, SITE_CONFIG.social.telegram],
+    sameAs: [SITE_CONFIG.social.telegram],
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
@@ -129,7 +127,7 @@ export function generateOrganizationSchema() {
       areaServed: "RU",
       availableLanguage: "Russian",
     },
-    sameAs: [SITE_CONFIG.social.vk, SITE_CONFIG.social.telegram],
+    sameAs: [SITE_CONFIG.social.telegram],
   };
 }
 

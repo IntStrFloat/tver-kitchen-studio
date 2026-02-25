@@ -89,7 +89,7 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">Контакты</h3>
             <address className="not-italic">
               <ul className="space-y-4">
-                <li className="flex items-start gap-3">
+                {/* <li className="flex items-start gap-3">
                   <MapPin
                     className="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
                     aria-hidden="true"
@@ -97,7 +97,7 @@ const Footer = () => {
                   <span className="text-background/70">
                     г. Тверь, ул. Коминтерна, 95, ТЦ «Мебельный»
                   </span>
-                </li>
+                </li> */}
                 <li className="flex items-center gap-3">
                   <Phone
                     className="w-5 h-5 text-primary flex-shrink-0"
@@ -116,10 +116,10 @@ const Footer = () => {
                     aria-hidden="true"
                   />
                   <a
-                    href="mailto:info@tverkuhni.ru"
+                    href="mailto:m-btd@mail.ru"
                     className="text-background/70 hover:text-background transition-colors"
                   >
-                    info@tverkuhni.ru
+                    m-btd@mail.ru
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
@@ -192,7 +192,10 @@ const Footer = () => {
                     href={city.href}
                     className="text-background/70 hover:text-background transition-colors"
                   >
-                    Кухни {city.name === "Тверь" ? "в Твери" : `в ${city.name === "Кимры" ? "Кимрах" : city.name}`}
+                    Кухни{" "}
+                    {city.name === "Тверь"
+                      ? "в Твери"
+                      : `в ${city.name === "Кимры" ? "Кимрах" : city.name}`}
                   </a>
                 </li>
               ))}
