@@ -6,13 +6,31 @@ import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title:
-    "О компании TverKuhni — производство кухонь в Твери с 2014 года | TverKuhni",
+    "О компании Kuhnitver — производство кухонь в Твери с 2014 года | Kuhnitver",
   description:
-    " (TverKuhni) — собственное производство кухонь на заказ в Твери с 2014 года. Более 500 реализованных проектов, 98% клиентов рекомендуют. Полный цикл: от замера и эскиза до доставки и установки. Европейская фурнитура Blum, Hettich. Гарантия 1 год по договору.",
+    "Kuhnitver — собственное производство кухонь на заказ в Твери с 2014 года. Более 500 реализованных проектов, 98% клиентов рекомендуют. Полный цикл: от замера и эскиза до доставки и установки. Европейская фурнитура Blum, Hettich. Гарантия 1 год по договору.",
   keywords:
-    "TverKuhni, производитель кухонь Тверь, о компании, мебельная фабрика Тверь, , кухни собственное производство, кухни с гарантией Тверь",
+    "Kuhnitver, производитель кухонь Тверь, о компании, мебельная фабрика Тверь, , кухни собственное производство, кухни с гарантией Тверь",
   alternates: {
     canonical: `${SITE_CONFIG.url}/about`,
+  },
+  openGraph: {
+    title:
+      "О компании Kuhnitver — производство кухонь в Твери с 2014 года | Kuhnitver",
+    description:
+      "Kuhnitver — производство кухонь в Твери с 2014 года. 500+ проектов, 98% рекомендуют. Полный цикл: замер, эскиз, доставка, установка. Фурнитура Blum, Hettich. Гарантия 1 год.",
+    url: `${SITE_CONFIG.url}/about`,
+    siteName: "Kuhnitver",
+    locale: "ru_RU",
+    type: "website",
+    images: [
+      {
+        url: SITE_CONFIG.defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: "О компании Kuhnitver — производство кухонь в Твери с 2014 года",
+      },
+    ],
   },
 };
 
@@ -85,7 +103,7 @@ export default function AboutPage() {
   const howToSchema = {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    name: "Как заказать кухню в TverKuhni",
+    name: "Как заказать кухню в Kuhnitver",
     description: "Пошаговый процесс заказа кухни от замера до установки",
     step: processSteps.map((s) => ({
       "@type": "HowToStep",
@@ -99,7 +117,7 @@ export default function AboutPage() {
     <div className="min-h-screen pt-24">
       <JsonLd
         data={generateWebPageSchema(
-          "О компании TverKuhni — производство кухонь в Твери",
+          "О компании Kuhnitver — производство кухонь в Твери",
           "Собственное производство кухонь на заказ в Твери с 2014 года",
           `${SITE_CONFIG.url}/about`,
         )}
@@ -117,7 +135,7 @@ export default function AboutPage() {
             Производим кухни <span className="text-primary">с 2014 года</span>
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            TverKuhni — это собственное производство кухонной мебели в Твери. Мы
+            Kuhnitver — это собственное производство кухонной мебели в Твери. Мы
             создаём кухни, которые объединяют семьи: функциональные, красивые и
             доступные по цене. За 10 лет мы реализовали более 500 проектов по
             Твери и Тверской области.

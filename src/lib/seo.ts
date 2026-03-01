@@ -1,13 +1,13 @@
 // ===== SEO CONSTANTS & UTILITIES =====
-// Централизованные SEO-настройки для всего сайта TverKuhni
+// Централизованные SEO-настройки для всего сайта Kuhnitver
 
 export const SITE_CONFIG = {
-  name: "TverKuhni",
+  name: "Kuhnitver",
   url: "https://kuhnitver.ru",
-  defaultTitle: "Кухни на заказ в Твери от производителя | TverKuhni",
-  titleTemplate: "%s | TverKuhni",
+  defaultTitle: "Кухни на заказ в Твери от производителя | Kuhnitver",
+  titleTemplate: "%s | Kuhnitver",
   defaultDescription:
-    "Кухни на заказ в Твери от производителя . Собственное производство, готовность от 20 рабочих дней. Фурнитура Blum и Hettich. Бесплатная доставка и установка. Гарантия 1 год по договору.",
+    "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство, готовность от 20 рабочих дней. Фурнитура Blum и Hettich. Бесплатная доставка и установка. Гарантия 1 год по договору.",
   defaultOgImage: "https://kuhnitver.ru/og-image.jpg",
   locale: "ru_RU",
   language: "ru",
@@ -28,7 +28,7 @@ export const SITE_CONFIG = {
   social: {
     telegram: "https://t.me/mebelshik_tver",
     whatsapp: "https://wa.me/79036302909",
-    vk: "https://vk.com/tverkuhni",
+    vk: "https://vk.com/Kuhnitver",
   },
 } as const;
 
@@ -37,7 +37,7 @@ export const SEO_TEMPLATES = {
   home: {
     title: "Кухни на заказ в Твери от производителя",
     description:
-      "Кухни на заказ в Твери от производителя . Собственное производство, готовность от 20 дней. Фурнитура Blum и Hettich, бесплатная доставка и установка. Гарантия 1 год.",
+      "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство, готовность от 20 дней. Фурнитура Blum и Hettich, бесплатная доставка и установка. Гарантия 1 год.",
   },
   catalog: {
     title: "Каталог кухонь — стили, фото, цены",
@@ -47,7 +47,7 @@ export const SEO_TEMPLATES = {
   notFound: {
     title: "Страница не найдена — 404",
     description:
-      "Запрашиваемая страница не найдена. Перейдите на главную страницу TverKuhni для заказа кухни в Твери.",
+      "Запрашиваемая страница не найдена. Перейдите на главную страницу Kuhnitver для заказа кухни в Твери.",
   },
 } as const;
 
@@ -65,7 +65,7 @@ export function generateLocalBusinessSchema() {
     telephone: SITE_CONFIG.phone,
     email: SITE_CONFIG.email,
     image: SITE_CONFIG.defaultOgImage,
-    logo: `${SITE_CONFIG.url}/favicon.svg`,
+    logo: `${SITE_CONFIG.url}/android-chrome-512x512.png`,
     priceRange: "$$",
     currenciesAccepted: "RUB",
     paymentAccepted: "Наличные, Банковские карты, Безналичный расчёт",
@@ -102,6 +102,8 @@ export function generateLocalBusinessSchema() {
       { "@type": "City", name: "Конаково" },
       { "@type": "City", name: "Кимры" },
       { "@type": "City", name: "Вышний Волочёк" },
+      { "@type": "City", name: "Бежецк" },
+      { "@type": "City", name: "Нелидово" },
     ],
     sameAs: [
       SITE_CONFIG.social.telegram,
@@ -125,7 +127,7 @@ export function generateOrganizationSchema() {
     "@id": `${SITE_CONFIG.url}/#organization`,
     name: SITE_CONFIG.name,
     url: SITE_CONFIG.url,
-    logo: `${SITE_CONFIG.url}/favicon.svg`,
+    logo: `${SITE_CONFIG.url}/android-chrome-512x512.png`,
     contactPoint: {
       "@type": "ContactPoint",
       telephone: SITE_CONFIG.phone,
@@ -151,6 +153,14 @@ export function generateWebSiteSchema() {
     inLanguage: SITE_CONFIG.language,
     publisher: {
       "@id": `${SITE_CONFIG.url}/#organization`,
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${SITE_CONFIG.url}/catalog?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
     },
   };
 }
@@ -327,7 +337,7 @@ export function generateArticleSchema(
       name: SITE_CONFIG.name,
       logo: {
         "@type": "ImageObject",
-        url: `${SITE_CONFIG.url}/favicon.svg`,
+        url: `${SITE_CONFIG.url}/android-chrome-512x512.png`,
       },
     },
     mainEntityOfPage: {

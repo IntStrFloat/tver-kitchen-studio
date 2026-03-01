@@ -4,13 +4,32 @@ import JsonLd from "@/components/seo/JsonLd";
 import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Контакты TverKuhni — адрес, телефон, режим работы в Твери | TverKuhni",
+  title:
+    "Контакты Kuhnitver — адрес, телефон, режим работы в Твери | Kuhnitver",
   description:
-    "Свяжитесь с TverKuhni: телефон +7 903 630 29 09, email m-btd@mail.ru. Режим работы Пн-Сб 10:00–19:00. WhatsApp, Telegram для быстрой связи. Бесплатная консультация по выбору кухни. Обслуживаем Тверь, Торжок, Ржев, Конаково и всю Тверскую область.",
+    "Свяжитесь с Kuhnitver: телефон +7 903 630 29 09, email m-btd@mail.ru. Режим работы Пн-Сб 10:00–19:00. WhatsApp, Telegram для быстрой связи. Бесплатная консультация по выбору кухни. Обслуживаем Тверь, Торжок, Ржев, Конаково и всю Тверскую область.",
   keywords:
-    "контакты TverKuhni, адрес TverKuhni Тверь, телефон кухни Тверь, шоурум кухонь Тверь, кухни Тверь WhatsApp, заказать кухню Тверь",
+    "контакты Kuhnitver, адрес Kuhnitver Тверь, телефон кухни Тверь, шоурум кухонь Тверь, кухни Тверь WhatsApp, заказать кухню Тверь",
   alternates: {
     canonical: `${SITE_CONFIG.url}/contacts`,
+  },
+  openGraph: {
+    title:
+      "Контакты Kuhnitver — адрес, телефон, режим работы в Твери | Kuhnitver",
+    description:
+      "Контакты Kuhnitver в Твери: телефон, email, адрес шоурума. Режим работы Пн-Сб 10:00–19:00. WhatsApp, Telegram. Бесплатная консультация по выбору кухни.",
+    url: `${SITE_CONFIG.url}/contacts`,
+    siteName: "Kuhnitver",
+    locale: "ru_RU",
+    type: "website",
+    images: [
+      {
+        url: SITE_CONFIG.defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: "Контакты Kuhnitver — адрес, телефон, шоурум кухонь в Твери",
+      },
+    ],
   },
 };
 
@@ -19,8 +38,8 @@ export default function ContactsPage() {
     <div className="min-h-screen pt-24">
       <JsonLd
         data={generateWebPageSchema(
-          "Контакты TverKuhni",
-          "Адрес, телефон и режим работы TverKuhni в Твери",
+          "Контакты Kuhnitver",
+          "Адрес, телефон и режим работы Kuhnitver в Твери",
           `${SITE_CONFIG.url}/contacts`,
         )}
       />
@@ -164,7 +183,6 @@ export default function ContactsPage() {
                 >
                   Telegram
                 </a>
-
               </div>
             </div>
           </div>
@@ -175,7 +193,7 @@ export default function ContactsPage() {
               width="100%"
               height="100%"
               style={{ minHeight: "500px", border: 0 }}
-              title="Расположение TverKuhni на карте Твери"
+              title="Расположение Kuhnitver на карте Твери"
               loading="lazy"
             />
           </div>

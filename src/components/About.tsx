@@ -51,11 +51,10 @@ const About = () => {
               О компании
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Производим кухни{" "}
-              <span className="text-primary">с 2014 года</span>
+              Производим кухни <span className="text-primary">с 2014 года</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              TverKuhni — это собственное производство кухонной мебели в Твери.
+              Kuhnitver — это собственное производство кухонной мебели в Твери.
               Мы создаём кухни, которые объединяют семьи: функциональные,
               красивые и доступные по цене.
             </p>

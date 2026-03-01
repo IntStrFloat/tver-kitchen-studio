@@ -35,7 +35,7 @@ const FAQSection = () => {
             Часто задаваемые вопросы
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ответы на популярные вопросы о заказе кухонь в TverKuhni
+            Ответы на популярные вопросы о заказе кухонь в Kuhnitver
           </p>
         </motion.div>
 
@@ -64,10 +64,7 @@ const FAQSection = () => {
           </Accordion>
 
           <div className="text-center mt-8">
-            <a
-              href="/faq"
-              className="text-primary font-medium hover:underline"
-            >
+            <a href="/faq" className="text-primary font-medium hover:underline">
               Все вопросы и ответы →
             </a>
           </div>

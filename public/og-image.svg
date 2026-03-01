@@ -14,6 +14,6 @@
   <text x="600" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="700" fill="#f8fafc" text-anchor="middle">&#1050;&#1091;&#1093;&#1085;&#1080; &#1085;&#1072; &#1079;&#1072;&#1082;&#1072;&#1079; &#1074; &#1058;&#1074;&#1077;&#1088;&#1080;</text>
   <text x="600" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#94a3b8" text-anchor="middle">&#1054;&#1090; &#1087;&#1088;&#1086;&#1080;&#1079;&#1074;&#1086;&#1076;&#1080;&#1090;&#1077;&#1083;&#1103; &#8226; 3D-&#1087;&#1088;&#1086;&#1077;&#1082;&#1090; &#1073;&#1077;&#1089;&#1087;&#1083;&#1072;&#1090;&#1085;&#1086; &#8226; 20 &#1076;&#1085;&#1077;&#1081;</text>
   <rect x="80" y="380" width="120" height="44" rx="8" fill="url(#accent)"/>
-  <text x="140" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#0f172a" text-anchor="middle">TverKuhni</text>
-  <text x="1100" y="590" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#64748b" text-anchor="end">tverkuhni.ru</text>
+  <text x="140" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#0f172a" text-anchor="middle">Kuhnitver</text>
+  <text x="1100" y="590" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#64748b" text-anchor="end">Kuhnitver.ru</text>
 </svg>

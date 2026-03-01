@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!style) return {};
 
   return {
-    title: `${style.seoTitle} | TverKuhni`,
+    title: `${style.seoTitle} | Kuhnitver`,
     description: style.seoDescription,
     alternates: {
       canonical: `${SITE_CONFIG.url}/catalog/${style.slug}`,
@@ -30,7 +30,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: style.seoTitle,
       description: style.seoDescription,
       url: `${SITE_CONFIG.url}/catalog/${style.slug}`,
-      images: [{ url: `${SITE_CONFIG.url}${style.image}`, width: 600, height: 450 }],
+      images: [
+        { url: `${SITE_CONFIG.url}${style.image}`, width: 600, height: 450 },
+      ],
     },
   };
 }
@@ -56,7 +58,10 @@ export default async function StylePage({ params }: Props) {
         <Breadcrumbs
           items={[
             { name: "Каталог кухонь", url: `${SITE_CONFIG.url}/catalog` },
-            { name: style.name, url: `${SITE_CONFIG.url}/catalog/${style.slug}` },
+            {
+              name: style.name,
+              url: `${SITE_CONFIG.url}/catalog/${style.slug}`,
+            },
           ]}
           className="mb-8"
         />
@@ -65,7 +70,7 @@ export default async function StylePage({ params }: Props) {
           <div className="rounded-2xl overflow-hidden">
             <Image
               src={style.image}
-              alt={`Кухня в стиле ${style.name} на заказ в Твери от TverKuhni`}
+              alt={`Кухня в стиле ${style.name} на заказ в Твери от Kuhnitver`}
               width={800}
               height={600}
               className="w-full h-full object-cover"
@@ -93,8 +98,18 @@ export default async function StylePage({ params }: Props) {
                 {style.materials.map((material, i) => (
                   <li key={i} className="flex items-center gap-3">
                     <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-3 h-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <svg
+                        className="w-3 h-3 text-primary"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                     </div>
                     <span>{material}</span>
@@ -109,8 +124,18 @@ export default async function StylePage({ params }: Props) {
                 {style.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-3">
                     <div className="w-5 h-5 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
-                      <svg className="w-3 h-3 text-accent-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <svg
+                        className="w-3 h-3 text-accent-foreground"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5 13l4 4L19 7"
+                        />
                       </svg>
                     </div>
                     <span>{feature}</span>

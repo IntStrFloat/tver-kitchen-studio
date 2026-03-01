@@ -7,7 +7,12 @@ import JsonLd from "@/components/seo/JsonLd";
 import { SITE_CONFIG } from "@/lib/seo";
 
 const projects = [
-  { id: 1, image: "/images/kitchen-loft.jpg", location: "ул. Радищева, Тверь", style: "лофт" },
+  {
+    id: 1,
+    image: "/images/kitchen-loft.jpg",
+    location: "ул. Радищева, Тверь",
+    style: "лофт",
+  },
   {
     id: 2,
     image: "/images/kitchen-scandi.jpg",
@@ -26,7 +31,12 @@ const projects = [
     location: "мкр. Южный, Тверь",
     style: "минимализм",
   },
-  { id: 5, image: "/images/kitchen-emerald.jpg", location: "г. Конаково", style: "современный" },
+  {
+    id: 5,
+    image: "/images/kitchen-emerald.jpg",
+    location: "г. Конаково",
+    style: "современный",
+  },
   {
     id: 6,
     image: "/images/hero-kitchen.jpg",
@@ -48,7 +58,7 @@ const testimonials = [
     name: "Игорь П.",
     location: "Торжок",
     rating: 5,
-    text: "Долго выбирали между разными производителями. Рады, что остановились на TverKuhni. Цена-качество на высоте.",
+    text: "Долго выбирали между разными производителями. Рады, что остановились на Kuhnitver. Цена-качество на высоте.",
   },
   {
     id: 3,
@@ -78,7 +88,8 @@ const reviewsSchema = {
       bestRating: 5,
       worstRating: 1,
     },
-    datePublished: t.id === 1 ? "2025-08-15" : t.id === 2 ? "2025-10-22" : "2025-12-05",
+    datePublished:
+      t.id === 1 ? "2025-08-15" : t.id === 2 ? "2025-10-22" : "2025-12-05",
   })),
 };
 
@@ -129,7 +140,7 @@ const Portfolio = () => {
               >
                 <Image
                   src={project.image}
-                  alt={`Кухня в стиле ${project.style} — ${project.location}, установка TverKuhni`}
+                  alt={`Кухня в стиле ${project.style} — ${project.location}, установка Kuhnitver`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   width={400}
                   height={index === 0 || index === 5 ? 533 : 400}

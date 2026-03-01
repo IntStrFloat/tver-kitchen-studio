@@ -39,10 +39,10 @@ const CatalogModal = ({ kitchen, isOpen, onClose }: CatalogModalProps) => {
           phone,
           source: "Каталог — карточка кухни",
           details: {
-            "Кухня": kitchen.name,
-            ...(kitchen.price ? { "Цена": kitchen.price } : {}),
-            "Описание": kitchen.description,
-            "Материалы": kitchen.materials.join(", "),
+            Кухня: kitchen.name,
+            ...(kitchen.price ? { Цена: kitchen.price } : {}),
+            Описание: kitchen.description,
+            Материалы: kitchen.materials.join(", "),
           },
         }),
       });
@@ -94,7 +94,7 @@ const CatalogModal = ({ kitchen, isOpen, onClose }: CatalogModalProps) => {
               <div className="aspect-square md:aspect-auto">
                 <Image
                   src={kitchen.image}
-                  alt={`Кухня «${kitchen.name}» на заказ в Твери — TverKuhni`}
+                  alt={`Кухня «${kitchen.name}» на заказ в Твери — Kuhnitver`}
                   className="w-full h-full object-cover"
                   width={600}
                   height={600}
@@ -122,7 +122,10 @@ const CatalogModal = ({ kitchen, isOpen, onClose }: CatalogModalProps) => {
                       <h4 className="font-semibold mb-3">Материалы:</h4>
                       <ul className="space-y-2">
                         {kitchen.materials.map((material, index) => (
-                          <li key={index} className="flex items-center gap-2 text-sm">
+                          <li
+                            key={index}
+                            className="flex items-center gap-2 text-sm"
+                          >
                             <Check className="w-4 h-4 text-primary flex-shrink-0" />
                             {material}
                           </li>
@@ -146,7 +149,8 @@ const CatalogModal = ({ kitchen, isOpen, onClose }: CatalogModalProps) => {
                         Хочу такую кухню
                       </Button>
                       <p className="text-xs text-center text-muted-foreground">
-                        Перезвоним в течение 15 минут и рассчитаем точную стоимость
+                        Перезвоним в течение 15 минут и рассчитаем точную
+                        стоимость
                       </p>
                     </form>
                   </>
@@ -159,7 +163,9 @@ const CatalogModal = ({ kitchen, isOpen, onClose }: CatalogModalProps) => {
                     <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center mb-4">
                       <Check className="w-8 h-8 text-primary-foreground" />
                     </div>
-                    <h3 className="text-2xl font-bold mb-2">Заявка отправлена!</h3>
+                    <h3 className="text-2xl font-bold mb-2">
+                      Заявка отправлена!
+                    </h3>
                     <p className="text-muted-foreground">
                       Мы скоро свяжемся с вами для расчёта
                     </p>

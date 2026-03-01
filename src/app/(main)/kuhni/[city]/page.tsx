@@ -21,15 +21,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!city) return {};
 
   return {
-    title: `Кухни на заказ ${city.nameIn} от производителя — доставка и установка | TverKuhni`,
-    description: `Кухни на заказ ${city.nameIn} от производителя . Собственное производство в Твери, готовность от 20 рабочих дней. Доставка ${city.nameIn} — ${city.deliveryCost === "Бесплатно" ? "бесплатно" : city.deliveryCost}, срок ${city.deliveryTime}. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено.`,
+    title: `Кухни на заказ ${city.nameIn} от производителя — доставка и установка | Kuhnitver`,
+    description: `Кухни на заказ ${city.nameIn} от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка ${city.nameIn} — ${city.deliveryCost === "Бесплатно" ? "бесплатно" : city.deliveryCost}, срок ${city.deliveryTime}. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено.`,
     keywords: `кухни на заказ ${city.name}, купить кухню ${city.nameIn}, кухни ${city.name} цены, кухонный гарнитур ${city.name}, кухни от производителя ${city.name}, доставка кухни ${city.name}`,
     alternates: {
       canonical: `${SITE_CONFIG.url}/kuhni/${city.slug}`,
     },
     openGraph: {
       title: `Кухни на заказ ${city.nameIn} от производителя`,
-      description: `Производство кухонь на заказ с доставкой ${city.nameIn}.  (TverKuhni).`,
+      description: `Производство кухонь на заказ с доставкой ${city.nameIn}.  (Kuhnitver).`,
       url: `${SITE_CONFIG.url}/kuhni/${city.slug}`,
     },
   };
@@ -43,7 +43,7 @@ export default async function CityPage({ params }: Props) {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: `TverKuhni — кухни на заказ ${city.nameIn}`,
+    name: `Kuhnitver — кухни на заказ ${city.nameIn}`,
     description: `Производство и доставка кухонь на заказ ${city.nameIn}. Собственное производство в Твери, европейские материалы.`,
     url: `${SITE_CONFIG.url}/kuhni/${city.slug}`,
     telephone: SITE_CONFIG.phone,

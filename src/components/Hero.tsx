@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero-kitchen.jpg"
-          alt="Современная кухня на заказ в интерьере — производство TverKuhni в Твери"
+          alt="Современная кухня на заказ в интерьере — производство Kuhnitver в Твери"
           className="w-full h-full object-cover"
           width={1920}
           height={1080}
@@ -62,7 +62,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl"
           >
-            Готовность от 20 дней. Европейские материалы, установка включена в стоимость.
+            Готовность от 20 дней. Европейские материалы, установка включена в
+            стоимость.
           </motion.p>
 
           <motion.div

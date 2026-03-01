@@ -7,13 +7,31 @@ import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
 import { projects, testimonials } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Наши работы — фото реализованных кухонь в Твери и отзывы | TverKuhni",
+  title: "Наши работы — фото реализованных кухонь в Твери и отзывы | Kuhnitver",
   description:
-    "Портфолио кухонь на заказ от : более 500 проектов в Твери и Тверской области. Фотографии установленных кухонь в стилях лофт, минимализм, скандинавский, премиум. Реальные отзывы клиентов с оценкой 4.9 из 5. Смотрите результаты нашей работы и убедитесь в качестве.",
+    "Портфолио кухонь на заказ от Kuhnitver: более 500 проектов в Твери и Тверской области. Фотографии установленных кухонь в стилях лофт, минимализм, скандинавский, премиум. Реальные отзывы клиентов с оценкой 4.9 из 5. Смотрите результаты нашей работы и убедитесь в качестве.",
   keywords:
     "кухни фото Тверь, портфолио кухонь, реализованные проекты кухни, отзывы кухни Тверь, кухни до и после, примеры кухонь на заказ, кухни в интерьере Тверь",
   alternates: {
     canonical: `${SITE_CONFIG.url}/portfolio`,
+  },
+  openGraph: {
+    title:
+      "Наши работы — фото реализованных кухонь в Твери и отзывы | Kuhnitver",
+    description:
+      "Портфолио Kuhnitver: более 500 проектов в Твери. Фото реальных кухонь в стилях лофт, минимализм, скандинавский, премиум. Реальные отзывы клиентов с оценкой 4.9 из 5.",
+    url: `${SITE_CONFIG.url}/portfolio`,
+    siteName: "Kuhnitver",
+    locale: "ru_RU",
+    type: "website",
+    images: [
+      {
+        url: SITE_CONFIG.defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: "Портфолио кухонь Kuhnitver — фото реализованных проектов в Твери",
+      },
+    ],
   },
 };
 
@@ -79,7 +97,7 @@ export default function PortfolioPage() {
               >
                 <Image
                   src={project.image}
-                  alt={`Кухня в стиле ${project.style} — ${project.location}, установка TverKuhni`}
+                  alt={`Кухня в стиле ${project.style} — ${project.location}, установка Kuhnitver`}
                   width={400}
                   height={index === 0 || index === 5 ? 533 : 400}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {};
 
   return {
-    title: `${post.seoTitle} | TverKuhni`,
+    title: `${post.seoTitle} | Kuhnitver`,
     description: post.seoDescription,
     alternates: {
       canonical: `${SITE_CONFIG.url}/blog/${post.slug}`,
@@ -32,7 +32,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `${SITE_CONFIG.url}/blog/${post.slug}`,
       type: "article",
       publishedTime: post.date,
-      images: [{ url: `${SITE_CONFIG.url}${post.image}`, width: 600, height: 375 }],
+      images: [
+        { url: `${SITE_CONFIG.url}${post.image}`, width: 600, height: 375 },
+      ],
     },
   };
 }

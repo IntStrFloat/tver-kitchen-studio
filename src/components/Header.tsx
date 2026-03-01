@@ -10,6 +10,7 @@ const navItems = [
   { label: "Каталог", href: "/catalog" },
   { label: "Наши работы", href: "/portfolio" },
   { label: "Цены", href: "/price" },
+  { label: "Блог", href: "/blog" },
   { label: "Для бизнеса", href: "/b2b" },
   { label: "О нас", href: "/about" },
   { label: "Контакты", href: "/contacts" },
@@ -33,10 +34,10 @@ const Header = () => {
             <a
               href="/"
               className="flex items-center gap-2"
-              aria-label="TverKuhni — на главную"
+              aria-label="Kuhnitver — на главную"
             >
               <span className="text-xl md:text-2xl font-bold text-primary">
-                TverKuhni
+                Kuhnitver
               </span>
             </a>
 

@@ -22,16 +22,16 @@ const Footer = () => {
             viewport={{ once: true }}
             className="lg:col-span-1"
           >
-            <h2 className="text-2xl font-bold mb-4">TverKuhni</h2>
+            <h2 className="text-2xl font-bold mb-4">Kuhnitver</h2>
             <p className="text-background/70 mb-6">
               Производство кухонь на заказ в Твери и Тверской области. Качество,
               которое объединяет семьи.
             </p>
             <div className="flex gap-4">
               <a
-                href="https://vk.com/tverkuhni"
+                href="https://vk.com/Kuhnitver"
                 className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
-                aria-label="TverKuhni ВКонтакте"
+                aria-label="Kuhnitver ВКонтакте"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -47,7 +47,7 @@ const Footer = () => {
               <a
                 href="https://t.me/mebelshik_tver"
                 className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
-                aria-label="TverKuhni Telegram"
+                aria-label="Kuhnitver Telegram"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -63,7 +63,7 @@ const Footer = () => {
               <a
                 href="https://wa.me/79036302909"
                 className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
-                aria-label="TverKuhni WhatsApp"
+                aria-label="Kuhnitver WhatsApp"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -89,15 +89,15 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">Контакты</h3>
             <address className="not-italic">
               <ul className="space-y-4">
-                {/* <li className="flex items-start gap-3">
+                <li className="flex items-start gap-3">
                   <MapPin
                     className="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
                     aria-hidden="true"
                   />
                   <span className="text-background/70">
-                    г. Тверь, ул. Коминтерна, 95, ТЦ «Мебельный»
+                    г. Тверь, ул. Коминтерна, 95
                   </span>
-                </li> */}
+                </li>
                 <li className="flex items-center gap-3">
                   <Phone
                     className="w-5 h-5 text-primary flex-shrink-0"
@@ -178,24 +178,24 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">Работаем по всей области</h3>
             <ul className="space-y-2 text-sm">
               {[
-                { name: "Тверь", href: "/kuhni/tveri" },
-                { name: "Торжок", href: "/kuhni/torzhke" },
-                { name: "Ржев", href: "/kuhni/rzheve" },
-                { name: "Конаково", href: "/kuhni/konakovo" },
-                { name: "Кимры", href: "/kuhni/kimrah" },
-                { name: "Вышний Волочёк", href: "/kuhni/vyshnem-volochke" },
-                { name: "Бежецк", href: "/kuhni/bezhecke" },
-                { name: "Нелидово", href: "/kuhni/nelidovo" },
+                { label: "Кухни в Твери", href: "/kuhni/tveri" },
+                { label: "Кухни в Торжке", href: "/kuhni/torzhke" },
+                { label: "Кухни в Ржеве", href: "/kuhni/rzheve" },
+                { label: "Кухни в Конаково", href: "/kuhni/konakovo" },
+                { label: "Кухни в Кимрах", href: "/kuhni/kimrah" },
+                {
+                  label: "Кухни в Вышнем Волочке",
+                  href: "/kuhni/vyshnem-volochke",
+                },
+                { label: "Кухни в Бежецке", href: "/kuhni/bezhecke" },
+                { label: "Кухни в Нелидово", href: "/kuhni/nelidovo" },
               ].map((city) => (
                 <li key={city.href}>
                   <a
                     href={city.href}
                     className="text-background/70 hover:text-background transition-colors"
                   >
-                    Кухни{" "}
-                    {city.name === "Тверь"
-                      ? "в Твери"
-                      : `в ${city.name === "Кимры" ? "Кимрах" : city.name}`}
+                    {city.label}
                   </a>
                 </li>
               ))}
@@ -211,14 +211,9 @@ const Footer = () => {
       <div className="border-t border-background/10">
         <div className="container-custom py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-background/50">
-            <p>&copy; {currentYear} (TverKuhni). Все права защищены.</p>
+            <p>&copy; {currentYear} (Kuhnitver). Все права защищены.</p>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-background transition-colors">
-                Политика конфиденциальности
-              </a>
-              <a href="#" className="hover:text-background transition-colors">
-                Договор оферты
-              </a>
+              <span>Кухни на заказ в Твери и Тверской области</span>
             </div>
           </div>
         </div>

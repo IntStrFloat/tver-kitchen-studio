@@ -6,13 +6,32 @@ import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
 import { cities } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Доставка и установка кухонь по Твери и Тверской области — бесплатно | TverKuhni",
+  title:
+    "Доставка и установка кухонь по Твери и Тверской области — бесплатно | Kuhnitver",
   description:
     "Бесплатная доставка и профессиональная установка кухонь на заказ по Твери. Подъём на этаж, подключение мойки и техники — включено. Доставка по Тверской области: Торжок от 3 000 ₽, Ржев, Конаково, Кимры. Сборка за 1 день опытными мастерами. Гарантия на монтаж.",
   keywords:
     "доставка кухонь Тверь, установка кухни Тверь, монтаж кухни бесплатно, доставка мебели Тверская область, сборка кухни Тверь, подключение кухни",
   alternates: {
     canonical: `${SITE_CONFIG.url}/dostavka`,
+  },
+  openGraph: {
+    title:
+      "Доставка и установка кухонь по Твери и Тверской области — бесплатно | Kuhnitver",
+    description:
+      "Бесплатная доставка и профессиональная установка кухонь по Твери и Тверской области. Подъём на этаж, подключение мойки и техники — включено. Сборка за 1 день. Гарантия на монтаж.",
+    url: `${SITE_CONFIG.url}/dostavka`,
+    siteName: "Kuhnitver",
+    locale: "ru_RU",
+    type: "website",
+    images: [
+      {
+        url: "https://kuhnitver.ru/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Доставка и установка кухонь по Твери — бесплатно",
+      },
+    ],
   },
 };
 
@@ -53,7 +72,12 @@ export default function DostavkaPage() {
 
       <div className="container-custom">
         <Breadcrumbs
-          items={[{ name: "Доставка и установка", url: `${SITE_CONFIG.url}/dostavka` }]}
+          items={[
+            {
+              name: "Доставка и установка",
+              url: `${SITE_CONFIG.url}/dostavka`,
+            },
+          ]}
           className="mb-8"
         />
 
@@ -62,8 +86,8 @@ export default function DostavkaPage() {
             Доставка и установка кухонь
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Бережная доставка и профессиональный монтаж по Твери и всей
-            Тверской области
+            Бережная доставка и профессиональный монтаж по Твери и всей Тверской
+            области
           </p>
         </div>
 
@@ -72,17 +96,20 @@ export default function DostavkaPage() {
             {
               title: "Доставка по Твери",
               price: "Бесплатно",
-              details: "Доставка в пределах города Тверь включена в стоимость кухни. Подъём на этаж — бесплатно.",
+              details:
+                "Доставка в пределах города Тверь включена в стоимость кухни. Подъём на этаж — бесплатно.",
             },
             {
               title: "Профессиональная установка",
               price: "Включена",
-              details: "Монтаж выполняют опытные мастера. Подключение мойки, вытяжки, встраиваемой техники.",
+              details:
+                "Монтаж выполняют опытные мастера. Подключение мойки, вытяжки, встраиваемой техники.",
             },
             {
               title: "Доставка по области",
               price: "от 3 000 ₽",
-              details: "Стоимость зависит от расстояния. Торжок, Конаково — от 3 000 ₽, Ржев, Кимры — от 4 000 ₽.",
+              details:
+                "Стоимость зависит от расстояния. Торжок, Конаково — от 3 000 ₽, Ржев, Кимры — от 4 000 ₽.",
             },
           ].map((item, i) => (
             <div key={i} className="premium-card p-8 text-center">
@@ -105,7 +132,9 @@ export default function DostavkaPage() {
                 <thead>
                   <tr className="bg-secondary/50">
                     <th className="text-left p-4 font-semibold">Город</th>
-                    <th className="text-center p-4 font-semibold">Срок доставки</th>
+                    <th className="text-center p-4 font-semibold">
+                      Срок доставки
+                    </th>
                     <th className="text-right p-4 font-semibold">Стоимость</th>
                   </tr>
                 </thead>

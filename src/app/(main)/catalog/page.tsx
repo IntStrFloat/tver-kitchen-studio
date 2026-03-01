@@ -7,13 +7,30 @@ import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
 import { kitchenStyles } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Каталог кухонь на заказ в Твери — стили, фото, цены | TverKuhni",
+  title: "Каталог кухонь на заказ в Твери — стили, фото, цены | Kuhnitver",
   description:
     "Каталог кухонь на заказ в Твери от производителя: лофт, минимализм, скандинавский стиль, современная классика, премиум. Фото реальных проектов с ценами. Индивидуальный дизайн под ваши размеры. Фурнитура Blum и Hettich. Рассчитайте стоимость онлайн.",
   keywords:
     "каталог кухонь Тверь, кухни на заказ стили, кухни фото цены Тверь, кухонные гарнитуры каталог, кухня лофт Тверь, кухня минимализм, скандинавская кухня Тверь, кухня премиум класса",
   alternates: {
     canonical: `${SITE_CONFIG.url}/catalog`,
+  },
+  openGraph: {
+    title: "Каталог кухонь на заказ в Твери — стили, фото, цены | Kuhnitver",
+    description:
+      "Каталог кухонь на заказ в Твери: лофт, минимализм, скандинавский, премиум. Фото реальных проектов с ценами. Индивидуальный дизайн под ваши размеры. Фурнитура Blum и Hettich.",
+    url: `${SITE_CONFIG.url}/catalog`,
+    siteName: "Kuhnitver",
+    locale: "ru_RU",
+    type: "website",
+    images: [
+      {
+        url: SITE_CONFIG.defaultOgImage,
+        width: 1200,
+        height: 630,
+        alt: "Каталог кухонь на заказ в Твери — стили, фото, цены Kuhnitver",
+      },
+    ],
   },
 };
 
