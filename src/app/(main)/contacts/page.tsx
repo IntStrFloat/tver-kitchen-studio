@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title:
     "Контакты Kuhnitver — адрес шоурума, телефон, режим работы в Твери | Kuhnitver",
   description:
-    "Шоурум Kuhnitver: г. Тверь, ул. Коминтерна, 95, ТЦ «Мебельный». Телефон +7 903 630 29 09, email m-btd@mail.ru. Режим работы Пн-Сб 10:00–19:00. Telegram, Max, ВКонтакте для быстрой связи. Обслуживаем Тверь, Торжок, Ржев, Конаково и всю Тверскую область.",
+    "Шоурум Kuhnitver: г. Тверь, ул. Коминтерна, 95, ТЦ «Мебельный». Телефон +7 903 630 29 09, email m-btd@mail.ru. Режим работы Пн-Сб 10:00–19:00. Telegram и Max для быстрой связи. Обслуживаем Тверь, Торжок, Ржев, Конаково и всю Тверскую область.",
   keywords:
     "контакты Kuhnitver, адрес кухни Тверь, шоурум кухонь Тверь, ТЦ Мебельный Тверь, телефон кухни Тверь, кухни Тверь Telegram",
   alternates: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title:
       "Контакты Kuhnitver — адрес шоурума, телефон, режим работы в Твери | Kuhnitver",
     description:
-      "Шоурум Kuhnitver: г. Тверь, ул. Коминтерна, 95, ТЦ «Мебельный». Телефон, email, Telegram, Max, ВКонтакте. Пн-Сб 10:00–19:00.",
+      "Шоурум Kuhnitver: г. Тверь, ул. Коминтерна, 95, ТЦ «Мебельный». Телефон, email, Telegram, Max. Пн-Сб 10:00–19:00.",
     url: `${SITE_CONFIG.url}/contacts`,
     siteName: "Kuhnitver",
     locale: "ru_RU",
@@ -214,7 +214,7 @@ export default function ContactsPage() {
 
             <div className="premium-card p-6">
               <div className="text-xs uppercase tracking-wide text-muted-foreground mb-3">
-                Мессенджеры и соцсети
+                Мессенджеры
               </div>
               <div className="flex flex-wrap gap-3 mb-4">
                 <a
@@ -225,14 +225,6 @@ export default function ContactsPage() {
                 >
                   <Send className="w-4 h-4" aria-hidden="true" />
                   Telegram
-                </a>
-                <a
-                  href={SITE_CONFIG.social.vk}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#0077FF] text-white font-medium hover:opacity-90 transition-opacity"
-                >
-                  ВКонтакте
                 </a>
               </div>
               <div className="rounded-xl bg-secondary/50 p-4 border border-border/40">
