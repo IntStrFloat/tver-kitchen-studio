@@ -6,7 +6,6 @@ import {
   Clock,
   Navigation,
   MessageCircle,
-  Send,
 } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
@@ -16,9 +15,9 @@ export const metadata: Metadata = {
   title:
     "Контакты Kuhnitver — адрес шоурума, телефон, режим работы в Твери | Kuhnitver",
   description:
-    "Шоурум Kuhnitver: г. Тверь, ул. Коминтерна, 95, ТЦ «Мебельный». Телефон +7 903 630 29 09, email m-btd@mail.ru. Режим работы Пн-Сб 10:00–19:00. Telegram и Max для быстрой связи. Обслуживаем Тверь, Торжок, Ржев, Конаково и всю Тверскую область.",
+    "Шоурум Kuhnitver: г. Тверь, ул. Коминтерна, 95, ТЦ «Мебельный». Телефон +7 903 630 29 09, email m-btd@mail.ru. Режим работы Пн-Сб 10:00–19:00. Мессенджер Max для быстрой связи. Обслуживаем Тверь, Торжок, Ржев, Конаково и всю Тверскую область.",
   keywords:
-    "контакты Kuhnitver, адрес кухни Тверь, шоурум кухонь Тверь, ТЦ Мебельный Тверь, телефон кухни Тверь, кухни Тверь Telegram",
+    "контакты Kuhnitver, адрес кухни Тверь, шоурум кухонь Тверь, ТЦ Мебельный Тверь, телефон кухни Тверь, кухни Тверь Max",
   alternates: {
     canonical: `${SITE_CONFIG.url}/contacts`,
   },
@@ -26,7 +25,7 @@ export const metadata: Metadata = {
     title:
       "Контакты Kuhnitver — адрес шоурума, телефон, режим работы в Твери | Kuhnitver",
     description:
-      "Шоурум Kuhnitver: г. Тверь, ул. Коминтерна, 95, ТЦ «Мебельный». Телефон, email, Telegram, Max. Пн-Сб 10:00–19:00.",
+      "Шоурум Kuhnitver: г. Тверь, ул. Коминтерна, 95, ТЦ «Мебельный». Телефон, email, мессенджер Max. Пн-Сб 10:00–19:00.",
     url: `${SITE_CONFIG.url}/contacts`,
     siteName: "Kuhnitver",
     locale: "ru_RU",
@@ -214,18 +213,7 @@ export default function ContactsPage() {
 
             <div className="premium-card p-6">
               <div className="text-xs uppercase tracking-wide text-muted-foreground mb-3">
-                Мессенджеры
-              </div>
-              <div className="flex flex-wrap gap-3 mb-4">
-                <a
-                  href={SITE_CONFIG.social.telegram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#229ED9] text-white font-medium hover:opacity-90 transition-opacity"
-                >
-                  <Send className="w-4 h-4" aria-hidden="true" />
-                  Telegram
-                </a>
+                Мессенджер
               </div>
               <div className="rounded-xl bg-secondary/50 p-4 border border-border/40">
                 <div className="flex items-center gap-2 mb-1">
@@ -333,23 +321,16 @@ export default function ContactsPage() {
             Если приезжать в шоурум неудобно — оформим встречу с замерщиком
             прямо у вас дома по Твери и области, бесплатно привезём образцы.
             Замер стоит 1 500 ₽ и вычитается из стоимости кухни при оформлении
-            заказа. Связаться удобнее всего через{" "}
-            <a
-              href={SITE_CONFIG.social.telegram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary hover:underline"
-            >
-              Telegram
-            </a>
-            ; также можно найти нас в мессенджере Max по номеру{" "}
+            заказа. Связаться удобнее всего по телефону или через
+            мессенджер Max — добавьте в контакты номер{" "}
             <a
               href={`tel:${SITE_CONFIG.maxPhoneClean}`}
               className="text-primary hover:underline"
             >
               {SITE_CONFIG.maxPhone.replace(/-/g, " ")}
-            </a>
-            . Ответим в течение 15 минут в рабочее время.
+            </a>{" "}
+            и найдите нас в приложении. Ответим в течение 15 минут в
+            рабочее время.
           </p>
         </section>
       </div>

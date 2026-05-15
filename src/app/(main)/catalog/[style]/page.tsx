@@ -152,14 +152,21 @@ export default async function StylePage({ params }: Props) {
                 Рассчитать стоимость
               </Link>
               <a
-                href={SITE_CONFIG.social.telegram}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`tel:${SITE_CONFIG.phoneClean}`}
                 className="inline-flex items-center justify-center px-8 py-3 rounded-xl border font-medium hover:bg-accent transition-colors"
               >
-                Написать в Telegram
+                {SITE_CONFIG.phone}
               </a>
             </div>
+            <p className="text-sm text-muted-foreground mt-4">
+              Или найдите нас в Max по номеру{" "}
+              <a
+                href={`tel:${SITE_CONFIG.maxPhoneClean}`}
+                className="text-primary font-medium hover:underline"
+              >
+                {SITE_CONFIG.maxPhone.replace(/-/g, " ")}
+              </a>
+            </p>
           </div>
         </div>
 

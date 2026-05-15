@@ -21,6 +21,7 @@ import {
   Landmark,
   ArrowRight,
   Phone,
+  MessageCircle,
 } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
@@ -667,22 +668,32 @@ export default function B2BPage() {
             коммерческое предложение в течение 1–2 рабочих дней. Замер на
             вашем объекте по Твери и Тверской области.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+          <div className="flex flex-col gap-4 justify-center max-w-md mx-auto">
             <a
               href={`tel:${SITE_CONFIG.phoneClean}`}
-              className="inline-flex flex-1 items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
             >
               <Phone className="w-4 h-4" aria-hidden="true" />
               {SITE_CONFIG.phone}
             </a>
-            <a
-              href={SITE_CONFIG.social.telegram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex flex-1 items-center justify-center px-6 py-3 rounded-xl border-2 border-border font-medium hover:border-primary transition-colors"
-            >
-              Написать в Telegram
-            </a>
+            <div className="rounded-xl bg-card p-4 border border-border/40 text-left">
+              <div className="flex items-center gap-2 mb-1">
+                <MessageCircle
+                  className="w-4 h-4 text-primary"
+                  aria-hidden="true"
+                />
+                <span className="font-medium text-sm">Найдите нас в Max</span>
+              </div>
+              <a
+                href={`tel:${SITE_CONFIG.maxPhoneClean}`}
+                className="text-primary font-semibold hover:underline"
+              >
+                {SITE_CONFIG.maxPhone.replace(/-/g, " ")}
+              </a>
+              <p className="text-xs text-muted-foreground mt-1">
+                Добавьте номер в контакты и найдите нас в приложении Max
+              </p>
+            </div>
           </div>
           <p className="text-xs text-muted-foreground mt-4">
             Или напишите на{" "}

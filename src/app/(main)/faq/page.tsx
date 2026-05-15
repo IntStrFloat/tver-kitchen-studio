@@ -84,14 +84,15 @@ export default function FaqPage() {
               {SITE_CONFIG.phone}
             </a>
             <a
-              href={SITE_CONFIG.social.telegram}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`tel:${SITE_CONFIG.maxPhoneClean}`}
               className="inline-flex items-center justify-center px-8 py-3 rounded-xl border font-medium hover:bg-accent transition-colors"
             >
-              Написать в Telegram
+              Max: {SITE_CONFIG.maxPhone.replace(/-/g, " ")}
             </a>
           </div>
+          <p className="text-xs text-muted-foreground mt-4">
+            Добавьте номер Max в контакты и найдите нас в приложении
+          </p>
         </div>
       </div>
     </div>

@@ -30,7 +30,6 @@ export const SITE_CONFIG = {
     longitude: 35.9006,
   },
   social: {
-    telegram: "https://t.me/mebelshik_tver",
     vk: "https://vk.com/Kuhnitver",
     // Max: персональная ссылка на профиль требует длинного хеша из самого
     // приложения (формат max.ru/u/<HASH>) — построить по номеру нельзя.
@@ -111,10 +110,7 @@ export function generateLocalBusinessSchema() {
       { "@type": "City", name: "Бежецк" },
       { "@type": "City", name: "Нелидово" },
     ],
-    sameAs: [
-      SITE_CONFIG.social.telegram,
-      SITE_CONFIG.social.vk,
-    ],
+    sameAs: [SITE_CONFIG.social.vk],
     // aggregateRating сознательно не указан — добавим после подключения
     // Яндекс.Бизнеса/Google Business Profile, где будут реальные отзывы
     // с верифицируемыми авторами. Выдуманные значения нарушают Google
@@ -137,10 +133,7 @@ export function generateOrganizationSchema() {
       areaServed: "RU",
       availableLanguage: "Russian",
     },
-    sameAs: [
-      SITE_CONFIG.social.telegram,
-      SITE_CONFIG.social.vk,
-    ],
+    sameAs: [SITE_CONFIG.social.vk],
   };
 }
 

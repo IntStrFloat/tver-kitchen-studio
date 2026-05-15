@@ -220,7 +220,7 @@ const Quiz = () => {
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Спасибо!</h3>
                   <p className="text-muted-foreground mb-4">
-                    Мы перезвоним вам в течение 15 минут и пришлём расчёт удобным способом — Telegram, Max или SMS
+                    Мы перезвоним вам в течение 15 минут и пришлём расчёт удобным способом — Max или SMS
                   </p>
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-accent-foreground">
                     <Gift className="w-4 h-4" />
