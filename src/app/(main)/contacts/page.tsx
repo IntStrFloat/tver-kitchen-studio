@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title:
     "Контакты Kuhnitver — адрес шоурума, телефон, режим работы в Твери | Kuhnitver",
   description:
-    "Шоурум Kuhnitver: г. Тверь, ул. Коминтерна, 95, ТЦ «Мебельный». Телефон +7 903 630 29 09, email m-btd@mail.ru. Режим работы Пн-Сб 10:00–19:00. Telegram, WhatsApp для быстрой связи. Обслуживаем Тверь, Торжок, Ржев, Конаково и всю Тверскую область.",
+    "Шоурум Kuhnitver: г. Тверь, ул. Коминтерна, 95, ТЦ «Мебельный». Телефон +7 903 630 29 09, email m-btd@mail.ru. Режим работы Пн-Сб 10:00–19:00. Telegram, Max, ВКонтакте для быстрой связи. Обслуживаем Тверь, Торжок, Ржев, Конаково и всю Тверскую область.",
   keywords:
     "контакты Kuhnitver, адрес кухни Тверь, шоурум кухонь Тверь, ТЦ Мебельный Тверь, телефон кухни Тверь, кухни Тверь Telegram",
   alternates: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title:
       "Контакты Kuhnitver — адрес шоурума, телефон, режим работы в Твери | Kuhnitver",
     description:
-      "Шоурум Kuhnitver: г. Тверь, ул. Коминтерна, 95, ТЦ «Мебельный». Телефон, email, мессенджеры. Пн-Сб 10:00–19:00.",
+      "Шоурум Kuhnitver: г. Тверь, ул. Коминтерна, 95, ТЦ «Мебельный». Телефон, email, Telegram, Max, ВКонтакте. Пн-Сб 10:00–19:00.",
     url: `${SITE_CONFIG.url}/contacts`,
     siteName: "Kuhnitver",
     locale: "ru_RU",
@@ -214,9 +214,9 @@ export default function ContactsPage() {
 
             <div className="premium-card p-6">
               <div className="text-xs uppercase tracking-wide text-muted-foreground mb-3">
-                Мессенджеры
+                Мессенджеры и соцсети
               </div>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-3 mb-4">
                 <a
                   href={SITE_CONFIG.social.telegram}
                   target="_blank"
@@ -227,15 +227,6 @@ export default function ContactsPage() {
                   Telegram
                 </a>
                 <a
-                  href={SITE_CONFIG.social.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#25D366] text-white font-medium hover:opacity-90 transition-opacity"
-                >
-                  <MessageCircle className="w-4 h-4" aria-hidden="true" />
-                  WhatsApp
-                </a>
-                <a
                   href={SITE_CONFIG.social.vk}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -243,6 +234,24 @@ export default function ContactsPage() {
                 >
                   ВКонтакте
                 </a>
+              </div>
+              <div className="rounded-xl bg-secondary/50 p-4 border border-border/40">
+                <div className="flex items-center gap-2 mb-1">
+                  <MessageCircle
+                    className="w-4 h-4 text-primary"
+                    aria-hidden="true"
+                  />
+                  <span className="font-medium text-sm">Найдите нас в Max</span>
+                </div>
+                <a
+                  href={`tel:${SITE_CONFIG.maxPhoneClean}`}
+                  className="text-primary font-semibold hover:underline"
+                >
+                  {SITE_CONFIG.maxPhone.replace(/-/g, " ")}
+                </a>
+                <p className="text-xs text-muted-foreground mt-1">
+                  Добавьте номер в контакты и найдите нас в приложении Max
+                </p>
               </div>
               <p className="text-xs text-muted-foreground mt-3">
                 Отвечаем в рабочее время в течение 15 минут.
@@ -340,17 +349,15 @@ export default function ContactsPage() {
               className="text-primary hover:underline"
             >
               Telegram
-            </a>{" "}
-            или{" "}
+            </a>
+            ; также можно найти нас в мессенджере Max по номеру{" "}
             <a
-              href={SITE_CONFIG.social.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`tel:${SITE_CONFIG.maxPhoneClean}`}
               className="text-primary hover:underline"
             >
-              WhatsApp
-            </a>{" "}
-            — ответим в течение 15 минут в рабочее время.
+              {SITE_CONFIG.maxPhone.replace(/-/g, " ")}
+            </a>
+            . Ответим в течение 15 минут в рабочее время.
           </p>
         </section>
       </div>

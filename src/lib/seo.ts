@@ -13,6 +13,9 @@ export const SITE_CONFIG = {
   language: "ru",
   phone: "+7-903-630-29-09",
   phoneClean: "+79036302909",
+  // Контакт менеджера в мессенджере Max (отдельный номер от основного телефона)
+  maxPhone: "+7-915-722-00-75",
+  maxPhoneClean: "+79157220075",
   email: "m-btd@mail.ru",
   address: {
     street: "ул. Коминтерна, 95",
@@ -28,8 +31,10 @@ export const SITE_CONFIG = {
   },
   social: {
     telegram: "https://t.me/mebelshik_tver",
-    whatsapp: "https://wa.me/79036302909",
     vk: "https://vk.com/Kuhnitver",
+    // Max: персональная ссылка на профиль требует длинного хеша из самого
+    // приложения (формат max.ru/u/<HASH>) — построить по номеру нельзя.
+    // Показываем maxPhone текстом + tel:, без deep-link. См. также maxPhone.
   },
 } as const;
 
@@ -108,7 +113,6 @@ export function generateLocalBusinessSchema() {
     ],
     sameAs: [
       SITE_CONFIG.social.telegram,
-      SITE_CONFIG.social.whatsapp,
       SITE_CONFIG.social.vk,
     ],
     // aggregateRating сознательно не указан — добавим после подключения
@@ -135,7 +139,6 @@ export function generateOrganizationSchema() {
     },
     sameAs: [
       SITE_CONFIG.social.telegram,
-      SITE_CONFIG.social.whatsapp,
       SITE_CONFIG.social.vk,
     ],
   };

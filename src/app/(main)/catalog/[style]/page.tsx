@@ -152,12 +152,12 @@ export default async function StylePage({ params }: Props) {
                 Рассчитать стоимость
               </Link>
               <a
-                href={`https://wa.me/79036302909?text=Здравствуйте! Интересует кухня в стиле ${style.name}`}
+                href={SITE_CONFIG.social.telegram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-3 rounded-xl border font-medium hover:bg-accent transition-colors"
               >
-                Написать в WhatsApp
+                Написать в Telegram
               </a>
             </div>
           </div>

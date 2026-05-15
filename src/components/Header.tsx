@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Phone, MessageCircle, Menu, X } from "lucide-react";
+import { Phone, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CallbackModal from "./CallbackModal";
 
@@ -66,15 +66,6 @@ const Header = () => {
               >
                 <Phone className="w-4 h-4 text-primary" aria-hidden="true" />
                 +7 903 630 29 09
-              </a>
-              <a
-                href="https://wa.me/79036302909"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-whatsapp flex items-center justify-center text-whatsapp-foreground hover:opacity-90 transition-opacity"
-                aria-label="Написать в WhatsApp"
-              >
-                <MessageCircle className="w-5 h-5" aria-hidden="true" />
               </a>
               <Button onClick={() => setIsCallbackOpen(true)}>
                 Заказать звонок

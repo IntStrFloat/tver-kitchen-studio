@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
+import MessengerButton from "@/components/MessengerButton";
 
 export default function MainLayout({
   children,
@@ -12,7 +12,7 @@ export default function MainLayout({
       <Header />
       <main>{children}</main>
       <Footer />
-      <WhatsAppButton />
+      <MessengerButton />
     </>
   );
 }

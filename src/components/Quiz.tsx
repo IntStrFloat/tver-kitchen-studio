@@ -191,7 +191,7 @@ const Quiz = () => {
                         className="premium-input text-center"
                       />
                       <Button type="submit" size="lg" className="w-full group">
-                        Получить расчёт в WhatsApp
+                        Получить расчёт
                         <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                       </Button>
                       <p className="text-xs text-muted-foreground">
@@ -220,7 +220,7 @@ const Quiz = () => {
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Спасибо!</h3>
                   <p className="text-muted-foreground mb-4">
-                    Расчёт стоимости будет отправлен вам в WhatsApp в течение 15 минут
+                    Мы перезвоним вам в течение 15 минут и пришлём расчёт удобным способом — Telegram, Max или SMS
                   </p>
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-accent-foreground">
                     <Gift className="w-4 h-4" />
