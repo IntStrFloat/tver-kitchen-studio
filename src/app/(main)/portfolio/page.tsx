@@ -76,21 +76,24 @@ export default function PortfolioPage() {
                 index === 0 || index === 5 ? "row-span-2" : ""
               }`}
             >
-              <Link href={`/catalog/${project.styleSlug}`} className="block">
+              <Link
+                href={`/catalog/${project.styleSlug}`}
+                className="block h-full"
+              >
                 <div
-                  className={`relative ${
+                  className={`relative w-full overflow-hidden ${
                     index === 0 || index === 5
-                      ? "aspect-[3/4]"
+                      ? "aspect-square md:aspect-auto md:h-full"
                       : "aspect-square"
                   }`}
                 >
                   <Image
                     src={project.image}
                     alt={`Кухня в стиле ${project.style} — пример дизайна от Kuhnitver`}
-                    width={400}
-                    height={index === 0 || index === 5 ? 533 : 400}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
+                    sizes="(max-width: 768px) 50vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/20 to-transparent" />
                   <figcaption className="absolute bottom-0 left-0 right-0 p-4">

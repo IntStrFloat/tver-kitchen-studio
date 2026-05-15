@@ -56,18 +56,17 @@ const Portfolio = () => {
                 className="block h-full"
               >
                 <div
-                  className={`relative ${
+                  className={`relative w-full overflow-hidden ${
                     index === 0 || index === 5
-                      ? "aspect-square md:aspect-[3/4]"
+                      ? "aspect-square md:aspect-auto md:h-full"
                       : "aspect-square"
                   }`}
                 >
                   <Image
                     src={project.image}
                     alt={`Кухня в стиле ${project.style} — пример дизайна от Kuhnitver`}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    width={400}
-                    height={index === 0 || index === 5 ? 533 : 400}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     sizes="(max-width: 768px) 50vw, 33vw"
                   />
