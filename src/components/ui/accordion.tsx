@@ -42,7 +42,11 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+    // forceMount: контент всегда в DOM (важно для SEO — содержимое
+    // закрытых FAQ-аккордеонов остаётся доступно поисковым ботам).
+    // Визуальное скрытие управляется через data-state.
+    forceMount
+    className="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down data-[state=closed]:h-0"
     {...props}
   >
     <div className={cn("pb-4 pt-0", className)}>{children}</div>
