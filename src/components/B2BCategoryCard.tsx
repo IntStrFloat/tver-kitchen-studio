@@ -3,12 +3,14 @@
 import { useState, useCallback, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import type { ReactNode } from "react";
 import {
+  Check,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
   Eye,
-  MapPin,
+  Tag,
   X,
   ZoomIn,
 } from "lucide-react";
@@ -18,14 +20,19 @@ export interface B2BExample {
   title: string;
   description: string;
   image: string;
-  location: string;
+  // Тип объекта/отрасль (не конкретный адрес — чтобы не подписывать
+  // несуществующие реальные объекты под дизайн-референсами).
+  category: string;
 }
 
 export interface B2BCategory {
   title: string;
   description: string;
   features: string[];
-  icon: string;
+  // Готовый ReactNode (например, <Building2 className="..." />), а не
+  // компонент-функция — иначе Next.js ругается на передачу функции из
+  // server-component в client-component.
+  iconNode: ReactNode;
   examples: B2BExample[];
 }
 
@@ -160,8 +167,8 @@ const Lightbox = ({
                   {example.description}
                 </p>
                 <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
-                  <MapPin className="w-4 h-4" />
-                  {example.location}
+                  <Tag className="w-4 h-4" />
+                  {example.category}
                 </div>
               </div>
             </div>
@@ -238,25 +245,18 @@ const B2BCategoryCard = ({ category, index }: B2BCategoryCardProps) => {
       >
         {/* Main card content */}
         <div className="p-8">
-          <div className="text-4xl mb-4">{category.icon}</div>
+          <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-4 text-primary">
+            {category.iconNode}
+          </div>
           <h2 className="text-2xl font-bold mb-3">{category.title}</h2>
           <p className="text-muted-foreground mb-6">{category.description}</p>
           <ul className="space-y-3 mb-6">
             {category.features.map((feature, i) => (
               <li key={i} className="flex items-center gap-3">
-                <svg
+                <Check
                   className="w-5 h-5 text-primary flex-shrink-0"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
+                  aria-hidden="true"
+                />
                 <span className="text-sm">{feature}</span>
               </li>
             ))}
@@ -335,8 +335,8 @@ const B2BCategoryCard = ({ category, index }: B2BCategoryCardProps) => {
                           {example.description}
                         </p>
                         <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                          <MapPin className="w-3 h-3" />
-                          {example.location}
+                          <Tag className="w-3 h-3" />
+                          {example.category}
                         </div>
                       </div>
                     </motion.div>
