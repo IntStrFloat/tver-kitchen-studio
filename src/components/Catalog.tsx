@@ -1,72 +1,18 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CatalogModal from "./CatalogModal";
-
-const kitchens = [
-  {
-    id: 1,
-    name: "Лофт",
-    price: "",
-    image: "/images/kitchen-loft.jpg",
-    description:
-      "Индустриальный стиль с кирпичными стенами и металлическими акцентами",
-    materials: [
-      "МДФ с покрытием Soft-touch",
-      "Столешница из массива дуба",
-      "Фурнитура Blum",
-    ],
-    size: "large",
-  },
-  {
-    id: 2,
-    name: "Скандинавский",
-    price: "",
-    image: "/images/kitchen-scandi.jpg",
-    description: "Минимализм и функциональность северного дизайна",
-    materials: [
-      "Крашеный МДФ",
-      "Столешница из искусственного камня",
-      "Фурнитура Hettich",
-    ],
-    size: "medium",
-  },
-  {
-    id: 3,
-    name: "Минимализм",
-    price: "",
-    image: "/images/kitchen-modern.jpg",
-    description: "Чистые линии и скрытые системы хранения",
-    materials: [
-      "Акриловые фасады",
-      "Столешница Dekton",
-      "Системы push-to-open",
-    ],
-    size: "medium",
-  },
-  {
-    id: 4,
-    name: "Премиум",
-    price: "",
-    image: "/images/hero-kitchen.jpg",
-    description: "Эксклюзивные материалы и индивидуальный дизайн",
-    materials: [
-      "Итальянские фасады",
-      "Натуральный мрамор",
-      "Фурнитура премиум-класса",
-    ],
-    size: "medium",
-  },
-];
+import { kitchenStyles, type KitchenStyle } from "@/lib/data";
 
 const Catalog = () => {
-  const [selectedKitchen, setSelectedKitchen] = useState<
-    (typeof kitchens)[0] | null
-  >(null);
+  const [selectedKitchen, setSelectedKitchen] = useState<KitchenStyle | null>(
+    null,
+  );
 
   return (
     <section
@@ -94,68 +40,85 @@ const Catalog = () => {
           </p>
         </motion.div>
 
-        {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {kitchens.map((kitchen, index) => (
+          {kitchenStyles.map((kitchen, index) => (
             <motion.article
               key={kitchen.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`bento-item group ${kitchen.size === "large" ? "md:col-span-2 lg:col-span-1" : ""}`}
-              onClick={() => setSelectedKitchen(kitchen)}
-              role="button"
-              tabIndex={0}
-              aria-label={`Кухня ${kitchen.name}`}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                  e.preventDefault();
-                  setSelectedKitchen(kitchen);
-                }
-              }}
+              className={`bento-item group relative ${
+                kitchen.size === "large" ? "md:col-span-2 lg:col-span-1" : ""
+              }`}
             >
-              <div className="aspect-square overflow-hidden">
-                <Image
-                  src={kitchen.image}
-                  alt={`Кухня в стиле ${kitchen.name} на заказ в Твери`}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  width={600}
-                  height={600}
-                  loading="lazy"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-              </div>
-
-              {/* Content overlay */}
-              <div className="absolute inset-0 flex flex-col justify-end p-6 z-10">
-                <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-bold text-card">
-                      {kitchen.name}
-                    </h3>
-                    {kitchen.price && (
-                      <span className="px-3 py-1 rounded-full bg-card/90 text-foreground text-sm font-medium">
-                        {kitchen.price}
-                      </span>
-                    )}
-                  </div>
-                  <p className="text-card/80 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    {kitchen.description}
-                  </p>
-                  <Button
-                    variant="secondary"
-                    className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    tabIndex={-1}
-                    aria-hidden="true"
-                  >
-                    Подробнее
-                    <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
-                  </Button>
+              <Link
+                href={`/catalog/${kitchen.slug}`}
+                aria-label={`Кухни в стиле «${kitchen.name}» — подробнее`}
+                className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              >
+                <div className="aspect-square overflow-hidden">
+                  <Image
+                    src={kitchen.image}
+                    alt={`Кухня в стиле ${kitchen.name} на заказ в Твери`}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    width={600}
+                    height={600}
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
                 </div>
-              </div>
+
+                <div className="absolute inset-0 flex flex-col justify-end p-6 z-10 pointer-events-none">
+                  <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-xl font-bold text-card">
+                        {kitchen.name}
+                      </h3>
+                      {kitchen.priceFrom > 0 && (
+                        <span className="px-3 py-1 rounded-full bg-card/90 text-foreground text-sm font-medium">
+                          от {kitchen.priceFrom.toLocaleString("ru-RU")} ₽/п.м.
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-card/80 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      {kitchen.description}
+                    </p>
+                    <span className="inline-flex items-center text-card font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Подробнее
+                      <ArrowRight
+                        className="ml-2 w-4 h-4"
+                        aria-hidden="true"
+                      />
+                    </span>
+                  </div>
+                </div>
+              </Link>
+
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setSelectedKitchen(kitchen);
+                }}
+                className="absolute top-4 right-4 z-20 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-card/90 backdrop-blur-sm text-foreground text-xs font-medium opacity-0 group-hover:opacity-100 focus:opacity-100 transition-opacity duration-300 hover:bg-card"
+                aria-label={`Быстрый просмотр кухни ${kitchen.name}`}
+              >
+                <Eye className="w-3.5 h-3.5" aria-hidden="true" />
+                Быстрый просмотр
+              </button>
             </motion.article>
           ))}
+        </div>
+
+        <div className="text-center mt-10">
+          <Button asChild size="lg" variant="outline">
+            <Link href="/catalog">
+              Смотреть весь каталог кухонь
+              <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" />
+            </Link>
+          </Button>
         </div>
       </div>
 

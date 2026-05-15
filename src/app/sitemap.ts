@@ -1,94 +1,115 @@
 import type { MetadataRoute } from "next";
-import { kitchenStyles } from "@/lib/data";
-import { cities } from "@/lib/data";
-import { blogPosts } from "@/lib/data";
+import { statSync, existsSync } from "node:fs";
+import path from "node:path";
+import { kitchenStyles, cities, blogPosts } from "@/lib/data";
 
 const BASE_URL = "https://kuhnitver.ru";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+// Возвращает mtime указанных файлов (берём максимальный = самое свежее
+// изменение влияющих на страницу источников). Если файлы недоступны — now.
+function mtime(...relativePaths: string[]): Date {
+  const cwd = process.cwd();
+  let latest = 0;
+  for (const rel of relativePaths) {
+    const abs = path.join(cwd, rel);
+    if (!existsSync(abs)) continue;
+    const t = statSync(abs).mtimeMs;
+    if (t > latest) latest = t;
+  }
+  return latest > 0 ? new Date(latest) : new Date();
+}
 
-  // Основные страницы
+export default function sitemap(): MetadataRoute.Sitemap {
+  const dataFile = "src/lib/data.ts";
+  const layoutFile = "src/app/layout.tsx";
+
+  const pageMtime = (segment: string) =>
+    mtime(`src/app/(main)/${segment}/page.tsx`, dataFile, layoutFile);
+
+  const homeMtime = mtime("src/app/(main)/page.tsx", dataFile, layoutFile);
+
   const mainPages: MetadataRoute.Sitemap = [
     {
       url: BASE_URL,
-      lastModified: now,
+      lastModified: homeMtime,
       changeFrequency: "weekly",
       priority: 1.0,
     },
     {
       url: `${BASE_URL}/catalog`,
-      lastModified: now,
+      lastModified: pageMtime("catalog"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/price`,
-      lastModified: now,
+      lastModified: pageMtime("price"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${BASE_URL}/portfolio`,
-      lastModified: now,
+      lastModified: pageMtime("portfolio"),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${BASE_URL}/about`,
-      lastModified: now,
+      lastModified: pageMtime("about"),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${BASE_URL}/contacts`,
-      lastModified: now,
+      lastModified: pageMtime("contacts"),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${BASE_URL}/faq`,
-      lastModified: now,
+      lastModified: pageMtime("faq"),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${BASE_URL}/dostavka`,
-      lastModified: now,
+      lastModified: pageMtime("dostavka"),
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${BASE_URL}/blog`,
-      lastModified: now,
+      lastModified: pageMtime("blog"),
       changeFrequency: "weekly",
       priority: 0.7,
     },
     {
       url: `${BASE_URL}/b2b`,
-      lastModified: now,
+      lastModified: pageMtime("b2b"),
       changeFrequency: "monthly",
       priority: 0.8,
     },
   ];
 
-  // Страницы стилей кухонь
+  // Страницы стилей кухонь — mtime data.ts (там описания)
+  const stylesLastModified = mtime(dataFile);
   const stylePages: MetadataRoute.Sitemap = kitchenStyles.map((style) => ({
     url: `${BASE_URL}/catalog/${style.slug}`,
-    lastModified: now,
+    lastModified: stylesLastModified,
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
 
-  // Городские лендинги
+  // Городские лендинги — mtime data.ts
+  const citiesLastModified = mtime(dataFile);
   const cityPages: MetadataRoute.Sitemap = cities.map((city) => ({
     url: `${BASE_URL}/kuhni/${city.slug}`,
-    lastModified: now,
+    lastModified: citiesLastModified,
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
 
-  // Блог-посты
+  // Блог-посты: используем дату публикации поста
   const blogPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,
     lastModified: new Date(post.date),

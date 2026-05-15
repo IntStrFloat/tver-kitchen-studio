@@ -1,18 +1,21 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
-  const scrollToQuiz = () => {
-    document.getElementById("quiz")?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const scrollToCatalog = () => {
-    document.getElementById("catalog")?.scrollIntoView({ behavior: "smooth" });
-  };
+  const handleSmoothScroll =
+    (id: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+      const target = document.getElementById(id);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: "smooth" });
+        history.replaceState(null, "", `#${id}`);
+      }
+    };
 
   return (
     <section
@@ -72,18 +75,17 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <Button size="lg" onClick={scrollToQuiz} className="group">
-              Рассчитать стоимость за 1 минуту
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <Button asChild size="lg" className="group">
+              <a href="#quiz" onClick={handleSmoothScroll("quiz")}>
+                Рассчитать стоимость за 1 минуту
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={scrollToCatalog}
-              className="group"
-            >
-              <Play className="mr-2 w-5 h-5" aria-hidden="true" />
-              Смотреть каталог
+            <Button asChild size="lg" variant="outline" className="group">
+              <Link href="/catalog" onClick={handleSmoothScroll("catalog")}>
+                <Play className="mr-2 w-5 h-5" aria-hidden="true" />
+                Смотреть каталог
+              </Link>
             </Button>
           </motion.div>
 
@@ -96,18 +98,22 @@ const Hero = () => {
             aria-label="Ключевые преимущества"
           >
             {[
-              { value: "10+", label: "лет на рынке" },
-              { value: "500+", label: "проектов" },
-              { value: "1", label: "год гарантии" },
+              { value: "10+", label: "лет на рынке", href: "/about" },
+              { value: "500+", label: "проектов", href: "/portfolio" },
+              { value: "1", label: "год гарантии", href: "/faq" },
             ].map((stat, index) => (
-              <div key={index} className="text-center">
+              <Link
+                key={index}
+                href={stat.href}
+                className="text-center rounded-lg p-2 -m-2 hover:bg-primary/5 transition-colors"
+              >
                 <div className="text-2xl md:text-3xl font-bold text-primary">
                   {stat.value}
                 </div>
                 <div className="text-sm text-muted-foreground">
                   {stat.label}
                 </div>
-              </div>
+              </Link>
             ))}
           </motion.div>
         </div>

@@ -1,7 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Check, Ruler, Truck, Shield, Palette } from "lucide-react";
+import {
+  Check,
+  Ruler,
+  Truck,
+  Shield,
+  Palette,
+  MapPin,
+  Phone,
+  Clock,
+  Mail,
+} from "lucide-react";
 
 const benefits = [
   {
@@ -106,6 +116,107 @@ const About = () => {
             ))}
           </motion.div>
         </div>
+
+        {/* NAP block — Name / Address / Phone, with schema.org microdata */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mt-12 lg:mt-16 premium-card p-6 md:p-8"
+          itemScope
+          itemType="https://schema.org/LocalBusiness"
+        >
+          <meta itemProp="name" content="Kuhnitver" />
+          <meta itemProp="url" content="https://kuhnitver.ru" />
+          <meta
+            itemProp="image"
+            content="https://kuhnitver.ru/og-image.jpg"
+          />
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              className="flex items-start gap-3"
+              itemProp="address"
+              itemScope
+              itemType="https://schema.org/PostalAddress"
+            >
+              <MapPin
+                className="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                aria-hidden="true"
+              />
+              <div>
+                <div className="text-xs uppercase tracking-wide text-muted-foreground mb-1">
+                  Шоурум и производство
+                </div>
+                <div className="font-medium">
+                  <span itemProp="addressLocality">Тверь</span>,{" "}
+                  <span itemProp="streetAddress">ул. Коминтерна, 95</span>
+                </div>
+                <meta itemProp="addressRegion" content="Тверская область" />
+                <meta itemProp="postalCode" content="170000" />
+                <meta itemProp="addressCountry" content="RU" />
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <Phone
+                className="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                aria-hidden="true"
+              />
+              <div>
+                <div className="text-xs uppercase tracking-wide text-muted-foreground mb-1">
+                  Телефон
+                </div>
+                <a
+                  href="tel:+79036302909"
+                  className="font-medium hover:text-primary transition-colors"
+                  itemProp="telephone"
+                >
+                  +7 903 630 29 09
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <Mail
+                className="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                aria-hidden="true"
+              />
+              <div>
+                <div className="text-xs uppercase tracking-wide text-muted-foreground mb-1">
+                  Email
+                </div>
+                <a
+                  href="mailto:m-btd@mail.ru"
+                  className="font-medium hover:text-primary transition-colors break-all"
+                  itemProp="email"
+                >
+                  m-btd@mail.ru
+                </a>
+              </div>
+            </div>
+
+            <div
+              className="flex items-start gap-3"
+              itemProp="openingHours"
+              content="Mo-Sa 10:00-19:00"
+            >
+              <Clock
+                className="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                aria-hidden="true"
+              />
+              <div>
+                <div className="text-xs uppercase tracking-wide text-muted-foreground mb-1">
+                  Часы работы
+                </div>
+                <div className="font-medium">Пн–Сб: 10:00–19:00</div>
+                <div className="text-xs text-muted-foreground">
+                  Воскресенье — выходной
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

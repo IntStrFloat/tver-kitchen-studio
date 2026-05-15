@@ -56,8 +56,14 @@ const FAQSection = () => {
                 <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
-                  {item.answer}
+                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed [&_a]:text-primary [&_a]:underline-offset-4 [&_a:hover]:underline">
+                  {item.answerHtml ? (
+                    <span
+                      dangerouslySetInnerHTML={{ __html: item.answerHtml }}
+                    />
+                  ) : (
+                    item.answer
+                  )}
                 </AccordionContent>
               </AccordionItem>
             ))}

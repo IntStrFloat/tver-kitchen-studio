@@ -2,9 +2,13 @@ import type { Metadata } from "next";
 import Hero from "@/components/Hero";
 import Catalog from "@/components/Catalog";
 import Quiz from "@/components/Quiz";
+import Materials from "@/components/Materials";
+import OrderSteps from "@/components/OrderSteps";
 import Portfolio from "@/components/Portfolio";
 import About from "@/components/About";
+import GeoLinks from "@/components/GeoLinks";
 import FAQSection from "@/components/FAQSection";
+import SeoText from "@/components/SeoText";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
 
@@ -48,9 +52,13 @@ export default function HomePage() {
       <Hero />
       <Catalog />
       <Quiz />
+      <Materials />
+      <OrderSteps />
       <Portfolio />
       <About />
+      <GeoLinks />
       <FAQSection />
+      <SeoText />
     </div>
   );
 }
