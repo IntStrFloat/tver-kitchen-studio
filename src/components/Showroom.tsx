@@ -60,7 +60,7 @@ const Showroom = () => {
                 г. Тверь, ул. Коминтерна, 95
               </p>
               <p className="text-sm text-muted-foreground">
-                Тверская область, 170000
+                ТЦ «Мебельный» · Тверская область, 170000
               </p>
             </div>
 

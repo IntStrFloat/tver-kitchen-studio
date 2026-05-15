@@ -152,6 +152,9 @@ const About = () => {
                   <span itemProp="addressLocality">Тверь</span>,{" "}
                   <span itemProp="streetAddress">ул. Коминтерна, 95</span>
                 </div>
+                <div className="text-xs text-muted-foreground mt-0.5">
+                  ТЦ «Мебельный»
+                </div>
                 <meta itemProp="addressRegion" content="Тверская область" />
                 <meta itemProp="postalCode" content="170000" />
                 <meta itemProp="addressCountry" content="RU" />

@@ -16,6 +16,7 @@ export const SITE_CONFIG = {
   email: "m-btd@mail.ru",
   address: {
     street: "ул. Коминтерна, 95",
+    venue: "ТЦ «Мебельный»",
     locality: "Тверь",
     region: "Тверская область",
     postalCode: "170000",

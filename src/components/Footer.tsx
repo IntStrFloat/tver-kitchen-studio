@@ -96,6 +96,10 @@ const Footer = () => {
                   />
                   <span className="text-background/70">
                     г. Тверь, ул. Коминтерна, 95
+                    <br />
+                    <span className="text-background/50 text-sm">
+                      ТЦ «Мебельный»
+                    </span>
                   </span>
                 </li>
                 <li className="flex items-center gap-3">
