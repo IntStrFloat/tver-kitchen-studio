@@ -199,29 +199,33 @@ export default async function CityPage({ params }: Props) {
 
         <div className="mb-16">
           <h2 className="text-2xl font-bold text-center mb-8">
-            Реализованные проекты
+            Стилевые решения
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {projects.slice(0, 3).map((project) => (
-              <div key={project.id} className="premium-card overflow-hidden">
-                <div className="aspect-square">
+              <Link
+                key={project.id}
+                href={`/catalog/${project.styleSlug}`}
+                className="premium-card overflow-hidden block group"
+              >
+                <div className="aspect-square overflow-hidden">
                   <Image
                     src={project.image}
-                    alt={`Кухня ${project.style} — ${project.location}`}
+                    alt={`Кухня в стиле ${project.style} — пример дизайна от Kuhnitver`}
                     width={400}
                     height={400}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                     sizes="(max-width: 768px) 50vw, 33vw"
                   />
                 </div>
                 <div className="p-3">
-                  <p className="text-sm font-medium">{project.location}</p>
-                  <p className="text-xs text-muted-foreground">
-                    Стиль: {project.style}
+                  <p className="text-sm font-medium">{project.style}</p>
+                  <p className="text-xs text-muted-foreground line-clamp-2">
+                    {project.caption}
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="text-center mt-6">
@@ -229,7 +233,7 @@ export default async function CityPage({ params }: Props) {
               href="/portfolio"
               className="text-primary font-medium hover:underline"
             >
-              Смотреть все работы →
+              Смотреть все стилевые решения →
             </Link>
           </div>
         </div>

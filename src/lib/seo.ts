@@ -110,13 +110,10 @@ export function generateLocalBusinessSchema() {
       SITE_CONFIG.social.whatsapp,
       SITE_CONFIG.social.vk,
     ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "127",
-      bestRating: "5",
-      worstRating: "1",
-    },
+    // aggregateRating сознательно не указан — добавим после подключения
+    // Яндекс.Бизнеса/Google Business Profile, где будут реальные отзывы
+    // с верифицируемыми авторами. Выдуманные значения нарушают Google
+    // Rich Results guidelines и могут привести к manual action.
   };
 }
 

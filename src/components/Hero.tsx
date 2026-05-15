@@ -98,9 +98,9 @@ const Hero = () => {
             aria-label="Ключевые преимущества"
           >
             {[
-              { value: "10+", label: "лет на рынке", href: "/about" },
-              { value: "500+", label: "проектов", href: "/portfolio" },
-              { value: "1", label: "год гарантии", href: "/faq" },
+              { value: "с 2014", label: "собственное производство", href: "/about" },
+              { value: "от 20", label: "рабочих дней", href: "/about" },
+              { value: "1 год", label: "гарантии по договору", href: "/faq" },
             ].map((stat, index) => (
               <Link
                 key={index}

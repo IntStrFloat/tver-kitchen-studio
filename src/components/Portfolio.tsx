@@ -1,227 +1,99 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Star, MapPin } from "lucide-react";
-import JsonLd from "@/components/seo/JsonLd";
-import { SITE_CONFIG } from "@/lib/seo";
-
-const projects = [
-  {
-    id: 1,
-    image: "/images/kitchen-loft.jpg",
-    location: "ул. Радищева, Тверь",
-    style: "лофт",
-  },
-  {
-    id: 2,
-    image: "/images/kitchen-scandi.jpg",
-    location: "Пролетарский р-н, Тверь",
-    style: "скандинавский",
-  },
-  {
-    id: 3,
-    image: "/images/kitchen-classic.jpg",
-    location: "ул. Советская, Торжок",
-    style: "современная классика",
-  },
-  {
-    id: 4,
-    image: "/images/kitchen-modern.jpg",
-    location: "мкр. Южный, Тверь",
-    style: "минимализм",
-  },
-  {
-    id: 5,
-    image: "/images/kitchen-emerald.jpg",
-    location: "г. Конаково",
-    style: "современный",
-  },
-  {
-    id: 6,
-    image: "/images/hero-kitchen.jpg",
-    location: "ул. Горького, Ржев",
-    style: "премиум",
-  },
-];
-
-const testimonials = [
-  {
-    id: 1,
-    name: "Анна М.",
-    location: "Тверь",
-    rating: 5,
-    text: "Заказывали кухню в стиле лофт. Результат превзошёл все ожидания! Качество материалов отличное, установка заняла один день.",
-  },
-  {
-    id: 2,
-    name: "Игорь П.",
-    location: "Торжок",
-    rating: 5,
-    text: "Долго выбирали между разными производителями. Рады, что остановились на Kuhnitver. Цена-качество на высоте.",
-  },
-  {
-    id: 3,
-    name: "Елена С.",
-    location: "Конаково",
-    rating: 5,
-    text: "Эскиз проекта помог визуализировать идею. Дизайнер учёл все наши пожелания. Рекомендую!",
-  },
-];
-
-// JSON-LD для отзывов (Review schema)
-const reviewsSchema = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "@id": `${SITE_CONFIG.url}/#localbusiness`,
-  name: SITE_CONFIG.name,
-  review: testimonials.map((t) => ({
-    "@type": "Review",
-    author: {
-      "@type": "Person",
-      name: t.name,
-    },
-    reviewBody: t.text,
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue: t.rating,
-      bestRating: 5,
-      worstRating: 1,
-    },
-    datePublished:
-      t.id === 1 ? "2025-08-15" : t.id === 2 ? "2025-10-22" : "2025-12-05",
-  })),
-};
+import { ArrowRight } from "lucide-react";
+import { projects } from "@/lib/data";
 
 const Portfolio = () => {
   return (
     <section
       id="portfolio"
       className="section-padding bg-secondary/30"
-      aria-label="Портфолио и отзывы"
+      aria-label="Стилевые решения и идеи для кухонь"
     >
       <div className="container-custom">
-        {/* Reviews Schema */}
-        <JsonLd data={reviewsSchema} />
-
-        {/* Portfolio Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-10 max-w-3xl mx-auto"
         >
           <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-            Наши работы
+            Стили и направления
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Реализованные проекты
+            Стилевые решения и идеи
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Более 500 кухонь установлено в Твери и Тверской области
+          <p className="text-lg text-muted-foreground">
+            Берём за основу понравившийся стиль и адаптируем под ваши размеры,
+            планировку и материалы. Любую кухню можно сделать вашей — от
+            индустриального лофта до светлого скандинавского минимализма.
           </p>
         </motion.div>
 
-        {/* Masonry Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-16">
+        <div className="bg-background/60 backdrop-blur-sm border border-border/40 rounded-2xl p-4 md:p-5 mb-10 text-sm text-muted-foreground max-w-3xl mx-auto text-center">
+          Дизайн-референсы для иллюстрации стилей. Каждый проект уникален и
+          разрабатывается индивидуально.
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
           {projects.map((project, index) => (
             <motion.figure
               key={project.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
               className={`premium-card overflow-hidden group ${
                 index === 0 || index === 5 ? "md:row-span-2" : ""
               }`}
             >
-              <div
-                className={`relative ${index === 0 || index === 5 ? "aspect-square md:aspect-[3/4]" : "aspect-square"}`}
+              <Link
+                href={`/catalog/${project.styleSlug}`}
+                aria-label={`Кухни в стиле ${project.style} — подробнее`}
+                className="block h-full"
               >
-                <Image
-                  src={project.image}
-                  alt={`Кухня в стиле ${project.style} — ${project.location}, установка Kuhnitver`}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  width={400}
-                  height={index === 0 || index === 5 ? 533 : 400}
-                  loading="lazy"
-                  sizes="(max-width: 768px) 50vw, 33vw"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <figcaption className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <div className="flex items-center gap-2 text-card text-sm">
-                    <MapPin className="w-4 h-4" aria-hidden="true" />
-                    {project.location}
-                  </div>
-                </figcaption>
-              </div>
+                <div
+                  className={`relative ${
+                    index === 0 || index === 5
+                      ? "aspect-square md:aspect-[3/4]"
+                      : "aspect-square"
+                  }`}
+                >
+                  <Image
+                    src={project.image}
+                    alt={`Кухня в стиле ${project.style} — пример дизайна от Kuhnitver`}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    width={400}
+                    height={index === 0 || index === 5 ? 533 : 400}
+                    loading="lazy"
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent" />
+                  <figcaption className="absolute bottom-0 left-0 right-0 p-4">
+                    <p className="text-card text-base font-bold">
+                      {project.style}
+                    </p>
+                    <p className="text-card/80 text-xs mt-1 line-clamp-2">
+                      {project.caption}
+                    </p>
+                  </figcaption>
+                </div>
+              </Link>
             </motion.figure>
           ))}
         </div>
 
-        {/* Testimonials */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
-        >
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">
-            Отзывы наших клиентов
-          </h3>
-          <p className="text-muted-foreground">
-            Более 98% клиентов рекомендуют нас своим друзьям
-          </p>
-        </motion.div>
-
-        <div className="grid md:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <motion.article
-              key={testimonial.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="premium-card p-6"
-              itemScope
-              itemType="https://schema.org/Review"
-            >
-              <div
-                className="flex items-center gap-1 mb-4"
-                aria-label={`Оценка: ${testimonial.rating} из 5`}
-              >
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="w-5 h-5 fill-primary text-primary"
-                    aria-hidden="true"
-                  />
-                ))}
-              </div>
-              <blockquote
-                className="text-foreground/90 mb-4 leading-relaxed"
-                itemProp="reviewBody"
-              >
-                &laquo;{testimonial.text}&raquo;
-              </blockquote>
-              <div className="flex items-center gap-3">
-                <div
-                  className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold"
-                  aria-hidden="true"
-                >
-                  {testimonial.name[0]}
-                </div>
-                <div>
-                  <div className="font-medium" itemProp="author">
-                    {testimonial.name}
-                  </div>
-                  <div className="text-sm text-muted-foreground">
-                    {testimonial.location}
-                  </div>
-                </div>
-              </div>
-            </motion.article>
-          ))}
+        <div className="text-center">
+          <Link
+            href="/portfolio"
+            className="inline-flex items-center text-primary font-medium hover:underline"
+          >
+            Смотреть все стилевые решения
+            <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+          </Link>
         </div>
       </div>
     </section>
