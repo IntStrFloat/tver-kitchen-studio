@@ -63,11 +63,6 @@ export default function PortfolioPage() {
           </p>
         </div>
 
-        <div className="bg-secondary/30 border border-border/50 rounded-2xl p-4 md:p-5 mb-10 text-sm text-foreground/80 max-w-3xl mx-auto text-center">
-          Изображения — дизайн-референсы и стилевые направления. Фотографии
-          готовых установок появятся по мере фотосъёмки.
-        </div>
-
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-16">
           {projects.map((project, index) => (
             <figure
