@@ -34,10 +34,10 @@ const Header = () => {
             <a
               href="/"
               className="flex items-center gap-2"
-              aria-label="Kuhnitver — на главную"
+              aria-label="Кухни Тверь — на главную"
             >
               <span className="text-xl md:text-2xl font-bold text-primary">
-                Kuhnitver
+                Кухни Тверь
               </span>
             </a>
 
