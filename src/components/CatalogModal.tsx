@@ -32,7 +32,7 @@ const CatalogModal = ({ kitchen, isOpen, onClose }: CatalogModalProps) => {
     setSubmitted(true);
 
     try {
-      await fetch("/api/telegram", {
+      await fetch("/api/lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

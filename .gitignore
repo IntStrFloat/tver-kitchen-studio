@@ -28,6 +28,11 @@ dist-ssr
 .claude-secrets
 .claude-secrets.*
 
+# Env-файлы с секретами (кроме .env.example как шаблона)
+.env
+.env.*
+!.env.example
+
 # Claude Code session data
 .claude/
 

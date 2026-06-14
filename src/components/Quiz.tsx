@@ -65,7 +65,7 @@ const Quiz = () => {
     }
 
     try {
-      await fetch("/api/telegram", {
+      await fetch("/api/lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
