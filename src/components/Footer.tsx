@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Clock, Mail } from "lucide-react";
 
@@ -136,12 +137,12 @@ const Footer = () => {
                   { label: "Контакты", href: "/contacts" },
                 ].map((link) => (
                   <li key={link.href}>
-                    <a
+                    <Link
                       href={link.href}
                       className="text-background/70 hover:text-background transition-colors"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -171,12 +172,12 @@ const Footer = () => {
                 { label: "Кухни в Нелидово", href: "/kuhni/nelidovo" },
               ].map((city) => (
                 <li key={city.href}>
-                  <a
+                  <Link
                     href={city.href}
                     className="text-background/70 hover:text-background transition-colors"
                   >
                     {city.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -192,7 +193,13 @@ const Footer = () => {
         <div className="container-custom py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-background/50">
             <p>&copy; {currentYear} (Kuhnitver). Все права защищены.</p>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+              <Link
+                href="/privacy"
+                className="hover:text-background transition-colors"
+              >
+                Политика конфиденциальности
+              </Link>
               <span>Кухни на заказ в Твери и Тверской области</span>
             </div>
           </div>

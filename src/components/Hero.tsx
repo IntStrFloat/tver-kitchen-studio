@@ -3,8 +3,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, Play, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SITE_CONFIG } from "@/lib/seo";
+
+const phoneDisplay = SITE_CONFIG.phone.replace(/-/g, " ");
 
 const Hero = () => {
   const handleSmoothScroll =
@@ -88,6 +91,22 @@ const Hero = () => {
               </Link>
             </Button>
           </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="mt-5 flex items-center gap-2 text-sm md:text-base text-muted-foreground"
+          >
+            <Phone className="w-4 h-4 text-primary" aria-hidden="true" />
+            или позвоните:{" "}
+            <a
+              href={`tel:${SITE_CONFIG.phoneClean}`}
+              className="font-semibold text-primary hover:underline"
+            >
+              {phoneDisplay}
+            </a>
+          </motion.p>
 
           {/* Trust badges */}
           <motion.div

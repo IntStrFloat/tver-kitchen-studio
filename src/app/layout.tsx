@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Providers from "@/components/Providers";
+import AnalyticsListener from "@/components/AnalyticsListener";
 import Script from "next/script";
 import {
   SITE_CONFIG,
@@ -135,6 +136,7 @@ export default function RootLayout({
         */}
       </head>
       <body className="font-sans antialiased">
+        <AnalyticsListener />
         <Providers>{children}</Providers>
 
         {/* Яндекс.Метрика */}

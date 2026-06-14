@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SITE_CONFIG } from "@/lib/seo";
 import CallbackModal from "./CallbackModal";
 
 const navItems = [
@@ -15,6 +17,8 @@ const navItems = [
   { label: "О нас", href: "/about" },
   { label: "Контакты", href: "/contacts" },
 ];
+
+const phoneDisplay = SITE_CONFIG.phone.replace(/-/g, " ");
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +35,7 @@ const Header = () => {
         <div className="container-custom">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <a
+            <Link
               href="/"
               className="flex items-center gap-2"
               aria-label="Кухни Тверь — на главную"
@@ -39,7 +43,7 @@ const Header = () => {
               <span className="text-xl md:text-2xl font-bold text-primary">
                 Кухни Тверь
               </span>
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <nav
@@ -47,44 +51,53 @@ const Header = () => {
               aria-label="Основная навигация"
             >
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.href}
                   href={item.href}
                   className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200"
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
             </nav>
 
             {/* Desktop Actions */}
             <div className="hidden lg:flex items-center gap-4">
               <a
-                href="tel:+79036302909"
+                href={`tel:${SITE_CONFIG.phoneClean}`}
                 className="flex items-center gap-2 text-sm font-medium"
-                aria-label="Позвонить: +7 903 630 29 09"
+                aria-label={`Позвонить: ${phoneDisplay}`}
               >
                 <Phone className="w-4 h-4 text-primary" aria-hidden="true" />
-                +7 903 630 29 09
+                {phoneDisplay}
               </a>
               <Button onClick={() => setIsCallbackOpen(true)}>
                 Заказать звонок
               </Button>
             </div>
 
-            {/* Mobile Menu Button */}
-            <button
-              className="lg:hidden p-2"
-              onClick={() => setIsOpen(!isOpen)}
-              aria-label={isOpen ? "Закрыть меню" : "Открыть меню"}
-              aria-expanded={isOpen}
-            >
-              {isOpen ? (
-                <X className="w-6 h-6" aria-hidden="true" />
-              ) : (
-                <Menu className="w-6 h-6" aria-hidden="true" />
-              )}
-            </button>
+            {/* Mobile Actions: click-to-call + menu */}
+            <div className="flex items-center gap-1 lg:hidden">
+              <a
+                href={`tel:${SITE_CONFIG.phoneClean}`}
+                className="flex items-center justify-center w-10 h-10 rounded-full text-primary"
+                aria-label={`Позвонить: ${phoneDisplay}`}
+              >
+                <Phone className="w-5 h-5" aria-hidden="true" />
+              </a>
+              <button
+                className="p-2"
+                onClick={() => setIsOpen(!isOpen)}
+                aria-label={isOpen ? "Закрыть меню" : "Открыть меню"}
+                aria-expanded={isOpen}
+              >
+                {isOpen ? (
+                  <X className="w-6 h-6" aria-hidden="true" />
+                ) : (
+                  <Menu className="w-6 h-6" aria-hidden="true" />
+                )}
+              </button>
+            </div>
           </div>
         </div>
 
@@ -102,26 +115,26 @@ const Header = () => {
                 aria-label="Мобильная навигация"
               >
                 {navItems.map((item) => (
-                  <a
+                  <Link
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
                     className="block py-2 text-foreground/80 hover:text-primary transition-colors"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 ))}
                 <div className="pt-4 border-t space-y-3">
                   <a
-                    href="tel:+79036302909"
+                    href={`tel:${SITE_CONFIG.phoneClean}`}
                     className="flex items-center gap-2 font-medium"
-                    aria-label="Позвонить: +7 903 630 29 09"
+                    aria-label={`Позвонить: ${phoneDisplay}`}
                   >
                     <Phone
                       className="w-4 h-4 text-primary"
                       aria-hidden="true"
                     />
-                    +7 903 630 29 09
+                    {phoneDisplay}
                   </a>
                   <Button
                     onClick={() => {

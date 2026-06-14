@@ -89,6 +89,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${BASE_URL}/privacy`,
+      lastModified: pageMtime("privacy"),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
   ];
 
   // Страницы стилей кухонь — mtime data.ts (там описания)

@@ -2,8 +2,14 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, ArrowLeft, Gift, Check } from "lucide-react";
+import { ArrowRight, ArrowLeft, Gift, Check, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SITE_CONFIG } from "@/lib/seo";
+import { GOALS, trackGoal } from "@/lib/analytics";
+
+type Status = "idle" | "sending" | "success" | "error";
+
+const phoneDisplay = SITE_CONFIG.phone.replace(/-/g, " ");
 
 const steps = [
   {
@@ -42,7 +48,7 @@ const Quiz = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [phone, setPhone] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<Status>("idle");
 
   const handleSelect = (stepId: number, optionId: string) => {
     setAnswers({ ...answers, [stepId]: optionId });
@@ -53,7 +59,7 @@ const Quiz = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setStatus("sending");
 
     const answerLabels: Record<string, string> = {};
     for (const step of steps) {
@@ -65,7 +71,7 @@ const Quiz = () => {
     }
 
     try {
-      await fetch("/api/lead", {
+      const res = await fetch("/api/lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -74,8 +80,13 @@ const Quiz = () => {
           details: answerLabels,
         }),
       });
+
+      if (!res.ok) throw new Error(`Request failed: ${res.status}`);
+
+      trackGoal(GOALS.quizLead);
+      setStatus("success");
     } catch {
-      // не блокируем UX при ошибке отправки
+      setStatus("error");
     }
   };
 
@@ -123,8 +134,54 @@ const Quiz = () => {
           {/* Quiz Card */}
           <div className="premium-card p-6 md:p-10">
             <AnimatePresence mode="wait">
-              {!submitted ? (
-                currentStep < steps.length ? (
+              {status === "success" ? (
+                <motion.div
+                  key="success"
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  className="text-center py-8"
+                >
+                  <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center mx-auto mb-6">
+                    <Check className="w-10 h-10 text-primary-foreground" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">Спасибо!</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Мы перезвоним вам в течение 15 минут и пришлём расчёт удобным способом — Max или SMS
+                  </p>
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-accent-foreground">
+                    <Gift className="w-4 h-4" />
+                    <span className="text-sm font-medium">Мы скоро свяжемся с вами!</span>
+                  </div>
+                </motion.div>
+              ) : status === "error" ? (
+                <motion.div
+                  key="error"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-center py-8"
+                >
+                  <div className="w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center mx-auto mb-4">
+                    <Phone className="w-8 h-8 text-destructive" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">Не удалось отправить</h3>
+                  <p className="text-muted-foreground mb-6 max-w-sm mx-auto">
+                    Что-то пошло не так. Позвоните нам напрямую — рассчитаем стоимость по телефону.
+                  </p>
+                  <a
+                    href={`tel:${SITE_CONFIG.phoneClean}`}
+                    className="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl bg-primary text-primary-foreground font-semibold"
+                  >
+                    <Phone className="w-5 h-5" />
+                    Позвонить {phoneDisplay}
+                  </a>
+                  <button
+                    onClick={() => setStatus("idle")}
+                    className="block mx-auto mt-4 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    Попробовать ещё раз
+                  </button>
+                </motion.div>
+              ) : currentStep < steps.length ? (
                   <motion.div
                     key={currentStep}
                     initial={{ opacity: 0, x: 20 }}
@@ -190,12 +247,31 @@ const Quiz = () => {
                         required
                         className="premium-input text-center"
                       />
-                      <Button type="submit" size="lg" className="w-full group">
-                        Получить расчёт
-                        <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                      <Button
+                        type="submit"
+                        size="lg"
+                        className="w-full group"
+                        disabled={status === "sending"}
+                      >
+                        {status === "sending" ? (
+                          "Отправляем…"
+                        ) : (
+                          <>
+                            Получить расчёт
+                            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                          </>
+                        )}
                       </Button>
                       <p className="text-xs text-muted-foreground">
-                        Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
+                        Нажимая кнопку, вы соглашаетесь с{" "}
+                        <a
+                          href="/privacy"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline"
+                        >
+                          политикой конфиденциальности
+                        </a>
                       </p>
                     </form>
 
@@ -208,26 +284,7 @@ const Quiz = () => {
                     </button>
                   </motion.div>
                 )
-              ) : (
-                <motion.div
-                  key="success"
-                  initial={{ scale: 0.8, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  className="text-center py-8"
-                >
-                  <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center mx-auto mb-6">
-                    <Check className="w-10 h-10 text-primary-foreground" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-2">Спасибо!</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Мы перезвоним вам в течение 15 минут и пришлём расчёт удобным способом — Max или SMS
-                  </p>
-                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-accent-foreground">
-                    <Gift className="w-4 h-4" />
-                    <span className="text-sm font-medium">Мы скоро свяжемся с вами!</span>
-                  </div>
-                </motion.div>
-              )}
+              }
             </AnimatePresence>
           </div>
         </motion.div>
