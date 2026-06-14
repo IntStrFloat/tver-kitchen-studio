@@ -1,5 +1,3 @@
-import nodemailer, { type Transporter } from "nodemailer";
-
 export interface LeadInput {
   phone: string;
   name?: string;
@@ -8,34 +6,26 @@ export interface LeadInput {
 }
 
 interface MailConfig {
-  host?: string;
-  port: number;
-  secure: boolean;
-  user?: string;
-  pass?: string;
-  from?: string;
+  apiKey?: string;
+  fromEmail?: string;
+  fromName: string;
   to: string[];
 }
 
+// Хостер блокирует исходящий SMTP (порты 25/465/587/2525), поэтому письма
+// отправляются через HTTP-API Brevo по порту 443.
+const BREVO_ENDPOINT = "https://api.brevo.com/v3/smtp/email";
+
 /**
- * Читает SMTP-конфигурацию из переменных окружения при каждом вызове,
+ * Читает конфигурацию из переменных окружения при каждом вызове,
  * чтобы значения, заданные systemd (EnvironmentFile) на проде, всегда
  * подхватывались актуальными.
  */
 function getConfig(): MailConfig {
-  const port = process.env.SMTP_PORT ? Number(process.env.SMTP_PORT) : 465;
-  const user = process.env.SMTP_USER;
   return {
-    host: process.env.SMTP_HOST,
-    port,
-    // SMTP_SECURE опционален: по умолчанию true для 465 (implicit TLS),
-    // false для 587 (STARTTLS).
-    secure: process.env.SMTP_SECURE
-      ? process.env.SMTP_SECURE.toLowerCase() === "true"
-      : port === 465,
-    user,
-    pass: process.env.SMTP_PASS,
-    from: process.env.MAIL_FROM || user,
+    apiKey: process.env.BREVO_API_KEY,
+    fromEmail: process.env.MAIL_FROM,
+    fromName: process.env.MAIL_FROM_NAME || "Кухни Тверь — заявки с сайта",
     to: (process.env.MAIL_TO ?? "")
       .split(",")
       .map((s) => s.trim())
@@ -46,22 +36,7 @@ function getConfig(): MailConfig {
 /** Проверяет, что заданы все обязательные переменные для отправки почты. */
 export function isMailConfigured(): boolean {
   const c = getConfig();
-  return Boolean(c.host && c.user && c.pass && c.from && c.to.length);
-}
-
-let transporter: Transporter | null = null;
-
-function getTransporter(): Transporter {
-  if (!transporter) {
-    const c = getConfig();
-    transporter = nodemailer.createTransport({
-      host: c.host,
-      port: c.port,
-      secure: c.secure,
-      auth: { user: c.user, pass: c.pass },
-    });
-  }
-  return transporter;
+  return Boolean(c.apiKey && c.fromEmail && c.to.length);
 }
 
 function escapeHtml(value: string): string {
@@ -147,16 +122,31 @@ function buildHtml(lead: LeadInput, timestamp: string): string {
 </html>`;
 }
 
-/** Отправляет заявку на почту, заданную в MAIL_TO. */
+/** Отправляет заявку через HTTP-API Brevo на адреса из MAIL_TO. */
 export async function sendLeadEmail(lead: LeadInput): Promise<void> {
   const c = getConfig();
   const timestamp = formatTimestamp();
 
-  await getTransporter().sendMail({
-    from: c.from,
-    to: c.to,
-    subject: `Новая заявка с сайта — ${lead.source}`,
-    text: buildText(lead, timestamp),
-    html: buildHtml(lead, timestamp),
+  const res = await fetch(BREVO_ENDPOINT, {
+    method: "POST",
+    headers: {
+      "api-key": c.apiKey as string,
+      "content-type": "application/json",
+      accept: "application/json",
+    },
+    body: JSON.stringify({
+      sender: { email: c.fromEmail, name: c.fromName },
+      to: c.to.map((email) => ({ email })),
+      subject: `Новая заявка с сайта — ${lead.source}`,
+      htmlContent: buildHtml(lead, timestamp),
+      textContent: buildText(lead, timestamp),
+    }),
+    // Быстрый отказ вместо зависания запроса, если API недоступен.
+    signal: AbortSignal.timeout(15000),
   });
+
+  if (!res.ok) {
+    const body = await res.text().catch(() => "");
+    throw new Error(`Brevo API ${res.status}: ${body.slice(0, 500)}`);
+  }
 }

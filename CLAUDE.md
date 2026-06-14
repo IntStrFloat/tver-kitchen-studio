@@ -28,7 +28,7 @@ set -a; source .claude-secrets; set +a
 |---|---|
 | Код | `/var/www/tver-kitchen-studio` (origin = github.com/IntStrFloat/tver-kitchen-studio) |
 | Next.js process | systemd-юнит `tver-kitchen-studio.service`, `next start -H 127.0.0.1 -p 3000` |
-| Env-файл | `/etc/tver-kitchen-studio.env` (chmod 600, читается systemd через `EnvironmentFile=-`) — сюда класть SMTP-переменные формы заявок (`SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASS`, `MAIL_TO`, опц. `SMTP_SECURE`, `MAIL_FROM`); полный список — в `.env.example` |
+| Env-файл | `/etc/tver-kitchen-studio.env` (chmod 600, читается systemd через `EnvironmentFile=-`) — сюда класть переменные формы заявок (`BREVO_API_KEY`, `MAIL_FROM`, `MAIL_TO`, опц. `MAIL_FROM_NAME`); полный список — в `.env.example` |
 | nginx | `/etc/nginx/sites-available/kuhnitver.ru` (symlink в `sites-enabled/`), `default` site удалён |
 | TLS | Let's Encrypt, `/etc/letsencrypt/live/kuhnitver.ru/`, домены `kuhnitver.ru` + `www.kuhnitver.ru`, ECDSA, истекает 2026-08-13, автообновление через `certbot.timer` |
 | Firewall | ufw активен: OpenSSH (22), Nginx Full (80, 443) |
@@ -48,7 +48,7 @@ journalctl -u tver-kitchen-studio -n 50 --no-pager
 
 ### Известные TODO
 
-- В `/etc/tver-kitchen-studio.env` пока пусто — форма заявок (`/api/lead`) вернёт 503 (`Mail not configured`), пока не зададим SMTP-переменные (см. `.env.example`) и не сделаем `systemctl restart tver-kitchen-studio`. Письма уходят на адреса из `MAIL_TO`.
+- Форма заявок (`/api/lead`) шлёт письма через HTTP-API **Brevo** (порт 443), т.к. хостер блокирует исходящий SMTP (порты 25/465/587/2525 закрыты, проверено). Пока в `/etc/tver-kitchen-studio.env` не заданы `BREVO_API_KEY`, `MAIL_FROM`, `MAIL_TO` (см. `.env.example`) и не сделан `systemctl restart tver-kitchen-studio`, роут вернёт 503 (`Mail not configured`). `MAIL_FROM` должен быть подтверждённым отправителем в Brevo.
 - Парольный SSH всё ещё включён — рекомендую переход на SSH-ключи (см. ниже).
 
 ### Подключение через bash (Windows / Git Bash)

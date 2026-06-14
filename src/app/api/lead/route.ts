@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isMailConfigured, sendLeadEmail } from "@/lib/mailer";
 
-// nodemailer требует Node.js-рантайм (не Edge).
 export const runtime = "nodejs";
 
 export async function POST(req: NextRequest) {
@@ -23,7 +22,7 @@ export async function POST(req: NextRequest) {
 
     if (!isMailConfigured()) {
       console.error(
-        "[lead] SMTP не настроен — задайте SMTP_HOST, SMTP_USER, SMTP_PASS, MAIL_TO",
+        "[lead] Почта не настроена — задайте BREVO_API_KEY, MAIL_FROM, MAIL_TO",
       );
       return NextResponse.json({ error: "Mail not configured" }, { status: 503 });
     }
