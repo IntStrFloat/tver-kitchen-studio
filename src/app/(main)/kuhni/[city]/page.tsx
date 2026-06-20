@@ -23,15 +23,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Кухни на заказ ${city.nameIn} от производителя — доставка и установка | Kuhnitver`,
     description: `Кухни на заказ ${city.nameIn} от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка ${city.nameIn} — ${city.deliveryCost === "Бесплатно" ? "бесплатно" : city.deliveryCost}, срок ${city.deliveryTime}. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено.`,
-    keywords: `кухни на заказ ${city.name}, купить кухню ${city.nameIn}, кухни ${city.name} цены, кухонный гарнитур ${city.name}, кухни от производителя ${city.name}, доставка кухни ${city.name}`,
+    keywords: `кухни на заказ ${city.name}, кухни на заказ ${city.nameIn}, кухни ${city.name} цены, кухонный гарнитур ${city.name}, кухни от производителя ${city.name}, доставка кухни ${city.name}`,
     alternates: {
       canonical: `${SITE_CONFIG.url}/kuhni/${city.slug}`,
     },
     openGraph: {
       type: "website",
       title: `Кухни на заказ ${city.nameIn} от производителя`,
-      description: `Производство кухонь на заказ с доставкой ${city.nameIn}.  (Kuhnitver).`,
+      description: `Производство кухонь на заказ с доставкой и установкой ${city.nameIn}. Собственное производство Kuhnitver в Твери, гарантия 1 год.`,
       url: `${SITE_CONFIG.url}/kuhni/${city.slug}`,
+      // Next.js сливает openGraph поверхностно: если задан свой блок без
+      // images, картинка из layout НЕ наследуется. Поэтому указываем явно —
+      // иначе у восьми гео-лендингов не было бы og:image в сниппете/при шеринге.
+      images: [
+        {
+          url: SITE_CONFIG.defaultOgImage,
+          width: 1200,
+          height: 630,
+          alt: `Кухни на заказ ${city.nameIn} — Kuhnitver`,
+        },
+      ],
     },
   };
 }
@@ -41,29 +52,37 @@ export default async function CityPage({ params }: Props) {
   const city = cities.find((c) => c.slug === slug);
   if (!city) notFound();
 
-  const localBusinessSchema = {
+  // Городская страница описывает УСЛУГУ (производство и доставка кухонь),
+  // которую оказывает наш единственный физический бизнес в Твери, а не
+  // отдельную «организацию в этом городе». Поэтому используем Service с
+  // provider → канонический #localbusiness (он же в layout/contacts с полным
+  // адресом в Твери) и areaServed → город. Так гео-сигнал остаётся, но мы не
+  // плодим восемь LocalBusiness с одним брендом и телефоном без реального
+  // адреса — для Яндекса такие карточки выглядят недостоверными (фрагментация
+  // NAP), а добросовестность компании — отдельный фактор ранжирования.
+  const cityServiceSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    name: `Kuhnitver — кухни на заказ ${city.nameIn}`,
-    description: `Производство и доставка кухонь на заказ ${city.nameIn}. Собственное производство в Твери, европейские материалы.`,
+    "@type": "Service",
+    name: `Кухни на заказ ${city.nameIn} — производство, доставка и установка`,
+    description: `Производство кухонь на заказ с доставкой и установкой ${city.nameIn}. Собственное производство в Твери, европейские материалы, гарантия 1 год.`,
+    serviceType: "Производство кухонь на заказ",
     url: `${SITE_CONFIG.url}/kuhni/${city.slug}`,
-    telephone: SITE_CONFIG.phone,
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: city.name,
-      addressRegion: "Тверская область",
-      addressCountry: "RU",
+    provider: {
+      "@type": "LocalBusiness",
+      "@id": `${SITE_CONFIG.url}/#localbusiness`,
+      name: SITE_CONFIG.name,
+      telephone: SITE_CONFIG.phone,
+      url: SITE_CONFIG.url,
     },
     areaServed: {
       "@type": "City",
       name: city.name,
     },
-    priceRange: "$$",
   };
 
   return (
     <div className="min-h-screen pt-24">
-      <JsonLd data={localBusinessSchema} />
+      <JsonLd data={cityServiceSchema} />
 
       <div className="container-custom">
         <Breadcrumbs
