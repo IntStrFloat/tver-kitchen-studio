@@ -53,6 +53,7 @@ function validateDataset(dataset, manifestDirectory) {
   const cases = requireArray(dataset, "cases");
   if (products.length < MINIMUM_RECORDS) fail(`At least ${MINIMUM_RECORDS} products are required`);
   if (rooms.length < MINIMUM_RECORDS) fail(`At least ${MINIMUM_RECORDS} rooms are required`);
+  if (cases.length < MINIMUM_RECORDS) fail(`At least ${MINIMUM_RECORDS} cases are required`);
 
   const productIds = collectIds(products, "Product");
   const roomIds = collectIds(rooms, "Room");
@@ -69,9 +70,19 @@ function validateDataset(dataset, manifestDirectory) {
     requirePrivateFile(manifestDirectory, room.image);
     requirePrivateFile(manifestDirectory, room.mask);
   }
+  const coveredProducts = new Set();
+  const coveredRooms = new Set();
   for (const item of cases) {
     if (!productIds.has(item.productId)) fail(`Case ${item.id} references unknown product: ${item.productId}`);
     if (!roomIds.has(item.roomId)) fail(`Case ${item.id} references unknown room: ${item.roomId}`);
+    coveredProducts.add(item.productId);
+    coveredRooms.add(item.roomId);
+  }
+  for (const productId of productIds) {
+    if (!coveredProducts.has(productId)) fail(`Product ${productId} is not covered by a case`);
+  }
+  for (const roomId of roomIds) {
+    if (!coveredRooms.has(roomId)) fail(`Room ${roomId} is not covered by a case`);
   }
   return { products: products.length, rooms: rooms.length, cases: cases.length };
 }

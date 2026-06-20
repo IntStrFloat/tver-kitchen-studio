@@ -149,6 +149,13 @@ test("requires at least 30 rooms", () => {
   }, /At least 30 rooms are required/);
 });
 
+test("requires at least 30 cases", () => {
+  assertFailure((dataset) => {
+    dataset.cases.pop();
+    return dataset;
+  }, /At least 30 cases are required/);
+});
+
 test("requires at least two product references", () => {
   assertFailure((dataset) => {
     dataset.products[0].references.pop();
@@ -161,6 +168,20 @@ test("rejects case links to unknown records", () => {
     dataset.cases[0].roomId = "room-missing";
     return dataset;
   }, /Case case-001 references unknown room: room-missing/);
+});
+
+test("requires every product to appear in a case", () => {
+  assertFailure((dataset) => {
+    dataset.cases[0].productId = dataset.products[1].id;
+    return dataset;
+  }, /Product product-001 is not covered by a case/);
+});
+
+test("requires every room to appear in a case", () => {
+  assertFailure((dataset) => {
+    dataset.cases[0].roomId = dataset.rooms[1].id;
+    return dataset;
+  }, /Room room-001 is not covered by a case/);
 });
 
 test("rejects groups outside the approved four", () => {
