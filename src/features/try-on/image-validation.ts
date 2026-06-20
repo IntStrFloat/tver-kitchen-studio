@@ -33,13 +33,7 @@ export function validateImageSignature(
   type: string,
 ): ImageSignatureValidationResult {
   // This screens known container signatures only; callers still need a real image decoder.
-  const isJpeg = type === "image/jpeg"
-    && bytes.length >= 4
-    && bytes[0] === 0xff
-    && bytes[1] === 0xd8
-    && bytes[2] === 0xff
-    && bytes[3] !== 0x00
-    && bytes[3] !== 0xff;
+  const isJpeg = type === "image/jpeg" && isJpegSignature(bytes);
 
   const isWebP = type === "image/webp"
     && bytes.length >= 16
@@ -56,6 +50,19 @@ export function validateImageSignature(
   return isJpeg || isWebP
     ? { ok: true }
     : { ok: false, code: "signature" };
+}
+
+function isJpegSignature(bytes: Uint8Array): boolean {
+  if (bytes[0] !== 0xff || bytes[1] !== 0xd8 || bytes[2] !== 0xff) {
+    return false;
+  }
+
+  let markerIndex = 3;
+  while (bytes[markerIndex] === 0xff) {
+    markerIndex += 1;
+  }
+
+  return markerIndex < bytes.length && bytes[markerIndex] !== 0x00;
 }
 
 function isWebPChunk(bytes: Uint8Array): boolean {
