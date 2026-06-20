@@ -71,3 +71,17 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+## AI furniture try-on release gate
+
+`/primerka` is a Phase 1 development shell. Its API returns `503` in production
+until Phase 2 selects and integrates a real provider; `TRY_ON_PROVIDER=fake` is
+local development only and is rejected in production.
+
+The implementation and release requirements are tracked in the [design](docs/superpowers/specs/2026-06-20-ai-furniture-try-on-design.md), [Phase 1 plan](docs/superpowers/plans/2026-06-20-ai-furniture-try-on-phase-1.md), and pending [provider ADR](docs/decisions/ai-image-provider.md).
+
+Phase 2 must not be planned or implemented until all external gates are met:
+
+- A real benchmark dataset contains at least 30 products and 30 rooms.
+- At least two reviewers complete the blinded benchmark and the provider ADR records the decision.
+- The selected provider, object storage, 24-hour deletion process, and data-processing terms are defined.
