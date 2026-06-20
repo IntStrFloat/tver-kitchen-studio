@@ -8,13 +8,15 @@ import {
 
 const STORAGE_KEY = "kuhnitver.try-on.v1";
 
+export type TryOnError = NonNullable<TryOnJobView["errorCode"]>;
+
 export interface TryOnState {
   step: TryOnStep;
   productId: string | null;
   photoPreviewUrl: string | null;
   mask: PlacementMask | null;
   jobId: string | null;
-  error: TryOnJobView["errorCode"] | null;
+  error: TryOnError | null;
 }
 
 export type TryOnAction =
@@ -23,7 +25,7 @@ export type TryOnAction =
   | { type: "set-mask"; mask: PlacementMask }
   | { type: "job-created"; jobId: string }
   | { type: "job-succeeded"; jobId: string }
-  | { type: "job-failed"; jobId: string; error: TryOnJobView["errorCode"] }
+  | { type: "job-failed"; jobId: string; error?: TryOnError }
   | { type: "restart" }
   | { type: "back" };
 
@@ -45,7 +47,7 @@ export function reduceTryOn(state: TryOnState, action: TryOnAction): TryOnState 
         productId: action.productId,
       };
     case "set-photo":
-      if (state.productId === null) return state;
+      if (state.step !== "photo" || state.productId === null) return state;
       return {
         ...state,
         step: "mask",
@@ -55,10 +57,15 @@ export function reduceTryOn(state: TryOnState, action: TryOnAction): TryOnState 
         error: null,
       };
     case "set-mask":
-      if (state.productId === null || state.photoPreviewUrl === null) return state;
+      if (state.step !== "mask" || state.productId === null || state.photoPreviewUrl === null) return state;
       return { ...state, step: "mask", mask: action.mask };
     case "job-created":
-      if (state.productId === null || state.photoPreviewUrl === null || state.mask === null) return state;
+      if (
+        state.step !== "mask"
+        || state.productId === null
+        || state.photoPreviewUrl === null
+        || state.mask === null
+      ) return state;
       return { ...state, step: "generating", jobId: action.jobId, error: null };
     case "job-succeeded":
       if (state.step !== "generating" || state.productId === null || state.jobId !== action.jobId) return state;

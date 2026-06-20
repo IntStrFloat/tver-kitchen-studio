@@ -50,11 +50,30 @@ test("job-succeeded reaches result for the current job", () => {
   assert.equal(state.error, null);
 });
 
-test("invalid and out-of-order actions preserve object identity", () => {
-  const withoutProduct = reduceTryOn(initialTryOnState, { type: "set-photo", previewUrl: "blob:x" });
-  assert.strictEqual(withoutProduct, initialTryOnState);
+test("step-guarded editing actions preserve identity outside their allowed step", () => {
+  const photo = reduceTryOn(initialTryOnState, { type: "select-product", productId: "table-1" });
+  const awaitingMask = reduceTryOn(photo, { type: "set-photo", previewUrl: "blob:private-photo" });
+  const maskReady = reduceTryOn(awaitingMask, { type: "set-mask", mask });
+  const generating = reduceTryOn(maskReady, { type: "job-created", jobId: "job-1" });
+  const result = reduceTryOn(generating, { type: "job-succeeded", jobId: "job-1" });
 
+  for (const state of [initialTryOnState, awaitingMask, generating, result]) {
+    assert.strictEqual(reduceTryOn(state, { type: "set-photo", previewUrl: "blob:stale" }), state);
+  }
+
+  for (const state of [initialTryOnState, photo, generating, result]) {
+    assert.strictEqual(reduceTryOn(state, { type: "set-mask", mask }), state);
+  }
+
+  for (const state of [initialTryOnState, photo, generating, result]) {
+    assert.strictEqual(reduceTryOn(state, { type: "job-created", jobId: "stale-job" }), state);
+  }
+});
+
+test("stale job callbacks preserve object identity", () => {
   const generating = reduceTryOn(readyState(), { type: "job-created", jobId: "job-1" });
+  const result = reduceTryOn(generating, { type: "job-succeeded", jobId: "job-1" });
+
   assert.strictEqual(
     reduceTryOn(generating, { type: "job-succeeded", jobId: "other-job" }),
     generating,
@@ -63,20 +82,29 @@ test("invalid and out-of-order actions preserve object identity", () => {
     reduceTryOn(generating, { type: "job-failed", jobId: "other-job", error: "invalid_image" }),
     generating,
   );
+  assert.strictEqual(
+    reduceTryOn(result, { type: "job-failed", jobId: "job-1", error: "provider_timeout" }),
+    result,
+  );
 });
 
 test("job failure stays generating and normalizes a missing error", () => {
   const generating = reduceTryOn(readyState(), { type: "job-created", jobId: "job-1" });
-  const failed = reduceTryOn(generating, { type: "job-failed", jobId: "job-1", error: undefined });
+  const failed = reduceTryOn(generating, { type: "job-failed", jobId: "job-1" });
 
   assert.equal(failed.step, "generating");
   assert.equal(failed.error, "provider_failed");
 });
 
-test("back clears downstream state and restart returns the initial state", () => {
+test("back and restart clear downstream job state", () => {
   const generating = reduceTryOn(readyState(), { type: "job-created", jobId: "job-1" });
-  const maskState = reduceTryOn(generating, { type: "back" });
-  assert.deepEqual(maskState, { ...generating, step: "mask", jobId: null, error: null });
+  const failed = reduceTryOn(generating, {
+    type: "job-failed",
+    jobId: "job-1",
+    error: "provider_timeout",
+  });
+  const maskState = reduceTryOn(failed, { type: "back" });
+  assert.deepEqual(maskState, { ...failed, step: "mask", jobId: null, error: null });
 
   const photoState = reduceTryOn(maskState, { type: "back" });
   assert.equal(photoState.step, "photo");
@@ -84,7 +112,22 @@ test("back clears downstream state and restart returns the initial state", () =>
 
   const productState = reduceTryOn(photoState, { type: "back" });
   assert.deepEqual(productState, initialTryOnState);
-  assert.strictEqual(reduceTryOn(generating, { type: "restart" }), initialTryOnState);
+  assert.strictEqual(reduceTryOn(failed, { type: "restart" }), initialTryOnState);
+});
+
+test("select-product clears stale photo, mask, job, and error state", () => {
+  const generating = reduceTryOn(readyState(), { type: "job-created", jobId: "job-1" });
+  const failed = reduceTryOn(generating, {
+    type: "job-failed",
+    jobId: "job-1",
+    error: "invalid_image",
+  });
+
+  assert.deepEqual(reduceTryOn(failed, { type: "select-product", productId: "chair-2" }), {
+    ...initialTryOnState,
+    step: "photo",
+    productId: "chair-2",
+  });
 });
 
 test("saveSession persists only the versioned progress allowlist", () => {
