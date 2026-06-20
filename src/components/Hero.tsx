@@ -22,7 +22,7 @@ const Hero = () => {
 
   return (
     <section
-      className="relative min-h-screen flex items-center pt-20"
+      className="relative min-h-[600px] md:min-h-[680px] lg:min-h-screen flex items-center pt-24 pb-14 lg:pt-20 lg:pb-0"
       aria-label="Главный баннер"
     >
       {/* Background Image with fixed dimensions to prevent CLS */}
@@ -30,13 +30,15 @@ const Hero = () => {
         <Image
           src="/images/hero-kitchen.jpg"
           alt="Современная кухня на заказ в интерьере — производство Kuhnitver в Твери"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-[68%_center] lg:object-center"
           width={1920}
           height={1080}
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-transparent" />
+        {/* Моб.: вертикальный градиент — текст читается сверху на светлом, фото
+            раскрывается ниже. Десктоп (lg): прежний градиент слева направо. */}
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/85 to-background/35 lg:bg-gradient-to-r lg:from-background/95 lg:via-background/70 lg:to-transparent" />
       </div>
 
       {/* Content */}
@@ -78,13 +80,22 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <Button asChild size="lg" className="group">
+            <Button
+              asChild
+              size="lg"
+              className="group w-full sm:w-auto whitespace-normal text-center"
+            >
               <a href="#quiz" onClick={handleSmoothScroll("quiz")}>
                 Рассчитать стоимость за 1 минуту
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="ml-2 w-5 h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="group">
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="group w-full sm:w-auto"
+            >
               <Link href="/catalog" onClick={handleSmoothScroll("catalog")}>
                 <Play className="mr-2 w-5 h-5" aria-hidden="true" />
                 Смотреть каталог

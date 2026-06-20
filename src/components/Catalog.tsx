@@ -69,22 +69,27 @@ const Catalog = () => {
                   />
                 </div>
 
+                {/* Постоянный градиент снизу: на тач-устройствах нет hover,
+                    поэтому затемнение под текстом нужно всегда — иначе белый
+                    заголовок не читается на светлых фото (скандинавский, белая). */}
+                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/70 via-black/25 to-transparent z-[5] pointer-events-none" />
+
                 <div className="absolute inset-0 flex flex-col justify-end p-6 z-10 pointer-events-none">
-                  <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                    <div className="flex items-center justify-between mb-2">
-                      <h3 className="text-xl font-bold text-card">
+                  <div className="transform lg:translate-y-4 lg:group-hover:translate-y-0 transition-transform duration-300">
+                    <div className="flex items-center justify-between gap-2 mb-2">
+                      <h3 className="text-xl font-bold text-card drop-shadow-sm">
                         {kitchen.name}
                       </h3>
                       {kitchen.priceFrom > 0 && (
-                        <span className="px-3 py-1 rounded-full bg-card/90 text-foreground text-sm font-medium">
+                        <span className="flex-shrink-0 px-3 py-1 rounded-full bg-card/90 text-foreground text-sm font-medium">
                           от {kitchen.priceFrom.toLocaleString("ru-RU")} ₽/п.м.
                         </span>
                       )}
                     </div>
-                    <p className="text-card/80 text-sm mb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="text-card/90 text-sm mb-4 hidden lg:block lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                       {kitchen.description}
                     </p>
-                    <span className="inline-flex items-center text-card font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span className="inline-flex items-center text-card font-medium text-sm opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                       Подробнее
                       <ArrowRight
                         className="ml-2 w-4 h-4"
