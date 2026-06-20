@@ -28,7 +28,7 @@ set -a; source .claude-secrets; set +a
 |---|---|
 | Код | `/var/www/tver-kitchen-studio` (origin = github.com/IntStrFloat/tver-kitchen-studio) |
 | Next.js process | systemd-юнит `tver-kitchen-studio.service`, `next start -H 127.0.0.1 -p 3000` |
-| Env-файл | `/etc/tver-kitchen-studio.env` (chmod 600, читается systemd через `EnvironmentFile=-`) — сюда класть переменные формы заявок (`BREVO_API_KEY`, `MAIL_FROM`, `MAIL_TO`, опц. `MAIL_FROM_NAME`); полный список — в `.env.example` |
+| Env-файл | `/etc/tver-kitchen-studio.env` (chmod 600, читается systemd через `EnvironmentFile=-`) — сейчас форме заявок серверные переменные НЕ нужны (см. TODO ниже); файл оставлен для будущих нужд |
 | nginx | `/etc/nginx/sites-available/kuhnitver.ru` (symlink в `sites-enabled/`), `default` site удалён |
 | TLS | Let's Encrypt, `/etc/letsencrypt/live/kuhnitver.ru/`, домены `kuhnitver.ru` + `www.kuhnitver.ru`, ECDSA, истекает 2026-08-13, автообновление через `certbot.timer` |
 | Firewall | ufw активен: OpenSSH (22), Nginx Full (80, 443) |
@@ -48,7 +48,7 @@ journalctl -u tver-kitchen-studio -n 50 --no-pager
 
 ### Известные TODO
 
-- Форма заявок (`/api/lead`) шлёт письма через HTTP-API **Brevo** (порт 443), т.к. хостер блокирует исходящий SMTP (порты 25/465/587/2525 закрыты, проверено). Пока в `/etc/tver-kitchen-studio.env` не заданы `BREVO_API_KEY`, `MAIL_FROM`, `MAIL_TO` (см. `.env.example`) и не сделан `systemctl restart tver-kitchen-studio`, роут вернёт 503 (`Mail not configured`). `MAIL_FROM` должен быть подтверждённым отправителем в Brevo.
+- Форма заявок отправляется **напрямую из браузера** в **Web3Forms** (form-backend, порт 443) через `src/lib/sendLead.ts`, т.к. хостер блокирует исходящий SMTP (порты 25/465/587/2525 закрыты, проверено), а бесплатный тариф Web3Forms требует client-side вызов (server-side даёт 403). Серверного роута и env-переменных для формы больше нет. Ключ Web3Forms публичный, зашит в `sendLead.ts`. Получатель писем = адрес, на который создан ключ на web3forms.com (сейчас — `kuhnitver@rambler.ru`).
 - Парольный SSH всё ещё включён — рекомендую переход на SSH-ключи (см. ниже).
 
 ### Подключение через bash (Windows / Git Bash)

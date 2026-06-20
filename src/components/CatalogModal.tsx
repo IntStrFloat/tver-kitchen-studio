@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { sendLead } from "@/lib/sendLead";
 
 interface Kitchen {
   id: number;
@@ -32,19 +33,15 @@ const CatalogModal = ({ kitchen, isOpen, onClose }: CatalogModalProps) => {
     setSubmitted(true);
 
     try {
-      await fetch("/api/lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          phone,
-          source: "Каталог — карточка кухни",
-          details: {
-            Кухня: kitchen.name,
-            ...(kitchen.price ? { Цена: kitchen.price } : {}),
-            Описание: kitchen.description,
-            Материалы: kitchen.materials.join(", "),
-          },
-        }),
+      await sendLead({
+        phone,
+        source: "Каталог — карточка кухни",
+        details: {
+          Кухня: kitchen.name,
+          ...(kitchen.price ? { Цена: kitchen.price } : {}),
+          Описание: kitchen.description,
+          Материалы: kitchen.materials.join(", "),
+        },
       });
     } catch {
       // не блокируем UX при ошибке отправки

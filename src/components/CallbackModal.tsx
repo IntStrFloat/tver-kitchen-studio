@@ -6,6 +6,7 @@ import { X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SITE_CONFIG } from "@/lib/seo";
 import { GOALS, trackGoal } from "@/lib/analytics";
+import { sendLead } from "@/lib/sendLead";
 
 interface CallbackModalProps {
   isOpen: boolean;
@@ -38,17 +39,11 @@ const CallbackModal = ({ isOpen, onClose }: CallbackModalProps) => {
     setStatus("sending");
 
     try {
-      const res = await fetch("/api/lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          phone,
-          name,
-          source: "Заказать звонок (шапка сайта)",
-        }),
+      await sendLead({
+        phone,
+        name,
+        source: "Заказать звонок (шапка сайта)",
       });
-
-      if (!res.ok) throw new Error(`Request failed: ${res.status}`);
 
       trackGoal(GOALS.callbackRequest);
       setStatus("success");

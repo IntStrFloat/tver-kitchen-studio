@@ -6,6 +6,7 @@ import { ArrowRight, ArrowLeft, Gift, Check, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SITE_CONFIG } from "@/lib/seo";
 import { GOALS, trackGoal } from "@/lib/analytics";
+import { sendLead } from "@/lib/sendLead";
 
 type Status = "idle" | "sending" | "success" | "error";
 
@@ -71,17 +72,11 @@ const Quiz = () => {
     }
 
     try {
-      const res = await fetch("/api/lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          phone,
-          source: "Квиз — расчёт стоимости",
-          details: answerLabels,
-        }),
+      await sendLead({
+        phone,
+        source: "Квиз — расчёт стоимости",
+        details: answerLabels,
       });
-
-      if (!res.ok) throw new Error(`Request failed: ${res.status}`);
 
       trackGoal(GOALS.quizLead);
       setStatus("success");
