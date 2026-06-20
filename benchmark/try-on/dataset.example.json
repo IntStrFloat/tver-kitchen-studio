@@ -1,0 +1,26 @@
+{
+  "products": [
+    {
+      "id": "product-001",
+      "group": "kitchens",
+      "references": [
+        "private/products/product-001-01.webp",
+        "private/products/product-001-02.webp"
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "id": "room-001",
+      "image": "private/rooms/room-001.webp",
+      "mask": "private/masks/room-001.png"
+    }
+  ],
+  "cases": [
+    {
+      "id": "case-001",
+      "productId": "product-001",
+      "roomId": "room-001"
+    }
+  ]
+}
