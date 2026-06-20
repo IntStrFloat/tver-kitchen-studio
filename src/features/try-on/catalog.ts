@@ -8,12 +8,12 @@ export const TRY_ON_GROUPS = [
 export type TryOnGroupId = (typeof TRY_ON_GROUPS)[number]["id"];
 
 export interface TryOnProduct {
-  id: string;
-  groupId: TryOnGroupId;
-  name: string;
-  description: string;
-  thumbnail: string;
-  references: readonly string[];
+  readonly id: string;
+  readonly groupId: TryOnGroupId;
+  readonly name: string;
+  readonly description: string;
+  readonly thumbnail: string;
+  readonly references: readonly string[];
 }
 
 export const TRY_ON_PRODUCTS: readonly TryOnProduct[] = [];

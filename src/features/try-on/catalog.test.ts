@@ -2,6 +2,26 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import { TRY_ON_GROUPS, TRY_ON_PRODUCTS } from "./catalog.ts";
+import type { TryOnProduct } from "./catalog.ts";
+
+test("try-on product fields are readonly", () => {
+  if (false) {
+    const product = {} as TryOnProduct;
+
+    // @ts-expect-error Catalog products are immutable configuration.
+    product.id = "replacement-id";
+    // @ts-expect-error Catalog products are immutable configuration.
+    product.groupId = "other";
+    // @ts-expect-error Catalog products are immutable configuration.
+    product.name = "Replacement name";
+    // @ts-expect-error Catalog products are immutable configuration.
+    product.description = "Replacement description";
+    // @ts-expect-error Catalog products are immutable configuration.
+    product.thumbnail = "/replacement.webp";
+    // @ts-expect-error Catalog products are immutable configuration.
+    product.references = [];
+  }
+});
 
 test("try-on groups keep their stable order", () => {
   assert.deepEqual(
