@@ -87,6 +87,9 @@ test("trackTryOnEvent never throws when analytics globals are absent or fail", (
 
   try {
     assert.doesNotThrow(() => trackTryOnEvent("try_on_open", { result_url: "https://private.test" }));
+    assert.doesNotThrow(() => trackTryOnEvent("try_on_open", null as unknown as Record<string, unknown>));
+    assert.doesNotThrow(() => trackTryOnEvent("try_on_open", ["unexpected"] as unknown as Record<string, unknown>));
+    assert.doesNotThrow(() => trackTryOnEvent("try_on_open", 42 as unknown as Record<string, unknown>));
     globalThis.window = {} as Window & typeof globalThis;
     assert.doesNotThrow(() => trackTryOnEvent("try_on_open"));
   } finally {

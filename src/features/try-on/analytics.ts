@@ -34,10 +34,12 @@ type AnalyticsWindow = Window & {
   gtag?: (command: string, event: string, params?: Record<string, unknown>) => void;
 };
 
-export function sanitizeTryOnPayload(payload: Record<string, unknown> = {}): TryOnEventPayload {
+export function sanitizeTryOnPayload(payload: unknown): TryOnEventPayload {
+  if (payload === null || typeof payload !== "object" || Array.isArray(payload)) return {};
+  const source = payload as Record<string, unknown>;
   const sanitized: TryOnEventPayload = {};
   for (const key of PAYLOAD_KEYS) {
-    const value = payload[key];
+    const value = source[key];
     if (typeof value === "string" && value.length <= 80 && !UNSAFE_VALUE.test(value)) sanitized[key] = value;
   }
   return sanitized;
@@ -45,7 +47,12 @@ export function sanitizeTryOnPayload(payload: Record<string, unknown> = {}): Try
 
 export function trackTryOnEvent(name: TryOnEventName, payload?: Record<string, unknown>): void {
   if (typeof window === "undefined") return;
-  const sanitized = sanitizeTryOnPayload(payload);
+  let sanitized: TryOnEventPayload;
+  try {
+    sanitized = sanitizeTryOnPayload(payload);
+  } catch {
+    return;
+  }
   const analyticsWindow = window as AnalyticsWindow;
   YM_COUNTER_IDS.forEach((id) => {
     try {
