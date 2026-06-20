@@ -31,16 +31,21 @@ export function parsePlacementMask(value: unknown): PlacementMask | null {
     return null;
   }
 
-  if (!isRecord(parsed)
+  if (!isPlainRecord(parsed)
+    || !hasExactKeys(parsed, ["width", "height", "points"])
     || !isPositiveSafeInteger(parsed.width)
     || !isPositiveSafeInteger(parsed.height)
-    || !Array.isArray(parsed.points)) {
+    || !Array.isArray(parsed.points)
+    || parsed.points.length < 3) {
     return null;
   }
 
   const points: PlacementMask["points"] = [];
   for (const point of parsed.points) {
-    if (!isRecord(point) || !isNormalizedNumber(point.x) || !isNormalizedNumber(point.y)) {
+    if (!isPlainRecord(point)
+      || !hasExactKeys(point, ["x", "y"])
+      || !isNormalizedNumber(point.x)
+      || !isNormalizedNumber(point.y)) {
       return null;
     }
     points.push({ x: point.x, y: point.y });
@@ -66,14 +71,22 @@ export async function runJobGeneration(
     });
     store.update(jobId, (current) => result.status === "succeeded"
       ? { ...current, status: "succeeded", attempts: current.attempts + 1, resultKey: result.resultKey }
-      : { ...current, status: "failed", attempts: current.attempts + 1, errorCode: result.errorCode });
+      : { ...current, status: "failed", errorCode: result.errorCode });
   } catch {
     store.update(jobId, (current) => ({ ...current, status: "failed", errorCode: "provider_failed" }));
   }
 }
 
-function isRecord(value: unknown): value is Record<string, unknown> {
-  return typeof value === "object" && value !== null && !Array.isArray(value);
+function isPlainRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === "object"
+    && value !== null
+    && !Array.isArray(value)
+    && Object.getPrototypeOf(value) === Object.prototype;
+}
+
+function hasExactKeys(value: Record<string, unknown>, expected: readonly string[]): boolean {
+  const keys = Object.keys(value);
+  return keys.length === expected.length && expected.every((key) => Object.hasOwn(value, key));
 }
 
 function isPositiveSafeInteger(value: unknown): value is number {
