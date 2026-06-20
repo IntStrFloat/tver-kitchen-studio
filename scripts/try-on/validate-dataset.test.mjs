@@ -90,6 +90,24 @@ test("rejects missing image files", () => {
   }, /Missing file: private\/products\/missing\.webp/);
 });
 
+test("rejects paths that escape the private directory", () => {
+  const fixture = createFixture((dataset) => {
+    dataset.products[0].references[0] = "private/../private-escape/outside.webp";
+    return dataset;
+  });
+  try {
+    const escapedDirectory = join(fixture.directory, "private-escape");
+    mkdirSync(escapedDirectory, { recursive: true });
+    writeFileSync(join(escapedDirectory, "outside.webp"), "image");
+    assert.throws(() => validate(fixture.manifest), (error) => {
+      assert.match(error.stderr, /File must be a private relative path: private\/\.\.\/private-escape\/outside\.webp/);
+      return true;
+    });
+  } finally {
+    rmSync(fixture.directory, { recursive: true, force: true });
+  }
+});
+
 test("requires at least 30 products", () => {
   assertFailure((dataset) => {
     dataset.products.pop();

@@ -1,5 +1,5 @@
 import { existsSync, readFileSync } from "node:fs";
-import { dirname, isAbsolute, resolve } from "node:path";
+import { dirname, isAbsolute, relative, resolve, sep } from "node:path";
 
 const APPROVED_GROUPS = new Set(["kitchens", "wardrobes", "walk-in", "other"]);
 const MINIMUM_RECORDS = 30;
@@ -27,8 +27,14 @@ function requirePrivateFile(manifestDirectory, relativePath) {
   if (typeof relativePath !== "string" || !relativePath.startsWith("private/") || isAbsolute(relativePath)) {
     fail(`File must be a private relative path: ${relativePath}`);
   }
+  const privateDirectory = resolve(manifestDirectory, "private");
   const filePath = resolve(manifestDirectory, relativePath);
-  if (!filePath.startsWith(resolve(manifestDirectory, "private"))) fail(`File must be a private relative path: ${relativePath}`);
+  const pathFromPrivateDirectory = relative(privateDirectory, filePath);
+  if (
+    pathFromPrivateDirectory === ".." ||
+    pathFromPrivateDirectory.startsWith(`..${sep}`) ||
+    isAbsolute(pathFromPrivateDirectory)
+  ) fail(`File must be a private relative path: ${relativePath}`);
   if (!existsSync(filePath)) fail(`Missing file: ${relativePath}`);
 }
 
