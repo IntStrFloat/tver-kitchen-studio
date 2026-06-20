@@ -27,6 +27,7 @@ export type TryOnEventName =
 export type TryOnEventPayload = Partial<Record<TryOnPayloadKey, string>>;
 
 const YM_COUNTER_IDS = [106971287, 110021238] as const;
+const UNSAFE_VALUE = /^\s*(blob:|data:|https?:|\/)/i;
 
 type AnalyticsWindow = Window & {
   ym?: (counterId: number, action: string, ...args: unknown[]) => void;
@@ -37,17 +38,23 @@ export function sanitizeTryOnPayload(payload: Record<string, unknown> = {}): Try
   const sanitized: TryOnEventPayload = {};
   for (const key of PAYLOAD_KEYS) {
     const value = payload[key];
-    if (typeof value === "string" && value.length <= 80) sanitized[key] = value;
+    if (typeof value === "string" && value.length <= 80 && !UNSAFE_VALUE.test(value)) sanitized[key] = value;
   }
   return sanitized;
 }
 
 export function trackTryOnEvent(name: TryOnEventName, payload?: Record<string, unknown>): void {
   if (typeof window === "undefined") return;
+  const sanitized = sanitizeTryOnPayload(payload);
+  const analyticsWindow = window as AnalyticsWindow;
+  YM_COUNTER_IDS.forEach((id) => {
+    try {
+      analyticsWindow.ym?.(id, "reachGoal", name, sanitized);
+    } catch {
+      // A broken counter must not prevent other analytics providers.
+    }
+  });
   try {
-    const sanitized = sanitizeTryOnPayload(payload);
-    const analyticsWindow = window as AnalyticsWindow;
-    YM_COUNTER_IDS.forEach((id) => analyticsWindow.ym?.(id, "reachGoal", name, sanitized));
     analyticsWindow.gtag?.("event", name, sanitized);
   } catch {
     // Analytics must never interrupt the try-on flow.

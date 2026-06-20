@@ -38,6 +38,16 @@ test("sanitizeTryOnPayload drops oversized and non-string values", () => {
   }), { source: "AI-primerka" });
 });
 
+test("sanitizeTryOnPayload rejects URLs and room data under allowlisted keys", () => {
+  assert.deepEqual(sanitizeTryOnPayload({
+    source: "blob:https://example.test/private-room",
+    product_id: "data:image/jpeg;base64,private",
+    group_id: "/api/try-on/jobs/1/result",
+    job_status: "https://example.test/private",
+    retry_reason: "provider_failed",
+  }), { retry_reason: "provider_failed" });
+});
+
 test("trackTryOnEvent sends sanitized values to both counters", () => {
   const previousWindow = globalThis.window;
   const ymCalls: unknown[][] = [];
@@ -82,4 +92,26 @@ test("trackTryOnEvent never throws when analytics globals are absent or fail", (
   } finally {
     globalThis.window = previousWindow;
   }
+});
+
+test("trackTryOnEvent isolates failing analytics counters", () => {
+  const previousWindow = globalThis.window;
+  const ymCalls: unknown[][] = [];
+  const gtagCalls: unknown[][] = [];
+  globalThis.window = {
+    ym: (...args: unknown[]) => {
+      ymCalls.push(args);
+      if (args[0] === 106971287) throw new Error("first counter unavailable");
+    },
+    gtag: (...args: unknown[]) => gtagCalls.push(args),
+  } as unknown as Window & typeof globalThis;
+
+  try {
+    trackTryOnEvent("try_on_open");
+  } finally {
+    globalThis.window = previousWindow;
+  }
+
+  assert.equal(ymCalls.length, 2);
+  assert.deepEqual(gtagCalls, [["event", "try_on_open", {}]]);
 });

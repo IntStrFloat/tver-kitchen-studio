@@ -38,7 +38,6 @@ export default function ResultStep({ beforeUrl, resultUrl, productName, productI
       link.download = "primerka-result";
       link.click();
       URL.revokeObjectURL(blobUrl);
-      shared();
     } catch {
       setShareError("Не удалось скачать результат. Попробуйте ещё раз или скопируйте ссылку вручную.");
     }

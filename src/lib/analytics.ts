@@ -48,10 +48,14 @@ export function trackAnalyticsEvent(
   payload: object,
 ): void {
   if (typeof window === "undefined") return;
+  YM_COUNTER_IDS.forEach((id) => {
+    try {
+      window.ym?.(id, "reachGoal", name, payload);
+    } catch {
+      // A broken counter must not prevent another analytics provider.
+    }
+  });
   try {
-    YM_COUNTER_IDS.forEach((id) =>
-      window.ym?.(id, "reachGoal", name, payload),
-    );
     window.gtag?.("event", name, payload);
   } catch {
     // Analytics must never interrupt a visitor action.
