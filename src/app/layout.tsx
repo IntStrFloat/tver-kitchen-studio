@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "99aXy2XdjB2Jw09DwzV43zwq7ZxIyvvJJw4Fz1zR2NA",
-    yandex: "ce67eb671a8c4f20",
+    yandex: "e37b9b2b71291f43",
   },
   alternates: {
     canonical: "https://kuhnitver.ru/",
