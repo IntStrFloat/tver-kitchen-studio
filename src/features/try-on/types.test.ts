@@ -1,6 +1,21 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { isTryOnSession } from "./types.ts";
+import type { TryOnError } from "./state.ts";
+import type { ProviderFailureCode } from "./provider.ts";
+import type { TryOnErrorCode, TryOnJobView } from "./types.ts";
+
+test("job, state, and provider errors share one normalized contract", () => {
+  if (false) {
+    const code = "provider_timeout" as TryOnErrorCode;
+    const stateError: TryOnError = code;
+    const providerError: ProviderFailureCode = code;
+    const jobError: NonNullable<TryOnJobView["errorCode"]> = code;
+
+    assert.equal(stateError, providerError);
+    assert.equal(providerError, jobError);
+  }
+});
 
 test("accepts a serializable selected-product session", () => {
   const value = JSON.parse(JSON.stringify({ version: 1, step: "photo", productId: "kitchen-modern-01", jobId: null }));

@@ -1,14 +1,14 @@
 import {
   isTryOnSession,
   type PlacementMask,
-  type TryOnJobView,
+  type TryOnErrorCode,
   type TryOnSession,
   type TryOnStep,
 } from "./types.ts";
 
 const STORAGE_KEY = "kuhnitver.try-on.v1";
 
-export type TryOnError = NonNullable<TryOnJobView["errorCode"]>;
+export type TryOnError = TryOnErrorCode;
 
 export interface TryOnState {
   step: TryOnStep;

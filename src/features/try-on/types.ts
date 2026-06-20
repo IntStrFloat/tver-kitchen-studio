@@ -2,6 +2,8 @@ export type TryOnStep = "product" | "photo" | "mask" | "generating" | "result";
 
 export type JobStatus = "queued" | "processing" | "succeeded" | "failed";
 
+export type TryOnErrorCode = "invalid_image" | "provider_timeout" | "provider_failed";
+
 export interface TryOnSession {
   version: 1;
   step: TryOnStep;
@@ -19,7 +21,7 @@ export interface TryOnJobView {
   id: string;
   status: JobStatus;
   resultUrl?: string;
-  errorCode?: "invalid_image" | "provider_timeout" | "provider_failed";
+  errorCode?: TryOnErrorCode;
 }
 
 const TRY_ON_STEPS: readonly TryOnStep[] = ["product", "photo", "mask", "generating", "result"];
