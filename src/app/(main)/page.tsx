@@ -46,7 +46,7 @@ export default function HomePage() {
         data={generateWebPageSchema(
           SITE_CONFIG.defaultTitle,
           SITE_CONFIG.defaultDescription,
-          `${SITE_CONFIG.url}/`,
+          SITE_CONFIG.url,
         )}
       />
 

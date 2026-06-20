@@ -28,6 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `${SITE_CONFIG.url}/kuhni/${city.slug}`,
     },
     openGraph: {
+      type: "website",
       title: `Кухни на заказ ${city.nameIn} от производителя`,
       description: `Производство кухонь на заказ с доставкой ${city.nameIn}.  (Kuhnitver).`,
       url: `${SITE_CONFIG.url}/kuhni/${city.slug}`,

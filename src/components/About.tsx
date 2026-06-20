@@ -128,7 +128,9 @@ const About = () => {
           itemType="https://schema.org/LocalBusiness"
         >
           <meta itemProp="name" content="Kuhnitver" />
-          <meta itemProp="url" content="https://kuhnitver.ru" />
+          {/* URL — через <link href>, а не <meta content>: ссылка в content
+              мета-тега невалидна (ошибка валидатора Яндекса). */}
+          <link itemProp="url" href="https://kuhnitver.ru" />
           <meta
             itemProp="image"
             content="https://kuhnitver.ru/og-image.jpg"
@@ -170,10 +172,12 @@ const About = () => {
                 <div className="text-xs uppercase tracking-wide text-muted-foreground mb-1">
                   Телефон
                 </div>
+                {/* itemProp на <a> взял бы значением href (tel:+7…);
+                    даём чистый номер через <meta>, ссылку оставляем для людей. */}
+                <meta itemProp="telephone" content="+7 903 630 29 09" />
                 <a
                   href="tel:+79036302909"
                   className="font-medium hover:text-primary transition-colors"
-                  itemProp="telephone"
                 >
                   +7 903 630 29 09
                 </a>
@@ -189,10 +193,10 @@ const About = () => {
                 <div className="text-xs uppercase tracking-wide text-muted-foreground mb-1">
                   Email
                 </div>
+                <meta itemProp="email" content="m-btd@mail.ru" />
                 <a
                   href="mailto:m-btd@mail.ru"
                   className="font-medium hover:text-primary transition-colors break-all"
-                  itemProp="email"
                 >
                   m-btd@mail.ru
                 </a>

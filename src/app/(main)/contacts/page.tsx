@@ -85,7 +85,9 @@ export default function ContactsPage() {
           itemType="https://schema.org/LocalBusiness"
         >
           <meta itemProp="name" content={SITE_CONFIG.name} />
-          <meta itemProp="url" content={SITE_CONFIG.url} />
+          {/* URL — через <link href>, а не <meta content> (ссылка в content
+              мета-тега невалидна для валидатора Яндекса). */}
+          <link itemProp="url" href={SITE_CONFIG.url} />
           <meta itemProp="image" content={SITE_CONFIG.defaultOgImage} />
           <meta itemProp="priceRange" content="$$" />
 
@@ -138,10 +140,10 @@ export default function ContactsPage() {
                   <div className="text-xs uppercase tracking-wide text-muted-foreground mb-1">
                     Телефон
                   </div>
+                  <meta itemProp="telephone" content={SITE_CONFIG.phone} />
                   <a
                     href={`tel:${SITE_CONFIG.phoneClean}`}
                     className="font-semibold text-lg text-primary hover:underline"
-                    itemProp="telephone"
                   >
                     {SITE_CONFIG.phone}
                   </a>
@@ -161,10 +163,10 @@ export default function ContactsPage() {
                   <div className="text-xs uppercase tracking-wide text-muted-foreground mb-1">
                     Email
                   </div>
+                  <meta itemProp="email" content={SITE_CONFIG.email} />
                   <a
                     href={`mailto:${SITE_CONFIG.email}`}
                     className="font-semibold text-primary hover:underline break-all"
-                    itemProp="email"
                   >
                     {SITE_CONFIG.email}
                   </a>
