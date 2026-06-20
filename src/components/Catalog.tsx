@@ -118,6 +118,9 @@ const Catalog = () => {
         </div>
 
         <div className="text-center mt-10">
+          <Button asChild size="lg" className="mr-3 mb-3">
+            <Link href="/primerka">Примерить мебель в интерьере</Link>
+          </Button>
           <Button asChild size="lg" variant="outline">
             <Link href="/catalog">
               Смотреть весь каталог кухонь
