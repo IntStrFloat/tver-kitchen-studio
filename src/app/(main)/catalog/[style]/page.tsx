@@ -43,7 +43,7 @@ export default async function StylePage({ params }: Props) {
   if (!style) notFound();
 
   const productSchema = generateProductSchema(
-    `Кухня «${style.name}» на заказ в Твери`,
+    `${style.heading ?? `Кухня «${style.name}»`} на заказ в Твери`,
     style.seoDescription,
     `${SITE_CONFIG.url}${style.image}`,
     String(style.priceFrom),
@@ -70,7 +70,7 @@ export default async function StylePage({ params }: Props) {
           <div className="rounded-2xl overflow-hidden">
             <Image
               src={style.image}
-              alt={`Кухня в стиле ${style.name} на заказ в Твери от Kuhnitver`}
+              alt={`${style.heading ?? `Кухня в стиле ${style.name}`} на заказ в Твери от Kuhnitver`}
               width={800}
               height={600}
               className="w-full h-full object-cover"
@@ -85,7 +85,7 @@ export default async function StylePage({ params }: Props) {
               </span>
             )}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Кухни в стиле {style.name}
+              {style.heading ?? `Кухни в стиле ${style.name}`}
               <span className="text-primary"> на заказ в Твери</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -172,7 +172,9 @@ export default async function StylePage({ params }: Props) {
 
         <div className="py-12 bg-secondary/30 rounded-3xl text-center mb-16 px-6">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Закажите кухню «{style.name}» по своим размерам
+            {style.heading
+              ? `Закажите ${style.heading.toLowerCase()} по своим размерам`
+              : `Закажите кухню «${style.name}» по своим размерам`}
           </h2>
           <p className="text-muted-foreground mb-2">
             Замер, эскиз проекта после договора, изготовление от 20 дней
