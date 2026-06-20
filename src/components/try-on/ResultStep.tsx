@@ -48,6 +48,7 @@ export default function ResultStep({ beforeUrl, resultUrl, productName, productI
   };
   const submitLead = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (leadStatus === "sending" || leadStatus === "success") return;
     const form = new FormData(event.currentTarget);
     const phone = String(form.get("phone") ?? "").trim();
     const name = String(form.get("name") ?? "").trim();

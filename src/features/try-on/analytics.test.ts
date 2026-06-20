@@ -48,6 +48,15 @@ test("sanitizeTryOnPayload rejects URLs and room data under allowlisted keys", (
   }), { retry_reason: "provider_failed" });
 });
 
+test("sanitizeTryOnPayload rejects personal-data bypasses in allowlisted keys", () => {
+  assert.deepEqual(sanitizeTryOnPayload({
+    product_id: "+7 (999) 123-45-67",
+    group_id: "person@example.test",
+    job_status: "https://example.test/?phone=79991234567",
+    source: "AI-primerka",
+  }), { source: "AI-primerka" });
+});
+
 test("trackTryOnEvent sends sanitized values to both counters", () => {
   const previousWindow = globalThis.window;
   const ymCalls: unknown[][] = [];

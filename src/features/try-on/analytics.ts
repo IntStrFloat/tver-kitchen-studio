@@ -28,6 +28,14 @@ export type TryOnEventPayload = Partial<Record<TryOnPayloadKey, string>>;
 
 const YM_COUNTER_IDS = [106971287, 110021238] as const;
 const UNSAFE_VALUE = /^\s*(blob:|data:|https?:|\/)/i;
+const SAFE_VALUES: Record<TryOnPayloadKey, RegExp> = {
+  product_id: /^[a-z0-9][a-z0-9_-]{0,79}$/i,
+  group_id: /^(kitchens|wardrobes|walk-in|other)$/,
+  job_status: /^(pending|succeeded|failed)$/,
+  retry_reason: /^(invalid_image|provider_timeout|provider_failed)$/,
+  elapsed_bucket: /^(<15s|15-45s|>45s)$/,
+  source: /^AI-primerka$/,
+};
 
 type AnalyticsWindow = Window & {
   ym?: (counterId: number, action: string, ...args: unknown[]) => void;
@@ -40,7 +48,7 @@ export function sanitizeTryOnPayload(payload: unknown): TryOnEventPayload {
   const sanitized: TryOnEventPayload = {};
   for (const key of PAYLOAD_KEYS) {
     const value = source[key];
-    if (typeof value === "string" && value.length <= 80 && !UNSAFE_VALUE.test(value)) sanitized[key] = value;
+    if (typeof value === "string" && value.length <= 80 && !UNSAFE_VALUE.test(value) && SAFE_VALUES[key].test(value)) sanitized[key] = value;
   }
   return sanitized;
 }
