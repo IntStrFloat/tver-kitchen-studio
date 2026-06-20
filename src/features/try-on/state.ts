@@ -23,7 +23,10 @@ export type TryOnAction =
   | { type: "select-product"; productId: string }
   | { type: "set-photo"; previewUrl: string }
   | { type: "set-mask"; mask: PlacementMask }
+  | { type: "restore-session"; session: TryOnSession }
   | { type: "job-created"; jobId: string }
+  | { type: "retry-job-created"; jobId: string }
+  | { type: "job-pending"; jobId: string }
   | { type: "job-succeeded"; jobId: string }
   | { type: "job-failed"; jobId: string; error?: TryOnError }
   | { type: "restart" }
@@ -59,6 +62,18 @@ export function reduceTryOn(state: TryOnState, action: TryOnAction): TryOnState 
     case "set-mask":
       if (state.step !== "mask" || state.productId === null || state.photoPreviewUrl === null) return state;
       return { ...state, step: "mask", mask: action.mask };
+    case "restore-session":
+      if (
+        (action.session.step !== "generating" && action.session.step !== "result")
+        || action.session.productId === null
+        || action.session.jobId === null
+      ) return initialTryOnState;
+      return {
+        ...initialTryOnState,
+        step: action.session.step,
+        productId: action.session.productId,
+        jobId: action.session.jobId,
+      };
     case "job-created":
       if (
         state.step !== "mask"
@@ -67,6 +82,18 @@ export function reduceTryOn(state: TryOnState, action: TryOnAction): TryOnState 
         || state.mask === null
       ) return state;
       return { ...state, step: "generating", jobId: action.jobId, error: null };
+    case "retry-job-created":
+      if (
+        state.step !== "generating"
+        || state.error === null
+        || state.productId === null
+        || state.photoPreviewUrl === null
+        || state.mask === null
+      ) return state;
+      return { ...state, jobId: action.jobId, error: null };
+    case "job-pending":
+      if (state.step !== "result" || state.productId === null || state.jobId !== action.jobId) return state;
+      return { ...state, step: "generating", error: null };
     case "job-succeeded":
       if (state.step !== "generating" || state.productId === null || state.jobId !== action.jobId) return state;
       return { ...state, step: "result", jobId: action.jobId, error: null };

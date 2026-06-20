@@ -96,6 +96,32 @@ test("job failure stays generating and normalizes a missing error", () => {
   assert.equal(failed.error, "provider_failed");
 });
 
+test("restores a validated in-progress or completed session without a photo", () => {
+  const generating = reduceTryOn(initialTryOnState, {
+    type: "restore-session",
+    session: { version: 1, step: "generating", productId: "table-1", jobId: "job-1" },
+  });
+  const result = reduceTryOn(initialTryOnState, {
+    type: "restore-session",
+    session: { version: 1, step: "result", productId: "table-1", jobId: "job-1" },
+  });
+
+  assert.deepEqual(generating, { ...initialTryOnState, step: "generating", productId: "table-1", jobId: "job-1" });
+  assert.deepEqual(result, { ...initialTryOnState, step: "result", productId: "table-1", jobId: "job-1" });
+});
+
+test("retry replaces a failed job only when local photo and mask are still available", () => {
+  const failed = reduceTryOn(
+    reduceTryOn(readyState(), { type: "job-created", jobId: "job-1" }),
+    { type: "job-failed", jobId: "job-1" },
+  );
+  const retried = reduceTryOn(failed, { type: "retry-job-created", jobId: "job-2" });
+
+  assert.equal(retried.jobId, "job-2");
+  assert.equal(retried.error, null);
+  assert.strictEqual(reduceTryOn(initialTryOnState, { type: "retry-job-created", jobId: "job-2" }), initialTryOnState);
+});
+
 test("back and restart clear downstream job state", () => {
   const generating = reduceTryOn(readyState(), { type: "job-created", jobId: "job-1" });
   const failed = reduceTryOn(generating, {
