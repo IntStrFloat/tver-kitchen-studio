@@ -29,5 +29,5 @@ export default function TryOnWizard() {
   if (state.step === "photo") return <PhotoStep productName={product.name} previewUrl={state.photoPreviewUrl} onPhoto={setPhoto} onBack={goBack} />;
   if (state.step === "mask" && state.photoPreviewUrl) return <MaskStep previewUrl={state.photoPreviewUrl} mask={state.mask} onChange={(mask: PlacementMask) => dispatch({ type: "set-mask", mask })} onConfirm={() => void create()} onBack={goBack} error={requestError ?? (state.error ? errorText[state.error] : null)} />;
   if (state.step === "result" && resultUrl) return <ResultStep beforeUrl={state.photoPreviewUrl} resultUrl={resultUrl} productName={product.name} onRestart={restart} />;
-  return <GeneratingStep error={state.error ? errorText[state.error] : null} onBack={goBack} onRetry={() => void create()} />;
+  return <GeneratingStep error={state.error ? errorText[state.error] : null} canRetry={fileRef.current !== null && state.mask !== null} onBack={goBack} onRetry={() => void create()} />;
 }
