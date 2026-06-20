@@ -112,11 +112,17 @@ export default async function BlogPostPage({ params }: Props) {
           </header>
 
           <div className="prose prose-lg max-w-none">
-            {post.content.split("\n\n").map((paragraph, i) => (
-              <p key={i} className="text-foreground/90 leading-relaxed mb-6">
-                {paragraph}
-              </p>
-            ))}
+            {post.content.split("\n\n").map((block, i) =>
+              block.startsWith("## ") ? (
+                <h2 key={i} className="text-2xl font-bold mt-10 mb-4">
+                  {block.slice(3)}
+                </h2>
+              ) : (
+                <p key={i} className="text-foreground/90 leading-relaxed mb-6">
+                  {block}
+                </p>
+              ),
+            )}
           </div>
 
           <div className="mt-12 p-8 bg-primary/5 rounded-2xl text-center">
