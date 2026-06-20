@@ -370,6 +370,25 @@ export interface BlogPost {
   readTime: string;
 }
 
+export interface BlogFaqItem {
+  question: string;
+  answer: string;
+}
+
+export interface BlogCta {
+  title: string;
+  description: string;
+  buttonLabel: string;
+  context: string;
+}
+
+export interface BlogMetadata {
+  modifiedDate: string;
+  relatedSlugs: string[];
+  faq: BlogFaqItem[];
+  cta: BlogCta;
+}
+
 export const blogPosts: BlogPost[] = [
   {
     slug: "kak-vybrat-kuhnyu-na-zakaz-v-tveri",
@@ -699,6 +718,54 @@ export const blogPosts: BlogPost[] = [
     readTime: "8 мин",
   },
 ];
+
+const defaultBlogMetadata: Omit<BlogMetadata, "relatedSlugs"> = {
+  modifiedDate: "2026-06-20",
+  faq: [],
+  cta: {
+    title: "Нужна помощь с вашей кухней?",
+    description: "Оставьте контакты, и дизайнер подскажет по планировке и материалам.",
+    buttonLabel: "Получить консультацию",
+    context: "Консультация по статье блога",
+  },
+};
+
+export const blogMetadata: Record<string, BlogMetadata> = {
+  "kak-vybrat-kuhnyu-na-zakaz-v-tveri": {
+    ...defaultBlogMetadata,
+    relatedSlugs: ["zamer-kuhni-v-tveri-chto-podgotovit", "top-10-oshibok-pri-zakaze-kuhni", "materialy-dlya-kuhni-mdf-massiv-plastik"],
+  },
+  "materialy-dlya-kuhni-mdf-massiv-plastik": { ...defaultBlogMetadata, relatedSlugs: ["kvarc-vs-mramor-stoleshnica-dlya-kuhni", "dizayn-kuhni-2026-idei-planirovki-i-foto", "kak-vybrat-kuhnyu-na-zakaz-v-tveri"] },
+  "skolko-stoit-kuhnya-na-zakaz-2026": { ...defaultBlogMetadata, relatedSlugs: ["kak-vybrat-kuhnyu-na-zakaz-v-tveri", "zamer-kuhni-v-tveri-chto-podgotovit", "uglovaya-vs-pryamaya-kuhnya"] },
+  "uglovaya-vs-pryamaya-kuhnya": { ...defaultBlogMetadata, relatedSlugs: ["dizayn-kuhni-2026-idei-planirovki-i-foto", "zamer-kuhni-v-tveri-chto-podgotovit", "kak-vybrat-kuhnyu-na-zakaz-v-tveri"] },
+  "top-10-oshibok-pri-zakaze-kuhni": { ...defaultBlogMetadata, relatedSlugs: ["zamer-kuhni-v-tveri-chto-podgotovit", "kak-vybrat-kuhnyu-na-zakaz-v-tveri", "uglovaya-vs-pryamaya-kuhnya"] },
+  "zamer-kuhni-v-tveri-chto-podgotovit": { ...defaultBlogMetadata, relatedSlugs: ["kak-vybrat-kuhnyu-na-zakaz-v-tveri", "uglovaya-vs-pryamaya-kuhnya", "top-10-oshibok-pri-zakaze-kuhni"] },
+  "kvarc-vs-mramor-stoleshnica-dlya-kuhni": { ...defaultBlogMetadata, relatedSlugs: ["materialy-dlya-kuhni-mdf-massiv-plastik", "chernaya-kuhnya-v-interere", "dizayn-kuhni-2026-idei-planirovki-i-foto"] },
+  "dizayn-kuhni-2026-idei-planirovki-i-foto": {
+    modifiedDate: "2026-06-20",
+    relatedSlugs: ["chernaya-kuhnya-v-interere", "uglovaya-vs-pryamaya-kuhnya", "materialy-dlya-kuhni-mdf-massiv-plastik"],
+    faq: [
+      { question: "С чего начать дизайн кухни?", answer: "Начните с замера, списка техники и привычек семьи. После этого выбирайте планировку, а затем фасады и цвет." },
+      { question: "Какая планировка кухни самая удобная?", answer: "Подходящая планировка зависит от размеров комнаты, расположения коммуникаций и сценариев готовки. Для узкой кухни часто выбирают прямую, для более квадратной - угловую." },
+      { question: "Нужно ли выбирать технику до проекта кухни?", answer: "Желательно определить хотя бы размеры техники до проекта. Это влияет на ширину модулей, розетки и вентиляцию." },
+    ],
+    cta: { title: "Хотите проверить планировку до заказа?", description: "Оставьте контакты, и дизайнер подскажет, как использовать размеры вашей кухни.", buttonLabel: "Получить совет по планировке", context: "Проверка планировки кухни" },
+  },
+  "chernaya-kuhnya-v-interere": {
+    modifiedDate: "2026-06-20",
+    relatedSlugs: ["dizayn-kuhni-2026-idei-planirovki-i-foto", "kvarc-vs-mramor-stoleshnica-dlya-kuhni", "materialy-dlya-kuhni-mdf-massiv-plastik"],
+    faq: [
+      { question: "Практична ли матовая чёрная кухня?", answer: "Практичность зависит от покрытия и ухода. На тёмных фасадах могут быть заметны следы воды и пальцев, поэтому образец стоит посмотреть вживую." },
+      { question: "С чем сочетать чёрные фасады?", answer: "Чаще всего их сочетают со светлой столешницей, деревом, нейтральными стенами и несколькими источниками света." },
+      { question: "Подойдёт ли чёрная кухня для маленькой комнаты?", answer: "Да, если не делать тёмными все поверхности. Светлый верх, столешница и хорошая подсветка помогают сохранить ощущение пространства." },
+    ],
+    cta: { title: "Сомневаетесь, подойдёт ли чёрный цвет?", description: "Подскажем сочетание фасадов, столешницы и фартука для вашего освещения.", buttonLabel: "Подобрать сочетание материалов", context: "Подбор материалов для чёрной кухни" },
+  },
+};
+
+export function getBlogMetadata(post: BlogPost): BlogMetadata {
+  return blogMetadata[post.slug] ?? { ...defaultBlogMetadata, relatedSlugs: [] };
+}
 
 // ===== PRICE DATA =====
 export interface PriceCategory {

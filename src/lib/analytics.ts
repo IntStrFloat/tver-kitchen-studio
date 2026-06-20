@@ -21,6 +21,34 @@ declare global {
       action: string,
       ...args: unknown[]
     ) => void;
+    gtag?: (command: string, event: string, params?: Record<string, unknown>) => void;
+  }
+}
+
+export type BlogEventName =
+  | "blog_view"
+  | "blog_scroll_50"
+  | "blog_scroll_75"
+  | "blog_scroll_90"
+  | "blog_cta_click"
+  | "blog_form_start"
+  | "blog_lead"
+  | "blog_related_click";
+
+export interface BlogEventPayload {
+  article_slug: string;
+  article_title: string;
+  cta_placement?: "inline" | "bottom";
+  cta_context?: string;
+}
+
+export function trackBlogEvent(name: BlogEventName, payload: BlogEventPayload): void {
+  if (typeof window === "undefined") return;
+  try {
+    window.ym?.(YM_COUNTER_ID, "reachGoal", name, payload as Record<string, unknown>);
+    window.gtag?.("event", name, payload);
+  } catch {
+    // Analytics must not interrupt article reading or lead submission.
   }
 }
 

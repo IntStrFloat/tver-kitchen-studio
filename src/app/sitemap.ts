@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { statSync, existsSync } from "node:fs";
 import path from "node:path";
-import { kitchenStyles, cities, blogPosts } from "@/lib/data";
+import { kitchenStyles, cities, blogPosts, getBlogMetadata } from "@/lib/data";
 
 const BASE_URL = "https://kuhnitver.ru";
 
@@ -118,7 +118,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Блог-посты: используем дату публикации поста
   const blogPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,
-    lastModified: new Date(post.date),
+    lastModified: new Date(getBlogMetadata(post).modifiedDate),
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));

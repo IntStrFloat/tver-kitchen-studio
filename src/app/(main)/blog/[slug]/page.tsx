@@ -4,8 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
-import { SITE_CONFIG } from "@/lib/seo";
-import { blogPosts } from "@/lib/data";
+import { SITE_CONFIG, generateFAQSchema } from "@/lib/seo";
+import { blogPosts, getBlogMetadata } from "@/lib/data";
+import BlogLeadForm from "@/components/BlogLeadForm";
+import BlogAnalytics from "@/components/BlogAnalytics";
+import BlogFaq from "@/components/BlogFaq";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -43,6 +46,7 @@ export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) notFound();
+  const metadata = getBlogMetadata(post);
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -51,7 +55,7 @@ export default async function BlogPostPage({ params }: Props) {
     description: post.seoDescription,
     image: `${SITE_CONFIG.url}${post.image}`,
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: metadata.modifiedDate,
     author: {
       "@type": "Organization",
       name: SITE_CONFIG.name,
@@ -68,11 +72,16 @@ export default async function BlogPostPage({ params }: Props) {
     },
   };
 
-  const otherPosts = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 3);
+  const otherPosts = metadata.relatedSlugs
+    .map((relatedSlug) => blogPosts.find((item) => item.slug === relatedSlug))
+    .filter((item): item is (typeof blogPosts)[number] => Boolean(item))
+    .slice(0, 3);
 
   return (
     <div className="min-h-screen pt-24">
       <JsonLd data={articleSchema} />
+      {metadata.faq.length > 0 && <JsonLd data={generateFAQSchema(metadata.faq)} />}
+      <BlogAnalytics slug={post.slug} title={post.title} />
 
       <div className="container-custom">
         <Breadcrumbs
@@ -111,6 +120,8 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           </header>
 
+          <BlogLeadForm slug={post.slug} title={post.title} placement="inline" cta={metadata.cta} />
+
           <div className="prose prose-lg max-w-none">
             {post.content.split("\n\n").map((block, i) =>
               block.startsWith("## ") ? (
@@ -124,6 +135,8 @@ export default async function BlogPostPage({ params }: Props) {
               ),
             )}
           </div>
+
+          <BlogFaq items={metadata.faq} />
 
           <div className="mt-12 p-8 bg-primary/5 rounded-2xl text-center">
             <h2 className="text-xl font-bold mb-3">
@@ -139,6 +152,7 @@ export default async function BlogPostPage({ params }: Props) {
               Рассчитать стоимость
             </Link>
           </div>
+          <BlogLeadForm slug={post.slug} title={post.title} placement="bottom" cta={metadata.cta} />
         </article>
 
         {otherPosts.length > 0 && (

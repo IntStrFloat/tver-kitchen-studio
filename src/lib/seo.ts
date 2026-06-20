@@ -148,14 +148,6 @@ export function generateWebSiteSchema() {
     publisher: {
       "@id": `${SITE_CONFIG.url}/#organization`,
     },
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${SITE_CONFIG.url}/catalog?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
   };
 }
 

@@ -160,6 +160,13 @@ export default function RootLayout({
             });
           `}
         </Script>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-Z45D1032QK"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-Z45D1032QK');`}
+        </Script>
         <noscript>
           <div>
             {/* eslint-disable-next-line @next/next/no-img-element */}
