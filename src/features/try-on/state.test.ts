@@ -125,6 +125,26 @@ test("restoreSession handles malformed data and normalizes impossible steps", ()
   assert.deepEqual(restoreSession(storage), { ...initialTryOnState, step: "photo", productId: "x" });
 });
 
+test("back from restored generating and result sessions returns to photo", () => {
+  for (const step of ["generating", "result"] as const) {
+    const storage = new MemoryStorage();
+    storage.setItem("kuhnitver.try-on.v1", JSON.stringify({
+      version: 1,
+      step,
+      productId: "table-1",
+      jobId: "job-1",
+    }));
+
+    const state = reduceTryOn(restoreSession(storage), { type: "back" });
+
+    assert.deepEqual(state, {
+      ...initialTryOnState,
+      step: "photo",
+      productId: "table-1",
+    });
+  }
+});
+
 test("storage helpers are server-safe when sessionStorage is unavailable", () => {
   assert.doesNotThrow(() => saveSession(initialTryOnState));
   assert.strictEqual(restoreSession(), initialTryOnState);

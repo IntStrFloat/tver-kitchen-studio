@@ -75,8 +75,12 @@ export function reduceTryOn(state: TryOnState, action: TryOnAction): TryOnState 
 
 function reduceBack(state: TryOnState): TryOnState {
   if (state.step === "result" || state.step === "generating") {
-    if (state.photoPreviewUrl === null || state.mask === null) return state;
-    return { ...state, step: "mask", jobId: null, error: null };
+    if (state.photoPreviewUrl !== null && state.mask !== null) {
+      return { ...state, step: "mask", jobId: null, error: null };
+    }
+
+    if (state.productId === null) return state;
+    return { ...initialTryOnState, step: "photo", productId: state.productId };
   }
 
   if (state.step === "mask") {
