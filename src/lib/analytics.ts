@@ -1,8 +1,9 @@
 // ===== ANALYTICS =====
 // Централизованная отправка целей в Яндекс.Метрику.
-// Идентификатор счётчика совпадает с инициализацией в src/app/layout.tsx.
+// На сайте параллельно работают ДВА счётчика — цели шлём в оба.
+// Список должен совпадать с init-вызовами в src/app/layout.tsx.
 
-export const YM_COUNTER_ID = 106971287;
+export const YM_COUNTER_IDS = [106971287, 110021238] as const;
 
 // Идентификаторы целей. Эти же значения нужно завести в интерфейсе
 // Яндекс.Метрики как цели типа «JavaScript-событие».
@@ -45,7 +46,9 @@ export interface BlogEventPayload {
 export function trackBlogEvent(name: BlogEventName, payload: BlogEventPayload): void {
   if (typeof window === "undefined") return;
   try {
-    window.ym?.(YM_COUNTER_ID, "reachGoal", name, payload as Record<string, unknown>);
+    YM_COUNTER_IDS.forEach((id) =>
+      window.ym?.(id, "reachGoal", name, payload as Record<string, unknown>),
+    );
     window.gtag?.("event", name, payload);
   } catch {
     // Analytics must not interrupt article reading or lead submission.
@@ -62,7 +65,7 @@ export function trackGoal(
 ): void {
   if (typeof window === "undefined" || typeof window.ym !== "function") return;
   try {
-    window.ym(YM_COUNTER_ID, "reachGoal", goal, params);
+    YM_COUNTER_IDS.forEach((id) => window.ym?.(id, "reachGoal", goal, params));
   } catch {
     // аналитика не должна ломать UX
   }

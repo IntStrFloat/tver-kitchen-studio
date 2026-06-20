@@ -166,6 +166,18 @@ export default function RootLayout({
               accurateTrackBounce: true,
               trackLinks: true
             });
+            // Второй счётчик Метрики — параллельный учёт. tag.js загружен
+            // выше один раз, нужен только повторный init для нового id.
+            ym(110021238, "init", {
+              ssr: true,
+              webvisor: true,
+              clickmap: true,
+              ecommerce: "dataLayer",
+              referrer: document.referrer,
+              url: location.href,
+              accurateTrackBounce: true,
+              trackLinks: true
+            });
           `}
         </Script>
         <Script
@@ -180,6 +192,12 @@ export default function RootLayout({
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="https://mc.yandex.ru/watch/106971287"
+              style={{ position: "absolute", left: "-9999px" }}
+              alt=""
+            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://mc.yandex.ru/watch/110021238"
               style={{ position: "absolute", left: "-9999px" }}
               alt=""
             />
