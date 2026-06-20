@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import { createMemoryJobStore, type TryOnJobRecord } from "./job-store.ts";
-import { parsePlacementMask, runJobGeneration } from "./job-api.ts";
+import { MAX_MASK_CHARS, MAX_MASK_POINTS, parsePlacementMask, runJobGeneration } from "./job-api.ts";
 
 const job: TryOnJobRecord = {
   id: "job-1",
@@ -91,4 +91,13 @@ test("counts a successful provider result as one completed generation", async ()
 
   assert.equal(store.get("job-1")!.attempts, 1);
   assert.equal(store.get("job-1")!.status, "succeeded");
+});
+
+test("rejects masks above the raw input limit", () => {
+  assert.equal(parsePlacementMask(" ".repeat(MAX_MASK_CHARS + 1)), null);
+});
+
+test("rejects masks above the point count limit", () => {
+  const points = Array.from({ length: MAX_MASK_POINTS + 1 }, () => ({ x: 0.5, y: 0.5 }));
+  assert.equal(parsePlacementMask(JSON.stringify({ width: 1, height: 1, points })), null);
 });

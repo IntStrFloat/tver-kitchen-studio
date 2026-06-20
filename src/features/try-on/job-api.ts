@@ -4,6 +4,9 @@ import type { TryOnProvider } from "./provider.ts";
 
 const STORE_KEY = Symbol.for("kuhnitver.try-on.development-job-store");
 const JOB_TTL_MS = 24 * 60 * 60 * 1_000;
+export const MAX_TRY_ON_REQUEST_BYTES = 12 * 1024 * 1024 + 256 * 1024;
+export const MAX_MASK_CHARS = 64 * 1024;
+export const MAX_MASK_POINTS = 256;
 
 type DevelopmentGlobal = typeof globalThis & { [STORE_KEY]?: MemoryJobStore };
 
@@ -17,12 +20,17 @@ export function getDevelopmentJobStore(): MemoryJobStore {
   }
 
   const global = globalThis as DevelopmentGlobal;
-  global[STORE_KEY] ??= createMemoryJobStore({ ttlMs: JOB_TTL_MS, now: Date.now });
+  global[STORE_KEY] ??= createMemoryJobStore({
+    ttlMs: JOB_TTL_MS,
+    now: Date.now,
+    maxJobs: 16,
+    maxBytes: 16 * 12 * 1024 * 1024,
+  });
   return global[STORE_KEY];
 }
 
 export function parsePlacementMask(value: unknown): PlacementMask | null {
-  if (typeof value !== "string") return null;
+  if (typeof value !== "string" || value.length > MAX_MASK_CHARS) return null;
 
   let parsed: unknown;
   try {
@@ -36,7 +44,8 @@ export function parsePlacementMask(value: unknown): PlacementMask | null {
     || !isPositiveSafeInteger(parsed.width)
     || !isPositiveSafeInteger(parsed.height)
     || !Array.isArray(parsed.points)
-    || parsed.points.length < 3) {
+    || parsed.points.length < 3
+    || parsed.points.length > MAX_MASK_POINTS) {
     return null;
   }
 
@@ -52,6 +61,15 @@ export function parsePlacementMask(value: unknown): PlacementMask | null {
   }
 
   return { width: parsed.width, height: parsed.height, points };
+}
+
+export function validateRequestContentLength(request: Pick<Request, "headers">): 411 | 413 | null {
+  const header = request.headers.get("content-length");
+  if (header === null) return 411;
+  if (!/^\d+$/.test(header)) return 413;
+
+  const length = Number(header);
+  return !Number.isSafeInteger(length) || length > MAX_TRY_ON_REQUEST_BYTES ? 413 : null;
 }
 
 export async function runJobGeneration(
