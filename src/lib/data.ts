@@ -719,8 +719,14 @@ export const blogPosts: BlogPost[] = [
   },
 ];
 
-const defaultBlogMetadata: Omit<BlogMetadata, "relatedSlugs"> = {
-  modifiedDate: "2026-06-20",
+// Метаданные поста на входе: modifiedDate можно НЕ указывать — тогда
+// getBlogMetadata подставит дату публикации поста (честный lastmod в sitemap).
+// Указывайте modifiedDate явно, только если статью реально переработали позже.
+type BlogMetadataEntry = Omit<BlogMetadata, "modifiedDate"> & {
+  modifiedDate?: string;
+};
+
+const defaultBlogMetadata: Omit<BlogMetadataEntry, "relatedSlugs"> = {
   faq: [],
   cta: {
     title: "Нужна помощь с вашей кухней?",
@@ -730,7 +736,7 @@ const defaultBlogMetadata: Omit<BlogMetadata, "relatedSlugs"> = {
   },
 };
 
-export const blogMetadata: Record<string, BlogMetadata> = {
+export const blogMetadata: Record<string, BlogMetadataEntry> = {
   "kak-vybrat-kuhnyu-na-zakaz-v-tveri": {
     ...defaultBlogMetadata,
     relatedSlugs: ["zamer-kuhni-v-tveri-chto-podgotovit", "top-10-oshibok-pri-zakaze-kuhni", "materialy-dlya-kuhni-mdf-massiv-plastik"],
@@ -764,7 +770,10 @@ export const blogMetadata: Record<string, BlogMetadata> = {
 };
 
 export function getBlogMetadata(post: BlogPost): BlogMetadata {
-  return blogMetadata[post.slug] ?? { ...defaultBlogMetadata, relatedSlugs: [] };
+  const entry = blogMetadata[post.slug] ?? { ...defaultBlogMetadata, relatedSlugs: [] };
+  // Нет явной даты правки — честно подставляем дату публикации поста,
+  // чтобы lastmod в sitemap не показывал «сегодня» для старых статей.
+  return { ...entry, modifiedDate: entry.modifiedDate ?? post.date };
 }
 
 // ===== PRICE DATA =====
