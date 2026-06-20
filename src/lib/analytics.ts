@@ -22,7 +22,7 @@ declare global {
       action: string,
       ...args: unknown[]
     ) => void;
-    gtag?: (command: string, event: string, params?: Record<string, unknown>) => void;
+    gtag?: (command: string, event: string, params?: object) => void;
   }
 }
 
@@ -43,16 +43,23 @@ export interface BlogEventPayload {
   cta_context?: string;
 }
 
-export function trackBlogEvent(name: BlogEventName, payload: BlogEventPayload): void {
+export function trackAnalyticsEvent(
+  name: string,
+  payload: object,
+): void {
   if (typeof window === "undefined") return;
   try {
     YM_COUNTER_IDS.forEach((id) =>
-      window.ym?.(id, "reachGoal", name, payload as Record<string, unknown>),
+      window.ym?.(id, "reachGoal", name, payload),
     );
     window.gtag?.("event", name, payload);
   } catch {
-    // Analytics must not interrupt article reading or lead submission.
+    // Analytics must never interrupt a visitor action.
   }
+}
+
+export function trackBlogEvent(name: BlogEventName, payload: BlogEventPayload): void {
+  trackAnalyticsEvent(name, payload);
 }
 
 /**
