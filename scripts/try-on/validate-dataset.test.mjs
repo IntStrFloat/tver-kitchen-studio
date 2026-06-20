@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { mkdtempSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { mkdtempSync, mkdirSync, rmSync, symlinkSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -101,6 +101,33 @@ test("rejects paths that escape the private directory", () => {
     writeFileSync(join(escapedDirectory, "outside.webp"), "image");
     assert.throws(() => validate(fixture.manifest), (error) => {
       assert.match(error.stderr, /File must be a private relative path: private\/\.\.\/private-escape\/outside\.webp/);
+      return true;
+    });
+  } finally {
+    rmSync(fixture.directory, { recursive: true, force: true });
+  }
+});
+
+test("rejects symlinked files that resolve outside the private directory", (t) => {
+  const fixture = createFixture((dataset) => {
+    dataset.products[0].references[0] = "private/products/linked.webp";
+    return dataset;
+  });
+  try {
+    const outside = join(fixture.directory, "outside.webp");
+    const linked = join(fixture.directory, "private", "products", "linked.webp");
+    writeFileSync(outside, "image");
+    try {
+      symlinkSync(outside, linked, "file");
+    } catch (error) {
+      if (error && ["EPERM", "EACCES", "ENOTSUP"].includes(error.code)) {
+        t.skip("Symlink creation is unavailable on this platform");
+        return;
+      }
+      throw error;
+    }
+    assert.throws(() => validate(fixture.manifest), (error) => {
+      assert.match(error.stderr, /File must resolve inside the private directory: private\/products\/linked\.webp/);
       return true;
     });
   } finally {

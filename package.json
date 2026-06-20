@@ -12,7 +12,7 @@
     "typecheck": "tsc --noEmit",
     "typecheck:try-on": "tsc -p tsconfig.try-on.json",
     "benchmark:validate": "node scripts/try-on/validate-dataset.mjs benchmark/try-on/private/dataset.json",
-    "benchmark:summarize": "node scripts/try-on/summarize-results.mjs benchmark/try-on/private/scores.csv",
+    "benchmark:summarize": "node scripts/try-on/summarize-results.mjs benchmark/try-on/private/scores.csv benchmark/try-on/private/dataset.json",
     "start": "next start",
     "lint": "next lint",
     "generate:og": "node scripts/generate-og.mjs",

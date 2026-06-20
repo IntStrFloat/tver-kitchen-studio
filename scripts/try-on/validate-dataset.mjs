@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, realpathSync } from "node:fs";
 import { dirname, isAbsolute, relative, resolve, sep } from "node:path";
 
 const APPROVED_GROUPS = new Set(["kitchens", "wardrobes", "walk-in", "other"]);
@@ -36,6 +36,14 @@ function requirePrivateFile(manifestDirectory, relativePath) {
     isAbsolute(pathFromPrivateDirectory)
   ) fail(`File must be a private relative path: ${relativePath}`);
   if (!existsSync(filePath)) fail(`Missing file: ${relativePath}`);
+  const realPrivateDirectory = realpathSync(privateDirectory);
+  const realFilePath = realpathSync(filePath);
+  const realPathFromPrivateDirectory = relative(realPrivateDirectory, realFilePath);
+  if (
+    realPathFromPrivateDirectory === ".." ||
+    realPathFromPrivateDirectory.startsWith(`..${sep}`) ||
+    isAbsolute(realPathFromPrivateDirectory)
+  ) fail(`File must resolve inside the private directory: ${relativePath}`);
 }
 
 function validateDataset(dataset, manifestDirectory) {
