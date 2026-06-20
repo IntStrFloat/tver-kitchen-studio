@@ -9,6 +9,10 @@ lerna-debug.log*
 
 node_modules
 .worktrees/
+.superpowers/
+.data/try-on/
+benchmark/try-on/private/
+benchmark/try-on/outputs/
 dist
 dist-ssr
 *.local

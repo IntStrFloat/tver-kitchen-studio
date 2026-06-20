@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "incremental": false
+  },
+  "include": [
+    "next-env.d.ts",
+    "src/features/try-on/**/*.ts",
+    "src/components/try-on/**/*.tsx",
+    "src/app/(main)/primerka/**/*.tsx",
+    "src/app/api/try-on/**/*.ts"
+  ]
+}
