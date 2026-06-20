@@ -7,7 +7,7 @@ function imageError(code: "type" | "size" | "empty") { return ({ type: "Выбе
 
 export default function PhotoStep({ productName, previewUrl, onPhoto, onBack }: { productName: string; previewUrl: string | null; onPhoto: (file: File) => void; onBack: () => void }) {
   const input = useRef<HTMLInputElement>(null); const [error, setError] = useState<string | null>(null); const [consent, setConsent] = useState(false); const [file, setFile] = useState<File | null>(null);
-  const choose = (selected?: File) => { if (!selected) return; const valid = validateImageMetadata(selected); if (!valid.ok) { setError(imageError(valid.code)); return; } setError(null); setFile(selected); };
+  const choose = (selected?: File) => { if (!selected) return; const valid = validateImageMetadata(selected); if (!valid.ok) { setFile(null); if (input.current) input.current.value = ""; setError(imageError(valid.code)); return; } setError(null); setFile(selected); };
   return <section className="mx-auto w-full max-w-2xl px-4 py-8">
     <p className="text-sm font-medium text-primary">Шаг 2 из 3</p><h1 className="mt-2 text-3xl font-bold">Фото комнаты</h1><p className="mt-3 text-muted-foreground">Модель: <strong>{productName}</strong></p>
     <label className="mt-6 block text-sm font-medium" htmlFor="try-on-photo">Загрузите фото комнаты</label>
