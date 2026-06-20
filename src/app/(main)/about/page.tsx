@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import {
+  CalendarDays,
+  Factory,
+  Layers,
+  PenTool,
+  ShieldCheck,
+  Timer,
+} from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
@@ -39,37 +47,37 @@ const advantages = [
     title: "Собственное производство",
     description:
       "Полный цикл производства в Твери — от раскроя до сборки. Контроль качества на каждом этапе.",
-    icon: "🏭",
+    Icon: Factory,
   },
   {
     title: "10+ лет опыта",
     description:
       "Работаем с 2014 года. Более 500 кухонь установлено в Твери и Тверской области.",
-    icon: "📅",
+    Icon: CalendarDays,
   },
   {
     title: "Европейские материалы",
     description:
       "Фурнитура Blum и Hettich, сертифицированные МДФ, кварц и натуральный камень.",
-    icon: "🇪🇺",
+    Icon: Layers,
   },
   {
     title: "Гарантия 1 год",
     description:
       "На все изделия и выполненные работы. Гарантийный мастер выезжает бесплатно.",
-    icon: "🛡️",
+    Icon: ShieldCheck,
   },
   {
     title: "Эскиз проекта",
     description:
       "После заключения договора предоставляется эскиз проекта на утверждение.",
-    icon: "🎨",
+    Icon: PenTool,
   },
   {
     title: "Готовность от 20 дней",
     description:
       "Срок изготовления — от 20 рабочих дней. Соблюдаем сроки по договору.",
-    icon: "⏱️",
+    Icon: Timer,
   },
 ];
 
@@ -145,7 +153,12 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {advantages.map((item, index) => (
             <div key={index} className="premium-card p-6 text-center">
-              <div className="text-4xl mb-4">{item.icon}</div>
+              <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <item.Icon
+                  className="w-6 h-6 text-primary"
+                  aria-hidden="true"
+                />
+              </div>
               <h2 className="text-lg font-semibold mb-2">{item.title}</h2>
               <p className="text-sm text-muted-foreground">
                 {item.description}

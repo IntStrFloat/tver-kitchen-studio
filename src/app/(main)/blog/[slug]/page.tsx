@@ -4,7 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
-import { SITE_CONFIG, generateFAQSchema } from "@/lib/seo";
+import {
+  SITE_CONFIG,
+  formatTitleWithBrand,
+  generateFAQSchema,
+} from "@/lib/seo";
 import { blogPosts, getBlogMetadata } from "@/lib/data";
 import BlogLeadForm from "@/components/BlogLeadForm";
 import BlogAnalytics from "@/components/BlogAnalytics";
@@ -24,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {};
 
   return {
-    title: `${post.seoTitle} | Kuhnitver`,
+    title: formatTitleWithBrand(post.seoTitle),
     description: post.seoDescription,
     alternates: {
       canonical: `${SITE_CONFIG.url}/blog/${post.slug}`,

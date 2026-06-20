@@ -37,6 +37,14 @@ export const SITE_CONFIG = {
   },
 } as const;
 
+export function formatTitleWithBrand(title: string): string {
+  const titleWithoutBrand = title
+    .replace(/(?:\s*\|\s*Kuhnitver)+\s*$/i, "")
+    .trim();
+
+  return `${titleWithoutBrand} | ${SITE_CONFIG.name}`;
+}
+
 // ===== SEO TEMPLATES PER PAGE TYPE =====
 export const SEO_TEMPLATES = {
   home: {

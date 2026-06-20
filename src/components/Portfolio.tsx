@@ -33,11 +33,6 @@ const Portfolio = () => {
           </p>
         </motion.div>
 
-        <div className="bg-background/60 backdrop-blur-sm border border-border/40 rounded-2xl p-4 md:p-5 mb-10 text-sm text-muted-foreground max-w-3xl mx-auto text-center">
-          Дизайн-референсы для иллюстрации стилей. Каждый проект уникален и
-          разрабатывается индивидуально.
-        </div>
-
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
           {projects.map((project, index) => (
             <motion.figure
