@@ -151,6 +151,35 @@ export function generateWebSiteSchema() {
   };
 }
 
+// Основные разделы сайта — кандидаты в «Быстрые ссылки» Яндекса и sitelinks
+// Google. Сами быстрые ссылки формируются поисковиком автоматически; эта
+// разметка SiteNavigationElement даёт поисковику явный машиночитаемый список
+// главных разделов (сигнал для отбора). Порядок = приоритет: чем выше, тем
+// важнее раздел коммерчески. Подбор/правка готовых ссылок — в Яндекс.Вебмастере
+// (Информация о сайте → Быстрые ссылки). Метки совпадают с видимой навигацией
+// в шапке/подвале — это подтверждает структуру для поисковика.
+const SITE_NAVIGATION_LINKS = [
+  { name: "Каталог кухонь", path: "/catalog" },
+  { name: "Цены", path: "/price" },
+  { name: "Наши работы", path: "/portfolio" },
+  { name: "Доставка", path: "/dostavka" },
+  { name: "Вопросы и ответы", path: "/faq" },
+  { name: "Для бизнеса", path: "/b2b" },
+  { name: "О компании", path: "/about" },
+  { name: "Блог", path: "/blog" },
+  { name: "Контакты", path: "/contacts" },
+] as const;
+
+export function generateSiteNavigationSchema() {
+  return SITE_NAVIGATION_LINKS.map((link, index) => ({
+    "@context": "https://schema.org",
+    "@type": "SiteNavigationElement",
+    position: index + 1,
+    name: link.name,
+    url: `${SITE_CONFIG.url}${link.path}`,
+  }));
+}
+
 export function generateWebPageSchema(
   title: string,
   description: string,

@@ -7,6 +7,7 @@ import {
   SITE_CONFIG,
   generateOrganizationSchema,
   generateWebSiteSchema,
+  generateSiteNavigationSchema,
   generateLocalBusinessSchema,
   generateServiceSchema,
 } from "@/lib/seo";
@@ -92,6 +93,7 @@ export default function RootLayout({
   // JSON-LD структурированные данные
   const organizationSchema = generateOrganizationSchema();
   const webSiteSchema = generateWebSiteSchema();
+  const siteNavigationSchema = generateSiteNavigationSchema();
   const localBusinessSchema = generateLocalBusinessSchema();
   const serviceSchema = generateServiceSchema();
 
@@ -108,6 +110,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(webSiteSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(siteNavigationSchema),
           }}
         />
         <script
