@@ -23,7 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 .next
-
+.next/*
+.omx
+.next
 # Secrets — никогда не коммитим
 .claude-secrets
 .claude-secrets.*
