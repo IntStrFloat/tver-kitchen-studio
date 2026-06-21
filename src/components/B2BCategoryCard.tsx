@@ -289,7 +289,7 @@ const B2BCategoryCard = ({ category, index }: B2BCategoryCardProps) => {
             >
               <div className="border-t border-border bg-secondary/20 p-6">
                 <h3 className="font-semibold text-sm text-muted-foreground uppercase tracking-wide mb-4">
-                  Примеры реализованных проектов
+                  Примеры решений
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {category.examples.map((example, i) => (

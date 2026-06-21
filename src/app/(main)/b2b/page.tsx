@@ -449,12 +449,15 @@ export default function B2BPage() {
             юридическими лицами и ИП по договору, с полным комплектом
             закрывающих документов.
           </p>
+          <p className="text-sm text-muted-foreground mb-6">
+            Работаем в Твери и Тверской области. Для крупных партий обсуждаем доставку и монтаж в соседних регионах.
+          </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="#cta"
+              href={`mailto:${SITE_CONFIG.email}?subject=${encodeURIComponent("ТЗ на расчёт B2B-проекта")}`}
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
             >
-              Запросить расчёт
+              Отправить ТЗ на расчёт
               <ArrowRight className="w-4 h-4" aria-hidden="true" />
             </a>
             <a
@@ -509,13 +512,42 @@ export default function B2BPage() {
             </p>
           </div>
           <div className="bg-secondary/30 border border-border/40 rounded-2xl p-4 md:p-5 mb-8 text-sm text-muted-foreground max-w-3xl mx-auto text-center">
-            На фото — дизайн-референсы и типовые решения. Конкретные проекты
-            адаптируем под планировку и требования вашего объекта.
+            Ниже — примеры решений, которые адаптируем под планировку, брендбук, бюджет и требования объекта.
           </div>
           <div className="grid items-start md:grid-cols-2 gap-8">
             {b2bCategories.map((category, index) => (
               <B2BCategoryCard key={index} category={category} index={index} />
             ))}
+          </div>
+        </section>
+
+        <section className="mb-16 rounded-3xl border border-primary/20 bg-primary/5 p-7 md:p-10" aria-label="Тендеры и закупки мебели">
+          <div className="grid gap-8 lg:grid-cols-[1.35fr_0.65fr] lg:items-start">
+            <div>
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
+                <FileSignature className="h-6 w-6" aria-hidden="true" />
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">Тендеры и закупки мебели</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Принимаем заявки от юридических лиц, ИП, закупочных отделов, подрядчиков и управляющих компаний. Рассчитываем изготовление мебели по ТЗ, спецификации, ведомости, дизайн-проекту или чертежам.
+              </p>
+              <p className="mt-4 text-muted-foreground leading-relaxed">
+                Подготавливаем коммерческое предложение, смету, спецификацию, договор, счёт, УПД и акт. Работаем с коммерческими тендерами, запросами КП и закупками юрлиц. Участие в закупках по 44-ФЗ и 223-ФЗ рассматриваем после анализа документации, сроков, требований к обеспечению и условиям оплаты.
+              </p>
+            </div>
+            <aside className="rounded-2xl bg-card p-6 shadow-sm">
+              <h3 className="font-bold text-lg mb-3">Что приложить к запросу</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>ТЗ, спецификацию, ведомость или чертёж</li>
+                <li>Город и адрес объекта</li>
+                <li>Желаемый срок поставки и монтажа</li>
+                <li>Контакт для обратной связи</li>
+              </ul>
+              <a href={`mailto:${SITE_CONFIG.email}?subject=${encodeURIComponent("ТЗ на расчёт B2B-проекта")}`} className="mt-5 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-primary px-4 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity">
+                <FileText className="h-4 w-4" aria-hidden="true" />
+                Отправить ТЗ на расчёт
+              </a>
+            </aside>
           </div>
         </section>
 
@@ -553,6 +585,9 @@ export default function B2BPage() {
               </article>
             ))}
           </div>
+          <p className="mt-5 text-center text-sm text-muted-foreground">
+            Карточку предприятия, реквизиты, гарантийные условия и документы на материалы предоставляем по запросу вместе с коммерческим предложением.
+          </p>
         </section>
 
         {/* Stats */}
