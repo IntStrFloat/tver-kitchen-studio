@@ -512,7 +512,7 @@ export default function B2BPage() {
             На фото — дизайн-референсы и типовые решения. Конкретные проекты
             адаптируем под планировку и требования вашего объекта.
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid items-start md:grid-cols-2 gap-8">
             {b2bCategories.map((category, index) => (
               <B2BCategoryCard key={index} category={category} index={index} />
             ))}
