@@ -29,6 +29,7 @@ import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
 import B2BCategoryCard, {
   type B2BCategory,
 } from "@/components/B2BCategoryCard";
+import B2BRequestModal from "@/components/B2BRequestModal";
 
 export const metadata: Metadata = {
   title: "Мебель для бизнеса на заказ в Твери — офис, торговля, HoReCa | Kuhnitver",
@@ -453,13 +454,7 @@ export default function B2BPage() {
             Работаем в Твери и Тверской области. Для крупных партий обсуждаем доставку и монтаж в соседних регионах.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a
-              href={`mailto:${SITE_CONFIG.email}?subject=${encodeURIComponent("ТЗ на расчёт B2B-проекта")}`}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
-            >
-              Отправить ТЗ на расчёт
-              <ArrowRight className="w-4 h-4" aria-hidden="true" />
-            </a>
+            <B2BRequestModal />
             <a
               href={`tel:${SITE_CONFIG.phoneClean}`}
               className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border-2 border-border font-medium hover:border-primary transition-colors"
@@ -543,10 +538,7 @@ export default function B2BPage() {
                 <li>Желаемый срок поставки и монтажа</li>
                 <li>Контакт для обратной связи</li>
               </ul>
-              <a href={`mailto:${SITE_CONFIG.email}?subject=${encodeURIComponent("ТЗ на расчёт B2B-проекта")}`} className="mt-5 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl bg-primary px-4 text-sm font-semibold text-primary-foreground hover:opacity-90 transition-opacity">
-                <FileText className="h-4 w-4" aria-hidden="true" />
-                Отправить ТЗ на расчёт
-              </a>
+              <div className="mt-5"><B2BRequestModal /></div>
             </aside>
           </div>
         </section>
