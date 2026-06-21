@@ -30,6 +30,14 @@ test("try-on groups keep their stable order", () => {
   );
 });
 
+test("demo catalog contains four products covering every furniture group", () => {
+  assert.ok(TRY_ON_PRODUCTS.length >= 4);
+  assert.deepEqual(
+    new Set(TRY_ON_PRODUCTS.map(({ groupId }) => groupId)),
+    new Set(TRY_ON_GROUPS.map(({ id }) => id)),
+  );
+});
+
 test("try-on product ids are unique", () => {
   const productIds = TRY_ON_PRODUCTS.map(({ id }) => id);
 

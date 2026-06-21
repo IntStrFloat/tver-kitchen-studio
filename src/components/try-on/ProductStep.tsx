@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { TRY_ON_GROUPS, TRY_ON_PRODUCTS, type TryOnGroupId } from "@/features/try-on/catalog";
+import { IS_DEMO_CATALOG, TRY_ON_GROUPS, TRY_ON_PRODUCTS, type TryOnGroupId } from "@/features/try-on/catalog";
 
 export default function ProductStep({ onSelect, onGroupSelect }: { onSelect: (productId: string) => void; onGroupSelect: (groupId: TryOnGroupId) => void }) {
   const [groupId, setGroupId] = useState<TryOnGroupId>(TRY_ON_GROUPS[0].id);
@@ -10,6 +10,7 @@ export default function ProductStep({ onSelect, onGroupSelect }: { onSelect: (pr
     <p className="text-sm font-medium text-primary">Шаг 1 из 3</p>
     <h1 className="mt-2 text-3xl font-bold">Выберите мебель</h1>
     <p className="mt-3 text-muted-foreground">Сначала выберите категорию, затем модель для примерки.</p>
+    {IS_DEMO_CATALOG ? <p className="mt-3 rounded-lg border border-amber-300 bg-amber-50 p-3 text-sm text-amber-950" role="status">Сейчас показан демонстрационный каталог для проверки интерфейса. Это не реальные товары студии.</p> : null}
     <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4" role="group" aria-label="Категории мебели">
       {TRY_ON_GROUPS.map((group) => <button key={group.id} type="button" onClick={() => { setGroupId(group.id); onGroupSelect(group.id); }} aria-pressed={groupId === group.id} className={`min-h-11 rounded-lg border px-3 text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${groupId === group.id ? "border-primary bg-primary text-primary-foreground" : "bg-background hover:bg-secondary"}`}>{group.label}</button>)}
     </div>
