@@ -64,11 +64,7 @@ const Footer = () => {
                     aria-hidden="true"
                   />
                   <span className="text-background/70">
-                    г. Тверь, ул. Коминтерна, 95
-                    <br />
-                    <span className="text-background/50 text-sm">
-                      ТЦ «Мебельный»
-                    </span>
+                    г. Тверь, ул. Николая Корыткова, 3 ст1
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -78,10 +74,10 @@ const Footer = () => {
                   />
                   <div>
                     <a
-                      href="tel:+79036302909"
+                      href="tel:+4822477081"
                       className="text-background/70 hover:text-background transition-colors block"
                     >
-                      +7 903 630 29 09
+                      +48 22 477 08 1
                     </a>
                     <a
                       href="tel:+79157220075"

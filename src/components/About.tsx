@@ -152,10 +152,7 @@ const About = () => {
                 </div>
                 <div className="font-medium">
                   <span itemProp="addressLocality">Тверь</span>,{" "}
-                  <span itemProp="streetAddress">ул. Коминтерна, 95</span>
-                </div>
-                <div className="text-xs text-muted-foreground mt-0.5">
-                  ТЦ «Мебельный»
+                  <span itemProp="streetAddress">ул. Николая Корыткова, 3 ст1</span>
                 </div>
                 <meta itemProp="addressRegion" content="Тверская область" />
                 <meta itemProp="postalCode" content="170000" />
@@ -174,12 +171,12 @@ const About = () => {
                 </div>
                 {/* itemProp на <a> взял бы значением href (tel:+7…);
                     даём чистый номер через <meta>, ссылку оставляем для людей. */}
-                <meta itemProp="telephone" content="+7 903 630 29 09" />
+                <meta itemProp="telephone" content="+48 22 477 08 1" />
                 <a
-                  href="tel:+79036302909"
+                  href="tel:+4822477081"
                   className="font-medium hover:text-primary transition-colors"
                 >
-                  +7 903 630 29 09
+                  +48 22 477 08 1
                 </a>
               </div>
             </div>

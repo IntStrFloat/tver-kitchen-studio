@@ -78,12 +78,6 @@ export const metadata: Metadata = {
     apple: { url: "/apple-touch-icon.png", sizes: "180x180" },
   },
   manifest: "/site.webmanifest",
-  other: {
-    "geo.region": "RU-TVE",
-    "geo.placename": "Тверь",
-    "geo.position": "56.8584;35.9006",
-    ICBM: "56.8584, 35.9006",
-  },
 };
 
 export default function RootLayout({

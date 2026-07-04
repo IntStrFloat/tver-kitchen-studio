@@ -4,17 +4,15 @@ import { motion } from "framer-motion";
 import { Navigation, Phone, Clock } from "lucide-react";
 
 const Showroom = () => {
-  // Координаты шоурума: 56.8584, 35.9006 (ул. Коминтерна, 95, Тверь)
-  // Используем map-widget с поиском по адресу — самый простой способ
-  // встроить точку без регистрации в Яндекс.Конструкторе карт.
+  const addressQuery = "Тверь, улица Николая Корыткова, 3 ст1";
   const mapSrc =
-    "https://yandex.ru/map-widget/v1/?ll=35.9006%2C56.8584&mode=search&sll=35.9006%2C56.8584&text=" +
-    encodeURIComponent("Тверь, улица Коминтерна, 95") +
+    "https://yandex.ru/map-widget/v1/?mode=search&text=" +
+    encodeURIComponent(addressQuery) +
     "&z=16";
 
   const routeUrl =
-    "https://yandex.ru/maps/?rtext=~56.8584%2C35.9006&rtt=auto&text=" +
-    encodeURIComponent("Тверь, улица Коминтерна, 95");
+    "https://yandex.ru/maps/?mode=search&text=" +
+    encodeURIComponent(addressQuery);
 
   return (
     <section
@@ -57,10 +55,10 @@ const Showroom = () => {
                 Адрес
               </div>
               <p className="font-semibold text-lg leading-snug mb-1">
-                г. Тверь, ул. Коминтерна, 95
+                г. Тверь, ул. Николая Корыткова, 3 ст1
               </p>
               <p className="text-sm text-muted-foreground">
-                ТЦ «Мебельный» · Тверская область, 170000
+                Тверская область, 170000
               </p>
             </div>
 
@@ -93,10 +91,10 @@ const Showroom = () => {
                     Запись на визит
                   </div>
                   <a
-                    href="tel:+79036302909"
+                    href="tel:+4822477081"
                     className="font-medium hover:text-primary transition-colors"
                   >
-                    +7 903 630 29 09
+                    +48 22 477 08 1
                   </a>
                   <p className="text-xs text-muted-foreground mt-1">
                     Лучше предупредить — подготовим образцы под ваш стиль
@@ -139,7 +137,7 @@ const Showroom = () => {
               loading="lazy"
               allow="geolocation"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Шоурум Kuhnitver на ул. Коминтерна, 95 в Твери"
+              title="Шоурум Kuhnitver на ул. Николая Корыткова, 3 ст1 в Твери"
             />
           </motion.div>
         </div>

@@ -15,9 +15,9 @@ export const metadata: Metadata = {
   title:
     "Контакты Kuhnitver — адрес шоурума, телефон, режим работы в Твери | Kuhnitver",
   description:
-    "Шоурум Kuhnitver: г. Тверь, ул. Коминтерна, 95, ТЦ «Мебельный». Телефон +7 903 630 29 09, email m-btd@mail.ru. Режим работы Пн-Сб 10:00–19:00. Мессенджер Max для быстрой связи. Обслуживаем Тверь, Торжок, Ржев, Конаково и всю Тверскую область.",
+    "Шоурум Kuhnitver: г. Тверь, ул. Николая Корыткова, 3 ст1. Телефон +48 22 477 08 1, email m-btd@mail.ru. Режим работы Пн-Сб 10:00–19:00. Мессенджер Max для быстрой связи. Обслуживаем Тверь, Торжок, Ржев, Конаково и всю Тверскую область.",
   keywords:
-    "контакты Kuhnitver, адрес кухни Тверь, шоурум кухонь Тверь, ТЦ Мебельный Тверь, телефон кухни Тверь, кухни Тверь Max",
+    "контакты Kuhnitver, адрес кухни Тверь, шоурум кухонь Тверь, телефон кухни Тверь, кухни Тверь Max",
   alternates: {
     canonical: `${SITE_CONFIG.url}/contacts`,
   },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title:
       "Контакты Kuhnitver — адрес шоурума, телефон, режим работы в Твери | Kuhnitver",
     description:
-      "Шоурум Kuhnitver: г. Тверь, ул. Коминтерна, 95, ТЦ «Мебельный». Телефон, email, мессенджер Max. Пн-Сб 10:00–19:00.",
+      "Шоурум Kuhnitver: г. Тверь, ул. Николая Корыткова, 3 ст1. Телефон, email, мессенджер Max. Пн-Сб 10:00–19:00.",
     url: `${SITE_CONFIG.url}/contacts`,
     siteName: "Kuhnitver",
     locale: "ru_RU",
@@ -41,14 +41,14 @@ export const metadata: Metadata = {
   },
 };
 
-const addressQuery = "Тверь, улица Коминтерна, 95";
+const addressQuery = "Тверь, улица Николая Корыткова, 3 ст1";
 const mapSrc =
-  "https://yandex.ru/map-widget/v1/?ll=35.9006%2C56.8584&mode=search&sll=35.9006%2C56.8584&text=" +
+  "https://yandex.ru/map-widget/v1/?mode=search&text=" +
   encodeURIComponent(addressQuery) +
   "&z=16";
 
 const routeUrl =
-  "https://yandex.ru/maps/?rtext=~56.8584%2C35.9006&rtt=auto&text=" +
+  "https://yandex.ru/maps/?mode=search&text=" +
   encodeURIComponent(addressQuery);
 
 export default function ContactsPage() {
@@ -112,9 +112,11 @@ export default function ContactsPage() {
                     </span>
                     , <span itemProp="streetAddress">{SITE_CONFIG.address.street}</span>
                   </p>
-                  <p className="text-muted-foreground text-sm mt-1">
-                    {SITE_CONFIG.address.venue}
-                  </p>
+                  {SITE_CONFIG.address.venue && (
+                    <p className="text-muted-foreground text-sm mt-1">
+                      {SITE_CONFIG.address.venue}
+                    </p>
+                  )}
                   <meta
                     itemProp="addressRegion"
                     content={SITE_CONFIG.address.region}
@@ -254,19 +256,6 @@ export default function ContactsPage() {
                 title={`Шоурум Kuhnitver на ${SITE_CONFIG.address.street} в Твери`}
               />
             </div>
-            <meta
-              itemProp="geo"
-              itemScope
-              itemType="https://schema.org/GeoCoordinates"
-            />
-            <meta
-              itemProp="latitude"
-              content={String(SITE_CONFIG.geo.latitude)}
-            />
-            <meta
-              itemProp="longitude"
-              content={String(SITE_CONFIG.geo.longitude)}
-            />
           </div>
         </div>
 
@@ -306,7 +295,7 @@ export default function ContactsPage() {
           </h2>
           <p>
             Шоурум и производство Kuhnitver находятся в Твери, на улице
-            Коминтерна, 95, в торговом центре «Мебельный». На месте можно
+            Николая Корыткова, 3 ст1. На месте можно
             посмотреть и потрогать образцы фасадов, столешниц, фурнитуры
             Blum и Hettich, обсудить с дизайнером планировку и стиль, получить
             предварительный расчёт по своим размерам. Перед визитом удобно
@@ -315,7 +304,7 @@ export default function ContactsPage() {
               href={`tel:${SITE_CONFIG.phoneClean}`}
               className="text-primary hover:underline"
             >
-              +7 903 630 29 09
+              +48 22 477 08 1
             </a>{" "}
             — мы подготовим образцы под интересующий вас стиль.
           </p>

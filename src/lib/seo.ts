@@ -11,23 +11,19 @@ export const SITE_CONFIG = {
   defaultOgImage: "https://kuhnitver.ru/og-image.jpg",
   locale: "ru_RU",
   language: "ru",
-  phone: "+7-903-630-29-09",
-  phoneClean: "+79036302909",
+  phone: "+48 22 477 08 1",
+  phoneClean: "+4822477081",
   // Контакт менеджера в мессенджере Max (отдельный номер от основного телефона)
   maxPhone: "+7-915-722-00-75",
   maxPhoneClean: "+79157220075",
   email: "m-btd@mail.ru",
   address: {
-    street: "ул. Коминтерна, 95",
-    venue: "ТЦ «Мебельный»",
+    street: "ул. Николая Корыткова, 3 ст1",
+    venue: "",
     locality: "Тверь",
     region: "Тверская область",
     postalCode: "170000",
     country: "RU",
-  },
-  geo: {
-    latitude: 56.8584,
-    longitude: 35.9006,
   },
   social: {
     vk: "https://vk.com/Kuhnitver",
@@ -89,11 +85,6 @@ export function generateLocalBusinessSchema() {
       addressRegion: SITE_CONFIG.address.region,
       postalCode: SITE_CONFIG.address.postalCode,
       addressCountry: SITE_CONFIG.address.country,
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: SITE_CONFIG.geo.latitude,
-      longitude: SITE_CONFIG.geo.longitude,
     },
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
