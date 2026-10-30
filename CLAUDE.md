@@ -4,7 +4,7 @@
 
 ## Обновление развёртывания 30.10.2026
 
-Рабочий сайт переведён на проверенный выпуск `d7841315296a02133a8447f1a5a489565f48c6ee`
+С 30.10.2026 рабочий сайт использует проверяемые выпуски
 в `/var/www/tver-kitchen-studio-releases/<SHA>`. Активный каталог всегда проверяйте
 командой `systemctl show tver-kitchen-studio.service -p WorkingDirectory --value`.
 Его задаёт `/etc/systemd/system/tver-kitchen-studio.service.d/50-seo-release.conf`.
@@ -68,7 +68,7 @@ set -a; source .claude-secrets; set +a
 | Next.js process | systemd-юнит `tver-kitchen-studio.service`, `next start -H 127.0.0.1 -p 3000` |
 | Env-файл | `/etc/tver-kitchen-studio.env` (chmod 600, читается systemd через `EnvironmentFile=-`) — сейчас форме заявок серверные переменные НЕ нужны (см. TODO ниже); файл оставлен для будущих нужд |
 | nginx | Активный обычный файл `/etc/nginx/sites-enabled/kuhnitver.ru`; `sites-available` — устаревшая отдельная копия. Проверять фактическое включение через `nginx -T` |
-| TLS | Let's Encrypt, `/etc/letsencrypt/live/kuhnitver.ru/`, домены `kuhnitver.ru` + `www.kuhnitver.ru`, ECDSA, истекает 2026-08-13, автообновление через `certbot.timer` |
+| TLS | Let's Encrypt, `/etc/letsencrypt/live/kuhnitver.ru/`, домены `kuhnitver.ru` + `www.kuhnitver.ru`, ECDSA, на проверке 30.10.2026 действителен до 2026-12-11 21:38 UTC, автообновление через `certbot.timer` |
 | Firewall | ufw активен: OpenSSH (22), Nginx Full (80, 443) |
 | HTTPS | https://kuhnitver.ru/ → 200, http:// → 301 на https:// |
 

@@ -1,0 +1,8 @@
+{
+  "observedAt": "2026-10-30T21:11:10.967954+00:00",
+  "stoppedOwnedStage": "kuhnitver-stage-5f952ff9cc91.service",
+  "productionActive": true,
+  "workingDirectory": "/var/www/tver-kitchen-studio-releases/5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "originalSha": "2b9702f7b0e9decfda306f1b84f19ba5edd4194b",
+  "originalStatus": "M next-env.d.ts"
+}

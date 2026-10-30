@@ -1,0 +1,29 @@
+{
+  "observedAt": "2026-10-30T21:11:07.017221+00:00",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "publishedMetadataUsesVersionedImage": true,
+  "checks": [
+    {
+      "path": "/og-image-20261030.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 126459,
+      "sha256": "1815eb0f303e33119994ca86945e173fef2469c251db3adc3bbdf7b04c2d1756"
+    },
+    {
+      "path": "/og-image.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 126459,
+      "sha256": "1815eb0f303e33119994ca86945e173fef2469c251db3adc3bbdf7b04c2d1756"
+    },
+    {
+      "path": "/og-image.svg",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "bytes": 239667,
+      "sha256": "5a10a68dbdfa8755c4388e7b3fa779fb007f5935c0478c584d72c412c474c4c2",
+      "contactsConsistent": true
+    }
+  ]
+}
