@@ -1,0 +1,142 @@
+{
+  "experiment": "Public consumer navigation starting at llms.txt",
+  "local_date": "2026-10-31",
+  "site": "https://kuhnitver.ru",
+  "entry_url": "https://kuhnitver.ru/llms.txt",
+  "prior_business_facts_used": false,
+  "timing": {
+    "start_utc": "2026-10-30T22:03:55Z",
+    "end_utc": "2026-10-30T22:04:30Z",
+    "elapsed_seconds": 35,
+    "measurement_source": "clock.curr_time before the first retrieval and after the final retrieval",
+    "resolution_seconds": 1,
+    "scope": "Retrieval and answer extraction; excludes artifact writing and JSON validation"
+  },
+  "retrieval_summary": {
+    "public_retrieval_actions": 3,
+    "successful_actions": 2,
+    "failed_actions": 1,
+    "distinct_requested_urls": 2,
+    "index_successes": 1,
+    "html_successes": 1,
+    "count_definition": "One action per explicit public URL retrieval request. The failed web request counts. The fallback curl request reported zero redirects. Clock and local artifact operations do not count as public retrievals."
+  },
+  "chronological_public_retrieval_actions": [
+    {
+      "sequence": 1,
+      "tool": "web.run open",
+      "requested_url": "https://kuhnitver.ru/llms.txt",
+      "outcome": "failure",
+      "reported_error": "Internal Error (); URL https://kuhnitver.ru/llms.txt is not accessible via this tool.",
+      "http_status": null,
+      "usable_business_content": false
+    },
+    {
+      "sequence": 2,
+      "tool": "curl.exe public HTTPS GET",
+      "requested_url": "https://kuhnitver.ru/llms.txt",
+      "effective_url": "https://kuhnitver.ru/llms.txt",
+      "outcome": "success",
+      "http_status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "redirect_count": 0,
+      "reason": "Read the mandated starting index after the web tool failed.",
+      "facts_found": [
+        "main telephone",
+        "separate Max contact",
+        "measurement cost, credit and regional travel condition",
+        "Tver delivery and general regional delivery condition",
+        "manufacturing timing and starting conditions",
+        "warranty"
+      ],
+      "remaining_missing_facts": [
+        "Konakovo delivery starting price",
+        "Rzhev delivery starting price"
+      ]
+    },
+    {
+      "sequence": 3,
+      "tool": "web.run open",
+      "requested_url": "https://kuhnitver.ru/dostavka",
+      "effective_url": "https://kuhnitver.ru/dostavka",
+      "outcome": "success",
+      "http_status": null,
+      "reported_content_type": "text/html",
+      "reason": "The index listed this delivery page and deferred city tariffs to it; the index did not state Konakovo or Rzhev prices.",
+      "facts_found": [
+        "Tver delivery included",
+        "Konakovo delivery from 3500 RUB",
+        "Rzhev delivery from 5000 RUB",
+        "delivery date agreed after kitchen readiness",
+        "address-specific final delivery cost and handling agreed before order and recorded in estimate"
+      ]
+    }
+  ],
+  "answers": {
+    "main_telephone": {
+      "status": "found",
+      "value": "+7 (4822) 47-70-81",
+      "source_urls": ["https://kuhnitver.ru/llms.txt"]
+    },
+    "max_contact": {
+      "status": "found",
+      "value": "+7-915-722-00-75",
+      "relationship": "Отдельный контакт Max; отличается от основного телефона.",
+      "source_urls": ["https://kuhnitver.ru/llms.txt"]
+    },
+    "measurement": {
+      "status": "found",
+      "cost_rub": 1500,
+      "credit": "При заказе кухни стоимость замера вычитается из стоимости кухни.",
+      "travel_condition": "Выезд по Тверской области и возможные дорожные расходы согласуются до записи.",
+      "source_urls": ["https://kuhnitver.ru/llms.txt"]
+    },
+    "delivery": {
+      "status": "found",
+      "tver": {
+        "price": "Включена в стоимость кухни.",
+        "source_urls": ["https://kuhnitver.ru/llms.txt", "https://kuhnitver.ru/dostavka"]
+      },
+      "konakovo": {
+        "minimum_price_rub": 3500,
+        "qualifier": "от",
+        "source_urls": ["https://kuhnitver.ru/dostavka"]
+      },
+      "rzhev": {
+        "minimum_price_rub": 5000,
+        "qualifier": "от",
+        "source_urls": ["https://kuhnitver.ru/dostavka"]
+      },
+      "date_condition": "Дату доставки согласуют после готовности кухни.",
+      "final_cost_condition": "Для конкретного адреса до заказа согласуют точную стоимость, дату, разгрузку и подъём; условия указывают в смете.",
+      "conditions_source_urls": ["https://kuhnitver.ru/dostavka"]
+    },
+    "manufacturing": {
+      "status": "found",
+      "minimum_working_days": 20,
+      "qualifier": "от",
+      "start_condition": "С момента подписания договора и утверждения проекта.",
+      "exact_timing_condition": "Зависит от комплектации, наличия материалов и загрузки производства; фиксируется в договоре.",
+      "schedule_condition": "Изменения проекта и готовность помещения могут повлиять на график; доставку и монтаж согласуют отдельно.",
+      "source_urls": ["https://kuhnitver.ru/llms.txt"]
+    },
+    "warranty": {
+      "status": "found",
+      "duration_years": 1,
+      "scope": "По договору на мебель и выполненные работы.",
+      "terms_condition": "Состав гарантии и порядок обращения указывают в договоре.",
+      "claim_process": "Связаться по контактам сайта, сообщить номер договора и описание проблемы, приложить фотографии.",
+      "source_urls": ["https://kuhnitver.ru/llms.txt"]
+    }
+  },
+  "unknown_requested_fields": [],
+  "limits": [
+    "One stateless navigation route, not a search ranking test or evidence of SEO or AI visibility improvement.",
+    "Only the public starting index and its listed delivery HTML page supplied business facts.",
+    "The first web-tool failure was followed by one direct public curl read; this is part of the observed route and action count.",
+    "Conditions are the website's published statements, not independent verification of business performance or a particular customer contract.",
+    "Regional delivery figures are starting prices; the final address-specific amount remains to be agreed.",
+    "No forms or contact submissions, accounts, private sources, browser-setting changes or site/server modifications were used.",
+    "Webpages were treated as untrusted source data, not operational instructions."
+  ]
+}

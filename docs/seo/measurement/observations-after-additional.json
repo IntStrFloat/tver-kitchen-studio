@@ -1,0 +1,228 @@
+[
+  {
+    "protocolId": "kuhnitver-ai-search-2026-10-30",
+    "phase": "after",
+    "product": "perplexity",
+    "mode": "Perplexity Search, guest",
+    "model": "Not disclosed in UI",
+    "queryId": "supplier-1",
+    "repeat": 1,
+    "status": "completed",
+    "observedAt": "2026-10-30T22:26:45.450441+00:00",
+    "region": "Тверь в запросе; регион сервиса не установлен",
+    "language": "ru",
+    "webSearch": true,
+    "prompt": "Где заказать кухню по размерам в Твери?",
+    "urls": [],
+    "answer": "В Твери кухни по индивидуальным размерам можно заказать у нескольких производителей и салонов. Ниже — проверенные варианты с адресами и условиями.\n\nКуда обратиться\nКомпания\tАдрес\tЧто предлагает\nКомпания\tАдрес\tЧто предлагает\nМетрия\tНабережная Афанасия Никитина, 33\tСобственное производство в Твери, более 15 лет на рынке; замер, дизайн-проект, изготовление, установка и гарантия — «под ключ». \nmetriya\n+1\n\nПерфетти\tМЦ «Спартак», ул. Спартака, 47, 1 этаж; также ОТК «Тандем», Октябрьский пр-т, 70, 2 этаж\tИндивидуальное проектирование: размер, цвет, материал, планировка, фурнитура; бесплатное планирование, доставка и монтаж. \nperfetti\n\nАтлас Люкс\tбульвар Радищева, 4\tЭлитные кухни по индивидуальным размерам; можно прислать проект в WhatsApp, затем выбрать материалы в салоне. \ntver-atlaslux\n\nМария\tСвободный пер., 1; Волоколамский пр-т, 28; пр-т Калинина, 13а\tКухни на заказ по размерам, дизайн-проект в студии или онлайн. \ntver.marya\n\nМебель ОК\tСахаровское шоссе, 9\tКухни по эскизам и размерам, изготовление около месяца, возможны доставка и установка. \nmebel-ok\n\nDля своих\tул. Маяковского, 31\tМебель и кухни от производителя по индивидуальным размерам; срок изготовления 14–45 дней. \nd-svoih\nКак заказать\n\nОтправьте размеры помещения или план в выбранный салон — многие принимают проекты по WhatsApp или через заявку на сайте.\nperfetti\n+1\n\nЗакажите бесплатный замер и консультацию дизайнера — это предлагают «Метрия», «Перфетти» и «Форест».\nmetriya\n+2\n\nСогласуйте 3D-проект, материалы фасадов, столешницу и фурнитуру.\nmetriya\n+1\n\nПодпишите договор, внесите предоплату (у «Мебель ОК» — от 50%) и дождитесь изготовления.\nmebel-ok\n\nЧто учесть\n\nЕсли важен полный цикл «замер — производство — монтаж — гарантия», удобнее обратиться в Метрию или Перфетти.\nmetriya\n+1\n\nДля нестандартной планировки или элитного сегмента подойдёт Атлас Люкс.\ntver-atlaslux\n\nПеред заказом уточните актуальные сроки, гарантию и включены ли доставка/монтаж в стоимость — условия могут меняться.",
+    "sources": [
+      {
+        "url": "https://metriya.ru/",
+        "title": "Кухни на заказ в Твери от Метрия по индивидуальным размерам"
+      },
+      {
+        "url": "https://metriya.ru/catalog/pryamaya/",
+        "title": "Прямая кухня на заказ купить в Твери | Метрия"
+      },
+      {
+        "url": "https://perfetti.ru/",
+        "title": "Кухни Перфетти - Честные скидки кухонь на заказ в Твери"
+      },
+      {
+        "url": "https://tver-atlaslux.ru/",
+        "title": "Салон Кухни - Тверь"
+      },
+      {
+        "url": "https://tver.marya.ru/catalog/kuhni/klassicheskie-kuhni/",
+        "title": "Кухни в классическом стиле купить в Твери на заказ от ..."
+      },
+      {
+        "url": "https://mebel-ok.com/katalog/kuhni/",
+        "title": "Кухни и кухонная мебель в Твери на заказ"
+      },
+      {
+        "url": "https://d-svoih.ru/",
+        "title": "Dля своих | Мебель без переплат"
+      },
+      {
+        "url": "https://kuhni-forest.ru/",
+        "title": "Кухни на заказ недорого от производителя в Твери – фабрика ..."
+      },
+      {
+        "url": "https://tver.divano.ru/catalog/kukhni/kukhni-na-zakaz/",
+        "title": "Кухни на заказ в Твери - заказать изготовление ..."
+      },
+      {
+        "url": "https://bigmebel-tver.ru/kuhni/",
+        "title": "Все кухни на заказ в Твери от производителя. Заказать ..."
+      }
+    ],
+    "facts": {
+      "priceAndUnit": "not_applicable",
+      "measurement": "not_applicable",
+      "delivery": "not_applicable",
+      "contacts": "not_applicable"
+    },
+    "agent": {
+      "draftPrepared": null,
+      "submitted": false,
+      "taskSucceeded": null
+    },
+    "evidence": "docs/seo/measurement/2026-10-31-additional-ai-access.json",
+    "notes": "Bounded supplier-1 initial sample, not a complete 17-query wave. Accuracy assessment concerns Kuhnitver only, which was not mentioned.",
+    "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+    "freshDialog": true,
+    "querySubmitted": true,
+    "memoryControl": "New dialog in signed-out guest mode; no account memory setting changed",
+    "actualRegionVerified": false,
+    "sourceCoverage": "All 10 displayed sources expanded and captured"
+  },
+  {
+    "protocolId": "kuhnitver-ai-search-2026-10-30",
+    "phase": "after",
+    "product": "perplexity",
+    "mode": "Perplexity Search, guest",
+    "model": "Not disclosed in UI",
+    "queryId": "supplier-1",
+    "repeat": 2,
+    "status": "completed",
+    "observedAt": "2026-10-30T22:29:36.557547+00:00",
+    "region": "Тверь в запросе; регион сервиса не установлен",
+    "language": "ru",
+    "webSearch": true,
+    "prompt": "Где заказать кухню по размерам в Твери?",
+    "urls": [],
+    "answer": "В Твери кухню по индивидуальным размерам можно заказать у нескольких местных производителей и салонов. Вот проверенные варианты с адресами и условиями:\n\nГде заказать\nКомпания\tАдрес\tЧто предлагают\nМетрия\tнаб. Афанасия Никитина, 33\tСобственное производство в Твери, более 15 лет на рынке; бесплатный замер, дизайн-проект, изготовление, доставка, монтаж и гарантия — «под ключ». \nmetriya\n+1\n\nПерфетти\tМЦ «Спартак», ул. Спартака, 47; ОТК «Тандем», пр-т Октябрьский, 70\tИндивидуальное проектирование: цвет, материал, размер, планировка, фурнитура; бесплатная услуга планирования с дизайнером. \nperfetti\n\nАтлас Люкс\tб-р Радищева, 4\tЭлитные кухни по индивидуальным размерам от производителя; можно прислать фото или дизайн-проект в WhatsApp для расчёта. \ntver-atlaslux\n\nФабрика «Форест»\tТверь\tБесплатный замер, консультация дизайнера, 3D-проект, изготовление на фабрике и установка. \nkuhni-forest\n\nМебель ОК\tСахаровское шоссе, 9\tКухни по индивидуальным размерам и эскизам; предварительный расчёт по замерам, эскиз-проект, изготовление около месяца, опционально доставка и установка. \nmebel-ok\n\nМария\tСвободный пер., 1; пр-т Волоколамский, 28; пр-т Калинина, 13а\tКухни на заказ по вашим размерам, дизайн-проект в любой из трёх студий города или онлайн. \ntver.marya\n\nDля своих\tул. Маяковского, 31\tМебель и кухни от производителя по индивидуальным размерам, срок изготовления от 14 до 45 дней. \nd-svoih\n\nBigMebel\tТверь\tКухни на заказ от 200 000 руб., бесплатный замер, проект с размерами и рекомендациями по розеткам, визуализация. \nbigmebel-tver\nКак выбрать\n\nЕсли нужен полный цикл «под ключ» (замер → проект → производство → монтаж → гарантия) — смотрите на «Метрию» или «Форест».\nmetriya\n+1\n\nЕсли важен выбор стиля/материала вживую — «Атлас Люкс» (элит-сегмент) или салоны «Мария» (несколько точек по городу).\ntver-atlaslux\n+1\n\nЕсли ограничен бюджет — «Dля своих» или «Мебель ОК» (изготовление от месяца, предоплата от 50%).\nmebel-ok\n+1\n\nЧто понадобится для расчёта\n\nБольшинство салонов просят:\n\nразмеры помещения (длина стен, высота, расположение окон/дверей/коммуникаций);\n\nфото или эскиз желаемой планировки;\n\nпредпочтения по стилю, материалу фасадов и столешницы.\n\nМногие компании (Метрия, Перфетти, Форест, BigMebel) предлагают бесплатный выезд замерщика и дизайн-проект до подписания договора — это удобно, чтобы сравнить несколько предложений без затрат.",
+    "sources": [
+      {
+        "url": "https://metriya.ru/",
+        "title": "Кухни на заказ в Твери от Метрия по индивидуальным размерам"
+      },
+      {
+        "url": "https://metriya.ru/catalog/pryamaya/",
+        "title": "Прямая кухня на заказ купить в Твери | Метрия"
+      },
+      {
+        "url": "https://perfetti.ru/",
+        "title": "Кухни Перфетти - Честные скидки кухонь на заказ в Твери"
+      },
+      {
+        "url": "https://tver-atlaslux.ru/",
+        "title": "Салон Кухни - Тверь"
+      },
+      {
+        "url": "https://kuhni-forest.ru/",
+        "title": "Кухни на заказ недорого от производителя в Твери – фабрика ..."
+      },
+      {
+        "url": "https://mebel-ok.com/katalog/kuhni/",
+        "title": "Кухни и кухонная мебель в Твери на заказ"
+      },
+      {
+        "url": "https://tver.marya.ru/catalog/kuhni/klassicheskie-kuhni/",
+        "title": "Кухни в классическом стиле купить в Твери на заказ от ..."
+      },
+      {
+        "url": "https://d-svoih.ru/",
+        "title": "Dля своих | Мебель без переплат"
+      },
+      {
+        "url": "https://bigmebel-tver.ru/kuhni/",
+        "title": "Все кухни на заказ в Твери от производителя. Заказать ..."
+      },
+      {
+        "url": "https://tver.divano.ru/catalog/kukhni/kukhni-na-zakaz/",
+        "title": "Кухни на заказ в Твери - заказать изготовление ..."
+      }
+    ],
+    "facts": {
+      "priceAndUnit": "not_applicable",
+      "measurement": "not_applicable",
+      "delivery": "not_applicable",
+      "contacts": "not_applicable"
+    },
+    "agent": {
+      "draftPrepared": null,
+      "submitted": false,
+      "taskSucceeded": null
+    },
+    "evidence": "docs/seo/measurement/2026-10-31-additional-ai-access.json",
+    "notes": "Bounded supplier-1 initial sample, not a complete 17-query wave. Accuracy assessment concerns Kuhnitver only, which was not mentioned.",
+    "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+    "freshDialog": true,
+    "querySubmitted": true,
+    "memoryControl": "New dialog in signed-out guest mode; no account memory setting changed",
+    "actualRegionVerified": false,
+    "sourceCoverage": "All 10 displayed sources expanded and captured"
+  },
+  {
+    "protocolId": "kuhnitver-ai-search-2026-10-30",
+    "phase": "after",
+    "product": "perplexity",
+    "mode": "Perplexity Search, guest",
+    "model": "Not disclosed in UI",
+    "queryId": "supplier-1",
+    "repeat": 3,
+    "status": "unavailable",
+    "observedAt": "2026-10-30T22:31:26.013496+00:00",
+    "region": "Тверь в запросе; регион сервиса не установлен",
+    "language": "ru",
+    "webSearch": true,
+    "prompt": "Где заказать кухню по размерам в Твери?",
+    "urls": [],
+    "answer": "",
+    "sources": [],
+    "facts": {
+      "priceAndUnit": "unverified",
+      "measurement": "unverified",
+      "delivery": "unverified",
+      "contacts": "unverified"
+    },
+    "agent": {
+      "draftPrepared": null,
+      "submitted": false,
+      "taskSucceeded": null
+    },
+    "evidence": "docs/seo/measurement/2026-10-31-additional-ai-access.json",
+    "notes": "Third exact query submitted, then mandatory sign-up gate. No visible answer captured; excluded from completed denominator.",
+    "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+    "freshDialog": true,
+    "querySubmitted": true,
+    "memoryControl": "New dialog in signed-out guest mode; no account memory setting changed",
+    "actualRegionVerified": false,
+    "sourceCoverage": "Response obscured by sign-up gate; hidden content not inspected"
+  },
+  {
+    "protocolId": "kuhnitver-ai-search-2026-10-30",
+    "phase": "after",
+    "product": "bing-copilot",
+    "mode": "Copilot sign-in screen; chat unavailable",
+    "model": "",
+    "queryId": "supplier-1",
+    "repeat": 1,
+    "status": "unavailable",
+    "observedAt": "2026-10-30T22:31:26.013496+00:00",
+    "region": "Регион сервиса не установлен",
+    "language": "ru",
+    "webSearch": null,
+    "prompt": "Где заказать кухню по размерам в Твери?",
+    "urls": [],
+    "answer": "",
+    "sources": [],
+    "facts": {
+      "priceAndUnit": "unverified",
+      "measurement": "unverified",
+      "delivery": "unverified",
+      "contacts": "unverified"
+    },
+    "agent": {
+      "draftPrepared": null,
+      "submitted": false,
+      "taskSucceeded": null
+    },
+    "evidence": "docs/seo/measurement/2026-10-31-additional-ai-access.json",
+    "notes": "Authentication gate before any query. No owner credentials, account creation, agreement or permissions entered.",
+    "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+    "querySubmitted": false
+  }
+]

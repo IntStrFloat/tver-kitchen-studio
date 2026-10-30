@@ -1,0 +1,192 @@
+{
+  "recorded_at_utc": "2026-10-30T22:40:47Z",
+  "task": "Bounded read-only GA4 access and target-property verification",
+  "updated_at_utc": "2026-10-30T22:42:29Z",
+  "entry_url": "https://analytics.google.com/",
+  "target_site": "kuhnitver.ru",
+  "expected_measurement_id_from_assignment": "G-Z45D1032QK",
+  "browser_surface": "Own new Chrome tabs through cua_repl, using the existing signed-in session",
+  "result": {
+    "existing_ga4_ui_access": "confirmed",
+    "new_login_required": false,
+    "target_property_present": "unknown",
+    "target_property_access": "unverified",
+    "target_property_id": null,
+    "observed_target_measurement_id": null,
+    "target_measurement_id_matches_expected": "unknown",
+    "target_absence_proven": false,
+    "target_access_denial_proven": false,
+    "settings_or_key_events_changed": false
+  },
+  "findings": [
+    "The existing session opened Google Analytics and its Administration UI without entering credentials.",
+    "The default landing property was not identified as kuhnitver.ru and its displayed default stream ID did not match the expected ID. Its name, account identifiers, other Measurement ID and user details are intentionally not retained in this artifact.",
+    "The requested target property could not be selected through the available rendered UI.",
+    "The header was checked visually, not only through accessibility roles. Neither inspected header screenshot displayed a property name, breadcrumb, property-selection span or dropdown arrow.",
+    "An exact site-name query in general Search produced only a generic help-style query option. This is not evidence that the property is absent or inaccessible.",
+    "No target key-event configuration was inspected because target identity was not established.",
+    "A separate ordinary Admin navigation path was also checked. Account and Property submenus exposed configuration sections for the current scope, but no All accounts control or property-selection list. Account details exposed a settings form, not a resource list."
+  ],
+  "precise_ui_barrier": {
+    "confirmed_on_fresh_own_tabs": 2,
+    "header_screenshots_inspected": [
+      {
+        "clip_pixels": {
+          "x": 0,
+          "y": 0,
+          "width": 1900,
+          "height": 64
+        },
+        "observed": "Google Analytics logo immediately followed by Search; no property name or property picker visible."
+      },
+      {
+        "clip_pixels": {
+          "x": 0,
+          "y": 0,
+          "width": 2270,
+          "height": 64
+        },
+        "observed": "Full header width. Logo at left, Search approximately x277–916, blank space until right-side product, help and Google-profile controls. No current property name, breadcrumb/span or arrow."
+      }
+    ],
+    "visible_header_controls": [
+      {
+        "tag": "INPUT",
+        "label": "Поиск"
+      },
+      {
+        "tag": "BUTTON",
+        "label": "Перейти в другой продукт"
+      },
+      {
+        "tag": "BUTTON",
+        "label": "Вводное меню \"Справка\""
+      },
+      {
+        "tag": "BUTTON",
+        "label": "Открыть панель выбора аккаунта."
+      }
+    ],
+    "last_control_identity": "The account-panel control opened Google profile choices, not a GA4 property picker. It was dismissed without selecting an account.",
+    "interpretation": "Missing usable target-selection navigation in the rendered UI; not a proven permission denial and not proof that the target resource does not exist.",
+    "private_api_used": false
+  },
+  "chronological_ui_actions": [
+    "Opened the requested Analytics URL in a new owned Chrome tab.",
+    "Observed that the existing session reached Analytics without a login prompt.",
+    "Opened the visible account-panel control while looking for property selection; found Google profile choices and dismissed them without selection.",
+    "Searched for kuhnitver.ru in general Search; no target-property selection was established.",
+    "Opened Administration and read the default property's identity only to determine scope; did not proceed to its event configuration or deliberately inspect its analytics reports.",
+    "Inspected a cropped header screenshot and visible header controls; no property picker was visible.",
+    "Closed the first owned tab.",
+    "Opened a second fresh owned tab to recheck the full header visually after the parent requested a breadcrumb/span check.",
+    "Inspected the complete 2270-by-64 header and its visible controls; no property name, selection span or arrow appeared.",
+    "Closed the second owned tab and verified that both owned tab IDs were absent.",
+    "Opened a third owned tab directly at the already-observed Admin route. Expanded Account and Property navigation, and checked Account details navigation controls without reading account field values or opening customer/event reports.",
+    "Found configuration menus and the unused Create control, but no All accounts entry or ordinary resource-selection list. Did not accept Terms or change settings.",
+    "Closed the third owned tab and verified that all three owned tab IDs were absent."
+  ],
+  "admin_alternate_path": {
+    "checked": true,
+    "admin_sidebar_available": true,
+    "account_submenu_labels": [
+      "Сведения об аккаунте",
+      "Управление доступом к аккаунту",
+      "История изменений аккаунта",
+      "История квот для API данных в аккаунте",
+      "Корзина"
+    ],
+    "property_submenu_labels": [
+      "Информация о ресурсе",
+      "Управление доступом к ресурсу",
+      "История изменений ресурса",
+      "История квот для API данных ресурса",
+      "Специальная статистика",
+      "Письма с запланированной отправкой",
+      "История поиска Оповещений Аналитики"
+    ],
+    "account_details_headings": [
+      "Сведения об аккаунте",
+      "Основные настройки",
+      "Настройки доступа к данным"
+    ],
+    "account_field_values_read": false,
+    "resource_selection_list_visible": false,
+    "all_accounts_control_visible": false,
+    "target_text_visible_in_account_details": false,
+    "additional_navigation_control": "Создать",
+    "create_control_used": false,
+    "terms_or_accept_controls_used": false,
+    "save_controls_used": false,
+    "barrier": "Ordinary Admin is accessible, but its visible Account/Property configuration navigation and Account details screen contain no target-resource selector or All accounts list. This does not prove that the target property is absent or denied."
+  },
+  "requested_events": [
+    {
+      "name": "callback_request",
+      "target_ui_presence": "unknown",
+      "key_event_status": "unknown"
+    },
+    {
+      "name": "quiz_lead",
+      "target_ui_presence": "unknown",
+      "key_event_status": "unknown"
+    },
+    {
+      "name": "catalog_lead",
+      "target_ui_presence": "unknown",
+      "key_event_status": "unknown"
+    },
+    {
+      "name": "b2b_lead",
+      "target_ui_presence": "unknown",
+      "key_event_status": "unknown"
+    },
+    {
+      "name": "blog_lead",
+      "target_ui_presence": "unknown",
+      "key_event_status": "unknown"
+    },
+    {
+      "name": "call",
+      "target_ui_presence": "unknown",
+      "key_event_status": "unknown"
+    }
+  ],
+  "proposal_only": [
+    "Open a direct link to the existing kuhnitver.ru GA4 property or web stream in the already authorized cabinet and verify that its Measurement ID is G-Z45D1032QK.",
+    "Once the target identity is confirmed, read the six event rows and their current key-event flags, then propose any changes separately before modifying settings."
+  ],
+  "guardrails": {
+    "new_accounts_created": false,
+    "account_switch_performed": false,
+    "oauth_or_access_grants_performed": false,
+    "terms_accepted": false,
+    "otp_or_captcha_used": false,
+    "login_security_or_traffic_block_encountered_on_ga4": false,
+    "gemini_or_google_sorry_touched": false,
+    "alternate_gemini_route_used": false,
+    "private_api_or_hidden_app_state_read": false,
+    "personal_account_details_retained_in_this_artifact": false,
+    "unrelated_resource_details_retained_in_this_artifact": false,
+    "app_or_server_edits": false,
+    "analytics_test_events_generated": false
+  },
+  "cleanup": {
+    "owned_tab_ids": [
+      "929038985",
+      "929038987",
+      "929038992"
+    ],
+    "owned_tabs_closed_and_absence_verified": true,
+    "global_browser_profile_changed": false,
+    "settings_saved": false,
+    "key_event_toggles_used": false,
+    "external_account_changes": false
+  },
+  "limitations": [
+    "This confirms access to the GA4 interface in the existing session, not access to the specific kuhnitver.ru property.",
+    "The target Measurement ID and event/key-event flags remain unknown; no absence, mismatch for the target, or target permission denial is claimed.",
+    "The default resource's unrelated identity and incidental Google-profile menu details were not exported to this artifact.",
+    "No private API, guessed property IDs, alternate Google account or workaround for a security or traffic barrier was used."
+  ]
+}

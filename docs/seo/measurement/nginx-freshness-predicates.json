@@ -1,0 +1,376 @@
+{
+  "verification": "Local Python equivalent of the proposed Nginx map regexes; NOT an Nginx runtime or deployed-header test.",
+  "cases": [
+    {
+      "name": "SSG HTML GET 200",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "SSG HTML HEAD 200",
+      "method": "HEAD",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "SSG HTML conditional 304 without Content-Type",
+      "status": 304,
+      "content_type": "",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "SSG marker with single upstream value",
+      "prerender": "1",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "SSG marker with repeated upstream values",
+      "prerender": "1,1",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "Unclassified HTML without SSG marker",
+      "prerender": "",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "Unclassified JSON 304",
+      "status": 304,
+      "content_type": "",
+      "prerender": "",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "RSC request",
+      "rsc": "1",
+      "content_type": "text/x-component",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "RSC body without request marker",
+      "content_type": "text/x-component",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "RSC conditional 304",
+      "rsc": "1",
+      "status": 304,
+      "content_type": "",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "Router prefetch",
+      "prefetch": "1",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "Next Router state tree",
+      "router_state_tree": "present",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "Next Router state tree conditional 304",
+      "router_state_tree": "present",
+      "status": 304,
+      "content_type": "",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "Generic Purpose HTML prefetch uses normal freshness",
+      "purpose": "prefetch",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "Generic Sec-Purpose HTML prefetch uses normal freshness",
+      "sec_purpose": "prefetch;prerender",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "Segment prefetch",
+      "segment_prefetch": "/_tree",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "RSC query argument",
+      "rsc_arg": "review",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "Upstream Set-Cookie",
+      "set_cookie": "present-redacted",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "Upstream private",
+      "cache_control": "private, max-age=0",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "Upstream no-store",
+      "cache_control": "no-store",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "Upstream no-cache",
+      "cache_control": "no-cache",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "404 existing private response",
+      "status": 404,
+      "cache_control": "private, no-cache, no-store, max-age=0, must-revalidate",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "500 even with public policy",
+      "status": 500,
+      "cache_control": "s-maxage=31536000",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "301 redirect",
+      "status": 301,
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "POST response",
+      "method": "POST",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "Hashed CSS location",
+      "scope": "static",
+      "content_type": "text/css",
+      "expected": "not-applied",
+      "actual_predicate_result": "not-applied"
+    },
+    {
+      "name": "Hashed JS location",
+      "scope": "static",
+      "content_type": "application/javascript",
+      "expected": "not-applied",
+      "actual_predicate_result": "not-applied"
+    },
+    {
+      "name": "Unversioned font location",
+      "scope": "extension",
+      "content_type": "font/woff2",
+      "expected": "not-applied",
+      "actual_predicate_result": "not-applied"
+    },
+    {
+      "name": "Image location",
+      "scope": "extension",
+      "content_type": "image/jpeg",
+      "expected": "not-applied",
+      "actual_predicate_result": "not-applied"
+    },
+    {
+      "name": "Capacity API sibling location",
+      "scope": "capacity",
+      "content_type": "application/json",
+      "expected": "not-applied",
+      "actual_predicate_result": "not-applied"
+    },
+    {
+      "name": "/robots.txt GET 200",
+      "scope": "feed",
+      "path": "/robots.txt",
+      "content_type": "application/xml",
+      "prerender": "",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "/robots.txt 304 if supported",
+      "scope": "feed",
+      "path": "/robots.txt",
+      "status": 304,
+      "content_type": "",
+      "prerender": "",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "/robots.txt private guard",
+      "scope": "feed",
+      "path": "/robots.txt",
+      "cache_control": "private, no-store",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "/robots.txt error guard",
+      "scope": "feed",
+      "path": "/robots.txt",
+      "status": 500,
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "/sitemap.xml GET 200",
+      "scope": "feed",
+      "path": "/sitemap.xml",
+      "content_type": "application/xml",
+      "prerender": "",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "/sitemap.xml 304 if supported",
+      "scope": "feed",
+      "path": "/sitemap.xml",
+      "status": 304,
+      "content_type": "",
+      "prerender": "",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "/sitemap.xml private guard",
+      "scope": "feed",
+      "path": "/sitemap.xml",
+      "cache_control": "private, no-store",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "/sitemap.xml error guard",
+      "scope": "feed",
+      "path": "/sitemap.xml",
+      "status": 500,
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "/blog.rss GET 200",
+      "scope": "feed",
+      "path": "/blog.rss",
+      "content_type": "application/xml",
+      "prerender": "",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "/blog.rss 304 if supported",
+      "scope": "feed",
+      "path": "/blog.rss",
+      "status": 304,
+      "content_type": "",
+      "prerender": "",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "/blog.rss private guard",
+      "scope": "feed",
+      "path": "/blog.rss",
+      "cache_control": "private, no-store",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "/blog.rss error guard",
+      "scope": "feed",
+      "path": "/blog.rss",
+      "status": 500,
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "/uslugi.yml GET 200",
+      "scope": "feed",
+      "path": "/uslugi.yml",
+      "content_type": "application/xml",
+      "prerender": "",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "/uslugi.yml 304 if supported",
+      "scope": "feed",
+      "path": "/uslugi.yml",
+      "status": 304,
+      "content_type": "",
+      "prerender": "",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "/uslugi.yml private guard",
+      "scope": "feed",
+      "path": "/uslugi.yml",
+      "cache_control": "private, no-store",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "/uslugi.yml error guard",
+      "scope": "feed",
+      "path": "/uslugi.yml",
+      "status": 500,
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "/llms.txt GET 200",
+      "scope": "feed",
+      "path": "/llms.txt",
+      "content_type": "application/xml",
+      "prerender": "",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "/llms.txt 304 if supported",
+      "scope": "feed",
+      "path": "/llms.txt",
+      "status": 304,
+      "content_type": "",
+      "prerender": "",
+      "expected": "-1",
+      "actual_predicate_result": "-1"
+    },
+    {
+      "name": "/llms.txt private guard",
+      "scope": "feed",
+      "path": "/llms.txt",
+      "cache_control": "private, no-store",
+      "expected": "off",
+      "actual_predicate_result": "off"
+    },
+    {
+      "name": "/llms.txt error guard",
+      "scope": "feed",
+      "path": "/llms.txt",
+      "status": 500,
+      "expected": "off",
+      "actual_predicate_result": "off"
+    }
+  ],
+  "passed": 50,
+  "remote_changes": false
+}

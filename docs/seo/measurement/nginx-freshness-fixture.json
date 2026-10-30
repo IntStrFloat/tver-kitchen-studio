@@ -1,0 +1,756 @@
+{
+  "checked_at_utc": "2026-10-30T22:30:00.114337+00:00",
+  "passed": true,
+  "nginx_version": "nginx version: nginx/1.24.0 (Ubuntu)",
+  "config_test": "nginx: the configuration file /var/tmp/kuhnitver-nginx-freshness-fixture-h3jn9gzq/nginx.conf syntax is ok\nnginx: configuration file /var/tmp/kuhnitver-nginx-freshness-fixture-h3jn9gzq/nginx.conf test is successful",
+  "owned_state_directory": "/var/tmp/kuhnitver-nginx-freshness-fixture-h3jn9gzq",
+  "fixture_pid": 3364139,
+  "fixture_port": 36401,
+  "origin_port": 45665,
+  "fixture_process_stopped": true,
+  "origin_server_closed": true,
+  "cases_passed": 39,
+  "cases": [
+    {
+      "case": "HTML 200 duplicate marker",
+      "path": "/html",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "HTML 200 single marker",
+      "path": "/single-marker",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "HTML 304 without Content-Type",
+      "path": "/html",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 304,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": null,
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 0
+      },
+      "passed": true
+    },
+    {
+      "case": "Eligible duplicate public CC collapses",
+      "path": "/multi-public",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "Private second CC value preserved",
+      "path": "/private",
+      "expected_cache_control": [
+        "s-maxage=31536000",
+        "private, no-store, max-age=0"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "s-maxage=31536000",
+          "private, no-store, max-age=0"
+        ],
+        "expires": "Wed, 01 Jan 2031 00:00:00 GMT",
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "No-store preserved",
+      "path": "/no-store",
+      "expected_cache_control": [
+        "no-store"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "no-store"
+        ],
+        "expires": "Wed, 01 Jan 2031 00:00:00 GMT",
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "Already no-cache preserved",
+      "path": "/no-cache",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": null,
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "Set-Cookie preserved",
+      "path": "/cookie",
+      "expected_cache_control": [
+        "s-maxage=31536000"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "s-maxage=31536000"
+        ],
+        "expires": "Wed, 01 Jan 2031 00:00:00 GMT",
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "RSC type preserved",
+      "path": "/rsc",
+      "expected_cache_control": [
+        "s-maxage=31536000"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "s-maxage=31536000"
+        ],
+        "expires": null,
+        "content_type": "text/x-component",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "RSC marker preserved",
+      "path": "/html",
+      "expected_cache_control": [
+        "s-maxage=31536000"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "s-maxage=31536000"
+        ],
+        "expires": null,
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "RSC conditional 304 preserved",
+      "path": "/html",
+      "expected_cache_control": [
+        "s-maxage=31536000"
+      ],
+      "response": {
+        "status": 304,
+        "cache_control": [
+          "s-maxage=31536000"
+        ],
+        "expires": null,
+        "content_type": null,
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 0
+      },
+      "passed": true
+    },
+    {
+      "case": "Next prefetch preserved",
+      "path": "/html",
+      "expected_cache_control": [
+        "s-maxage=31536000"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "s-maxage=31536000"
+        ],
+        "expires": null,
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "Next segment prefetch preserved",
+      "path": "/html",
+      "expected_cache_control": [
+        "s-maxage=31536000"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "s-maxage=31536000"
+        ],
+        "expires": null,
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "Next state tree preserved",
+      "path": "/html",
+      "expected_cache_control": [
+        "s-maxage=31536000"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "s-maxage=31536000"
+        ],
+        "expires": null,
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "Next state tree 304 preserved",
+      "path": "/html",
+      "expected_cache_control": [
+        "s-maxage=31536000"
+      ],
+      "response": {
+        "status": 304,
+        "cache_control": [
+          "s-maxage=31536000"
+        ],
+        "expires": null,
+        "content_type": null,
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 0
+      },
+      "passed": true
+    },
+    {
+      "case": "RSC query preserved",
+      "path": "/html?_rsc=fixture",
+      "expected_cache_control": [
+        "s-maxage=31536000"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "s-maxage=31536000"
+        ],
+        "expires": null,
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "Generic Purpose HTML prefetch revalidates",
+      "path": "/html",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "Generic Sec-Purpose HTML prefetch revalidates",
+      "path": "/html",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "Generic Purpose HTML 304 revalidates",
+      "path": "/html",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 304,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": null,
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 0
+      },
+      "passed": true
+    },
+    {
+      "case": "500 retains upstream policy",
+      "path": "/error",
+      "expected_cache_control": [
+        "s-maxage=31536000"
+      ],
+      "response": {
+        "status": 500,
+        "cache_control": [
+          "s-maxage=31536000"
+        ],
+        "expires": null,
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "404 retains upstream policy",
+      "path": "/missing",
+      "expected_cache_control": [
+        "s-maxage=31536000"
+      ],
+      "response": {
+        "status": 404,
+        "cache_control": [
+          "s-maxage=31536000"
+        ],
+        "expires": null,
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "Unclassified HTML preserved",
+      "path": "/unclassified",
+      "expected_cache_control": [
+        "s-maxage=31536000"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "s-maxage=31536000"
+        ],
+        "expires": null,
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "JSON 304 without SSG marker preserved",
+      "path": "/plain",
+      "expected_cache_control": [
+        "s-maxage=31536000"
+      ],
+      "response": {
+        "status": 304,
+        "cache_control": [
+          "s-maxage=31536000"
+        ],
+        "expires": null,
+        "content_type": null,
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 0
+      },
+      "passed": true
+    },
+    {
+      "case": "Hashed CSS immutable",
+      "path": "/_next/static/chunks/fixture.css",
+      "expected_cache_control": [
+        "public, max-age=31536000, immutable"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "public, max-age=31536000, immutable"
+        ],
+        "expires": null,
+        "content_type": "text/css",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "Hashed JS immutable",
+      "path": "/_next/static/chunks/fixture.js",
+      "expected_cache_control": [
+        "public, max-age=31536000, immutable"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "public, max-age=31536000, immutable"
+        ],
+        "expires": null,
+        "content_type": "application/javascript",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "Unversioned font unchanged",
+      "path": "/font.woff2",
+      "expected_cache_control": [
+        "public, max-age=0",
+        "public, max-age=86400"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "public, max-age=0",
+          "public, max-age=86400"
+        ],
+        "expires": null,
+        "content_type": "font/woff2",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "Unversioned image unchanged",
+      "path": "/image.jpg",
+      "expected_cache_control": [
+        "public, max-age=0",
+        "public, max-age=86400"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "public, max-age=0",
+          "public, max-age=86400"
+        ],
+        "expires": null,
+        "content_type": "image/jpeg",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "/robots.txt 200",
+      "path": "/robots.txt",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": "text/plain",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "/robots.txt 304",
+      "path": "/robots.txt",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 304,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": null,
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 0
+      },
+      "passed": true
+    },
+    {
+      "case": "/sitemap.xml 200",
+      "path": "/sitemap.xml",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": "application/xml",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "/sitemap.xml 304",
+      "path": "/sitemap.xml",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 304,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": null,
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 0
+      },
+      "passed": true
+    },
+    {
+      "case": "/blog.rss 200",
+      "path": "/blog.rss",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": "application/rss+xml",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "/blog.rss 304",
+      "path": "/blog.rss",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 304,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": null,
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 0
+      },
+      "passed": true
+    },
+    {
+      "case": "/uslugi.yml 200",
+      "path": "/uslugi.yml",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": "application/xml",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "/uslugi.yml 304",
+      "path": "/uslugi.yml",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 304,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": null,
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 0
+      },
+      "passed": true
+    },
+    {
+      "case": "/llms.txt 200",
+      "path": "/llms.txt",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": "text/plain",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    },
+    {
+      "case": "/llms.txt 304",
+      "path": "/llms.txt",
+      "expected_cache_control": [
+        "no-cache"
+      ],
+      "response": {
+        "status": 304,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": null,
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 0
+      },
+      "passed": true
+    },
+    {
+      "case": "HEAD method guard",
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "no-cache"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:29:58 GMT",
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 0
+      },
+      "passed": true
+    },
+    {
+      "case": "POST method guard",
+      "response": {
+        "status": 200,
+        "cache_control": [
+          "s-maxage=31536000"
+        ],
+        "expires": null,
+        "content_type": "text/html; charset=utf-8",
+        "etag": "\"fixture-v1\"",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "bytes": 32
+      },
+      "passed": true
+    }
+  ],
+  "production_mutated": false,
+  "external_requests": false
+}

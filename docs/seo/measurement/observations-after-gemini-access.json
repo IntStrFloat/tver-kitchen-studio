@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "product": "gemini",
+  "phase": "after",
+  "observedAt": "2026-10-30T22:25:26.971Z",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "requestedUrl": "https://gemini.google.com/",
+  "blockerOriginAndPath": "https://www.google.com/sorry/index",
+  "visibleMessage": "Our systems have detected unusual traffic from your computer network. Please try your request again later.",
+  "providerPageTimes": [
+    "2026-10-30T22:24:29Z",
+    "2026-10-30T22:24:30Z",
+    "2026-10-30T22:24:31Z"
+  ],
+  "navigationAttempts": [
+    {
+      "queryId": "conditions-1",
+      "repeat": 1,
+      "querySubmitted": false,
+      "chatOpened": false
+    },
+    {
+      "queryId": "conditions-1",
+      "repeat": 2,
+      "querySubmitted": false,
+      "chatOpened": false
+    },
+    {
+      "queryId": "conditions-1",
+      "repeat": 3,
+      "querySubmitted": false,
+      "chatOpened": false
+    }
+  ],
+  "completedControlledRows": 18,
+  "remainingPlannedRowsNotSubmitted": 33,
+  "workaroundAttempted": false,
+  "globalSettingsChanged": false,
+  "notes": [
+    "Блок наблюдался в трёх новых собственных вкладках до открытия чата.",
+    "Сетевые адреса и значения параметров страницы блокировки не сохранялись.",
+    "Запросы оставшихся строк не исполнялись; статус unavailable описывает текущую доступность сервиса и не является отрицательным ответом или нулевой долей цитирования.",
+    "Дальнейшие обращения прекращены; CAPTCHA, вход, смена сети, аккаунта или обход ограничения не выполнялись."
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "experiment": "Stateless consumer factual lookup through ordinary public HTML navigation",
+  "date_local": "2026-10-31",
+  "timezone_local": "Europe/Moscow",
+  "site": "https://kuhnitver.ru",
+  "starting_url": "https://kuhnitver.ru/",
+  "constraints": {
+    "business_facts_known_before_run": false,
+    "followed_normal_homepage_html_links": true,
+    "llms_txt_read": false,
+    "page_markdown_mirror_read": false,
+    "search_engine_queries_used": false,
+    "private_sources_used": false,
+    "forms_or_contacts_submitted": false,
+    "accounts_or_browser_settings_changed": false,
+    "site_or_server_modified": false,
+    "subagents_spawned": false,
+    "repository_business_facts_consulted": false
+  },
+  "timing": {
+    "start_utc": "2026-10-30T22:04:08Z",
+    "end_utc": "2026-10-30T22:05:55Z",
+    "elapsed_seconds_measured": 107,
+    "clock_source": "clock.curr_time before first retrieval and after public retrieval/answer resolution",
+    "clock_resolution_seconds": 1,
+    "measured_scope": "Initial retrieval setup through completed factual answer resolution; artifact serialization and verification excluded."
+  },
+  "retrieval_counts": {
+    "public_retrieval_actions": 6,
+    "usable_results": 5,
+    "actions_with_output_failure": 1,
+    "web_open_or_click_actions": 4,
+    "direct_public_html_get_attempts": 2,
+    "distinct_public_source_urls": 4,
+    "note": "Counts are observed tool-level retrieval actions, not inferred server requests or asset loads. The failed direct GET output attempt is included."
+  },
+  "chronological_public_retrieval_actions": [
+    {
+      "sequence": 1,
+      "action": "open",
+      "url": "https://kuhnitver.ru/",
+      "result": "retrieved",
+      "note": "Public homepage through web open; no llms.txt or markdown mirror requested.",
+      "resolved_url": "https://kuhnitver.ru/",
+      "tool": "web.open",
+      "content_type": "text/html",
+      "tool_crawl_label": "today"
+    },
+    {
+      "sequence": 2,
+      "action": "click",
+      "from_url": "https://kuhnitver.ru/",
+      "link_id": 29,
+      "link_label": "контактам / бесплатную консультацию",
+      "result": "retrieved",
+      "resolved_url": "https://kuhnitver.ru/contacts",
+      "tool": "web.click",
+      "content_type": "text/html",
+      "tool_crawl_label": "4 months ago"
+    },
+    {
+      "sequence": 3,
+      "action": "click",
+      "from_url": "https://kuhnitver.ru/",
+      "link_id": 30,
+      "link_label": "Замер",
+      "result": "retrieved",
+      "resolved_url": "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+      "tool": "web.click",
+      "content_type": "text/html",
+      "tool_crawl_label": "today"
+    },
+    {
+      "sequence": 4,
+      "action": "click",
+      "from_url": "https://kuhnitver.ru/",
+      "link_id": 25,
+      "link_label": "доставка / доставки",
+      "result": "retrieved",
+      "resolved_url": "https://kuhnitver.ru/dostavka",
+      "tool": "web.click",
+      "content_type": "text/html",
+      "tool_crawl_label": "today"
+    },
+    {
+      "sequence": 5,
+      "action": "direct_public_html_get",
+      "url": "https://kuhnitver.ru/contacts",
+      "discovered_from": "Homepage normal contacts link followed in action 2",
+      "result": "failed_to_return_visible_text",
+      "reason": "Re-read discovered public URL directly to distinguish cached tool extraction from current HTML.",
+      "failure": "HTML GET completed, but output failed: 'charmap' codec can't encode character '\\u2192'. No visible text was returned.",
+      "retrieval_start_utc": "2026-10-30T22:05:10.089852+00:00",
+      "retrieval_end_utc": "2026-10-30T22:05:10.339154+00:00",
+      "tool": "Python urllib.request via exec_command",
+      "http_status_returned": null,
+      "content_type_returned": null
+    },
+    {
+      "sequence": 6,
+      "action": "direct_public_html_get",
+      "url": "https://kuhnitver.ru/contacts",
+      "discovered_from": "Homepage normal contacts link followed in action 2",
+      "result": "retrieved",
+      "reason": "Retry action 5 with UTF-8 stdout, same public HTML URL.",
+      "tool": "Python urllib.request via exec_command",
+      "resolved_url": "https://kuhnitver.ru/contacts",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "retrieval_start_utc": "2026-10-30T22:05:23.124595+00:00",
+      "retrieval_end_utc": "2026-10-30T22:05:23.286426+00:00",
+      "parsing": "HTMLParser visible text; script, style and template contents excluded."
+    }
+  ],
+  "answers": {
+    "main_telephone": {
+      "status": "found",
+      "display": "+7 (4822) 47-70-81",
+      "observed_tel_href": "tel:+74822477081",
+      "source_url": "https://kuhnitver.ru/contacts",
+      "source_action": 6,
+      "evidence": "Основной телефон для вопросов и записи",
+      "resolution": "Current direct HTML explicitly labels this as the main phone. Older or malformed tool-extracted alternatives are retained under source_discrepancies."
+    },
+    "separate_max_contact": {
+      "status": "found",
+      "number": "+7 915 722 00 75",
+      "observed_tel_href": "tel:+79157220075",
+      "instruction": "Add this number to contacts and find Kuhnitver in the Max app.",
+      "separate_from_main_phone": true,
+      "source_url": "https://kuhnitver.ru/contacts",
+      "source_action": 6,
+      "evidence": "Отдельный номер для общения в Max. Основной телефон указан выше."
+    },
+    "measurement": {
+      "status": "found",
+      "cost_rub": 1500,
+      "credit_condition": "The 1,500 RUB is deducted from the kitchen price when the kitchen is ordered.",
+      "travel_condition": "Regional visits and any possible travel expenses are agreed before booking.",
+      "travel_cost_fixed_amount_rub": null,
+      "travel_cost_fixed_amount_status": "unknown; no fixed regional travel fee stated in the retrieved sources",
+      "source_urls": [
+        "https://kuhnitver.ru/contacts",
+        "https://kuhnitver.ru/dostavka",
+        "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit"
+      ],
+      "source_actions": [
+        6,
+        4,
+        3
+      ]
+    },
+    "delivery": {
+      "status": "found",
+      "cities": [
+        {
+          "city": "Тверь",
+          "cost": "Included in the kitchen price",
+          "additional_delivery_fee_rub": 0
+        },
+        {
+          "city": "Конаково",
+          "cost": "From 3,500 RUB",
+          "minimum_fee_rub": 3500
+        },
+        {
+          "city": "Ржев",
+          "cost": "From 5,000 RUB",
+          "minimum_fee_rub": 5000
+        }
+      ],
+      "condition": "Exact cost, delivery date, unloading and lifting are agreed for the address before the order and recorded in the estimate.",
+      "date_condition": "Delivery date is agreed after the kitchen is ready; city values do not establish a manufacturing lead time.",
+      "source_url": "https://kuhnitver.ru/dostavka",
+      "source_action": 4,
+      "unknowns": "Exact final regional delivery price and a specific delivery date require an individual agreement."
+    },
+    "manufacturing_timing": {
+      "status": "found",
+      "minimum_working_days": 20,
+      "start_point": "After both contract signing and project approval.",
+      "qualifications": "Exact term depends on the specification, material availability and production load, and is fixed in the contract. Delivery and installation are agreed separately.",
+      "source_urls": [
+        "https://kuhnitver.ru/dostavka",
+        "https://kuhnitver.ru/"
+      ],
+      "source_actions": [
+        4,
+        1
+      ]
+    },
+    "warranty": {
+      "status": "found",
+      "duration_years": 1,
+      "coverage": "Furniture and completed work under the contract.",
+      "conditions": "Warranty scope and the procedure for claims are specified in the contract.",
+      "source_url": "https://kuhnitver.ru/dostavka",
+      "source_action": 4,
+      "exclusions_status": "unknown; the individual contract was not retrieved"
+    }
+  },
+  "source_discrepancies": [
+    {
+      "source_action": 1,
+      "url": "https://kuhnitver.ru/",
+      "observation": "Homepage web extraction labelled 'Crawled: today' displayed +48 22 477 08 1.",
+      "limitation": "The raw current homepage was not separately fetched. This observation alone does not establish whether the malformed phone is in the live page or its tool extraction."
+    },
+    {
+      "source_action": 2,
+      "url": "https://kuhnitver.ru/contacts",
+      "observation": "The web contacts extraction was labelled 'Crawled: 4 months ago' and displayed main phone +7 903 630 29 09; it also contained a free-measurement introduction while a later paragraph said 1,500 RUB.",
+      "resolution": "Direct public HTML of the same discovered URL in action 6 explicitly gives +7 (4822) 47-70-81 as main and the 1,500 RUB measurement/credit/travel conditions.",
+      "limitation": "Mixed cache ages affect interpretation of the initial ordinary-navigation tool results."
+    },
+    {
+      "source_actions": [
+        1,
+        4
+      ],
+      "observation": "Homepage extraction includes city transit-day ranges; the more detailed delivery page instead states that the delivery date is agreed after kitchen readiness.",
+      "resolution": "The delivery answer uses the detailed delivery page and preserves its scheduling condition."
+    }
+  ],
+  "limitations": [
+    "One consumer session using public HTML only; this is a factual navigation experiment, not a ranking test.",
+    "The web tool returned mixed-age cached/extracted content; only the contacts page received a direct current HTML re-read.",
+    "The initial direct contacts attempt failed while printing Unicode to stdout and was retried; both attempts are counted.",
+    "Published business statements were read, not independently verified by contacting the company.",
+    "No before/after comparison, causal inference, SEO uplift or AI visibility uplift is established."
+  ]
+}

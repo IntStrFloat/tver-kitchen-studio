@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-31",
+  "site": "https://kuhnitver.ru",
+  "service": "Yandex Webmaster, Фиды и ошибки",
+  "nativeUiResult": "readonly",
+  "visibleNotice": "Некоторые функции могут быть временно недоступны, инструмент Фиды и ошибки работает в режиме Только для чтения.",
+  "uploadButtonDisabled": true,
+  "confirmationButtonDisabled": true,
+  "registeredFeed": {
+    "url": "https://kuhnitver.ru/uslugi.yml",
+    "legacyCategory": "Исполнители",
+    "visibleStatus": "Фид заблокирован",
+    "lastVisibleFeedTime": "30 октября 2026 1:58"
+  },
+  "currentPublishedFeed": "The deployed URL is the modern services_feed. Its publication does not establish acceptance under the existing legacy Исполнители registration.",
+  "nextActionWhenServiceRestored": "Register the existing public URL under Услуги and check acceptance/errors. Preserve current records until a replacement is concretely reviewable.",
+  "noChangesSubmitted": true,
+  "noReadonlyBypassAttempted": true,
+  "notClaimed": ["Accepted new service feed", "Feed recategorization", "Zero platform errors"]
+}

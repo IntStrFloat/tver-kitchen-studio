@@ -1,0 +1,44 @@
+--- a/etc/nginx/sites-enabled/kuhnitver.ru
++++ b/etc/nginx/sites-enabled/kuhnitver.ru
+@@ -0,0 +1,26 @@
++# Public mutable document freshness; scoped at the two locations below.
++# Existing RSC/prefetch/cookie responses retain their upstream policy.
++map "$http_rsc$http_next_router_state_tree$http_next_router_prefetch$http_next_router_segment_prefetch$arg__rsc$upstream_http_set_cookie" $kuhnitver_freshness_skip {
++    default 1;
++    "" 0;
++}
++
++map $upstream_http_cache_control $kuhnitver_freshness_protected {
++    default 0;
++    ~*(private|no-store|no-cache) 1;
++}
++
++map $uri $kuhnitver_freshness_feed {
++    default 0;
++    "~^/(robots[.]txt|sitemap[.]xml|blog[.]rss|uslugi[.]yml|llms[.]txt)$" 1;
++}
++
++# Prerender marker distinguishes SSG HTML 304 (which has no Content-Type).
++# Next 16.1.6 currently sends one or two identical marker values.
++map "$request_method:$status:$kuhnitver_freshness_skip:$kuhnitver_freshness_protected:$kuhnitver_freshness_feed:$upstream_http_content_type:$upstream_http_x_nextjs_prerender" $kuhnitver_freshness_expires {
++    default off;
++    "~^(GET|HEAD):200:0:0:0:text/html(?:;[^:]*)?:1(?:,[ ]*1)*$" -1;
++    "~^(GET|HEAD):304:0:0:0::1(?:,[ ]*1)*$" -1;
++    "~^(GET|HEAD):(200|304):0:0:1:" -1;
++}
++
+@@ -48,0 +75,12 @@
++    # Exact mutable feeds precede the general extension-cache regex.
++    location ~ "^/(robots[.]txt|sitemap[.]xml|blog[.]rss|uslugi[.]yml|llms[.]txt)$" {
++        proxy_pass http://127.0.0.1:3000;
++        proxy_http_version 1.1;
++        proxy_set_header Host $host;
++        proxy_set_header X-Real-IP $remote_addr;
++        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
++        proxy_set_header X-Forwarded-Proto $scheme;
++        proxy_set_header X-Forwarded-Host $host;
++        expires $kuhnitver_freshness_expires;
++    }
++
+@@ -58,0 +97 @@
++        expires $kuhnitver_freshness_expires;

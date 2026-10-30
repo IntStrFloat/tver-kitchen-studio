@@ -1,0 +1,78 @@
+{
+  "observedAt": "2026-10-30T22:34:51.494Z",
+  "method": "Independent public HTTPS GET/If-None-Match after applied nginx change; real asset URLs extracted from current HTML.",
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "cacheControl": "no-cache",
+      "passed": true
+    },
+    {
+      "path": "/contacts",
+      "status": 200,
+      "cacheControl": "no-cache",
+      "passed": true
+    },
+    {
+      "path": "/llms.txt",
+      "status": 200,
+      "cacheControl": "no-cache",
+      "passed": true
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "cacheControl": "no-cache",
+      "passed": true
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cacheControl": "no-cache",
+      "passed": true
+    },
+    {
+      "path": "/uslugi.yml",
+      "status": 200,
+      "cacheControl": "no-cache",
+      "passed": true
+    },
+    {
+      "path": "/blog.rss",
+      "status": 200,
+      "cacheControl": "no-cache",
+      "passed": true
+    },
+    {
+      "path": "/",
+      "conditional": true,
+      "status": 304,
+      "contentType": null,
+      "cacheControl": "no-cache",
+      "passed": true
+    },
+    {
+      "path": "/contacts",
+      "conditional": true,
+      "status": 304,
+      "contentType": null,
+      "cacheControl": "no-cache",
+      "passed": true
+    },
+    {
+      "path": "/_next/static/chunks/6c84bf83fa2a6aed.css",
+      "status": 200,
+      "cacheControl": "public, max-age=31536000, immutable",
+      "passed": true
+    },
+    {
+      "path": "/_next/static/chunks/63696c3ad805eed6.js",
+      "status": 200,
+      "cacheControl": "public, max-age=31536000, immutable",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "scope": "Public mutable content and conditional responses; actual application build unchanged. Does not claim purging third-party search caches."
+}

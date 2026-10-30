@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "observedAtUtc": "2026-10-30T22:18:09.870945+00:00",
+  "captureTimezone": "Europe/Moscow",
+  "auditDate": "2026-10-31",
+  "site": "https://kuhnitver.ru/",
+  "scope": "Read-only Bing Webmaster Tools and AI Performance access check in the existing Chrome profile",
+  "status": "owner_sign_in_required",
+  "method": "One ordinary retry through the visible Bing Sign In interface, choosing Microsoft only",
+  "entryUrl": "https://www.bing.com/webmasters/",
+  "landingUrl": "https://www.bing.com/webmasters/about",
+  "observations": {
+    "bingLandingTitle": "Bing Webmaster Tools",
+    "bingLandingSignInButtonVisible": true,
+    "providerChooserText": "Please sign in Choose an account convenient to you",
+    "providerChosen": "Microsoft",
+    "authorizationOriginAndPath": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+    "authorizationPageTitle": "Sign in to your account",
+    "signInHeading": "Sign in",
+    "identifierFieldLabel": "Enter your email, phone, or Skype.",
+    "identifierFieldEmpty": true,
+    "nextButtonVisible": true,
+    "existingAccountPickerObserved": false,
+    "dashboardReached": false,
+    "webmasterSitePropertyObserved": false,
+    "aiPerformanceReportObserved": false
+  },
+  "barrier": {
+    "kind": "authentication_required",
+    "currentAttemptRedirectLoaded": true,
+    "description": "The normal Microsoft redirect now renders a sign-in form requiring an account identifier; no existing authenticated Bing dashboard was reached.",
+    "ownerActionRequired": "The owner needs to sign in using the account already used for Bing Webmaster Tools. No account identity or credentials were inferred or entered.",
+    "aiPerformanceAvailabilityAfterSignIn": null,
+    "siteVerificationStateAfterSignIn": null
+  },
+  "actions": {
+    "ordinaryRetryCount": 1,
+    "credentialsEntered": false,
+    "otpEntered": false,
+    "captchaSolved": false,
+    "termsAccepted": false,
+    "accountCreated": false,
+    "googleProviderUsed": false,
+    "accessExpanded": false,
+    "siteOrServerChanged": false,
+    "otherTabsChanged": false,
+    "vkAccessAttempted": false
+  },
+  "handoff": {
+    "ownTabId": "929038931",
+    "markedForOwnerContinuation": true,
+    "screen": "Microsoft sign-in form; no credentials entered"
+  },
+  "dataHandling": {
+    "oauthQueryParametersStored": false,
+    "credentialsOrPrivateAccountIdentityStored": false,
+    "visitorOrAnalyticsDataObserved": false
+  },
+  "limits": [
+    "This is not a site-safety or automatic-approval rejection: the current barrier is the visible Microsoft authentication form.",
+    "Not reaching a dashboard does not prove that no Bing account or verified site already exists.",
+    "AI Performance and indexing metrics remain unknown; no missing report or zero value is inferred.",
+    "The VK safety restriction was not retried or bypassed by this separate task."
+  ]
+}

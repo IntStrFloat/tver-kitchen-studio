@@ -1,0 +1,169 @@
+{
+  "recorded_at_utc": "2026-10-30T22:21:36Z",
+  "task": "Bounded native Chrome acceptance QA: remaining Quiz, B2B and Blog lead forms",
+  "target": {
+    "site": "https://kuhnitver.ru",
+    "deployment_label_from_assignment": "production5f952",
+    "deployment_hash_independently_verified_in_browser": false,
+    "browser": "Chrome, native extension tab",
+    "owned_tab_id": "929038933",
+    "interaction_surface": "cua_repl only; documented locators and keyboard actions, native tab-scoped CDP for developer QA",
+    "urls": [
+      "https://kuhnitver.ru/",
+      "https://kuhnitver.ru/b2b",
+      "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik"
+    ]
+  },
+  "result": "passed within stated scope",
+  "application_or_server_edits": false,
+  "scope": {
+    "included": ["Quiz", "B2B", "Blog inline", "Blog bottom"],
+    "excluded_as_already_owned_by_parent": ["Callback", "Catalog"],
+    "real_contact_or_provider_submission": false,
+    "global_browser_profile_or_settings_changes": false
+  },
+  "safety_harness": {
+    "network_enable_before_every_submit": true,
+    "network_set_blocked_urls_before_every_submit": true,
+    "blocked_patterns": [
+      "*api.web3forms.com/*",
+      "*mc.yandex.ru/*",
+      "*google-analytics.com/*",
+      "*googletagmanager.com/*"
+    ],
+    "guarded_submit_attempts": 12,
+    "native_cdp_fetch_stub_verified_before_every_submit": true,
+    "fetch_intercept_origin": "https://api.web3forms.com",
+    "other_fetch_requests": "Passed through to the saved original fetch function.",
+    "provider_reply_control": "Every valid request was held locally. The pending UI and absence of new lead conversions were checked before resolving the local Response.",
+    "failure_reply": {"status": 500, "json": {"success": false}},
+    "success_reply": {"status": 200, "json": {"success": true}},
+    "analytics": "window.ym and window.gtag replaced with tab-local event-name sinks; original functions saved for restoration.",
+    "payload_capture": ["fieldNames excluding access_key", "phoneMatchesTest boolean"],
+    "payload_values_or_access_key_retained": false,
+    "synthetic_phone": "+7 (000)000-00-00",
+    "invalid_phone": "123",
+    "stub_installations": 3,
+    "full_navigation_checks": "After navigating to B2B and to the article, the old page stub was verified absent and a fresh stub was installed before any submit. Network guards were explicitly reapplied before every submit."
+  },
+  "submit_totals": {
+    "invalid_phone_attempts": 4,
+    "invalid_attempt_provider_call_delta": 0,
+    "valid_local_provider_calls": 8,
+    "simulated_provider_failures": 4,
+    "simulated_acknowledged_successes": 4,
+    "logical_simulated_successes": 4,
+    "local_conversion_integration_calls": 12,
+    "conversion_fanout_per_acknowledged_success": {"ym": 2, "gtag": 1},
+    "note": "The 12 integration calls represent four simulated successful leads, not 12 customer leads."
+  },
+  "forms": [
+    {
+      "form": "Quiz",
+      "url": "https://kuhnitver.ru/",
+      "checks": {
+        "label": {"result": "passed", "field_id": "quiz-phone", "associated_label": "Телефон"},
+        "keyboard": {"result": "passed", "observed": "Enter advanced the length and budget options. Tab from the phone field focused the submit button; Enter invoked validation and submit. First shape option was selected with a click."},
+        "invalid_phone": {"result": "passed", "provider_calls": 0, "lead_conversion_events": 0, "aria_invalid": "true", "aria_describedby": "quiz-phone-error", "visible_error": "Укажите телефон: от 7 до 15 цифр, можно с кодом страны."},
+        "before_provider_ack": {"result": "passed", "pending_requests": 1, "new_lead_conversion_events": 0, "success_visible": false, "submit_disabled": true, "back_disabled": true, "visible_status": "Отправляем…"},
+        "provider_failure": {"result": "passed", "reply_status": 500, "reply_success": false, "new_lead_conversion_events": 0, "visible_heading": "Не удалось отправить", "retry_button": "Попробовать ещё раз", "test_phone_retained_on_retry": true},
+        "provider_acknowledged_success": {"result": "passed", "reply_status": 200, "reply_success": true, "visible_heading": "Заявка отправлена", "conversion_event": "quiz_lead", "local_fanout": {"ym": 2, "gtag": 1}}
+      },
+      "local_provider_capture": {
+        "calls": 2,
+        "fieldNames": ["from_name", "subject", "Источник", "Какая примерная длина кухни?", "Какая форма кухни вам нужна?", "Какой бюджет планируете?", "Телефон"],
+        "phoneMatchesTest": [true, true]
+      }
+    },
+    {
+      "form": "B2B",
+      "url": "https://kuhnitver.ru/b2b",
+      "checks": {
+        "labels": {"result": "passed", "associated_labels": {"b2b-organization": "Организация", "b2b-name": "Контактное лицо", "b2b-phone": "Телефон", "b2b-email": "Email", "b2b-city": "Город / адрес объекта", "b2b-deadline": "Желаемый срок поставки", "b2b-comment": "Комментарий"}},
+        "keyboard": {"result": "passed", "initial_focus_id": "b2b-organization", "shift_tab_from_initial": "Закрыть", "backward_wrap": "Privacy link inside dialog", "forward_wrap": "Закрыть inside dialog", "escape_closes": true, "focus_returns_to_opener": true, "submit_with_enter": true},
+        "invalid_phone": {"result": "passed", "provider_calls": 0, "lead_conversion_events": 0, "aria_invalid": "true", "aria_describedby": "b2b-phone-error", "visible_error": "Укажите телефон: от 7 до 15 цифр, можно с кодом страны."},
+        "before_provider_ack": {"result": "passed", "pending_requests": 1, "new_lead_conversion_events": 0, "success_visible": false, "aria_busy": "true", "submit_disabled": true, "close_disabled": true},
+        "provider_failure": {"result": "passed", "reply_status": 500, "reply_success": false, "new_lead_conversion_events": 0, "alert": "Не удалось отправить запрос. Данные сохранены: попробуйте ещё раз или позвоните нам.", "test_phone_retained": true, "retry_submit_enabled": true},
+        "provider_acknowledged_success": {"result": "passed", "reply_status": 200, "reply_success": true, "visible_heading": "Запрос отправлен", "conversion_event": "b2b_lead", "local_fanout": {"ym": 2, "gtag": 1}}
+      },
+      "local_provider_capture": {
+        "calls": 2,
+        "fieldNames": ["Email", "from_name", "subject", "Город / объект", "Имя", "Источник", "Комментарий", "Организация", "Срок поставки", "Телефон"],
+        "phoneMatchesTest": [true, true]
+      }
+    },
+    {
+      "form": "Blog inline",
+      "url": "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+      "checks": {
+        "labels": {"result": "passed", "name_id": "blog-inline-materialy-dlya-kuhni-mdf-massiv-plastik-name", "phone_id": "blog-inline-materialy-dlya-kuhni-mdf-massiv-plastik-phone", "associated_labels": ["Ваше имя", "Телефон"]},
+        "keyboard": {"result": "passed", "tab_path": ["Ваше имя", "Телефон", "Получить консультацию"], "submit_with_enter": true},
+        "invalid_phone": {"result": "passed", "provider_calls": 0, "lead_conversion_events": 0, "aria_invalid": "true", "aria_describedby": "blog-inline-materialy-dlya-kuhni-mdf-massiv-plastik-phone-error", "visible_error": "Укажите телефон: от 7 до 15 цифр, можно с кодом страны."},
+        "before_provider_ack": {"result": "passed", "pending_requests": 1, "new_lead_conversion_events": 0, "success_headings": 0, "aria_busy": "true", "fieldset_disabled": true},
+        "provider_failure": {"result": "passed", "reply_status": 500, "reply_success": false, "new_lead_conversion_events": 0, "visible_alert_prefix": "Не удалось отправить заявку. Попробуйте ещё раз или позвоните:", "test_phone_retained": true},
+        "provider_acknowledged_success": {"result": "passed", "reply_status": 200, "reply_success": true, "visible_heading": "Спасибо, заявка отправлена", "article_success_headings_after_ack": 1, "conversion_event": "blog_lead", "local_fanout_delta": {"ym": 2, "gtag": 1}}
+      },
+      "local_provider_capture": {
+        "calls": 2,
+        "fieldNames": ["URL статьи", "from_name", "subject", "Имя", "Источник", "Источник перехода", "Контекст CTA", "Место CTA", "Статья", "Телефон"],
+        "phoneMatchesTest": [true, true]
+      }
+    },
+    {
+      "form": "Blog bottom",
+      "url": "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+      "baseline_after_inline_success": {"provider_calls": 2, "blog_lead_integration_events": 3, "success_headings": 1},
+      "checks": {
+        "labels": {"result": "passed", "name_id": "blog-bottom-materialy-dlya-kuhni-mdf-massiv-plastik-name", "phone_id": "blog-bottom-materialy-dlya-kuhni-mdf-massiv-plastik-phone", "associated_labels": ["Ваше имя", "Телефон"]},
+        "keyboard": {"result": "passed", "tab_path": ["Ваше имя", "Телефон", "Получить консультацию"], "submit_with_enter": true},
+        "invalid_phone": {"result": "passed", "provider_call_delta": 0, "lead_conversion_event_delta": 0, "total_provider_calls_unchanged": 2, "total_blog_lead_integration_events_unchanged": 3, "aria_invalid": "true", "aria_describedby": "blog-bottom-materialy-dlya-kuhni-mdf-massiv-plastik-phone-error", "visible_error": "Укажите телефон: от 7 до 15 цифр, можно с кодом страны."},
+        "before_provider_ack": {"result": "passed", "pending_requests": 1, "new_lead_conversion_events": 0, "article_success_headings_unchanged": 1, "aria_busy": "true", "submit_disabled": true},
+        "provider_failure": {"result": "passed", "reply_status": 500, "reply_success": false, "new_lead_conversion_events": 0, "total_blog_lead_integration_events_unchanged": 3, "visible_alert_prefix": "Не удалось отправить заявку. Попробуйте ещё раз или позвоните:", "test_phone_retained": true},
+        "provider_acknowledged_success": {"result": "passed", "reply_status": 200, "reply_success": true, "visible_heading": "Спасибо, заявка отправлена", "article_success_headings_after_ack": 2, "total_blog_lead_integration_events_after_ack": 6, "conversion_event": "blog_lead", "local_fanout_delta": {"ym": 2, "gtag": 1}}
+      },
+      "local_provider_capture": {
+        "calls": 2,
+        "fieldNames": ["URL статьи", "from_name", "subject", "Имя", "Источник", "Источник перехода", "Контекст CTA", "Место CTA", "Статья", "Телефон"],
+        "phoneMatchesTest": [true, true]
+      }
+    }
+  ],
+  "retained_native_network_evidence": {
+    "cursor_start": 25,
+    "cursor_end": 1212,
+    "has_more": false,
+    "truncated": true,
+    "provider_requests_in_retained_events": 0,
+    "provider_responses_in_retained_events": 0,
+    "analytics_requests_in_retained_events": 6,
+    "analytics_responses_in_retained_events": 0,
+    "analytics_requests_with_blocked_failure_in_retained_events": 6,
+    "interpretation": "All six retained analytics attempts were blocked. Earlier events were evicted, so this is not a complete network log for the whole run. Per-submit safety is independently recorded by the explicit guards and local fetch-stub captures."
+  },
+  "cleanup": {
+    "quiz_original_fetch_ym_gtag_restored_before_navigation": true,
+    "b2b_original_fetch_ym_gtag_restored_before_navigation": true,
+    "blog_original_fetch_ym_gtag_restored": true,
+    "qa_window_state_removed": true,
+    "pending_local_responses_at_cleanup": 0,
+    "script_execution_normal": true,
+    "script_execution_normal_command": "Emulation.setScriptExecutionDisabled {value:false}",
+    "network_blocklist_cleared": true,
+    "owned_tab_closed": true,
+    "closed_tab_absence_verified": true,
+    "other_tabs_or_profile_modified": false
+  },
+  "application_errors_found": [],
+  "test_harness_observations": [
+    "One post-failure Quiz inspection returned no value while probing the phone element removed by the failure UI. The following inspection read the failure panel, and the keyboard retry confirmed the number was retained. This did not create a request or affect the application scenario."
+  ],
+  "limits": [
+    "The initial page was loaded before the per-tab Network guard was installed; no claim is made about initial page-view telemetry. Every tested submission occurred after the guard and local analytics sink were verified.",
+    "The native Network event buffer was truncated; retained counts must not be interpreted as complete run totals.",
+    "Provider responses were simulated locally. Real email delivery, provider availability, delivery routing and real analytics ingestion were intentionally not exercised.",
+    "Blog inline and bottom were exercised on one representative production article, not every article slug.",
+    "This was a desktop Chrome functional and accessibility-interaction slice, not an exhaustive cross-browser, viewport or screen-reader audit.",
+    "The deployment label was supplied with the assignment; the running production page's commit hash was not independently exposed or verified in this slice.",
+    "Blog non-conversion events such as blog_form_start and blog_cta_click can occur before a provider reply. Failure checks concern the blog_lead conversion specifically."
+  ]
+}

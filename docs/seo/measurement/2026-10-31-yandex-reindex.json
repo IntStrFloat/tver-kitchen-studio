@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "service": "Yandex Webmaster",
+  "site": "https://kuhnitver.ru",
+  "observedAtLocal": "2026-10-31T01:17:00+03:00",
+  "method": "Existing authenticated account, native UI at Индексирование → Переобход страниц.",
+  "previousBatch": {
+    "submittedAtLocal": "2026-10-30T23:10:00+03:00",
+    "count": 10,
+    "visibleStatusNow": "Заявка обработана",
+    "scope": "All ten rows of the previous batch were inspected before the new submission. This status does not prove indexing."
+  },
+  "currentBatch": {
+    "count": 10,
+    "urls": [
+      "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+      "https://kuhnitver.ru/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
+      "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+      "https://kuhnitver.ru/blog/uglovaya-vs-pryamaya-kuhnya",
+      "https://kuhnitver.ru/blog/top-10-oshibok-pri-zakaze-kuhni",
+      "https://kuhnitver.ru/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
+      "https://kuhnitver.ru/kuhni/konakovo",
+      "https://kuhnitver.ru/kuhni/rzheve",
+      "https://kuhnitver.ru/portfolio",
+      "https://kuhnitver.ru/b2b"
+    ],
+    "verifiedVisibleStatus": "В очереди",
+    "verifiedVisibleTimestamp": "31.10.2026 1:17",
+    "allTenRowsConfirmed": true,
+    "quotaMessageAfterSubmission": "Сегодня вся квота израсходована.",
+    "dailyLimit": 10,
+    "screenshotObserved": true
+  },
+  "limitations": [
+    "Queue acceptance and processing are not guarantees of indexing, refreshed snippets, rankings or AI citations.",
+    "The site overview still warns that aggregate data updates are temporarily delayed.",
+    "No repeated requests beyond the daily quota or recurring automation were created."
+  ]
+}

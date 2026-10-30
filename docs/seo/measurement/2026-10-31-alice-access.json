@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-31",
+  "searchSurfaceProbe": {
+    "product": "yandex-alice",
+    "queryId": "supplier-1",
+    "prompt": "Где заказать кухню по размерам в Твери?",
+    "brandOrDomainAdded": false,
+    "visibleSearchRegion": "The UI region was a different city, not Tver; no physical user location is inferred.",
+    "quickAiAnswerShown": false,
+    "ordinarySearchResultsExcludedFromAiAnswerCounts": true,
+    "availableAiLink": "The visible Алиса AI search tab links to the separate chat surface.",
+    "scope": "One actual search-surface probe. This does not establish availability for every query and is not a zero citation result."
+  },
+  "standaloneWebChat": {
+    "product": "yandex-alice-webchat",
+    "mode": "Интеллект: Авто; новый обычный диалог",
+    "completedAnswers": 1,
+    "queryId": "supplier-1",
+    "queryRepeatsCompleted": [1],
+    "domainOrBrandInPrompt": false,
+    "comparisonEligible": false,
+    "answerEvidence": "observations-after-alice-webchat-answer-supplier-1-1.json",
+    "delayedSourcesDrawerEvidence": "observations-after-alice-webchat-supplier-1-1-source-panel.json",
+    "personalizationInspection": {
+      "method": "Read-only Settings → Персонализация after capturing the answer.",
+      "visibleSwitchLabel": "Ссылаться на историю чатов",
+      "visibleSwitchValue": 1,
+      "interpretation": "Cross-chat history referencing was enabled when inspected. This setting was not controlled for the observed answer.",
+      "settingChanged": false,
+      "contextDeleted": false,
+      "settingsDialogClosed": true,
+      "perChatTemporaryModeEstablished": false
+    },
+    "remainingPlannedRowsNotRun": 50,
+    "remainingRowsMeaning": "Pending optional controlled-context observations, not unobserved zero-citation answers. Account-wide personalization changes and context deletion were not part of this site configuration task."
+  },
+  "identityOrPrivateHistoryCapturedInThisArtifact": false,
+  "sources": ["https://alice.yandex.ru/support/ru/assistant/personalization"],
+  "notClaimed": ["Primary SERP AI coverage", "A complete 17-query × 3-repeat Alice wave", "Independent no-memory Alice repeats", "Before/after improvement"]
+}

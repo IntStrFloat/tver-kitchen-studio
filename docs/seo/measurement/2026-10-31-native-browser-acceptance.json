@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-31",
+  "phase": "after",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "origin": "https://kuhnitver.ru",
+  "browser": "Chrome 156.0.0.0 on Windows",
+  "method": "Actual Chrome UI through cua_repl; tab-scoped native CDP for failure injection and read-only DOM inspection.",
+  "isolation": {
+    "ownedTabOnly": true,
+    "leadProviderNetworkBlocked": true,
+    "analyticsNetworkBlocked": true,
+    "leadReceiver": "In-memory fetch stub for api.web3forms.com, returning explicit success:true HTTP200 or success:false HTTP500.",
+    "contact": "Reserved dummy test number; request body retained only as field names and phoneMatchesTest boolean.",
+    "realLeadsCreated": 0,
+    "realConversionEventsSent": 0,
+    "productionCodeModified": false,
+    "cleanup": "Original fetch/ym/gtag restored; harness absence verified; JavaScript execution re-enabled; tab-scoped network block list cleared; owned QA tab closed."
+  },
+  "forms": {
+    "callback": {
+      "success": {
+        "message": "Заявка отправлена",
+        "mockRequests": 1,
+        "phoneMatchesTest": true,
+        "conversion": "callback_request",
+        "ymCounters": [106971287, 110021238],
+        "ga4Events": 1,
+        "analyticsContainContactFields": false
+      },
+      "providerFailure": {
+        "message": "Не удалось отправить. Заявка не подтверждена. Попробуйте ещё раз или позвоните нам.",
+        "mockRequests": 1,
+        "phoneMatchesTest": true,
+        "conversionEvents": 0
+      },
+      "escapeClosesDialog": true
+    },
+    "catalog": {
+      "keyboard": "Phone field -> Tab focuses submit button -> Enter submits.",
+      "providerFailure": {
+        "message": "Не удалось отправить заявку. Данные сохранены: попробуйте ещё раз.",
+        "inputPreserved": true,
+        "mockRequests": 1,
+        "phoneMatchesTest": true,
+        "conversionEvents": 0
+      },
+      "successAfterRetry": {
+        "message": "Заявка отправлена! Мы скоро свяжемся с вами для расчёта",
+        "mockRequests": 1,
+        "phoneMatchesTest": true,
+        "conversion": "catalog_lead",
+        "ymCounters": [106971287, 110021238],
+        "ga4Events": 1,
+        "analyticsContainContactFields": false
+      }
+    }
+  },
+  "javascriptDisabled": {
+    "nativeCommand": "Emulation.setScriptExecutionDisabled(value:true), then reload/navigation",
+    "homepage": {
+      "h1AndAll11H2Visible": true,
+      "commercialTermsVisible": true,
+      "mainPhoneLinks": 9
+    },
+    "faq": {
+      "h1Visible": true,
+      "nativeDetailsOpens": true,
+      "visibleAnswer": "Замер стоит 1 500 ₽; сумма вычитается при заказе; дорожные расходы согласуются до записи."
+    },
+    "blog": {
+      "url": "/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+      "h1Visible": true,
+      "forms": 2,
+      "method": "POST",
+      "allFieldsetsAndInputsDisabled": true,
+      "visibleNoscriptPhoneFallbacks": 2,
+      "contactDataInQuery": false
+    }
+  },
+  "javascriptEnabledButChunksBlocked": {
+    "url": "/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+    "pattern": "https://kuhnitver.ru/_next/static/*.js*",
+    "nativeNetworkEvidence": "17 Network.loadingFailed events with type Script and blockedReason inspector on the observed reload.",
+    "h1Visible": true,
+    "forms": 2,
+    "method": "POST",
+    "allFieldsetsAndInputsDisabled": true,
+    "visiblePhoneLink": true,
+    "contactDataInQuery": false
+  },
+  "webMcp": {
+    "secureContext": true,
+    "nativeDocumentModelContextType": "undefined",
+    "nativeNavigatorModelContextType": "undefined",
+    "conclusion": "This actual browser does not expose the experimental API; ordinary site fallback works. Native tool invocation with a supporting client remains unverified.",
+    "measurementCorrection": "Earlier absence inferred from a restricted read-only DOM facade was insufficient. This record uses native Runtime.evaluate in the actual page context."
+  },
+  "limitations": [
+    "Stub acknowledgement verifies UI and conversion semantics, not delivery to the production mailbox.",
+    "These browser checks do not establish a performance improvement or a ranking effect.",
+    "An initial DOM inspection expression failed with SyntaxError and was corrected; results above use successful native reads and visible UI."
+  ]
+}

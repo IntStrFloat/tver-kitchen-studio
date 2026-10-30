@@ -1,0 +1,2765 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "generatedAt": "2026-10-30T22:28:36.987Z",
+  "overall": {
+    "observations": 51,
+    "completed": 18,
+    "retrievalEvidence": {
+      "enabled": 13,
+      "disabled": 0,
+      "unknown": 5
+    },
+    "excludedFromComparison": 5,
+    "pending": 0,
+    "unavailable": 33,
+    "errors": 0,
+    "domainCitations": {
+      "numerator": 0,
+      "denominator": 18,
+      "rate": 0
+    },
+    "brandMentions": {
+      "numerator": 0,
+      "denominator": 18,
+      "rate": 0
+    },
+    "facts": {
+      "priceAndUnit": {
+        "correct": 0,
+        "incorrect": 0,
+        "no_answer": 0,
+        "not_applicable": 18,
+        "unverified": 0,
+        "accuracy": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "measurement": {
+        "correct": 0,
+        "incorrect": 0,
+        "no_answer": 0,
+        "not_applicable": 18,
+        "unverified": 0,
+        "accuracy": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "delivery": {
+        "correct": 0,
+        "incorrect": 0,
+        "no_answer": 0,
+        "not_applicable": 18,
+        "unverified": 0,
+        "accuracy": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "contacts": {
+        "correct": 0,
+        "incorrect": 0,
+        "no_answer": 0,
+        "not_applicable": 18,
+        "unverified": 0,
+        "accuracy": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    "agent": {
+      "draftPrepared": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "taskSucceeded": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "submitted": 0
+    }
+  },
+  "byScenario": {
+    "discovery": {
+      "observations": 36,
+      "completed": 18,
+      "retrievalEvidence": {
+        "enabled": 13,
+        "disabled": 0,
+        "unknown": 5
+      },
+      "excludedFromComparison": 5,
+      "pending": 0,
+      "unavailable": 18,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 18,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 18,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 18,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 18,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 18,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 18,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "brand": {
+      "observations": 6,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 6,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "url": {
+      "observations": 6,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 6,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "agent": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    }
+  },
+  "byProductAndScenario": {
+    "gemini/discovery": {
+      "observations": 36,
+      "completed": 18,
+      "retrievalEvidence": {
+        "enabled": 13,
+        "disabled": 0,
+        "unknown": 5
+      },
+      "excludedFromComparison": 5,
+      "pending": 0,
+      "unavailable": 18,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 18,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 18,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 18,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 18,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 18,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 18,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "gemini/brand": {
+      "observations": 6,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 6,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "gemini/url": {
+      "observations": 6,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 6,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "gemini/agent": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    }
+  },
+  "byProductModeAndScenario": {
+    "[\"gemini\",\"Gemini Авто, временный чат\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",null,\"discovery\"]": {
+      "observations": 5,
+      "completed": 5,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 5
+      },
+      "excludedFromComparison": 5,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 5,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 5,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 5,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 5,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 5,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 5,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gemini\",\"Gemini Авто, временный чат\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",true,\"discovery\"]": {
+      "observations": 13,
+      "completed": 13,
+      "retrievalEvidence": {
+        "enabled": 13,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 13,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 13,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 13,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 13,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 13,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 13,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gemini\",\"Gemini Apps, доступ заблокирован до чата\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",null,\"discovery\"]": {
+      "observations": 18,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 18,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gemini\",\"Gemini Apps, доступ заблокирован до чата\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",null,\"brand\"]": {
+      "observations": 6,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 6,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gemini\",\"Gemini Apps, доступ заблокирован до чата\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",null,\"url\"]": {
+      "observations": 6,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 6,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gemini\",\"Gemini Apps, доступ заблокирован до чата\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",null,\"agent\"]": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    }
+  },
+  "byQuery": {
+    "supplier-1": {
+      "observations": 3,
+      "completed": 3,
+      "retrievalEvidence": {
+        "enabled": 1,
+        "disabled": 0,
+        "unknown": 2
+      },
+      "excludedFromComparison": 2,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "supplier-2": {
+      "observations": 3,
+      "completed": 3,
+      "retrievalEvidence": {
+        "enabled": 3,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "supplier-3": {
+      "observations": 3,
+      "completed": 3,
+      "retrievalEvidence": {
+        "enabled": 3,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "price-1": {
+      "observations": 3,
+      "completed": 3,
+      "retrievalEvidence": {
+        "enabled": 3,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "price-2": {
+      "observations": 3,
+      "completed": 3,
+      "retrievalEvidence": {
+        "enabled": 3,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "price-3": {
+      "observations": 3,
+      "completed": 3,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 3
+      },
+      "excludedFromComparison": 3,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "conditions-1": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "conditions-2": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "conditions-3": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "conditions-4": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "materials-1": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "materials-2": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "brand-1": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "brand-2": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "url-1": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "url-2": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "form-1": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    }
+  },
+  "interpretation": "Discovery, brand, URL-reading and agent results are separate. Use byProductModeAndScenario to keep guest/authenticated modes, models, regions and retrieval evidence separate. webSearch=null means retrieval was not established, not a failed answer. Alice's standalone web chat is not the quick answer in the search results. Unmeasured rates are null. Citation requires a verified URL; brand mention alone does not count. No causal inference or lead count is derived from answers."
+}

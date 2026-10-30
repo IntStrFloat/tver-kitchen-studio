@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "product": "gemini",
+  "phase": "after",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "method": "Direct HTTP GET for cited public own-domain URLs only; no Google or other external requests.",
+  "checks": []
+}

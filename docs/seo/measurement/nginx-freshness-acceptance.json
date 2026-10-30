@@ -1,0 +1,1572 @@
+{
+  "startedAt": "2026-10-30T22:33:24.966650+00:00",
+  "activeFile": "/etc/nginx/sites-enabled/kuhnitver.ru",
+  "stateDirectory": "/var/tmp/kuhnitver-nginx-freshness-20261031-07994f8873e5",
+  "expectedBeforeSha256": "7d573f3a1b65e66143ee33bf7414ce42f4dacb57d99b0370647928e4676acf89",
+  "expectedAfterSha256": "07994f8873e51a1e39c59c8ebcdd0e632f12cb889947bbcc210d576fef6ca8a3",
+  "applied": true,
+  "rolledBack": false,
+  "phase": "complete",
+  "externalAnalyticsOrLeadRequests": false,
+  "beforeSha256": "7d573f3a1b65e66143ee33bf7414ce42f4dacb57d99b0370647928e4676acf89",
+  "candidateSha256": "07994f8873e51a1e39c59c8ebcdd0e632f12cb889947bbcc210d576fef6ca8a3",
+  "inactiveBeforeSha256": "5b0196e6dab42757c298795d1ae562dacb7627f2328bf8804e0c93a64ec50df7",
+  "capacityBeforeSha256": "6868425a056614fc11726dab4ec3e446b402229b8a0f730d558fa4152b1e8b84",
+  "appBefore": {
+    "WorkingDirectory": "/var/www/tver-kitchen-studio-releases/5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+    "MainPID": "3282195",
+    "ActiveState": "active"
+  },
+  "backup": "/var/tmp/kuhnitver-nginx-freshness-20261031-07994f8873e5/nginx-freshness-active-before.conf",
+  "backupMode": "0o600",
+  "before": {
+    "responses": [
+      {
+        "path": "/",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "s-maxage=31536000"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"6ywdn9pfq63m9x\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 194894,
+        "bodySha256": "416953182ab0f6762f1a392fe6f107cf0d2d8adc00859d24514dc8bd8f5d8f91"
+      },
+      {
+        "path": "/contacts",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "s-maxage=31536000"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"dq7c9w1l211ngx\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 83216,
+        "bodySha256": "fd5d325592e7d271167499a7632d5eb0d11bf4cf8045ed8e99df78d504273ee6"
+      },
+      {
+        "path": "/dostavka",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "s-maxage=31536000"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"vf9d1q2skp1jmh\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 82129,
+        "bodySha256": "de0a3f49dcecc711f05599679840532672dddac682c70bd3ca3ccbe9c90ec464"
+      },
+      {
+        "path": "/robots.txt",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "public, max-age=0, must-revalidate",
+          "public, max-age=86400"
+        ],
+        "contentType": "text/plain",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 147,
+        "bodySha256": "76ac4fae81c5f4265ec62204990a9962c58fd9bc28956106c803cd568ab734b0"
+      },
+      {
+        "path": "/sitemap.xml",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "public, max-age=0, must-revalidate",
+          "public, max-age=86400"
+        ],
+        "contentType": "application/xml",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 4412,
+        "bodySha256": "2969c65d2b329a9161453d120110b943b1cba35cd02dfe14679ba75e4f7c4a05"
+      },
+      {
+        "path": "/blog.rss",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "public, max-age=3600, s-maxage=3600"
+        ],
+        "contentType": "application/rss+xml; charset=utf-8",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 65925,
+        "bodySha256": "b31d94ef7590a51cf33b021d7eefd9057d9478e5b93aaddb2753c42fe47287ca"
+      },
+      {
+        "path": "/uslugi.yml",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "s-maxage=31536000"
+        ],
+        "contentType": "application/xml; charset=utf-8",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 12828,
+        "bodySha256": "cb4537c382ce150943ae4de2fd528aeb39fb008d8250269cab11931ad856f265"
+      },
+      {
+        "path": "/llms.txt",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "s-maxage=31536000",
+          "public, max-age=86400"
+        ],
+        "contentType": "text/plain; charset=utf-8",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 7299,
+        "bodySha256": "18385ebd674c19dbbda5b11ee40e575b69f24625f200e2baff33f42c78a190ac"
+      },
+      {
+        "path": "/_next/static/chunks/6c84bf83fa2a6aed.css",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "public, max-age=31536000, immutable"
+        ],
+        "contentType": "text/css; charset=UTF-8",
+        "etag": "W/\"12cb1-1a18ea2aad9\"",
+        "lastModified": "Fri, 30 Oct 2026 21:06:27 GMT",
+        "vary": [
+          "Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 76977,
+        "bodySha256": "06c16662fdb34aece8d31590e84ed3ec2e2cf413a4b73b8b6e8ea9ee2c4f12dd"
+      },
+      {
+        "path": "/_next/static/chunks/806bdb8e4a6a9b95.js",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "public, max-age=31536000, immutable"
+        ],
+        "contentType": "application/javascript; charset=UTF-8",
+        "etag": "W/\"97d8-1a18ea2aada\"",
+        "lastModified": "Fri, 30 Oct 2026 21:06:27 GMT",
+        "vary": [
+          "Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 38872,
+        "bodySha256": "75dcd02f1ebada9b1e2a59092f8a4f065581c787f19f668d64533d16e3f9031a"
+      },
+      {
+        "path": "/fonts/inter-cyrillic-variable.woff2",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "public, max-age=0",
+          "public, max-age=86400"
+        ],
+        "contentType": "font/woff2",
+        "etag": "W/\"493c-1a18ea241cd\"",
+        "lastModified": "Fri, 30 Oct 2026 21:06:00 GMT",
+        "vary": [],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 18748,
+        "bodySha256": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075"
+      },
+      {
+        "path": "/images/hero-kitchen.jpg",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "public, max-age=0",
+          "public, max-age=86400"
+        ],
+        "contentType": "image/jpeg",
+        "etag": "W/\"1c833-1a18ea2421f\"",
+        "lastModified": "Fri, 30 Oct 2026 21:06:00 GMT",
+        "vary": [],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 116787,
+        "bodySha256": "069edfea7b14a5da9ed88365c5aae3e8d00c0e7a1066851c52747f7d94c761a8"
+      }
+    ],
+    "guardResponses": {
+      "rsc-prefetch": {
+        "path": "/?_rsc=nginx-freshness-acceptance",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "s-maxage=31536000"
+        ],
+        "contentType": "text/x-component",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 49935,
+        "bodySha256": "d48e745e2039f8e39e46db3014e7a885a6cf30013f1c33478ffb46cd0e32eefd"
+      },
+      "next-router-prefetch": {
+        "path": "/",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "s-maxage=31536000"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"6ywdn9pfq63m9x\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 194894,
+        "bodySha256": "416953182ab0f6762f1a392fe6f107cf0d2d8adc00859d24514dc8bd8f5d8f91"
+      },
+      "next-segment-prefetch": {
+        "path": "/",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "s-maxage=31536000"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"6ywdn9pfq63m9x\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 194894,
+        "bodySha256": "416953182ab0f6762f1a392fe6f107cf0d2d8adc00859d24514dc8bd8f5d8f91"
+      },
+      "next-router-state-tree": {
+        "path": "/",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "s-maxage=31536000"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"6ywdn9pfq63m9x\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 194894,
+        "bodySha256": "416953182ab0f6762f1a392fe6f107cf0d2d8adc00859d24514dc8bd8f5d8f91"
+      },
+      "private-404": {
+        "path": "/portfolio/nginx-freshness-acceptance-no-project",
+        "method": "GET",
+        "status": 404,
+        "cacheControl": [
+          "private, no-cache, no-store, max-age=0, must-revalidate"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"4tigiu39n8svh\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 40547,
+        "bodySha256": "1295aa0741e3e9f2e103d746d3294613941b7b40e1f389386325aa598cf29836"
+      }
+    }
+  },
+  "updatedAt": "2026-10-30T22:33:26.296141+00:00",
+  "configTest": {
+    "command": [
+      "/usr/sbin/nginx",
+      "-t"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "nginx: the configuration file /etc/nginx/nginx.conf syntax is ok\nnginx: configuration file /etc/nginx/nginx.conf test is successful"
+  },
+  "reload": {
+    "command": [
+      "systemctl",
+      "reload",
+      "nginx"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "headerReadinessPoll": [
+    {
+      "attempt": 1,
+      "status": 200,
+      "cacheControl": [
+        "s-maxage=31536000"
+      ]
+    },
+    {
+      "attempt": 2,
+      "status": 200,
+      "cacheControl": [
+        "no-cache"
+      ]
+    }
+  ],
+  "completedAt": "2026-10-30T22:33:26.296074+00:00",
+  "afterSha256": "07994f8873e51a1e39c59c8ebcdd0e632f12cb889947bbcc210d576fef6ca8a3",
+  "after": {
+    "html": [
+      {
+        "path": "/",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"6ywdn9pfq63m9x\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 194894,
+        "bodySha256": "416953182ab0f6762f1a392fe6f107cf0d2d8adc00859d24514dc8bd8f5d8f91"
+      },
+      {
+        "path": "/catalog",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"4n500o85zp1obr\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 85464,
+        "bodySha256": "c77c0299588fb080aa8b79c7c1bcbccf1c4ed72a14310e3161c0f7a248b52d97"
+      },
+      {
+        "path": "/price",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"h25nnmbzyj1pst\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 91811,
+        "bodySha256": "37ba1dd26bb524b52e25f1f1f8afd94337421b5ade42b2eaf35ecf3271776bb5"
+      },
+      {
+        "path": "/portfolio",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"urxtounu451kwk\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 79747,
+        "bodySha256": "34e35f734c5a52f2064b76f4560e4d82689564647a6ffe626e1224b671a1939e"
+      },
+      {
+        "path": "/about",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"ew0w9ge16n1pmv\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 90578,
+        "bodySha256": "871e6b9a94b4b2cf26d027ef6956e589700b79ab34d2fbd8a44ef299b47d58ec"
+      },
+      {
+        "path": "/contacts",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"dq7c9w1l211ngx\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 83216,
+        "bodySha256": "fd5d325592e7d271167499a7632d5eb0d11bf4cf8045ed8e99df78d504273ee6"
+      },
+      {
+        "path": "/faq",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"hifc8wwh51stw\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 102755,
+        "bodySha256": "f5977e9c9632b8a0e6feac944b3245e4402ecd70967c1238f79cecb83c9dea22"
+      },
+      {
+        "path": "/dostavka",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"vf9d1q2skp1jmh\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 82129,
+        "bodySha256": "de0a3f49dcecc711f05599679840532672dddac682c70bd3ca3ccbe9c90ec464"
+      },
+      {
+        "path": "/blog",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"15p4xogmxsp1oon\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 86532,
+        "bodySha256": "6c2f568b67424cddcd80bf59f9eb65986bc5cd0faf8cb73eaf69cee21eb0a952"
+      },
+      {
+        "path": "/b2b",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"1115c448rq53j8e\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 190731,
+        "bodySha256": "35320ea57b3ec9c8d865debdc06284b0e4e05dc7660981a81eb8661b5df4be94"
+      },
+      {
+        "path": "/privacy",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"tl4288ed041d1v\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 72042,
+        "bodySha256": "b42420a20c02b08e94cd5d2e9c40d3cf9be853cf333550faac27700fea572f20"
+      },
+      {
+        "path": "/catalog/loft",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"tlz9nyb9v41sc1\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 92529,
+        "bodySha256": "36e648cccf1d90d7365eb51d4031a5e0c42077cb55d8ff4995cd78255a363e70"
+      },
+      {
+        "path": "/catalog/skandinavskiy",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"rrei0xgjit1shz\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 92979,
+        "bodySha256": "53aa6e8af85105b61f46c546c66714779e17df5c78d68fbd96ece367bd13b219"
+      },
+      {
+        "path": "/catalog/minimalizm",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"kehmr8hivo1sff\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 92645,
+        "bodySha256": "9fdf99b535d4bc8e64acfd47b735949e5cd93902fab4af9112e76ceacae70147"
+      },
+      {
+        "path": "/catalog/premium",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"2dv1k97tb51sc1\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 92613,
+        "bodySha256": "74d9ab27b82da449e387342b631e24075f1cb086c431108df7cef7a144aaa8c4"
+      },
+      {
+        "path": "/catalog/klassika",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"r2bm9k2q8a1sg3\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 92853,
+        "bodySha256": "f256bc7f17758f190b4bddd9bf6f939359994bac6591cc4f05ba8d7bf1618c1f"
+      },
+      {
+        "path": "/catalog/belaya",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"d3v3foer1t1sfl\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 92767,
+        "bodySha256": "fc034e18dcb8ec4e76415d6e0cf62a8f7dabef9ebb19862a1c9445db9eb45fe3"
+      },
+      {
+        "path": "/catalog/uglovye",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"188xw1fpi3l1seu\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 92692,
+        "bodySha256": "421f362c3ceb92784444a9ce53e8bd3559abfbd4353a15283e26d033bc623a7e"
+      },
+      {
+        "path": "/kuhni/tveri",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"2vow4c0su71wpk\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 97836,
+        "bodySha256": "e78d2dda29f448279d3a26bb0e8b95ab03163fba84ed8a4aa4c908dde914b1b4"
+      },
+      {
+        "path": "/kuhni/torzhke",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"100zlxotktr1wjs\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 97613,
+        "bodySha256": "eb8b7094d729364f71f46ee6d74e84cbd749b9770c2f514757c27c35e5237e3c"
+      },
+      {
+        "path": "/kuhni/rzheve",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"sr0d4ml94c1wgi\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 97387,
+        "bodySha256": "f2397569daeb5682024373e1fc40cb8b4d1d7f356c7d3851b26b0868c46e1592"
+      },
+      {
+        "path": "/kuhni/konakovo",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"uznrso12gr1wna\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 97858,
+        "bodySha256": "95ac082392100687430ebe8bb465b4050de1a0d2d75e9078abc5c7d6d05228f8"
+      },
+      {
+        "path": "/kuhni/kimrah",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"doz8p9uxmw1wfu\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 97343,
+        "bodySha256": "2b71d2defe3b9dcbce79c0f7f34e214898ff3e6ed7e01fdefa4a71b822b34e66"
+      },
+      {
+        "path": "/kuhni/vyshnem-volochke",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"dvsraccxbj1wx4\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 98426,
+        "bodySha256": "11e75654fa0774d72bc340ed33ac5c37ef78de8618e58f787029996c5d24ff75"
+      },
+      {
+        "path": "/kuhni/bezhecke",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"cz4sy7g9s31wax\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 97184,
+        "bodySha256": "d6b86dab1c709d4272a87b2f3647e14bf84e74e84badfca9384a1204278b719b"
+      },
+      {
+        "path": "/kuhni/nelidovo",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"3ht14r0ukd1wdq\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 97375,
+        "bodySha256": "64e04aafe81765a8317657d80195328c2cb519f362ff2acfd92db964586a1ada"
+      },
+      {
+        "path": "/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"ufyopkdpmv1lq5\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 83092,
+        "bodySha256": "ae1f271122da6a6f28b814c512870974a352afa708f2b51f60d5498df9c0279c"
+      },
+      {
+        "path": "/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"ktuscr1o0n1p68\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 88869,
+        "bodySha256": "3ab14f63aff83bb74ad4fbdddb5f9b9e18c9d3477aaf8be7b9a35101f810d9fb"
+      },
+      {
+        "path": "/blog/skolko-stoit-kuhnya-na-zakaz-2026",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"cz6afhvwok1rou\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 93435,
+        "bodySha256": "84a7284a0423c5b1646ab6a079b238a55c0dd6682ff185ec8d4ed05a50477348"
+      },
+      {
+        "path": "/blog/uglovaya-vs-pryamaya-kuhnya",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"3f4bl8ikm01kgu\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 81044,
+        "bodySha256": "b9d53894d404c26bf769cb71ef3280e6e330bbe766666a0c3b16fcb39ac9b4d1"
+      },
+      {
+        "path": "/blog/top-10-oshibok-pri-zakaze-kuhni",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"wwho1x0svf1lvd\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 83638,
+        "bodySha256": "ed38bdafadd2cbbee9a539ad38a6b59c019826488f171246fd010798424cd8fa"
+      },
+      {
+        "path": "/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"jwl2psjcby1mvq\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 86128,
+        "bodySha256": "8c8977fb96968179b474b9bdddc49060b0ee796ba310e181951fa8419f06fa97"
+      },
+      {
+        "path": "/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"md2m57kv8q1pld\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 89481,
+        "bodySha256": "07965990c42ed01a710487fdceda0000aeeffcf94e52c6761ee993d8d7b05971"
+      },
+      {
+        "path": "/blog/dizayn-kuhni-2026-idei-planirovki-i-foto",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"4xb6t4q5z51yda\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 109567,
+        "bodySha256": "fa07cd0bb8cef4786f21fb00acb3d7fc395891a20470f5df57af35fa68d7ddca"
+      },
+      {
+        "path": "/blog/chernaya-kuhnya-v-interere",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"10sx5u543ac1xrk\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 108610,
+        "bodySha256": "e8743f1b619ec1a7c2d268f0507ce8e231a5c2b8da9899f69a7a001b7759cde0"
+      },
+      {
+        "path": "/blog/sroki-izgotovleniya-kuhni-na-zakaz",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"764yvp5mkb1u88\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 98130,
+        "bodySha256": "096b63aec60e79da7c0e3c5ec2140cddee4eda9b152c1fabd146f83e506228c4"
+      }
+    ],
+    "feeds": [
+      {
+        "path": "/robots.txt",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/plain",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 147,
+        "bodySha256": "76ac4fae81c5f4265ec62204990a9962c58fd9bc28956106c803cd568ab734b0"
+      },
+      {
+        "path": "/sitemap.xml",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "application/xml",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 4412,
+        "bodySha256": "2969c65d2b329a9161453d120110b943b1cba35cd02dfe14679ba75e4f7c4a05"
+      },
+      {
+        "path": "/blog.rss",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "application/rss+xml; charset=utf-8",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 65925,
+        "bodySha256": "b31d94ef7590a51cf33b021d7eefd9057d9478e5b93aaddb2753c42fe47287ca"
+      },
+      {
+        "path": "/uslugi.yml",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "application/xml; charset=utf-8",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 12828,
+        "bodySha256": "cb4537c382ce150943ae4de2fd528aeb39fb008d8250269cab11931ad856f265"
+      },
+      {
+        "path": "/llms.txt",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/plain; charset=utf-8",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 7299,
+        "bodySha256": "18385ebd674c19dbbda5b11ee40e575b69f24625f200e2baff33f42c78a190ac"
+      }
+    ],
+    "htmlConditional304": [
+      {
+        "path": "/",
+        "method": "GET",
+        "status": 304,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": null,
+        "etag": "\"6ywdn9pfq63m9x\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:24 GMT",
+        "setCookiePresent": false,
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "/contacts",
+        "method": "GET",
+        "status": 304,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": null,
+        "etag": "\"dq7c9w1l211ngx\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:25 GMT",
+        "setCookiePresent": false,
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "feedConditionalSupport": [
+      {
+        "path": "/robots.txt",
+        "supported": false,
+        "reason": "No ETag or Last-Modified from origin; 304 branch covered by isolated nginx fixture."
+      },
+      {
+        "path": "/sitemap.xml",
+        "supported": false,
+        "reason": "No ETag or Last-Modified from origin; 304 branch covered by isolated nginx fixture."
+      },
+      {
+        "path": "/blog.rss",
+        "supported": false,
+        "reason": "No ETag or Last-Modified from origin; 304 branch covered by isolated nginx fixture."
+      },
+      {
+        "path": "/uslugi.yml",
+        "supported": false,
+        "reason": "No ETag or Last-Modified from origin; 304 branch covered by isolated nginx fixture."
+      },
+      {
+        "path": "/llms.txt",
+        "supported": false,
+        "reason": "No ETag or Last-Modified from origin; 304 branch covered by isolated nginx fixture."
+      }
+    ],
+    "heads": [
+      {
+        "path": "/",
+        "method": "HEAD",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"6ywdn9pfq63m9x\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:25 GMT",
+        "setCookiePresent": false,
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "/contacts",
+        "method": "HEAD",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"dq7c9w1l211ngx\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:25 GMT",
+        "setCookiePresent": false,
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "/robots.txt",
+        "method": "HEAD",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/plain",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:25 GMT",
+        "setCookiePresent": false,
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "/sitemap.xml",
+        "method": "HEAD",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "application/xml",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:25 GMT",
+        "setCookiePresent": false,
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "/blog.rss",
+        "method": "HEAD",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "application/rss+xml; charset=utf-8",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:25 GMT",
+        "setCookiePresent": false,
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "/uslugi.yml",
+        "method": "HEAD",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "application/xml; charset=utf-8",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:25 GMT",
+        "setCookiePresent": false,
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "/llms.txt",
+        "method": "HEAD",
+        "status": 200,
+        "cacheControl": [
+          "no-cache"
+        ],
+        "contentType": "text/plain; charset=utf-8",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+        ],
+        "expires": "Fri, 30 Oct 2026 22:33:25 GMT",
+        "setCookiePresent": false,
+        "bytes": 0,
+        "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "guardResponses": {
+      "rsc-prefetch": {
+        "path": "/?_rsc=nginx-freshness-acceptance",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "s-maxage=31536000"
+        ],
+        "contentType": "text/x-component",
+        "etag": null,
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 49935,
+        "bodySha256": "d48e745e2039f8e39e46db3014e7a885a6cf30013f1c33478ffb46cd0e32eefd"
+      },
+      "next-router-prefetch": {
+        "path": "/",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "s-maxage=31536000"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"6ywdn9pfq63m9x\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 194894,
+        "bodySha256": "416953182ab0f6762f1a392fe6f107cf0d2d8adc00859d24514dc8bd8f5d8f91"
+      },
+      "next-segment-prefetch": {
+        "path": "/",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "s-maxage=31536000"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"6ywdn9pfq63m9x\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 194894,
+        "bodySha256": "416953182ab0f6762f1a392fe6f107cf0d2d8adc00859d24514dc8bd8f5d8f91"
+      },
+      "next-router-state-tree": {
+        "path": "/",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "s-maxage=31536000"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"6ywdn9pfq63m9x\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 194894,
+        "bodySha256": "416953182ab0f6762f1a392fe6f107cf0d2d8adc00859d24514dc8bd8f5d8f91"
+      },
+      "private-404": {
+        "path": "/portfolio/nginx-freshness-acceptance-no-project",
+        "method": "GET",
+        "status": 404,
+        "cacheControl": [
+          "private, no-cache, no-store, max-age=0, must-revalidate"
+        ],
+        "contentType": "text/html; charset=utf-8",
+        "etag": "\"4tigiu39n8svh\"",
+        "lastModified": null,
+        "vary": [
+          "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 40547,
+        "bodySha256": "1295aa0741e3e9f2e103d746d3294613941b7b40e1f389386325aa598cf29836"
+      }
+    },
+    "genericHtmlPrefetch": [
+      {
+        "requestHeaders": {
+          "Purpose": "prefetch"
+        },
+        "response": {
+          "path": "/",
+          "method": "GET",
+          "status": 200,
+          "cacheControl": [
+            "no-cache"
+          ],
+          "contentType": "text/html; charset=utf-8",
+          "etag": "\"6ywdn9pfq63m9x\"",
+          "lastModified": null,
+          "vary": [
+            "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+          ],
+          "expires": "Fri, 30 Oct 2026 22:33:25 GMT",
+          "setCookiePresent": false,
+          "bytes": 194894,
+          "bodySha256": "416953182ab0f6762f1a392fe6f107cf0d2d8adc00859d24514dc8bd8f5d8f91"
+        },
+        "conditional": {
+          "path": "/",
+          "method": "GET",
+          "status": 304,
+          "cacheControl": [
+            "no-cache"
+          ],
+          "contentType": null,
+          "etag": "\"6ywdn9pfq63m9x\"",
+          "lastModified": null,
+          "vary": [
+            "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+          ],
+          "expires": "Fri, 30 Oct 2026 22:33:25 GMT",
+          "setCookiePresent": false,
+          "bytes": 0,
+          "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      },
+      {
+        "requestHeaders": {
+          "Sec-Purpose": "prefetch;prerender"
+        },
+        "response": {
+          "path": "/",
+          "method": "GET",
+          "status": 200,
+          "cacheControl": [
+            "no-cache"
+          ],
+          "contentType": "text/html; charset=utf-8",
+          "etag": "\"6ywdn9pfq63m9x\"",
+          "lastModified": null,
+          "vary": [
+            "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+          ],
+          "expires": "Fri, 30 Oct 2026 22:33:25 GMT",
+          "setCookiePresent": false,
+          "bytes": 194894,
+          "bodySha256": "416953182ab0f6762f1a392fe6f107cf0d2d8adc00859d24514dc8bd8f5d8f91"
+        },
+        "conditional": {
+          "path": "/",
+          "method": "GET",
+          "status": 304,
+          "cacheControl": [
+            "no-cache"
+          ],
+          "contentType": null,
+          "etag": "\"6ywdn9pfq63m9x\"",
+          "lastModified": null,
+          "vary": [
+            "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+          ],
+          "expires": "Fri, 30 Oct 2026 22:33:25 GMT",
+          "setCookiePresent": false,
+          "bytes": 0,
+          "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      }
+    ],
+    "assets": [
+      {
+        "path": "/_next/static/chunks/6c84bf83fa2a6aed.css",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "public, max-age=31536000, immutable"
+        ],
+        "contentType": "text/css; charset=UTF-8",
+        "etag": "W/\"12cb1-1a18ea2aad9\"",
+        "lastModified": "Fri, 30 Oct 2026 21:06:27 GMT",
+        "vary": [
+          "Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 76977,
+        "bodySha256": "06c16662fdb34aece8d31590e84ed3ec2e2cf413a4b73b8b6e8ea9ee2c4f12dd"
+      },
+      {
+        "path": "/_next/static/chunks/806bdb8e4a6a9b95.js",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "public, max-age=31536000, immutable"
+        ],
+        "contentType": "application/javascript; charset=UTF-8",
+        "etag": "W/\"97d8-1a18ea2aada\"",
+        "lastModified": "Fri, 30 Oct 2026 21:06:27 GMT",
+        "vary": [
+          "Accept-Encoding"
+        ],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 38872,
+        "bodySha256": "75dcd02f1ebada9b1e2a59092f8a4f065581c787f19f668d64533d16e3f9031a"
+      },
+      {
+        "path": "/fonts/inter-cyrillic-variable.woff2",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "public, max-age=0",
+          "public, max-age=86400"
+        ],
+        "contentType": "font/woff2",
+        "etag": "W/\"493c-1a18ea241cd\"",
+        "lastModified": "Fri, 30 Oct 2026 21:06:00 GMT",
+        "vary": [],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 18748,
+        "bodySha256": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075"
+      },
+      {
+        "path": "/images/hero-kitchen.jpg",
+        "method": "GET",
+        "status": 200,
+        "cacheControl": [
+          "public, max-age=0",
+          "public, max-age=86400"
+        ],
+        "contentType": "image/jpeg",
+        "etag": "W/\"1c833-1a18ea2421f\"",
+        "lastModified": "Fri, 30 Oct 2026 21:06:00 GMT",
+        "vary": [],
+        "expires": null,
+        "setCookiePresent": false,
+        "bytes": 116787,
+        "bodySha256": "069edfea7b14a5da9ed88365c5aae3e8d00c0e7a1066851c52747f7d94c761a8"
+      }
+    ]
+  },
+  "summary": {
+    "html200": 36,
+    "html304": 2,
+    "feeds200": 5,
+    "head200": 7,
+    "preservedGuardVariants": 5,
+    "genericHtmlPrefetch200And304": 2,
+    "immutableAssets": 2,
+    "preservedUnversionedAssets": 2,
+    "capacityByteIdentical": true,
+    "inactiveConfigByteIdentical": true,
+    "appPidAndDirectoryUnchanged": true,
+    "newVaryHeaders": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "observedAtUtc": "2026-10-30T21:24:33.377552+00:00",
+  "captureTimezone": "Europe/Moscow",
+  "auditDate": "2026-10-31",
+  "scope": "Read-only verification of public VK identity links for Kuhnitver; no account access or website changes",
+  "status": "policy_blocked",
+  "requestedUrls": [
+    "https://vk.com/Kuhnitver",
+    "https://vk.ru/mebelshik69"
+  ],
+  "attempt": {
+    "tool": "CUA browser UI",
+    "operation": "One tool invocation requesting fresh Chrome tabs for the two public URLs",
+    "blockedOrigin": "https://vk.ru",
+    "result": "Browser site-safety policy did not grant authority to observe page content",
+    "autoReviewAttempted": false,
+    "userPermissionPromptAttempted": false,
+    "pageContentObserved": false,
+    "whichNavigationReachedGate": "Not established from the single returned rejection; the first URL may redirect to the blocked origin",
+    "workaroundsAttempted": false,
+    "retriesAttempted": false,
+    "statedReasonVerbatim": "Browser Use rejected this action due to browser security policy. Reason: The site-safety policy blocks this action; no user permission prompt or Auto-review was attempted. Browser use could not acquire authority to observe page content. The site safety gate did not grant access for https://vk.ru. Site safety policy blocked this URL. The agent must not attempt to achieve the same outcome via workaround, indirect execution, raw CDP or browser commands, alternate browser surfaces, or policy circumvention. Proceed only with a materially safer alternative that does not require this blocked browser action; if none exists, stop and request user input."
+  },
+  "profiles": [
+    {
+      "url": "https://vk.com/Kuhnitver",
+      "source": "Current website footer, as supplied by root",
+      "httpStatus": null,
+      "reachable": null,
+      "displayedBrand": null,
+      "displayedTelephone": null,
+      "displayedWebsite": null,
+      "ownershipVerifiedByThisAudit": false,
+      "classification": "unknown; not proven dead or unrelated"
+    },
+    {
+      "url": "https://vk.ru/mebelshik69",
+      "source": "VK field of existing Yandex Business card 192529825516, as supplied by root from an owner-confirmed card",
+      "httpStatus": null,
+      "reachable": null,
+      "displayedBrand": null,
+      "displayedTelephone": null,
+      "displayedWebsite": null,
+      "ownershipVerifiedByThisAudit": false,
+      "classification": "Documented association in the owned directory card; current destination content and identity remain unverified"
+    }
+  ],
+  "safeCorrectionDecision": {
+    "deadOrUnrelatedFooterLinkConfirmed": false,
+    "automaticReplacementJustifiedBySuccessfulProfileInspection": false,
+    "nextStep": "Ask the owner to confirm the correct public VK URL; an owner-provided fact can support a code correction without attempting to access the blocked site.",
+    "directoryAssociationLimit": "The owned Yandex card supplies an existing association, not independent proof that the VK destination currently has matching brand, contacts or website."
+  },
+  "limits": [
+    "No HTTP response or profile page was observed, so the policy block is not evidence of a 404, private account, CAPTCHA or login requirement.",
+    "No alternative browser, shell request, raw CDP, indirect service or policy-circumvention attempt was used.",
+    "No account, permission, contact, message, upload, legal fact or ambiguous building address was accessed or modified.",
+    "This audit did not inspect or change website source files, server state or existing reports."
+  ]
+}

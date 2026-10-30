@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "product": "gemini",
+  "phase": "after",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "attempts": [
+    {
+      "queryId": "supplier-1",
+      "intendedRepeat": 1,
+      "controlledAttemptOrdinal": 1,
+      "prompt": "Где заказать кухню по размерам в Твери?",
+      "mode": "Gemini Авто, временный чат",
+      "querySubmitted": true,
+      "answerCompletedInUI": true,
+      "capturedAnswerCharacterCount": 2116,
+      "webSearch": true,
+      "webSearchEvidence": "В текущем временном диалоге в дереве доступности наблюдалась метка Searching the web.",
+      "sourceCount": null,
+      "answer": null,
+      "observedAt": null,
+      "capturePersisted": false,
+      "failure": "Пакет чтения цитат следующего диалога превысил лимит вызова CUA; его JavaScript-память сброшена до появления локальной формы сохранения. Первый временный диалог уже был оставлен через Новый чат; возврат к его полному тексту через UI недоступен.",
+      "measurementIncluded": false,
+      "replacementAllowed": true,
+      "notes": "Число источников и полный текст утраченного ответа не восстанавливаются по догадке. Это сбой сохранения наблюдения, а не ошибка Gemini и не нулевая доля цитирования. Замещающий независимый диалог будет иметь собственное фактическое время и явную пометку."
+    },
+    {
+      "queryId": "supplier-3",
+      "intendedRepeat": 1,
+      "querySubmitted": null,
+      "answerCompletedInUI": null,
+      "capturePersisted": false,
+      "measurementIncluded": false,
+      "failure": "Дублирующая запись собственной вкладки в очереди привела к открытию нового диалога до сохранения предыдущего. Сохранённые записи не перезаписывались. Наличие отправленного запроса в оставленной промежуточной вкладке отдельно не подтверждено; попытка не засчитывается как завершённый ответ."
+    },
+    {
+      "queryId": "supplier-2",
+      "intendedRepeat": 3,
+      "querySubmitted": true,
+      "answerCompletedInUI": true,
+      "capturePersisted": false,
+      "measurementIncluded": false,
+      "failure": "Перед сохранением обнаружены два ответа Gemini в повторно используемом временном диалоге. Условие независимого контекста не подтверждено; этот ответ не включён в основную выборку. Для замены будет использована новая вкладка с нулём пользовательских сообщений до отправки."
+    },
+    {
+      "queryId": "supplier-3",
+      "intendedRepeat": 2,
+      "querySubmitted": null,
+      "capturePersisted": false,
+      "measurementIncluded": false,
+      "failure": "Незавершённая попытка в повторно используемом временном контексте отложена после обнаружения нарушения изоляции соседнего контекста. Успешная отправка и ответ не считаются подтверждёнными. Основная строка не заполнена."
+    },
+    {
+      "queryId": "supplier-2",
+      "intendedRepeat": 1,
+      "querySubmitted": true,
+      "answerCompletedInUI": true,
+      "capturePersisted": false,
+      "measurementIncluded": false,
+      "sourceCount": null,
+      "answer": null,
+      "failure": "Первоначальный ответ в отдельной свежей вкладке был завершён и частично виден в UI. Ошибка замкнутой привязки сборщика прочитала вместо него другую вкладку. Исходный полный текст этой временной вкладки не сохранён; неверно сопоставленная копия архивирована отдельно, затем слот заполнен новым фактическим независимым ответом.",
+      "replacementEvidence": "docs/seo/measurement/observations-after-gemini-answer-supplier-2-1.json"
+    },
+    {
+      "queryId": "supplier-2",
+      "intendedRepeat": 2,
+      "querySubmitted": true,
+      "answerCompletedInUI": true,
+      "capturePersisted": false,
+      "measurementIncluded": false,
+      "sourceCount": null,
+      "answer": null,
+      "failure": "Первоначальный ответ в отдельной свежей вкладке был завершён и частично виден в UI. Ошибка замкнутой привязки сборщика прочитала вместо него другую вкладку. Исходный полный текст этой временной вкладки не сохранён; неверно сопоставленная копия архивирована отдельно, затем слот заполнен новым фактическим независимым ответом.",
+      "replacementEvidence": "docs/seo/measurement/observations-after-gemini-answer-supplier-2-2.json"
+    }
+  ],
+  "scopeNotes": [
+    "Нормальные неконтролируемые ответы сохраняются отдельно и не считаются строгими повторами.",
+    "Числа источников утраченных или неоднозначных попыток неизвестны, а не нулевые.",
+    "После обнаружения проблемы каждый Gemini-запрос получает новую вкладку: проверяются 0 пользовательских сообщений до отправки и 1 после. Записанный ответ сохраняется до закрытия собственной вкладки."
+  ],
+  "counts": {
+    "confirmedCompletedResponsesNotFullyCaptured": 3,
+    "invalidAssociationRowsExcluded": 2,
+    "confirmedNonIndependentResponseExcluded": 1,
+    "uncertainDraftOrSubmissionAttempts": 2,
+    "notes": "Категории связаны причинно и не суммируются как независимые ответы. Общий точный счёт всех неподтверждённых отправок неизвестен; такие попытки не объявляются фактическими ответами модели."
+  }
+}

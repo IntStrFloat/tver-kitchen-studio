@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "observedAtUtc": "2026-10-30T22:31:26.013496+00:00",
+  "captureTimezone": "Europe/Moscow",
+  "auditDate": "2026-10-31",
+  "measurementStage": "Post-deployment additional-product initial sample",
+  "targetDomain": "kuhnitver.ru",
+  "targetBrand": "Kuhnitver",
+  "samplingPlan": {
+    "queryId": "supplier-1",
+    "prompt": "Где заказать кухню по размерам в Твери?",
+    "category": "supplier_discovery",
+    "requestedRegion": "Тверь",
+    "queryLanguage": "ru",
+    "brandOrUrlSuppliedInPrompt": false,
+    "perplexityRequestedRepeats": 3,
+    "copilotRequestedInitialQueries": 1,
+    "fullProtocolWave": false
+  },
+  "products": {
+    "perplexity": {
+      "status": "bounded_sample_partially_completed_owner_required",
+      "product": "Perplexity",
+      "mode": "Search checkbox checked; Answer tab",
+      "authenticated": "Guest: Sign In button and sign-in-to-save-history message visible",
+      "model": "Not disclosed in observed UI; model selector not changed",
+      "effectiveRegion": null,
+      "observations": [
+        {
+          "repeat": 1,
+          "status": "completed",
+          "newConversation": true,
+          "timeDisplayedInProduct": "1:21 AM",
+          "productDisplayedDuration": "Finished 1s",
+          "capturedAtUtc": "2026-10-30T22:26:45.450441+00:00",
+          "answerText": "В Твери кухни по индивидуальным размерам можно заказать у нескольких производителей и салонов. Ниже — проверенные варианты с адресами и условиями.\n\nКуда обратиться\nКомпания\tАдрес\tЧто предлагает\nКомпания\tАдрес\tЧто предлагает\nМетрия\tНабережная Афанасия Никитина, 33\tСобственное производство в Твери, более 15 лет на рынке; замер, дизайн-проект, изготовление, установка и гарантия — «под ключ». \nmetriya\n+1\n\nПерфетти\tМЦ «Спартак», ул. Спартака, 47, 1 этаж; также ОТК «Тандем», Октябрьский пр-т, 70, 2 этаж\tИндивидуальное проектирование: размер, цвет, материал, планировка, фурнитура; бесплатное планирование, доставка и монтаж. \nperfetti\n\nАтлас Люкс\tбульвар Радищева, 4\tЭлитные кухни по индивидуальным размерам; можно прислать проект в WhatsApp, затем выбрать материалы в салоне. \ntver-atlaslux\n\nМария\tСвободный пер., 1; Волоколамский пр-т, 28; пр-т Калинина, 13а\tКухни на заказ по размерам, дизайн-проект в студии или онлайн. \ntver.marya\n\nМебель ОК\tСахаровское шоссе, 9\tКухни по эскизам и размерам, изготовление около месяца, возможны доставка и установка. \nmebel-ok\n\nDля своих\tул. Маяковского, 31\tМебель и кухни от производителя по индивидуальным размерам; срок изготовления 14–45 дней. \nd-svoih\nКак заказать\n\nОтправьте размеры помещения или план в выбранный салон — многие принимают проекты по WhatsApp или через заявку на сайте.\nperfetti\n+1\n\nЗакажите бесплатный замер и консультацию дизайнера — это предлагают «Метрия», «Перфетти» и «Форест».\nmetriya\n+2\n\nСогласуйте 3D-проект, материалы фасадов, столешницу и фурнитуру.\nmetriya\n+1\n\nПодпишите договор, внесите предоплату (у «Мебель ОК» — от 50%) и дождитесь изготовления.\nmebel-ok\n\nЧто учесть\n\nЕсли важен полный цикл «замер — производство — монтаж — гарантия», удобнее обратиться в Метрию или Перфетти.\nmetriya\n+1\n\nДля нестандартной планировки или элитного сегмента подойдёт Атлас Люкс.\ntver-atlaslux\n\nПеред заказом уточните актуальные сроки, гарантию и включены ли доставка/монтаж в стоимость — условия могут меняться.",
+          "answerCaptureMethod": "Rendered DOM innerText bounded by the observed first and last response sentences. Repeated table-header line and inline citation labels retained.",
+          "sourcesCountDisplayed": 10,
+          "sourcesComplete": true,
+          "sources": [
+            {
+              "url": "https://metriya.ru/",
+              "titleAsDisplayed": "Кухни на заказ в Твери от Метрия по индивидуальным размерам"
+            },
+            {
+              "url": "https://metriya.ru/catalog/pryamaya/",
+              "titleAsDisplayed": "Прямая кухня на заказ купить в Твери | Метрия"
+            },
+            {
+              "url": "https://perfetti.ru/",
+              "titleAsDisplayed": "Кухни Перфетти - Честные скидки кухонь на заказ в Твери"
+            },
+            {
+              "url": "https://tver-atlaslux.ru/",
+              "titleAsDisplayed": "Салон Кухни - Тверь"
+            },
+            {
+              "url": "https://tver.marya.ru/catalog/kuhni/klassicheskie-kuhni/",
+              "titleAsDisplayed": "Кухни в классическом стиле купить в Твери на заказ от ..."
+            },
+            {
+              "url": "https://mebel-ok.com/katalog/kuhni/",
+              "titleAsDisplayed": "Кухни и кухонная мебель в Твери на заказ"
+            },
+            {
+              "url": "https://d-svoih.ru/",
+              "titleAsDisplayed": "Dля своих | Мебель без переплат"
+            },
+            {
+              "url": "https://kuhni-forest.ru/",
+              "titleAsDisplayed": "Кухни на заказ недорого от производителя в Твери – фабрика ..."
+            },
+            {
+              "url": "https://tver.divano.ru/catalog/kukhni/kukhni-na-zakaz/",
+              "titleAsDisplayed": "Кухни на заказ в Твери - заказать изготовление ..."
+            },
+            {
+              "url": "https://bigmebel-tver.ru/kuhni/",
+              "titleAsDisplayed": "Все кухни на заказ в Твери от производителя. Заказать ..."
+            }
+          ],
+          "targetBrandMentionedInAnswer": false,
+          "targetDomainLinkedInSources": false,
+          "targetCommercialFactAccuracy": null,
+          "conversationUrlSha256": "6aef2f43fcaa5cb5c794b09efe876a5c1d42d1e4dbdd0792f05ab7d56677462a"
+        },
+        {
+          "repeat": 2,
+          "status": "completed",
+          "newConversation": true,
+          "newDialogProcedure": "Standard New link, same guest Chrome profile; no incognito or cookie reset",
+          "timeDisplayedInProduct": "1:27 AM",
+          "capturedAtUtc": "2026-10-30T22:29:36.557547+00:00",
+          "answerText": "В Твери кухню по индивидуальным размерам можно заказать у нескольких местных производителей и салонов. Вот проверенные варианты с адресами и условиями:\n\nГде заказать\nКомпания\tАдрес\tЧто предлагают\nМетрия\tнаб. Афанасия Никитина, 33\tСобственное производство в Твери, более 15 лет на рынке; бесплатный замер, дизайн-проект, изготовление, доставка, монтаж и гарантия — «под ключ». \nmetriya\n+1\n\nПерфетти\tМЦ «Спартак», ул. Спартака, 47; ОТК «Тандем», пр-т Октябрьский, 70\tИндивидуальное проектирование: цвет, материал, размер, планировка, фурнитура; бесплатная услуга планирования с дизайнером. \nperfetti\n\nАтлас Люкс\tб-р Радищева, 4\tЭлитные кухни по индивидуальным размерам от производителя; можно прислать фото или дизайн-проект в WhatsApp для расчёта. \ntver-atlaslux\n\nФабрика «Форест»\tТверь\tБесплатный замер, консультация дизайнера, 3D-проект, изготовление на фабрике и установка. \nkuhni-forest\n\nМебель ОК\tСахаровское шоссе, 9\tКухни по индивидуальным размерам и эскизам; предварительный расчёт по замерам, эскиз-проект, изготовление около месяца, опционально доставка и установка. \nmebel-ok\n\nМария\tСвободный пер., 1; пр-т Волоколамский, 28; пр-т Калинина, 13а\tКухни на заказ по вашим размерам, дизайн-проект в любой из трёх студий города или онлайн. \ntver.marya\n\nDля своих\tул. Маяковского, 31\tМебель и кухни от производителя по индивидуальным размерам, срок изготовления от 14 до 45 дней. \nd-svoih\n\nBigMebel\tТверь\tКухни на заказ от 200 000 руб., бесплатный замер, проект с размерами и рекомендациями по розеткам, визуализация. \nbigmebel-tver\nКак выбрать\n\nЕсли нужен полный цикл «под ключ» (замер → проект → производство → монтаж → гарантия) — смотрите на «Метрию» или «Форест».\nmetriya\n+1\n\nЕсли важен выбор стиля/материала вживую — «Атлас Люкс» (элит-сегмент) или салоны «Мария» (несколько точек по городу).\ntver-atlaslux\n+1\n\nЕсли ограничен бюджет — «Dля своих» или «Мебель ОК» (изготовление от месяца, предоплата от 50%).\nmebel-ok\n+1\n\nЧто понадобится для расчёта\n\nБольшинство салонов просят:\n\nразмеры помещения (длина стен, высота, расположение окон/дверей/коммуникаций);\n\nфото или эскиз желаемой планировки;\n\nпредпочтения по стилю, материалу фасадов и столешницы.\n\nМногие компании (Метрия, Перфетти, Форест, BigMebel) предлагают бесплатный выезд замерщика и дизайн-проект до подписания договора — это удобно, чтобы сравнить несколько предложений без затрат.",
+          "answerCaptureMethod": "Rendered DOM innerText bounded by observed first and last response sentences, without paraphrase; separate sources panel fully expanded.",
+          "finalSentenceCitationLabelAsDisplayed": "metriya +3",
+          "sourcesCountDisplayed": 10,
+          "sourcesComplete": true,
+          "sources": [
+            {
+              "titleAsDisplayed": "Кухни на заказ в Твери от Метрия по индивидуальным размерам",
+              "url": "https://metriya.ru/"
+            },
+            {
+              "titleAsDisplayed": "Прямая кухня на заказ купить в Твери | Метрия",
+              "url": "https://metriya.ru/catalog/pryamaya/"
+            },
+            {
+              "titleAsDisplayed": "Кухни Перфетти - Честные скидки кухонь на заказ в Твери",
+              "url": "https://perfetti.ru/"
+            },
+            {
+              "titleAsDisplayed": "Салон Кухни - Тверь",
+              "url": "https://tver-atlaslux.ru/"
+            },
+            {
+              "titleAsDisplayed": "Кухни на заказ недорого от производителя в Твери – фабрика ...",
+              "url": "https://kuhni-forest.ru/"
+            },
+            {
+              "titleAsDisplayed": "Кухни и кухонная мебель в Твери на заказ",
+              "url": "https://mebel-ok.com/katalog/kuhni/"
+            },
+            {
+              "titleAsDisplayed": "Кухни в классическом стиле купить в Твери на заказ от ...",
+              "url": "https://tver.marya.ru/catalog/kuhni/klassicheskie-kuhni/"
+            },
+            {
+              "titleAsDisplayed": "Dля своих | Мебель без переплат",
+              "url": "https://d-svoih.ru/"
+            },
+            {
+              "titleAsDisplayed": "Все кухни на заказ в Твери от производителя. Заказать ...",
+              "url": "https://bigmebel-tver.ru/kuhni/"
+            },
+            {
+              "titleAsDisplayed": "Кухни на заказ в Твери - заказать изготовление ...",
+              "url": "https://tver.divano.ru/catalog/kukhni/kukhni-na-zakaz/"
+            }
+          ],
+          "targetBrandMentionedInAnswer": false,
+          "targetDomainLinkedInSources": false,
+          "targetCommercialFactAccuracy": null,
+          "conversationUrlSha256": "40ec39bd2b0fcbcaff0a19b193adcebdc6f373132170b923753e16ba7f6bd507"
+        },
+        {
+          "repeat": 3,
+          "status": "blocked_by_sign_up_gate",
+          "querySubmitted": true,
+          "newConversation": true,
+          "newDialogProcedure": "Standard New link, same guest Chrome profile; no incognito or cookie reset",
+          "timeDisplayedInProduct": "1:30 AM",
+          "capturedAtUtc": "2026-10-30T22:31:26.013496+00:00",
+          "answerText": null,
+          "sources": null,
+          "sourcesComplete": false,
+          "backendCompletionState": null,
+          "targetBrandMentionedInAnswer": null,
+          "targetDomainLinkedInSources": null,
+          "targetCommercialFactAccuracy": null,
+          "barrier": {
+            "kind": "sign_up_gate",
+            "textVerbatim": "Sign up below to unlock the full potential of Perplexity",
+            "visibleControls": [
+              "Back home",
+              "Continue with Google",
+              "Continue with Apple",
+              "Enter your email",
+              "Continue with email",
+              "Single sign-on (SSO)"
+            ],
+            "termsNoticeVisible": true,
+            "closeControlObserved": false,
+            "answerRegionVisuallyBlurredAndBlocked": true,
+            "numericQuotaStated": null,
+            "screenshotObserved": true,
+            "workaroundAttempted": false,
+            "hiddenAnswerInspected": false
+          },
+          "countInCompletedAnswerDenominator": false,
+          "conversationUrlSha256": "04f41a77bed1e9079d0e603518ac3f55fdf7c14182666819759b09b77ba7bc83"
+        }
+      ],
+      "memoryAndHistoryUncertainty": [
+        "Blank new composer opened; No recent sessions initially displayed.",
+        "Existing Chrome profile used without changing locale or region.",
+        "Anonymous cookies, IP-based personalization, backend retrieval caching and memory cannot be ruled out; no private settings inspected.",
+        "Search was enabled. Optional cookies were declined; optional sign-up modal was closed without authentication."
+      ],
+      "samplingCounts": {
+        "requestedRepeats": 3,
+        "submittedQueries": 3,
+        "completedVisibleAnswers": 2,
+        "blockedObservations": 1,
+        "completeSourcesPanels": 2,
+        "targetBrandMentionsAmongCompleted": 0,
+        "targetDomainCitationsAmongCompleted": 0,
+        "aggregateCitationRate": null,
+        "fullProtocolWave": false
+      },
+      "furtherGuestRequestsStopped": true,
+      "ownerActionForContinuation": "If the owner chooses to use an existing authenticated account, record that changed condition separately; do not silently combine a logged-in third result with the guest sample."
+    },
+    "copilot": {
+      "status": "owner_sign_in_required",
+      "product": "Microsoft Copilot",
+      "requestedEntryUrl": "https://copilot.microsoft.com/",
+      "observedRedirectUrl": "https://copilot.com/",
+      "publicHeading": "Sign into Copilot",
+      "modeObserved": "Life tab; Go to Chat was followed through the public UI",
+      "existingAuthenticatedComposerObserved": false,
+      "querySubmitted": false,
+      "completedQueries": 0,
+      "answerText": null,
+      "sources": null,
+      "citationRate": null,
+      "effectiveRegion": null,
+      "barrier": {
+        "kind": "authentication_required",
+        "description": "The public landing page offered Sign in and no composer. Life → Go to Chat redirected to Microsoft sign-in; no credentials or permissions were entered.",
+        "authorizationOriginAndPath": "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+        "authorizationPageTitle": "Sign in to your account",
+        "initialNavigationTimedOutThenResolvedOnObservation": true
+      },
+      "model": null,
+      "ownTabClosedAfterBarrier": true
+    }
+  },
+  "actions": {
+    "accountsCreated": false,
+    "termsAccepted": false,
+    "captchaSolved": false,
+    "newPermissionsGranted": false,
+    "credentialsOrOtpEntered": false,
+    "siteOrServerChanged": false,
+    "otherLiveDatasetsChanged": false,
+    "vkAccessAttempted": false,
+    "geminiAccessAttempted": false,
+    "optionalCookieChoice": "Perplexity Decline optional, once before first answer capture",
+    "incognitoUsed": false,
+    "browserProfileChanged": false,
+    "guestLimitBypassed": false
+  },
+  "limits": [
+    "This is a bounded initial sample, not a complete 17-query wave or a general citation rate.",
+    "Unavailable Copilot is not counted as an answer without citation.",
+    "Competitor claims and addresses are recorded as an AI answer, not independently verified or endorsed.",
+    "Separate conversations do not establish statistical independence from backend caching or anonymous personalization.",
+    "No predeployment matched Perplexity answer is available for causal comparison.",
+    "OAuth state, nonce and other authorization query parameters are not stored.",
+    "The third Perplexity request was submitted but its response was not observable behind a full-screen sign-up gate. It is not scored as an answer without citation.",
+    "No numeric guest quota or cause was shown; this audit does not establish a universal two-query free limit.",
+    "No hidden response content was read after the sign-up gate. The two earlier complete source panels were visible through ordinary dismissible UI.",
+    "Copilot required authentication before any question was submitted; it has no completed-answer denominator."
+  ],
+  "recommendedContinuation": [
+    "No further anonymous queries in this session: stop at the observed Perplexity sign-up gate.",
+    "If the owner signs into an already-used Perplexity account, record a separately tagged authenticated sample under the same exact prompt and mode; do not assume it matches the guest sample.",
+    "After owner sign-in to Copilot, use a new conversation and the same exact prompt without brand or URL hints.",
+    "Retain product, mode, guest/authenticated status, date and region/memory uncertainty in later matched comparisons. This is a bounded initial sample, not a full 17-query wave or a causal estimate."
+  ],
+  "handoff": {
+    "ownPerplexityTabId": "929038943",
+    "markedForOwnerContinuation": true,
+    "screen": "Full-screen Perplexity sign-up gate; no account or permissions created",
+    "copilotOwnTabClosedAfterBarrier": true,
+    "bingLoginHandoffTabUntouched": "929038931"
+  },
+  "privacyRedaction": "Conversation URLs replaced by SHA256 identifiers; original visible answer text and public citation URLs unchanged."
+}

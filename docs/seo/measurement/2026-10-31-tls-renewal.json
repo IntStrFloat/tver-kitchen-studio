@@ -1,0 +1,109 @@
+{
+  "checked_at_utc": "2026-10-30T22:38:57.400996+00:00",
+  "checked_at_moscow": "2026-10-31T01:38:57.400996+03:00",
+  "certificate_name": "kuhnitver.ru",
+  "read_only": true,
+  "renew_or_dry_run_executed": false,
+  "configuration_changed": false,
+  "timer": {
+    "exit_code": 0,
+    "properties": {
+      "TimersCalendar": "{ OnCalendar=*-*-* 00,12:00:00 ; next_elapse=Sat 2026-10-31 00:00:00 UTC }",
+      "NextElapseUSecRealtime": "Sat 2026-10-31 01:10:09 UTC",
+      "LastTriggerUSec": "Fri 2026-10-30 18:12:12 UTC",
+      "AccuracyUSec": "1min",
+      "RandomizedDelayUSec": "12h",
+      "Persistent": "yes",
+      "LoadState": "loaded",
+      "ActiveState": "active",
+      "SubState": "waiting",
+      "UnitFileState": "enabled"
+    }
+  },
+  "timer_last_trigger": {
+    "utc": "2026-10-30T18:12:12+00:00",
+    "moscow": "2026-10-30T21:12:12+03:00"
+  },
+  "timer_next_trigger": {
+    "utc": "2026-10-31T01:10:09+00:00",
+    "moscow": "2026-10-31T04:10:09+03:00"
+  },
+  "service": {
+    "exit_code": 0,
+    "properties": {
+      "Type": "oneshot",
+      "Result": "success",
+      "ExecMainStartTimestamp": "Fri 2026-10-30 18:12:12 UTC",
+      "ExecMainExitTimestamp": "Fri 2026-10-30 18:12:13 UTC",
+      "ExecMainCode": "1",
+      "ExecMainStatus": "0",
+      "LoadState": "loaded",
+      "ActiveState": "inactive",
+      "SubState": "dead"
+    }
+  },
+  "service_last_started": {
+    "utc": "2026-10-30T18:12:12+00:00",
+    "moscow": "2026-10-30T21:12:12+03:00"
+  },
+  "service_last_finished": {
+    "utc": "2026-10-30T18:12:13+00:00",
+    "moscow": "2026-10-30T21:12:13+03:00"
+  },
+  "certbot_version": "2.9.0",
+  "renewal_file_exists": true,
+  "renewal_file": "/etc/letsencrypt/renewal/kuhnitver.ru.conf",
+  "renewal_configuration": {
+    "version": "2.9.0",
+    "authenticator": "nginx",
+    "installer": "nginx",
+    "acme_server": "https://acme-v02.api.letsencrypt.org/directory",
+    "key_type": "ecdsa",
+    "hook_presence": {
+      "pre_hook": false,
+      "post_hook": false,
+      "renew_hook": false,
+      "deploy_hook": false,
+      "manual_auth_hook": false,
+      "manual_cleanup_hook": false
+    }
+  },
+  "plugins": {
+    "nginx_available": true
+  },
+  "certificate": {
+    "sni": "kuhnitver.ru",
+    "tls_verification_passed": true,
+    "protocol": "TLSv1.3",
+    "not_before_utc": "2026-09-12T21:38:03+00:00",
+    "not_after_utc": "2026-12-11T21:38:02+00:00",
+    "not_after_moscow": "2026-12-12T00:38:02+03:00",
+    "days_remaining": 41.96,
+    "authorized_domain_names": [
+      "kuhnitver.ru",
+      "www.kuhnitver.ru"
+    ],
+    "unexpected_san_count": 0,
+    "sha256_der": "ba20c76489cf330ed8fa4768ea6ddfbb279d13f16bf79c56df3e59d5ac0a3841",
+    "on_disk_public_cert_matches_served": true,
+    "public_cert_path": "/etc/letsencrypt/live/kuhnitver.ru/cert.pem",
+    "issuer": {
+      "countryName": "US",
+      "organizationName": "Let's Encrypt",
+      "commonName": "YE2"
+    }
+  },
+  "routine_configured_and_last_job_successful": true,
+  "observation_window": {
+    "six_weeks_utc": "2026-12-11T22:38:57.400996+00:00",
+    "eight_weeks_utc": "2026-12-25T22:38:57.400996+00:00",
+    "current_certificate_alone_covers_eight_weeks": false
+  },
+  "limits": [
+    "Timer/service status describes the scheduled certbot renew job, not a new renewal of this specific certificate.",
+    "Unattended configuration and current TLS were inspected; renewal execution, ACME challenge and dry-run were not tested.",
+    "Only the requested certificate was inspected; other certificate names and credentials were not exported."
+  ],
+  "official_reference": "https://eff-certbot.readthedocs.io/en/stable/using.html#automated-renewals",
+  "tls_private_key_or_acme_credentials_read": false
+}

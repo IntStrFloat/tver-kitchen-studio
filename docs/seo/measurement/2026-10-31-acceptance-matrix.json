@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-31",
+  "draft": "docs/seo/2026-10-30-ai-search-audit-draft.md",
+  "deployedApplicationRevision": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "overall": "in_progress",
+  "criteria": [
+    {"id": 1, "status": "partial", "evidence": "Owner-confirmed telephone, MAX, address string and original homepage terms are recorded in the implementation report. Unconfirmed ranges/statistics/experience claims were removed.", "remaining": "Public legal executor/operator details and substantiated project materials have not been provided."},
+    {"id": 2, "status": "partial", "evidence": "Public acceptance: 36/36 pages; consistent contacts, measurement, delivery, warranty, production terms, metadata, JSON-LD, RSS, service feed, llms.txt and OG image.", "remaining": "Yandex Business move is not accepted; exact map building remains ambiguous. External retrieval caches can still return prior content."},
+    {"id": 3, "status": "passed", "evidence": "No artificial/expired priceValidUntil, invented kitchen Offer ranges, fake zero prices or InStock claims remain in the audited output."},
+    {"id": 4, "status": "passed", "evidence": "Strict production audit: 36/36 HTTP200, one H1, correct canonical and server HTML; non-existent case paths are not published."},
+    {"id": 5, "status": "partial", "evidence": "Verified crawler networks and real server logs checked; no 403/429/5xx for those verified bots. Yandex Webmaster accessible, two daily batches accepted. IndexNow final36 URL submission HTTP200.", "remaining": "Effective Google Search generative AI Include is unverified until authorized ownership access. OAI-SearchBot requests in the historical sample fetched only robots.txt."},
+    {"id": 6, "status": "passed", "evidence": "Google Rich Results Test article: 6 valid supported items, zero blocking errors; Schema.org Validator catalog: 13 items, zero errors/warnings. All target-page JSON-LD syntax checked."},
+    {"id": 7, "status": "partial", "evidence": "Current images are labelled design references, not fabricated projects; real-case template is gated; published case count is zero; internal/sitemap URLs checked.", "remaining": "Requested 3–5 real completed cases and 3 substantiated estimates need actual project facts/photos/permission."},
+    {"id": 8, "status": "passed", "evidence": "Rendered-output regression checks cover pricing/units/terms, schema expiry/availability, robots and canonical; public strict audit zero errors/warnings."},
+    {"id": 9, "status": "passed", "evidence": "34 tests plus CLI self-tests, next typegen+tsc, static unused checks and production build passed. No new dependency installed."},
+    {"id": 10, "status": "passed", "evidence": "All five forms have unit/mock coverage and native Chrome ACK/failure verification, including both Blog placements. Invalid numbers create no request; pending/failure create no lead conversion; success creates exactly 2 YM + 1 GA local calls. Keyboard labels/Tab/Enter and B2B focus/Escape tested. No-JS and blocked-chunk fallback verified natively; no real leads or lead conversions sent.", "limitations": "Production mailbox delivery is not implied by simulated provider acknowledgement. The remaining-forms native Network buffer is truncated; per-submit guards/stub captures and retained network sample are reported separately."},
+    {"id": 11, "status": "partial", "evidence": "Historical Metrika42visits/41users/73views for Oct1–29; technical pre/post audits; frozen repeatable17query×3 protocol. Actual after-publication AI wave is being collected with raw answers, source coverage and invalid-capture exclusions.", "remaining": "No pre-publication native AI-response baseline exists and it cannot be reconstructed. Causal traffic/citation improvement is not established; future observations require comparable contexts."},
+    {"id": 12, "status": "partial", "evidence": "llms.txt and read-only WebMCP share site facts. Two stateless consumers retrieved correct facts using llms/index and HTML paths; ordinary-site fallback works. Native Chrome156 secure context exposes neither modelContext API.", "remaining": "Actual WebMCP tool invocation in a supporting client remains unverified. Remote MCP is deferred per the draft until a concrete consumer, not a required unimplemented server."}
+  ],
+  "externalDependencies": [
+    "Owner confirmation before adding Google ownership to the prepared account; exact action remains pending.",
+    "Bing owner sign-in.",
+    "Direct link to the existing Kuhnitver GA4 property/web stream; matching G-Z45D1032QK and key-event settings remain unverified.",
+    "Yandex Business move and feed editing availability.",
+    "Exact current building, public legal executor/operator and actual completed project/estimate data."
+  ],
+  "notClaimed": ["Full draft completion", "Causal AI citation uplift", "Traffic uplift", "Guaranteed indexing or moderation", "Real mailbox delivery", "Native WebMCP invocation"]
+}

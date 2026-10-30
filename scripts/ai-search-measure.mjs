@@ -14,6 +14,7 @@ export const PROTOCOL = {
   observationWindowWeeks: [6, 8],
   products: [
     { id: "yandex-alice", name: "Алиса AI в Поиске Яндекса", mode: "Ответ с веб-поиском" },
+    { id: "yandex-alice-webchat", name: "Алиса AI, отдельный веб-чат", mode: "Интеллект: Авто, новый диалог" },
     { id: "chatgpt-search", name: "ChatGPT Search", mode: "Поиск в интернете" },
     { id: "gemini", name: "Gemini Apps", mode: "Ответ с веб-поиском" },
     { id: "gigachat", name: "ГигаЧат", mode: "Интернет-поиск" },
@@ -58,6 +59,8 @@ export const PROTOCOL = {
     "Неотвеченный коммерческий вопрос отмечайте no_answer; неизвестный бизнес-факт — unverified, а не correct или incorrect.",
     "Не отправляйте реальные заявки. Для agent фиксируйте подготовку черновика и отправку раздельно; ожидается submitted=false.",
     "Unavailable/pending наблюдения исключаются из знаменателя выполненных запросов. Нулевой знаменатель даёт null, а не нулевую долю.",
+    "Обычный завершённый ответ без подтверждённого веб-поиска записывайте с webSearch=null, а не ошибкой. true/false требуют наблюдаемого подтверждения; разные состояния поиска не объединяйте при сравнении.",
+    "Известные отклонения протокола, включая персонализацию из прежних диалогов, помечайте comparisonEligible=false: ответ сохраняется, но не участвует в before/after. Два A/B-варианта одного запроса не являются независимыми повторами.",
     "Сравнивайте совпадающие продукт, режим/модель, webSearch, регион, язык, сценарий, queryId и repeat; непарные строки исключайте из before/after.",
     "Фиксируйте изменения модели/режима/региона и релизы сайта. Маленькая ручная выборка не доказывает причинный эффект изменений.",
   ],
@@ -115,6 +118,7 @@ export function validateObservations(observations) {
     if (item.protocolId !== PROTOCOL.id) throw new Error(`${at}: protocolId mismatch`);
     if (typeof item.mode !== "string" || !item.mode.trim()) throw new Error(`${at}: mode missing`);
     if (typeof item.region !== "string" || !item.region.trim() || typeof item.language !== "string" || !item.language.trim()) throw new Error(`${at}: region/language missing`);
+    if (item.comparisonEligible !== undefined && typeof item.comparisonEligible !== "boolean") throw new Error(`${at}: comparisonEligible must be boolean`);
     const key = `${item.phase}\u001f${observationKey(item)}`;
     if (keys.has(key)) throw new Error(`${at}: duplicate comparable observation`);
     keys.add(key);
@@ -129,7 +133,7 @@ export function validateObservations(observations) {
     if (item.status === "completed") {
       if (typeof item.answer !== "string" || !item.answer.trim()) throw new Error(`${at}: completed observation needs actual answer`);
       if (typeof item.observedAt !== "string" || !Number.isFinite(Date.parse(item.observedAt))) throw new Error(`${at}: completed observation needs observedAt`);
-      if (typeof item.webSearch !== "boolean") throw new Error(`${at}: completed observation needs boolean webSearch`);
+      if (![true, false, null].includes(item.webSearch)) throw new Error(`${at}: completed observation needs true/false webSearch or explicit null when unobserved`);
       if (typeof item.evidence !== "string" || !item.evidence.trim()) throw new Error(`${at}: completed observation needs saved response/screenshot evidence path`);
     }
   }
@@ -156,6 +160,8 @@ function aggregate(observations) {
   const agents = completed.filter((item) => scenarioOf(item) === "agent");
   return {
     observations: observations.length, completed: completed.length,
+    retrievalEvidence: { enabled: completed.filter((item) => item.webSearch === true).length, disabled: completed.filter((item) => item.webSearch === false).length, unknown: completed.filter((item) => item.webSearch === null).length },
+    excludedFromComparison: completed.filter((item) => item.comparisonEligible === false).length,
     pending: observations.filter((item) => item.status === "pending").length,
     unavailable: observations.filter((item) => item.status === "unavailable").length,
     errors: observations.filter((item) => item.status === "error").length,
@@ -181,8 +187,9 @@ export function summarize(observations) {
     protocolId: PROTOCOL.id, generatedAt: new Date().toISOString(),
     overall: aggregate(observations), byScenario: groupBy(scenarioOf),
     byProductAndScenario: groupBy((item) => `${item.product}/${scenarioOf(item)}`),
+    byProductModeAndScenario: groupBy((item) => JSON.stringify([item.product, item.mode, item.model ?? "", item.region, item.language, item.webSearch, scenarioOf(item)])),
     byQuery: groupBy((item) => item.queryId),
-    interpretation: "Discovery, brand, URL-reading and agent results are separate. Unmeasured rates are null. Citation requires a verified URL; brand mention alone does not count. No causal inference or lead count is derived from answers.",
+    interpretation: "Discovery, brand, URL-reading and agent results are separate. Use byProductModeAndScenario to keep guest/authenticated modes, models, regions and retrieval evidence separate. webSearch=null means retrieval was not established, not a failed answer. Alice's standalone web chat is not the quick answer in the search results. Unmeasured rates are null. Citation requires a verified URL; brand mention alone does not count. No causal inference or lead count is derived from answers.",
   };
 }
 
@@ -190,8 +197,8 @@ export function compare(beforeRows, afterRows) {
   validateObservations(beforeRows);
   validateObservations(afterRows);
   if (beforeRows.some((row) => row.phase !== "before") || afterRows.some((row) => row.phase !== "after")) throw new Error("Comparison inputs must have before/after phases respectively");
-  const beforeCompleted = beforeRows.filter((row) => row.status === "completed");
-  const afterCompleted = afterRows.filter((row) => row.status === "completed");
+  const beforeCompleted = beforeRows.filter((row) => row.status === "completed" && row.comparisonEligible !== false);
+  const afterCompleted = afterRows.filter((row) => row.status === "completed" && row.comparisonEligible !== false);
   const byAfter = new Map(afterCompleted.map((row) => [observationKey(row), row]));
   const pairedBefore = beforeCompleted.filter((row) => byAfter.has(observationKey(row)));
   const pairedAfter = pairedBefore.map((row) => byAfter.get(observationKey(row)));
@@ -210,6 +217,8 @@ export function compare(beforeRows, afterRows) {
   return {
     protocolId: PROTOCOL.id, generatedAt: new Date().toISOString(), matchedObservations: pairedBefore.length,
     unmatchedBefore: beforeCompleted.length - pairedBefore.length, unmatchedAfter: afterCompleted.length - pairedAfter.length,
+    excludedBeforeContext: beforeRows.filter((row) => row.status === "completed" && row.comparisonEligible === false).length,
+    excludedAfterContext: afterRows.filter((row) => row.status === "completed" && row.comparisonEligible === false).length,
     before, after, differences,
     limitation: "Matched manual observations only. Small, non-random samples and changing search/model behavior do not establish causal effect. Qualified inquiries/orders need separate CRM evidence.",
   };
@@ -242,6 +251,24 @@ export function selfTest() {
   assert.deepEqual(result.overall.facts.measurement.accuracy, metric(1, 2));
   assert.equal(result.overall.facts.delivery.accuracy.rate, null);
   assert.equal(validDomainCitation({ sources: [{ url: "https://kuhnitver.ru/", verified: false }] }), false);
+  const modes = summarize([
+    { ...good, phase: "after", mode: "Search, guest" },
+    { ...good, phase: "after", mode: "Search, authenticated", sources: [] },
+  ]).byProductModeAndScenario;
+  assert.equal(Object.keys(modes).length, 2);
+  assert.deepEqual(Object.values(modes).map((group) => group.domainCitations.rate).sort(), [0, 1]);
+  assert.equal(observationTemplate("after", ["yandex-alice-webchat"]).length, 51);
+  const unknownRetrieval = { ...good, phase: "after", webSearch: null, sources: [], comparisonEligible: false };
+  const unknownSummary = summarize([unknownRetrieval]);
+  assert.equal(unknownSummary.overall.completed, 1);
+  assert.deepEqual(unknownSummary.overall.domainCitations, metric(0, 1));
+  assert.equal(unknownSummary.overall.retrievalEvidence.unknown, 1);
+  const excludedContext = compare([{ ...unknownRetrieval, phase: "before" }], [unknownRetrieval]);
+  assert.equal(excludedContext.matchedObservations, 0);
+  assert.equal(excludedContext.excludedBeforeContext, 1);
+  assert.equal(excludedContext.excludedAfterContext, 1);
+  const differentRetrieval = compare([{ ...unknownRetrieval, phase: "before", comparisonEligible: true }], [{ ...unknownRetrieval, webSearch: true, comparisonEligible: true }]);
+  assert.equal(differentRetrieval.matchedObservations, 0);
   assert.throws(() => summarize([good, good]), /duplicate/);
   assert.throws(() => summarize([{ ...good, prompt: "Visit kuhnitver.ru" }]), /prompt/);
   assert.throws(() => summarize([{ ...good, observedAt: null }]), /observedAt/);

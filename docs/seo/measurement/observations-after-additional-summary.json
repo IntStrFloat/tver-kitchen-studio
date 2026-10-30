@@ -1,0 +1,615 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "generatedAt": "2026-10-30T22:37:48.412Z",
+  "overall": {
+    "observations": 4,
+    "completed": 2,
+    "retrievalEvidence": {
+      "enabled": 2,
+      "disabled": 0,
+      "unknown": 0
+    },
+    "excludedFromComparison": 0,
+    "pending": 0,
+    "unavailable": 2,
+    "errors": 0,
+    "domainCitations": {
+      "numerator": 0,
+      "denominator": 2,
+      "rate": 0
+    },
+    "brandMentions": {
+      "numerator": 0,
+      "denominator": 2,
+      "rate": 0
+    },
+    "facts": {
+      "priceAndUnit": {
+        "correct": 0,
+        "incorrect": 0,
+        "no_answer": 0,
+        "not_applicable": 2,
+        "unverified": 0,
+        "accuracy": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "measurement": {
+        "correct": 0,
+        "incorrect": 0,
+        "no_answer": 0,
+        "not_applicable": 2,
+        "unverified": 0,
+        "accuracy": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "delivery": {
+        "correct": 0,
+        "incorrect": 0,
+        "no_answer": 0,
+        "not_applicable": 2,
+        "unverified": 0,
+        "accuracy": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "contacts": {
+        "correct": 0,
+        "incorrect": 0,
+        "no_answer": 0,
+        "not_applicable": 2,
+        "unverified": 0,
+        "accuracy": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      }
+    },
+    "agent": {
+      "draftPrepared": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "taskSucceeded": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "submitted": 0
+    }
+  },
+  "byScenario": {
+    "discovery": {
+      "observations": 4,
+      "completed": 2,
+      "retrievalEvidence": {
+        "enabled": 2,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 2,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    }
+  },
+  "byProductAndScenario": {
+    "perplexity/discovery": {
+      "observations": 3,
+      "completed": 2,
+      "retrievalEvidence": {
+        "enabled": 2,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 1,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "bing-copilot/discovery": {
+      "observations": 1,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 1,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    }
+  },
+  "byProductModeAndScenario": {
+    "[\"perplexity\",\"Perplexity Search, guest\",\"Not disclosed in UI\",\"Тверь в запросе; регион сервиса не установлен\",\"ru\",true,\"discovery\"]": {
+      "observations": 3,
+      "completed": 2,
+      "retrievalEvidence": {
+        "enabled": 2,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 1,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"bing-copilot\",\"Copilot sign-in screen; chat unavailable\",\"\",\"Регион сервиса не установлен\",\"ru\",null,\"discovery\"]": {
+      "observations": 1,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 1,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    }
+  },
+  "byQuery": {
+    "supplier-1": {
+      "observations": 4,
+      "completed": 2,
+      "retrievalEvidence": {
+        "enabled": 2,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 2,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    }
+  },
+  "interpretation": "Discovery, brand, URL-reading and agent results are separate. Use byProductModeAndScenario to keep guest/authenticated modes, models, regions and retrieval evidence separate. webSearch=null means retrieval was not established, not a failed answer. Alice's standalone web chat is not the quick answer in the search results. Unmeasured rates are null. Citation requires a verified URL; brand mention alone does not count. No causal inference or lead count is derived from answers."
+}
