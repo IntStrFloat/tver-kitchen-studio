@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 import ts from "typescript";
+// @ts-expect-error Node's type-stripping runtime requires the explicit extension.
+import { SITE_CONFIG } from "../lib/seo.ts";
 
 // Run the real component module with a simulated browser API, without a server,
 // browser flags, extra packages, network requests or production form submissions.
@@ -20,7 +22,7 @@ function harness(withApi = true) {
   const requireMock = (name: string) => {
     if (name === "react") return { useEffect: (effect: typeof effects[number]) => effects.push(effect) };
     if (name === "@/lib/data") return mockData;
-    if (name === "@/lib/seo") return { SITE_CONFIG: { name: "Kuhnitver", url: "https://kuhnitver.ru", phone: "public-phone", email: "business@example.com", address: { locality: "Тверь" } } };
+    if (name === "@/lib/seo") return { SITE_CONFIG };
     throw new Error(`Unexpected module: ${name}`);
   };
   new Function("require", "exports", "document", "window", compiled)(requireMock, exports, doc, { isSecureContext: true });
@@ -49,6 +51,13 @@ test("runtime validation rejects unknown fields, invalid types and unknown optio
   assert.ok((await tools[1].execute({ city_slug: "missing" })).error);
   assert.ok((await tools[2].execute({ style_slug: "missing" })).error);
   assert.ok((await tools[2].execute(null)).error);
+});
+
+test("WebMCP omits the unconfirmed postal code of the moved address", async () => {
+  const info = await harness().tools[0].execute({});
+  const address = info.address as Record<string, unknown>;
+  assert.equal(address.locality, "Тверь");
+  assert.equal(Object.hasOwn(address, "postalCode"), false);
 });
 
 test("tools register on the current document API and unregister on cleanup", async () => {

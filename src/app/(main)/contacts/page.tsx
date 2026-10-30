@@ -122,10 +122,6 @@ export default function ContactsPage() {
                     content={SITE_CONFIG.address.region}
                   />
                   <meta
-                    itemProp="postalCode"
-                    content={SITE_CONFIG.address.postalCode}
-                  />
-                  <meta
                     itemProp="addressCountry"
                     content={SITE_CONFIG.address.country}
                   />

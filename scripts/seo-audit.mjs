@@ -110,6 +110,15 @@ export function inspectRenderedPage(html, pathname) {
   const issues = [];
   const add = (code, detail) => issues.push({ code, detail });
   const details = { measurement: null, delivery: null, contactForms: 0, essentialH1Visible: true };
+  if (pathname === "/contacts") {
+    // No postal code has been confirmed for the moved address. Include hidden
+    // metadata, even when React hoists it into head, but ignore serialized JS.
+    const withoutScripts = html.replace(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi, " ");
+    const postalCodes = [...withoutScripts.matchAll(/<meta\b[^>]*>/gi)].map((match) => attrs(match[0]))
+      .filter((a) => a.itemprop?.toLowerCase().split(/\s+/).includes("postalcode") && a.content?.trim())
+      .map((a) => a.content);
+    if (postalCodes.length) add("unconfirmed_postal_code", { values: postalCodes, reason: "Owner has not confirmed a postal code for the current address" });
+  }
   // Owner-confirmed business terms, 2026-10-30. A service tariff is not a kitchen price.
   const measurementPrices = [...visibleText.matchAll(/замер[^.!?₽]{0,65}?(\d[\d\s]*)\s*(?:₽|руб)/giu)].map((match) => Number(match[1].replace(/\s/g, "")));
   const freeMeasurement = /бесплатн[\p{L}]*\s+замер|замер[^.!?]{0,25}бесплатн/iu.test(visibleText);
@@ -573,6 +582,9 @@ export function selfTest() {
   assert.equal(normalizedUrl("/catalog/loft/?utm_source=x#x", "https://x.test"), "https://x.test/catalog/loft");
   const measurementHtml = '<h1>Контакты</h1><p>Замер стоит 1&nbsp;500 ₽. При заказе кухни эта сумма вычитается из её стоимости.</p>';
   assert.deepEqual(inspectRenderedPage(measurementHtml, "/contacts").issues, []);
+  const unconfirmedPostal = inspectRenderedPage(`<head><meta itemProp="postalCode" content="170000"></head>${measurementHtml}`, "/contacts");
+  assert(unconfirmedPostal.issues.some((issue) => issue.code === "unconfirmed_postal_code"));
+  assert.deepEqual(inspectRenderedPage(`<script>const example='<meta itemProp="postalCode" content="170000">';</script>${measurementHtml}`, "/contacts").issues, []);
   const wrongMeasurement = inspectRenderedPage(measurementHtml.replace("1&nbsp;500", "2 000"), "/contacts");
   assert(wrongMeasurement.issues.some((issue) => issue.code === "measurement_price_conflict"));
   assert(inspectRenderedPage('<h1>Вопросы</h1><p>Бесплатный замер.</p>', "/faq").issues.some((issue) => issue.code === "free_measurement_claim"));

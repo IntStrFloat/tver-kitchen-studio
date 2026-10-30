@@ -22,7 +22,6 @@ export const SITE_CONFIG = {
     venue: "",
     locality: "Тверь",
     region: "Тверская область",
-    postalCode: "170000",
     country: "RU",
   },
   // Телефоны и адрес подтверждены владельцем в чате 30.10.2026.

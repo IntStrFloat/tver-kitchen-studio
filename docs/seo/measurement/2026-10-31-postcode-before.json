@@ -1,0 +1,18 @@
+{
+  "recordedAtUtc": "2026-10-30T23:27:17.993Z",
+  "url": "https://kuhnitver.ru/contacts",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "status": 200,
+  "findings": [
+    {
+      "code": "unconfirmed_postal_code",
+      "detail": {
+        "values": [
+          "170000"
+        ],
+        "reason": "Owner has not confirmed a postal code for the current address"
+      }
+    }
+  ],
+  "verification": "Actual public server-rendered contact metadata, not an inferred source-only defect."
+}
