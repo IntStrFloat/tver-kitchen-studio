@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "startedAt": "2026-10-30T20:05:29.285Z",
-  "finishedAt": "2026-10-30T20:05:31.298Z",
+  "startedAt": "2026-10-30T20:35:44.182Z",
+  "finishedAt": "2026-10-30T20:35:45.974Z",
   "timezone": "Europe/Moscow",
   "baseUrl": "https://kuhnitver.ru",
   "canonicalOrigin": "https://kuhnitver.ru",
@@ -28,7 +28,7 @@
       "canonicalUrl": "https://kuhnitver.ru/",
       "finalUrl": "https://kuhnitver.ru/",
       "status": 200,
-      "durationMs": 201,
+      "durationMs": 178,
       "title": [
         "Кухни на заказ в Твери от производителя | Kuhnitver"
       ],
@@ -52,8 +52,8 @@
         }
       ],
       "xRobotsTag": null,
-      "htmlBytes": 194555,
-      "htmlSha256": "d2159a889d5eb7941f98a72f7dca24079694665ac7a4ec97453060aefbb3c9b9",
+      "htmlBytes": 194831,
+      "htmlSha256": "7fbc069b0af6842a21fc06f1cc82049ae41ef7764c5f927e86e2a58abc69839e",
       "textCharacters": 14727,
       "schemaTypes": [
         "Answer",
@@ -90,7 +90,7 @@
       "canonicalUrl": "https://kuhnitver.ru/catalog",
       "finalUrl": "https://kuhnitver.ru/catalog",
       "status": 200,
-      "durationMs": 169,
+      "durationMs": 160,
       "title": [
         "Каталог кухонь на заказ в Твери — стили, фото, цены | Kuhnitver"
       ],
@@ -115,7 +115,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 85410,
-      "htmlSha256": "d30a30828da8e67a4de9fe475a976236177fa12535b4c88a6751332921a9c76f",
+      "htmlSha256": "f6e524130cd22012b1a9bc14bd1382b6d7792c5820ba291061ba06d6e7143de7",
       "textCharacters": 2429,
       "schemaTypes": [
         "BreadcrumbList",
@@ -152,7 +152,7 @@
       "canonicalUrl": "https://kuhnitver.ru/price",
       "finalUrl": "https://kuhnitver.ru/price",
       "status": 200,
-      "durationMs": 179,
+      "durationMs": 188,
       "title": [
         "Цены на кухни на заказ в Твери — состав сметы | Kuhnitver"
       ],
@@ -177,7 +177,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 91757,
-      "htmlSha256": "8d9c8a8bd5ca678e9085751c9a62d93d857ef8525f922911ec7d6bad7342b534",
+      "htmlSha256": "8cc36778c0a842fdb78861f830196401c43e608fae298046988aa8bc9d8ad88f",
       "textCharacters": 5202,
       "schemaTypes": [
         "BreadcrumbList",
@@ -220,7 +220,7 @@
       "canonicalUrl": "https://kuhnitver.ru/portfolio",
       "finalUrl": "https://kuhnitver.ru/portfolio",
       "status": 200,
-      "durationMs": 78,
+      "durationMs": 69,
       "title": [
         "Стилевые решения и идеи для кухонь в Твери | Kuhnitver"
       ],
@@ -245,7 +245,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 79693,
-      "htmlSha256": "a85e3900dbc876580204dddc49717537c0d10e61a26ab75c869c300309d6de7a",
+      "htmlSha256": "dc97917bd26ddff6b3ff90024e4f0315ebfe25266318a38e9405a213d761509c",
       "textCharacters": 1593,
       "schemaTypes": [
         "BreadcrumbList",
@@ -282,7 +282,7 @@
       "canonicalUrl": "https://kuhnitver.ru/about",
       "finalUrl": "https://kuhnitver.ru/about",
       "status": 200,
-      "durationMs": 64,
+      "durationMs": 63,
       "title": [
         "О компании Kuhnitver — кухни по индивидуальным размерам в Твери | Kuhnitver"
       ],
@@ -307,7 +307,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 90524,
-      "htmlSha256": "f9ad927fdedf643d515641f8004fca68cc3aef86237ed0d9f91000ebbac49838",
+      "htmlSha256": "e084b9addacad0530a233a5886790c9a9f796f58af668480c07c9f79bc9b0193",
       "textCharacters": 3763,
       "schemaTypes": [
         "BreadcrumbList",
@@ -345,7 +345,7 @@
       "canonicalUrl": "https://kuhnitver.ru/contacts",
       "finalUrl": "https://kuhnitver.ru/contacts",
       "status": 200,
-      "durationMs": 67,
+      "durationMs": 59,
       "title": [
         "Контакты Kuhnitver — адрес шоурума, телефон, режим работы в Твери | Kuhnitver"
       ],
@@ -370,7 +370,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 83131,
-      "htmlSha256": "71c3d169195e4714fad40b1a3ba3f77b3a0932ba8ba5be506673ffc34c4d01ca",
+      "htmlSha256": "ad22c89c81e4c4750c31b6004994491f3331807f5d528b350bbcf4cef20e0be4",
       "textCharacters": 2491,
       "schemaTypes": [
         "BreadcrumbList",
@@ -412,7 +412,7 @@
       "canonicalUrl": "https://kuhnitver.ru/faq",
       "finalUrl": "https://kuhnitver.ru/faq",
       "status": 200,
-      "durationMs": 73,
+      "durationMs": 59,
       "title": [
         "Вопросы и ответы о кухнях на заказ в Твери — FAQ | Kuhnitver"
       ],
@@ -437,7 +437,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 102701,
-      "htmlSha256": "5bd224cb020aa7ed41cd1697610b49af72f1dce0ca6a6724122eedf3acd06ad1",
+      "htmlSha256": "aeaec491cdaf031bc58a973df7d1893a6bd41c66c3a904d25c58102094180021",
       "textCharacters": 5256,
       "schemaTypes": [
         "Answer",
@@ -483,7 +483,7 @@
       "canonicalUrl": "https://kuhnitver.ru/dostavka",
       "finalUrl": "https://kuhnitver.ru/dostavka",
       "status": 200,
-      "durationMs": 69,
+      "durationMs": 64,
       "title": [
         "Доставка и установка кухонь в Твери и Тверской области | Kuhnitver"
       ],
@@ -508,7 +508,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 82075,
-      "htmlSha256": "586b287f1e44ef215aa461d87c8bee69411dea57abcc546eb73f76a18be9edfd",
+      "htmlSha256": "19defbb140b8da24c3367332d9016406776e15116b05de7273860367de0295eb",
       "textCharacters": 3504,
       "schemaTypes": [
         "BreadcrumbList",
@@ -577,7 +577,7 @@
       "canonicalUrl": "https://kuhnitver.ru/blog",
       "finalUrl": "https://kuhnitver.ru/blog",
       "status": 200,
-      "durationMs": 71,
+      "durationMs": 65,
       "title": [
         "Блог о кухнях — статьи, советы и руководства по выбору | Kuhnitver"
       ],
@@ -602,7 +602,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 86478,
-      "htmlSha256": "01042cd82baa42dc17bedcc57f9f06a49cd18a11f87d7ad779395b35a9e8f42c",
+      "htmlSha256": "20f0bd9bb9a06f8484455554f9ddbe227d99be870452c88089ebdd75b8d60102",
       "textCharacters": 2700,
       "schemaTypes": [
         "BreadcrumbList",
@@ -638,7 +638,7 @@
       "canonicalUrl": "https://kuhnitver.ru/b2b",
       "finalUrl": "https://kuhnitver.ru/b2b",
       "status": 200,
-      "durationMs": 115,
+      "durationMs": 51,
       "title": [
         "Мебель для бизнеса на заказ в Твери — офис, торговля, HoReCa | Kuhnitver"
       ],
@@ -663,7 +663,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 190677,
-      "htmlSha256": "d8e801f811a647a3fbb0be4fe83f6fcf5fbc78c5ea894c52377824fa87f74466",
+      "htmlSha256": "a6cbffc6ae90ca7ee6342056c6c17a39380cc32324cc80da5f358b4e8468d0d1",
       "textCharacters": 10586,
       "schemaTypes": [
         "Answer",
@@ -703,7 +703,7 @@
       "canonicalUrl": "https://kuhnitver.ru/privacy",
       "finalUrl": "https://kuhnitver.ru/privacy",
       "status": 200,
-      "durationMs": 93,
+      "durationMs": 57,
       "title": [
         "Политика конфиденциальности | Kuhnitver"
       ],
@@ -724,7 +724,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 72006,
-      "htmlSha256": "d2997379aa7268e6ba16bc5026f7243ee08a1a0de0ef49fabedcb3a7200b98c2",
+      "htmlSha256": "3fae1cede4882a12b16dea28a49597b5b5b3e8a0378ece51edf6891d71f7feaf",
       "textCharacters": 3927,
       "schemaTypes": [
         "BreadcrumbList",
@@ -760,7 +760,7 @@
       "canonicalUrl": "https://kuhnitver.ru/catalog/loft",
       "finalUrl": "https://kuhnitver.ru/catalog/loft",
       "status": 200,
-      "durationMs": 129,
+      "durationMs": 56,
       "title": [
         "Кухни в стиле лофт на заказ в Твери — цены, фото, материалы | Kuhnitver"
       ],
@@ -785,7 +785,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 92493,
-      "htmlSha256": "0e388a9187cba74447a9d5614ed8f177cce876b5eaddf0edf32597757b035a51",
+      "htmlSha256": "4a81bc536f3018cbf726f45d53dd17e0df4f080d8d0378ed24b0cc6686648b2b",
       "textCharacters": 3511,
       "schemaTypes": [
         "AdministrativeArea",
@@ -821,7 +821,7 @@
       "canonicalUrl": "https://kuhnitver.ru/catalog/skandinavskiy",
       "finalUrl": "https://kuhnitver.ru/catalog/skandinavskiy",
       "status": 200,
-      "durationMs": 55,
+      "durationMs": 40,
       "title": [
         "Скандинавские кухни на заказ в Твери — светлый дизайн, цены | Kuhnitver"
       ],
@@ -846,7 +846,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 92943,
-      "htmlSha256": "09ad163f8746ac0290c5a25865f6499b9d0a425d28d197488e4de477536b9066",
+      "htmlSha256": "771292073d7b069c4004397cc0483f8028033bfd6f508a11be12fe0bd4e822ef",
       "textCharacters": 3504,
       "schemaTypes": [
         "AdministrativeArea",
@@ -882,7 +882,7 @@
       "canonicalUrl": "https://kuhnitver.ru/catalog/minimalizm",
       "finalUrl": "https://kuhnitver.ru/catalog/minimalizm",
       "status": 200,
-      "durationMs": 45,
+      "durationMs": 49,
       "title": [
         "Кухни в стиле минимализм на заказ в Твери — без ручек, push-to-open | Kuhnitver"
       ],
@@ -907,7 +907,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 92609,
-      "htmlSha256": "63d9e498df8b44cf0e029e05313774ce58e7dd2e0eaae5cf9cd39e360d4e0c40",
+      "htmlSha256": "6a5f1733cc0c7da630973fe5f20cb5b8861e91e14f610fc40c0e40bf487e7b7a",
       "textCharacters": 3382,
       "schemaTypes": [
         "AdministrativeArea",
@@ -943,7 +943,7 @@
       "canonicalUrl": "https://kuhnitver.ru/catalog/premium",
       "finalUrl": "https://kuhnitver.ru/catalog/premium",
       "status": 200,
-      "durationMs": 53,
+      "durationMs": 50,
       "title": [
         "Премиум кухни на заказ в Твери — итальянские фасады, мрамор | Kuhnitver"
       ],
@@ -968,7 +968,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 92577,
-      "htmlSha256": "222c24d3fb3c7c084e24b7938078213d580f13d07d903c25b5789bc80fc30d3c",
+      "htmlSha256": "2c4945aabf31b5621eaee0de305a65f3b6bf6e4683a619ac305b25031fea1b30",
       "textCharacters": 3427,
       "schemaTypes": [
         "AdministrativeArea",
@@ -1004,7 +1004,7 @@
       "canonicalUrl": "https://kuhnitver.ru/catalog/klassika",
       "finalUrl": "https://kuhnitver.ru/catalog/klassika",
       "status": 200,
-      "durationMs": 65,
+      "durationMs": 40,
       "title": [
         "Классические кухни на заказ в Твери — фрезерованные фасады, цены | Kuhnitver"
       ],
@@ -1029,7 +1029,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 92817,
-      "htmlSha256": "34e121e9a8c184eac89110260b54b3d07946afebfabdf86f57288ab1b04d5ad2",
+      "htmlSha256": "e82a45e6e50a21d7fecb92b3b182c23cb8028221df44e30b24b0e191df0b4f65",
       "textCharacters": 3494,
       "schemaTypes": [
         "AdministrativeArea",
@@ -1065,7 +1065,7 @@
       "canonicalUrl": "https://kuhnitver.ru/catalog/belaya",
       "finalUrl": "https://kuhnitver.ru/catalog/belaya",
       "status": 200,
-      "durationMs": 53,
+      "durationMs": 51,
       "title": [
         "Белые кухни на заказ в Твери — матовые и глянцевые, цены | Kuhnitver"
       ],
@@ -1090,7 +1090,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 92731,
-      "htmlSha256": "8b2a786c55520328230eb25b34c921168ee2a0803229fff81e38ffb726901d02",
+      "htmlSha256": "cf3a536812c2337e228573299d06fb58a5431eef066314a581f96f13e9cd0e5b",
       "textCharacters": 3552,
       "schemaTypes": [
         "AdministrativeArea",
@@ -1126,7 +1126,7 @@
       "canonicalUrl": "https://kuhnitver.ru/catalog/uglovye",
       "finalUrl": "https://kuhnitver.ru/catalog/uglovye",
       "status": 200,
-      "durationMs": 41,
+      "durationMs": 50,
       "title": [
         "Угловые кухни на заказ в Твери — Г-образные, цены и фото | Kuhnitver"
       ],
@@ -1151,7 +1151,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 92656,
-      "htmlSha256": "c597111d2b206e85638739f8859f44754e54454aaaedc141b669ca35a74a29b4",
+      "htmlSha256": "e955ae2a6d8868257617fb68e5fd0fd13269689baa45161d475bdf4071848d45",
       "textCharacters": 3574,
       "schemaTypes": [
         "AdministrativeArea",
@@ -1187,7 +1187,7 @@
       "canonicalUrl": "https://kuhnitver.ru/kuhni/tveri",
       "finalUrl": "https://kuhnitver.ru/kuhni/tveri",
       "status": 200,
-      "durationMs": 67,
+      "durationMs": 43,
       "title": [
         "Кухни на заказ в Твери от производителя — доставка и установка | Kuhnitver"
       ],
@@ -1212,7 +1212,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 97782,
-      "htmlSha256": "ad35fd929232da5358beefbec6692b66e7cb87611b94b524df1ca4accd17f4af",
+      "htmlSha256": "ad312cbc4937a7c8a597cdeb3f8424b195678b537a6f48a1204c606cd1b13e3d",
       "textCharacters": 3122,
       "schemaTypes": [
         "BreadcrumbList",
@@ -1259,7 +1259,7 @@
       "canonicalUrl": "https://kuhnitver.ru/kuhni/torzhke",
       "finalUrl": "https://kuhnitver.ru/kuhni/torzhke",
       "status": 200,
-      "durationMs": 82,
+      "durationMs": 44,
       "title": [
         "Кухни на заказ в Торжке от производителя — доставка и установка | Kuhnitver"
       ],
@@ -1284,7 +1284,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 97559,
-      "htmlSha256": "f61bec5e6d8c7c23132af9b1609572d179264f1137923481b33f3ba4bc96d048",
+      "htmlSha256": "302569a3d94271b3b2579cb6b79634d987e38b144e5939cf8c0fe363c1bea57e",
       "textCharacters": 3123,
       "schemaTypes": [
         "BreadcrumbList",
@@ -1325,7 +1325,7 @@
       "canonicalUrl": "https://kuhnitver.ru/kuhni/rzheve",
       "finalUrl": "https://kuhnitver.ru/kuhni/rzheve",
       "status": 200,
-      "durationMs": 50,
+      "durationMs": 51,
       "title": [
         "Кухни на заказ в Ржеве от производителя — доставка и установка | Kuhnitver"
       ],
@@ -1350,7 +1350,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 97333,
-      "htmlSha256": "5040e602023d25ab7fd65b4f8262db7fdad1d799d5253cf95ec66672e842a6a2",
+      "htmlSha256": "76d4f4794a65a38469fc7ef801a0896dae4553ece5d9b4c3d76b437788172b24",
       "textCharacters": 3096,
       "schemaTypes": [
         "BreadcrumbList",
@@ -1391,7 +1391,7 @@
       "canonicalUrl": "https://kuhnitver.ru/kuhni/konakovo",
       "finalUrl": "https://kuhnitver.ru/kuhni/konakovo",
       "status": 200,
-      "durationMs": 38,
+      "durationMs": 48,
       "title": [
         "Кухни на заказ в Конаково от производителя — доставка и установка | Kuhnitver"
       ],
@@ -1416,7 +1416,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 97804,
-      "htmlSha256": "4cb11c60a66c1ba49349c07a4659098248c96abbd7bc2bcd3699f5d7dab68384",
+      "htmlSha256": "5940b0053dd46ca12a72a6f0b723eee302e9523ea906350a94c50ee39144ba68",
       "textCharacters": 3138,
       "schemaTypes": [
         "BreadcrumbList",
@@ -1457,7 +1457,7 @@
       "canonicalUrl": "https://kuhnitver.ru/kuhni/kimrah",
       "finalUrl": "https://kuhnitver.ru/kuhni/kimrah",
       "status": 200,
-      "durationMs": 69,
+      "durationMs": 40,
       "title": [
         "Кухни на заказ в Кимрах от производителя — доставка и установка | Kuhnitver"
       ],
@@ -1482,7 +1482,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 97289,
-      "htmlSha256": "50ec529c42d20140959d9415a59ed12f8581869d29ae111c29b26771ea782572",
+      "htmlSha256": "7bc63ba2e996a2712d01a0330063ebfd354daa54698bbee22a65103eeadc71b7",
       "textCharacters": 3068,
       "schemaTypes": [
         "BreadcrumbList",
@@ -1523,7 +1523,7 @@
       "canonicalUrl": "https://kuhnitver.ru/kuhni/vyshnem-volochke",
       "finalUrl": "https://kuhnitver.ru/kuhni/vyshnem-volochke",
       "status": 200,
-      "durationMs": 47,
+      "durationMs": 55,
       "title": [
         "Кухни на заказ в Вышнем Волочке от производителя — доставка и установка | Kuhnitver"
       ],
@@ -1548,7 +1548,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 98372,
-      "htmlSha256": "81f3cb046bf45135b4d33c89988398d4a13deef0d5a095061c491ccfce923dba",
+      "htmlSha256": "e5540a4bdf46277d217cd7e2ab7378cfcf92245aae57691737e4f01fd8c50d96",
       "textCharacters": 3147,
       "schemaTypes": [
         "BreadcrumbList",
@@ -1589,7 +1589,7 @@
       "canonicalUrl": "https://kuhnitver.ru/kuhni/bezhecke",
       "finalUrl": "https://kuhnitver.ru/kuhni/bezhecke",
       "status": 200,
-      "durationMs": 35,
+      "durationMs": 52,
       "title": [
         "Кухни на заказ в Бежецке от производителя — доставка и установка | Kuhnitver"
       ],
@@ -1614,7 +1614,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 97130,
-      "htmlSha256": "bbe848290e2810e11b7e55efa87c1917772d7d34d68331f31a4a0074d78dfae9",
+      "htmlSha256": "0412056d3a18c9fe34aac39f72adb85f26aadcf18638639384b5251c92c0318d",
       "textCharacters": 3052,
       "schemaTypes": [
         "BreadcrumbList",
@@ -1655,7 +1655,7 @@
       "canonicalUrl": "https://kuhnitver.ru/kuhni/nelidovo",
       "finalUrl": "https://kuhnitver.ru/kuhni/nelidovo",
       "status": 200,
-      "durationMs": 47,
+      "durationMs": 40,
       "title": [
         "Кухни на заказ в Нелидово от производителя — доставка и установка | Kuhnitver"
       ],
@@ -1680,7 +1680,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 97321,
-      "htmlSha256": "709be124f3dabec9db012394ea26dd3467c5736164a05ec32963edd203a12fe7",
+      "htmlSha256": "84b2474821ec28f912d562d4da53d3dc19b8289b9ad18a9c629375fe7e8cd148",
       "textCharacters": 3072,
       "schemaTypes": [
         "BreadcrumbList",
@@ -1721,7 +1721,7 @@
       "canonicalUrl": "https://kuhnitver.ru/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
       "finalUrl": "https://kuhnitver.ru/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
       "status": 200,
-      "durationMs": 79,
+      "durationMs": 84,
       "title": [
         "Как выбрать кухню на заказ в Твери — руководство 2026 | Kuhnitver"
       ],
@@ -1746,7 +1746,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 83056,
-      "htmlSha256": "da3dca450bd97390a902498e601e0d5937259056e6607edced3bee69a7cdedc6",
+      "htmlSha256": "ee26917a2279c072f9ad828e5f91302bf26e913b035fadd0465972733d6e3c81",
       "textCharacters": 3434,
       "schemaTypes": [
         "Article",
@@ -1784,7 +1784,7 @@
       "canonicalUrl": "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
       "finalUrl": "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
       "status": 200,
-      "durationMs": 108,
+      "durationMs": 82,
       "title": [
         "МДФ, массив или пластик для кухни — что лучше | Kuhnitver"
       ],
@@ -1809,7 +1809,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 88833,
-      "htmlSha256": "261d93f6cc026430a5eeaaaf806926e0901239bba28efd282a45ef636f367023",
+      "htmlSha256": "dcfb8c508716dd26b312976827a5132f5a35bb2e2218264645e2393bfae3765f",
       "textCharacters": 4072,
       "schemaTypes": [
         "Article",
@@ -1847,7 +1847,7 @@
       "canonicalUrl": "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026",
       "finalUrl": "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026",
       "status": 200,
-      "durationMs": 84,
+      "durationMs": 72,
       "title": [
         "Стоимость кухни в Твери: погонный метр и полная смета | Kuhnitver"
       ],
@@ -1872,7 +1872,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 93399,
-      "htmlSha256": "f33991148a448832bb80eac394b6894f5ee6d486d5d6c14d4913f8c5e0daf5ed",
+      "htmlSha256": "cc8f8ad8e6a6cb8369014d636a01f88ae8b205e315ef0eccfc0968da692e7386",
       "textCharacters": 4783,
       "schemaTypes": [
         "Article",
@@ -1910,7 +1910,7 @@
       "canonicalUrl": "https://kuhnitver.ru/blog/uglovaya-vs-pryamaya-kuhnya",
       "finalUrl": "https://kuhnitver.ru/blog/uglovaya-vs-pryamaya-kuhnya",
       "status": 200,
-      "durationMs": 56,
+      "durationMs": 57,
       "title": [
         "Угловая или прямая кухня — какую выбрать | Kuhnitver"
       ],
@@ -1935,7 +1935,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 81008,
-      "htmlSha256": "cb092c19ad68932708fe7468d9c10812cabfadeaa0881322ce1917825f4e07f9",
+      "htmlSha256": "2102e432576dad9822724f205441c894121ceabf4b7974e58a7fd4b40e0c7867",
       "textCharacters": 3177,
       "schemaTypes": [
         "Article",
@@ -1973,7 +1973,7 @@
       "canonicalUrl": "https://kuhnitver.ru/blog/top-10-oshibok-pri-zakaze-kuhni",
       "finalUrl": "https://kuhnitver.ru/blog/top-10-oshibok-pri-zakaze-kuhni",
       "status": 200,
-      "durationMs": 81,
+      "durationMs": 57,
       "title": [
         "10 ошибок при заказе кухни — как избежать | Kuhnitver"
       ],
@@ -1998,7 +1998,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 83602,
-      "htmlSha256": "2c541f06eddbcc464a447ab93804f68659a729c982a91ad9416f9029c1049574",
+      "htmlSha256": "c2c5cd94471fe903d4469d3b55b2684476ac7beaacd2bde37259d30808a586e7",
       "textCharacters": 3617,
       "schemaTypes": [
         "Article",
@@ -2036,7 +2036,7 @@
       "canonicalUrl": "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit",
       "finalUrl": "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit",
       "status": 200,
-      "durationMs": 67,
+      "durationMs": 54,
       "title": [
         "Замер кухни в Твери: чек-лист подготовки | Kuhnitver"
       ],
@@ -2061,7 +2061,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 86092,
-      "htmlSha256": "80eeff7e24ebb75e7ea3d2a6fe243848cf34f10fc9ad66f3a31d55fd3c55fd90",
+      "htmlSha256": "99dc731e60cdb9fbfd41ddc1bce960819ae7e03ec69f877aeb1a3f747a42c8e6",
       "textCharacters": 4282,
       "schemaTypes": [
         "Article",
@@ -2099,7 +2099,7 @@
       "canonicalUrl": "https://kuhnitver.ru/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
       "finalUrl": "https://kuhnitver.ru/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
       "status": 200,
-      "durationMs": 61,
+      "durationMs": 63,
       "title": [
         "Кварц или мрамор для столешницы кухни — сравнение | Kuhnitver"
       ],
@@ -2124,7 +2124,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 89445,
-      "htmlSha256": "d7566b226fb4f94ec6d514dd8027e6c2c1c314be5100f05af07fd9cb948c86b3",
+      "htmlSha256": "7761bc1bd1f1ff53d0989dd3a2539e53160ba54e1ed308a47cda6a2a4a884626",
       "textCharacters": 4175,
       "schemaTypes": [
         "Article",
@@ -2162,7 +2162,7 @@
       "canonicalUrl": "https://kuhnitver.ru/blog/dizayn-kuhni-2026-idei-planirovki-i-foto",
       "finalUrl": "https://kuhnitver.ru/blog/dizayn-kuhni-2026-idei-planirovki-i-foto",
       "status": 200,
-      "durationMs": 93,
+      "durationMs": 65,
       "title": [
         "Дизайн кухни 2026: современные идеи, планировки и фото | Kuhnitver"
       ],
@@ -2187,7 +2187,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 109531,
-      "htmlSha256": "ac2b1225e7e1e1b31b28928614038433777e4b994f6abed603b63d9bbbed27c4",
+      "htmlSha256": "664bce3642d67edabe07f8089c6b739a3db3ecf8ad6ad6b45ad7effb70a52d22",
       "textCharacters": 8946,
       "schemaTypes": [
         "Answer",
@@ -2228,7 +2228,7 @@
       "canonicalUrl": "https://kuhnitver.ru/blog/chernaya-kuhnya-v-interere",
       "finalUrl": "https://kuhnitver.ru/blog/chernaya-kuhnya-v-interere",
       "status": 200,
-      "durationMs": 116,
+      "durationMs": 82,
       "title": [
         "Чёрная кухня в интерьере: сочетания цветов, плюсы и минусы | Kuhnitver"
       ],
@@ -2253,7 +2253,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 108574,
-      "htmlSha256": "edfd8f796d9c47b53a44d894bee77c4c4ca5f1a203798be3bf62eb25f1e911c8",
+      "htmlSha256": "fac52318be8c67085a60ec3ab55ec308412e353901b0d1982afedf59a4960f3c",
       "textCharacters": 8671,
       "schemaTypes": [
         "Answer",
@@ -2294,7 +2294,7 @@
       "canonicalUrl": "https://kuhnitver.ru/blog/sroki-izgotovleniya-kuhni-na-zakaz",
       "finalUrl": "https://kuhnitver.ru/blog/sroki-izgotovleniya-kuhni-na-zakaz",
       "status": 200,
-      "durationMs": 100,
+      "durationMs": 55,
       "title": [
         "Срок изготовления кухни на заказ: этапы и точка отсчёта | Kuhnitver"
       ],
@@ -2319,7 +2319,7 @@
       ],
       "xRobotsTag": null,
       "htmlBytes": 98094,
-      "htmlSha256": "2dd95a80d0d4209f2208a6a21a3645b72fff1be61721e1ca9eab4ea65619fe17",
+      "htmlSha256": "e1f32a441da39313486ebf728797acb629053b00fc8ed0a5c0d5ee007ed51021",
       "textCharacters": 5213,
       "schemaTypes": [
         "Answer",
@@ -2364,7 +2364,7 @@
     "rss": {
       "status": 200,
       "contentType": "application/rss+xml; charset=utf-8",
-      "durationMs": 91,
+      "durationMs": 51,
       "retired": false,
       "itemCount": 10,
       "xmlValid": true
@@ -2372,7 +2372,7 @@
     "yml": {
       "status": 200,
       "contentType": "application/xml; charset=utf-8",
-      "durationMs": 39,
+      "durationMs": 32,
       "retired": false,
       "itemCount": 9,
       "xmlValid": true,
@@ -2432,37 +2432,37 @@
     {
       "name": "Googlebot",
       "status": 200,
-      "durationMs": 82
+      "durationMs": 41
     },
     {
       "name": "YandexBot",
       "status": 200,
-      "durationMs": 97
+      "durationMs": 41
     },
     {
       "name": "OAI-SearchBot",
       "status": 200,
-      "durationMs": 52
+      "durationMs": 35
     },
     {
       "name": "ChatGPT-User",
       "status": 200,
-      "durationMs": 70
+      "durationMs": 36
     },
     {
       "name": "GPTBot",
       "status": 200,
-      "durationMs": 49
+      "durationMs": 31
     },
     {
       "name": "PerplexityBot",
       "status": 200,
-      "durationMs": 52
+      "durationMs": 31
     },
     {
       "name": "bingbot",
       "status": 200,
-      "durationMs": 58
+      "durationMs": 39
     }
   ]
 }

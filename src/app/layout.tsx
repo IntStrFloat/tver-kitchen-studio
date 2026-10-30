@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     description: SITE_CONFIG.defaultDescription,
     images: [
       {
-        url: "https://kuhnitver.ru/og-image.jpg",
+        url: SITE_CONFIG.defaultOgImage,
         width: 1200,
         height: 630,
         alt: "Kuhnitver — кухни на заказ в Твери",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: SITE_CONFIG.defaultTitle,
     description: SITE_CONFIG.defaultDescription,
-    images: ["https://kuhnitver.ru/og-image.jpg"],
+    images: [SITE_CONFIG.defaultOgImage],
   },
   icons: {
     icon: [

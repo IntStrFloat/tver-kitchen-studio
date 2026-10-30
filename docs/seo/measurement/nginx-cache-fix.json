@@ -1,0 +1,38 @@
+{
+  "startedAt": "2026-10-30T20:51:56.192079+00:00",
+  "file": "/etc/nginx/sites-enabled/kuhnitver.ru",
+  "backup": "/var/tmp/kuhnitver-stage-e53cd8e9db06/nginx-active-before-cache-fix.conf",
+  "beforeSha256": "7d64b873b607414e5b24620d361e4c84ffbf658559347b80a8390871ce464272",
+  "afterSha256": "7d573f3a1b65e66143ee33bf7414ce42f4dacb57d99b0370647928e4676acf89",
+  "capacityApiIncludePreserved": true,
+  "applied": true,
+  "rolledBack": false,
+  "configTest": "nginx: the configuration file /etc/nginx/nginx.conf syntax is ok\nnginx: configuration file /etc/nginx/nginx.conf test is successful",
+  "checks": [
+    {
+      "path": "/_next/static/chunks/6c84bf83fa2a6aed.css",
+      "status": 200,
+      "cacheControl": [
+        "public, max-age=31536000, immutable"
+      ]
+    },
+    {
+      "path": "/_next/static/chunks/806bdb8e4a6a9b95.js",
+      "status": 200,
+      "cacheControl": [
+        "public, max-age=31536000, immutable"
+      ]
+    },
+    {
+      "path": "/fonts/inter-cyrillic-variable.woff2",
+      "status": 200,
+      "cacheControl": [
+        "public, max-age=0",
+        "public, max-age=86400"
+      ]
+    }
+  ],
+  "readinessAttempts": 1,
+  "productionActive": true,
+  "finishedAt": "2026-10-30T20:51:58.763314+00:00"
+}

@@ -10,6 +10,13 @@
 Его задаёт `/etc/systemd/system/tver-kitchen-studio.service.d/50-seo-release.conf`.
 Существующие ExecStart, env-файл, nginx и порт 3000 сохранены.
 
+Важное уточнение по nginx: активный `/etc/nginx/sites-enabled/kuhnitver.ru` —
+**отдельный обычный файл**, а не symlink на `sites-available`. Он дополнительно
+включает `capacity-api.conf`. Не заменять его устаревшей копией из `sites-available`;
+перед правками проверять `nginx -T`, делать резервную копию именно активного файла
+и сохранять все соседние интеграции. Для `/_next/static/` используется `location ^~`,
+чтобы общий regex расширений не добавлял конфликтующий однодневный Cache-Control.
+
 Исходный `/var/www/tver-kitchen-studio` и его сборка сохранены для отката.
 `git pull` и сборка только в этом исходном каталоге теперь не обновляют работающий сайт.
 Старый пример ниже описывает прежний способ развёртывания; для новых выпусков:
@@ -60,7 +67,7 @@ set -a; source .claude-secrets; set +a
 | Код | Активный release из systemd WorkingDirectory; исходный Git-checkout `/var/www/tver-kitchen-studio` сохранён для отката (origin = github.com/IntStrFloat/tver-kitchen-studio) |
 | Next.js process | systemd-юнит `tver-kitchen-studio.service`, `next start -H 127.0.0.1 -p 3000` |
 | Env-файл | `/etc/tver-kitchen-studio.env` (chmod 600, читается systemd через `EnvironmentFile=-`) — сейчас форме заявок серверные переменные НЕ нужны (см. TODO ниже); файл оставлен для будущих нужд |
-| nginx | `/etc/nginx/sites-available/kuhnitver.ru` (symlink в `sites-enabled/`), `default` site удалён |
+| nginx | Активный обычный файл `/etc/nginx/sites-enabled/kuhnitver.ru`; `sites-available` — устаревшая отдельная копия. Проверять фактическое включение через `nginx -T` |
 | TLS | Let's Encrypt, `/etc/letsencrypt/live/kuhnitver.ru/`, домены `kuhnitver.ru` + `www.kuhnitver.ru`, ECDSA, истекает 2026-08-13, автообновление через `certbot.timer` |
 | Firewall | ufw активен: OpenSSH (22), Nginx Full (80, 443) |
 | HTTPS | https://kuhnitver.ru/ → 200, http:// → 301 на https:// |

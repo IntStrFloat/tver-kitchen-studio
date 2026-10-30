@@ -8,7 +8,7 @@ export const SITE_CONFIG = {
   titleTemplate: "%s | Kuhnitver",
   defaultDescription:
     "Кухни на заказ в Твери от Kuhnitver. Планировки, материалы, индивидуальная комплектация и расчёт по размерам. Условия замера, изготовления, доставки и установки согласуются до заказа.",
-  defaultOgImage: "https://kuhnitver.ru/og-image.jpg",
+  defaultOgImage: "https://kuhnitver.ru/og-image-20261030.jpg",
   locale: "ru_RU",
   language: "ru",
   phone: "+7 (4822) 47-70-81",

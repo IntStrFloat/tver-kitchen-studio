@@ -1,0 +1,26 @@
+{
+  "recordedAt": "2026-10-30T20:49:29.601306+00:00",
+  "source": "Authenticated Yandex Webmaster UI after submission; all10 rows visibly queued",
+  "submittedAtMoscow": "2026-10-30 23:10",
+  "site": "https://kuhnitver.ru",
+  "count": 10,
+  "urls": [
+    "https://kuhnitver.ru/",
+    "https://kuhnitver.ru/contacts",
+    "https://kuhnitver.ru/price",
+    "https://kuhnitver.ru/dostavka",
+    "https://kuhnitver.ru/faq",
+    "https://kuhnitver.ru/about",
+    "https://kuhnitver.ru/catalog",
+    "https://kuhnitver.ru/kuhni/tveri",
+    "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026",
+    "https://kuhnitver.ru/blog/sroki-izgotovleniya-kuhni-na-zakaz"
+  ],
+  "statusAtObservation": "queued",
+  "dailyQuota": 10,
+  "quotaRemainingAtObservation": 0,
+  "limits": [
+    "Queue acceptance is not completed crawling or indexing.",
+    "No submission above quota or scheduled future submission was created."
+  ]
+}

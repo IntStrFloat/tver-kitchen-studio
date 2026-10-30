@@ -1,61 +1,14 @@
 {
   "schemaVersion": 1,
-  "observedAtUtc": "2026-10-30T20:15:51.463644+00:00",
+  "measurementStage": "after-performance-refinement-v2",
+  "observedAtUtc": "2026-10-30T20:38:01.420297+00:00",
   "url": "https://kuhnitver.ru/",
-  "release": "d7841315296a02133a8447f1a5a489565f48c6ee",
+  "release": "e53cd8e9db065a2a2d06ebfd3d68441da7831602",
   "strategy": "mobile",
-  "method": "Official PageSpeed Insights web UI fallback after one quota-blocked unauthenticated API request",
-  "beforeMetrics": null,
-  "limits": [
-    "No predeployment lab measurement exists. A single lab run is not field Core Web Vitals or a causal effect estimate.",
-    "Lighthouse SEO100 is not a universal search/AI ranking score.",
-    "LCP5.2 seconds is a measured lab issue, not a passing field Core Web Vitals claim.",
-    "Further LCP timing breakdown and optional rich-result warning expansion timed out; no detailed causes are invented."
-  ],
-  "apiAttempt": {
-    "httpStatus": 429,
-    "status": "api_blocked",
-    "error": {
-      "code": 429,
-      "message": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'.",
-      "errors": [
-        {
-          "message": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'.",
-          "domain": "global",
-          "reason": "rateLimitExceeded"
-        }
-      ],
-      "status": "RESOURCE_EXHAUSTED",
-      "details": [
-        {
-          "@type": "type.googleapis.com/google.rpc.ErrorInfo",
-          "reason": "RATE_LIMIT_EXCEEDED",
-          "domain": "googleapis.com",
-          "metadata": {
-            "service": "pagespeedonline.googleapis.com",
-            "consumer": "projects/583797351490",
-            "quota_unit": "1/d/{project}",
-            "quota_location": "global",
-            "quota_metric": "pagespeedonline.googleapis.com/default",
-            "quota_limit": "defaultPerDayPerProject",
-            "quota_limit_value": "0"
-          }
-        },
-        {
-          "@type": "type.googleapis.com/google.rpc.Help",
-          "links": [
-            {
-              "description": "Request a higher quota limit.",
-              "url": "https://cloud.google.com/docs/quotas/help/request_increase"
-            }
-          ]
-        }
-      ]
-    }
-  },
+  "method": "Official Google PageSpeed Insights web UI, one fresh run after deployment; no API request retry",
   "status": "measured",
-  "webReportUrl": "https://pagespeed.web.dev/analysis/https-kuhnitver-ru/x3n6oydere?form_factor=mobile",
-  "reportedAt": "2026-10-30T23:16:20+03:00",
+  "webReportUrl": "https://pagespeed.web.dev/analysis/https-kuhnitver-ru/lahhgczcd2?form_factor=mobile",
+  "reportedAt": "2026-10-30T23:36:08+03:00",
   "lighthouseVersion": "13.6.0",
   "environment": {
     "device": "Emulated Moto G Power",
@@ -65,26 +18,92 @@
   },
   "scores": {
     "performance": 78,
-    "accessibility": 93,
+    "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
     "agenticBrowsing": {
-      "passed": 2,
+      "passed": 3,
       "totalApplicable": 3
     }
   },
   "labMetrics": {
     "firstContentfulPaintMs": 1200,
-    "largestContentfulPaintMs": 5200,
-    "totalBlockingTimeMs": 10,
+    "largestContentfulPaintMs": 5000,
+    "totalBlockingTimeMs": 40,
     "cumulativeLayoutShift": 0,
-    "speedIndexMs": 4300
+    "speedIndexMs": 4600
   },
-  "metricPrecision": "Rounded values read from rendered report UI",
+  "metricPrecision": "Rounded values read from rendered PSI report UI; exact calculator input values separately recorded",
+  "calculatorInputValues": {
+    "firstContentfulPaintMs": 1229,
+    "largestContentfulPaintMs": 5020,
+    "totalBlockingTimeMs": 44,
+    "cumulativeLayoutShift": 0,
+    "speedIndexMs": 4650,
+    "timeToInteractiveMs": 5114
+  },
   "fieldCoreWebVitals": {
     "status": "no_data",
     "uiText": "No Data",
     "metrics": null
+  },
+  "beforeMetrics": null,
+  "comparisonToTechnicalV1": {
+    "report": "2026-10-30-performance-after-technical-v1.json",
+    "originalPredeploymentBaseline": false,
+    "performanceScore": {
+      "v1": 78,
+      "v2": 78
+    },
+    "accessibilityScore": {
+      "v1": 93,
+      "v2": 100
+    },
+    "agenticApplicablePasses": {
+      "v1": 2,
+      "v2": 3,
+      "total": 3
+    },
+    "largestContentfulPaintDisplaySeconds": {
+      "v1": 5.2,
+      "v2": 5.0
+    },
+    "totalBlockingTimeDisplayMs": {
+      "v1": 10,
+      "v2": 40
+    },
+    "speedIndexDisplaySeconds": {
+      "v1": 4.3,
+      "v2": 4.6
+    },
+    "interpretation": "Descriptive comparison of two independent simulated lab runs. Mixed timing changes do not establish a causal speed improvement."
+  },
+  "lcpDiscovery": {
+    "status": "passed",
+    "reportSection": "PASSED AUDITS (18)",
+    "elementSelector": "div.min-h-screen > section.relative > div.absolute > img.w-full",
+    "imageUrl": "https://kuhnitver.ru/_next/image?url=%2Fimages%2Fhero-kitchen.jpg&w=750&q=75",
+    "fetchPriorityAttribute": "high",
+    "checks": {
+      "notLazyLoaded": "passed",
+      "highFetchPriorityOnImagePreload": "passed",
+      "discoverableInInitialDocument": "passed"
+    },
+    "checksSource": "Expanded passed audit explicitly says fetchpriority=high applied"
+  },
+  "lcpBreakdownInsight": {
+    "timeToFirstByteMs": 70,
+    "resourceLoadDelayMs": 380,
+    "resourceLoadDurationMs": 570,
+    "elementRenderDelayMs": 1570,
+    "source": "Durations displayed in the expanded PSI LCP breakdown insight",
+    "limit": "These trace-insight durations must not be summed or equated with the headline simulated Lighthouse LCP metric."
+  },
+  "resolvedDiagnostics": {
+    "prohibitedQuizAria": true,
+    "colorOnlySeoTextLinks": true,
+    "malformedAgenticAccessibilityTree": true,
+    "evidence": "Accessibility score100 with25passed automated audits and no former failure sections; Agentic Browsing3/3passed; LCP discovery now in passed audits"
   },
   "observedInsights": [
     {
@@ -97,28 +116,29 @@
     },
     {
       "name": "Render-blocking requests",
-      "estimatedSavingsMs": 370
+      "estimatedSavingsMs": 440
     },
     {
-      "name": "LCP request discovery"
+      "name": "Forced reflow"
+    },
+    {
+      "name": "Network dependency tree"
     },
     {
       "name": "Reduce unused JavaScript",
-      "estimatedSavingsKiB": 154
+      "estimatedSavingsKiB": 155
     },
     {
       "name": "Avoid long main-thread tasks",
-      "count": 2
+      "count": 4
     }
   ],
-  "observedAccessibilityFindings": [
-    "Elements use prohibited ARIA attributes",
-    "Links rely on color to be distinguishable"
-  ],
-  "observedAgenticFindings": [
-    "Accessibility tree is not well-formed"
-  ],
-  "richResultsTest": {
+  "apiAttemptDuringV1": {
+    "status": "api_blocked",
+    "httpStatus": 429,
+    "reason": "Unauthenticated API quota exhausted; no API retry"
+  },
+  "richResultsTestFromV1": {
     "url": "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026",
     "status": "completed",
     "reportUrl": "https://search.google.com/test/rich-results/result?id=X0AhfA_yjujduPTYNkVX3A",
@@ -153,48 +173,66 @@
     "limits": [
       "Type summary was observed; optional-warning details were not extracted because the follow-up browser interaction timed out.",
       "Eligibility does not guarantee showing rich results."
-    ]
+    ],
+    "releaseTested": "d7841315296a02133a8447f1a5a489565f48c6ee",
+    "rerunForV2": false
   },
-  "measurementStage": "after-technical-v1-before-performance-refinement",
-  "lcpDiscovery": {
-    "elementSelector": "div.min-h-screen > section.relative > div.absolute > img.w-full",
-    "imageUrl": "https://kuhnitver.ru/_next/image?url=%2Fimages%2Fhero-kitchen.jpg&w=750&q=75",
-    "imageAlt": "Современная кухня на заказ в интерьере — производство Kuhnitver в Твери",
-    "sourceDimensions": {
-      "width": 1920,
-      "height": 1080
-    },
-    "sizes": "100vw",
-    "checks": {
-      "notLazyLoaded": "passed",
-      "highFetchPriorityOnImagePreload": "failed",
-      "discoverableInInitialDocument": "passed"
-    },
-    "checksSource": "Visual green/red indicators in expanded official PSI LCP discovery panel"
+  "limits": [
+    "No original predeployment lab performance measurement exists.",
+    "This is one simulated mobile run after refinement, not real-user Core Web Vitals. CrUX field metrics are unavailable.",
+    "LCP5.0seconds remains a lab performance issue; no passing field CWV claim is made.",
+    "Lighthouse SEO100 is not a universal search or AI-ranking score.",
+    "Accessibility100 reflects automated checks only and does not replace manual accessibility testing.",
+    "Agentic Browsing is an experimental audit;3/3does not prove a native WebMCP client interaction or an AI recommendation.",
+    "RRT result is the earlier actual article validation, not a repeated test ofv2."
+  ],
+  "finishedAtUtc": "2026-10-30T20:38:01.420297+00:00",
+  "publicHeroAssetProbe": {
+    "url": "https://kuhnitver.ru/_next/image?url=%2Fimages%2Fhero-kitchen.jpg&w=750&q=75",
+    "method": "One fresh public image GET from auditor IP after PSI; not the PSI network trace",
+    "status": 200,
+    "contentType": "image/avif",
+    "decodedTransferBodyBytes": 9499,
+    "contentLengthHeader": "9499",
+    "cacheControl": "public, max-age=14400, must-revalidate",
+    "nextImageCache": "HIT",
+    "durationMsRound": 218
   },
-  "accessibilityDiagnostics": {
-    "prohibitedAria": {
-      "selector": "section#quiz > div.container-custom > div.max-w-3xl > div.flex",
-      "snippet": "<div class=\"flex items-center justify-center gap-2 mb-8\" aria-label=\"Шаг 1 из 4\">"
+  "cacheInsightDetails": {
+    "estimatedSavingsKiB": 181,
+    "firstPartyListedTransferKiB": 319,
+    "firstPartyListedTtl": "1d",
+    "hashedNextStaticTtl": "1d",
+    "latinFont": {
+      "path": "/fonts/inter-latin-variable.woff2",
+      "ttl": "1d",
+      "transferKiB": 47
     },
-    "colorOnlyLinks": {
-      "selector": "div.container-custom > div.max-w-4xl > p > a.text-primary",
-      "snippet": "<a class=\"text-primary hover:underline\">",
-      "paths": [
-        "/catalog",
-        "/catalog/loft",
-        "/catalog/skandinavskiy",
-        "/catalog/minimalizm",
-        "/price",
-        "/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
-        "/dostavka",
-        "/contacts"
-      ]
+    "cyrillicFont": {
+      "path": "/fonts/inter-cyrillic-variable.woff2",
+      "ttl": "1d",
+      "transferKiB": 19
     },
-    "agenticTreeFailure": {
-      "audit": "Elements must only use permitted ARIA attributes",
-      "sameElementAsProhibitedAria": true
-    }
+    "thirdPartyAnalytics": {
+      "provider": "Yandex Metrica",
+      "listedTransferKiB": 66,
+      "tagJsTransferKiB": 65,
+      "tagJsTtl": "1h"
+    },
+    "privacy": "No tracking cookie query parameters or tokens stored."
   },
-  "finishedAtUtc": "2026-10-30T20:25:29.869144+00:00"
+  "networkDependencyInsight": {
+    "maximumCriticalPathLatencyMs": 793,
+    "navigation": {
+      "url": "https://kuhnitver.ru/",
+      "durationMs": 467,
+      "transferKiB": 27.75
+    },
+    "css": {
+      "path": "/_next/static/chunks/6c84bf83fa2a6aed.css",
+      "durationMs": 793,
+      "transferKiB": 13.39
+    },
+    "preconnectedOrigin": "https://mc.yandex.ru/"
+  }
 }

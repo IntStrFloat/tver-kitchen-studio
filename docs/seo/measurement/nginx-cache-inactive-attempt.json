@@ -1,0 +1,11 @@
+{
+  "startedAt": "2026-10-30T20:46:21.537449+00:00",
+  "file": "/etc/nginx/sites-available/kuhnitver.ru",
+  "backup": "/var/tmp/kuhnitver-stage-e53cd8e9db06/nginx-kuhnitver-before-cache-fix.conf",
+  "beforeSha256": "5b0196e6dab42757c298795d1ae562dacb7627f2328bf8804e0c93a64ec50df7",
+  "afterSha256": "e283d761d4faeb6c3b36ca87cb3f0b070a080ced200701fac374c06deab0883b",
+  "applied": false,
+  "rolledBack": true,
+  "configTest": "nginx: the configuration file /etc/nginx/nginx.conf syntax is ok\nnginx: configuration file /etc/nginx/nginx.conf test is successful",
+  "finishedAt": "2026-10-30T20:46:30.132061+00:00"
+}

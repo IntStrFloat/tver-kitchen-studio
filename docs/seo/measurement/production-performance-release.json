@@ -1,0 +1,14 @@
+{
+  "startedAt": "2026-10-30T20:35:00.358693+00:00",
+  "sha": "e53cd8e9db065a2a2d06ebfd3d68441da7831602",
+  "release": "/var/www/tver-kitchen-studio-releases/e53cd8e9db065a2a2d06ebfd3d68441da7831602",
+  "previousWorkingDirectory": "/var/www/tver-kitchen-studio-releases/d7841315296a02133a8447f1a5a489565f48c6ee",
+  "unit": "tver-kitchen-studio.service",
+  "dropin": "/etc/systemd/system/tver-kitchen-studio.service.d/50-seo-release.conf",
+  "promoted": true,
+  "rollbackPerformed": false,
+  "buildId": "TesgvDmms19OTYEFji2-m",
+  "active": "active",
+  "mainPID": "3246549",
+  "finishedAt": "2026-10-30T20:35:12.801502+00:00"
+}

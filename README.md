@@ -101,3 +101,9 @@ node scripts/indexnow.mjs --submit --output docs/seo/measurement/indexnow-submit
 ## Production
 
 Сайт обслуживается существующими nginx и systemd на Ubuntu. Проект находится в `/var/www/tver-kitchen-studio`, сервис — `tver-kitchen-studio.service`. Пароли и окружение не коммитятся; `.claude-secrets` и `.env` игнорируются Git. Правила доступа и ограниченного по памяти развёртывания приведены в [`CLAUDE.md`](CLAUDE.md). Перед публикацией завершите локальные проверки, сохраните точную ревизию, проверьте состояние сервера и возможность отката. После публикации повторите HTTP-приёмку и сохраните результат с временем релиза.
+
+
+OG-карточка: `npm run generate:og` на Node24 создаёт SVG/JPG из `SITE_CONFIG`
+и существующей иллюстрации сайта. При изменении карточки обновляйте дату в имени
+`SITE_CONFIG.defaultOgImage`, чтобы мессенджеры получили новый URL. Версионный JPG
+и совместимые `og-image.jpg`/`og-image.svg` коммитятся вместе с изменением метаданных.

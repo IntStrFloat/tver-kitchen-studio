@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://kuhnitver.ru/og-image.jpg",
+        url: SITE_CONFIG.defaultOgImage,
         width: 1200,
         height: 630,
         alt: "Кухни на заказ в Твери — Kuhnitver",

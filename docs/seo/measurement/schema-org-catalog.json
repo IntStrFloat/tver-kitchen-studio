@@ -1,0 +1,20 @@
+{
+  "observedAt": "2026-10-30T20:44:18.297398+00:00",
+  "url": "https://kuhnitver.ru/catalog",
+  "release": "e53cd8e9db065a2a2d06ebfd3d68441da7831602",
+  "validatorUrl": "https://validator.schema.org/#url=https%3A%2F%2Fkuhnitver.ru%2Fcatalog",
+  "method": "Official Schema.org validator UI; result read from screenshot after URL fetch completed",
+  "items": 13,
+  "errors": 0,
+  "warnings": 0,
+  "topLevelTypes": {
+    "CollectionPage": 1,
+    "BreadcrumbList": 2,
+    "Service": 1,
+    "SiteNavigationElement": 9
+  },
+  "limits": [
+    "Result applies to this catalogue URL and linked markup graph, not a crawl of every URL.",
+    "Passing vocabulary/schema checks does not guarantee a search rich result or AI citation."
+  ]
+}
