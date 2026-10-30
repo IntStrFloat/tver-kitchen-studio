@@ -15,15 +15,15 @@ const SeoText = () => {
           </h2>
           <p>
             {SITE_CONFIG.name} изготавливает{" "}
-            <Link href="/catalog" className="text-primary hover:underline">
+            <Link href="/catalog" className="text-primary underline underline-offset-4">
               кухонные гарнитуры на заказ
             </Link>{" "}
             для квартир, частных домов и коммерческих помещений в Твери и
             Тверской области. До заказа обсуждаем размеры, расположение техники,
             материалы и пожелания к хранению. В каталоге можно сравнить{" "}
-            <Link href="/catalog/loft" className="text-primary hover:underline">лофт</Link>,{" "}
-            <Link href="/catalog/skandinavskiy" className="text-primary hover:underline">скандинавский стиль</Link>{" "}
-            и <Link href="/catalog/minimalizm" className="text-primary hover:underline">минимализм</Link>.
+            <Link href="/catalog/loft" className="text-primary underline underline-offset-4">лофт</Link>,{" "}
+            <Link href="/catalog/skandinavskiy" className="text-primary underline underline-offset-4">скандинавский стиль</Link>{" "}
+            и <Link href="/catalog/minimalizm" className="text-primary underline underline-offset-4">минимализм</Link>.
             Изображения направлений дизайна помогают обсудить идею будущей кухни.
           </p>
           <h3 className="text-xl font-semibold text-foreground pt-2">
@@ -32,7 +32,7 @@ const SeoText = () => {
           <p>{COMMERCIAL_TERMS.pricingText}</p>
           <p>
             Состав сметы и различие между погонным метром и стоимостью всего
-            проекта объясняем на <Link href="/price" className="text-primary hover:underline">странице цен</Link>.
+            проекта объясняем на <Link href="/price" className="text-primary underline underline-offset-4">странице цен</Link>.
             Чтобы получить предварительный расчёт, передайте размеры помещения
             и пожелания к комплектации; окончательную смету согласуем после
             уточнения проекта.
@@ -44,7 +44,7 @@ const SeoText = () => {
             Выбор фасадов, столешницы и фурнитуры зависит от проекта и условий
             использования. Конкретные марки, модели механизмов, покрытия и
             характеристики указываются в спецификации. Практические критерии
-            сравнения собрали в <Link href="/blog/materialy-dlya-kuhni-mdf-massiv-plastik" className="text-primary hover:underline">статье о материалах</Link>.
+            сравнения собрали в <Link href="/blog/materialy-dlya-kuhni-mdf-massiv-plastik" className="text-primary underline underline-offset-4">статье о материалах</Link>.
             Образцы и наличие выбранных комплектующих уточняйте до заказа.
           </p>
           <h3 className="text-xl font-semibold text-foreground pt-2">
@@ -54,13 +54,13 @@ const SeoText = () => {
           <p>{COMMERCIAL_TERMS.productionText}</p>
           <p>
             {COMMERCIAL_TERMS.deliveryText}{" "}
-            <Link href="/dostavka" className="text-primary hover:underline">Условия доставки и монтажа</Link>.
+            <Link href="/dostavka" className="text-primary underline underline-offset-4">Условия доставки и монтажа</Link>.
           </p>
           <p>{COMMERCIAL_TERMS.warrantyText}</p>
           <p>
             Наш адрес: {SITE_CONFIG.address.locality}, {SITE_CONFIG.address.street}.
             Часы работы: {SITE_CONFIG.openingHours.label}. Перед визитом{" "}
-            <Link href="/contacts" className="text-primary hover:underline">свяжитесь с нами</Link>,
+            <Link href="/contacts" className="text-primary underline underline-offset-4">свяжитесь с нами</Link>,
             чтобы согласовать встречу и подготовить интересующие образцы.
           </p>
         </div>

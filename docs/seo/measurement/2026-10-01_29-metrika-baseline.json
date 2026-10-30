@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "counterId": 106971287,
+  "site": "https://kuhnitver.ru/",
+  "observedAtUtc": "2026-10-30 20:09:15 UTC",
+  "captureTimezone": "Europe/Moscow",
+  "period": {
+    "from": "2026-10-01",
+    "through": "2026-10-29",
+    "inclusive": true,
+    "displayedRange": "1 — 29 окт 2026",
+    "deploymentDayExcluded": "2026-10-30",
+    "counterTimezoneIndependentlyVerified": false
+  },
+  "source": {
+    "method": "Authenticated read-only Yandex.Metrika browser UI",
+    "report": "Обзор → По источникам трафика",
+    "grouping": [
+      "Источник трафика",
+      "Источник трафика (детально)"
+    ],
+    "attribution": "Последний значимый переход; кросс-девайс включён",
+    "samplingDisplay": "100%",
+    "goalFilter": "Не выбрана"
+  },
+  "status": "measured",
+  "totals": {
+    "pageviews": 73,
+    "visits": 42,
+    "users": 41,
+    "averageVisitDurationDisplay": "17 c",
+    "averageVisitDurationSecondsApprox": 17,
+    "pageDepthDisplay": "1,74",
+    "pageDepth": 1.74,
+    "bounceRateDisplay": "61,90%",
+    "bounceRatePercent": 61.9
+  },
+  "sourceGroups": [
+    {
+      "source": "direct",
+      "label": "Прямые заходы",
+      "pageviews": 62,
+      "visits": 34,
+      "users": 34,
+      "averageVisitDurationDisplay": "12 c",
+      "pageDepth": 1.82,
+      "bounceRatePercent": 67.65
+    },
+    {
+      "source": "search",
+      "label": "Переходы из поисковых систем",
+      "pageviews": 8,
+      "visits": 5,
+      "users": 5,
+      "averageVisitDurationDisplay": "57 c",
+      "pageDepth": 1.6,
+      "bounceRatePercent": 20
+    },
+    {
+      "source": "internal",
+      "label": "Внутренние переходы",
+      "pageviews": 2,
+      "visits": 2,
+      "users": 2,
+      "averageVisitDurationDisplay": "0 c",
+      "pageDepth": 1,
+      "bounceRatePercent": 100
+    },
+    {
+      "source": "referral",
+      "label": "Переходы по ссылкам на сайтах",
+      "pageviews": 1,
+      "visits": 1,
+      "users": 1,
+      "averageVisitDurationDisplay": "24 c",
+      "pageDepth": 1,
+      "bounceRatePercent": 0
+    }
+  ],
+  "sourceDetails": [
+    {
+      "source": "direct",
+      "detail": "Не определено",
+      "pageviews": 62,
+      "visits": 34,
+      "users": 34,
+      "averageVisitDurationDisplay": "12 c",
+      "pageDepth": 1.82,
+      "bounceRatePercent": 67.65
+    },
+    {
+      "source": "search",
+      "detail": "Яндекс",
+      "pageviews": 4,
+      "visits": 3,
+      "users": 3,
+      "averageVisitDurationDisplay": "1 м",
+      "pageDepth": 1.33,
+      "bounceRatePercent": 0
+    },
+    {
+      "source": "internal",
+      "detail": "Не определено",
+      "pageviews": 2,
+      "visits": 2,
+      "users": 2,
+      "averageVisitDurationDisplay": "0 c",
+      "pageDepth": 1,
+      "bounceRatePercent": 100
+    },
+    {
+      "source": "search",
+      "detail": "Google",
+      "pageviews": 4,
+      "visits": 2,
+      "users": 2,
+      "averageVisitDurationDisplay": "53 c",
+      "pageDepth": 2,
+      "bounceRatePercent": 50
+    },
+    {
+      "source": "referral",
+      "pageviews": 1,
+      "visits": 1,
+      "users": 1,
+      "averageVisitDurationDisplay": "24 c",
+      "pageDepth": 1,
+      "bounceRatePercent": 0,
+      "detail": "Другой реферальный источник"
+    }
+  ],
+  "aiAttribution": {
+    "explicitAiNamedRowsObserved": [],
+    "totalAiOriginVisits": null,
+    "citationRate": null,
+    "explanation": "В показанных детальных строках нет отдельного именованного AI-источника. Это не доказывает отсутствие переходов из AI: referrer может теряться, а Google/Яндекс не разделены на AI и обычный поиск в данном отчёте."
+  },
+  "leadBaseline": {
+    "acknowledgedLeads": null,
+    "explanation": "Шесть пользовательских целей настроены 30.10.2026 и не образуют исторический baseline за 1–29 октября. Существующие автоматические цели не являются подтверждением доставки заявки."
+  },
+  "limits": [
+    "Это измеренный исторический срез основного счётчика, а не причинная оценка изменений.",
+    "Небольшой объём: 42 визита за 29 дней; для сравнения потребуется сопоставимый последующий период и учёт источников/сезонности.",
+    "Время на сайте и доли взяты в округлённом виде из интерфейса.",
+    "Пользователей разных источников нельзя складывать как уникальных людей: один посетитель может быть в нескольких строках.",
+    "Дата отчёта проверена в интерфейсе; часовой пояс самого счётчика отдельно не инспектировался.",
+    "В интерфейсе есть предупреждение о возможной неполноте атрибуции конверсий Директа. Этот отчёт без фильтра по целям; в показанных источниках отдельной строки Директа нет.",
+    "Не экспортированы данные отдельных посетителей, URL-параметры, поисковые запросы, учётные данные или email аккаунта.",
+    "Не изменялись цели/настройки счётчика и не отправлялись события; менялись только период и группировка представления отчёта.",
+    "Название единичного реферального домена исключено из общего отчёта; численные показатели сохранены."
+  ]
+}

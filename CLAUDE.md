@@ -2,6 +2,37 @@
 
 Сайт студии кухонь в Твери (Next.js).
 
+## Обновление развёртывания 30.10.2026
+
+Рабочий сайт переведён на проверенный выпуск `d7841315296a02133a8447f1a5a489565f48c6ee`
+в `/var/www/tver-kitchen-studio-releases/<SHA>`. Активный каталог всегда проверяйте
+командой `systemctl show tver-kitchen-studio.service -p WorkingDirectory --value`.
+Его задаёт `/etc/systemd/system/tver-kitchen-studio.service.d/50-seo-release.conf`.
+Существующие ExecStart, env-файл, nginx и порт 3000 сохранены.
+
+Исходный `/var/www/tver-kitchen-studio` и его сборка сохранены для отката.
+`git pull` и сборка только в этом исходном каталоге теперь не обновляют работающий сайт.
+Старый пример ниже описывает прежний способ развёртывания; для новых выпусков:
+
+1. Получить проверенный коммит из Git, создать отдельный detached worktree
+   `/var/www/tver-kitchen-studio-releases/<SHA>` и выполнить `npm ci --no-audit --no-fund`.
+2. Собрать с `NODE_OPTIONS=--max-old-space-size=1536 npm run build`. Шрифты локальные,
+   доступ Google Fonts для сборки не нужен. Typecheck и статический анализ выполняются
+   отдельно; `ignoreBuildErrors` не заменяет эти проверки.
+3. Проверить выпуск на свободном порту **127.0.0.1**, используя отдельный временный
+   systemd-юнит и `scripts/seo-audit.mjs --strict --canonical-origin https://kuhnitver.ru`.
+   **Порт 3100 занят `/opt/capacity-api` и не относится к этому сайту.**
+4. Сохранить предыдущий WorkingDirectory и копию конфигурации. Атомарно изменить
+   только WorkingDirectory в указанном drop-in, выполнить `systemctl daemon-reload`
+   и `systemctl restart tver-kitchen-studio.service`, проверить публичный домен.
+5. При ошибке вернуть предыдущий WorkingDirectory и повторить reload/restart.
+   Временный staging-юнит останавливать после публичной приёмки; не трогать другие службы.
+6. После успешного релиза `node scripts/indexnow.mjs --submit --output <report.json>`
+   отправляет один пакет URL. По умолчанию скрипт выполняет только dry-run;
+   HTTP 200/202 подтверждает приём, а не индексирование.
+
+Протокол выпуска и ограничения внешних кабинетов: `docs/seo/2026-10-30-implementation.md`.
+
 ## Продакшн-сервер
 
 Учётные данные хранятся в `.claude-secrets` (gitignored). Перед SSH-командами загружай переменные:
@@ -26,7 +57,7 @@ set -a; source .claude-secrets; set +a
 
 | Компонент | Где / как |
 |---|---|
-| Код | `/var/www/tver-kitchen-studio` (origin = github.com/IntStrFloat/tver-kitchen-studio) |
+| Код | Активный release из systemd WorkingDirectory; исходный Git-checkout `/var/www/tver-kitchen-studio` сохранён для отката (origin = github.com/IntStrFloat/tver-kitchen-studio) |
 | Next.js process | systemd-юнит `tver-kitchen-studio.service`, `next start -H 127.0.0.1 -p 3000` |
 | Env-файл | `/etc/tver-kitchen-studio.env` (chmod 600, читается systemd через `EnvironmentFile=-`) — сейчас форме заявок серверные переменные НЕ нужны (см. TODO ниже); файл оставлен для будущих нужд |
 | nginx | `/etc/nginx/sites-available/kuhnitver.ru` (symlink в `sites-enabled/`), `default` site удалён |
@@ -34,7 +65,7 @@ set -a; source .claude-secrets; set +a
 | Firewall | ufw активен: OpenSSH (22), Nginx Full (80, 443) |
 | HTTPS | https://kuhnitver.ru/ → 200, http:// → 301 на https:// |
 
-### Пайплайн обновления кода
+### Прежний пример обновления кода (до release-каталогов)
 
 ```bash
 ssh root@185.154.193.96

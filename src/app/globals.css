@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 /*
-  Шрифт Inter загружается через next/font/google в layout.tsx
-  с font-display: swap для предотвращения FOIT/FOUT.
+  Шрифт Inter загружается из локальных variable WOFF2 в /fonts/;
+  font-display: swap сохраняет читаемость текста во время загрузки.
 */
 
 @layer base {

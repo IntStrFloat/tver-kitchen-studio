@@ -34,7 +34,8 @@ const Hero = () => {
           className="w-full h-full object-cover object-[68%_center] lg:object-center"
           width={1920}
           height={1080}
-          priority
+          preload
+          fetchPriority="high"
           sizes="100vw"
         />
         {/* Моб.: вертикальный градиент — текст читается сверху на светлом, фото
@@ -126,6 +127,7 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.5 }}
             className="mt-12 grid grid-cols-3 gap-4 max-w-md"
+            role="group"
             aria-label="Ключевые преимущества"
           >
             {[

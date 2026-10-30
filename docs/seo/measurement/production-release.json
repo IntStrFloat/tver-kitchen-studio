@@ -1,0 +1,15 @@
+{
+  "startedAt": "2026-10-30T20:04:26.050308+00:00",
+  "sha": "d7841315296a02133a8447f1a5a489565f48c6ee",
+  "release": "/var/www/tver-kitchen-studio-releases/d7841315296a02133a8447f1a5a489565f48c6ee",
+  "previousWorkingDirectory": "/var/www/tver-kitchen-studio",
+  "unit": "tver-kitchen-studio.service",
+  "dropin": "/etc/systemd/system/tver-kitchen-studio.service.d/50-seo-release.conf",
+  "promoted": true,
+  "rollbackPerformed": false,
+  "previousMainPID": "738",
+  "buildId": "gucOKEvda3GMby8hEieAr",
+  "active": "active",
+  "mainPID": "3215106",
+  "finishedAt": "2026-10-30T20:04:39.116366+00:00"
+}

@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "observedAtUtc": "2026-10-30T20:15:51.463644+00:00",
+  "url": "https://kuhnitver.ru/",
+  "release": "d7841315296a02133a8447f1a5a489565f48c6ee",
+  "strategy": "mobile",
+  "method": "Official PageSpeed Insights web UI fallback after one quota-blocked unauthenticated API request",
+  "beforeMetrics": null,
+  "limits": [
+    "No predeployment lab measurement exists. A single lab run is not field Core Web Vitals or a causal effect estimate.",
+    "Lighthouse SEO100 is not a universal search/AI ranking score.",
+    "LCP5.2 seconds is a measured lab issue, not a passing field Core Web Vitals claim.",
+    "Further LCP timing breakdown and optional rich-result warning expansion timed out; no detailed causes are invented."
+  ],
+  "apiAttempt": {
+    "httpStatus": 429,
+    "status": "api_blocked",
+    "error": {
+      "code": 429,
+      "message": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'.",
+      "errors": [
+        {
+          "message": "Quota exceeded for quota metric 'Queries' and limit 'Queries per day' of service 'pagespeedonline.googleapis.com' for consumer 'project_number:583797351490'.",
+          "domain": "global",
+          "reason": "rateLimitExceeded"
+        }
+      ],
+      "status": "RESOURCE_EXHAUSTED",
+      "details": [
+        {
+          "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+          "reason": "RATE_LIMIT_EXCEEDED",
+          "domain": "googleapis.com",
+          "metadata": {
+            "service": "pagespeedonline.googleapis.com",
+            "consumer": "projects/583797351490",
+            "quota_unit": "1/d/{project}",
+            "quota_location": "global",
+            "quota_metric": "pagespeedonline.googleapis.com/default",
+            "quota_limit": "defaultPerDayPerProject",
+            "quota_limit_value": "0"
+          }
+        },
+        {
+          "@type": "type.googleapis.com/google.rpc.Help",
+          "links": [
+            {
+              "description": "Request a higher quota limit.",
+              "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "status": "measured",
+  "webReportUrl": "https://pagespeed.web.dev/analysis/https-kuhnitver-ru/x3n6oydere?form_factor=mobile",
+  "reportedAt": "2026-10-30T23:16:20+03:00",
+  "lighthouseVersion": "13.6.0",
+  "environment": {
+    "device": "Emulated Moto G Power",
+    "network": "Slow 4G throttling",
+    "browser": "HeadlessChromium 153.0.8010.36",
+    "session": "Single page session, initial page load"
+  },
+  "scores": {
+    "performance": 78,
+    "accessibility": 93,
+    "bestPractices": 100,
+    "seo": 100,
+    "agenticBrowsing": {
+      "passed": 2,
+      "totalApplicable": 3
+    }
+  },
+  "labMetrics": {
+    "firstContentfulPaintMs": 1200,
+    "largestContentfulPaintMs": 5200,
+    "totalBlockingTimeMs": 10,
+    "cumulativeLayoutShift": 0,
+    "speedIndexMs": 4300
+  },
+  "metricPrecision": "Rounded values read from rendered report UI",
+  "fieldCoreWebVitals": {
+    "status": "no_data",
+    "uiText": "No Data",
+    "metrics": null
+  },
+  "observedInsights": [
+    {
+      "name": "Use efficient cache lifetimes",
+      "estimatedSavingsKiB": 181
+    },
+    {
+      "name": "Legacy JavaScript",
+      "estimatedSavingsKiB": 14
+    },
+    {
+      "name": "Render-blocking requests",
+      "estimatedSavingsMs": 370
+    },
+    {
+      "name": "LCP request discovery"
+    },
+    {
+      "name": "Reduce unused JavaScript",
+      "estimatedSavingsKiB": 154
+    },
+    {
+      "name": "Avoid long main-thread tasks",
+      "count": 2
+    }
+  ],
+  "observedAccessibilityFindings": [
+    "Elements use prohibited ARIA attributes",
+    "Links rely on color to be distinguishable"
+  ],
+  "observedAgenticFindings": [
+    "Accessibility tree is not well-formed"
+  ],
+  "richResultsTest": {
+    "url": "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026",
+    "status": "completed",
+    "reportUrl": "https://search.google.com/test/rich-results/result?id=X0AhfA_yjujduPTYNkVX3A",
+    "scannedAt": "2026-10-30T23:16:49+03:00",
+    "validItems": 6,
+    "blockingErrors": 0,
+    "minorWarningsPresent": true,
+    "types": [
+      {
+        "type": "Articles",
+        "validItems": 1,
+        "minorWarningsPresent": true
+      },
+      {
+        "type": "Breadcrumbs",
+        "validItems": 2,
+        "minorWarningsPresent": false
+      },
+      {
+        "type": "LocalBusiness",
+        "validItems": 1,
+        "minorWarningsPresent": true
+      },
+      {
+        "type": "Organization",
+        "validItems": 2,
+        "minorWarningsPresent": true
+      }
+    ],
+    "userAgent": "Google Inspection Tool on smartphone",
+    "captchaSolved": false,
+    "limits": [
+      "Type summary was observed; optional-warning details were not extracted because the follow-up browser interaction timed out.",
+      "Eligibility does not guarantee showing rich results."
+    ]
+  },
+  "measurementStage": "after-technical-v1-before-performance-refinement",
+  "lcpDiscovery": {
+    "elementSelector": "div.min-h-screen > section.relative > div.absolute > img.w-full",
+    "imageUrl": "https://kuhnitver.ru/_next/image?url=%2Fimages%2Fhero-kitchen.jpg&w=750&q=75",
+    "imageAlt": "Современная кухня на заказ в интерьере — производство Kuhnitver в Твери",
+    "sourceDimensions": {
+      "width": 1920,
+      "height": 1080
+    },
+    "sizes": "100vw",
+    "checks": {
+      "notLazyLoaded": "passed",
+      "highFetchPriorityOnImagePreload": "failed",
+      "discoverableInInitialDocument": "passed"
+    },
+    "checksSource": "Visual green/red indicators in expanded official PSI LCP discovery panel"
+  },
+  "accessibilityDiagnostics": {
+    "prohibitedAria": {
+      "selector": "section#quiz > div.container-custom > div.max-w-3xl > div.flex",
+      "snippet": "<div class=\"flex items-center justify-center gap-2 mb-8\" aria-label=\"Шаг 1 из 4\">"
+    },
+    "colorOnlyLinks": {
+      "selector": "div.container-custom > div.max-w-4xl > p > a.text-primary",
+      "snippet": "<a class=\"text-primary hover:underline\">",
+      "paths": [
+        "/catalog",
+        "/catalog/loft",
+        "/catalog/skandinavskiy",
+        "/catalog/minimalizm",
+        "/price",
+        "/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+        "/dostavka",
+        "/contacts"
+      ]
+    },
+    "agenticTreeFailure": {
+      "audit": "Elements must only use permitted ARIA attributes",
+      "sameElementAsProhibitedAria": true
+    }
+  },
+  "finishedAtUtc": "2026-10-30T20:25:29.869144+00:00"
+}

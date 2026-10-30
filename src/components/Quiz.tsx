@@ -114,7 +114,7 @@ const Quiz = () => {
           </div>
 
           {/* Progress */}
-          <div className="flex items-center justify-center gap-2 mb-8" aria-label={`Шаг ${currentStep + 1} из 4`}>
+          <div role="group" className="flex items-center justify-center gap-2 mb-8" aria-label={`Шаг ${currentStep + 1} из 4`}>
             {[...steps, { id: 4 }].map((step, index) => (
               <div
                 key={step.id}
