@@ -1,0 +1,1145 @@
+{
+  "collected_at_utc": "2026-10-30T19:20:52.161731+00:00",
+  "timezone_for_daily_aggregation": "Europe/Moscow",
+  "window_start_utc": "2026-10-16T19:20:52.161731+00:00",
+  "window_end_utc": "2026-10-30T19:20:52.161731+00:00",
+  "first_request_in_window_utc": "2026-10-16T19:21:52+00:00",
+  "last_request_in_window_utc": "2026-10-30T19:20:45+00:00",
+  "production_commit": "2b9702f7b0e9decfda306f1b84f19ba5edd4194b",
+  "read_only": true,
+  "privacy": "No client IPs, raw logs, query strings, referrers or lead data exported; IP verification performed on server in memory.",
+  "log_files": [
+    {
+      "name": "access.log",
+      "compressed_bytes": 413703,
+      "sha256": "63afce9b1329e4d73ea90182473b0ab1fb2c0de56415e62f1b2f4e5cd887936f",
+      "requests_within_window": 1711
+    },
+    {
+      "name": "access.log.1",
+      "compressed_bytes": 710534,
+      "sha256": "d54f2498f65dc6b7edf6d80310cb60627efd18cecc5174d52fdcb1df09d329ec",
+      "requests_within_window": 2583
+    },
+    {
+      "name": "access.log.10.gz",
+      "compressed_bytes": 91915,
+      "sha256": "753c1e6863097011eb470d3100d498354776a1beb49a7e8e8326fb49a7b39a44",
+      "requests_within_window": 4717
+    },
+    {
+      "name": "access.log.11.gz",
+      "compressed_bytes": 66900,
+      "sha256": "2210f32e3e0a4eee282771735bfd536b83ae153c15ef9412b3c0a0c87b914a39",
+      "requests_within_window": 2392
+    },
+    {
+      "name": "access.log.12.gz",
+      "compressed_bytes": 79896,
+      "sha256": "1fa3bdf0bac6df65bf05d78ac8b2875079f91c39ada0449b8f813e9171a52e14",
+      "requests_within_window": 3777
+    },
+    {
+      "name": "access.log.13.gz",
+      "compressed_bytes": 50711,
+      "sha256": "ba38f742f7698b1125bd4743226506b5a90f6fcec90604389c8cb66e0e605baf",
+      "requests_within_window": 2076
+    },
+    {
+      "name": "access.log.14.gz",
+      "compressed_bytes": 77514,
+      "sha256": "93f2efed5441e9afaced8113a2b71b79a4980c209e65b3c2d9662aa76a812334",
+      "requests_within_window": 618
+    },
+    {
+      "name": "access.log.2.gz",
+      "compressed_bytes": 59063,
+      "sha256": "2f441d0e7890b475f80fe882e605fc10df38115ef8fa8e9e3e3e2a931f304ace",
+      "requests_within_window": 2557
+    },
+    {
+      "name": "access.log.3.gz",
+      "compressed_bytes": 43287,
+      "sha256": "d983951dec9c24f7e8d87f0817b828eecd6ccea683f14f3c6c60c55762e553a7",
+      "requests_within_window": 1857
+    },
+    {
+      "name": "access.log.4.gz",
+      "compressed_bytes": 62124,
+      "sha256": "529677d7e7133bedf35a6fa079b95a0e79328975850de9a5b6ffd984669f8e31",
+      "requests_within_window": 3279
+    },
+    {
+      "name": "access.log.5.gz",
+      "compressed_bytes": 60862,
+      "sha256": "a0e48057c61fd4c0c655ca0888395305a8b8035dfd91fa65a897ef667d01108c",
+      "requests_within_window": 3690
+    },
+    {
+      "name": "access.log.6.gz",
+      "compressed_bytes": 41111,
+      "sha256": "6abc21fdf4be511b9a60f7ae5721cbb456473484add8ff39250c889623c2925c",
+      "requests_within_window": 1727
+    },
+    {
+      "name": "access.log.7.gz",
+      "compressed_bytes": 48804,
+      "sha256": "058940db30ef60fcc57580a7b62f662d83ef5c0156847c13ebd8ceea97719ff1",
+      "requests_within_window": 1915
+    },
+    {
+      "name": "access.log.8.gz",
+      "compressed_bytes": 85794,
+      "sha256": "412c51f02bcac230df17d8610cd497c8259be266c7ece2d78e3d01bec4678057",
+      "requests_within_window": 3562
+    },
+    {
+      "name": "access.log.9.gz",
+      "compressed_bytes": 135697,
+      "sha256": "9013f5522f51d95e8fc782781c02a2a3211e50c6783406bbf07fcddc75921aa1",
+      "requests_within_window": 5008
+    }
+  ],
+  "unparsed_lines_all_scanned_files": 961,
+  "parsed_lines_outside_window": 5004,
+  "requests_14d": 41469,
+  "statuses_14d": {
+    "301": 9696,
+    "200": 21210,
+    "400": 1059,
+    "404": 7165,
+    "405": 71,
+    "308": 943,
+    "204": 580,
+    "201": 551,
+    "304": 156,
+    "499": 32,
+    "500": 6
+  },
+  "current_day_moscow": "2026-10-30",
+  "current_day_statuses": {
+    "301": 532,
+    "200": 855,
+    "400": 190,
+    "404": 267,
+    "405": 16,
+    "308": 16,
+    "204": 8,
+    "201": 8,
+    "304": 2
+  },
+  "daily_statuses_moscow": {
+    "2026-10-16": {
+      "200": 78,
+      "204": 1,
+      "201": 1,
+      "301": 60,
+      "404": 51
+    },
+    "2026-10-17": {
+      "301": 332,
+      "200": 986,
+      "404": 776,
+      "308": 61,
+      "400": 36,
+      "204": 27,
+      "201": 18,
+      "304": 1,
+      "499": 2,
+      "405": 1
+    },
+    "2026-10-18": {
+      "301": 524,
+      "200": 1771,
+      "400": 58,
+      "404": 1119,
+      "308": 81,
+      "204": 56,
+      "201": 44,
+      "499": 2,
+      "405": 1,
+      "500": 6,
+      "304": 2
+    },
+    "2026-10-19": {
+      "200": 1785,
+      "301": 331,
+      "308": 53,
+      "400": 53,
+      "204": 44,
+      "201": 44,
+      "404": 352,
+      "304": 4,
+      "499": 3,
+      "405": 2
+    },
+    "2026-10-20": {
+      "400": 40,
+      "301": 285,
+      "200": 1730,
+      "405": 4,
+      "404": 660,
+      "204": 61,
+      "201": 60,
+      "308": 60,
+      "304": 5,
+      "499": 5
+    },
+    "2026-10-21": {
+      "200": 3909,
+      "301": 1733,
+      "204": 177,
+      "201": 170,
+      "400": 57,
+      "404": 497,
+      "405": 3,
+      "308": 65,
+      "499": 12,
+      "304": 19
+    },
+    "2026-10-22": {
+      "200": 2287,
+      "301": 535,
+      "400": 61,
+      "404": 555,
+      "405": 2,
+      "308": 12,
+      "204": 120,
+      "201": 120,
+      "304": 6,
+      "499": 3
+    },
+    "2026-10-23": {
+      "200": 1168,
+      "301": 334,
+      "400": 57,
+      "404": 165,
+      "308": 39,
+      "204": 19,
+      "201": 19,
+      "499": 2,
+      "405": 2
+    },
+    "2026-10-24": {
+      "200": 797,
+      "301": 317,
+      "404": 425,
+      "400": 37,
+      "308": 13,
+      "405": 1,
+      "204": 15,
+      "201": 15,
+      "304": 3
+    },
+    "2026-10-25": {
+      "200": 1497,
+      "301": 713,
+      "400": 283,
+      "308": 54,
+      "404": 326,
+      "304": 30,
+      "204": 14,
+      "201": 14,
+      "405": 1,
+      "499": 1
+    },
+    "2026-10-26": {
+      "301": 1518,
+      "200": 1698,
+      "308": 135,
+      "400": 36,
+      "404": 636,
+      "405": 5,
+      "304": 13,
+      "204": 12,
+      "201": 12
+    },
+    "2026-10-27": {
+      "301": 432,
+      "200": 966,
+      "404": 430,
+      "400": 42,
+      "405": 3,
+      "304": 7,
+      "308": 109,
+      "204": 9,
+      "201": 9,
+      "499": 1
+    },
+    "2026-10-28": {
+      "301": 308,
+      "404": 701,
+      "400": 57,
+      "200": 679,
+      "304": 4,
+      "308": 88,
+      "405": 12,
+      "204": 8,
+      "201": 8,
+      "499": 1
+    },
+    "2026-10-29": {
+      "200": 1004,
+      "301": 1742,
+      "400": 52,
+      "404": 205,
+      "405": 18,
+      "308": 157,
+      "204": 9,
+      "201": 9,
+      "304": 60
+    },
+    "2026-10-30": {
+      "301": 532,
+      "200": 855,
+      "400": 190,
+      "404": 267,
+      "405": 16,
+      "308": 16,
+      "204": 8,
+      "201": 8,
+      "304": 2
+    }
+  },
+  "routes_14d": {
+    "/other": 29498,
+    "/": 4933,
+    "/_next/*": 2687,
+    "/favicon-assets/*": 712,
+    "/robots.txt": 506,
+    "/faq": 290,
+    "/about": 271,
+    "/api/*": 262,
+    "/catalog": 217,
+    "/contacts": 213,
+    "/portfolio": 124,
+    "/blog": 123,
+    "/sitemap.xml": 119,
+    "/b2b": 113,
+    "/price": 113,
+    "/catalog/loft": 96,
+    "/site.webmanifest": 82,
+    "/privacy": 74,
+    "/images/*": 70,
+    "/catalog/skandinavskiy": 63,
+    "/catalog/belaya": 56,
+    "/catalog/premium": 55,
+    "/catalog/klassika": 54,
+    "/dostavka": 52,
+    "/catalog/minimalizm": 52,
+    "/.well-known/*": 51,
+    "/catalog/uglovye": 50,
+    "/kuhni/rzheve": 42,
+    "/kuhni/konakovo": 42,
+    "/kuhni/torzhke": 41,
+    "/kuhni/bezhecke": 41,
+    "/kuhni/tveri": 39,
+    "/kuhni/nelidovo": 39,
+    "/kuhni/kimrah": 34,
+    "/kuhni/vyshnem-volochke": 34,
+    "/blog/materialy-dlya-kuhni-mdf-massiv-plastik": 32,
+    "/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni": 29,
+    "/blog/chernaya-kuhnya-v-interere": 24,
+    "/blog/zamer-kuhni-v-tveri-chto-podgotovit": 23,
+    "/blog/dizayn-kuhni-2026-idei-planirovki-i-foto": 21,
+    "/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri": 18,
+    "/blog/top-10-oshibok-pri-zakaze-kuhni": 16,
+    "/blog/uglovaya-vs-pryamaya-kuhnya": 16,
+    "/blog/skolko-stoit-kuhnya-na-zakaz-2026": 15,
+    "/llms.txt": 14,
+    "/uslugi.yml": 10,
+    "/blog.rss": 3
+  },
+  "error_routes_14d": [
+    {
+      "route": "/other",
+      "status": "404",
+      "count": 6585
+    },
+    {
+      "route": "/other",
+      "status": "400",
+      "count": 805
+    },
+    {
+      "route": "/_next/*",
+      "status": "404",
+      "count": 353
+    },
+    {
+      "route": "/",
+      "status": "400",
+      "count": 206
+    },
+    {
+      "route": "/api/*",
+      "status": "404",
+      "count": 129
+    },
+    {
+      "route": "/other",
+      "status": "405",
+      "count": 63
+    },
+    {
+      "route": "/",
+      "status": "404",
+      "count": 61
+    },
+    {
+      "route": "/other",
+      "status": "499",
+      "count": 32
+    },
+    {
+      "route": "/_next/*",
+      "status": "400",
+      "count": 24
+    },
+    {
+      "route": "/.well-known/*",
+      "status": "404",
+      "count": 19
+    },
+    {
+      "route": "/api/*",
+      "status": "400",
+      "count": 17
+    },
+    {
+      "route": "/llms.txt",
+      "status": "404",
+      "count": 11
+    },
+    {
+      "route": "/",
+      "status": "405",
+      "count": 6
+    },
+    {
+      "route": "/robots.txt",
+      "status": "400",
+      "count": 5
+    },
+    {
+      "route": "/other",
+      "status": "500",
+      "count": 4
+    },
+    {
+      "route": "/images/*",
+      "status": "404",
+      "count": 4
+    },
+    {
+      "route": "/favicon-assets/*",
+      "status": "404",
+      "count": 3
+    },
+    {
+      "route": "/favicon-assets/*",
+      "status": "400",
+      "count": 2
+    },
+    {
+      "route": "/",
+      "status": "500",
+      "count": 2
+    },
+    {
+      "route": "/_next/*",
+      "status": "405",
+      "count": 1
+    },
+    {
+      "route": "/api/*",
+      "status": "405",
+      "count": 1
+    }
+  ],
+  "crawlers": {
+    "Googlebot": {
+      "claimed_ua_requests": 313,
+      "claimed_unique_ips": 25,
+      "verified_unique_ips": 22,
+      "verified_requests": 297,
+      "unverified_requests": 16,
+      "ip_verification_results": {
+        "verified_official_ip_range": 22,
+        "dns_domain_mismatch": 2,
+        "dns_unresolved": 1
+      },
+      "claimed_statuses": {
+        "301": 55,
+        "200": 215,
+        "404": 39,
+        "500": 1,
+        "308": 3
+      },
+      "verified_statuses": {
+        "301": 55,
+        "200": 211,
+        "404": 28,
+        "308": 3
+      },
+      "claimed_403": 0,
+      "claimed_429": 0,
+      "claimed_5xx": 1,
+      "verified_403": 0,
+      "verified_429": 0,
+      "verified_5xx": 0,
+      "claimed_routes": {
+        "/robots.txt": 108,
+        "/_next/*": 82,
+        "/other": 53,
+        "/": 21,
+        "/privacy": 9,
+        "/favicon-assets/*": 7,
+        "/contacts": 5,
+        "/blog/chernaya-kuhnya-v-interere": 5,
+        "/blog": 5,
+        "/blog/dizayn-kuhni-2026-idei-planirovki-i-foto": 4,
+        "/blog/zamer-kuhni-v-tveri-chto-podgotovit": 3,
+        "/catalog/klassika": 2,
+        "/catalog/belaya": 2,
+        "/about": 2,
+        "/catalog/loft": 2,
+        "/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni": 1,
+        "/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri": 1,
+        "/blog/top-10-oshibok-pri-zakaze-kuhni": 1
+      },
+      "verified_routes": {
+        "/robots.txt": 108,
+        "/_next/*": 82,
+        "/other": 42,
+        "/": 17,
+        "/privacy": 9,
+        "/favicon-assets/*": 7,
+        "/contacts": 5,
+        "/blog/chernaya-kuhnya-v-interere": 5,
+        "/blog": 5,
+        "/blog/dizayn-kuhni-2026-idei-planirovki-i-foto": 4,
+        "/blog/zamer-kuhni-v-tveri-chto-podgotovit": 3,
+        "/catalog/klassika": 2,
+        "/catalog/belaya": 2,
+        "/about": 2,
+        "/catalog/loft": 2,
+        "/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri": 1,
+        "/blog/top-10-oshibok-pri-zakaze-kuhni": 1
+      },
+      "claimed_error_routes": [
+        {
+          "route": "/other",
+          "status": "404",
+          "count": 39
+        },
+        {
+          "route": "/",
+          "status": "500",
+          "count": 1
+        }
+      ]
+    },
+    "YandexBot": {
+      "claimed_ua_requests": 113,
+      "claimed_unique_ips": 86,
+      "verified_unique_ips": 84,
+      "verified_requests": 109,
+      "unverified_requests": 4,
+      "ip_verification_results": {
+        "verified_forward_confirmed_reverse_dns": 84,
+        "dns_domain_mismatch": 1,
+        "dns_unresolved": 1
+      },
+      "claimed_statuses": {
+        "200": 113
+      },
+      "verified_statuses": {
+        "200": 109
+      },
+      "claimed_403": 0,
+      "claimed_429": 0,
+      "claimed_5xx": 0,
+      "verified_403": 0,
+      "verified_429": 0,
+      "verified_5xx": 0,
+      "claimed_routes": {
+        "/robots.txt": 46,
+        "/": 6,
+        "/catalog/premium": 5,
+        "/_next/*": 4,
+        "/blog/dizayn-kuhni-2026-idei-planirovki-i-foto": 4,
+        "/contacts": 3,
+        "/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri": 3,
+        "/blog/zamer-kuhni-v-tveri-chto-podgotovit": 3,
+        "/about": 3,
+        "/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni": 2,
+        "/catalog/loft": 2,
+        "/catalog": 2,
+        "/blog/chernaya-kuhnya-v-interere": 2,
+        "/catalog/minimalizm": 2,
+        "/kuhni/bezhecke": 2,
+        "/blog/top-10-oshibok-pri-zakaze-kuhni": 2,
+        "/sitemap.xml": 2,
+        "/price": 2,
+        "/kuhni/torzhke": 2,
+        "/kuhni/nelidovo": 1,
+        "/blog/uglovaya-vs-pryamaya-kuhnya": 1,
+        "/kuhni/vyshnem-volochke": 1,
+        "/faq": 1,
+        "/catalog/skandinavskiy": 1,
+        "/catalog/klassika": 1,
+        "/blog/skolko-stoit-kuhnya-na-zakaz-2026": 1,
+        "/catalog/belaya": 1,
+        "/kuhni/rzheve": 1,
+        "/portfolio": 1,
+        "/kuhni/tveri": 1,
+        "/catalog/uglovye": 1,
+        "/kuhni/konakovo": 1,
+        "/dostavka": 1,
+        "/blog/materialy-dlya-kuhni-mdf-massiv-plastik": 1,
+        "/kuhni/kimrah": 1
+      },
+      "verified_routes": {
+        "/robots.txt": 46,
+        "/catalog/premium": 5,
+        "/_next/*": 4,
+        "/blog/dizayn-kuhni-2026-idei-planirovki-i-foto": 4,
+        "/contacts": 3,
+        "/": 3,
+        "/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri": 3,
+        "/blog/zamer-kuhni-v-tveri-chto-podgotovit": 3,
+        "/about": 3,
+        "/catalog/loft": 2,
+        "/catalog": 2,
+        "/blog/chernaya-kuhnya-v-interere": 2,
+        "/catalog/minimalizm": 2,
+        "/kuhni/bezhecke": 2,
+        "/blog/top-10-oshibok-pri-zakaze-kuhni": 2,
+        "/sitemap.xml": 2,
+        "/price": 2,
+        "/kuhni/torzhke": 2,
+        "/kuhni/nelidovo": 1,
+        "/blog/uglovaya-vs-pryamaya-kuhnya": 1,
+        "/kuhni/vyshnem-volochke": 1,
+        "/faq": 1,
+        "/catalog/skandinavskiy": 1,
+        "/catalog/klassika": 1,
+        "/blog/skolko-stoit-kuhnya-na-zakaz-2026": 1,
+        "/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni": 1,
+        "/catalog/belaya": 1,
+        "/kuhni/rzheve": 1,
+        "/portfolio": 1,
+        "/kuhni/tveri": 1,
+        "/catalog/uglovye": 1,
+        "/kuhni/konakovo": 1,
+        "/dostavka": 1,
+        "/blog/materialy-dlya-kuhni-mdf-massiv-plastik": 1,
+        "/kuhni/kimrah": 1
+      },
+      "claimed_error_routes": []
+    },
+    "YandexOther": {
+      "claimed_ua_requests": 104,
+      "claimed_unique_ips": 76,
+      "verified_unique_ips": 75,
+      "verified_requests": 100,
+      "unverified_requests": 4,
+      "ip_verification_results": {
+        "verified_forward_confirmed_reverse_dns": 75,
+        "dns_unresolved": 1
+      },
+      "claimed_statuses": {
+        "200": 104
+      },
+      "verified_statuses": {
+        "200": 100
+      },
+      "claimed_403": 0,
+      "claimed_429": 0,
+      "claimed_5xx": 0,
+      "verified_403": 0,
+      "verified_429": 0,
+      "verified_5xx": 0,
+      "claimed_routes": {
+        "/_next/*": 81,
+        "/favicon-assets/*": 11,
+        "/uslugi.yml": 7,
+        "/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni": 4,
+        "/": 1
+      },
+      "verified_routes": {
+        "/_next/*": 81,
+        "/favicon-assets/*": 11,
+        "/uslugi.yml": 7,
+        "/": 1
+      },
+      "claimed_error_routes": []
+    },
+    "bingbot": {
+      "claimed_ua_requests": 90,
+      "claimed_unique_ips": 47,
+      "verified_unique_ips": 45,
+      "verified_requests": 76,
+      "unverified_requests": 14,
+      "ip_verification_results": {
+        "verified_forward_confirmed_reverse_dns": 45,
+        "dns_domain_mismatch": 2
+      },
+      "claimed_statuses": {
+        "200": 71,
+        "308": 2,
+        "404": 11,
+        "301": 6
+      },
+      "verified_statuses": {
+        "200": 68,
+        "308": 2,
+        "301": 6
+      },
+      "claimed_403": 0,
+      "claimed_429": 0,
+      "claimed_5xx": 0,
+      "verified_403": 0,
+      "verified_429": 0,
+      "verified_5xx": 0,
+      "claimed_routes": {
+        "/_next/*": 25,
+        "/sitemap.xml": 21,
+        "/robots.txt": 14,
+        "/other": 12,
+        "/": 9,
+        "/catalog/klassika": 1,
+        "/catalog/skandinavskiy": 1,
+        "/catalog/minimalizm": 1,
+        "/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri": 1,
+        "/privacy": 1,
+        "/blog/skolko-stoit-kuhnya-na-zakaz-2026": 1,
+        "/dostavka": 1,
+        "/portfolio": 1,
+        "/blog/uglovaya-vs-pryamaya-kuhnya": 1
+      },
+      "verified_routes": {
+        "/_next/*": 25,
+        "/sitemap.xml": 21,
+        "/robots.txt": 14,
+        "/": 5,
+        "/other": 2,
+        "/catalog/klassika": 1,
+        "/catalog/skandinavskiy": 1,
+        "/catalog/minimalizm": 1,
+        "/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri": 1,
+        "/privacy": 1,
+        "/blog/skolko-stoit-kuhnya-na-zakaz-2026": 1,
+        "/dostavka": 1,
+        "/portfolio": 1,
+        "/blog/uglovaya-vs-pryamaya-kuhnya": 1
+      },
+      "claimed_error_routes": [
+        {
+          "route": "/other",
+          "status": "404",
+          "count": 10
+        },
+        {
+          "route": "/",
+          "status": "404",
+          "count": 1
+        }
+      ]
+    },
+    "OAI-SearchBot": {
+      "claimed_ua_requests": 61,
+      "claimed_unique_ips": 19,
+      "verified_unique_ips": 17,
+      "verified_requests": 50,
+      "unverified_requests": 11,
+      "ip_verification_results": {
+        "verified_official_ip_range": 17,
+        "not_in_current_official_ip_ranges": 2
+      },
+      "claimed_statuses": {
+        "200": 48,
+        "301": 5,
+        "404": 7,
+        "500": 1
+      },
+      "verified_statuses": {
+        "200": 45,
+        "301": 5
+      },
+      "claimed_403": 0,
+      "claimed_429": 0,
+      "claimed_5xx": 1,
+      "verified_403": 0,
+      "verified_429": 0,
+      "verified_5xx": 0,
+      "claimed_routes": {
+        "/robots.txt": 50,
+        "/other": 7,
+        "/": 3,
+        "/api/*": 1
+      },
+      "verified_routes": {
+        "/robots.txt": 50
+      },
+      "claimed_error_routes": [
+        {
+          "route": "/other",
+          "status": "404",
+          "count": 6
+        },
+        {
+          "route": "/api/*",
+          "status": "404",
+          "count": 1
+        },
+        {
+          "route": "/other",
+          "status": "500",
+          "count": 1
+        }
+      ]
+    },
+    "GPTBot": {
+      "claimed_ua_requests": 69,
+      "claimed_unique_ips": 7,
+      "verified_unique_ips": 5,
+      "verified_requests": 62,
+      "unverified_requests": 7,
+      "ip_verification_results": {
+        "verified_official_ip_range": 5,
+        "not_in_current_official_ip_ranges": 2
+      },
+      "claimed_statuses": {
+        "200": 61,
+        "301": 4,
+        "404": 4
+      },
+      "verified_statuses": {
+        "200": 58,
+        "301": 4
+      },
+      "claimed_403": 0,
+      "claimed_429": 0,
+      "claimed_5xx": 0,
+      "verified_403": 0,
+      "verified_429": 0,
+      "verified_5xx": 0,
+      "claimed_routes": {
+        "/_next/*": 36,
+        "/sitemap.xml": 14,
+        "/": 12,
+        "/other": 3,
+        "/favicon-assets/*": 2,
+        "/api/*": 1,
+        "/site.webmanifest": 1
+      },
+      "verified_routes": {
+        "/_next/*": 36,
+        "/sitemap.xml": 14,
+        "/": 9,
+        "/favicon-assets/*": 2,
+        "/site.webmanifest": 1
+      },
+      "claimed_error_routes": [
+        {
+          "route": "/other",
+          "status": "404",
+          "count": 3
+        },
+        {
+          "route": "/api/*",
+          "status": "404",
+          "count": 1
+        }
+      ]
+    },
+    "ChatGPT-User": {
+      "claimed_ua_requests": 19,
+      "claimed_unique_ips": 10,
+      "verified_unique_ips": 7,
+      "verified_requests": 7,
+      "unverified_requests": 12,
+      "ip_verification_results": {
+        "verified_official_ip_range": 7,
+        "not_in_current_official_ip_ranges": 3
+      },
+      "claimed_statuses": {
+        "200": 11,
+        "404": 7,
+        "500": 1
+      },
+      "verified_statuses": {
+        "200": 7
+      },
+      "claimed_403": 0,
+      "claimed_429": 0,
+      "claimed_5xx": 1,
+      "verified_403": 0,
+      "verified_429": 0,
+      "verified_5xx": 0,
+      "claimed_routes": {
+        "/": 10,
+        "/other": 7,
+        "/api/*": 1,
+        "/price": 1
+      },
+      "verified_routes": {
+        "/": 6,
+        "/price": 1
+      },
+      "claimed_error_routes": [
+        {
+          "route": "/other",
+          "status": "404",
+          "count": 6
+        },
+        {
+          "route": "/api/*",
+          "status": "404",
+          "count": 1
+        },
+        {
+          "route": "/other",
+          "status": "500",
+          "count": 1
+        }
+      ]
+    },
+    "PerplexityBot": {
+      "claimed_ua_requests": 10,
+      "claimed_unique_ips": 2,
+      "verified_unique_ips": 0,
+      "verified_requests": 0,
+      "unverified_requests": 10,
+      "ip_verification_results": {
+        "not_in_current_official_ip_ranges": 2
+      },
+      "claimed_statuses": {
+        "200": 3,
+        "404": 7
+      },
+      "verified_statuses": {},
+      "claimed_403": 0,
+      "claimed_429": 0,
+      "claimed_5xx": 0,
+      "verified_403": 0,
+      "verified_429": 0,
+      "verified_5xx": 0,
+      "claimed_routes": {
+        "/other": 7,
+        "/": 3
+      },
+      "verified_routes": {},
+      "claimed_error_routes": [
+        {
+          "route": "/other",
+          "status": "404",
+          "count": 7
+        }
+      ]
+    },
+    "Perplexity-User": {
+      "claimed_ua_requests": 9,
+      "claimed_unique_ips": 1,
+      "verified_unique_ips": 0,
+      "verified_requests": 0,
+      "unverified_requests": 9,
+      "ip_verification_results": {
+        "not_in_current_official_ip_ranges": 1
+      },
+      "claimed_statuses": {
+        "404": 9
+      },
+      "verified_statuses": {},
+      "claimed_403": 0,
+      "claimed_429": 0,
+      "claimed_5xx": 0,
+      "verified_403": 0,
+      "verified_429": 0,
+      "verified_5xx": 0,
+      "claimed_routes": {
+        "/other": 9
+      },
+      "verified_routes": {},
+      "claimed_error_routes": [
+        {
+          "route": "/other",
+          "status": "404",
+          "count": 9
+        }
+      ]
+    }
+  },
+  "nginx": {
+    "config_test_passed": true,
+    "target_site_config_sha256": "5b0196e6dab42757c298795d1ae562dacb7627f2328bf8804e0c93a64ec50df7",
+    "target_domain_present": true,
+    "configured_server_name_directives": 4,
+    "restriction_directive_counts": {
+      "deny": 0,
+      "allow": 0,
+      "limit_req": 0,
+      "limit_conn": 0,
+      "auth_basic": 0,
+      "auth_request": 0,
+      "modsecurity": 0,
+      "js_access": 0,
+      "access_by_lua_block": 0,
+      "access_by_lua_file": 0,
+      "real_ip_header": 0,
+      "set_real_ip_from": 0
+    },
+    "user_agent_references": 0,
+    "x_robots_tag_directives": [],
+    "proxy_to_local_next_port_3000": true,
+    "modsecurity_module_seen": false,
+    "cloudflare_module_or_real_ip_reference": false,
+    "log_attribution": "Global nginx access.log; combined format does not record Host, so arbitrary Host/scanner requests cannot all be attributed to kuhnitver.ru."
+  },
+  "tls": {
+    "verified_tls_connection": true,
+    "protocol": "TLSv1.3",
+    "not_before": "Sep 12 21:38:03 2026 GMT",
+    "not_after": "Dec 11 21:38:02 2026 GMT",
+    "subject_alt_names": [
+      "kuhnitver.ru",
+      "www.kuhnitver.ru"
+    ],
+    "issuer": {
+      "countryName": "US",
+      "organizationName": "Let's Encrypt",
+      "commonName": "YE2"
+    }
+  },
+  "error_logs": {
+    "timezone_assumption": "UTC, matching server default; plain nginx error timestamps have no timezone.",
+    "records_14d": 2,
+    "categories": {
+      "other": 2
+    }
+  },
+  "official_ip_range_sources": {
+    "Googlebot": {
+      "url": "https://developers.google.com/static/crawling/ipranges/common-crawlers.json",
+      "retrieved_at_utc": "2026-10-30T19:20:28.112755+00:00",
+      "retrieval": "ok",
+      "sha256": "9fed79f9f61f72acc6bc0fc689e686da4e1bca75b1629385859f0ce19f9ca5b9",
+      "prefix_count": 317,
+      "published_at": "2026-10-30T15:46:20.000000"
+    },
+    "OAI-SearchBot": {
+      "url": "https://openai.com/searchbot.json",
+      "retrieved_at_utc": "2026-10-30T19:20:28.114256+00:00",
+      "retrieval": "ok",
+      "sha256": "81806b1665e9bbbc5e0f307b847ad34f7027abc19e0d2d5d3eca1864bf361be6",
+      "prefix_count": 39,
+      "published_at": "2026-01-02T11:00:00.000000"
+    },
+    "GPTBot": {
+      "url": "https://openai.com/gptbot.json",
+      "retrieved_at_utc": "2026-10-30T19:20:28.114256+00:00",
+      "retrieval": "ok",
+      "sha256": "a24d1fa34f094d303400bdf13c45c5e9726e0b553780d16a52f9ba1b790acc72",
+      "prefix_count": 18,
+      "published_at": "2026-09-22T02:00:07.000000"
+    },
+    "ChatGPT-User": {
+      "url": "https://openai.com/chatgpt-user.json",
+      "retrieved_at_utc": "2026-10-30T19:22:32.432517+00:00",
+      "retrieval": "ok",
+      "sha256": "9d4d2d9db7a781488f3bbf7ed1327229a7e5a308918e63fd2ecbe2a4f6b90a45",
+      "prefix_count": 235,
+      "published_at": "2026-10-27T18:04:58.004307",
+      "retry_note": "Initial audit User-Agent returned 403; retry with a browser User-Agent returned the official JSON."
+    },
+    "PerplexityBot": {
+      "url": "https://www.perplexity.ai/perplexitybot.json",
+      "retrieved_at_utc": "2026-10-30T19:20:28.115005+00:00",
+      "retrieval": "ok",
+      "sha256": "063764a7bc6b262f019e7d8fb981be0f345f26bc549f08ce6a25292f981a84f2",
+      "prefix_count": 13,
+      "published_at": "2026-10-28T16:48:51.000000"
+    },
+    "Perplexity-User": {
+      "url": "https://www.perplexity.ai/perplexity-user.json",
+      "retrieved_at_utc": "2026-10-30T19:20:28.115755+00:00",
+      "retrieval": "ok",
+      "sha256": "cd0c4e9393b392e06a5f7d8c87c26099552fb646f51bfacdc6175e861ebefb33",
+      "prefix_count": 10,
+      "published_at": "2026-10-28T16:48:51.000000"
+    }
+  },
+  "verification_documentation": {
+    "Googlebot": "https://developers.google.com/crawling/docs/crawlers-fetchers/verify-google-requests",
+    "Yandex": "https://yandex.ru/support/webmaster/ru/robot-workings/check-yandex-robots",
+    "Bing": "https://www.bing.com/webmasters/help/how-to-verify-bingbot-3905dc26",
+    "OpenAI": "https://developers.openai.com/api/docs/bots",
+    "Perplexity": "https://docs.perplexity.ai/docs/resources/perplexity-crawlers"
+  },
+  "limits": [
+    "Claimed User-Agent traffic includes auditor probes; only IP/DNS-verified requests establish provider origin.",
+    "Verification uses current DNS and published ranges; historical provider assignments may change.",
+    "A crawler request does not prove indexing, citation, ranking or a human visit.",
+    "Global combined nginx logs lack the Host field; unknown routes/scanner traffic may have used other hostnames or the server IP.",
+    "Current access.log can grow during collection; its sha256 is a momentary provenance marker, not a frozen server backup.",
+    "Daily traffic includes bots/scanners/auditor requests and is not a unique-user or conversion measure."
+  ],
+  "public_response_headers": [
+    {
+      "url": "https://kuhnitver.ru/",
+      "status": 200,
+      "final_url": "https://kuhnitver.ru/",
+      "x_robots_tag": null,
+      "server": "nginx/1.24.0 (Ubuntu)",
+      "cf_ray_present": false,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://kuhnitver.ru/price",
+      "status": 200,
+      "final_url": "https://kuhnitver.ru/price",
+      "x_robots_tag": null,
+      "server": "nginx/1.24.0 (Ubuntu)",
+      "cf_ray_present": false,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://kuhnitver.ru/contacts",
+      "status": 200,
+      "final_url": "https://kuhnitver.ru/contacts",
+      "x_robots_tag": null,
+      "server": "nginx/1.24.0 (Ubuntu)",
+      "cf_ray_present": false,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://kuhnitver.ru/robots.txt",
+      "status": 200,
+      "final_url": "https://kuhnitver.ru/robots.txt",
+      "x_robots_tag": null,
+      "server": "nginx/1.24.0 (Ubuntu)",
+      "cf_ray_present": false,
+      "content_type": "text/plain"
+    },
+    {
+      "url": "https://kuhnitver.ru/sitemap.xml",
+      "status": 200,
+      "final_url": "https://kuhnitver.ru/sitemap.xml",
+      "x_robots_tag": null,
+      "server": "nginx/1.24.0 (Ubuntu)",
+      "cf_ray_present": false,
+      "content_type": "application/xml"
+    }
+  ],
+  "public_response_headers_checked_at_utc": "2026-10-30T19:21:36.886675+00:00",
+  "dns_topology": {
+    "public_ipv4_matches_configured_origin": true
+  },
+  "chatgpt_user_ip_range_retry": {
+    "status": 200,
+    "bytes": 8503,
+    "prefixes": 235
+  }
+}

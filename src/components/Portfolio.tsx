@@ -15,7 +15,7 @@ const Portfolio = () => {
     >
       <div className="container-custom">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-10 max-w-3xl mx-auto"
@@ -27,9 +27,9 @@ const Portfolio = () => {
             Стилевые решения и идеи
           </h2>
           <p className="text-lg text-muted-foreground">
-            Берём за основу понравившийся стиль и адаптируем под ваши размеры,
-            планировку и материалы. Любую кухню можно сделать вашей — от
-            индустриального лофта до светлого скандинавского минимализма.
+            На изображениях — дизайн-референсы популярных стилей. Берём за основу
+            понравившееся направление и обсуждаем планировку, материалы и
+            размеры для вашего помещения.
           </p>
         </motion.div>
 
@@ -37,7 +37,7 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <motion.figure
               key={project.id}
-              initial={{ opacity: 0, y: 30 }}
+              initial={false}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
@@ -59,7 +59,7 @@ const Portfolio = () => {
                 >
                   <Image
                     src={project.image}
-                    alt={`Кухня в стиле ${project.style} — пример дизайна от Kuhnitver`}
+                    alt={`Дизайн-референс кухни в стиле ${project.style}`}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
@@ -85,7 +85,7 @@ const Portfolio = () => {
             href="/portfolio"
             className="inline-flex items-center text-primary font-medium hover:underline"
           >
-            Смотреть все стилевые решения
+            Смотреть все идеи кухонь
             <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
           </Link>
         </div>

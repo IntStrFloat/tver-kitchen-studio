@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "counterId": 106971287,
+  "site": "https://kuhnitver.ru/",
+  "verifiedAtUtc": "2026-10-30 19:53:39 UTC",
+  "timezone": "Europe/Moscow",
+  "method": "Authenticated Yandex.Metrika browser UI; each dialog used exact event matching (Совпадает), and all six persisted rows were verified after reloading the goal list.",
+  "status": "configured-and-persisted",
+  "customGoalsBefore": 0,
+  "customGoalsAfter": 6,
+  "existingAutomaticGoalsPreserved": [
+    515198575,
+    515198576,
+    515198577,
+    515630406,
+    515638364,
+    559886925,
+    572209074
+  ],
+  "goals": [
+    {
+      "event": "callback_request",
+      "id": 676877355,
+      "name": "Успешная заявка: обратный звонок",
+      "condition": "equals"
+    },
+    {
+      "event": "quiz_lead",
+      "id": 676877665,
+      "name": "Успешная заявка: расчёт кухни",
+      "condition": "equals"
+    },
+    {
+      "event": "catalog_lead",
+      "id": 676877841,
+      "name": "Успешная заявка: каталог",
+      "condition": "equals"
+    },
+    {
+      "event": "b2b_lead",
+      "id": 676877844,
+      "name": "Успешная заявка: мебель для бизнеса",
+      "condition": "equals"
+    },
+    {
+      "event": "blog_lead",
+      "id": 676877896,
+      "name": "Успешная заявка: статья",
+      "condition": "equals"
+    },
+    {
+      "event": "call",
+      "id": 676877979,
+      "name": "Клик по телефону (не состоявшийся звонок)",
+      "condition": "equals"
+    }
+  ],
+  "limits": [
+    "No synthetic conversion events or real lead submissions were sent.",
+    "Goal configuration is proven; actual traffic and delivery attribution require subsequent real observations.",
+    "Telephone clicks are separate from completed calls.",
+    "Legacy automatic form goals were preserved but are not delivery acknowledgement evidence."
+  ],
+  "screenshot": {
+    "capturedVia": "CUA getScreenshot",
+    "tabId": "929038878",
+    "persistedLocalFile": false
+  }
+}

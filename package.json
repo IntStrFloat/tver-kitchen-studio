@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "NODE_OPTIONS='--max-old-space-size=512' next build",
+    "build": "next build",
     "build:local": "next build",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next typegen && tsc --noEmit --noUnusedLocals --noUnusedParameters",
+    "test": "node --test \"src/**/*.test.ts\" && node scripts/seo-audit.mjs --self-test && node scripts/ai-search-measure.mjs --self-test && node scripts/indexnow.mjs --self-test",
     "generate:og": "node scripts/generate-og.mjs",
     "generate:favicons": "node scripts/generate-favicons.mjs"
   },

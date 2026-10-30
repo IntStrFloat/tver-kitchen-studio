@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { MapPin, ArrowUpRight } from "lucide-react";
 import { cities } from "@/lib/data";
+import { SITE_CONFIG } from "@/lib/seo";
 
 const GeoLinks = () => {
   return (
@@ -14,7 +15,7 @@ const GeoLinks = () => {
     >
       <div className="container-custom">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
@@ -27,7 +28,8 @@ const GeoLinks = () => {
             Доставка кухонь по Тверской области
           </h2>
           <p className="text-lg text-muted-foreground">
-            Производство и шоурум — в Твери, на ул. Николая Корыткова, 3 ст1. Доставляем
+            Адрес производства и шоурума: {SITE_CONFIG.address.locality},{" "}
+            {SITE_CONFIG.address.street}. Доставляем
             и устанавливаем кухни по всей области: от Торжка и Конаково до
             Ржева, Бежецка и Нелидово.
           </p>
@@ -37,7 +39,7 @@ const GeoLinks = () => {
           {cities.map((city, index) => (
             <motion.div
               key={city.slug}
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
@@ -63,7 +65,7 @@ const GeoLinks = () => {
                   Кухни {city.nameIn}
                 </h3>
                 <p className="text-xs text-muted-foreground mb-2">
-                  Население {city.population} • {city.deliveryTime}
+                  {city.deliveryTime}
                 </p>
                 <p className="text-sm text-primary font-medium">
                   Доставка: {city.deliveryCost}
@@ -77,10 +79,10 @@ const GeoLinks = () => {
           Не нашли свой город? Мы работаем по всей Тверской области и соседним
           районам. Уточните условия доставки по телефону{" "}
           <a
-            href="tel:+4822477081"
+            href={`tel:${SITE_CONFIG.phoneClean}`}
             className="text-primary font-medium hover:underline"
           >
-            +48 22 477 08 1
+            {SITE_CONFIG.phone}
           </a>
           .
         </p>

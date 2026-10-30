@@ -1,73 +1,103 @@
-# Welcome to your Lovable project
+# Kuhnitver — кухни на заказ в Твери
 
-## Project info
+Исходники [kuhnitver.ru](https://kuhnitver.ru/): Next.js 16 App Router, React 18, TypeScript и Tailwind CSS. Основное содержимое формируется в серверном HTML. Текущий состав sitemap — **36 страниц**: 11 основных, 7 направлений кухонь, 8 городов и 10 статей. Реальные кейсы добавляются только после подтверждения материалов.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Локальная работа
 
-## How can I edit this code?
+Для разработки и тестов используется **Node.js 24** и npm. На действующем сервере установлен Node.js 20.20.2; production-сборка поддерживает его, но встроенные TypeScript-тесты запускайте локально на Node.js 24.
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```powershell
+npm ci --no-audit --no-fund
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Команды сборки переносимы между Windows и Linux; переменные окружения не зашиты в npm-скрипты.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```powershell
+npm run typecheck
+npm run lint
+npm test
+npm run build
+npm run start
+```
 
-**Use GitHub Codespaces**
+- `typecheck` проверяет TypeScript без генерации файлов. Проверка нужна отдельно: Next.js настроен пропускать типизацию во время сборки ради ограничения памяти сервера.
+- `lint` выполняет статическую проверку TypeScript с `noUnusedLocals` и `noUnusedParameters`. Это действующая замена удалённой команды `next lint`; ESLint и новые зависимости не добавлялись.
+- `test` запускает встроенные Node-тесты и самостоятельные проверки двух SEO/AI CLI. Количество и результат конкретного прогона фиксируются в отчёте внедрения.
+- `build:local` оставлен как совместимый синоним `build`.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Входы `tsconfig.json` охватывают приложение, библиотеки, хуки, тесты и транзитивно импортируемые компоненты. Неиспользуемые заготовки UI с необъявленными пакетами не являются входами проверки. Если такая заготовка становится частью приложения, её зависимости и типы нужно явно проверить, а не добавлять исключения для рабочего кода.
 
-## What technologies are used for this project?
+## Данные, содержимое и интеграции
 
-This project is built with:
+| Источник | Что редактировать |
+|---|---|
+| [`src/lib/seo.ts`](src/lib/seo.ts) | `SITE_CONFIG`: бренд, основной телефон, отдельный Max, адрес, часы; генераторы JSON-LD |
+| [`src/lib/data.ts`](src/lib/data.ts) | `COMMERCIAL_TERMS`, стили, города и доставка, FAQ, статьи и редакционные даты |
+| [`src/lib/portfolio.ts`](src/lib/portfolio.ts) | Модель выполненного проекта и проверка допуска к публикации |
+| [`src/lib/analytics.ts`](src/lib/analytics.ts) | События существующих Метрики и GA4; атрибуция без контактов клиента |
+| [`src/lib/sendLead.ts`](src/lib/sendLead.ts) | Отправка заявки из браузера в Web3Forms и проверка подтверждения приёмника |
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Подтверждённые владельцем 30.10.2026 контакты: основной телефон **+7 (4822) 47-70-81**, Max **+7 915 722 00 75**, адрес **Тверь, ул. Николая Корыткова, 3 ст1**. Основной телефон был исправлен владельцем после первоначального аудита; исторические отчёты сохраняют наблюдавшееся тогда значение.
 
-## How can I deploy this project?
+Кухни рассчитываются индивидуально: в каталогах нет скрытых цен за готовый гарнитур, искусственного `priceValidUntil` или обещания наличия `InStock`. Подтверждены замер 1 500 ₽ с зачётом при заказе, изготовление от 20 рабочих дней после договора и утверждения проекта, гарантия 1 год по договору, доставка по Твери и установка гарнитура в стоимости. Подробные включения и согласуемые работы описаны в `COMMERCIAL_TERMS`, тарифы области — в `cities`. Правьте источник, чтобы HTML, FAQ, разметка и фиды оставались согласованными.
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Изображения в «Идеях кухонь» и B2B-примерах — дизайн-референсы. Не выдавайте их за выполненные заказы. `/portfolio/[slug]` публикует только подтверждённые записи: нужны реальные фото с правом использования, сведения о проекте и проверяемые условия сметы.
 
-## Can I connect a custom domain to my Lovable project?
+Шрифт Inter v20 поставляется локально: два WOFF2-файла для латиницы и кириллицы, суммарно около 67 КБ, с лицензией [`public/fonts/OFL.txt`](public/fonts/OFL.txt). Сборка и отображение не требуют загрузки шрифта из Google Fonts.
 
-Yes, you can!
+### Формы и аналитика
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Формы отправляются напрямую из браузера в Web3Forms. Публичный ключ сервиса предназначен для клиентского кода; успешный статус появляется после положительного ответа приёмника. SMTP-настройки старого окружения не используются текущими формами. При проверках применяйте подменённый приёмник; тестовые заявки в рабочую почту не отправляйте.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+На сайте остаются существующие счётчики Метрики **106971287** и **110021238**, а также GA4 **G-Z45D1032QK**. Два счётчика Метрики измеряют пересекающийся трафик, их результаты не складываются. Факт отправки события кодом не подтверждает, что одноимённая цель уже создана в кабинете.
+
+| Событие | Смысл |
+|---|---|
+| `call` | Клик по `tel:`, не подтверждённый разговор |
+| `callback_request` | Приёмник подтвердил форму обратного звонка |
+| `quiz_lead` | Приёмник подтвердил заявку на предварительный расчёт |
+| `catalog_lead` | Приёмник подтвердил заявку из каталога |
+| `b2b_lead` | Приёмник подтвердил заявку для бизнеса |
+| `blog_lead` | Приёмник подтвердил заявку из статьи |
+
+Квалифицированные обращения и заказы требуют отдельного подтверждения владельца или CRM. Web Vitals и источники переходов учитываются существующей аналитикой; выводы о скорости и конверсиях делают по фактическим данным, а не по одному HTTP-времени.
+
+### Интерфейсы для поисковиков и агентов
+
+- `/sitemap.xml` — существующие канонические страницы с редакционными датами. Не обновляйте все даты при каждом развёртывании.
+- `/robots.txt` — единая общая группа, публичные страницы разрешены, служебные `/api/`, `/admin/`, `/private/` исключены.
+- `/blog.rss` — статьи и содержательные даты из общей модели.
+- `/uslugi.yml` — XML `services_feed`: 9 услуг, один исполнитель, договорная цена без фиктивного нуля. Регистрация в Яндексе выполняется в категории «Услуги»; работоспособный XML не доказывает принятие фида площадкой.
+- `/llms.txt` — автоматически сформированный навигационный индекс из тех же данных. Он не является обещанием рекомендаций поисковых AI-систем.
+- WebMCP — дополнительный эксперимент: при наличии `document.modelContext` в защищённом контексте регистрируются три инструмента чтения `get_business_info`, `get_service_area`, `get_kitchen_options`. Они не отправляют заявку. Обычный сайт работает без поддержки WebMCP.
+
+Удалённый MCP-сервер и отдельная модель онлайн-оценки стоимости не вводились.
+
+## Проверки сайта и измерение эффекта
+
+[Исходный аудит](docs/seo/2026-10-30-ai-search-audit-draft.md), [отчёт внедрения](docs/seo/2026-10-30-implementation.md), [руководство по кабинетам](docs/seo/yandex-webmaster-search-console.md) и [протокол измерений](docs/seo/measurement/README.md) описывают разные результаты. Итоговый статус публикации и внешних настроек записывается в отчёт внедрения.
+
+```powershell
+node scripts/seo-audit.mjs --base-url http://localhost:3000 --strict --output docs/seo/measurement/local-acceptance.json
+node scripts/seo-audit.mjs --base-url https://kuhnitver.ru --strict --output docs/seo/measurement/after.json
+node scripts/ai-search-measure.mjs --protocol
+node scripts/indexnow.mjs --self-test
+```
+
+HTTP-аудит проверяет страницы, canonical, заголовки, доступность, применимость JSON-LD, согласованность условий и фиды; формы не отправляет. [Исходный production-замер](docs/seo/measurement/2026-10-30-before.json) и [локальная приёмка](docs/seo/measurement/local-acceptance.json) сохраняются раздельно. Локальная проверка ожидает canonical на production-домене.
+
+IndexNow по умолчанию выполняет только preflight: проверяет опубликованный ключ, sitemap и canonical каждого URL. После успешной публикации можно выполнить одну явную отправку:
+
+```powershell
+node scripts/indexnow.mjs --dry-run --output docs/seo/measurement/indexnow-preflight.json
+node scripts/indexnow.mjs --submit --output docs/seo/measurement/indexnow-submit.json
+```
+
+Ответ 200/202 означает приём уведомления, а не индексирование или цитирование. Автоматического расписания отправок нет.
+
+Исходная доля AI-цитирования не измерена: незаполненные строки протокола имеют статус `pending`, а доля равна `null`. Нельзя заполнить исторический baseline ответами, полученными после релиза. Для последующих волн используйте одинаковые запросы, режимы, регион и независимые повторы; открытия переданного URL оценивайте отдельно от поиска исполнителя.
+
+## Production
+
+Сайт обслуживается существующими nginx и systemd на Ubuntu. Проект находится в `/var/www/tver-kitchen-studio`, сервис — `tver-kitchen-studio.service`. Пароли и окружение не коммитятся; `.claude-secrets` и `.env` игнорируются Git. Правила доступа и ограниченного по памяти развёртывания приведены в [`CLAUDE.md`](CLAUDE.md). Перед публикацией завершите локальные проверки, сохраните точную ревизию, проверьте состояние сервера и возможность отката. После публикации повторите HTTP-приёмку и сохраните результат с временем релиза.

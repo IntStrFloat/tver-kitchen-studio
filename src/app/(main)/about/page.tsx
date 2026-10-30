@@ -11,22 +11,23 @@ import {
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
+import { COMMERCIAL_TERMS } from "@/lib/data";
 
 export const metadata: Metadata = {
   title:
-    "О компании Kuhnitver — производство кухонь в Твери с 2014 года | Kuhnitver",
+    "О компании Kuhnitver — кухни по индивидуальным размерам в Твери | Kuhnitver",
   description:
-    "Kuhnitver — собственное производство кухонь на заказ в Твери с 2014 года. Более 500 реализованных проектов, 98% клиентов рекомендуют. Полный цикл: от замера и эскиза до доставки и установки. Европейская фурнитура Blum, Hettich. Гарантия 1 год по договору.",
+    "Kuhnitver — изготовление кухонь на заказ в Твери. Как согласуются замер, комплектация, смета, проект и сроки. Доставка, монтаж и гарантийные обращения. Адрес и контакты.",
   keywords:
-    "Kuhnitver, производитель кухонь Тверь, о компании, мебельная фабрика Тверь, , кухни собственное производство, кухни с гарантией Тверь",
+    "Kuhnitver, производитель кухонь Тверь, о компании, кухни по размерам, условия заказа кухни",
   alternates: {
     canonical: `${SITE_CONFIG.url}/about`,
   },
   openGraph: {
     title:
-      "О компании Kuhnitver — производство кухонь в Твери с 2014 года | Kuhnitver",
+      "О компании Kuhnitver — кухни по индивидуальным размерам в Твери | Kuhnitver",
     description:
-      "Kuhnitver — производство кухонь в Твери с 2014 года. 500+ проектов, 98% рекомендуют. Полный цикл: замер, эскиз, доставка, установка. Фурнитура Blum, Hettich. Гарантия 1 год.",
+      "Кухни на заказ в Твери: согласование проекта, комплектации, сметы и сроков. Условия замера, доставки, монтажа и обращения по гарантии.",
     url: `${SITE_CONFIG.url}/about`,
     siteName: "Kuhnitver",
     locale: "ru_RU",
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
         url: SITE_CONFIG.defaultOgImage,
         width: 1200,
         height: 630,
-        alt: "О компании Kuhnitver — производство кухонь в Твери с 2014 года",
+        alt: "О компании Kuhnitver — кухни на заказ в Твери",
       },
     ],
   },
@@ -44,27 +45,25 @@ export const metadata: Metadata = {
 
 const advantages = [
   {
-    title: "Собственное производство",
+    title: "Изготовление по размерам",
     description:
-      "Полный цикл производства в Твери — от раскроя до сборки. Контроль качества на каждом этапе.",
+      "Проект учитывает размеры помещения, размещение коммуникаций и выбранную технику.",
     Icon: Factory,
   },
   {
-    title: "10+ лет опыта",
-    description:
-      "Работаем с 2014 года. Более 500 кухонь установлено в Твери и Тверской области.",
+    title: "Согласованная смета",
+    description: COMMERCIAL_TERMS.pricingText,
     Icon: CalendarDays,
   },
   {
-    title: "Европейские материалы",
+    title: "Подбор комплектации",
     description:
-      "Фурнитура Blum и Hettich, сертифицированные МДФ, кварц и натуральный камень.",
+      "Материалы, покрытия, столешницу и модели фурнитуры согласуем по образцам и спецификации.",
     Icon: Layers,
   },
   {
-    title: "Гарантия 1 год",
-    description:
-      "На все изделия и выполненные работы. Гарантийный мастер выезжает бесплатно.",
+    title: "Гарантийные условия",
+    description: COMMERCIAL_TERMS.warrantyText,
     Icon: ShieldCheck,
   },
   {
@@ -74,9 +73,8 @@ const advantages = [
     Icon: PenTool,
   },
   {
-    title: "Готовность от 20 дней",
-    description:
-      "Срок изготовления — от 20 рабочих дней. Соблюдаем сроки по договору.",
+    title: "Согласованный график",
+    description: COMMERCIAL_TERMS.productionText,
     Icon: Timer,
   },
 ];
@@ -85,25 +83,23 @@ const processSteps = [
   {
     step: 1,
     title: "Замер",
-    description:
-      "Замер — 1 500 ₽ (при оформлении заказа вычитается из стоимости)",
+    description: COMMERCIAL_TERMS.measurementText,
   },
   {
     step: 2,
     title: "Договор и аванс",
     description:
-      "Заключаем договор, вносится аванс, предоставляется эскиз проекта на утверждение",
+      "Согласуем смету и договор, порядок оплаты и эскиз проекта. Изготовление начинается после утверждения проекта и комплектации.",
   },
   {
     step: 3,
     title: "Производство",
-    description:
-      "Изготавливаем кухню на собственном производстве в Твери от 20 рабочих дней",
+    description: COMMERCIAL_TERMS.productionText,
   },
   {
     step: 4,
     title: "Доставка и сборка",
-    description: "Доставляем и профессионально собираем кухню у вас дома",
+    description: `${COMMERCIAL_TERMS.deliveryText} ${COMMERCIAL_TERMS.installationText}`,
   },
 ];
 
@@ -126,7 +122,7 @@ export default function AboutPage() {
       <JsonLd
         data={generateWebPageSchema(
           "О компании Kuhnitver — производство кухонь в Твери",
-          "Собственное производство кухонь на заказ в Твери с 2014 года",
+          "Изготовление кухонь по размерам в Твери: проект, смета, сроки и условия заказа",
           `${SITE_CONFIG.url}/about`,
         )}
       />
@@ -140,13 +136,12 @@ export default function AboutPage() {
 
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Производим кухни <span className="text-primary">с 2014 года</span>
+            Производим кухни <span className="text-primary">по вашим размерам</span>
           </h1>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Kuhnitver — это собственное производство кухонной мебели в Твери. Мы
-            создаём кухни, которые объединяют семьи: функциональные, красивые и
-            доступные по цене. За 10 лет мы реализовали более 500 проектов по
-            Твери и Тверской области.
+            Kuhnitver изготавливает кухонную мебель по индивидуальным размерам
+            в Твери. Обсуждаем планировку, материалы и технику, согласуем проект,
+            состав сметы и порядок работ до изготовления.
           </p>
         </div>
 
@@ -186,23 +181,28 @@ export default function AboutPage() {
           </div>
         </div>
 
-        <div className="bg-secondary/30 rounded-3xl p-8 md:p-12 mb-16">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            {[
-              { value: "10+", label: "лет на рынке" },
-              { value: "500+", label: "проектов выполнено" },
-              { value: "98%", label: "клиентов рекомендуют" },
-              { value: "1 год", label: "гарантия" },
-            ].map((stat, i) => (
-              <div key={i}>
-                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-muted-foreground">{stat.label}</div>
-              </div>
-            ))}
+        <section className="bg-secondary/30 rounded-3xl p-8 md:p-12 mb-16">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h2 className="text-xl font-bold mb-3">Где обсудить проект</h2>
+              <address className="not-italic text-muted-foreground">
+                {SITE_CONFIG.name}, {SITE_CONFIG.address.locality},{" "}
+                {SITE_CONFIG.address.street}.<br />
+                {SITE_CONFIG.openingHours.label}.
+              </address>
+              <Link href="/contacts" className="inline-block text-primary hover:underline mt-3">
+                Контакты и маршрут
+              </Link>
+            </div>
+            <div>
+              <h2 className="text-xl font-bold mb-3">Обращение по гарантии</h2>
+              <p className="text-muted-foreground">{COMMERCIAL_TERMS.warrantyText}</p>
+              <a href={`mailto:${SITE_CONFIG.email}`} className="inline-block text-primary hover:underline mt-3">
+                {SITE_CONFIG.email}
+              </a>
+            </div>
           </div>
-        </div>
+        </section>
 
         <div className="text-center py-12 bg-primary/5 rounded-3xl mb-16">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
@@ -216,7 +216,7 @@ export default function AboutPage() {
               href="/#quiz"
               className="inline-flex items-center justify-center px-8 py-3 rounded-xl bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
             >
-              Рассчитать стоимость
+              Получить предварительный расчёт
             </Link>
             <a
               href={`tel:${SITE_CONFIG.phoneClean}`}

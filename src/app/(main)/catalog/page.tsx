@@ -3,13 +3,13 @@ import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
-import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
-import { kitchenStyles } from "@/lib/data";
+import { SITE_CONFIG, generateCollectionPageSchema } from "@/lib/seo";
+import { COMMERCIAL_TERMS, kitchenStyles } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Каталог кухонь на заказ в Твери — стили, фото, цены | Kuhnitver",
   description:
-    "Каталог кухонь на заказ в Твери от производителя: лофт, минимализм, скандинавский стиль, современная классика, премиум. Фото реальных проектов с ценами. Индивидуальный дизайн под ваши размеры. Фурнитура Blum и Hettich. Рассчитайте стоимость онлайн.",
+    "Каталог стилей кухонь на заказ в Твери: лофт, минимализм, скандинавский, премиум. Дизайн-референсы, материалы и особенности планировок. Индивидуальный расчёт по комплектации.",
   keywords:
     "каталог кухонь Тверь, кухни на заказ стили, кухни фото цены Тверь, кухонные гарнитуры каталог, кухня лофт Тверь, кухня минимализм, скандинавская кухня Тверь, кухня премиум класса",
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Каталог кухонь на заказ в Твери — стили, фото, цены | Kuhnitver",
     description:
-      "Каталог кухонь на заказ в Твери: лофт, минимализм, скандинавский, премиум. Фото реальных проектов с ценами. Индивидуальный дизайн под ваши размеры. Фурнитура Blum и Hettich.",
+      "Стили и дизайн-референсы кухонь: лофт, минимализм, скандинавский, премиум. Материалы и индивидуальный расчёт под ваши размеры.",
     url: `${SITE_CONFIG.url}/catalog`,
     siteName: "Kuhnitver",
     locale: "ru_RU",
@@ -35,33 +35,16 @@ export const metadata: Metadata = {
 };
 
 export default function CatalogPage() {
-  const aggregateOfferSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: "Кухни на заказ в Твери",
-    description:
-      "Кухни на заказ от производителя в Твери. Широкий выбор стилей и материалов.",
-    brand: { "@type": "Brand", name: SITE_CONFIG.name },
-    offers: {
-      "@type": "AggregateOffer",
-      lowPrice: "25000",
-      highPrice: "150000",
-      priceCurrency: "RUB",
-      offerCount: kitchenStyles.length,
-      availability: "https://schema.org/InStock",
-    },
-  };
-
   return (
     <div className="min-h-screen pt-24">
       <JsonLd
-        data={generateWebPageSchema(
+        data={generateCollectionPageSchema(
           "Каталог кухонь на заказ в Твери",
-          "Каталог кухонь на заказ: лофт, минимализм, скандинавский, премиум. Производство .",
+          "Стили и дизайн-референсы кухонь на заказ. Материалы и индивидуальная комплектация.",
           `${SITE_CONFIG.url}/catalog`,
+          kitchenStyles.map((style) => ({ name: style.heading ?? style.name, url: `${SITE_CONFIG.url}/catalog/${style.slug}` })),
         )}
       />
-      <JsonLd data={aggregateOfferSchema} />
 
       <div className="container-custom">
         <Breadcrumbs
@@ -79,6 +62,9 @@ export default function CatalogPage() {
             Выберите стиль кухни, который вам нравится. Мы адаптируем любой
             дизайн под ваши размеры и пожелания.
           </p>
+          <p className="text-sm text-muted-foreground max-w-2xl mx-auto mt-4">
+            На изображениях — дизайн-референсы. {COMMERCIAL_TERMS.pricingText}
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
@@ -91,7 +77,7 @@ export default function CatalogPage() {
               <div className="aspect-[4/3] overflow-hidden">
                 <Image
                   src={style.image}
-                  alt={`Кухня в стиле ${style.name} на заказ в Твери`}
+                  alt={`Дизайн-референс кухни в стиле ${style.name}`}
                   width={600}
                   height={450}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -137,7 +123,7 @@ export default function CatalogPage() {
             href="/#quiz"
             className="inline-flex items-center justify-center px-8 py-3 rounded-xl bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
           >
-            Рассчитать стоимость
+            Получить предварительный расчёт
           </Link>
         </div>
       </div>

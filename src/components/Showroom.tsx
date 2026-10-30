@@ -2,9 +2,10 @@
 
 import { motion } from "framer-motion";
 import { Navigation, Phone, Clock } from "lucide-react";
+import { SITE_CONFIG } from "@/lib/seo";
 
 const Showroom = () => {
-  const addressQuery = "Тверь, улица Николая Корыткова, 3 ст1";
+  const addressQuery = `${SITE_CONFIG.address.locality}, ${SITE_CONFIG.address.street}`;
   const mapSrc =
     "https://yandex.ru/map-widget/v1/?mode=search&text=" +
     encodeURIComponent(addressQuery) +
@@ -22,7 +23,7 @@ const Showroom = () => {
     >
       <div className="container-custom">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
@@ -44,7 +45,7 @@ const Showroom = () => {
 
         <div className="grid lg:grid-cols-3 gap-6">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
+            initial={false}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
@@ -55,10 +56,10 @@ const Showroom = () => {
                 Адрес
               </div>
               <p className="font-semibold text-lg leading-snug mb-1">
-                г. Тверь, ул. Николая Корыткова, 3 ст1
+                г. {SITE_CONFIG.address.locality}, {SITE_CONFIG.address.street}
               </p>
               <p className="text-sm text-muted-foreground">
-                Тверская область, 170000
+                {SITE_CONFIG.address.region}
               </p>
             </div>
 
@@ -72,9 +73,9 @@ const Showroom = () => {
                   <div className="text-xs uppercase tracking-wide text-muted-foreground mb-1">
                     Часы работы
                   </div>
-                  <p className="font-medium">Пн–Сб: 10:00–19:00</p>
+                  <p className="font-medium">{SITE_CONFIG.openingHours.label}</p>
                   <p className="text-xs text-muted-foreground">
-                    Воскресенье — выходной
+                    {SITE_CONFIG.openingHours.closedLabel}
                   </p>
                 </div>
               </div>
@@ -91,10 +92,10 @@ const Showroom = () => {
                     Запись на визит
                   </div>
                   <a
-                    href="tel:+4822477081"
+                    href={`tel:${SITE_CONFIG.phoneClean}`}
                     className="font-medium hover:text-primary transition-colors"
                   >
-                    +48 22 477 08 1
+                    {SITE_CONFIG.phone}
                   </a>
                   <p className="text-xs text-muted-foreground mt-1">
                     Лучше предупредить — подготовим образцы под ваш стиль
@@ -123,7 +124,7 @@ const Showroom = () => {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 20 }}
+            initial={false}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
@@ -137,7 +138,7 @@ const Showroom = () => {
               loading="lazy"
               allow="geolocation"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Шоурум Kuhnitver на ул. Николая Корыткова, 3 ст1 в Твери"
+              title={`Шоурум ${SITE_CONFIG.name}: ${addressQuery}`}
             />
           </motion.div>
         </div>

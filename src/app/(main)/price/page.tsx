@@ -3,195 +3,101 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
-import { priceData, kitchenStyles } from "@/lib/data";
+import { COMMERCIAL_TERMS, priceData } from "@/lib/data";
+
+const description = "Как рассчитывается стоимость кухни на заказ в Твери: комплектация, материалы, фурнитура и состав сметы. Индивидуальный расчёт по размерам помещения в Kuhnitver.";
 
 export const metadata: Metadata = {
-  title:
-    "Цены на кухни на заказ в Твери — прайс-лист от производителя | Kuhnitver",
-  description:
-    "Актуальные цены на кухни на заказ в Твери от производителя Kuhnitver. Прямая кухня от 25 000 ₽/м.п., угловая от 30 000 ₽/м.п. Подробная таблица цен по планировкам и материалам (МДФ, массив, акрил). Стоимость фиксируется в договоре. Онлайн-расчёт за 1 минуту.",
-  keywords:
-    "цены кухни Тверь, сколько стоит кухня на заказ, стоимость кухни Тверь, кухня цена за метр, прайс кухни Тверь, недорогие кухни Тверь, кухня в рассрочку Тверь",
-  alternates: {
-    canonical: `${SITE_CONFIG.url}/price`,
-  },
+  title: "Цены на кухни на заказ в Твери — состав сметы | Kuhnitver",
+  description,
+  alternates: { canonical: `${SITE_CONFIG.url}/price` },
   openGraph: {
-    title:
-      "Цены на кухни на заказ в Твери — прайс-лист от производителя | Kuhnitver",
-    description:
-      "Актуальные цены на кухни в Твери от производителя. Прямая от 25 000 ₽/м.п., угловая от 30 000 ₽/м.п. Подробная таблица цен по планировкам и материалам.",
+    title: "Цены на кухни на заказ в Твери — состав сметы | Kuhnitver",
+    description,
     url: `${SITE_CONFIG.url}/price`,
-    siteName: "Kuhnitver",
+    siteName: SITE_CONFIG.name,
     locale: "ru_RU",
     type: "website",
-    images: [
-      {
-        url: SITE_CONFIG.defaultOgImage,
-        width: 1200,
-        height: 630,
-        alt: "Цены на кухни на заказ в Твери — прайс-лист Kuhnitver",
-      },
-    ],
+    images: [{ url: SITE_CONFIG.defaultOgImage, width: 1200, height: 630, alt: "Как рассчитывается стоимость кухни Kuhnitver" }],
   },
 };
 
-export default function PricePage() {
-  const offersSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: "Кухни на заказ в Твери",
-    description:
-      "Кухни на заказ от производителя  (Kuhnitver). Индивидуальный расчёт.",
-    brand: { "@type": "Brand", name: SITE_CONFIG.name },
-    offers: kitchenStyles.map((style) => ({
-      "@type": "Offer",
-      name: `Кухня «${style.name}»`,
-      price: String(style.priceFrom),
-      priceCurrency: "RUB",
-      availability: "https://schema.org/InStock",
-      url: `${SITE_CONFIG.url}/catalog/${style.slug}`,
-      priceValidUntil: new Date(Date.now() + 90 * 24 * 60 * 60 * 1000)
-        .toISOString()
-        .split("T")[0],
-    })),
-  };
+const estimateItems = [
+  { item: "Размеры и планировка", details: "Длина каждого ряда, высота шкафов, углы, ниши и число модулей." },
+  { item: "Корпус и фасады", details: "Материал, покрытие, толщина, цвет и обработка торцов каждого элемента." },
+  { item: "Столешница и стеновая панель", details: "Материал, глубина, кромки, стыки, вырезы под мойку и технику." },
+  { item: "Фурнитура и наполнение", details: "Конкретные модели петель, направляющих, подъёмников и систем хранения." },
+  { item: "Техника, мойка и смеситель", details: "Кто приобретает оборудование, его размеры и требования к установке. Эти позиции перечисляют отдельно от мебели." },
+  { item: "Доставка и монтаж", details: "Адрес доставки, подъём, сборка, подключения и дополнительные работы с указанием стоимости и ответственности." },
+];
 
+export default function PricePage() {
   return (
     <div className="min-h-screen pt-24">
-      <JsonLd
-        data={generateWebPageSchema(
-          "Цены на кухни на заказ в Твери",
-          "Цены на кухни от производителя Kuhnitver. Индивидуальный расчёт.",
-          `${SITE_CONFIG.url}/price`,
-        )}
-      />
-      <JsonLd data={offersSchema} />
-
+      <JsonLd data={generateWebPageSchema("Цены на кухни на заказ в Твери", description, `${SITE_CONFIG.url}/price`)} />
       <div className="container-custom">
-        <Breadcrumbs
-          items={[{ name: "Цены", url: `${SITE_CONFIG.url}/price` }]}
-          className="mb-8"
-        />
-
+        <Breadcrumbs items={[{ name: "Цены", url: `${SITE_CONFIG.url}/price` }]} className="mb-8" />
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Цены на кухни на заказ в Твери
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Прозрачные цены от производителя Kuhnitver. Стоимость фиксируется в
-            договоре.
-          </p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Цены на кухни на заказ в Твери</h1>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{COMMERCIAL_TERMS.pricingText}</p>
+          <p className="text-sm text-muted-foreground mt-4">Сведения обновлены: <time dateTime={COMMERCIAL_TERMS.updatedAt}>{new Date(COMMERCIAL_TERMS.updatedAt).toLocaleDateString("ru-RU", { timeZone: "UTC" })}</time>.</p>
         </div>
 
         <div className="space-y-8 mb-16">
-          {priceData.map((category, catIndex) => (
-            <div key={catIndex} className="premium-card overflow-hidden">
-              <div className="bg-primary/5 px-6 py-4">
-                <h2 className="text-xl font-semibold">{category.category}</h2>
+          {priceData.map((category) => (
+            <section key={category.category} className="premium-card overflow-hidden">
+              <div className="overflow-x-auto">
+                <table className="w-full text-left">
+                  <caption className="bg-primary/5 px-6 py-4 text-left text-xl font-semibold">{category.category}</caption>
+                  <thead>
+                    <tr className="border-b border-border">
+                      <th scope="col" className="px-6 py-3 font-medium">Комплектация или услуга</th>
+                      <th scope="col" className="px-6 py-3 font-medium">Условия расчёта</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-border">
+                    {category.items.map((item) => (
+                      <tr key={item.name}>
+                        <th scope="row" className="px-6 py-4 font-medium">{item.name}</th>
+                        <td className="px-6 py-4 text-primary font-semibold">{item.price} {item.unit}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
-              <div className="divide-y divide-border">
-                {category.items.map((item, itemIndex) => (
-                  <div
-                    key={itemIndex}
-                    className="flex items-center justify-between px-6 py-4"
-                  >
-                    <span className="font-medium">{item.name}</span>
-                    <span className="text-primary font-semibold">
-                      {item.price} {item.unit}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
+            </section>
           ))}
         </div>
 
-        <div className="bg-secondary/30 rounded-3xl p-8 md:p-12 mb-16">
-          <h2 className="text-2xl font-bold mb-6 text-center">
-            Примеры расчётов
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Прямая кухня 2.5 м",
-                style: "Скандинавский",
-                price: "62 500 — 80 000 ₽",
-                includes: [
-                  "Крашеный МДФ",
-                  "Искусственный камень",
-                  "Фурнитура Hettich",
-                ],
-              },
-              {
-                title: "Угловая кухня 3 м",
-                style: "Лофт",
-                price: "95 000 — 130 000 ₽",
-                includes: [
-                  "МДФ Soft-touch",
-                  "Столешница из дуба",
-                  "Фурнитура Blum",
-                ],
-              },
-              {
-                title: "П-образная кухня 4 м",
-                style: "Премиум",
-                price: "180 000 — 250 000 ₽",
-                includes: [
-                  "Итальянские фасады",
-                  "Натуральный мрамор",
-                  "Фурнитура Blum",
-                ],
-              },
-            ].map((example, i) => (
-              <div key={i} className="premium-card p-6">
-                <h3 className="font-semibold mb-1">{example.title}</h3>
-                <p className="text-sm text-muted-foreground mb-3">
-                  Стиль: {example.style}
-                </p>
-                <div className="text-2xl font-bold text-primary mb-4">
-                  {example.price}
-                </div>
-                <ul className="space-y-2">
-                  {example.includes.map((item, j) => (
-                    <li
-                      key={j}
-                      className="flex items-center gap-2 text-sm text-muted-foreground"
-                    >
-                      <svg
-                        className="w-4 h-4 text-primary flex-shrink-0"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+        <section className="bg-secondary/30 rounded-3xl p-6 md:p-12 mb-16">
+          <h2 className="text-2xl font-bold mb-4">Что указывать в полной смете</h2>
+          <p className="text-muted-foreground mb-6">Сравнивайте предложения на одинаковых размерах и одинаковой комплектации. Для каждой позиции важно видеть количество, материал, работы и итоговую сумму.</p>
+          <div className="overflow-x-auto">
+            <table className="w-full text-left">
+              <caption className="sr-only">Состав индивидуального расчёта кухни</caption>
+              <thead><tr className="border-b border-border"><th scope="col" className="py-3 pr-6">Раздел сметы</th><th scope="col" className="py-3">Что согласовать</th></tr></thead>
+              <tbody className="divide-y divide-border">
+                {estimateItems.map((row) => <tr key={row.item}><th scope="row" className="py-4 pr-6 font-medium align-top">{row.item}</th><td className="py-4 text-muted-foreground">{row.details}</td></tr>)}
+              </tbody>
+            </table>
           </div>
-        </div>
+          <p className="text-muted-foreground mt-6">Замер: {COMMERCIAL_TERMS.measurementText}</p>
+          <p className="text-muted-foreground mt-3">Доставка: {COMMERCIAL_TERMS.deliveryText}</p>
+          <p className="text-muted-foreground mt-3">Монтаж: {COMMERCIAL_TERMS.installationText}</p>
+          <p className="text-muted-foreground mt-3">Позиции, которые не входят в расчёт, и дополнительные работы перечисляют в смете отдельно. Состав и стоимость проверяйте до оформления заказа.</p>
+        </section>
 
-        <div className="text-center py-12 bg-primary/5 rounded-3xl mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Рассчитайте стоимость вашей кухни
-          </h2>
-          <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            Ответьте на 4 вопроса и получите предварительный расчёт стоимости
-          </p>
-          <Link
-            href="/#quiz"
-            className="inline-flex items-center justify-center px-8 py-3 rounded-xl bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
-          >
-            Рассчитать стоимость за 1 минуту
-          </Link>
+        <section className="mb-16 max-w-3xl">
+          <h2 className="text-2xl font-bold mb-4">Погонный метр и стоимость всей кухни</h2>
+          <p className="text-muted-foreground mb-4">Погонный метр описывает длину ряда мебели. Для цены за метр нужна определённая базовая комплектация: высота и глубина шкафов, фасады, столешница и фурнитура. Угловые модули, ящики и встроенная техника меняют состав расчёта.</p>
+          <p className="text-muted-foreground mb-4">На сайте кухни рассчитываются индивидуально. Итоговую сумму получают по спецификации конкретного проекта; умножение условной цены за метр на длину стены не заменяет эту смету.</p>
+          <Link href="/blog/skolko-stoit-kuhnya-na-zakaz-2026" className="text-primary hover:underline">Подробнее о том, как сравнить расчёты кухонь</Link>
+        </section>
+
+        <div className="text-center py-12 px-6 bg-primary/5 rounded-3xl mb-16">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">Получите предварительный расчёт</h2>
+          <p className="text-muted-foreground mb-6 max-w-xl mx-auto">Укажите планировку и пожелания. Дизайнер свяжется с вами, чтобы уточнить размеры и комплектацию для расчёта.</p>
+          <Link href="/#quiz" className="inline-flex items-center justify-center px-8 py-3 rounded-xl bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity">Получить предварительный расчёт</Link>
         </div>
       </div>
     </div>

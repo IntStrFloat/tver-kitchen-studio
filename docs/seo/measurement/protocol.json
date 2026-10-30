@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "id": "kuhnitver-ai-search-2026-10-30",
+  "domain": "kuhnitver.ru",
+  "timezone": "Europe/Moscow",
+  "region": "Тверь, Россия",
+  "language": "ru",
+  "independentRepeats": 3,
+  "observationWindowWeeks": [
+    6,
+    8
+  ],
+  "products": [
+    {
+      "id": "yandex-alice",
+      "name": "Алиса AI в Поиске Яндекса",
+      "mode": "Ответ с веб-поиском"
+    },
+    {
+      "id": "chatgpt-search",
+      "name": "ChatGPT Search",
+      "mode": "Поиск в интернете"
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini Apps",
+      "mode": "Ответ с веб-поиском"
+    },
+    {
+      "id": "gigachat",
+      "name": "ГигаЧат",
+      "mode": "Интернет-поиск"
+    },
+    {
+      "id": "bing-copilot",
+      "name": "Bing / Copilot",
+      "mode": "Ответ с веб-поиском"
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "mode": "Ответ с веб-поиском"
+    }
+  ],
+  "groups": {
+    "supplier": {
+      "label": "Выбор исполнителя",
+      "scenario": "discovery",
+      "branded": false
+    },
+    "price": {
+      "label": "Цена",
+      "scenario": "discovery",
+      "branded": false
+    },
+    "conditions": {
+      "label": "Условия",
+      "scenario": "discovery",
+      "branded": false
+    },
+    "materials": {
+      "label": "Материалы",
+      "scenario": "discovery",
+      "branded": false
+    },
+    "brand": {
+      "label": "Проверка бренда",
+      "scenario": "brand",
+      "branded": true
+    },
+    "url": {
+      "label": "Чтение открытой страницы",
+      "scenario": "url",
+      "branded": true
+    },
+    "form": {
+      "label": "Подготовка заявки без отправки",
+      "scenario": "agent",
+      "branded": true
+    }
+  },
+  "queries": [
+    {
+      "id": "supplier-1",
+      "group": "supplier",
+      "prompt": "Где заказать кухню по размерам в Твери?"
+    },
+    {
+      "id": "supplier-2",
+      "group": "supplier",
+      "prompt": "Производители кухонь в Твери с собственным производством"
+    },
+    {
+      "id": "supplier-3",
+      "group": "supplier",
+      "prompt": "Кухня под ключ в Твери: кого сравнить?"
+    },
+    {
+      "id": "price-1",
+      "group": "price",
+      "prompt": "Сколько стоит угловая кухня 3 метра в Твери?"
+    },
+    {
+      "id": "price-2",
+      "group": "price",
+      "prompt": "Что входит в стоимость кухни на заказ?"
+    },
+    {
+      "id": "price-3",
+      "group": "price",
+      "prompt": "Чем цена за погонный метр отличается от полной сметы?"
+    },
+    {
+      "id": "conditions-1",
+      "group": "conditions",
+      "prompt": "Сколько стоит замер кухни в Твери?"
+    },
+    {
+      "id": "conditions-2",
+      "group": "conditions",
+      "prompt": "Срок изготовления кухни на заказ в Твери"
+    },
+    {
+      "id": "conditions-3",
+      "group": "conditions",
+      "prompt": "Кто доставляет кухни из Твери в Конаково?"
+    },
+    {
+      "id": "conditions-4",
+      "group": "conditions",
+      "prompt": "Сколько стоит доставка кухни в Ржев?"
+    },
+    {
+      "id": "materials-1",
+      "group": "materials",
+      "prompt": "МДФ эмаль или пластик для кухни: что выбрать?"
+    },
+    {
+      "id": "materials-2",
+      "group": "materials",
+      "prompt": "Blum или Hettich для кухни: в чём различия?"
+    },
+    {
+      "id": "brand-1",
+      "group": "brand",
+      "prompt": "Где находится Kuhnitver и как связаться?"
+    },
+    {
+      "id": "brand-2",
+      "group": "brand",
+      "prompt": "Kuhnitver и Мебельщик в Твери — одна компания?"
+    },
+    {
+      "id": "url-1",
+      "group": "url",
+      "prompt": "По этой странице объясни цену замера и условие зачёта",
+      "urls": [
+        "https://kuhnitver.ru/contacts"
+      ]
+    },
+    {
+      "id": "url-2",
+      "group": "url",
+      "prompt": "Сопоставь стоимость доставки в Конаково на этих двух страницах",
+      "urls": [
+        "https://kuhnitver.ru/dostavka",
+        "https://kuhnitver.ru/kuhni/konakovo"
+      ]
+    },
+    {
+      "id": "form-1",
+      "group": "form",
+      "prompt": "Найди способ получить расчёт и подготовь заявку, пока не отправляй",
+      "urls": [
+        "https://kuhnitver.ru/"
+      ]
+    }
+  ],
+  "rules": [
+    "Перед каждым повтором создайте новый независимый диалог без истории, памяти и предварительной подсказки бренда.",
+    "Для discovery передавайте только prompt: не добавляйте kuhnitver.ru, бренд или ссылки. Для url/agent передавайте перечисленные urls.",
+    "Записывайте реальную дату, регион, язык, продукт, режим/модель, наличие веб-поиска, полный ответ и все показанные источники.",
+    "Не считайте поиск по открытому URL доказательством обнаружения исполнителя в небрандовом поиске.",
+    "Ссылка засчитывается только при точном домене kuhnitver.ru/www.kuhnitver.ru и ручной проверке доступности нужного источника (verified=true).",
+    "Упоминание бренда, проверенная ссылка, точность фактов, клики и состоявшиеся обращения — разные показатели.",
+    "Неотвеченный коммерческий вопрос отмечайте no_answer; неизвестный бизнес-факт — unverified, а не correct или incorrect.",
+    "Не отправляйте реальные заявки. Для agent фиксируйте подготовку черновика и отправку раздельно; ожидается submitted=false.",
+    "Unavailable/pending наблюдения исключаются из знаменателя выполненных запросов. Нулевой знаменатель даёт null, а не нулевую долю.",
+    "Сравнивайте совпадающие продукт, режим/модель, webSearch, регион, язык, сценарий, queryId и repeat; непарные строки исключайте из before/after.",
+    "Фиксируйте изменения модели/режима/региона и релизы сайта. Маленькая ручная выборка не доказывает причинный эффект изменений."
+  ],
+  "externalReports": [
+    {
+      "source": "Яндекс Вебмастер",
+      "report": "Видимость сайта в Алисе AI",
+      "metrics": [
+        "упоминания",
+        "запросы",
+        "страницы"
+      ],
+      "limitation": "Выборка кабинета не представляет весь спрос"
+    },
+    {
+      "source": "Google Search Console",
+      "report": "Search и доступный Generative AI performance",
+      "metrics": [
+        "показы",
+        "страницы",
+        "страны",
+        "устройства"
+      ],
+      "limitation": "Не складывать AI-показы с Web; отсутствие отчёта не равно нулю"
+    },
+    {
+      "source": "Bing Webmaster Tools",
+      "report": "AI Performance",
+      "metrics": [
+        "цитирования",
+        "цитируемые URL",
+        "grounding queries"
+      ],
+      "limitation": "Цитирование не равно визиту"
+    },
+    {
+      "source": "Яндекс Метрика",
+      "report": "Источник и успешные заявки",
+      "metrics": [
+        "визиты",
+        "успешные заявки",
+        "посадочные"
+      ],
+      "primaryCounter": 106971287,
+      "parallelCounter": 110021238,
+      "limitation": "Параллельные счётчики не складывать; tel-клик не состоявшийся звонок"
+    },
+    {
+      "source": "GA4",
+      "report": "Traffic acquisition / lead events",
+      "metrics": [
+        "сессии",
+        "события",
+        "успешные заявки"
+      ],
+      "limitation": "Referrer может теряться; обычный поиск неотделим от части AI-переходов"
+    },
+    {
+      "source": "nginx",
+      "report": "Подтверждённые роботы и ошибки",
+      "metrics": [
+        "проверенный бот",
+        "URL",
+        "статус",
+        "ошибки"
+      ],
+      "limitation": "User-Agent сам по себе не подтверждает робота; посещение не означает цитирование"
+    }
+  ]
+}

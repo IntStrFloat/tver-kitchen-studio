@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Clock, Mail } from "lucide-react";
+import { SITE_CONFIG } from "@/lib/seo";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -18,7 +19,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="lg:col-span-1"
@@ -30,7 +31,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://vk.com/Kuhnitver"
+                href={SITE_CONFIG.social.vk}
                 className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
                 aria-label="Kuhnitver ВКонтакте"
                 target="_blank"
@@ -50,7 +51,7 @@ const Footer = () => {
 
           {/* Contact */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
@@ -64,7 +65,7 @@ const Footer = () => {
                     aria-hidden="true"
                   />
                   <span className="text-background/70">
-                    г. Тверь, ул. Николая Корыткова, 3 ст1
+                    г. {SITE_CONFIG.address.locality}, {SITE_CONFIG.address.street}
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -74,16 +75,16 @@ const Footer = () => {
                   />
                   <div>
                     <a
-                      href="tel:+4822477081"
+                      href={`tel:${SITE_CONFIG.phoneClean}`}
                       className="text-background/70 hover:text-background transition-colors block"
                     >
-                      +48 22 477 08 1
+                      {SITE_CONFIG.phone}
                     </a>
                     <a
-                      href="tel:+79157220075"
+                      href={`tel:${SITE_CONFIG.maxPhoneClean}`}
                       className="text-background/50 hover:text-background text-sm transition-colors block mt-1"
                     >
-                      +7 915 722 00 75 · Max
+                      {SITE_CONFIG.maxPhone.replace(/-/g, " ")} · Max
                     </a>
                   </div>
                 </li>
@@ -93,10 +94,10 @@ const Footer = () => {
                     aria-hidden="true"
                   />
                   <a
-                    href="mailto:m-btd@mail.ru"
+                    href={`mailto:${SITE_CONFIG.email}`}
                     className="text-background/70 hover:text-background transition-colors"
                   >
-                    m-btd@mail.ru
+                    {SITE_CONFIG.email}
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
@@ -105,7 +106,7 @@ const Footer = () => {
                     aria-hidden="true"
                   />
                   <span className="text-background/70">
-                    Пн-Сб: 10:00 - 19:00
+                    {SITE_CONFIG.openingHours.label}
                   </span>
                 </li>
               </ul>
@@ -114,7 +115,7 @@ const Footer = () => {
 
           {/* Navigation */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
@@ -124,7 +125,7 @@ const Footer = () => {
               <ul className="space-y-3">
                 {[
                   { label: "Каталог", href: "/catalog" },
-                  { label: "Наши работы", href: "/portfolio" },
+                  { label: "Идеи кухонь", href: "/portfolio" },
                   { label: "Цены", href: "/price" },
                   { label: "Для бизнеса", href: "/b2b" },
                   { label: "О компании", href: "/about" },
@@ -147,7 +148,7 @@ const Footer = () => {
 
           {/* Service Areas */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={false}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}

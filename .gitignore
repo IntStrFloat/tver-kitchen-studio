@@ -24,6 +24,7 @@ dist-ssr
 *.sw?
 .next
 .next/*
+*.tsbuildinfo
 .omx
 .next
 # Secrets — никогда не коммитим

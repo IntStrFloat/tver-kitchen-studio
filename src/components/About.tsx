@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { SITE_CONFIG } from "@/lib/seo";
+import { COMMERCIAL_TERMS } from "@/lib/data";
 import {
   Check,
   Ruler,
@@ -16,8 +18,8 @@ import {
 const benefits = [
   {
     icon: Ruler,
-    title: "Замер — 1 500 ₽",
-    description: "Приедем в удобное время (вычитается при заказе)",
+    title: "Замер по записи",
+    description: COMMERCIAL_TERMS.measurementText,
   },
   {
     icon: Palette,
@@ -27,21 +29,21 @@ const benefits = [
   {
     icon: Truck,
     title: "Доставка и установка",
-    description: "Бережная доставка и профессиональный монтаж",
+    description: COMMERCIAL_TERMS.deliveryText,
   },
   {
     icon: Shield,
-    title: "Гарантия 1 год",
-    description: "На все изделия и выполненные работы",
+    title: "Гарантийные условия",
+    description: COMMERCIAL_TERMS.warrantyText,
   },
 ];
 
 const features = [
   "Собственное производство в Твери",
   "Европейская фурнитура Blum, Hettich",
-  "Экологичные материалы",
+  "Подбор материалов по образцам",
   "Индивидуальный дизайн под ваши размеры",
-  "Сроки от 20 дней",
+  "Сроки и комплектация в договоре",
   "3D-проект после заключения договора",
 ];
 
@@ -52,7 +54,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={false}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
@@ -61,19 +63,19 @@ const About = () => {
               О компании
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Производим кухни <span className="text-primary">с 2014 года</span>
+              Производим кухни <span className="text-primary">по вашим размерам</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
               Kuhnitver — это собственное производство кухонной мебели в Твери.
-              Мы создаём кухни, которые объединяют семьи: функциональные,
-              красивые и доступные по цене.
+              Обсуждаем планировку, материалы и размещение техники, затем
+              согласуем проект, комплектацию и смету.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-8">
               {features.map((feature, index) => (
                 <motion.div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
+                  initial={false}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
@@ -90,7 +92,7 @@ const About = () => {
 
           {/* Benefits Cards */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={false}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
@@ -99,7 +101,7 @@ const About = () => {
             {benefits.map((benefit, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
+                initial={false}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
@@ -119,7 +121,7 @@ const About = () => {
 
         {/* NAP block — Name / Address / Phone, with schema.org microdata */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
@@ -127,13 +129,13 @@ const About = () => {
           itemScope
           itemType="https://schema.org/LocalBusiness"
         >
-          <meta itemProp="name" content="Kuhnitver" />
+          <meta itemProp="name" content={SITE_CONFIG.name} />
           {/* URL — через <link href>, а не <meta content>: ссылка в content
               мета-тега невалидна (ошибка валидатора Яндекса). */}
-          <link itemProp="url" href="https://kuhnitver.ru" />
+          <link itemProp="url" href={SITE_CONFIG.url} />
           <meta
             itemProp="image"
-            content="https://kuhnitver.ru/og-image.jpg"
+            content={SITE_CONFIG.defaultOgImage}
           />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div
@@ -151,12 +153,11 @@ const About = () => {
                   Шоурум и производство
                 </div>
                 <div className="font-medium">
-                  <span itemProp="addressLocality">Тверь</span>,{" "}
-                  <span itemProp="streetAddress">ул. Николая Корыткова, 3 ст1</span>
+                  <span itemProp="addressLocality">{SITE_CONFIG.address.locality}</span>,{" "}
+                  <span itemProp="streetAddress">{SITE_CONFIG.address.street}</span>
                 </div>
-                <meta itemProp="addressRegion" content="Тверская область" />
-                <meta itemProp="postalCode" content="170000" />
-                <meta itemProp="addressCountry" content="RU" />
+                <meta itemProp="addressRegion" content={SITE_CONFIG.address.region} />
+                <meta itemProp="addressCountry" content={SITE_CONFIG.address.country} />
               </div>
             </div>
 
@@ -171,12 +172,12 @@ const About = () => {
                 </div>
                 {/* itemProp на <a> взял бы значением href (tel:+7…);
                     даём чистый номер через <meta>, ссылку оставляем для людей. */}
-                <meta itemProp="telephone" content="+48 22 477 08 1" />
+                <meta itemProp="telephone" content={SITE_CONFIG.phone} />
                 <a
-                  href="tel:+4822477081"
+                  href={`tel:${SITE_CONFIG.phoneClean}`}
                   className="font-medium hover:text-primary transition-colors"
                 >
-                  +48 22 477 08 1
+                  {SITE_CONFIG.phone}
                 </a>
               </div>
             </div>
@@ -190,12 +191,12 @@ const About = () => {
                 <div className="text-xs uppercase tracking-wide text-muted-foreground mb-1">
                   Email
                 </div>
-                <meta itemProp="email" content="m-btd@mail.ru" />
+                <meta itemProp="email" content={SITE_CONFIG.email} />
                 <a
-                  href="mailto:m-btd@mail.ru"
+                  href={`mailto:${SITE_CONFIG.email}`}
                   className="font-medium hover:text-primary transition-colors break-all"
                 >
-                  m-btd@mail.ru
+                  {SITE_CONFIG.email}
                 </a>
               </div>
             </div>
@@ -203,7 +204,7 @@ const About = () => {
             <div
               className="flex items-start gap-3"
               itemProp="openingHours"
-              content="Mo-Sa 10:00-19:00"
+              content={SITE_CONFIG.openingHours.schema}
             >
               <Clock
                 className="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
@@ -213,9 +214,9 @@ const About = () => {
                 <div className="text-xs uppercase tracking-wide text-muted-foreground mb-1">
                   Часы работы
                 </div>
-                <div className="font-medium">Пн–Сб: 10:00–19:00</div>
+                <div className="font-medium">{SITE_CONFIG.openingHours.label}</div>
                 <div className="text-xs text-muted-foreground">
-                  Воскресенье — выходной
+                  {SITE_CONFIG.openingHours.closedLabel}
                 </div>
               </div>
             </div>

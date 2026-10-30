@@ -1,0 +1,3225 @@
+{
+  "audit_date_local": "2026-10-30",
+  "timezone": "Europe/Moscow",
+  "checked_at_utc": "2026-10-30T18:53:30.373547+00:00",
+  "local_commit": "2b9702f7b0e9decfda306f1b84f19ba5edd4194b",
+  "site": "https://kuhnitver.ru",
+  "method": "Read-only public HTTP GET; Python standard library HTMLParser/XML parsing. No JavaScript rendering, form submissions, authenticated consoles or server access.",
+  "limits": [
+    "User-Agent probes used the auditor IP, not genuine provider crawler IPs.",
+    "Syntactic JSON and XML validity does not establish schema/provider validity.",
+    "HTTP timing is not Core Web Vitals.",
+    "Source code commit on production is unknown.",
+    "No live AI-chat recommendation baseline was collected."
+  ],
+  "summary": {
+    "sitemap_urls": 35,
+    "http_200": 35,
+    "unique_titles": 35,
+    "single_h1": 35,
+    "self_canonical": 35,
+    "pages_with_expired_offers": 8,
+    "expired_offer_count": 14
+  },
+  "pages": [
+    {
+      "url": "https://kuhnitver.ru",
+      "final_url": "https://kuhnitver.ru",
+      "status": 200,
+      "title": "Кухни на заказ в Твери от производителя | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru"
+      ],
+      "description": [
+        "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство с 2014 года, готовность от 20 рабочих дней. Фурнитура Blum и Hettich, столешницы из кварца и массива. Бесплатная доставка и установка по Твери. Гарантия 1 год по договору. Рассчитайте стоимость онлайн за 1 минуту!"
+      ],
+      "h1": [
+        "Кухни на заказ в Твери от производителя"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 186963,
+      "html_sha256": "63e573b939495f7db0b9d90a3723e556f8eb9d6ef3b83caffd02f320bfbbac6e",
+      "extracted_text_characters": 13543,
+      "inbound_html_links_within_audit": 101,
+      "schema_types": [
+        "AggregateOffer",
+        "Answer",
+        "City",
+        "ContactPoint",
+        "FAQPage",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Question",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog",
+      "final_url": "https://kuhnitver.ru/catalog",
+      "status": 200,
+      "title": "Каталог кухонь на заказ в Твери — стили, фото, цены | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/catalog"
+      ],
+      "description": [
+        "Каталог кухонь на заказ в Твери от производителя: лофт, минимализм, скандинавский стиль, современная классика, премиум. Фото реальных проектов с ценами. Индивидуальный дизайн под ваши размеры. Фурнитура Blum и Hettich. Рассчитайте стоимость онлайн."
+      ],
+      "h1": [
+        "Каталог кухонь на заказ в Твери"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 80642,
+      "html_sha256": "ceb43e01dbadaeee153152f200041b8a01153e0f96f003ded3def87ccddc0a69",
+      "extracted_text_characters": 2096,
+      "inbound_html_links_within_audit": 81,
+      "schema_types": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB",
+          "offerCount": 7,
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/price",
+      "final_url": "https://kuhnitver.ru/price",
+      "status": 200,
+      "title": "Цены на кухни на заказ в Твери — прайс-лист от производителя | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/price"
+      ],
+      "description": [
+        "Актуальные цены на кухни на заказ в Твери от производителя Kuhnitver. Прямая кухня от 25 000 ₽/м.п., угловая от 30 000 ₽/м.п. Подробная таблица цен по планировкам и материалам (МДФ, массив, акрил). Стоимость фиксируется в договоре. Онлайн-расчёт за 1 минуту."
+      ],
+      "h1": [
+        "Цены на кухни на заказ в Твери"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 83067,
+      "html_sha256": "6299a636597cfd891cf36f947081bcd929ef764599a3638e4efde67645df0998",
+      "extracted_text_characters": 2030,
+      "inbound_html_links_within_audit": 73,
+      "schema_types": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "name": "Кухня «Лофт»",
+          "price": "28000",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://kuhnitver.ru/catalog/loft",
+          "priceValidUntil": "2026-10-02"
+        },
+        {
+          "@type": "Offer",
+          "name": "Кухня «Скандинавский»",
+          "price": "25000",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://kuhnitver.ru/catalog/skandinavskiy",
+          "priceValidUntil": "2026-10-02"
+        },
+        {
+          "@type": "Offer",
+          "name": "Кухня «Минимализм»",
+          "price": "30000",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://kuhnitver.ru/catalog/minimalizm",
+          "priceValidUntil": "2026-10-02"
+        },
+        {
+          "@type": "Offer",
+          "name": "Кухня «Премиум»",
+          "price": "45000",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://kuhnitver.ru/catalog/premium",
+          "priceValidUntil": "2026-10-02"
+        },
+        {
+          "@type": "Offer",
+          "name": "Кухня «Классика»",
+          "price": "35000",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://kuhnitver.ru/catalog/klassika",
+          "priceValidUntil": "2026-10-02"
+        },
+        {
+          "@type": "Offer",
+          "name": "Кухня «Белая»",
+          "price": "25000",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://kuhnitver.ru/catalog/belaya",
+          "priceValidUntil": "2026-10-02"
+        },
+        {
+          "@type": "Offer",
+          "name": "Кухня «Угловые»",
+          "price": "30000",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://kuhnitver.ru/catalog/uglovye",
+          "priceValidUntil": "2026-10-02"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/portfolio",
+      "final_url": "https://kuhnitver.ru/portfolio",
+      "status": 200,
+      "title": "Стилевые решения и идеи для кухонь в Твери | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/portfolio"
+      ],
+      "description": [
+        "Дизайн-референсы кухонь от Kuhnitver: лофт, скандинавский, минимализм, премиум. Используем как отправную точку для индивидуального проекта под ваши размеры и планировку. Производство в Твери, фурнитура Blum и Hettich, гарантия 1 год."
+      ],
+      "h1": [
+        "Стилевые решения и идеи для кухонь"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 76846,
+      "html_sha256": "9ac62e94bec8220fa8d45592a94948f48b39eafe8656fd1f9978326347c98ade",
+      "extracted_text_characters": 1622,
+      "inbound_html_links_within_audit": 80,
+      "schema_types": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/about",
+      "final_url": "https://kuhnitver.ru/about",
+      "status": 200,
+      "title": "О компании Kuhnitver — производство кухонь в Твери с 2014 года | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/about"
+      ],
+      "description": [
+        "Kuhnitver — собственное производство кухонь на заказ в Твери с 2014 года. Более 500 реализованных проектов, 98% клиентов рекомендуют. Полный цикл: от замера и эскиза до доставки и установки. Европейская фурнитура Blum, Hettich. Гарантия 1 год по договору."
+      ],
+      "h1": [
+        "Производим кухни с 2014 года"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 81155,
+      "html_sha256": "b2b121a5cf7833ba5a474630c3cf9dc44f930b3f642ce4d8c80344d354404ad9",
+      "extracted_text_characters": 2210,
+      "inbound_html_links_within_audit": 74,
+      "schema_types": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "HowTo",
+        "HowToStep",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/contacts",
+      "final_url": "https://kuhnitver.ru/contacts",
+      "status": 200,
+      "title": "Контакты Kuhnitver — адрес шоурума, телефон, режим работы в Твери | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/contacts"
+      ],
+      "description": [
+        "Шоурум Kuhnitver: г. Тверь, ул. Николая Корыткова, 3 ст1. Телефон +48 22 477 08 1, email m-btd@mail.ru. Режим работы Пн-Сб 10:00–19:00. Мессенджер Max для быстрой связи. Обслуживаем Тверь, Торжок, Ржев, Конаково и всю Тверскую область."
+      ],
+      "h1": [
+        "Контакты"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 81049,
+      "html_sha256": "736596318c0acab326e6286b2f0f0852f3a69be3362910eb62f6c25c7623f0a7",
+      "extracted_text_characters": 2348,
+      "inbound_html_links_within_audit": 72,
+      "schema_types": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/faq",
+      "final_url": "https://kuhnitver.ru/faq",
+      "status": 200,
+      "title": "Вопросы и ответы о кухнях на заказ в Твери — FAQ | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/faq"
+      ],
+      "description": [
+        "Ответы на частые вопросы о заказе кухонь в Твери от производителя Kuhnitver. Сколько стоит кухня? Какие сроки изготовления? Какие материалы используете? Есть ли гарантия? Как проходит замер и установка? Подробные ответы на все вопросы о кухнях на заказ."
+      ],
+      "h1": [
+        "Вопросы и ответы"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 115464,
+      "html_sha256": "edbf959ca7c7865dee43b5af624f93cd1d8b970cf79d8b02311746ab46062f37",
+      "extracted_text_characters": 4854,
+      "inbound_html_links_within_audit": 37,
+      "schema_types": [
+        "AggregateOffer",
+        "Answer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "FAQPage",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Question",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/dostavka",
+      "final_url": "https://kuhnitver.ru/dostavka",
+      "status": 200,
+      "title": "Доставка и установка кухонь по Твери и Тверской области — бесплатно | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/dostavka"
+      ],
+      "description": [
+        "Бесплатная доставка и профессиональная установка кухонь на заказ по Твери. Подъём на этаж, подключение мойки и техники — включено. Доставка по Тверской области: Торжок от 3 000 ₽, Ржев, Конаково, Кимры. Сборка за 1 день опытными мастерами. Гарантия на монтаж."
+      ],
+      "h1": [
+        "Доставка и установка кухонь"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 77101,
+      "html_sha256": "1028edc7d01ac8581b3863947858ed26f5bb9a4e723320dcc4d096f04af3318e",
+      "extracted_text_characters": 2156,
+      "inbound_html_links_within_audit": 40,
+      "schema_types": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "RUB",
+          "description": "Бесплатная доставка и установка по Твери"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/blog",
+      "final_url": "https://kuhnitver.ru/blog",
+      "status": 200,
+      "title": "Блог о кухнях — статьи, советы и руководства по выбору | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/blog"
+      ],
+      "description": [
+        "Экспертные статьи от производителя кухонь Kuhnitver. Как выбрать материал для фасадов: МДФ, массив или акрил? Какая планировка кухни лучше? Сколько стоит кухня на заказ? Сравнение фурнитуры Blum и Hettich. Тренды дизайна кухонь 2025–2026. Читайте и делайте осознанный выбор."
+      ],
+      "h1": [
+        "Блог о кухнях"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 82208,
+      "html_sha256": "b3d6b502d11dea3e77b959bab33ab8c8e358f86088ddc5251be59a304c370f19",
+      "extracted_text_characters": 2528,
+      "inbound_html_links_within_audit": 44,
+      "schema_types": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/b2b",
+      "final_url": "https://kuhnitver.ru/b2b",
+      "status": 200,
+      "title": "Мебель для бизнеса на заказ в Твери — офис, торговля, HoReCa | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/b2b"
+      ],
+      "description": [
+        "Производство мебели для бизнеса в Твери: офисная мебель, торговое оборудование, мебель для гостиниц и образовательных учреждений. Работаем по договору с юрлицами и ИП. Безналичная оплата, закрывающие документы (УПД, счёт-фактура). Серийное производство, индивидуальные проекты. Срок от 20 рабочих дней. Гарантия 1 год."
+      ],
+      "h1": [
+        "Мебель для бизнеса на заказ"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 190456,
+      "html_sha256": "17766543ada74517e260528b3f05f3f99f880bc4ffc5e66355df42a8d0d1b019",
+      "extracted_text_characters": 10337,
+      "inbound_html_links_within_audit": 70,
+      "schema_types": [
+        "AggregateOffer",
+        "Answer",
+        "BreadcrumbList",
+        "BusinessAudience",
+        "City",
+        "ContactPoint",
+        "FAQPage",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Question",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/privacy",
+      "final_url": "https://kuhnitver.ru/privacy",
+      "status": 200,
+      "title": "Политика конфиденциальности | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/privacy"
+      ],
+      "description": [
+        "Политика обработки персональных данных Kuhnitver: какие данные мы собираем через формы на сайте, цели обработки, передача третьим лицам и права пользователя."
+      ],
+      "h1": [
+        "Политика конфиденциальности"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 69593,
+      "html_sha256": "c487aa377461c594f2643de82dfeaf50c24a0dd207aa6fd4ed9c8b1f2094cae8",
+      "extracted_text_characters": 3856,
+      "inbound_html_links_within_audit": 53,
+      "schema_types": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/loft",
+      "final_url": "https://kuhnitver.ru/catalog/loft",
+      "status": 200,
+      "title": "Кухни в стиле лофт на заказ в Твери — цены, фото, материалы | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/catalog/loft"
+      ],
+      "description": [
+        "Кухни в стиле лофт на заказ в Твери от производителя Kuhnitver. Фасады МДФ Soft-touch, столешницы из массива дуба, фурнитура Blum. Индустриальный дизайн с кирпичными и металлическими акцентами. Изготовление от 20 дней, бесплатная установка. Гарантия 1 год по договору."
+      ],
+      "h1": [
+        "Кухни в стиле Лофт на заказ в Твери"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 80856,
+      "html_sha256": "4b0cf6b82e251c18c174ca761af3136d2465b648f967f23535c605df1f03727a",
+      "extracted_text_characters": 1800,
+      "inbound_html_links_within_audit": 27,
+      "schema_types": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "RUB",
+          "price": "28000",
+          "priceValidUntil": "2026-10-02",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://kuhnitver.ru/#organization"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/skandinavskiy",
+      "final_url": "https://kuhnitver.ru/catalog/skandinavskiy",
+      "status": 200,
+      "title": "Скандинавские кухни на заказ в Твери — светлый дизайн, цены | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/catalog/skandinavskiy"
+      ],
+      "description": [
+        "Скандинавские кухни на заказ в Твери от производителя Kuhnitver. Светлые пастельные фасады из крашеного МДФ, столешницы из искусственного камня, фурнитура Hettich. Максимальная функциональность для малых площадей. Производство от 20 дней, установка включена. Гарантия 1 год."
+      ],
+      "h1": [
+        "Кухни в стиле Скандинавский на заказ в Твери"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 81162,
+      "html_sha256": "a9f77a867aef1ff48f755f4c3aac8db075a4408b13ac7daf0427980df63b129d",
+      "extracted_text_characters": 1787,
+      "inbound_html_links_within_audit": 27,
+      "schema_types": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "RUB",
+          "price": "25000",
+          "priceValidUntil": "2026-10-02",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://kuhnitver.ru/#organization"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/minimalizm",
+      "final_url": "https://kuhnitver.ru/catalog/minimalizm",
+      "status": 200,
+      "title": "Кухни в стиле минимализм на заказ в Твери — без ручек, push-to-open | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/catalog/minimalizm"
+      ],
+      "description": [
+        "Минималистичные кухни на заказ в Твери от производителя Kuhnitver. Гладкие акриловые фасады без ручек, системы push-to-open, столешницы Dekton. Встроенная техника, скрытые системы хранения, интегрированная подсветка. Идеально для современных квартир. Срок от 20 дней, гарантия 1 год."
+      ],
+      "h1": [
+        "Кухни в стиле Минимализм на заказ в Твери"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 80719,
+      "html_sha256": "0dff0730b6a47e053259235bcd544b08571748cd764bba817f3b49162adafa22",
+      "extracted_text_characters": 1694,
+      "inbound_html_links_within_audit": 19,
+      "schema_types": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "RUB",
+          "price": "30000",
+          "priceValidUntil": "2026-10-02",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://kuhnitver.ru/#organization"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/premium",
+      "final_url": "https://kuhnitver.ru/catalog/premium",
+      "status": 200,
+      "title": "Премиум кухни на заказ в Твери — итальянские фасады, мрамор | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/catalog/premium"
+      ],
+      "description": [
+        "Премиум кухни на заказ в Твери от производителя Kuhnitver. Эксклюзивные итальянские фасады, столешницы из натурального мрамора, фурнитура Blum премиум-класса. Индивидуальный дизайн-проект, встраиваемая техника Miele и Bosch. Каждая кухня — произведение искусства. Гарантия 1 год по договору."
+      ],
+      "h1": [
+        "Кухни в стиле Премиум на заказ в Твери"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 80975,
+      "html_sha256": "02f5c53cadf656ed2d71e767ffb047989ba9034c49509ce984cd974b11056e15",
+      "extracted_text_characters": 1725,
+      "inbound_html_links_within_audit": 31,
+      "schema_types": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "RUB",
+          "price": "45000",
+          "priceValidUntil": "2026-10-02",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://kuhnitver.ru/#organization"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/klassika",
+      "final_url": "https://kuhnitver.ru/catalog/klassika",
+      "status": 200,
+      "title": "Классические кухни на заказ в Твери — фрезерованные фасады, цены | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/catalog/klassika"
+      ],
+      "description": [
+        "Классические кухни на заказ в Твери от производителя Kuhnitver. Фрезерованные фасады из МДФ и массива, эмаль и патина, фурнитура Blum. Тёплая палитра и декор под классический интерьер. Изготовление от 20 дней, доставка и установка. Гарантия 1 год по договору."
+      ],
+      "h1": [
+        "Классические кухни на заказ в Твери"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 80970,
+      "html_sha256": "e598f65283f560182af2e3f5114e10de6e800cfe360bf25be4fac767cc58b16a",
+      "extracted_text_characters": 1807,
+      "inbound_html_links_within_audit": 16,
+      "schema_types": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "RUB",
+          "price": "35000",
+          "priceValidUntil": "2026-10-02",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://kuhnitver.ru/#organization"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/belaya",
+      "final_url": "https://kuhnitver.ru/catalog/belaya",
+      "status": 200,
+      "title": "Белые кухни на заказ в Твери — матовые и глянцевые, цены | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/catalog/belaya"
+      ],
+      "description": [
+        "Белые кухни на заказ в Твери от производителя Kuhnitver. Матовая эмаль или глянец, крашеный МДФ, фурнитура Blum и Hettich. Светлый дизайн, который расширяет пространство и подходит под любой интерьер. Изготовление от 20 дней, гарантия 1 год по договору."
+      ],
+      "h1": [
+        "Белые кухни на заказ в Твери"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 80832,
+      "html_sha256": "c6d93a06c9135036dffbc3505b738038f5629f0ea2ba3c0feee186b2e25ec8c2",
+      "extracted_text_characters": 1834,
+      "inbound_html_links_within_audit": 16,
+      "schema_types": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "RUB",
+          "price": "25000",
+          "priceValidUntil": "2026-10-02",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://kuhnitver.ru/#organization"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/uglovye",
+      "final_url": "https://kuhnitver.ru/catalog/uglovye",
+      "status": 200,
+      "title": "Угловые кухни на заказ в Твери — Г-образные, цены и фото | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/catalog/uglovye"
+      ],
+      "description": [
+        "Угловые (Г-образные) кухни на заказ в Твери от производителя Kuhnitver. Эргономичное использование угла, выдвижные механизмы Blum, любые фасады и размеры. Изготовление от 20 дней, доставка и установка. Гарантия 1 год по договору."
+      ],
+      "h1": [
+        "Угловые кухни на заказ в Твери"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 80608,
+      "html_sha256": "bc590c13bd73a28347fb2b476edb687ea1487492141e70f81dfcbf37906e9fde",
+      "extracted_text_characters": 1835,
+      "inbound_html_links_within_audit": 8,
+      "schema_types": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "RUB",
+          "price": "30000",
+          "priceValidUntil": "2026-10-02",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://kuhnitver.ru/#organization"
+          }
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/tveri",
+      "final_url": "https://kuhnitver.ru/kuhni/tveri",
+      "status": 200,
+      "title": "Кухни на заказ в Твери от производителя — доставка и установка | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/tveri"
+      ],
+      "description": [
+        "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка в Твери — бесплатно, срок 1-2 дня. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено."
+      ],
+      "h1": [
+        "Кухни на заказ в Твери от производителя"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 91506,
+      "html_sha256": "29fcaf32808e9f899a2e621ca2748bdce4f3b8ba05b367c014afdf3471dbc3da",
+      "extracted_text_characters": 2096,
+      "inbound_html_links_within_audit": 39,
+      "schema_types": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/torzhke",
+      "final_url": "https://kuhnitver.ru/kuhni/torzhke",
+      "status": 200,
+      "title": "Кухни на заказ в Торжке от производителя — доставка и установка | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/torzhke"
+      ],
+      "description": [
+        "Кухни на заказ в Торжке от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка в Торжке — от 3 000 ₽, срок 2-3 дня. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено."
+      ],
+      "h1": [
+        "Кухни на заказ в Торжке от производителя"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 91101,
+      "html_sha256": "663e6b122aa2d16fe201e68fb92943a393d750f60ccf7ed2eaf8b419e398b9e2",
+      "extracted_text_characters": 2035,
+      "inbound_html_links_within_audit": 39,
+      "schema_types": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/rzheve",
+      "final_url": "https://kuhnitver.ru/kuhni/rzheve",
+      "status": 200,
+      "title": "Кухни на заказ в Ржеве от производителя — доставка и установка | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/rzheve"
+      ],
+      "description": [
+        "Кухни на заказ в Ржеве от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка в Ржеве — от 5 000 ₽, срок 3-5 дней. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено."
+      ],
+      "h1": [
+        "Кухни на заказ в Ржеве от производителя"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 90878,
+      "html_sha256": "7f35968dc494b0723154544b15d90bf923d2f8e1a8e9a751ed41ca135e356165",
+      "extracted_text_characters": 1997,
+      "inbound_html_links_within_audit": 39,
+      "schema_types": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/konakovo",
+      "final_url": "https://kuhnitver.ru/kuhni/konakovo",
+      "status": 200,
+      "title": "Кухни на заказ в Конаково от производителя — доставка и установка | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/konakovo"
+      ],
+      "description": [
+        "Кухни на заказ в Конаково от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка в Конаково — от 3 500 ₽, срок 2-3 дня. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено."
+      ],
+      "h1": [
+        "Кухни на заказ в Конаково от производителя"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 91294,
+      "html_sha256": "dc51d88d909713f3d6efe5e82528dc0d6629b7f4d30c3af5194afece1de5b533",
+      "extracted_text_characters": 2039,
+      "inbound_html_links_within_audit": 39,
+      "schema_types": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/kimrah",
+      "final_url": "https://kuhnitver.ru/kuhni/kimrah",
+      "status": 200,
+      "title": "Кухни на заказ в Кимрах от производителя — доставка и установка | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/kimrah"
+      ],
+      "description": [
+        "Кухни на заказ в Кимрах от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка в Кимрах — от 4 000 ₽, срок 2-4 дня. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено."
+      ],
+      "h1": [
+        "Кухни на заказ в Кимрах от производителя"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 90920,
+      "html_sha256": "c66c7464b2854d1f6476635fc94e60306bcee824a7b298a66a157cd9884e8b39",
+      "extracted_text_characters": 1992,
+      "inbound_html_links_within_audit": 39,
+      "schema_types": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/vyshnem-volochke",
+      "final_url": "https://kuhnitver.ru/kuhni/vyshnem-volochke",
+      "status": 200,
+      "title": "Кухни на заказ в Вышнем Волочке от производителя — доставка и установка | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/vyshnem-volochke"
+      ],
+      "description": [
+        "Кухни на заказ в Вышнем Волочке от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка в Вышнем Волочке — от 5 000 ₽, срок 3-5 дней. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено."
+      ],
+      "h1": [
+        "Кухни на заказ в Вышнем Волочке от производителя"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 92000,
+      "html_sha256": "327162cffe9726a1304884a5bb66e0953d96a5a69da415476fe7c43498780927",
+      "extracted_text_characters": 2079,
+      "inbound_html_links_within_audit": 39,
+      "schema_types": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/bezhecke",
+      "final_url": "https://kuhnitver.ru/kuhni/bezhecke",
+      "status": 200,
+      "title": "Кухни на заказ в Бежецке от производителя — доставка и установка | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/bezhecke"
+      ],
+      "description": [
+        "Кухни на заказ в Бежецке от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка в Бежецке — от 6 000 ₽, срок 3-5 дней. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено."
+      ],
+      "h1": [
+        "Кухни на заказ в Бежецке от производителя"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 90767,
+      "html_sha256": "493e7cce152adbe875507769f7434e79b37c5c03e3341750fb4d2ee1f5ba3a83",
+      "extracted_text_characters": 1977,
+      "inbound_html_links_within_audit": 39,
+      "schema_types": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/nelidovo",
+      "final_url": "https://kuhnitver.ru/kuhni/nelidovo",
+      "status": 200,
+      "title": "Кухни на заказ в Нелидово от производителя — доставка и установка | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/nelidovo"
+      ],
+      "description": [
+        "Кухни на заказ в Нелидово от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка в Нелидово — от 7 000 ₽, срок 4-6 дней. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено."
+      ],
+      "h1": [
+        "Кухни на заказ в Нелидово от производителя"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 90962,
+      "html_sha256": "a4615a0fd1096c233b074070c3460e70bbc02bfacf8a56bf86bb4efe4e38c465",
+      "extracted_text_characters": 1998,
+      "inbound_html_links_within_audit": 39,
+      "schema_types": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
+      "final_url": "https://kuhnitver.ru/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
+      "status": 200,
+      "title": "Как выбрать кухню на заказ в Твери — руководство 2026 | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri"
+      ],
+      "description": [
+        "Полное руководство по выбору кухни на заказ в Твери: бюджет, стили, материалы, проверка производителя. Советы от Kuhnitver."
+      ],
+      "h1": [
+        "Как выбрать кухню на заказ в Твери: полное руководство"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 77656,
+      "html_sha256": "ee844afc1e6b1d41262f36a87ebedad9725d5b841a63c876af0062008f065e50",
+      "extracted_text_characters": 3256,
+      "inbound_html_links_within_audit": 6,
+      "schema_types": [
+        "AggregateOffer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+      "final_url": "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+      "status": 200,
+      "title": "МДФ, массив или пластик для кухни — что лучше | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik"
+      ],
+      "description": [
+        "Сравнение материалов для кухонных фасадов: МДФ, массив дерева и пластик. Плюсы, минусы, цены в Твери. Рекомендации от производителя."
+      ],
+      "h1": [
+        "Какой материал для кухни лучше: МДФ, массив или пластик"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 76950,
+      "html_sha256": "c4dfec047365ace3b773676925d319175d6fe26db286f06a9015b623e613a0b9",
+      "extracted_text_characters": 3034,
+      "inbound_html_links_within_audit": 7,
+      "schema_types": [
+        "AggregateOffer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026",
+      "final_url": "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026",
+      "status": 200,
+      "title": "Цены на кухни на заказ в Твери 2026 — актуальный обзор | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026"
+      ],
+      "description": [
+        "Сколько стоит кухня на заказ в Твери в 2026 году: от 25 000 ₽/п.м. Примеры расчётов для кухонь 2.5–4 метра. Обзор цен от Kuhnitver."
+      ],
+      "h1": [
+        "Сколько стоит кухня на заказ в 2026 году в Твери"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 75736,
+      "html_sha256": "d89d16bc5a7055d6b89188b968373cde89ca507ee72cbc513aff7ed857e2df13",
+      "extracted_text_characters": 2824,
+      "inbound_html_links_within_audit": 1,
+      "schema_types": [
+        "AggregateOffer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/uglovaya-vs-pryamaya-kuhnya",
+      "final_url": "https://kuhnitver.ru/blog/uglovaya-vs-pryamaya-kuhnya",
+      "status": 200,
+      "title": "Угловая или прямая кухня — какую выбрать | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/blog/uglovaya-vs-pryamaya-kuhnya"
+      ],
+      "description": [
+        "Сравнение угловой и прямой кухни: плюсы, минусы, для каких помещений подходят. Советы по выбору планировки от производителя в Твери."
+      ],
+      "h1": [
+        "Угловая vs прямая кухня: что выбрать для вашей квартиры"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 76349,
+      "html_sha256": "22086fccb856efe49a07e552ffa9c4c8e07048a535a8cdee276337ba29e2d03e",
+      "extracted_text_characters": 2868,
+      "inbound_html_links_within_audit": 5,
+      "schema_types": [
+        "AggregateOffer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/top-10-oshibok-pri-zakaze-kuhni",
+      "final_url": "https://kuhnitver.ru/blog/top-10-oshibok-pri-zakaze-kuhni",
+      "status": 200,
+      "title": "10 ошибок при заказе кухни — как избежать | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/blog/top-10-oshibok-pri-zakaze-kuhni"
+      ],
+      "description": [
+        "ТОП-10 ошибок при заказе кухни на заказ: экономия на фурнитуре, отсутствие 3D-проекта, неправильная планировка. Советы от производителя в Твери."
+      ],
+      "h1": [
+        "ТОП-10 ошибок при заказе кухни, которых стоит избежать"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 78648,
+      "html_sha256": "7b22084aa98db1845d358d78c30d7086326d67d28e548ddb18c45de35f223631",
+      "extracted_text_characters": 3247,
+      "inbound_html_links_within_audit": 3,
+      "schema_types": [
+        "AggregateOffer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+      "final_url": "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+      "status": 200,
+      "title": "Замер кухни в Твери: чек-лист подготовки | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit"
+      ],
+      "description": [
+        "Как подготовиться к замеру кухни в Твери: что измерить самим, какие документы нужны, на что обратить внимание замерщика. Стоимость и порядок замера."
+      ],
+      "h1": [
+        "Замер кухни в Твери: что подготовить к визиту замерщика"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 81830,
+      "html_sha256": "62fe3c7adfa3667e937dd0d64482b77acad72f8cb4a129686d1a340d14a9fa9a",
+      "extracted_text_characters": 4039,
+      "inbound_html_links_within_audit": 6,
+      "schema_types": [
+        "AggregateOffer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
+      "final_url": "https://kuhnitver.ru/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
+      "status": 200,
+      "title": "Кварц или мрамор для столешницы кухни — сравнение | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni"
+      ],
+      "description": [
+        "Что выбрать для столешницы кухни: кварцевый агломерат или натуральный мрамор. Сравнение по прочности, уходу, цене и эстетике. Опыт производителя в Твери."
+      ],
+      "h1": [
+        "Кварц или мрамор: какая столешница для кухни лучше"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 83854,
+      "html_sha256": "26344277705e2e7b9cfcf4150f60f2542121382403ab8a7f60187c5244db26d6",
+      "extracted_text_characters": 4510,
+      "inbound_html_links_within_audit": 4,
+      "schema_types": [
+        "AggregateOffer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/dizayn-kuhni-2026-idei-planirovki-i-foto",
+      "final_url": "https://kuhnitver.ru/blog/dizayn-kuhni-2026-idei-planirovki-i-foto",
+      "status": 200,
+      "title": "Дизайн кухни 2026: современные идеи, планировки и фото | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/blog/dizayn-kuhni-2026-idei-planirovki-i-foto"
+      ],
+      "description": [
+        "Идеи дизайна кухни 2026: планировки, современные фасады, цвета, встроенная техника и освещение. Практические советы для кухни на заказ в Твери."
+      ],
+      "h1": [
+        "Дизайн кухни 2026: современные идеи, планировки и фото"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 106039,
+      "html_sha256": "44913f4b29eb538cee4fe549143b708ae6d73e4bfaa0baec3a553a6f002f08e6",
+      "extracted_text_characters": 8674,
+      "inbound_html_links_within_audit": 5,
+      "schema_types": [
+        "AggregateOffer",
+        "Answer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "FAQPage",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Question",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/chernaya-kuhnya-v-interere",
+      "final_url": "https://kuhnitver.ru/blog/chernaya-kuhnya-v-interere",
+      "status": 200,
+      "title": "Чёрная кухня в интерьере: сочетания цветов, плюсы и минусы | Kuhnitver",
+      "canonical": [
+        "https://kuhnitver.ru/blog/chernaya-kuhnya-v-interere"
+      ],
+      "description": [
+        "Чёрная кухня в интерьере: как сочетать чёрные фасады с деревом, белой столешницей, фартуком и техникой. Плюсы, минусы и советы для кухни на заказ."
+      ],
+      "h1": [
+        "Чёрная кухня в интерьере: с чем сочетать и насколько она практична"
+      ],
+      "robots_meta": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "x_robots_tag": null,
+      "html_bytes": 105210,
+      "html_sha256": "c67ae1bedd9da45a02b7c9ccbef8e5145272e36b10097b2960d35686ec9d1336",
+      "extracted_text_characters": 8403,
+      "inbound_html_links_within_audit": 3,
+      "schema_types": [
+        "AggregateOffer",
+        "Answer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "FAQPage",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Question",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "jsonld_parse_errors": [],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ]
+    }
+  ],
+  "expired_offers_by_page": [
+    {
+      "url": "https://kuhnitver.ru/price",
+      "count": 7
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/loft",
+      "count": 1
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/skandinavskiy",
+      "count": 1
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/minimalizm",
+      "count": 1
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/premium",
+      "count": 1
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/klassika",
+      "count": 1
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/belaya",
+      "count": 1
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/uglovye",
+      "count": 1
+    }
+  ],
+  "content_evidence": [
+    {
+      "url": "https://kuhnitver.ru/contacts",
+      "excerpts_from_server_html": [
+        "те в мессенджер — поможем выбрать материалы, рассчитать стоимость и записать на бесплатный замер. Адрес шоурума г. Тверь , ул. Николая Корыткова, ",
+        "иком прямо у вас дома по Твери и области, бесплатно привезём образцы. Замер стоит 1 500 ₽ и вычитается из стоимости кухни при оформлении заказа. Связаться удобнее всего по телефону или через мессенджер Max — добавьте в контакты номер +7 915 ",
+        " Кухни Тверь Каталог Наши работы Цены Блог Для бизнеса О нас Контакты +48 22 477 08 1 Заказать звонок Главная / Контакты Контакты Приезжай",
+        " замер. Адрес шоурума г. Тверь , ул. Николая Корыткова, 3 ст1 Телефон +48 22 477 08 1 Перезваниваем в течение 15 минут Email m-btd@mail.ru",
+        "арительный расчёт по своим размерам. Перед визитом удобно позвонить — +48 22 477 08 1 — мы подготовим образцы под интересующий вас стиль. "
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/tveri",
+      "excerpts_from_server_html": [
+        "и Кухни на заказ с доставкой в Твери Kuhnitver — производитель кухонь №1 в Твери. Наш шоурум и производство расположены на ул. Николая Корыткова, 3 ст1.",
+        "авку образцов и получить бесплатную консультацию дизайнера. Замер, доставка и установка по Твери — бесплатно. Замер — 1 500 ₽ (вычитается при заказе) Эскиз проекта после заключения договора Изготовление от 20 рабочи"
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/dostavka",
+      "excerpts_from_server_html": [
+        "оставка по области Стоимость зависит от расстояния. Торжок, Конаково — от 3 000 ₽, Ржев, Кимры — от 4 000 ₽. Стоимость доставки по городам Тверской области Город Срок доставки Стоимость Тверь 1-2 дня Бесплатно Торжок 2-3 дня от 3 000 ₽ Ржев 3-5 дней от 5 000 ₽ Конаков",
+        " области Кухни в Твери Кухни в Торжке Кухни в Ржеве Кухни в Конаково Кухни в Кимрах Кухни в Вышнем Волочке Кухни в Бежецке Кухни в Нелидово Доставка и установка по всей Тверской области. © 2026 (Kuhnitver). Все права защищены. Политика конфиденциальности Кухни на зака"
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/price",
+      "excerpts_from_server_html": [
+        " договоре. По стилю кухни Скандинавский Индивидуальный расчёт Лофт Индивидуальный расчёт Минимализм Индивидуальный расчёт",
+        " Премиум Индивидуальный расчёт По типу планировки Прямая кухня (до 3 м) от 75 000 ₽ Углова",
+        "Столешница из дуба Фурнитура Blum П-образная кухня 4 м Стиль: Премиум 180 000 — 250 000 ₽ Итальянские фасады Натуральный мрамор Фурнитура Blum Рассчитайте стоимость вашей кухни Ответьте на 4 во"
+      ]
+    },
+    {
+      "url": "https://kuhnitver.ru/portfolio",
+      "excerpts_from_server_html": [
+        " размеры, планировку и образ жизни. На странице — дизайн-референсы популярных стилей, которые мы берём за отправную точку. Готовый проект может отличаться по компоновке и материалам. Лофт Кирпич, металл, тёплое дерево — индустриальный характер Скандинавский Светлые "
+      ]
+    }
+  ],
+  "feeds": [
+    {
+      "url": "https://kuhnitver.ru/robots.txt",
+      "status": 200,
+      "content_type": "text/plain",
+      "sha256": "b7cc04aea15e47a3014c5b51356ef630fa51c47dd5ad07a3c35179617beaafa3",
+      "content": "User-Agent: *\nAllow: /\nDisallow: /api/\nDisallow: /admin/\nDisallow: /private/\n\nUser-Agent: Yandex\nAllow: /\nCrawl-delay: 1\n\nHost: https://kuhnitver.ru\nSitemap: https://kuhnitver.ru/sitemap.xml\n"
+    },
+    {
+      "url": "https://kuhnitver.ru/blog.rss",
+      "status": 200,
+      "content_type": "application/rss+xml; charset=utf-8",
+      "sha256": "89dd2c1627e2c8bfc221fa327fa8fc3514f6875e3c9df8127b0938692d6429a6",
+      "xml_parse": "pass",
+      "root": "rss",
+      "article_items": 9,
+      "offers": 0
+    },
+    {
+      "url": "https://kuhnitver.ru/uslugi.yml",
+      "status": 200,
+      "content_type": "application/xml; charset=utf-8",
+      "sha256": "fc5ce2958182c16d1e0d08dfe5d1590afe8bd171d3756aed3b321987b14f83ef",
+      "xml_parse": "pass",
+      "root": "yml_catalog",
+      "article_items": 0,
+      "offers": 9
+    }
+  ],
+  "url_variants": [
+    {
+      "url": "http://kuhnitver.ru/",
+      "final_url": "https://kuhnitver.ru/",
+      "status": 200,
+      "redirect_chain": [
+        {
+          "from": "http://kuhnitver.ru/",
+          "status": 301,
+          "to": "https://kuhnitver.ru/"
+        }
+      ],
+      "canonical": [
+        "https://kuhnitver.ru"
+      ],
+      "meta": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "next-size-adjust",
+          "content": ""
+        },
+        {
+          "name": "description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство с 2014 года, готовность от 20 рабочих дней. Фурнитура Blum и Hettich, столешницы из кварца и массива. Бесплатная доставка и установка по Твери. Гарантия 1 год по договору. Рассчитайте стоимость онлайн за 1 минуту!"
+        },
+        {
+          "name": "author",
+          "content": "Kuhnitver"
+        },
+        {
+          "name": "keywords",
+          "content": "кухни на заказ Тверь, кухни от производителя Тверь, кухни Тверь цены, кухонный гарнитур Тверь, кухни Тверская область"
+        },
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "name": "google-site-verification",
+          "content": "99aXy2XdjB2Jw09DwzV43zwq7ZxIyvvJJw4Fz1zR2NA"
+        },
+        {
+          "name": "yandex-verification",
+          "content": "e37b9b2b71291f43"
+        },
+        {
+          "property": "og:title",
+          "content": "Кухни на заказ в Твери от производителя | Kuhnitver"
+        },
+        {
+          "property": "og:description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство с 2014 года. Фурнитура Blum и Hettich. Бесплатная доставка и установка. Гарантия 1 год. Рассчитайте стоимость онлайн!"
+        },
+        {
+          "property": "og:url",
+          "content": "https://kuhnitver.ru"
+        },
+        {
+          "property": "og:site_name",
+          "content": "Kuhnitver"
+        },
+        {
+          "property": "og:locale",
+          "content": "ru_RU"
+        },
+        {
+          "property": "og:image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        },
+        {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        {
+          "property": "og:image:alt",
+          "content": "Кухни на заказ в Твери — Kuhnitver"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Кухни на заказ в Твери от производителя | Kuhnitver"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Готовность от 20 дней, фурнитура Blum и Hettich, бесплатная доставка и установка. Гарантия 1 год."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        },
+        {
+          "itemprop": "name",
+          "content": "Kuhnitver"
+        },
+        {
+          "itemprop": "image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        },
+        {
+          "itemprop": "addressRegion",
+          "content": "Тверская область"
+        },
+        {
+          "itemprop": "postalCode",
+          "content": "170000"
+        },
+        {
+          "itemprop": "addressCountry",
+          "content": "RU"
+        },
+        {
+          "itemprop": "telephone",
+          "content": "+48 22 477 08 1"
+        },
+        {
+          "itemprop": "email",
+          "content": "m-btd@mail.ru"
+        }
+      ],
+      "error": null
+    },
+    {
+      "url": "http://www.kuhnitver.ru/",
+      "final_url": "https://kuhnitver.ru/",
+      "status": 200,
+      "redirect_chain": [
+        {
+          "from": "http://www.kuhnitver.ru/",
+          "status": 301,
+          "to": "https://kuhnitver.ru/"
+        }
+      ],
+      "canonical": [
+        "https://kuhnitver.ru"
+      ],
+      "meta": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "next-size-adjust",
+          "content": ""
+        },
+        {
+          "name": "description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство с 2014 года, готовность от 20 рабочих дней. Фурнитура Blum и Hettich, столешницы из кварца и массива. Бесплатная доставка и установка по Твери. Гарантия 1 год по договору. Рассчитайте стоимость онлайн за 1 минуту!"
+        },
+        {
+          "name": "author",
+          "content": "Kuhnitver"
+        },
+        {
+          "name": "keywords",
+          "content": "кухни на заказ Тверь, кухни от производителя Тверь, кухни Тверь цены, кухонный гарнитур Тверь, кухни Тверская область"
+        },
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "name": "google-site-verification",
+          "content": "99aXy2XdjB2Jw09DwzV43zwq7ZxIyvvJJw4Fz1zR2NA"
+        },
+        {
+          "name": "yandex-verification",
+          "content": "e37b9b2b71291f43"
+        },
+        {
+          "property": "og:title",
+          "content": "Кухни на заказ в Твери от производителя | Kuhnitver"
+        },
+        {
+          "property": "og:description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство с 2014 года. Фурнитура Blum и Hettich. Бесплатная доставка и установка. Гарантия 1 год. Рассчитайте стоимость онлайн!"
+        },
+        {
+          "property": "og:url",
+          "content": "https://kuhnitver.ru"
+        },
+        {
+          "property": "og:site_name",
+          "content": "Kuhnitver"
+        },
+        {
+          "property": "og:locale",
+          "content": "ru_RU"
+        },
+        {
+          "property": "og:image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        },
+        {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        {
+          "property": "og:image:alt",
+          "content": "Кухни на заказ в Твери — Kuhnitver"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Кухни на заказ в Твери от производителя | Kuhnitver"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Готовность от 20 дней, фурнитура Blum и Hettich, бесплатная доставка и установка. Гарантия 1 год."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        },
+        {
+          "itemprop": "name",
+          "content": "Kuhnitver"
+        },
+        {
+          "itemprop": "image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        },
+        {
+          "itemprop": "addressRegion",
+          "content": "Тверская область"
+        },
+        {
+          "itemprop": "postalCode",
+          "content": "170000"
+        },
+        {
+          "itemprop": "addressCountry",
+          "content": "RU"
+        },
+        {
+          "itemprop": "telephone",
+          "content": "+48 22 477 08 1"
+        },
+        {
+          "itemprop": "email",
+          "content": "m-btd@mail.ru"
+        }
+      ],
+      "error": null
+    },
+    {
+      "url": "https://www.kuhnitver.ru/",
+      "final_url": "https://kuhnitver.ru/",
+      "status": 200,
+      "redirect_chain": [
+        {
+          "from": "https://www.kuhnitver.ru/",
+          "status": 301,
+          "to": "https://kuhnitver.ru/"
+        }
+      ],
+      "canonical": [
+        "https://kuhnitver.ru"
+      ],
+      "meta": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "next-size-adjust",
+          "content": ""
+        },
+        {
+          "name": "description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство с 2014 года, готовность от 20 рабочих дней. Фурнитура Blum и Hettich, столешницы из кварца и массива. Бесплатная доставка и установка по Твери. Гарантия 1 год по договору. Рассчитайте стоимость онлайн за 1 минуту!"
+        },
+        {
+          "name": "author",
+          "content": "Kuhnitver"
+        },
+        {
+          "name": "keywords",
+          "content": "кухни на заказ Тверь, кухни от производителя Тверь, кухни Тверь цены, кухонный гарнитур Тверь, кухни Тверская область"
+        },
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "name": "google-site-verification",
+          "content": "99aXy2XdjB2Jw09DwzV43zwq7ZxIyvvJJw4Fz1zR2NA"
+        },
+        {
+          "name": "yandex-verification",
+          "content": "e37b9b2b71291f43"
+        },
+        {
+          "property": "og:title",
+          "content": "Кухни на заказ в Твери от производителя | Kuhnitver"
+        },
+        {
+          "property": "og:description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство с 2014 года. Фурнитура Blum и Hettich. Бесплатная доставка и установка. Гарантия 1 год. Рассчитайте стоимость онлайн!"
+        },
+        {
+          "property": "og:url",
+          "content": "https://kuhnitver.ru"
+        },
+        {
+          "property": "og:site_name",
+          "content": "Kuhnitver"
+        },
+        {
+          "property": "og:locale",
+          "content": "ru_RU"
+        },
+        {
+          "property": "og:image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        },
+        {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        {
+          "property": "og:image:alt",
+          "content": "Кухни на заказ в Твери — Kuhnitver"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Кухни на заказ в Твери от производителя | Kuhnitver"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Готовность от 20 дней, фурнитура Blum и Hettich, бесплатная доставка и установка. Гарантия 1 год."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        },
+        {
+          "itemprop": "name",
+          "content": "Kuhnitver"
+        },
+        {
+          "itemprop": "image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        },
+        {
+          "itemprop": "addressRegion",
+          "content": "Тверская область"
+        },
+        {
+          "itemprop": "postalCode",
+          "content": "170000"
+        },
+        {
+          "itemprop": "addressCountry",
+          "content": "RU"
+        },
+        {
+          "itemprop": "telephone",
+          "content": "+48 22 477 08 1"
+        },
+        {
+          "itemprop": "email",
+          "content": "m-btd@mail.ru"
+        }
+      ],
+      "error": null
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/loft/",
+      "final_url": "https://kuhnitver.ru/catalog/loft",
+      "status": 200,
+      "redirect_chain": [
+        {
+          "from": "https://kuhnitver.ru/catalog/loft/",
+          "status": 308,
+          "to": "https://kuhnitver.ru/catalog/loft"
+        }
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog/loft"
+      ],
+      "meta": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "next-size-adjust",
+          "content": ""
+        },
+        {
+          "name": "description",
+          "content": "Кухни в стиле лофт на заказ в Твери от производителя Kuhnitver. Фасады МДФ Soft-touch, столешницы из массива дуба, фурнитура Blum. Индустриальный дизайн с кирпичными и металлическими акцентами. Изготовление от 20 дней, бесплатная установка. Гарантия 1 год по договору."
+        },
+        {
+          "name": "author",
+          "content": "Kuhnitver"
+        },
+        {
+          "name": "keywords",
+          "content": "кухни на заказ Тверь, кухни от производителя Тверь, кухни Тверь цены, кухонный гарнитур Тверь, кухни Тверская область"
+        },
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "name": "google-site-verification",
+          "content": "99aXy2XdjB2Jw09DwzV43zwq7ZxIyvvJJw4Fz1zR2NA"
+        },
+        {
+          "name": "yandex-verification",
+          "content": "e37b9b2b71291f43"
+        },
+        {
+          "property": "og:title",
+          "content": "Кухни в стиле лофт на заказ в Твери — цены, фото, материалы"
+        },
+        {
+          "property": "og:description",
+          "content": "Кухни в стиле лофт на заказ в Твери от производителя Kuhnitver. Фасады МДФ Soft-touch, столешницы из массива дуба, фурнитура Blum. Индустриальный дизайн с кирпичными и металлическими акцентами. Изготовление от 20 дней, бесплатная установка. Гарантия 1 год по договору."
+        },
+        {
+          "property": "og:url",
+          "content": "https://kuhnitver.ru/catalog/loft"
+        },
+        {
+          "property": "og:image",
+          "content": "https://kuhnitver.ru/images/kitchen-loft.jpg"
+        },
+        {
+          "property": "og:image:width",
+          "content": "600"
+        },
+        {
+          "property": "og:image:height",
+          "content": "450"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Кухни на заказ в Твери от производителя | Kuhnitver"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Готовность от 20 дней, фурнитура Blum и Hettich, бесплатная доставка и установка. Гарантия 1 год."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        },
+        {
+          "itemprop": "position",
+          "content": "1"
+        },
+        {
+          "itemprop": "position",
+          "content": "2"
+        },
+        {
+          "itemprop": "position",
+          "content": "3"
+        }
+      ],
+      "error": null
+    },
+    {
+      "url": "https://kuhnitver.ru/?utm_source=audit-readonly",
+      "final_url": "https://kuhnitver.ru/?utm_source=audit-readonly",
+      "status": 200,
+      "redirect_chain": [],
+      "canonical": [
+        "https://kuhnitver.ru"
+      ],
+      "meta": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "next-size-adjust",
+          "content": ""
+        },
+        {
+          "name": "description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство с 2014 года, готовность от 20 рабочих дней. Фурнитура Blum и Hettich, столешницы из кварца и массива. Бесплатная доставка и установка по Твери. Гарантия 1 год по договору. Рассчитайте стоимость онлайн за 1 минуту!"
+        },
+        {
+          "name": "author",
+          "content": "Kuhnitver"
+        },
+        {
+          "name": "keywords",
+          "content": "кухни на заказ Тверь, кухни от производителя Тверь, кухни Тверь цены, кухонный гарнитур Тверь, кухни Тверская область"
+        },
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        },
+        {
+          "name": "google-site-verification",
+          "content": "99aXy2XdjB2Jw09DwzV43zwq7ZxIyvvJJw4Fz1zR2NA"
+        },
+        {
+          "name": "yandex-verification",
+          "content": "e37b9b2b71291f43"
+        },
+        {
+          "property": "og:title",
+          "content": "Кухни на заказ в Твери от производителя | Kuhnitver"
+        },
+        {
+          "property": "og:description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство с 2014 года. Фурнитура Blum и Hettich. Бесплатная доставка и установка. Гарантия 1 год. Рассчитайте стоимость онлайн!"
+        },
+        {
+          "property": "og:url",
+          "content": "https://kuhnitver.ru"
+        },
+        {
+          "property": "og:site_name",
+          "content": "Kuhnitver"
+        },
+        {
+          "property": "og:locale",
+          "content": "ru_RU"
+        },
+        {
+          "property": "og:image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        },
+        {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        {
+          "property": "og:image:alt",
+          "content": "Кухни на заказ в Твери — Kuhnitver"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Кухни на заказ в Твери от производителя | Kuhnitver"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Готовность от 20 дней, фурнитура Blum и Hettich, бесплатная доставка и установка. Гарантия 1 год."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        },
+        {
+          "itemprop": "name",
+          "content": "Kuhnitver"
+        },
+        {
+          "itemprop": "image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        },
+        {
+          "itemprop": "addressRegion",
+          "content": "Тверская область"
+        },
+        {
+          "itemprop": "postalCode",
+          "content": "170000"
+        },
+        {
+          "itemprop": "addressCountry",
+          "content": "RU"
+        },
+        {
+          "itemprop": "telephone",
+          "content": "+48 22 477 08 1"
+        },
+        {
+          "itemprop": "email",
+          "content": "m-btd@mail.ru"
+        }
+      ],
+      "error": null
+    },
+    {
+      "url": "https://kuhnitver.ru/llms.txt",
+      "final_url": "https://kuhnitver.ru/llms.txt",
+      "status": 404,
+      "redirect_chain": [],
+      "canonical": [
+        "https://kuhnitver.ru"
+      ],
+      "meta": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "robots",
+          "content": "noindex"
+        },
+        {
+          "name": "next-size-adjust",
+          "content": ""
+        },
+        {
+          "name": "description",
+          "content": "Запрашиваемая страница не найдена или была перемещена. Перейдите на главную страницу Kuhnitver, чтобы заказать кухню в Твери, посмотреть каталог стилей или рассчитать стоимость онлайн. Телефон: +48 22 477 08 1."
+        },
+        {
+          "name": "author",
+          "content": "Kuhnitver"
+        },
+        {
+          "name": "keywords",
+          "content": "кухни на заказ Тверь, кухни от производителя Тверь, кухни Тверь цены, кухонный гарнитур Тверь, кухни Тверская область"
+        },
+        {
+          "name": "robots",
+          "content": "noindex, nofollow"
+        },
+        {
+          "name": "google-site-verification",
+          "content": "99aXy2XdjB2Jw09DwzV43zwq7ZxIyvvJJw4Fz1zR2NA"
+        },
+        {
+          "name": "yandex-verification",
+          "content": "e37b9b2b71291f43"
+        },
+        {
+          "property": "og:title",
+          "content": "Кухни на заказ в Твери от производителя | Kuhnitver"
+        },
+        {
+          "property": "og:description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Готовность от 20 дней, фурнитура Blum и Hettich, бесплатная доставка и установка. Гарантия 1 год."
+        },
+        {
+          "property": "og:url",
+          "content": "https://kuhnitver.ru"
+        },
+        {
+          "property": "og:site_name",
+          "content": "Kuhnitver"
+        },
+        {
+          "property": "og:locale",
+          "content": "ru_RU"
+        },
+        {
+          "property": "og:image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        },
+        {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        {
+          "property": "og:image:alt",
+          "content": "Kuhnitver — кухни на заказ в Твери"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Кухни на заказ в Твери от производителя | Kuhnitver"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Готовность от 20 дней, фурнитура Blum и Hettich, бесплатная доставка и установка. Гарантия 1 год."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        }
+      ],
+      "error": null
+    },
+    {
+      "url": "https://kuhnitver.ru/this-page-does-not-exist-audit-20261030",
+      "final_url": "https://kuhnitver.ru/this-page-does-not-exist-audit-20261030",
+      "status": 404,
+      "redirect_chain": [],
+      "canonical": [
+        "https://kuhnitver.ru"
+      ],
+      "meta": [
+        {
+          "charset": "utf-8"
+        },
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "robots",
+          "content": "noindex"
+        },
+        {
+          "name": "next-size-adjust",
+          "content": ""
+        },
+        {
+          "name": "description",
+          "content": "Запрашиваемая страница не найдена или была перемещена. Перейдите на главную страницу Kuhnitver, чтобы заказать кухню в Твери, посмотреть каталог стилей или рассчитать стоимость онлайн. Телефон: +48 22 477 08 1."
+        },
+        {
+          "name": "author",
+          "content": "Kuhnitver"
+        },
+        {
+          "name": "keywords",
+          "content": "кухни на заказ Тверь, кухни от производителя Тверь, кухни Тверь цены, кухонный гарнитур Тверь, кухни Тверская область"
+        },
+        {
+          "name": "robots",
+          "content": "noindex, nofollow"
+        },
+        {
+          "name": "google-site-verification",
+          "content": "99aXy2XdjB2Jw09DwzV43zwq7ZxIyvvJJw4Fz1zR2NA"
+        },
+        {
+          "name": "yandex-verification",
+          "content": "e37b9b2b71291f43"
+        },
+        {
+          "property": "og:title",
+          "content": "Кухни на заказ в Твери от производителя | Kuhnitver"
+        },
+        {
+          "property": "og:description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Готовность от 20 дней, фурнитура Blum и Hettich, бесплатная доставка и установка. Гарантия 1 год."
+        },
+        {
+          "property": "og:url",
+          "content": "https://kuhnitver.ru"
+        },
+        {
+          "property": "og:site_name",
+          "content": "Kuhnitver"
+        },
+        {
+          "property": "og:locale",
+          "content": "ru_RU"
+        },
+        {
+          "property": "og:image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        },
+        {
+          "property": "og:image:width",
+          "content": "1200"
+        },
+        {
+          "property": "og:image:height",
+          "content": "630"
+        },
+        {
+          "property": "og:image:alt",
+          "content": "Kuhnitver — кухни на заказ в Твери"
+        },
+        {
+          "property": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Кухни на заказ в Твери от производителя | Kuhnitver"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Кухни на заказ в Твери от производителя Kuhnitver. Готовность от 20 дней, фурнитура Blum и Hettich, бесплатная доставка и установка. Гарантия 1 год."
+        },
+        {
+          "name": "twitter:image",
+          "content": "https://kuhnitver.ru/og-image.jpg"
+        }
+      ],
+      "error": null
+    }
+  ],
+  "ua_probes": {
+    "Googlebot": {
+      "status": 200,
+      "final_url": "https://kuhnitver.ru/",
+      "title": "Кухни на заказ в Твери от производителя | Kuhnitver",
+      "bytes": 186963,
+      "error": null
+    },
+    "YandexBot": {
+      "status": 200,
+      "final_url": "https://kuhnitver.ru/",
+      "title": "Кухни на заказ в Твери от производителя | Kuhnitver",
+      "bytes": 186963,
+      "error": null
+    },
+    "OAI-SearchBot": {
+      "status": 200,
+      "final_url": "https://kuhnitver.ru/",
+      "title": "Кухни на заказ в Твери от производителя | Kuhnitver",
+      "bytes": 186963,
+      "error": null
+    },
+    "ChatGPT-User": {
+      "status": 200,
+      "final_url": "https://kuhnitver.ru/",
+      "title": "Кухни на заказ в Твери от производителя | Kuhnitver",
+      "bytes": 186963,
+      "error": null
+    },
+    "GPTBot": {
+      "status": 200,
+      "final_url": "https://kuhnitver.ru/",
+      "title": "Кухни на заказ в Твери от производителя | Kuhnitver",
+      "bytes": 186963,
+      "error": null
+    },
+    "PerplexityBot": {
+      "status": 200,
+      "final_url": "https://kuhnitver.ru/",
+      "title": "Кухни на заказ в Твери от производителя | Kuhnitver",
+      "bytes": 186963,
+      "error": null
+    },
+    "bingbot": {
+      "status": 200,
+      "final_url": "https://kuhnitver.ru/",
+      "title": "Кухни на заказ в Твери от производителя | Kuhnitver",
+      "bytes": 186963,
+      "error": null
+    }
+  },
+  "external_entity_observation": {
+    "source": "https://yandex.com/maps/org/mebelshchik/192529825516/",
+    "checked_date": "2026-10-30",
+    "listing_name": "Mebelshik / Мебельщик",
+    "address": "Тверь, Авангардная улица, 25А",
+    "phone": "+7 (915) 722-00-75",
+    "website": "https://kuhnitver.ru",
+    "interpretation": "Public listing links the audited domain; relation to Kuhnitver and different addresses requires owner confirmation. No listing changes made."
+  }
+}

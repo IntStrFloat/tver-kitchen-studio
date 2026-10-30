@@ -1,0 +1,46 @@
+{
+  "observedAt": "2026-10-30T19:54:47.945405+00:00",
+  "timezone": "Europe/Moscow",
+  "counterId": 110021238,
+  "site": "https://kuhnitver.ru",
+  "source": "Authenticated Yandex.Metrika UI, exact JavaScript event goal creation and final rendered goal rows",
+  "customGoalsBefore": 0,
+  "customGoalsAfter": 6,
+  "goals": [
+    {
+      "event": "callback_request",
+      "id": "676873744",
+      "condition": "equals"
+    },
+    {
+      "event": "quiz_lead",
+      "id": "676874674",
+      "condition": "equals"
+    },
+    {
+      "event": "catalog_lead",
+      "id": "676875568",
+      "condition": "equals"
+    },
+    {
+      "event": "b2b_lead",
+      "id": "676876138",
+      "condition": "equals"
+    },
+    {
+      "event": "blog_lead",
+      "id": "676877250",
+      "condition": "equals"
+    },
+    {
+      "event": "call",
+      "id": "676877754",
+      "condition": "equals"
+    }
+  ],
+  "limits": [
+    "No synthetic conversion events or production leads submitted.",
+    "Telephone click is not a completed call.",
+    "Do not sum visitors of parallel counters."
+  ]
+}

@@ -22,7 +22,7 @@ const Catalog = () => {
     >
       <div className="container-custom">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={false}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
@@ -44,7 +44,7 @@ const Catalog = () => {
           {kitchenStyles.map((kitchen, index) => (
             <motion.article
               key={kitchen.id}
-              initial={{ opacity: 0, y: 30 }}
+              initial={false}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -60,7 +60,7 @@ const Catalog = () => {
                 <div className="aspect-square overflow-hidden">
                   <Image
                     src={kitchen.image}
-                    alt={`Кухня в стиле ${kitchen.name} на заказ в Твери`}
+                    alt={`Дизайн-референс кухни в стиле ${kitchen.name}`}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     width={600}
                     height={600}
@@ -80,11 +80,6 @@ const Catalog = () => {
                       <h3 className="text-xl font-bold text-card drop-shadow-sm">
                         {kitchen.name}
                       </h3>
-                      {kitchen.priceFrom > 0 && (
-                        <span className="flex-shrink-0 px-3 py-1 rounded-full bg-card/90 text-foreground text-sm font-medium">
-                          от {kitchen.priceFrom.toLocaleString("ru-RU")} ₽/п.м.
-                        </span>
-                      )}
                     </div>
                     <p className="text-card/90 text-sm mb-4 hidden lg:block lg:opacity-0 lg:group-hover:opacity-100 transition-opacity duration-300">
                       {kitchen.description}
@@ -116,6 +111,8 @@ const Catalog = () => {
             </motion.article>
           ))}
         </div>
+
+        <p className="text-center text-sm text-muted-foreground mt-6">Изображения показывают идеи оформления. Стоимость рассчитывается индивидуально по комплектации.</p>
 
         <div className="text-center mt-10">
           <Button asChild size="lg" variant="outline">

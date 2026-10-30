@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import { GOALS, trackGoal } from "@/lib/analytics";
+import { useReportWebVitals } from "next/web-vitals";
+import { GOALS, trackGoal, trackWebVital } from "@/lib/analytics";
 
 /**
  * Глобальный делегированный слушатель: ловит клики по любым ссылкам tel:
@@ -9,6 +10,7 @@ import { GOALS, trackGoal } from "@/lib/analytics";
  * обработчик на каждую кнопку звонка по отдельности.
  */
 const AnalyticsListener = () => {
+  useReportWebVitals(trackWebVital);
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement | null;

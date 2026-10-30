@@ -6,7 +6,7 @@ import { ArrowRight, ArrowLeft, Gift, Check, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SITE_CONFIG } from "@/lib/seo";
 import { GOALS, trackGoal } from "@/lib/analytics";
-import { sendLead } from "@/lib/sendLead";
+import { getPhoneError, sendLead } from "@/lib/sendLead";
 
 type Status = "idle" | "sending" | "success" | "error";
 
@@ -50,16 +50,21 @@ const Quiz = () => {
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [phone, setPhone] = useState("");
   const [status, setStatus] = useState<Status>("idle");
+  const [phoneError, setPhoneError] = useState<string>();
 
   const handleSelect = (stepId: number, optionId: string) => {
     setAnswers({ ...answers, [stepId]: optionId });
     if (currentStep < steps.length) {
-      setTimeout(() => setCurrentStep(currentStep + 1), 300);
+      setCurrentStep(currentStep + 1);
     }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (status === "sending") return;
+    const error = getPhoneError(phone);
+    setPhoneError(error);
+    if (error) return;
     setStatus("sending");
 
     const answerLabels: Record<string, string> = {};
@@ -74,7 +79,7 @@ const Quiz = () => {
     try {
       await sendLead({
         phone,
-        source: "Квиз — расчёт стоимости",
+        source: "Квиз — заявка на предварительный расчёт",
         details: answerLabels,
       });
 
@@ -84,8 +89,6 @@ const Quiz = () => {
       setStatus("error");
     }
   };
-
-  const isLastStep = currentStep === steps.length;
 
   return (
     <section id="quiz" className="section-padding">
@@ -100,18 +103,18 @@ const Quiz = () => {
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-accent-foreground mb-4">
               <Gift className="w-4 h-4" />
-              <span className="text-sm font-medium">+ Подарок за прохождение</span>
+              <span className="text-sm font-medium">Заявка на расчёт кухни</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ответьте на 4 вопроса
             </h2>
             <p className="text-muted-foreground">
-              Получите предварительный расчёт стоимости кухни
+              Укажите пожелания. Менеджер уточнит комплектацию и подготовит предварительный расчёт.
             </p>
           </div>
 
           {/* Progress */}
-          <div className="flex items-center justify-center gap-2 mb-8">
+          <div className="flex items-center justify-center gap-2 mb-8" aria-label={`Шаг ${currentStep + 1} из 4`}>
             {[...steps, { id: 4 }].map((step, index) => (
               <div
                 key={step.id}
@@ -139,9 +142,9 @@ const Quiz = () => {
                   <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center mx-auto mb-6">
                     <Check className="w-10 h-10 text-primary-foreground" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-2">Спасибо!</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Мы перезвоним вам в течение 15 минут и пришлём расчёт удобным способом — Max или SMS
+                  <h3 className="text-2xl font-bold mb-2">Заявка отправлена</h3>
+                  <p role="status" className="text-muted-foreground mb-4">
+                    Менеджер свяжется с вами, чтобы уточнить размеры и комплектацию. Расчёт будет подготовлен после обсуждения.
                   </p>
                   <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent text-accent-foreground">
                     <Gift className="w-4 h-4" />
@@ -158,7 +161,7 @@ const Quiz = () => {
                   <div className="w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center mx-auto mb-4">
                     <Phone className="w-8 h-8 text-destructive" />
                   </div>
-                  <h3 className="text-2xl font-bold mb-2">Не удалось отправить</h3>
+                  <h3 role="alert" className="text-2xl font-bold mb-2">Не удалось отправить</h3>
                   <p className="text-muted-foreground mb-6 max-w-sm mx-auto">
                     Что-то пошло не так. Позвоните нам напрямую — рассчитаем стоимость по телефону.
                   </p>
@@ -170,6 +173,7 @@ const Quiz = () => {
                     Позвонить {phoneDisplay}
                   </a>
                   <button
+                    type="button"
                     onClick={() => setStatus("idle")}
                     className="block mx-auto mt-4 text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
@@ -184,12 +188,14 @@ const Quiz = () => {
                     exit={{ opacity: 0, x: -20 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <h3 className="text-xl md:text-2xl font-semibold mb-6 text-center">
+                    <h3 aria-live="polite" className="text-xl md:text-2xl font-semibold mb-6 text-center">
                       {steps[currentStep].question}
                     </h3>
                     <div className="grid grid-cols-2 gap-4">
                       {steps[currentStep].options.map((option) => (
                         <button
+                          type="button"
+                          aria-pressed={answers[steps[currentStep].id] === option.id}
                           key={option.id}
                           onClick={() => handleSelect(steps[currentStep].id, option.id)}
                           className={`p-5 rounded-2xl border-2 transition-all duration-200 text-left hover:border-primary hover:bg-accent ${
@@ -206,6 +212,7 @@ const Quiz = () => {
 
                     {currentStep > 0 && (
                       <button
+                        type="button"
                         onClick={() => setCurrentStep(currentStep - 1)}
                         className="flex items-center gap-2 mt-6 text-muted-foreground hover:text-foreground transition-colors"
                       >
@@ -230,18 +237,30 @@ const Quiz = () => {
                       Отлично! Почти готово
                     </h3>
                     <p className="text-muted-foreground mb-6">
-                      Оставьте номер телефона и получите расчёт стоимости
+                      Проверьте пожелания и оставьте телефон. Менеджер подготовит расчёт после уточнения комплектации.
                     </p>
-
-                    <form onSubmit={handleSubmit} className="max-w-sm mx-auto space-y-4">
+                    <dl className="mb-6 space-y-2 text-left text-sm">
+                      {steps.map((step) => <div key={step.id}><dt className="text-muted-foreground">{step.question}</dt><dd className="font-medium">{step.options.find((option) => option.id === answers[step.id])?.label ?? "Не выбрано"}</dd></div>)}
+                    </dl>
+                    <form method="post" onSubmit={handleSubmit} className="max-w-sm mx-auto space-y-4" aria-busy={status === "sending"}>
+                      <label htmlFor="quiz-phone" className="block text-left text-sm font-medium">Телефон</label>
                       <input
+                        id="quiz-phone"
+                        name="phone"
+                        autoComplete="tel"
+                        inputMode="tel"
+                        maxLength={30}
+                        aria-invalid={Boolean(phoneError)}
+                        aria-describedby={phoneError ? "quiz-phone-error" : undefined}
                         type="tel"
                         placeholder="+7 (___) ___-__-__"
                         value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
+                        onChange={(e) => { setPhone(e.target.value); setPhoneError(undefined); }}
+                        onInvalid={() => setPhoneError("Укажите телефон для связи.")}
                         required
                         className="premium-input text-center"
                       />
+                      {phoneError && <p id="quiz-phone-error" role="alert" className="text-left text-sm text-destructive">{phoneError}</p>}
                       <Button
                         type="submit"
                         size="lg"
@@ -252,11 +271,12 @@ const Quiz = () => {
                           "Отправляем…"
                         ) : (
                           <>
-                            Получить расчёт
+                            Получить предварительный расчёт
                             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                           </>
                         )}
                       </Button>
+                      <p role="status" className="sr-only">{status === "sending" ? "Заявка отправляется, дождитесь подтверждения." : ""}</p>
                       <p className="text-xs text-muted-foreground">
                         Нажимая кнопку, вы соглашаетесь с{" "}
                         <a
@@ -271,6 +291,8 @@ const Quiz = () => {
                     </form>
 
                     <button
+                      type="button"
+                      disabled={status === "sending"}
                       onClick={() => setCurrentStep(currentStep - 1)}
                       className="flex items-center gap-2 mt-6 mx-auto text-muted-foreground hover:text-foreground transition-colors"
                     >

@@ -15,15 +15,13 @@ import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: SITE_CONFIG.defaultTitle,
-  description:
-    "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство с 2014 года, готовность от 20 рабочих дней. Фурнитура Blum и Hettich, столешницы из кварца и массива. Бесплатная доставка и установка по Твери. Гарантия 1 год по договору. Рассчитайте стоимость онлайн за 1 минуту!",
+  description: SITE_CONFIG.defaultDescription,
   alternates: {
     canonical: `${SITE_CONFIG.url}/`,
   },
   openGraph: {
     title: SITE_CONFIG.defaultTitle,
-    description:
-      "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство с 2014 года. Фурнитура Blum и Hettich. Бесплатная доставка и установка. Гарантия 1 год. Рассчитайте стоимость онлайн!",
+    description: SITE_CONFIG.defaultDescription,
     url: `${SITE_CONFIG.url}/`,
     siteName: "Kuhnitver",
     locale: "ru_RU",

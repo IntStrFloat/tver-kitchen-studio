@@ -5,7 +5,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_CONFIG } from "@/lib/seo";
-import { cities, kitchenStyles, projects } from "@/lib/data";
+import { cities, kitchenStyles, projects, COMMERCIAL_TERMS } from "@/lib/data";
 
 interface Props {
   params: Promise<{ city: string }>;
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `Кухни на заказ ${city.nameIn} от производителя — доставка и установка | Kuhnitver`,
-    description: `Кухни на заказ ${city.nameIn} от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка ${city.nameIn} — ${city.deliveryCost === "Бесплатно" ? "бесплатно" : city.deliveryCost}, срок ${city.deliveryTime}. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено.`,
+    description: `Кухни на заказ ${city.nameIn} от Kuhnitver. Доставка: ${city.deliveryCost}. ${COMMERCIAL_TERMS.measurementText} Комплектацию и смету согласуем до заказа.`,
     keywords: `кухни на заказ ${city.name}, кухни на заказ ${city.nameIn}, кухни ${city.name} цены, кухонный гарнитур ${city.name}, кухни от производителя ${city.name}, доставка кухни ${city.name}`,
     alternates: {
       canonical: `${SITE_CONFIG.url}/kuhni/${city.slug}`,
@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       type: "website",
       title: `Кухни на заказ ${city.nameIn} от производителя`,
-      description: `Производство кухонь на заказ с доставкой и установкой ${city.nameIn}. Собственное производство Kuhnitver в Твери, гарантия 1 год.`,
+      description: `Производство кухонь на заказ с доставкой и установкой ${city.nameIn}. Индивидуальная комплектация и согласованная смета.`,
       url: `${SITE_CONFIG.url}/kuhni/${city.slug}`,
       // Next.js сливает openGraph поверхностно: если задан свой блок без
       // images, картинка из layout НЕ наследуется. Поэтому указываем явно —
@@ -64,7 +64,7 @@ export default async function CityPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "Service",
     name: `Кухни на заказ ${city.nameIn} — производство, доставка и установка`,
-    description: `Производство кухонь на заказ с доставкой и установкой ${city.nameIn}. Собственное производство в Твери, европейские материалы, гарантия 1 год.`,
+    description: `Производство кухонь на заказ с доставкой и установкой ${city.nameIn}. Индивидуальная комплектация и согласованная смета.`,
     serviceType: "Производство кухонь на заказ",
     url: `${SITE_CONFIG.url}/kuhni/${city.slug}`,
     provider: {
@@ -101,26 +101,25 @@ export default async function CityPage({ params }: Props) {
             <span className="text-primary"> от производителя</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Производим кухни в Твери и доставляем {city.nameIn}. Европейские
-            материалы, гарантия 1 год.
+            Производим кухни в Твери и доставляем {city.nameIn}. Комплектацию и смету согласуем до заказа.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mb-16">
           <div className="premium-card p-6 text-center">
-            <div className="text-3xl font-bold text-primary mb-2">
-              от 20 дней
+            <div className="text-xl font-bold text-primary mb-2">
+              от {COMMERCIAL_TERMS.minProductionWorkingDays} рабочих дней
             </div>
             <div className="text-muted-foreground">срок изготовления</div>
           </div>
           <div className="premium-card p-6 text-center">
-            <div className="text-3xl font-bold text-primary mb-2">
+            <div className="text-xl font-bold text-primary mb-2">
               {city.deliveryTime}
             </div>
-            <div className="text-muted-foreground">срок доставки</div>
+            <div className="text-muted-foreground">дата после готовности кухни</div>
           </div>
           <div className="premium-card p-6 text-center">
-            <div className="text-3xl font-bold text-primary mb-2">
+            <div className="text-xl font-bold text-primary mb-2">
               {city.deliveryCost}
             </div>
             <div className="text-muted-foreground">стоимость доставки</div>
@@ -137,12 +136,12 @@ export default async function CityPage({ params }: Props) {
             </p>
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                "Замер — 1 500 ₽ (вычитается при заказе)",
+                COMMERCIAL_TERMS.measurementText,
                 "Эскиз проекта после заключения договора",
-                "Изготовление от 20 рабочих дней",
+                COMMERCIAL_TERMS.productionText,
                 "Европейская фурнитура Blum, Hettich",
-                "Доставка и сборка",
-                "Гарантия 1 год",
+                COMMERCIAL_TERMS.installationText,
+                COMMERCIAL_TERMS.warrantyText,
                 "Любые стили и размеры",
               ].map((feature, i) => (
                 <div key={i} className="flex items-center gap-3">
@@ -221,6 +220,7 @@ export default async function CityPage({ params }: Props) {
           <h2 className="text-2xl font-bold text-center mb-8">
             Стилевые решения
           </h2>
+          <p className="text-muted-foreground text-center mb-6">Дизайн-референсы для обсуждения стиля. Условия и сроки конкретного заказа согласуем отдельно.</p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {projects.slice(0, 3).map((project) => (
               <Link
@@ -270,7 +270,7 @@ export default async function CityPage({ params }: Props) {
               href="/#quiz"
               className="inline-flex items-center justify-center px-8 py-3 rounded-xl bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
             >
-              Рассчитать стоимость
+              Получить предварительный расчёт
             </Link>
             <a
               href={`tel:${SITE_CONFIG.phoneClean}`}

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Play, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SITE_CONFIG } from "@/lib/seo";
+import { COMMERCIAL_TERMS } from "@/lib/data";
 
 const phoneDisplay = SITE_CONFIG.phone.replace(/-/g, " ");
 
@@ -45,7 +46,7 @@ const Hero = () => {
       <div className="container-custom relative z-10">
         <div className="max-w-2xl">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
@@ -55,7 +56,7 @@ const Hero = () => {
           </motion.div>
 
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
@@ -65,17 +66,17 @@ const Hero = () => {
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 30 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl"
           >
-            Готовность от 20 дней. Европейские материалы, установка включена в
-            стоимость.
+            Изготовление от {COMMERCIAL_TERMS.minProductionWorkingDays} рабочих дней после договора и утверждения проекта.
+            Подберём материалы и наполнение, согласуем комплектацию и смету.
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4"
@@ -86,7 +87,7 @@ const Hero = () => {
               className="group w-full sm:w-auto whitespace-normal text-center"
             >
               <a href="#quiz" onClick={handleSmoothScroll("quiz")}>
-                Рассчитать стоимость за 1 минуту
+                Получить предварительный расчёт
                 <ArrowRight className="ml-2 w-5 h-5 flex-shrink-0 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
@@ -104,7 +105,7 @@ const Hero = () => {
           </motion.div>
 
           <motion.p
-            initial={{ opacity: 0 }}
+            initial={false}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-5 flex items-center gap-2 text-sm md:text-base text-muted-foreground"
@@ -121,16 +122,16 @@ const Hero = () => {
 
           {/* Trust badges */}
           <motion.div
-            initial={{ opacity: 0 }}
+            initial={false}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.5 }}
             className="mt-12 grid grid-cols-3 gap-4 max-w-md"
             aria-label="Ключевые преимущества"
           >
             {[
-              { value: "с 2014", label: "собственное производство", href: "/about" },
-              { value: "от 20", label: "рабочих дней", href: "/about" },
-              { value: "1 год", label: "гарантии по договору", href: "/faq" },
+              { value: "Проект", label: "по вашим размерам", href: "/about" },
+              { value: `от ${COMMERCIAL_TERMS.minProductionWorkingDays}`, label: "рабочих дней", href: "/about" },
+              { value: `${COMMERCIAL_TERMS.warrantyYears} год`, label: "гарантии по договору", href: "/faq" },
             ].map((stat, index) => (
               <Link
                 key={index}

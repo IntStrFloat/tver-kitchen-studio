@@ -1,5 +1,6 @@
 import { SITE_CONFIG } from "@/lib/seo";
-import { blogPosts } from "@/lib/data";
+import { blogPosts, getBlogMetadata } from "@/lib/data";
+import { articlePlainText } from "@/lib/article-markdown";
 
 // RSS-фид блога для раздела «Свежее и актуальное» Вебмастера Яндекса.
 // Формат — RSS 2.0 с обязательными namespace yandex/media; у item обязательны
@@ -29,12 +30,6 @@ function esc(s: string): string {
     .replace(/>/g, "&gt;");
 }
 
-// Текст статьи для yandex:full-text: убираем markdown-заголовки (## ...),
-// оставляя их текст и абзацы.
-function plainText(content: string): string {
-  return content.replace(/^#{1,6}\s+/gm, "").trim();
-}
-
 export async function GET(): Promise<Response> {
   const base = SITE_CONFIG.url;
 
@@ -43,18 +38,20 @@ export async function GET(): Promise<Response> {
   const posts = [...blogPosts]
     .sort((a, b) => b.date.localeCompare(a.date))
     .slice(0, 30);
+  const lastUpdated = posts.map((post) => getBlogMetadata(post).modifiedDate).sort().at(-1);
 
   const items = posts.map((p) =>
     [
       `    <item>`,
       `      <title>${esc(p.title)}</title>`,
       `      <link>${base}/blog/${p.slug}</link>`,
+      `      <guid isPermaLink="true">${base}/blog/${p.slug}</guid>`,
       `      <pubDate>${rfc822(p.date)}</pubDate>`,
-      `      <author>${esc(SITE_CONFIG.name)}</author>`,
+      `      <author>${esc(SITE_CONFIG.email)} (${esc(SITE_CONFIG.name)})</author>`,
       `      <category>Кухни на заказ</category>`,
       `      <description>${esc(p.excerpt)}</description>`,
       `      <yandex:genre>article</yandex:genre>`,
-      `      <yandex:full-text>${esc(plainText(p.content))}</yandex:full-text>`,
+      `      <yandex:full-text>${esc(articlePlainText(p.content))}</yandex:full-text>`,
       `    </item>`,
     ].join("\n"),
   );
@@ -66,6 +63,7 @@ export async function GET(): Promise<Response> {
     <link>${base}</link>
     <description>Статьи и руководства о выборе, материалах и дизайне кухонь на заказ в Твери</description>
     <language>ru</language>
+${lastUpdated ? `    <lastBuildDate>${rfc822(lastUpdated)}</lastBuildDate>` : ""}
 ${items.join("\n")}
   </channel>
 </rss>

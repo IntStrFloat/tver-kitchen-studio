@@ -10,7 +10,7 @@ import CallbackModal from "./CallbackModal";
 
 const navItems = [
   { label: "Каталог", href: "/catalog" },
-  { label: "Наши работы", href: "/portfolio" },
+  { label: "Идеи кухонь", href: "/portfolio" },
   { label: "Цены", href: "/price" },
   { label: "Блог", href: "/blog" },
   { label: "Для бизнеса", href: "/b2b" },
@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <>
       <motion.header
-        initial={{ y: -100 }}
+        initial={false}
         animate={{ y: 0 }}
         className="fixed top-0 left-0 right-0 z-50 glass-header"
         role="banner"

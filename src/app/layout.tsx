@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Providers from "@/components/Providers";
 import AnalyticsListener from "@/components/AnalyticsListener";
 import Script from "next/script";
@@ -13,18 +12,10 @@ import {
 } from "@/lib/seo";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin", "cyrillic"],
-  weight: ["400", "500", "600", "700", "800"],
-  display: "swap",
-  variable: "--font-inter",
-});
-
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
   title: SITE_CONFIG.defaultTitle,
-  description:
-    "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство, готовность от 20 рабочих дней. Фурнитура Blum и Hettich, столешницы из кварца и массива. Бесплатная доставка и установка по Твери. Гарантия 1 год по договору. Рассчитайте стоимость онлайн!",
+  description: SITE_CONFIG.defaultDescription,
   keywords:
     "кухни на заказ Тверь, кухни от производителя Тверь, кухни Тверь цены, кухонный гарнитур Тверь, кухни Тверская область",
   authors: [{ name: "Kuhnitver" }],
@@ -49,8 +40,7 @@ export const metadata: Metadata = {
     siteName: "Kuhnitver",
     locale: "ru_RU",
     title: SITE_CONFIG.defaultTitle,
-    description:
-      "Кухни на заказ в Твери от производителя Kuhnitver. Готовность от 20 дней, фурнитура Blum и Hettich, бесплатная доставка и установка. Гарантия 1 год.",
+    description: SITE_CONFIG.defaultDescription,
     images: [
       {
         url: "https://kuhnitver.ru/og-image.jpg",
@@ -63,8 +53,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: SITE_CONFIG.defaultTitle,
-    description:
-      "Кухни на заказ в Твери от производителя Kuhnitver. Готовность от 20 дней, фурнитура Blum и Hettich, бесплатная доставка и установка. Гарантия 1 год.",
+    description: SITE_CONFIG.defaultDescription,
     images: ["https://kuhnitver.ru/og-image.jpg"],
   },
   icons: {
@@ -93,7 +82,7 @@ export default function RootLayout({
   const serviceSchema = generateServiceSchema();
 
   return (
-    <html lang="ru" className={inter.variable}>
+    <html lang="ru">
       <head>
         <script
           type="application/ld+json"
@@ -125,20 +114,15 @@ export default function RootLayout({
             __html: JSON.stringify(serviceSchema),
           }}
         />
-        <link
-          rel="preload"
-          as="image"
-          href="/images/hero-kitchen.jpg"
-          fetchPriority="high"
-        />
+        <link rel="describedby" href="/llms.txt" type="text/plain" />
+        <link rel="preload" href="/fonts/inter-cyrillic-variable.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/inter-latin-variable.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://mc.yandex.ru" />
         <link rel="dns-prefetch" href="https://mc.yandex.ru" />
-        {/* Раскомментируйте при подключении Google Analytics
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        */}
+
       </head>
       <body className="font-sans antialiased">
+        <noscript><style>{`[style*="opacity:0"], [style*="opacity: 0"] { opacity: 1 !important; transform: none !important; } [data-state="closed"][role="region"] { height: auto !important; display: block !important; }`}</style></noscript>
         <AnalyticsListener />
         <Providers>{children}</Providers>
 
@@ -199,20 +183,7 @@ export default function RootLayout({
           </div>
         </noscript>
 
-        {/* Google Analytics 4 — раскомментируйте и замените GA_ID на ваш реальный ID
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=GA_ID"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'GA_ID');
-          `}
-        </Script>
-        */}
+
       </body>
     </html>
   );

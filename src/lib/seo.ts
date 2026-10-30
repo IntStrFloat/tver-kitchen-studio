@@ -7,12 +7,12 @@ export const SITE_CONFIG = {
   defaultTitle: "Кухни на заказ в Твери от производителя | Kuhnitver",
   titleTemplate: "%s | Kuhnitver",
   defaultDescription:
-    "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство, готовность от 20 рабочих дней. Фурнитура Blum и Hettich. Бесплатная доставка и установка. Гарантия 1 год по договору.",
+    "Кухни на заказ в Твери от Kuhnitver. Планировки, материалы, индивидуальная комплектация и расчёт по размерам. Условия замера, изготовления, доставки и установки согласуются до заказа.",
   defaultOgImage: "https://kuhnitver.ru/og-image.jpg",
   locale: "ru_RU",
   language: "ru",
-  phone: "+48 22 477 08 1",
-  phoneClean: "+4822477081",
+  phone: "+7 (4822) 47-70-81",
+  phoneClean: "+74822477081",
   // Контакт менеджера в мессенджере Max (отдельный номер от основного телефона)
   maxPhone: "+7-915-722-00-75",
   maxPhoneClean: "+79157220075",
@@ -24,6 +24,22 @@ export const SITE_CONFIG = {
     region: "Тверская область",
     postalCode: "170000",
     country: "RU",
+  },
+  // Телефоны и адрес подтверждены владельцем в чате 30.10.2026.
+  contactsVerifiedAt: "2026-10-30",
+  businessCard: {
+    name: "Мебельщик",
+    url: "https://yandex.ru/maps/org/192529825516/",
+    // Принадлежность подтверждена владельцем и доступом к существующей карточке.
+    // Карточка содержит прежний адрес до завершения обработки переезда Яндексом.
+  },
+  openingHours: {
+    label: "Пн–Сб: 10:00–19:00",
+    closedLabel: "Воскресенье — выходной",
+    schema: "Mo-Sa 10:00-19:00",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    opens: "10:00",
+    closes: "19:00",
   },
   social: {
     vk: "https://vk.com/Kuhnitver",
@@ -46,12 +62,12 @@ export const SEO_TEMPLATES = {
   home: {
     title: "Кухни на заказ в Твери от производителя",
     description:
-      "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство, готовность от 20 дней. Фурнитура Blum и Hettich, бесплатная доставка и установка. Гарантия 1 год.",
+      SITE_CONFIG.defaultDescription,
   },
   catalog: {
     title: "Каталог кухонь — стили, фото, цены",
     description:
-      "Каталог кухонь на заказ в Твери: лофт, минимализм, скандинавский стиль, премиум. Фото реальных проектов с ценами. Индивидуальный дизайн под ваши размеры.",
+      "Каталог направлений дизайна кухонь в Твери: лофт, минимализм, скандинавский стиль, премиум. Иллюстрации стилей, материалы и индивидуальный расчёт под ваши размеры.",
   },
   notFound: {
     title: "Страница не найдена — 404",
@@ -68,36 +84,28 @@ export function generateLocalBusinessSchema() {
     "@type": "LocalBusiness",
     "@id": `${SITE_CONFIG.url}/#localbusiness`,
     name: SITE_CONFIG.name,
+    alternateName: SITE_CONFIG.businessCard.name,
     description:
-      "Производство кухонь на заказ в Твери и Тверской области. Собственное производство, европейские материалы, гарантия 1 год.",
+      SITE_CONFIG.defaultDescription,
     url: SITE_CONFIG.url,
     telephone: SITE_CONFIG.phone,
     email: SITE_CONFIG.email,
     image: SITE_CONFIG.defaultOgImage,
     logo: `${SITE_CONFIG.url}/android-chrome-512x512.png`,
-    priceRange: "$$",
     currenciesAccepted: "RUB",
-    paymentAccepted: "Наличные, Банковские карты, Безналичный расчёт",
+    sameAs: [SITE_CONFIG.businessCard.url],
     address: {
       "@type": "PostalAddress",
       streetAddress: SITE_CONFIG.address.street,
       addressLocality: SITE_CONFIG.address.locality,
       addressRegion: SITE_CONFIG.address.region,
-      postalCode: SITE_CONFIG.address.postalCode,
       addressCountry: SITE_CONFIG.address.country,
     },
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-      ],
-      opens: "10:00",
-      closes: "19:00",
+      dayOfWeek: SITE_CONFIG.openingHours.days,
+      opens: SITE_CONFIG.openingHours.opens,
+      closes: SITE_CONFIG.openingHours.closes,
     },
     areaServed: [
       { "@type": "City", name: "Тверь" },
@@ -109,7 +117,6 @@ export function generateLocalBusinessSchema() {
       { "@type": "City", name: "Бежецк" },
       { "@type": "City", name: "Нелидово" },
     ],
-    sameAs: [SITE_CONFIG.social.vk],
     // aggregateRating сознательно не указан — добавим после подключения
     // Яндекс.Бизнеса/Google Business Profile, где будут реальные отзывы
     // с верифицируемыми авторами. Выдуманные значения нарушают Google
@@ -124,6 +131,7 @@ export function generateOrganizationSchema() {
     "@id": `${SITE_CONFIG.url}/#organization`,
     name: SITE_CONFIG.name,
     url: SITE_CONFIG.url,
+    sameAs: [SITE_CONFIG.businessCard.url],
     logo: `${SITE_CONFIG.url}/android-chrome-512x512.png`,
     contactPoint: {
       "@type": "ContactPoint",
@@ -132,7 +140,6 @@ export function generateOrganizationSchema() {
       areaServed: "RU",
       availableLanguage: "Russian",
     },
-    sameAs: [SITE_CONFIG.social.vk],
   };
 }
 
@@ -160,7 +167,7 @@ export function generateWebSiteSchema() {
 const SITE_NAVIGATION_LINKS = [
   { name: "Каталог кухонь", path: "/catalog" },
   { name: "Цены", path: "/price" },
-  { name: "Наши работы", path: "/portfolio" },
+  { name: "Идеи кухонь", path: "/portfolio" },
   { name: "Доставка", path: "/dostavka" },
   { name: "Вопросы и ответы", path: "/faq" },
   { name: "Для бизнеса", path: "/b2b" },
@@ -233,56 +240,47 @@ export function generateFAQSchema(
   };
 }
 
-export function generateProductSchema(
+export function generateKitchenServiceSchema(
   name: string,
   description: string,
   image: string,
-  price: string,
   url: string,
 ) {
   return {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "Service",
+    "@id": `${url}#service`,
     name,
     description,
     image,
     url,
-    brand: {
-      "@type": "Brand",
-      name: SITE_CONFIG.name,
+    provider: { "@id": `${SITE_CONFIG.url}/#localbusiness` },
+    areaServed: {
+      "@type": "AdministrativeArea",
+      name: SITE_CONFIG.address.region,
     },
-    offers: {
-      "@type": "Offer",
-      priceCurrency: "RUB",
-      price,
-      priceValidUntil: new Date(Date.now() + 90 * 24 * 60 * 60 * 1000)
-        .toISOString()
-        .split("T")[0],
-      availability: "https://schema.org/InStock",
-      seller: {
-        "@id": `${SITE_CONFIG.url}/#organization`,
-      },
-    },
+    serviceType: "Изготовление кухни по индивидуальным размерам",
   };
 }
 
-export function generateReviewSchema(
-  author: string,
-  reviewBody: string,
-  ratingValue: number,
+export function generateCollectionPageSchema(
+  title: string,
+  description: string,
+  url: string,
+  items: { name: string; url: string }[],
 ) {
   return {
-    "@type": "Review",
-    author: {
-      "@type": "Person",
-      name: author,
-    },
-    reviewBody,
-    reviewRating: {
-      "@type": "Rating",
-      ratingValue,
-      bestRating: 5,
-      worstRating: 1,
+    ...generateWebPageSchema(title, description, url),
+    "@type": "CollectionPage",
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: items.length,
+      itemListElement: items.map((item, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: item.name,
+        url: item.url,
+      })),
     },
   };
 }
@@ -291,6 +289,7 @@ export function generateServiceSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": `${SITE_CONFIG.url}/#kitchen-service`,
     name: "Производство кухонь на заказ",
     description:
       "Изготовление кухонной мебели на заказ по индивидуальным размерам. Замер, эскиз проекта, доставка и установка.",
@@ -304,12 +303,6 @@ export function generateServiceSchema() {
       name: "Тверская область",
     },
     serviceType: "Производство мебели",
-    offers: {
-      "@type": "AggregateOffer",
-      lowPrice: "25000",
-      highPrice: "150000",
-      priceCurrency: "RUB",
-    },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Каталог кухонь",

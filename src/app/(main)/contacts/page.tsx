@@ -10,12 +10,13 @@ import {
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
 import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
+import { cities, COMMERCIAL_TERMS } from "@/lib/data";
 
 export const metadata: Metadata = {
   title:
     "Контакты Kuhnitver — адрес шоурума, телефон, режим работы в Твери | Kuhnitver",
   description:
-    "Шоурум Kuhnitver: г. Тверь, ул. Николая Корыткова, 3 ст1. Телефон +48 22 477 08 1, email m-btd@mail.ru. Режим работы Пн-Сб 10:00–19:00. Мессенджер Max для быстрой связи. Обслуживаем Тверь, Торжок, Ржев, Конаково и всю Тверскую область.",
+    `${SITE_CONFIG.name}: ${SITE_CONFIG.address.locality}, ${SITE_CONFIG.address.street}. Основной телефон ${SITE_CONFIG.phone}. Max ${SITE_CONFIG.maxPhone}. ${SITE_CONFIG.openingHours.label}. Условия замера и визита согласуем заранее.`,
   keywords:
     "контакты Kuhnitver, адрес кухни Тверь, шоурум кухонь Тверь, телефон кухни Тверь, кухни Тверь Max",
   alternates: {
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     title:
       "Контакты Kuhnitver — адрес шоурума, телефон, режим работы в Твери | Kuhnitver",
     description:
-      "Шоурум Kuhnitver: г. Тверь, ул. Николая Корыткова, 3 ст1. Телефон, email, мессенджер Max. Пн-Сб 10:00–19:00.",
+      `${SITE_CONFIG.name}: ${SITE_CONFIG.address.locality}, ${SITE_CONFIG.address.street}. Основной телефон ${SITE_CONFIG.phone}, Max ${SITE_CONFIG.maxPhone}.`,
     url: `${SITE_CONFIG.url}/contacts`,
     siteName: "Kuhnitver",
     locale: "ru_RU",
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
   },
 };
 
-const addressQuery = "Тверь, улица Николая Корыткова, 3 ст1";
+const addressQuery = `${SITE_CONFIG.address.locality}, ${SITE_CONFIG.address.street}`;
 const mapSrc =
   "https://yandex.ru/map-widget/v1/?mode=search&text=" +
   encodeURIComponent(addressQuery) +
@@ -74,8 +75,7 @@ export default function ContactsPage() {
           </h1>
           <p className="text-lg text-muted-foreground">
             Приезжайте в шоурум, звоните или пишите в мессенджер — поможем
-            выбрать материалы, рассчитать стоимость и записать на бесплатный
-            замер.
+            выбрать материалы, запросить предварительный расчёт и согласовать замер.
           </p>
         </header>
 
@@ -83,13 +83,13 @@ export default function ContactsPage() {
           className="grid lg:grid-cols-5 gap-6 mb-16"
           itemScope
           itemType="https://schema.org/LocalBusiness"
+          itemID={`${SITE_CONFIG.url}/#localbusiness`}
         >
           <meta itemProp="name" content={SITE_CONFIG.name} />
           {/* URL — через <link href>, а не <meta content> (ссылка в content
               мета-тега невалидна для валидатора Яндекса). */}
           <link itemProp="url" href={SITE_CONFIG.url} />
           <meta itemProp="image" content={SITE_CONFIG.defaultOgImage} />
-          <meta itemProp="priceRange" content="$$" />
 
           <div className="lg:col-span-2 space-y-4">
             <address
@@ -150,7 +150,7 @@ export default function ContactsPage() {
                     {SITE_CONFIG.phone}
                   </a>
                   <p className="text-xs text-muted-foreground mt-1">
-                    Перезваниваем в течение 15 минут
+                    Основной телефон для вопросов и записи
                   </p>
                 </div>
               </div>
@@ -179,7 +179,7 @@ export default function ContactsPage() {
             <div
               className="premium-card p-6"
               itemProp="openingHours"
-              content="Mo-Sa 10:00-19:00"
+              content={SITE_CONFIG.openingHours.schema}
             >
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -189,9 +189,9 @@ export default function ContactsPage() {
                   <div className="text-xs uppercase tracking-wide text-muted-foreground mb-1">
                     Режим работы
                   </div>
-                  <p className="font-semibold">Пн–Сб: 10:00–19:00</p>
+                  <p className="font-semibold">{SITE_CONFIG.openingHours.label}</p>
                   <p className="text-sm text-muted-foreground">
-                    Воскресенье — выходной
+                    {SITE_CONFIG.openingHours.closedLabel}
                   </p>
                 </div>
               </div>
@@ -238,7 +238,7 @@ export default function ContactsPage() {
                 </p>
               </div>
               <p className="text-xs text-muted-foreground mt-3">
-                Отвечаем в рабочее время в течение 15 минут.
+                Отдельный номер для общения в Max. Основной телефон указан выше.
               </p>
             </div>
           </div>
@@ -251,7 +251,6 @@ export default function ContactsPage() {
                 height="100%"
                 style={{ border: 0, minHeight: 500 }}
                 loading="lazy"
-                allow="geolocation"
                 referrerPolicy="no-referrer-when-downgrade"
                 title={`Шоурум Kuhnitver на ${SITE_CONFIG.address.street} в Твери`}
               />
@@ -268,16 +267,7 @@ export default function ContactsPage() {
             области. Кликните на город — узнаете условия и сроки доставки.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            {[
-              { name: "Тверь", slug: "tveri" },
-              { name: "Торжок", slug: "torzhke" },
-              { name: "Ржев", slug: "rzheve" },
-              { name: "Конаково", slug: "konakovo" },
-              { name: "Кимры", slug: "kimrah" },
-              { name: "Вышний Волочёк", slug: "vyshnem-volochke" },
-              { name: "Бежецк", slug: "bezhecke" },
-              { name: "Нелидово", slug: "nelidovo" },
-            ].map((city) => (
+            {cities.map((city) => (
               <a
                 key={city.slug}
                 href={`/kuhni/${city.slug}`}
@@ -294,8 +284,7 @@ export default function ContactsPage() {
             Как нас найти в Твери
           </h2>
           <p>
-            Шоурум и производство Kuhnitver находятся в Твери, на улице
-            Николая Корыткова, 3 ст1. На месте можно
+            Адрес Kuhnitver: {SITE_CONFIG.address.locality}, {SITE_CONFIG.address.street}. На месте можно
             посмотреть и потрогать образцы фасадов, столешниц, фурнитуры
             Blum и Hettich, обсудить с дизайнером планировку и стиль, получить
             предварительный расчёт по своим размерам. Перед визитом удобно
@@ -304,15 +293,12 @@ export default function ContactsPage() {
               href={`tel:${SITE_CONFIG.phoneClean}`}
               className="text-primary hover:underline"
             >
-              +48 22 477 08 1
+              {SITE_CONFIG.phone}
             </a>{" "}
             — мы подготовим образцы под интересующий вас стиль.
           </p>
           <p>
-            Если приезжать в шоурум неудобно — оформим встречу с замерщиком
-            прямо у вас дома по Твери и области, бесплатно привезём образцы.
-            Замер стоит 1 500 ₽ и вычитается из стоимости кухни при оформлении
-            заказа. Связаться удобнее всего по телефону или через
+            {COMMERCIAL_TERMS.measurementText} Связаться можно по основному телефону или через{" "}
             мессенджер Max — добавьте в контакты номер{" "}
             <a
               href={`tel:${SITE_CONFIG.maxPhoneClean}`}
@@ -320,8 +306,12 @@ export default function ContactsPage() {
             >
               {SITE_CONFIG.maxPhone.replace(/-/g, " ")}
             </a>{" "}
-            и найдите нас в приложении. Ответим в течение 15 минут в
-            рабочее время.
+            и найдите нас в приложении.
+          </p>
+          <p>
+            Kuhnitver — сайт студии кухонь. В Яндекс Бизнесе наша существующая карточка называется{" "}
+            <a href={SITE_CONFIG.businessCard.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">«{SITE_CONFIG.businessCard.name}»</a>.
+            В ней может отображаться адрес до переезда; для визита используйте действующий адрес на этой странице и предварительно свяжитесь с нами.
           </p>
         </section>
       </div>

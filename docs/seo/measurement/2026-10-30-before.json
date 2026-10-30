@@ -1,0 +1,3029 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-10-30T19:18:11.268Z",
+  "finishedAt": "2026-10-30T19:18:12.611Z",
+  "timezone": "Europe/Moscow",
+  "baseUrl": "https://kuhnitver.ru",
+  "canonicalOrigin": "https://kuhnitver.ru",
+  "method": "Public read-only HTTP GET from auditor IP; no form submission and no browser execution.",
+  "limits": [
+    "User-Agent probes do not establish access from genuine crawler networks.",
+    "The bounded XML check does not validate platform feed schemas.",
+    "HTTP timing is not Core Web Vitals.",
+    "JSON-LD syntax/applicability checks do not substitute for supported provider validators.",
+    "No authenticated search-console or AI-answer observations are implied."
+  ],
+  "summary": {
+    "sitemapUrls": 35,
+    "http200": 35,
+    "uniqueTitles": 35,
+    "singleH1": 35,
+    "errors": 101,
+    "warnings": 0
+  },
+  "findings": [
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/catalog",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unsupported_stock_claim",
+      "url": "https://kuhnitver.ru/catalog",
+      "detail": "https://schema.org/InStock",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/catalog",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "category_marked_product",
+      "url": "https://kuhnitver.ru/catalog",
+      "detail": "/catalog",
+      "severity": "error"
+    },
+    {
+      "code": "catalog_missing_collection",
+      "url": "https://kuhnitver.ru/catalog",
+      "detail": "/catalog",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "expired_offer",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "2026-10-02",
+      "severity": "error"
+    },
+    {
+      "code": "unsupported_stock_claim",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "https://schema.org/InStock",
+      "severity": "error"
+    },
+    {
+      "code": "hidden_offer_price",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "28000",
+      "severity": "error"
+    },
+    {
+      "code": "expired_offer",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "2026-10-02",
+      "severity": "error"
+    },
+    {
+      "code": "unsupported_stock_claim",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "https://schema.org/InStock",
+      "severity": "error"
+    },
+    {
+      "code": "expired_offer",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "2026-10-02",
+      "severity": "error"
+    },
+    {
+      "code": "unsupported_stock_claim",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "https://schema.org/InStock",
+      "severity": "error"
+    },
+    {
+      "code": "expired_offer",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "2026-10-02",
+      "severity": "error"
+    },
+    {
+      "code": "unsupported_stock_claim",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "https://schema.org/InStock",
+      "severity": "error"
+    },
+    {
+      "code": "hidden_offer_price",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "45000",
+      "severity": "error"
+    },
+    {
+      "code": "expired_offer",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "2026-10-02",
+      "severity": "error"
+    },
+    {
+      "code": "unsupported_stock_claim",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "https://schema.org/InStock",
+      "severity": "error"
+    },
+    {
+      "code": "hidden_offer_price",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "35000",
+      "severity": "error"
+    },
+    {
+      "code": "expired_offer",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "2026-10-02",
+      "severity": "error"
+    },
+    {
+      "code": "unsupported_stock_claim",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "https://schema.org/InStock",
+      "severity": "error"
+    },
+    {
+      "code": "expired_offer",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "2026-10-02",
+      "severity": "error"
+    },
+    {
+      "code": "unsupported_stock_claim",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "https://schema.org/InStock",
+      "severity": "error"
+    },
+    {
+      "code": "category_marked_product",
+      "url": "https://kuhnitver.ru/price",
+      "detail": "/price",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/portfolio",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/about",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unsubstantiated_superlative",
+      "url": "https://kuhnitver.ru/about",
+      "detail": "Ranking/recommendation statistic needs evidence",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/contacts",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "conflicting_measurement_price",
+      "url": "https://kuhnitver.ru/contacts",
+      "detail": "Both free measurement and 1,500 RUB appear",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/blog",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/faq",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/dostavka",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "conflicting_delivery_price",
+      "url": "https://kuhnitver.ru/dostavka",
+      "detail": "Конаково",
+      "severity": "error"
+    },
+    {
+      "code": "conflicting_delivery_price",
+      "url": "https://kuhnitver.ru/dostavka",
+      "detail": "Ржев",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/privacy",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unsubstantiated_superlative",
+      "url": "https://kuhnitver.ru/privacy",
+      "detail": "Ranking/recommendation statistic needs evidence",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/b2b",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/catalog/loft",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "expired_offer",
+      "url": "https://kuhnitver.ru/catalog/loft",
+      "detail": "2026-10-02",
+      "severity": "error"
+    },
+    {
+      "code": "unsupported_stock_claim",
+      "url": "https://kuhnitver.ru/catalog/loft",
+      "detail": "https://schema.org/InStock",
+      "severity": "error"
+    },
+    {
+      "code": "hidden_offer_price",
+      "url": "https://kuhnitver.ru/catalog/loft",
+      "detail": "28000",
+      "severity": "error"
+    },
+    {
+      "code": "category_marked_product",
+      "url": "https://kuhnitver.ru/catalog/loft",
+      "detail": "/catalog/loft",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/catalog/skandinavskiy",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "expired_offer",
+      "url": "https://kuhnitver.ru/catalog/skandinavskiy",
+      "detail": "2026-10-02",
+      "severity": "error"
+    },
+    {
+      "code": "unsupported_stock_claim",
+      "url": "https://kuhnitver.ru/catalog/skandinavskiy",
+      "detail": "https://schema.org/InStock",
+      "severity": "error"
+    },
+    {
+      "code": "hidden_offer_price",
+      "url": "https://kuhnitver.ru/catalog/skandinavskiy",
+      "detail": "25000",
+      "severity": "error"
+    },
+    {
+      "code": "category_marked_product",
+      "url": "https://kuhnitver.ru/catalog/skandinavskiy",
+      "detail": "/catalog/skandinavskiy",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/catalog/minimalizm",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "expired_offer",
+      "url": "https://kuhnitver.ru/catalog/minimalizm",
+      "detail": "2026-10-02",
+      "severity": "error"
+    },
+    {
+      "code": "unsupported_stock_claim",
+      "url": "https://kuhnitver.ru/catalog/minimalizm",
+      "detail": "https://schema.org/InStock",
+      "severity": "error"
+    },
+    {
+      "code": "hidden_offer_price",
+      "url": "https://kuhnitver.ru/catalog/minimalizm",
+      "detail": "30000",
+      "severity": "error"
+    },
+    {
+      "code": "category_marked_product",
+      "url": "https://kuhnitver.ru/catalog/minimalizm",
+      "detail": "/catalog/minimalizm",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/catalog/premium",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "expired_offer",
+      "url": "https://kuhnitver.ru/catalog/premium",
+      "detail": "2026-10-02",
+      "severity": "error"
+    },
+    {
+      "code": "unsupported_stock_claim",
+      "url": "https://kuhnitver.ru/catalog/premium",
+      "detail": "https://schema.org/InStock",
+      "severity": "error"
+    },
+    {
+      "code": "hidden_offer_price",
+      "url": "https://kuhnitver.ru/catalog/premium",
+      "detail": "45000",
+      "severity": "error"
+    },
+    {
+      "code": "category_marked_product",
+      "url": "https://kuhnitver.ru/catalog/premium",
+      "detail": "/catalog/premium",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/catalog/klassika",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "expired_offer",
+      "url": "https://kuhnitver.ru/catalog/klassika",
+      "detail": "2026-10-02",
+      "severity": "error"
+    },
+    {
+      "code": "unsupported_stock_claim",
+      "url": "https://kuhnitver.ru/catalog/klassika",
+      "detail": "https://schema.org/InStock",
+      "severity": "error"
+    },
+    {
+      "code": "hidden_offer_price",
+      "url": "https://kuhnitver.ru/catalog/klassika",
+      "detail": "35000",
+      "severity": "error"
+    },
+    {
+      "code": "category_marked_product",
+      "url": "https://kuhnitver.ru/catalog/klassika",
+      "detail": "/catalog/klassika",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/catalog/belaya",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "expired_offer",
+      "url": "https://kuhnitver.ru/catalog/belaya",
+      "detail": "2026-10-02",
+      "severity": "error"
+    },
+    {
+      "code": "unsupported_stock_claim",
+      "url": "https://kuhnitver.ru/catalog/belaya",
+      "detail": "https://schema.org/InStock",
+      "severity": "error"
+    },
+    {
+      "code": "hidden_offer_price",
+      "url": "https://kuhnitver.ru/catalog/belaya",
+      "detail": "25000",
+      "severity": "error"
+    },
+    {
+      "code": "category_marked_product",
+      "url": "https://kuhnitver.ru/catalog/belaya",
+      "detail": "/catalog/belaya",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/catalog/uglovye",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "expired_offer",
+      "url": "https://kuhnitver.ru/catalog/uglovye",
+      "detail": "2026-10-02",
+      "severity": "error"
+    },
+    {
+      "code": "unsupported_stock_claim",
+      "url": "https://kuhnitver.ru/catalog/uglovye",
+      "detail": "https://schema.org/InStock",
+      "severity": "error"
+    },
+    {
+      "code": "hidden_offer_price",
+      "url": "https://kuhnitver.ru/catalog/uglovye",
+      "detail": "30000",
+      "severity": "error"
+    },
+    {
+      "code": "category_marked_product",
+      "url": "https://kuhnitver.ru/catalog/uglovye",
+      "detail": "/catalog/uglovye",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/kuhni/tveri",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unsubstantiated_superlative",
+      "url": "https://kuhnitver.ru/kuhni/tveri",
+      "detail": "Ranking/recommendation statistic needs evidence",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/kuhni/torzhke",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/kuhni/rzheve",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/kuhni/konakovo",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/kuhni/kimrah",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/kuhni/vyshnem-volochke",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/kuhni/bezhecke",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/kuhni/nelidovo",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/blog/uglovaya-vs-pryamaya-kuhnya",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/blog/top-10-oshibok-pri-zakaze-kuhni",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/blog/dizayn-kuhni-2026-idei-planirovki-i-foto",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "unqualified_aggregate_price",
+      "url": "https://kuhnitver.ru/blog/chernaya-kuhnya-v-interere",
+      "detail": "25000–150000",
+      "severity": "error"
+    },
+    {
+      "code": "robots_obsolete_crawl_delay",
+      "url": "https://kuhnitver.ru/robots.txt",
+      "detail": "Remove obsolete Yandex Crawl-delay",
+      "severity": "error"
+    },
+    {
+      "code": "robots_yandex_override",
+      "url": "https://kuhnitver.ru/robots.txt",
+      "detail": "Yandex-specific group loses wildcard exclusions",
+      "severity": "error"
+    },
+    {
+      "code": "yml_quote_only_numeric_price",
+      "url": "https://kuhnitver.ru/uslugi.yml",
+      "detail": "kuhnitver-loft",
+      "severity": "error"
+    },
+    {
+      "code": "yml_quote_only_numeric_price",
+      "url": "https://kuhnitver.ru/uslugi.yml",
+      "detail": "kuhnitver-skandinavskiy",
+      "severity": "error"
+    },
+    {
+      "code": "yml_quote_only_numeric_price",
+      "url": "https://kuhnitver.ru/uslugi.yml",
+      "detail": "kuhnitver-minimalizm",
+      "severity": "error"
+    },
+    {
+      "code": "yml_quote_only_numeric_price",
+      "url": "https://kuhnitver.ru/uslugi.yml",
+      "detail": "kuhnitver-premium",
+      "severity": "error"
+    },
+    {
+      "code": "yml_quote_only_numeric_price",
+      "url": "https://kuhnitver.ru/uslugi.yml",
+      "detail": "kuhnitver-klassika",
+      "severity": "error"
+    },
+    {
+      "code": "yml_quote_only_numeric_price",
+      "url": "https://kuhnitver.ru/uslugi.yml",
+      "detail": "kuhnitver-belaya",
+      "severity": "error"
+    },
+    {
+      "code": "yml_quote_only_numeric_price",
+      "url": "https://kuhnitver.ru/uslugi.yml",
+      "detail": "kuhnitver-uglovye",
+      "severity": "error"
+    },
+    {
+      "code": "yml_invented_conversion",
+      "url": "https://kuhnitver.ru/uslugi.yml",
+      "detail": "Conversion is not a measured business property",
+      "severity": "error"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://kuhnitver.ru/",
+      "canonicalUrl": "https://kuhnitver.ru/",
+      "finalUrl": "https://kuhnitver.ru/",
+      "status": 200,
+      "durationMs": 182,
+      "title": [
+        "Кухни на заказ в Твери от производителя | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Твери от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство с 2014 года, готовность от 20 рабочих дней. Фурнитура Blum и Hettich, столешницы из кварца и массива. Бесплатная доставка и установка по Твери. Гарантия 1 год по договору. Рассчитайте стоимость онлайн за 1 минуту!"
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 186963,
+      "htmlSha256": "63e573b939495f7db0b9d90a3723e556f8eb9d6ef3b83caffd02f320bfbbac6e",
+      "textCharacters": 13491,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Answer",
+        "City",
+        "ContactPoint",
+        "FAQPage",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Question",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 97
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog",
+      "canonicalUrl": "https://kuhnitver.ru/catalog",
+      "finalUrl": "https://kuhnitver.ru/catalog",
+      "status": 200,
+      "durationMs": 168,
+      "title": [
+        "Каталог кухонь на заказ в Твери — стили, фото, цены | Kuhnitver"
+      ],
+      "h1": [
+        "Каталог кухонь на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog"
+      ],
+      "descriptions": [
+        "Каталог кухонь на заказ в Твери от производителя: лофт, минимализм, скандинавский стиль, современная классика, премиум. Фото реальных проектов с ценами. Индивидуальный дизайн под ваши размеры. Фурнитура Blum и Hettich. Рассчитайте стоимость онлайн."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 80642,
+      "htmlSha256": "ceb43e01dbadaeee153152f200041b8a01153e0f96f003ded3def87ccddc0a69",
+      "textCharacters": 2032,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB",
+          "offerCount": 7,
+          "availability": "https://schema.org/InStock"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 79
+    },
+    {
+      "url": "https://kuhnitver.ru/price",
+      "canonicalUrl": "https://kuhnitver.ru/price",
+      "finalUrl": "https://kuhnitver.ru/price",
+      "status": 200,
+      "durationMs": 174,
+      "title": [
+        "Цены на кухни на заказ в Твери — прайс-лист от производителя | Kuhnitver"
+      ],
+      "h1": [
+        "Цены на кухни на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/price"
+      ],
+      "descriptions": [
+        "Актуальные цены на кухни на заказ в Твери от производителя Kuhnitver. Прямая кухня от 25 000 ₽/м.п., угловая от 30 000 ₽/м.п. Подробная таблица цен по планировкам и материалам (МДФ, массив, акрил). Стоимость фиксируется в договоре. Онлайн-расчёт за 1 минуту."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 83067,
+      "htmlSha256": "6299a636597cfd891cf36f947081bcd929ef764599a3638e4efde67645df0998",
+      "textCharacters": 1957,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "name": "Кухня «Лофт»",
+          "price": "28000",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://kuhnitver.ru/catalog/loft",
+          "priceValidUntil": "2026-10-02"
+        },
+        {
+          "@type": "Offer",
+          "name": "Кухня «Скандинавский»",
+          "price": "25000",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://kuhnitver.ru/catalog/skandinavskiy",
+          "priceValidUntil": "2026-10-02"
+        },
+        {
+          "@type": "Offer",
+          "name": "Кухня «Минимализм»",
+          "price": "30000",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://kuhnitver.ru/catalog/minimalizm",
+          "priceValidUntil": "2026-10-02"
+        },
+        {
+          "@type": "Offer",
+          "name": "Кухня «Премиум»",
+          "price": "45000",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://kuhnitver.ru/catalog/premium",
+          "priceValidUntil": "2026-10-02"
+        },
+        {
+          "@type": "Offer",
+          "name": "Кухня «Классика»",
+          "price": "35000",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://kuhnitver.ru/catalog/klassika",
+          "priceValidUntil": "2026-10-02"
+        },
+        {
+          "@type": "Offer",
+          "name": "Кухня «Белая»",
+          "price": "25000",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://kuhnitver.ru/catalog/belaya",
+          "priceValidUntil": "2026-10-02"
+        },
+        {
+          "@type": "Offer",
+          "name": "Кухня «Угловые»",
+          "price": "30000",
+          "priceCurrency": "RUB",
+          "availability": "https://schema.org/InStock",
+          "url": "https://kuhnitver.ru/catalog/uglovye",
+          "priceValidUntil": "2026-10-02"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 71
+    },
+    {
+      "url": "https://kuhnitver.ru/portfolio",
+      "canonicalUrl": "https://kuhnitver.ru/portfolio",
+      "finalUrl": "https://kuhnitver.ru/portfolio",
+      "status": 200,
+      "durationMs": 33,
+      "title": [
+        "Стилевые решения и идеи для кухонь в Твери | Kuhnitver"
+      ],
+      "h1": [
+        "Стилевые решения и идеи для кухонь"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/portfolio"
+      ],
+      "descriptions": [
+        "Дизайн-референсы кухонь от Kuhnitver: лофт, скандинавский, минимализм, премиум. Используем как отправную точку для индивидуального проекта под ваши размеры и планировку. Производство в Твери, фурнитура Blum и Hettich, гарантия 1 год."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 76846,
+      "htmlSha256": "9ac62e94bec8220fa8d45592a94948f48b39eafe8656fd1f9978326347c98ade",
+      "textCharacters": 1567,
+      "schemaTypes": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 78
+    },
+    {
+      "url": "https://kuhnitver.ru/about",
+      "canonicalUrl": "https://kuhnitver.ru/about",
+      "finalUrl": "https://kuhnitver.ru/about",
+      "status": 200,
+      "durationMs": 32,
+      "title": [
+        "О компании Kuhnitver — производство кухонь в Твери с 2014 года | Kuhnitver"
+      ],
+      "h1": [
+        "Производим кухни с 2014 года"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/about"
+      ],
+      "descriptions": [
+        "Kuhnitver — собственное производство кухонь на заказ в Твери с 2014 года. Более 500 реализованных проектов, 98% клиентов рекомендуют. Полный цикл: от замера и эскиза до доставки и установки. Европейская фурнитура Blum, Hettich. Гарантия 1 год по договору."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 81155,
+      "htmlSha256": "b2b121a5cf7833ba5a474630c3cf9dc44f930b3f642ce4d8c80344d354404ad9",
+      "textCharacters": 2135,
+      "schemaTypes": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "HowTo",
+        "HowToStep",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 72
+    },
+    {
+      "url": "https://kuhnitver.ru/contacts",
+      "canonicalUrl": "https://kuhnitver.ru/contacts",
+      "finalUrl": "https://kuhnitver.ru/contacts",
+      "status": 200,
+      "durationMs": 29,
+      "title": [
+        "Контакты Kuhnitver — адрес шоурума, телефон, режим работы в Твери | Kuhnitver"
+      ],
+      "h1": [
+        "Контакты"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/contacts"
+      ],
+      "descriptions": [
+        "Шоурум Kuhnitver: г. Тверь, ул. Николая Корыткова, 3 ст1. Телефон +48 22 477 08 1, email m-btd@mail.ru. Режим работы Пн-Сб 10:00–19:00. Мессенджер Max для быстрой связи. Обслуживаем Тверь, Торжок, Ржев, Конаково и всю Тверскую область."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 81049,
+      "htmlSha256": "736596318c0acab326e6286b2f0f0852f3a69be3362910eb62f6c25c7623f0a7",
+      "textCharacters": 2270,
+      "schemaTypes": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 70
+    },
+    {
+      "url": "https://kuhnitver.ru/faq",
+      "canonicalUrl": "https://kuhnitver.ru/faq",
+      "finalUrl": "https://kuhnitver.ru/faq",
+      "status": 200,
+      "durationMs": 44,
+      "title": [
+        "Вопросы и ответы о кухнях на заказ в Твери — FAQ | Kuhnitver"
+      ],
+      "h1": [
+        "Вопросы и ответы"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/faq"
+      ],
+      "descriptions": [
+        "Ответы на частые вопросы о заказе кухонь в Твери от производителя Kuhnitver. Сколько стоит кухня? Какие сроки изготовления? Какие материалы используете? Есть ли гарантия? Как проходит замер и установка? Подробные ответы на все вопросы о кухнях на заказ."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 115464,
+      "htmlSha256": "edbf959ca7c7865dee43b5af624f93cd1d8b970cf79d8b02311746ab46062f37",
+      "textCharacters": 4793,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Answer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "FAQPage",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Question",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 36
+    },
+    {
+      "url": "https://kuhnitver.ru/dostavka",
+      "canonicalUrl": "https://kuhnitver.ru/dostavka",
+      "finalUrl": "https://kuhnitver.ru/dostavka",
+      "status": 200,
+      "durationMs": 45,
+      "title": [
+        "Доставка и установка кухонь по Твери и Тверской области — бесплатно | Kuhnitver"
+      ],
+      "h1": [
+        "Доставка и установка кухонь"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/dostavka"
+      ],
+      "descriptions": [
+        "Бесплатная доставка и профессиональная установка кухонь на заказ по Твери. Подъём на этаж, подключение мойки и техники — включено. Доставка по Тверской области: Торжок от 3 000 ₽, Ржев, Конаково, Кимры. Сборка за 1 день опытными мастерами. Гарантия на монтаж."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 77101,
+      "htmlSha256": "1028edc7d01ac8581b3863947858ed26f5bb9a4e723320dcc4d096f04af3318e",
+      "textCharacters": 2076,
+      "schemaTypes": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "RUB",
+          "description": "Бесплатная доставка и установка по Твери"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 39
+    },
+    {
+      "url": "https://kuhnitver.ru/blog",
+      "canonicalUrl": "https://kuhnitver.ru/blog",
+      "finalUrl": "https://kuhnitver.ru/blog",
+      "status": 200,
+      "durationMs": 33,
+      "title": [
+        "Блог о кухнях — статьи, советы и руководства по выбору | Kuhnitver"
+      ],
+      "h1": [
+        "Блог о кухнях"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog"
+      ],
+      "descriptions": [
+        "Экспертные статьи от производителя кухонь Kuhnitver. Как выбрать материал для фасадов: МДФ, массив или акрил? Какая планировка кухни лучше? Сколько стоит кухня на заказ? Сравнение фурнитуры Blum и Hettich. Тренды дизайна кухонь 2025–2026. Читайте и делайте осознанный выбор."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 82208,
+      "htmlSha256": "b3d6b502d11dea3e77b959bab33ab8c8e358f86088ddc5251be59a304c370f19",
+      "textCharacters": 2461,
+      "schemaTypes": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 43
+    },
+    {
+      "url": "https://kuhnitver.ru/b2b",
+      "canonicalUrl": "https://kuhnitver.ru/b2b",
+      "finalUrl": "https://kuhnitver.ru/b2b",
+      "status": 200,
+      "durationMs": 35,
+      "title": [
+        "Мебель для бизнеса на заказ в Твери — офис, торговля, HoReCa | Kuhnitver"
+      ],
+      "h1": [
+        "Мебель для бизнеса на заказ"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/b2b"
+      ],
+      "descriptions": [
+        "Производство мебели для бизнеса в Твери: офисная мебель, торговое оборудование, мебель для гостиниц и образовательных учреждений. Работаем по договору с юрлицами и ИП. Безналичная оплата, закрывающие документы (УПД, счёт-фактура). Серийное производство, индивидуальные проекты. Срок от 20 рабочих дней. Гарантия 1 год."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 190456,
+      "htmlSha256": "17766543ada74517e260528b3f05f3f99f880bc4ffc5e66355df42a8d0d1b019",
+      "textCharacters": 10264,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Answer",
+        "BreadcrumbList",
+        "BusinessAudience",
+        "City",
+        "ContactPoint",
+        "FAQPage",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Question",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 68
+    },
+    {
+      "url": "https://kuhnitver.ru/privacy",
+      "canonicalUrl": "https://kuhnitver.ru/privacy",
+      "finalUrl": "https://kuhnitver.ru/privacy",
+      "status": 200,
+      "durationMs": 28,
+      "title": [
+        "Политика конфиденциальности | Kuhnitver"
+      ],
+      "h1": [
+        "Политика конфиденциальности"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/privacy"
+      ],
+      "descriptions": [
+        "Политика обработки персональных данных Kuhnitver: какие данные мы собираем через формы на сайте, цели обработки, передача третьим лицам и права пользователя."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 69593,
+      "htmlSha256": "c487aa377461c594f2643de82dfeaf50c24a0dd207aa6fd4ed9c8b1f2094cae8",
+      "textCharacters": 3816,
+      "schemaTypes": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 52
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/loft",
+      "canonicalUrl": "https://kuhnitver.ru/catalog/loft",
+      "finalUrl": "https://kuhnitver.ru/catalog/loft",
+      "status": 200,
+      "durationMs": 32,
+      "title": [
+        "Кухни в стиле лофт на заказ в Твери — цены, фото, материалы | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни в стиле Лофт на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog/loft"
+      ],
+      "descriptions": [
+        "Кухни в стиле лофт на заказ в Твери от производителя Kuhnitver. Фасады МДФ Soft-touch, столешницы из массива дуба, фурнитура Blum. Индустриальный дизайн с кирпичными и металлическими акцентами. Изготовление от 20 дней, бесплатная установка. Гарантия 1 год по договору."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 80856,
+      "htmlSha256": "4b0cf6b82e251c18c174ca761af3136d2465b648f967f23535c605df1f03727a",
+      "textCharacters": 1728,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "RUB",
+          "price": "28000",
+          "priceValidUntil": "2026-10-02",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://kuhnitver.ru/#organization"
+          }
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 27
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/skandinavskiy",
+      "canonicalUrl": "https://kuhnitver.ru/catalog/skandinavskiy",
+      "finalUrl": "https://kuhnitver.ru/catalog/skandinavskiy",
+      "status": 200,
+      "durationMs": 28,
+      "title": [
+        "Скандинавские кухни на заказ в Твери — светлый дизайн, цены | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни в стиле Скандинавский на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog/skandinavskiy"
+      ],
+      "descriptions": [
+        "Скандинавские кухни на заказ в Твери от производителя Kuhnitver. Светлые пастельные фасады из крашеного МДФ, столешницы из искусственного камня, фурнитура Hettich. Максимальная функциональность для малых площадей. Производство от 20 дней, установка включена. Гарантия 1 год."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 81162,
+      "htmlSha256": "a9f77a867aef1ff48f755f4c3aac8db075a4408b13ac7daf0427980df63b129d",
+      "textCharacters": 1715,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "RUB",
+          "price": "25000",
+          "priceValidUntil": "2026-10-02",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://kuhnitver.ru/#organization"
+          }
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 27
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/minimalizm",
+      "canonicalUrl": "https://kuhnitver.ru/catalog/minimalizm",
+      "finalUrl": "https://kuhnitver.ru/catalog/minimalizm",
+      "status": 200,
+      "durationMs": 30,
+      "title": [
+        "Кухни в стиле минимализм на заказ в Твери — без ручек, push-to-open | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни в стиле Минимализм на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog/minimalizm"
+      ],
+      "descriptions": [
+        "Минималистичные кухни на заказ в Твери от производителя Kuhnitver. Гладкие акриловые фасады без ручек, системы push-to-open, столешницы Dekton. Встроенная техника, скрытые системы хранения, интегрированная подсветка. Идеально для современных квартир. Срок от 20 дней, гарантия 1 год."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 80719,
+      "htmlSha256": "0dff0730b6a47e053259235bcd544b08571748cd764bba817f3b49162adafa22",
+      "textCharacters": 1614,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "RUB",
+          "price": "30000",
+          "priceValidUntil": "2026-10-02",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://kuhnitver.ru/#organization"
+          }
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 19
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/premium",
+      "canonicalUrl": "https://kuhnitver.ru/catalog/premium",
+      "finalUrl": "https://kuhnitver.ru/catalog/premium",
+      "status": 200,
+      "durationMs": 30,
+      "title": [
+        "Премиум кухни на заказ в Твери — итальянские фасады, мрамор | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни в стиле Премиум на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog/premium"
+      ],
+      "descriptions": [
+        "Премиум кухни на заказ в Твери от производителя Kuhnitver. Эксклюзивные итальянские фасады, столешницы из натурального мрамора, фурнитура Blum премиум-класса. Индивидуальный дизайн-проект, встраиваемая техника Miele и Bosch. Каждая кухня — произведение искусства. Гарантия 1 год по договору."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 80975,
+      "htmlSha256": "02f5c53cadf656ed2d71e767ffb047989ba9034c49509ce984cd974b11056e15",
+      "textCharacters": 1653,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "RUB",
+          "price": "45000",
+          "priceValidUntil": "2026-10-02",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://kuhnitver.ru/#organization"
+          }
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 31
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/klassika",
+      "canonicalUrl": "https://kuhnitver.ru/catalog/klassika",
+      "finalUrl": "https://kuhnitver.ru/catalog/klassika",
+      "status": 200,
+      "durationMs": 31,
+      "title": [
+        "Классические кухни на заказ в Твери — фрезерованные фасады, цены | Kuhnitver"
+      ],
+      "h1": [
+        "Классические кухни на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog/klassika"
+      ],
+      "descriptions": [
+        "Классические кухни на заказ в Твери от производителя Kuhnitver. Фрезерованные фасады из МДФ и массива, эмаль и патина, фурнитура Blum. Тёплая палитра и декор под классический интерьер. Изготовление от 20 дней, доставка и установка. Гарантия 1 год по договору."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 80970,
+      "htmlSha256": "e598f65283f560182af2e3f5114e10de6e800cfe360bf25be4fac767cc58b16a",
+      "textCharacters": 1730,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "RUB",
+          "price": "35000",
+          "priceValidUntil": "2026-10-02",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://kuhnitver.ru/#organization"
+          }
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 16
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/belaya",
+      "canonicalUrl": "https://kuhnitver.ru/catalog/belaya",
+      "finalUrl": "https://kuhnitver.ru/catalog/belaya",
+      "status": 200,
+      "durationMs": 29,
+      "title": [
+        "Белые кухни на заказ в Твери — матовые и глянцевые, цены | Kuhnitver"
+      ],
+      "h1": [
+        "Белые кухни на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog/belaya"
+      ],
+      "descriptions": [
+        "Белые кухни на заказ в Твери от производителя Kuhnitver. Матовая эмаль или глянец, крашеный МДФ, фурнитура Blum и Hettich. Светлый дизайн, который расширяет пространство и подходит под любой интерьер. Изготовление от 20 дней, гарантия 1 год по договору."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 80832,
+      "htmlSha256": "c6d93a06c9135036dffbc3505b738038f5629f0ea2ba3c0feee186b2e25ec8c2",
+      "textCharacters": 1765,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "RUB",
+          "price": "25000",
+          "priceValidUntil": "2026-10-02",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://kuhnitver.ru/#organization"
+          }
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 16
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog/uglovye",
+      "canonicalUrl": "https://kuhnitver.ru/catalog/uglovye",
+      "finalUrl": "https://kuhnitver.ru/catalog/uglovye",
+      "status": 200,
+      "durationMs": 58,
+      "title": [
+        "Угловые кухни на заказ в Твери — Г-образные, цены и фото | Kuhnitver"
+      ],
+      "h1": [
+        "Угловые кухни на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog/uglovye"
+      ],
+      "descriptions": [
+        "Угловые (Г-образные) кухни на заказ в Твери от производителя Kuhnitver. Эргономичное использование угла, выдвижные механизмы Blum, любые фасады и размеры. Изготовление от 20 дней, доставка и установка. Гарантия 1 год по договору."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 80608,
+      "htmlSha256": "bc590c13bd73a28347fb2b476edb687ea1487492141e70f81dfcbf37906e9fde",
+      "textCharacters": 1766,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Brand",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "Offer",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Product",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        },
+        {
+          "@type": "Offer",
+          "priceCurrency": "RUB",
+          "price": "30000",
+          "priceValidUntil": "2026-10-02",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://kuhnitver.ru/#organization"
+          }
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 8
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/tveri",
+      "canonicalUrl": "https://kuhnitver.ru/kuhni/tveri",
+      "finalUrl": "https://kuhnitver.ru/kuhni/tveri",
+      "status": 200,
+      "durationMs": 45,
+      "title": [
+        "Кухни на заказ в Твери от производителя — доставка и установка | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Твери от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/tveri"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Твери от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка в Твери — бесплатно, срок 1-2 дня. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 91506,
+      "htmlSha256": "29fcaf32808e9f899a2e621ca2748bdce4f3b8ba05b367c014afdf3471dbc3da",
+      "textCharacters": 2021,
+      "schemaTypes": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/torzhke",
+      "canonicalUrl": "https://kuhnitver.ru/kuhni/torzhke",
+      "finalUrl": "https://kuhnitver.ru/kuhni/torzhke",
+      "status": 200,
+      "durationMs": 50,
+      "title": [
+        "Кухни на заказ в Торжке от производителя — доставка и установка | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Торжке от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/torzhke"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Торжке от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка в Торжке — от 3 000 ₽, срок 2-3 дня. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 91101,
+      "htmlSha256": "663e6b122aa2d16fe201e68fb92943a393d750f60ccf7ed2eaf8b419e398b9e2",
+      "textCharacters": 1959,
+      "schemaTypes": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/rzheve",
+      "canonicalUrl": "https://kuhnitver.ru/kuhni/rzheve",
+      "finalUrl": "https://kuhnitver.ru/kuhni/rzheve",
+      "status": 200,
+      "durationMs": 52,
+      "title": [
+        "Кухни на заказ в Ржеве от производителя — доставка и установка | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Ржеве от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/rzheve"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Ржеве от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка в Ржеве — от 5 000 ₽, срок 3-5 дней. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 90878,
+      "htmlSha256": "7f35968dc494b0723154544b15d90bf923d2f8e1a8e9a751ed41ca135e356165",
+      "textCharacters": 1922,
+      "schemaTypes": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/konakovo",
+      "canonicalUrl": "https://kuhnitver.ru/kuhni/konakovo",
+      "finalUrl": "https://kuhnitver.ru/kuhni/konakovo",
+      "status": 200,
+      "durationMs": 46,
+      "title": [
+        "Кухни на заказ в Конаково от производителя — доставка и установка | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Конаково от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/konakovo"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Конаково от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка в Конаково — от 3 500 ₽, срок 2-3 дня. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 91294,
+      "htmlSha256": "dc51d88d909713f3d6efe5e82528dc0d6629b7f4d30c3af5194afece1de5b533",
+      "textCharacters": 1961,
+      "schemaTypes": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/kimrah",
+      "canonicalUrl": "https://kuhnitver.ru/kuhni/kimrah",
+      "finalUrl": "https://kuhnitver.ru/kuhni/kimrah",
+      "status": 200,
+      "durationMs": 38,
+      "title": [
+        "Кухни на заказ в Кимрах от производителя — доставка и установка | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Кимрах от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/kimrah"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Кимрах от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка в Кимрах — от 4 000 ₽, срок 2-4 дня. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 90920,
+      "htmlSha256": "c66c7464b2854d1f6476635fc94e60306bcee824a7b298a66a157cd9884e8b39",
+      "textCharacters": 1916,
+      "schemaTypes": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/vyshnem-volochke",
+      "canonicalUrl": "https://kuhnitver.ru/kuhni/vyshnem-volochke",
+      "finalUrl": "https://kuhnitver.ru/kuhni/vyshnem-volochke",
+      "status": 200,
+      "durationMs": 27,
+      "title": [
+        "Кухни на заказ в Вышнем Волочке от производителя — доставка и установка | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Вышнем Волочке от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/vyshnem-volochke"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Вышнем Волочке от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка в Вышнем Волочке — от 5 000 ₽, срок 3-5 дней. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 92000,
+      "htmlSha256": "327162cffe9726a1304884a5bb66e0953d96a5a69da415476fe7c43498780927",
+      "textCharacters": 1995,
+      "schemaTypes": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/bezhecke",
+      "canonicalUrl": "https://kuhnitver.ru/kuhni/bezhecke",
+      "finalUrl": "https://kuhnitver.ru/kuhni/bezhecke",
+      "status": 200,
+      "durationMs": 29,
+      "title": [
+        "Кухни на заказ в Бежецке от производителя — доставка и установка | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Бежецке от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/bezhecke"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Бежецке от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка в Бежецке — от 6 000 ₽, срок 3-5 дней. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 90767,
+      "htmlSha256": "493e7cce152adbe875507769f7434e79b37c5c03e3341750fb4d2ee1f5ba3a83",
+      "textCharacters": 1900,
+      "schemaTypes": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/nelidovo",
+      "canonicalUrl": "https://kuhnitver.ru/kuhni/nelidovo",
+      "finalUrl": "https://kuhnitver.ru/kuhni/nelidovo",
+      "status": 200,
+      "durationMs": 29,
+      "title": [
+        "Кухни на заказ в Нелидово от производителя — доставка и установка | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Нелидово от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/nelidovo"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Нелидово от производителя Kuhnitver. Собственное производство в Твери, готовность от 20 рабочих дней. Доставка в Нелидово — от 7 000 ₽, срок 4-6 дней. Европейская фурнитура Blum и Hettich, замер, эскиз проекта. Гарантия 1 год по договору. Более 500 кухонь установлено."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 90962,
+      "htmlSha256": "a4615a0fd1096c233b074070c3460e70bbc02bfacf8a56bf86bb4efe4e38c465",
+      "textCharacters": 1920,
+      "schemaTypes": [
+        "AggregateOffer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
+      "canonicalUrl": "https://kuhnitver.ru/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
+      "finalUrl": "https://kuhnitver.ru/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
+      "status": 200,
+      "durationMs": 30,
+      "title": [
+        "Как выбрать кухню на заказ в Твери — руководство 2026 | Kuhnitver"
+      ],
+      "h1": [
+        "Как выбрать кухню на заказ в Твери: полное руководство"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri"
+      ],
+      "descriptions": [
+        "Полное руководство по выбору кухни на заказ в Твери: бюджет, стили, материалы, проверка производителя. Советы от Kuhnitver."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 77656,
+      "htmlSha256": "ee844afc1e6b1d41262f36a87ebedad9725d5b841a63c876af0062008f065e50",
+      "textCharacters": 3190,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 6
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+      "canonicalUrl": "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+      "finalUrl": "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+      "status": 200,
+      "durationMs": 37,
+      "title": [
+        "МДФ, массив или пластик для кухни — что лучше | Kuhnitver"
+      ],
+      "h1": [
+        "Какой материал для кухни лучше: МДФ, массив или пластик"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik"
+      ],
+      "descriptions": [
+        "Сравнение материалов для кухонных фасадов: МДФ, массив дерева и пластик. Плюсы, минусы, цены в Твери. Рекомендации от производителя."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 76950,
+      "htmlSha256": "c4dfec047365ace3b773676925d319175d6fe26db286f06a9015b623e613a0b9",
+      "textCharacters": 2976,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 7
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026",
+      "canonicalUrl": "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026",
+      "finalUrl": "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026",
+      "status": 200,
+      "durationMs": 32,
+      "title": [
+        "Цены на кухни на заказ в Твери 2026 — актуальный обзор | Kuhnitver"
+      ],
+      "h1": [
+        "Сколько стоит кухня на заказ в 2026 году в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026"
+      ],
+      "descriptions": [
+        "Сколько стоит кухня на заказ в Твери в 2026 году: от 25 000 ₽/п.м. Примеры расчётов для кухонь 2.5–4 метра. Обзор цен от Kuhnitver."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 75736,
+      "htmlSha256": "d89d16bc5a7055d6b89188b968373cde89ca507ee72cbc513aff7ed857e2df13",
+      "textCharacters": 2757,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 1
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/uglovaya-vs-pryamaya-kuhnya",
+      "canonicalUrl": "https://kuhnitver.ru/blog/uglovaya-vs-pryamaya-kuhnya",
+      "finalUrl": "https://kuhnitver.ru/blog/uglovaya-vs-pryamaya-kuhnya",
+      "status": 200,
+      "durationMs": 32,
+      "title": [
+        "Угловая или прямая кухня — какую выбрать | Kuhnitver"
+      ],
+      "h1": [
+        "Угловая vs прямая кухня: что выбрать для вашей квартиры"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/uglovaya-vs-pryamaya-kuhnya"
+      ],
+      "descriptions": [
+        "Сравнение угловой и прямой кухни: плюсы, минусы, для каких помещений подходят. Советы по выбору планировки от производителя в Твери."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 76349,
+      "htmlSha256": "22086fccb856efe49a07e552ffa9c4c8e07048a535a8cdee276337ba29e2d03e",
+      "textCharacters": 2815,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 5
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/top-10-oshibok-pri-zakaze-kuhni",
+      "canonicalUrl": "https://kuhnitver.ru/blog/top-10-oshibok-pri-zakaze-kuhni",
+      "finalUrl": "https://kuhnitver.ru/blog/top-10-oshibok-pri-zakaze-kuhni",
+      "status": 200,
+      "durationMs": 32,
+      "title": [
+        "10 ошибок при заказе кухни — как избежать | Kuhnitver"
+      ],
+      "h1": [
+        "ТОП-10 ошибок при заказе кухни, которых стоит избежать"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/top-10-oshibok-pri-zakaze-kuhni"
+      ],
+      "descriptions": [
+        "ТОП-10 ошибок при заказе кухни на заказ: экономия на фурнитуре, отсутствие 3D-проекта, неправильная планировка. Советы от производителя в Твери."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 78648,
+      "htmlSha256": "7b22084aa98db1845d358d78c30d7086326d67d28e548ddb18c45de35f223631",
+      "textCharacters": 3193,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 3
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+      "canonicalUrl": "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+      "finalUrl": "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+      "status": 200,
+      "durationMs": 29,
+      "title": [
+        "Замер кухни в Твери: чек-лист подготовки | Kuhnitver"
+      ],
+      "h1": [
+        "Замер кухни в Твери: что подготовить к визиту замерщика"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit"
+      ],
+      "descriptions": [
+        "Как подготовиться к замеру кухни в Твери: что измерить самим, какие документы нужны, на что обратить внимание замерщика. Стоимость и порядок замера."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 81830,
+      "htmlSha256": "62fe3c7adfa3667e937dd0d64482b77acad72f8cb4a129686d1a340d14a9fa9a",
+      "textCharacters": 3986,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 6
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
+      "canonicalUrl": "https://kuhnitver.ru/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
+      "finalUrl": "https://kuhnitver.ru/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
+      "status": 200,
+      "durationMs": 28,
+      "title": [
+        "Кварц или мрамор для столешницы кухни — сравнение | Kuhnitver"
+      ],
+      "h1": [
+        "Кварц или мрамор: какая столешница для кухни лучше"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni"
+      ],
+      "descriptions": [
+        "Что выбрать для столешницы кухни: кварцевый агломерат или натуральный мрамор. Сравнение по прочности, уходу, цене и эстетике. Опыт производителя в Твери."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 83854,
+      "htmlSha256": "26344277705e2e7b9cfcf4150f60f2542121382403ab8a7f60187c5244db26d6",
+      "textCharacters": 4448,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 4
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/dizayn-kuhni-2026-idei-planirovki-i-foto",
+      "canonicalUrl": "https://kuhnitver.ru/blog/dizayn-kuhni-2026-idei-planirovki-i-foto",
+      "finalUrl": "https://kuhnitver.ru/blog/dizayn-kuhni-2026-idei-planirovki-i-foto",
+      "status": 200,
+      "durationMs": 35,
+      "title": [
+        "Дизайн кухни 2026: современные идеи, планировки и фото | Kuhnitver"
+      ],
+      "h1": [
+        "Дизайн кухни 2026: современные идеи, планировки и фото"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/dizayn-kuhni-2026-idei-planirovki-i-foto"
+      ],
+      "descriptions": [
+        "Идеи дизайна кухни 2026: планировки, современные фасады, цвета, встроенная техника и освещение. Практические советы для кухни на заказ в Твери."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 106039,
+      "htmlSha256": "44913f4b29eb538cee4fe549143b708ae6d73e4bfaa0baec3a553a6f002f08e6",
+      "textCharacters": 8607,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Answer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "FAQPage",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Question",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 5
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/chernaya-kuhnya-v-interere",
+      "canonicalUrl": "https://kuhnitver.ru/blog/chernaya-kuhnya-v-interere",
+      "finalUrl": "https://kuhnitver.ru/blog/chernaya-kuhnya-v-interere",
+      "status": 200,
+      "durationMs": 38,
+      "title": [
+        "Чёрная кухня в интерьере: сочетания цветов, плюсы и минусы | Kuhnitver"
+      ],
+      "h1": [
+        "Чёрная кухня в интерьере: с чем сочетать и насколько она практична"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/chernaya-kuhnya-v-interere"
+      ],
+      "descriptions": [
+        "Чёрная кухня в интерьере: как сочетать чёрные фасады с деревом, белой столешницей, фартуком и техникой. Плюсы, минусы и советы для кухни на заказ."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 105210,
+      "htmlSha256": "c67ae1bedd9da45a02b7c9ccbef8e5145272e36b10097b2960d35686ec9d1336",
+      "textCharacters": 8332,
+      "schemaTypes": [
+        "AggregateOffer",
+        "Answer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "FAQPage",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Question",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [
+        {
+          "@type": "AggregateOffer",
+          "lowPrice": "25000",
+          "highPrice": "150000",
+          "priceCurrency": "RUB"
+        }
+      ],
+      "jsonldErrors": [],
+      "inboundLinks": 3
+    }
+  ],
+  "robots": {
+    "status": 200,
+    "text": "User-Agent: *\nAllow: /\nDisallow: /api/\nDisallow: /admin/\nDisallow: /private/\n\nUser-Agent: Yandex\nAllow: /\nCrawl-delay: 1\n\nHost: https://kuhnitver.ru\nSitemap: https://kuhnitver.ru/sitemap.xml\n"
+  },
+  "feeds": {
+    "rss": {
+      "status": 200,
+      "contentType": "application/rss+xml; charset=utf-8",
+      "durationMs": 43,
+      "retired": false,
+      "itemCount": 9,
+      "xmlValid": true
+    },
+    "yml": {
+      "status": 200,
+      "contentType": "application/xml; charset=utf-8",
+      "durationMs": 31,
+      "retired": false,
+      "itemCount": 9,
+      "xmlValid": true,
+      "numericPrices": [
+        "28000",
+        "25000",
+        "30000",
+        "45000",
+        "35000",
+        "25000",
+        "30000",
+        "1500",
+        "0"
+      ]
+    }
+  },
+  "llms": {
+    "status": 404
+  },
+  "notFound": {
+    "status": 404,
+    "robots": [
+      {
+        "name": "robots",
+        "content": "noindex"
+      },
+      {
+        "name": "robots",
+        "content": "noindex, nofollow"
+      }
+    ]
+  },
+  "utmCanonical": [
+    "https://kuhnitver.ru"
+  ],
+  "redirects": [
+    {
+      "url": "https://kuhnitver.ru/catalog/loft/",
+      "status": 308,
+      "location": "/catalog/loft"
+    },
+    {
+      "url": "http://kuhnitver.ru/",
+      "status": 301,
+      "location": "https://kuhnitver.ru/"
+    },
+    {
+      "url": "https://www.kuhnitver.ru/",
+      "status": 301,
+      "location": "https://kuhnitver.ru/"
+    }
+  ],
+  "bots": [
+    {
+      "name": "Googlebot",
+      "status": 200,
+      "durationMs": 30
+    },
+    {
+      "name": "YandexBot",
+      "status": 200,
+      "durationMs": 31
+    },
+    {
+      "name": "OAI-SearchBot",
+      "status": 200,
+      "durationMs": 31
+    },
+    {
+      "name": "ChatGPT-User",
+      "status": 200,
+      "durationMs": 30
+    },
+    {
+      "name": "GPTBot",
+      "status": 200,
+      "durationMs": 27
+    },
+    {
+      "name": "PerplexityBot",
+      "status": 200,
+      "durationMs": 28
+    },
+    {
+      "name": "bingbot",
+      "status": 200,
+      "durationMs": 28
+    }
+  ]
+}

@@ -3,13 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
-import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
+import { SITE_CONFIG, generateCollectionPageSchema } from "@/lib/seo";
 import { projects } from "@/lib/data";
+import { getPublishedPortfolioCases } from "@/lib/portfolio";
 
 export const metadata: Metadata = {
   title: "Стилевые решения и идеи для кухонь в Твери | Kuhnitver",
   description:
-    "Дизайн-референсы кухонь от Kuhnitver: лофт, скандинавский, минимализм, премиум. Используем как отправную точку для индивидуального проекта под ваши размеры и планировку. Производство в Твери, фурнитура Blum и Hettich, гарантия 1 год.",
+    "Идеи оформления кухни: лофт, скандинавский, минимализм, премиум. Дизайн-референсы для обсуждения планировки, материалов и индивидуального проекта по вашим размерам.",
   keywords:
     "кухни фото Тверь, идеи кухонь, стили кухонь, кухни лофт, кухни минимализм, кухни скандинавский, кухни премиум",
   alternates: {
@@ -35,19 +36,24 @@ export const metadata: Metadata = {
 };
 
 export default function PortfolioPage() {
+  const completedProjects = getPublishedPortfolioCases();
   return (
     <div className="min-h-screen pt-24">
       <JsonLd
-        data={generateWebPageSchema(
+        data={generateCollectionPageSchema(
           "Стилевые решения кухонь — идеи для вашего проекта",
           "Дизайн-референсы кухонь в разных стилях. Каждый проект — индивидуальный дизайн под ваши размеры и пожелания.",
           `${SITE_CONFIG.url}/portfolio`,
+          [
+            ...completedProjects.map((project) => ({ name: project.title, url: `${SITE_CONFIG.url}/portfolio/${project.slug}` })),
+            ...projects.map((project) => ({ name: `Дизайн-референс: ${project.style}`, url: `${SITE_CONFIG.url}/catalog/${project.styleSlug}` })),
+          ],
         )}
       />
 
       <div className="container-custom">
         <Breadcrumbs
-          items={[{ name: "Наши работы", url: `${SITE_CONFIG.url}/portfolio` }]}
+          items={[{ name: "Идеи кухонь", url: `${SITE_CONFIG.url}/portfolio` }]}
           className="mb-8"
         />
 
@@ -62,6 +68,20 @@ export default function PortfolioPage() {
             проект может отличаться по компоновке и материалам.
           </p>
         </div>
+
+        {completedProjects.length > 0 && (
+          <section className="mb-16" aria-label="Подтверждённые выполненные проекты">
+            <h2 className="text-2xl font-bold mb-6">Выполненные кухни</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {completedProjects.map((project) => (
+                <Link key={project.slug} href={`/portfolio/${project.slug}`} className="premium-card overflow-hidden">
+                  <Image src={project.photos[0].src} alt={project.photos[0].alt} width={project.photos[0].width} height={project.photos[0].height} className="w-full aspect-[4/3] object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+                  <div className="p-6"><h3 className="font-semibold mb-2">{project.title}</h3><p className="text-sm text-muted-foreground">{project.city} · Материалы, состав стоимости и фактические сроки</p></div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-16">
           {projects.map((project, index) => (
@@ -84,7 +104,7 @@ export default function PortfolioPage() {
                 >
                   <Image
                     src={project.image}
-                    alt={`Кухня в стиле ${project.style} — пример дизайна от Kuhnitver`}
+                    alt={`Дизайн-референс кухни в стиле ${project.style}`}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
@@ -107,7 +127,7 @@ export default function PortfolioPage() {
 
         <div className="text-center py-12 bg-secondary/30 rounded-3xl mb-16">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Хотите такую же кухню?
+            Подберём решение для вашей кухни
           </h2>
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
             Оставьте заявку и получите расчёт стоимости вашей кухни
@@ -116,7 +136,7 @@ export default function PortfolioPage() {
             href="/#quiz"
             className="inline-flex items-center justify-center px-8 py-3 rounded-xl bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
           >
-            Рассчитать стоимость
+            Получить предварительный расчёт
           </Link>
         </div>
       </div>

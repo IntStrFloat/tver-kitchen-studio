@@ -13,6 +13,7 @@ import { blogPosts, getBlogMetadata } from "@/lib/data";
 import BlogLeadForm from "@/components/BlogLeadForm";
 import BlogAnalytics from "@/components/BlogAnalytics";
 import BlogFaq from "@/components/BlogFaq";
+import ArticleContent from "@/components/ArticleContent";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -26,6 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) return {};
+  const editorial = getBlogMetadata(post);
 
   return {
     title: formatTitleWithBrand(post.seoTitle),
@@ -39,6 +41,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: `${SITE_CONFIG.url}/blog/${post.slug}`,
       type: "article",
       publishedTime: post.date,
+      modifiedTime: editorial.modifiedDate,
       images: [
         { url: `${SITE_CONFIG.url}${post.image}`, width: 600, height: 375 },
       ],
@@ -62,11 +65,13 @@ export default async function BlogPostPage({ params }: Props) {
     dateModified: metadata.modifiedDate,
     author: {
       "@type": "Organization",
+      "@id": `${SITE_CONFIG.url}/#organization`,
       name: SITE_CONFIG.name,
       url: SITE_CONFIG.url,
     },
     publisher: {
       "@type": "Organization",
+      "@id": `${SITE_CONFIG.url}/#organization`,
       name: SITE_CONFIG.name,
       logo: { "@type": "ImageObject", url: `${SITE_CONFIG.url}/favicon.svg` },
     },
@@ -100,10 +105,11 @@ export default async function BlogPostPage({ params }: Props) {
           <header className="mb-8">
             <div className="flex items-center gap-3 text-sm text-muted-foreground mb-4">
               <time dateTime={post.date}>
-                {new Date(post.date).toLocaleDateString("ru-RU", {
+                {new Date(`${post.date}T12:00:00+03:00`).toLocaleDateString("ru-RU", {
                   day: "numeric",
                   month: "long",
                   year: "numeric",
+                  timeZone: "Europe/Moscow",
                 })}
               </time>
               <span>&middot;</span>
@@ -112,6 +118,18 @@ export default async function BlogPostPage({ params }: Props) {
             <h1 className="text-3xl md:text-4xl font-bold mb-6">
               {post.title}
             </h1>
+            <p className="text-sm text-muted-foreground mb-6">
+              Материал подготовлен редакцией{" "}
+              <Link href="/about" className="text-primary hover:underline">{SITE_CONFIG.name}</Link>.
+              {metadata.modifiedDate !== post.date && <> Обновлено:{" "}
+                <time dateTime={metadata.modifiedDate}>
+                  {new Date(`${metadata.modifiedDate}T12:00:00+03:00`).toLocaleDateString("ru-RU", {
+                    day: "numeric", month: "long", year: "numeric", timeZone: "Europe/Moscow",
+                  })}
+                </time>.
+              </>}
+              {" "}Вопросы и уточнения — через <Link href="/contacts" className="text-primary hover:underline">контакты редакции</Link>.
+            </p>
             <div className="rounded-2xl overflow-hidden">
               <Image
                 src={post.image}
@@ -126,19 +144,7 @@ export default async function BlogPostPage({ params }: Props) {
 
           <BlogLeadForm slug={post.slug} title={post.title} placement="inline" cta={metadata.cta} />
 
-          <div className="prose prose-lg max-w-none">
-            {post.content.split("\n\n").map((block, i) =>
-              block.startsWith("## ") ? (
-                <h2 key={i} className="text-2xl font-bold mt-10 mb-4">
-                  {block.slice(3)}
-                </h2>
-              ) : (
-                <p key={i} className="text-foreground/90 leading-relaxed mb-6">
-                  {block}
-                </p>
-              ),
-            )}
-          </div>
+          <ArticleContent content={post.content} />
 
           <BlogFaq items={metadata.faq} />
 
@@ -153,7 +159,7 @@ export default async function BlogPostPage({ params }: Props) {
               href="/#quiz"
               className="inline-flex items-center justify-center px-8 py-3 rounded-xl bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
             >
-              Рассчитать стоимость
+              Запросить индивидуальный расчёт
             </Link>
           </div>
           <BlogLeadForm slug={post.slug} title={post.title} placement="bottom" cta={metadata.cta} />
