@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "product": "gigachat",
+  "phase": "after",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "basis": "Опубликованные условия и контакты текущего релиза; оценка только утверждений о Kuhnitver, без проверки цен и обещаний конкурентов.",
+  "sources": [
+    "https://kuhnitver.ru/contacts",
+    "https://kuhnitver.ru/price",
+    "https://kuhnitver.ru/dostavka",
+    "https://kuhnitver.ru/kuhni/konakovo",
+    "https://kuhnitver.ru/kuhni/rzheve"
+  ],
+  "contacts": {
+    "name": "Kuhnitver",
+    "phone": "+74822477081",
+    "maxPhone": "+79157220075",
+    "email": "m-btd@mail.ru",
+    "address": "Тверь, ул. Николая Корыткова, 3 ст1",
+    "contactsVerifiedAt": "2026-10-30",
+    "businessCardName": "Мебельщик",
+    "businessCardRelation": "Связь с Kuhnitver подтверждена владельцем; карточка может ещё показывать прежний адрес на этапе обработки переезда."
+  },
+  "pricing": {
+    "mode": "individual-quote",
+    "numericKitchenOffer": null,
+    "unitRule": "Погонный метр не заменяет полную смету; числовая цена кухни не публикуется без комплектации."
+  },
+  "measurement": {
+    "priceRub": 1500,
+    "creditedOnKitchenOrder": true,
+    "regionalTravel": "Согласуется до записи."
+  },
+  "production": {
+    "minimumWorkingDays": 20,
+    "startsAfter": ["подписание договора", "утверждение проекта"],
+    "deliveryAndInstallationDates": "Согласуются отдельно."
+  },
+  "delivery": {
+    "tver": "Включена в стоимость кухни.",
+    "konakovoFromRub": 3500,
+    "rzhevFromRub": 5000,
+    "tariffQualifier": "От; точная стоимость и дополнительные работы согласуются в смете.",
+    "installation": "Установка гарнитура включена; подъём и подключения согласуются отдельно."
+  },
+  "gradingNotes": [
+    "Общие рыночные рекомендации не выдаются за сведения о конкретной компании.",
+    "Неизвестные или отсутствующие условия не заменяются догадками.",
+    "Корректный ответ на вопрос о замере должен сохранять условие зачёта там, где оно прямо запрошено.",
+    "Клик по телефону, текстовый черновик и фактическая отправка заявки различаются."
+  ]
+}

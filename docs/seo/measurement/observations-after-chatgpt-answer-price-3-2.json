@@ -1,0 +1,40 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "price-3",
+  "repeat": 2,
+  "status": "completed",
+  "observedAt": "2026-10-30T22:16:09.724Z",
+  "region": "Фактический регион не проверен; запрос о Твери",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Чем цена за погонный метр отличается от полной сметы?",
+  "urls": [],
+  "answer": "Цена за погонный метр — это стоимость одного метра изделия или конструкции по длине. Полная смета — это расчёт общей стоимости всего заказа с учётом материалов, работ, комплектующих, доставки, монтажа и дополнительных расходов.\n\nГлавное отличие: цена за погонный метр показывает ориентировочную стоимость единицы длины, а смета — сколько вы фактически заплатите за весь проект.\n\nПример\n\nДопустим, вам нужно установить забор длиной 30 метров.\n\nРасчёт\n\n\t\n\nСтоимость\n\n\n\n\nЦена за 1 пог. м\n\n\t\n\n5 000 ₽\n\n\n\n\nДлина забора\n\n\t\n\n30 м\n\n\n\n\nБазовая стоимость\n\n\t\n\n150 000 ₽\n\nНо в полной смете могут дополнительно учитываться:\n\nСтолбы и крепёж.\n\nФундамент или бетонирование.\n\nВорота и калитка.\n\nДоставка материалов.\n\nМонтажные работы.\n\nДополнительные элементы и расходники.\n\nВ чём риск цены за погонный метр?\n\nНапример, подрядчик говорит: «Забор стоит 5 000 ₽ за погонный метр».\n\nНо важно выяснить:\n\nЭто цена только за работу или вместе с материалом?\n\nВходят ли подготовительные работы?\n\nУчитываются ли углы, перепады высоты и сложные участки?\n\nВходит ли доставка и установка?\n\nЕсть ли дополнительные платежи?\n\nИменно поэтому низкая цена за погонный метр не всегда означает дешёвый заказ. \nУсадьба\n+1\n\nЧто лучше запросить у подрядчика?\n\nЯ бы рекомендовал запросить полную смету с разбивкой по позициям, где указаны:\n\nНаименование работ и материалов.\n\nКоличество (метры, штуки, комплекты).\n\nЦена за единицу.\n\nСтоимость каждой позиции.\n\nОбщая итоговая сумма.\n\nЧто включено в стоимость, а что оплачивается отдельно.\n\nИными словами: цена за погонный метр — это расценка, а полная смета — прозрачный расчёт всех расходов на ваш заказ.\n\nЕсли скажете, о чём именно идёт речь — забор, кухня, шкаф, фасад, столешница или другой объект, — я объясню на конкретном примере, как правильно сравнивать эти цены.",
+  "sources": [],
+  "facts": {
+    "priceAndUnit": "not_applicable",
+    "measurement": "not_applicable",
+    "delivery": "not_applicable",
+    "contacts": "not_applicable"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-price-3-2.json",
+  "notes": "Exact protocol prompt in a fresh empty guest UI dialog; Search visibly active. No brand/domain hints added to discovery. Model, physical region and server personalization unverified. Non-citation map/feedback/opaque-token links excluded: 0.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "All ordinary visible answer citation anchors captured; no global Sources control observed. Inline source cards may expose titles without URL. No hidden state or unknown/blocked-domain navigation; citation presence is an observed minimum.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Чем цена за погонный метр отличается от полной сметы?"
+}

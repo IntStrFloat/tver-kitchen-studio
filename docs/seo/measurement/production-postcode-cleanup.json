@@ -1,0 +1,23 @@
+{
+  "checkedAtUtc": "2026-10-31T00:07:19.947298+00:00",
+  "productionRelease": "1004281a14ad25828ee41cde70c23bf9bccba623",
+  "stagingUnit": "kuhnitver-stage-postcode-1004281a14ad.service",
+  "onlyOwnedPreviewStopAllowed": true,
+  "otherPreviewUnitsStopped": false,
+  "rollbackReleasePreserved": true,
+  "originalCheckoutPreserved": true,
+  "ownedStageStop": {
+    "command": [
+      "systemctl",
+      "stop",
+      "kuhnitver-stage-postcode-1004281a14ad.service"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "stageStopped": true,
+  "stagePortFree": true,
+  "stagingBuildJobFinished": true,
+  "completed": true
+}

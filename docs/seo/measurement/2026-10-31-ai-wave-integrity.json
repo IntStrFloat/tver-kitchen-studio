@@ -1,0 +1,12 @@
+{
+  "recordedAtUtc": "2026-10-31T00:18:13.360Z",
+  "completedBodiesVerified": 123,
+  "storedSubmittedPromptsVerified": 118,
+  "mainAndRawBodyMismatches": 0,
+  "unexpectedRealSubmissions": 0,
+  "advertisingTrackerUrls": 0,
+  "privateConversationUrls": 0,
+  "issues": [],
+  "source": "Explicit normalized datasets only; raw captures/invalid associations are not appended as extra observations.",
+  "metadataOverlay": "Agent semantics normalized separately; raw text, sources and observation dates preserved."
+}

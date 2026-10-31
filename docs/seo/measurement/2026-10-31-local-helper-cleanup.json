@@ -1,0 +1,21 @@
+{
+  "recordedAtUtc": "2026-10-31T00:42:20.450Z",
+  "scope": "Local owned preview/capture helpers only; production and unrelated processes are not stopped",
+  "ports": [
+    {
+      "port": 3108,
+      "listeners": 0
+    },
+    {
+      "port": 59834,
+      "listeners": 0
+    },
+    {
+      "port": 59835,
+      "listeners": 0
+    }
+  ],
+  "allOwnedListenersStopped": true,
+  "providerQueriesComplete": true,
+  "sourceDataPreserved": true
+}

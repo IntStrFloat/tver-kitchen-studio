@@ -1,0 +1,84 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "gigachat",
+  "mode": "Гига",
+  "model": "",
+  "queryId": "brand-2",
+  "repeat": 1,
+  "status": "completed",
+  "observedAt": "2026-10-30T23:19:51.310Z",
+  "region": "Фактический регион не проверен; Тверь — целевой регион протокола.",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Kuhnitver и Мебельщик в Твери — одна компания?",
+  "urls": [],
+  "answer": "Нет, это не одна компания. \n\nKuhnitver — это собственное производство кухонной мебели в Твери. У компании есть официальный сайт (kuhnitver.ru), шоурум и производство по адресу ул. Николая Корыткова, 3 ст1, а также указаны единые реквизиты (ИНН 6950140568).3 источника \n\n«Мебельщик» — это, судя по данным из картографических сервисов, небольшая мебельная точка или цех на Авангардной улице, 25А в Твери.\nyandex\n В открытых источниках нет упоминаний о том, что «Мебельщик» является частью, филиалом или торговым партнером Kuhnitver. У них разные адреса, разные контактные телефоны и они позиционируют себя на рынке как самостоятельные игроки.\n\nКроме того, в Твери работают и другие крупные фабрики, которые не имеют отношения к этим двум компаниям, например, «Руссини»\nproductcenter\n и «Партнёр».\npartner-mebel",
+  "sources": [
+    {
+      "title": "kuhnitver\nКухни на заказ в Твери от производителя | Kuhnitver",
+      "url": "https://kuhnitver.ru/"
+    },
+    {
+      "title": "69.суперкухни\nКухни на заказ в Твери",
+      "url": "https://69.xn--e1agfmhheqeu.xn--p1ai/"
+    },
+    {
+      "title": "kuhnitver\nМебель для бизнеса на заказ в Твери — офис... | Kuhnitver",
+      "url": "https://kuhnitver.ru/b2b"
+    },
+    {
+      "title": "vk\nКУХНИ НА ЗАКАЗ В ТВЕРИ. ШКАФЫ-КУПЕ | Кухни на заказ...",
+      "url": "https://vk.ru/kuhnitver"
+    },
+    {
+      "title": "metriya\nКухни на заказ в Твери от Метрия по индивидуальным размерам",
+      "url": "https://metriya.ru/"
+    },
+    {
+      "title": "тверскиекухни\nКухни премиум-класса и модульные эконом вариант напрямую от...",
+      "url": "https://xn--b1agalbjcywkhu0a.xn--p1ai/"
+    },
+    {
+      "title": "productcenter\nФабрика кухонной мебели \"Руссини\", г.Тверь. Каталог: Кухонная мебель. Продажа оптом по цене производителя. Ищем дилеров.",
+      "url": "https://productcenter.ru/producers/4091/fabrika-kukhonnoi-miebieli-russini"
+    },
+    {
+      "title": "partner-mebel\nО компании - Мебельная фабрика Партнер г. Тверь",
+      "url": "https://partner-mebel.pro/o-kompanii"
+    },
+    {
+      "title": "asktel\nКухонные гарнитуры и кухни на заказ в Твери: кухонная мебель...",
+      "url": "https://asktel.ru/tver/kuhni_kuhonnyj/"
+    },
+    {
+      "title": "yandex\nМебельщик, мебель для кухни, Авангардная ул., 25А, Тверь",
+      "url": "https://yandex.ru/maps/org/mebelshchik/192529825516/"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "not_applicable",
+    "measurement": "not_applicable",
+    "delivery": "not_applicable",
+    "contacts": "incorrect"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-gigachat-answer-brand-2-1.json",
+  "notes": "Поиск подтверждён UI: Изучил 10 страниц\n+7. Проверяемая связь бренда и карточки оценена как incorrect: владелец подтвердил, что карточка Мебельщик относится к Kuhnitver, а старый адрес объясняется переездом. Ответ ошибочно объявляет их независимыми компаниями. Приведённый ИНН не подтверждён реестром этой проверки и отдельно считается unverified; юридические реквизиты не устанавливались по догадке.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "Новый диалог и один фактический вопрос проверены. Память/персонализация существующего аккаунта не подтверждены выключенными; глобальные настройки не менялись.",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Только Kuhnitver; сведения конкурентов не оценивались.",
+  "sourceCoverage": "Все ссылки из раскрытого списка источников текущего ответа.",
+  "comparisonEligible": false,
+  "comparisonExclusionReason": "Память и персонализация аккаунта не подтверждены выключенными; наблюдение описательное, строгое парное сравнение отключено.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Kuhnitver и Мебельщик в Твери — одна компания?",
+  "metadataReviewedAt": "2026-10-30T23:57:37.830Z"
+}

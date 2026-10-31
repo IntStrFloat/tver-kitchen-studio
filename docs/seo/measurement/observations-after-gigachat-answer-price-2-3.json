@@ -1,0 +1,41 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "gigachat",
+  "mode": "Гига",
+  "model": "",
+  "queryId": "price-2",
+  "repeat": 3,
+  "status": "error",
+  "observedAt": "2026-10-30T22:26:05.234Z",
+  "region": "Фактический регион не проверен; Тверь — целевой регион протокола.",
+  "language": "ru",
+  "webSearch": null,
+  "prompt": "Что входит в стоимость кухни на заказ?",
+  "urls": [],
+  "answer": "",
+  "sources": [],
+  "facts": {
+    "priceAndUnit": "unverified",
+    "measurement": "unverified",
+    "delivery": "unverified",
+    "contacts": "unverified"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-gigachat-answer-price-2-3.json",
+  "notes": "Фактический запрос отправлен в новом диалоге. UI сначала показывал «Ищу информацию в интернете», затем «Ожидаю соединение…». В 22:26:05Z ответа не было, запуск произошёл непосредственно после сохранения предыдущего повтора 22:13:04Z. Новый отличный запрос в другой собственной вкладке завершился нормально. Запрос не повторялся. Ошибка наблюдения не считается отрицательным ответом или 0 цитатами.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "Новый диалог и один фактический вопрос проверены. Память/персонализация существующего аккаунта не подтверждены выключенными; глобальные настройки не менялись.",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "comparisonEligible": false,
+  "comparisonExclusionReason": "Память и персонализация аккаунта не подтверждены выключенными; наблюдение описательное, строгое парное сравнение отключено.",
+  "capabilityLimit": "Операционный тайм-аут: более 12 минут после запуска; UI ожидает соединение.",
+  "sourceCoverage": "Завершённый ответ и список источников не получены. Число цитирований неизвестно, а не нулевое.",
+  "metadataReviewedAt": "2026-10-30T23:57:37.830Z"
+}

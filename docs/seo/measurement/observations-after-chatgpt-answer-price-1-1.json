@@ -1,0 +1,40 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "price-1",
+  "repeat": 1,
+  "status": "completed",
+  "observedAt": "2026-10-30T22:08:27.823Z",
+  "region": "Фактический регион не проверен; запрос о Твери",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Сколько стоит угловая кухня 3 метра в Твери?",
+  "urls": [],
+  "answer": "В Твери угловая кухня длиной около 3 метров в 2026 году стоит ориентировочно от 60 000 до 180 000 рублей. Всё зависит от материала фасадов, столешницы и фурнитуры.\n\nПримерные цены\n\nВариант кухни\n\n\t\n\nСтоимость\n\n\n\n\nЭконом, ЛДСП\n\n\t\n\n60–90 тыс. ₽\n\n\n\n\nСредний, МДФ в плёнке\n\n\t\n\n90–130 тыс. ₽\n\n\n\n\nХороший, МДФ, качественная фурнитура\n\n\t\n\n130–180 тыс. ₽\n\n\n\n\nПремиум, эмаль или массив\n\n\t\n\n180–300 тыс. ₽\n\nГде заказать в Твери\n\nМетрия — набережная Афанасия Никитина, 33. Есть примеры угловых кухонь.\n\nRussini — ул. Коняевская, 7.\n\nЛюбимая кухня — проспект Победы, 14.\n\nКухни Максима — проспект Победы, 14.\n\nНапример, готовый проект угловой кухни 350 × 165 см в Твери предлагается от 140 400 ₽. \ntver.kuhni-z.ru\n+1\n\nДавайте прикинем стоимость вашей кухни\n\nУточните, пожалуйста:\n\n1. Какой бюджет рассматриваете?\n\nДо 70 000 ₽\n\n70–100 тыс. ₽\n\n100–150 тыс. ₽\n\nДо 200 тыс. ₽\n\n2. Какие фасады хотите?\n\nЛДСП (самый бюджетный)\n\nМДФ под плёнкой\n\nМДФ крашеный\n\n3. Нужны ли верхние шкафы до потолка?\n\nЯ помогу подобрать вариант угловой кухни 3 метра в Твери и сориентирую, сколько будет стоить вместе со столешницей, доставкой и сборкой.",
+  "sources": [],
+  "facts": {
+    "priceAndUnit": "not_applicable",
+    "measurement": "not_applicable",
+    "delivery": "not_applicable",
+    "contacts": "not_applicable"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-price-1-1.json",
+  "notes": "Exact protocol prompt in a fresh empty guest UI dialog; Search visibly active. No brand/domain hints added to discovery. Model, physical region and server personalization unverified. Non-citation map/feedback/opaque-token links excluded: 0.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "All ordinary visible answer citation anchors captured; no global Sources control observed. Inline source cards may expose titles without URL. No hidden state or unknown/blocked-domain navigation; citation presence is an observed minimum.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Сколько стоит угловая кухня 3 метра в Твери?"
+}

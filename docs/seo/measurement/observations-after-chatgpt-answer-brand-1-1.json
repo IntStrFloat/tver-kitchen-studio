@@ -1,0 +1,60 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "brand-1",
+  "repeat": 1,
+  "status": "completed",
+  "observedAt": "2026-10-30T22:51:22.049Z",
+  "region": "Фактический регион не проверен; запрос о Твери",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Где находится Kuhnitver и как связаться?",
+  "urls": [],
+  "answer": "Уточните, пожалуйста, вы имеете в виду Kuhnitver (Kuhn IT) или другую компанию с таким названием?\n\nЯ нашёл несколько похожих вариантов, в том числе:\n\n- KUHN IT GmbH — IT-компания в Германии, город Вельцхайм (Welzheim).\n\nАдрес: Schwabäcker 36, 73642 Welzheim, Германия.\n\nТелефон: +49 7182 516010.\n\nEmail: info@kuhnit.de.\n\nСайт: https://www.kuhnit.de/  \nKUHN IT\n\nВы ищете компанию в Стамбуле или в другом городе Турции? Если уточните сферу деятельности или пришлёте название с фотографии, я найду точный адрес и контакты.",
+  "sources": [
+    {
+      "title": "https://www.kuhnit.de/",
+      "url": "https://www.kuhnit.de/?utm_source=chatgpt.com"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "not_applicable",
+    "measurement": "not_applicable",
+    "delivery": "not_applicable",
+    "contacts": "no_answer"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-brand-1-1.json",
+  "notes": "Exact protocol prompt in a fresh empty guest UI dialog; Search visibly active. No brand/domain hints added to discovery. Model, physical region and server personalization unverified. Non-citation map/feedback/opaque-token links excluded: 0. Sponsored UI suffix/advertiser tracking URLs deliberately excluded; this is not AI answer content or a cited information source.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "AI asks whether requested Kuhnitver means German KUHN IT and asks city inTurkey; it does not locate or give reliable requestedKuhnitvercontacts. German-company details are conditional alternatives, not graded as Kuhnitver facts.",
+  "sourceCoverage": "All ordinary visible answer citation anchors captured; no global Sources control observed. Inline source cards may expose titles without URL. No hidden state or unknown/blocked-domain navigation; citation presence is an observed minimum.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Где находится Kuhnitver и как связаться?",
+  "excludedSponsoredContent": {
+    "kind": "excluded_sponsored_widget",
+    "scope": "Non-assistant sponsored UI suffix and advertiser/ads-help URLs only",
+    "assistantAnswerContentOtherwiseUnchanged": true,
+    "opaqueAdParametersPersisted": false,
+    "adClicked": false
+  },
+  "responseOutcome": "entity_disambiguation_failed_clarification",
+  "captureCorrection": {
+    "kind": "assistant_content_boundary_correction",
+    "excluded": "non-assistant sponsored sibling and advertiser/ads-help/tracker URLs",
+    "actualAssistantBodyOtherwiseUnchanged": true,
+    "unfavorableEntityDisambiguationResultPreserved": true,
+    "noTrackedOriginalAdCopy": true
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "brand-1",
+  "repeat": 3,
+  "status": "completed",
+  "observedAt": "2026-10-30T23:00:34.983Z",
+  "region": "Фактический регион не проверен",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Где находится Kuhnitver и как связаться?",
+  "urls": [],
+  "answer": "Нашёл организацию Kuhnitver — это студия по изготовлению кухонной мебели на заказ в России, в городе Тверь.\n\n \n\nKuhnitver\n\nПроизводство и установка кухонь на заказ.\n\nОфициальный сайт \n📍 Адрес\n\nг. Тверь, ул. Николая Корыткова, 3, стр. 1.\n\n☎️ Контакты\n\nТелефон: +48 22 477 08 1 (так указан на сайте — номер стоит перепроверить).\n\nMax: +7 915 722 00 75\n\nEmail: m-btd@mail.ru\n\nГрафик: понедельник–суббота, 10:00–19:00.\n\nВоскресенье — выходной.\n\nИсточник: страница контактов Kuhnitver .\n\nУточню: вы ищете именно производителя кухонь Kuhnitver в Твери или другую компанию с похожим названием в Турции?",
+  "sources": [
+    {
+      "title": "Официальный сайт",
+      "url": "https://kuhnitver.ru/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "страница контактов Kuhnitver",
+      "url": "https://kuhnitver.ru/contacts?utm_source=chatgpt.com"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "unverified",
+    "measurement": "unverified",
+    "delivery": "unverified",
+    "contacts": "unverified"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-brand-1-3.json",
+  "notes": "Exact protocol prompt; fresh empty guest dialog; Search visibly active. No brand/domain hints added to discovery. Capture selects only observed assistant content DIV next to its heading; Response-actions/ad sibling UI excluded. Sponsored sibling excluded: false. Non-citation map/opaque-token links excluded: 0. Model/physical region/server personalization unverified.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "All ordinary visible assistant-answer citation anchors captured; no global Sources control observed. Additional inline source cards without exposed URLs remain unresolved. Ads/map credits/feedback are not citations. No hidden state or blocked-domain fetch.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Где находится Kuhnitver и как связаться?"
+}

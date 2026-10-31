@@ -1,0 +1,40 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "price-2",
+  "repeat": 2,
+  "status": "completed",
+  "observedAt": "2026-10-30T22:13:15.863Z",
+  "region": "Фактический регион не проверен; запрос о Твери",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Что входит в стоимость кухни на заказ?",
+  "urls": [],
+  "answer": "В стоимость кухни на заказ обычно входит изготовление кухонного гарнитура по индивидуальным размерам, но конкретный состав зависит от производителя и комплектации.\n\nВажно понимать, что цена кухни и цена кухни «под ключ» — не всегда одно и то же.\n\nЧто обычно входит в стоимость\n \n\n1. Кухонные шкафы и корпуса\n\nНижние и верхние модули, боковины, полки, перегородки, цоколь.\n\n \n\n2. Фасады\n\nДверцы и фасадные панели из выбранного материала: ЛДСП, МДФ, эмаль, акрил и другие варианты.\n\n \n\n3. Фурнитура\n\nПетли, направляющие, ручки, крепления. Доводчики и механизмы плавного закрывания могут оплачиваться отдельно.\n\n \n\n4. Столешница\n\nМожет входить в базовую стоимость, но часто рассчитывается отдельно — особенно каменная или кварцевая.\n\n \n\n5. Дополнительные элементы\n\nПодсветка, бутылочницы, выдвижные корзины, сушка для посуды, карго и другие аксессуары — в зависимости от комплектации.\n\nЧто чаще всего оплачивается отдельно\n\nБытовая техника: холодильник, духовка, варочная панель, вытяжка, посудомоечная машина.\n\nМойка и смеситель.\n\nФартук или стеновая панель.\n\nДоставка и подъём на этаж.\n\nСборка и установка, если не включены в предложение.\n\nПодключение воды, канализации и электричества.\n\nДемонтаж и вывоз старой кухни.\n\nЭто зависит от условий конкретной компании. \nЛайтКухни\n+2\n\nЧто обязательно уточнить у производителя\n\nПеред внесением предоплаты попросите подробную смету, в которой указаны:\n\nМатериал и толщина корпуса.\n\nМатериал фасадов.\n\nПроизводитель и модель фурнитуры.\n\nМатериал и толщина столешницы.\n\nКоличество ящиков и дополнительных механизмов.\n\nВходит ли замер и дизайн-проект.\n\nВходит ли доставка, сборка и монтаж.\n\nКакая гарантия предоставляется.\n\nМой совет: просите сразу полную стоимость кухни с доставкой и установкой, чтобы потом не столкнуться с неожиданными доплатами.\n\nМогу также показать, как выглядит правильная подробная смета на кухню на заказ, чтобы вы могли проверить предложение мебельной компании.",
+  "sources": [],
+  "facts": {
+    "priceAndUnit": "not_applicable",
+    "measurement": "not_applicable",
+    "delivery": "not_applicable",
+    "contacts": "not_applicable"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-price-2-2.json",
+  "notes": "Exact protocol prompt in a fresh empty guest UI dialog; Search visibly active. No brand/domain hints added to discovery. Model, physical region and server personalization unverified. Non-citation map/feedback/opaque-token links excluded: 0.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "All ordinary visible answer citation anchors captured; no global Sources control observed. Inline source cards may expose titles without URL. No hidden state or unknown/blocked-domain navigation; citation presence is an observed minimum.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Что входит в стоимость кухни на заказ?"
+}

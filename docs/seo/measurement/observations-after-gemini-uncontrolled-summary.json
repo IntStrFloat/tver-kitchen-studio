@@ -1,6 +1,6 @@
 {
   "protocolId": "kuhnitver-ai-search-2026-10-30",
-  "generatedAt": "2026-10-30T21:57:06.043Z",
+  "generatedAt": "2026-10-31T00:40:23.957Z",
   "overall": {
     "observations": 3,
     "completed": 3,
@@ -75,6 +75,14 @@
     },
     "agent": {
       "draftPrepared": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "textDrafts": 0,
+      "capabilityLimited": 0,
+      "browserActionAttempts": 0,
+      "siteFieldsFilled": {
         "numerator": 0,
         "denominator": 0,
         "rate": null
@@ -162,6 +170,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null
@@ -254,6 +270,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -338,6 +362,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null
@@ -430,6 +462,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -439,26 +479,5 @@
       }
     }
   },
-  "interpretation": "Discovery, brand, URL-reading and agent results are separate. Use byProductModeAndScenario to keep guest/authenticated modes, models, regions and retrieval evidence separate. webSearch=null means retrieval was not established, not a failed answer. Alice's standalone web chat is not the quick answer in the search results. Unmeasured rates are null. Citation requires a verified URL; brand mention alone does not count. No causal inference or lead count is derived from answers.",
-  "observationMode": {
-    "product": "gemini",
-    "modes": [
-      "Gemini Авто, uncontrolled (обычный чат)"
-    ],
-    "models": [
-      ""
-    ],
-    "actualRegion": "See per-observation evidence; no inferred physical region",
-    "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7"
-  },
-  "comparison": {
-    "before": "No comparable predeployment observations",
-    "causalEffect": null
-  },
-  "limits": [
-    "Postdeployment manual guest-mode sample only; not a causal estimate.",
-    "Do not pool guest observations with authenticated models/modes.",
-    "No real lead was submitted. Search-only text about a form is not evidence that the site form was filled.",
-    "Only explicitly attributed Kuhnitver claims are graded; competitor facts are outside this measurement."
-  ]
+  "interpretation": "Discovery, brand, URL-reading and agent results are separate. Use byProductModeAndScenario to keep guest/authenticated modes, models, regions and retrieval evidence separate. webSearch=null means retrieval was not established, not a failed answer. Alice's standalone web chat is not the quick answer in the search results. Unmeasured rates are null. Citation requires a verified URL; brand mention alone does not count. No causal inference or lead count is derived from answers."
 }

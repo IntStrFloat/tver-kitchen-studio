@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "product": "gigachat",
+  "phase": "after",
+  "observedRelease": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "verificationRelease": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "method": "Direct public HTTP GETs for cited own-domain content URLs only; no external/VK/Google requests.",
+  "checks": [
+    {
+      "url": "https://kuhnitver.ru/",
+      "checkedAt": "2026-10-30T22:32:35.474Z",
+      "status": 200,
+      "finalUrl": "https://kuhnitver.ru/",
+      "canonical": "https://kuhnitver.ru",
+      "verified": true
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/sroki-izgotovleniya-kuhni-na-zakaz",
+      "checkedAt": "2026-10-30T22:32:35.505Z",
+      "status": 200,
+      "finalUrl": "https://kuhnitver.ru/blog/sroki-izgotovleniya-kuhni-na-zakaz",
+      "canonical": "https://kuhnitver.ru/blog/sroki-izgotovleniya-kuhni-na-zakaz",
+      "verified": true
+    },
+    {
+      "url": "https://kuhnitver.ru/kuhni/konakovo",
+      "checkedAt": "2026-10-30T23:55:23.780Z",
+      "status": 200,
+      "finalUrl": "https://kuhnitver.ru/kuhni/konakovo",
+      "canonical": "https://kuhnitver.ru/kuhni/konakovo",
+      "verified": true
+    },
+    {
+      "url": "https://kuhnitver.ru/dostavka",
+      "checkedAt": "2026-10-30T23:55:23.822Z",
+      "status": 200,
+      "finalUrl": "https://kuhnitver.ru/dostavka",
+      "canonical": "https://kuhnitver.ru/dostavka",
+      "verified": true
+    },
+    {
+      "url": "https://kuhnitver.ru/contacts",
+      "checkedAt": "2026-10-30T23:55:23.863Z",
+      "status": 200,
+      "finalUrl": "https://kuhnitver.ru/contacts",
+      "canonical": "https://kuhnitver.ru/contacts",
+      "verified": true
+    },
+    {
+      "url": "https://kuhnitver.ru/b2b",
+      "checkedAt": "2026-10-30T23:55:23.907Z",
+      "status": 200,
+      "finalUrl": "https://kuhnitver.ru/b2b",
+      "canonical": "https://kuhnitver.ru/b2b",
+      "verified": true
+    }
+  ]
+}

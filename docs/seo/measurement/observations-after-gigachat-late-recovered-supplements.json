@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "product": "gigachat",
+  "phase": "after",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "attempts": [
+    {
+      "queryId": "price-2",
+      "repeat": 3,
+      "originalTimeoutAt": "2026-10-30T22:26:05.234Z",
+      "checkedAt": "2026-10-30T23:37:06.789Z",
+      "savedOwnUrlAvailable": false,
+      "sourceHandleClosed": true,
+      "queryResubmitted": false,
+      "comparisonEligible": false,
+      "nonIndependentSupplement": true,
+      "status": "own_session_url_unavailable_stop",
+      "reason": "Документированный getter закрытого собственного дескриптора не вернул URL. Общая история, чужие чаты и скрытое состояние не исследовались; дальнейшие попытки прекращены."
+    },
+    {
+      "queryId": "conditions-4",
+      "repeat": 1,
+      "originalTimeoutAt": "2026-10-30T22:47:02.004Z",
+      "checkedAt": "2026-10-30T23:37:06.789Z",
+      "savedOwnUrlAvailable": false,
+      "sourceHandleClosed": true,
+      "queryResubmitted": false,
+      "comparisonEligible": false,
+      "nonIndependentSupplement": true,
+      "status": "own_session_url_unavailable_stop",
+      "reason": "Документированный getter закрытого собственного дескриптора не вернул URL. Общая история, чужие чаты и скрытое состояние не исследовались; дальнейшие попытки прекращены."
+    },
+    {
+      "queryId": "materials-2",
+      "repeat": 1,
+      "originalTimeoutAt": "2026-10-30T23:06:26.651Z",
+      "checkedAt": "2026-10-30T23:37:06.789Z",
+      "savedOwnUrlAvailable": false,
+      "sourceHandleClosed": true,
+      "queryResubmitted": false,
+      "comparisonEligible": false,
+      "nonIndependentSupplement": true,
+      "status": "own_session_url_unavailable_stop",
+      "reason": "Документированный getter закрытого собственного дескриптора не вернул URL. Общая история, чужие чаты и скрытое состояние не исследовались; дальнейшие попытки прекращены."
+    }
+  ],
+  "supplements": [],
+  "completedLateRecoveries": 0,
+  "primaryRowsChanged": false,
+  "newQueriesSubmitted": 0,
+  "historySearched": false,
+  "privateStateInspected": false,
+  "notes": "Первичные тайм-ауты и их знаменатели не переписывались. Отсутствие сохранённого собственного URL — ограничение восстановления, не свидетельство отрицательного ответа модели."
+}

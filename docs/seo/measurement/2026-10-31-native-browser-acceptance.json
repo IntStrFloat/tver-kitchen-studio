@@ -15,7 +15,8 @@
     "realLeadsCreated": 0,
     "realConversionEventsSent": 0,
     "productionCodeModified": false,
-    "cleanup": "Original fetch/ym/gtag restored; harness absence verified; JavaScript execution re-enabled; tab-scoped network block list cleared; owned QA tab closed."
+    "cleanup": "Original fetch/ym/gtag restored; harness absence verified; JavaScript execution re-enabled; tab-scoped network block list cleared; owned QA tab closed.",
+    "realConversionEventsSentScope": "Explicit callback/catalog lead-goal calls were intercepted locally. This is not a complete packet-level claim about automatic page-view/SDK telemetry; audit dates are excluded from client-traffic analysis."
   },
   "forms": {
     "callback": {
@@ -24,7 +25,10 @@
         "mockRequests": 1,
         "phoneMatchesTest": true,
         "conversion": "callback_request",
-        "ymCounters": [106971287, 110021238],
+        "ymCounters": [
+          106971287,
+          110021238
+        ],
         "ga4Events": 1,
         "analyticsContainContactFields": false
       },
@@ -50,7 +54,10 @@
         "mockRequests": 1,
         "phoneMatchesTest": true,
         "conversion": "catalog_lead",
-        "ymCounters": [106971287, 110021238],
+        "ymCounters": [
+          106971287,
+          110021238
+        ],
         "ga4Events": 1,
         "analyticsContainContactFields": false
       }

@@ -1,0 +1,5935 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "generatedAt": "2026-10-31T00:18:13.341Z",
+  "overall": {
+    "observations": 211,
+    "completed": 123,
+    "retrievalEvidence": {
+      "enabled": 106,
+      "disabled": 0,
+      "unknown": 17
+    },
+    "excludedFromComparison": 57,
+    "pending": 50,
+    "unavailable": 35,
+    "errors": 3,
+    "domainCitations": {
+      "numerator": 49,
+      "denominator": 123,
+      "rate": 0.3983739837398374
+    },
+    "brandMentions": {
+      "numerator": 54,
+      "denominator": 123,
+      "rate": 0.43902439024390244
+    },
+    "facts": {
+      "priceAndUnit": {
+        "correct": 0,
+        "incorrect": 0,
+        "no_answer": 0,
+        "not_applicable": 121,
+        "unverified": 2,
+        "accuracy": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        }
+      },
+      "measurement": {
+        "correct": 26,
+        "incorrect": 0,
+        "no_answer": 0,
+        "not_applicable": 97,
+        "unverified": 0,
+        "accuracy": {
+          "numerator": 26,
+          "denominator": 26,
+          "rate": 1
+        }
+      },
+      "delivery": {
+        "correct": 20,
+        "incorrect": 0,
+        "no_answer": 2,
+        "not_applicable": 98,
+        "unverified": 3,
+        "accuracy": {
+          "numerator": 20,
+          "denominator": 22,
+          "rate": 0.9090909090909091
+        }
+      },
+      "contacts": {
+        "correct": 20,
+        "incorrect": 8,
+        "no_answer": 2,
+        "not_applicable": 93,
+        "unverified": 0,
+        "accuracy": {
+          "numerator": 20,
+          "denominator": 30,
+          "rate": 0.6666666666666666
+        }
+      }
+    },
+    "agent": {
+      "draftPrepared": {
+        "numerator": 4,
+        "denominator": 6,
+        "rate": 0.6666666666666666
+      },
+      "textDrafts": 4,
+      "capabilityLimited": 6,
+      "browserActionAttempts": 0,
+      "siteFieldsFilled": {
+        "numerator": 0,
+        "denominator": 6,
+        "rate": 0
+      },
+      "taskSucceeded": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "submitted": 0
+    }
+  },
+  "byScenario": {
+    "discovery": {
+      "observations": 151,
+      "completed": 93,
+      "retrievalEvidence": {
+        "enabled": 85,
+        "disabled": 0,
+        "unknown": 8
+      },
+      "excludedFromComparison": 42,
+      "pending": 35,
+      "unavailable": 20,
+      "errors": 3,
+      "domainCitations": {
+        "numerator": 30,
+        "denominator": 93,
+        "rate": 0.3225806451612903
+      },
+      "brandMentions": {
+        "numerator": 31,
+        "denominator": 93,
+        "rate": 0.3333333333333333
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 91,
+          "unverified": 2,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 9,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 84,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 9,
+            "denominator": 9,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 10,
+          "incorrect": 0,
+          "no_answer": 2,
+          "not_applicable": 79,
+          "unverified": 2,
+          "accuracy": {
+            "numerator": 10,
+            "denominator": 12,
+            "rate": 0.8333333333333334
+          }
+        },
+        "contacts": {
+          "correct": 9,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 84,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 9,
+            "denominator": 9,
+            "rate": 1
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "brand": {
+      "observations": 24,
+      "completed": 12,
+      "retrievalEvidence": {
+        "enabled": 12,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 6,
+      "pending": 6,
+      "unavailable": 6,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 10,
+        "denominator": 12,
+        "rate": 0.8333333333333334
+      },
+      "brandMentions": {
+        "numerator": 12,
+        "denominator": 12,
+        "rate": 1
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 12,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 9,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 9,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 4,
+          "incorrect": 6,
+          "no_answer": 2,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 4,
+            "denominator": 12,
+            "rate": 0.3333333333333333
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "url": {
+      "observations": 24,
+      "completed": 12,
+      "retrievalEvidence": {
+        "enabled": 6,
+        "disabled": 0,
+        "unknown": 6
+      },
+      "excludedFromComparison": 6,
+      "pending": 6,
+      "unavailable": 6,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 6,
+        "denominator": 12,
+        "rate": 0.5
+      },
+      "brandMentions": {
+        "numerator": 6,
+        "denominator": 12,
+        "rate": 0.5
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 12,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 9,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 9,
+            "denominator": 9,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 5,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 1,
+          "accuracy": {
+            "numerator": 5,
+            "denominator": 5,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 9,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "agent": {
+      "observations": 12,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 3,
+        "disabled": 0,
+        "unknown": 3
+      },
+      "excludedFromComparison": 3,
+      "pending": 3,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 3,
+        "denominator": 6,
+        "rate": 0.5
+      },
+      "brandMentions": {
+        "numerator": 5,
+        "denominator": 6,
+        "rate": 0.8333333333333334
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 5,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 1,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 5,
+            "denominator": 5,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 2,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 4,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 4,
+          "incorrect": 2,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 4,
+            "denominator": 6,
+            "rate": 0.6666666666666666
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 4,
+          "denominator": 6,
+          "rate": 0.6666666666666666
+        },
+        "textDrafts": 4,
+        "capabilityLimited": 6,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 6,
+          "rate": 0
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    }
+  },
+  "byProductAndScenario": {
+    "chatgpt-search/discovery": {
+      "observations": 36,
+      "completed": 36,
+      "retrievalEvidence": {
+        "enabled": 36,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 19,
+        "denominator": 36,
+        "rate": 0.5277777777777778
+      },
+      "brandMentions": {
+        "numerator": 20,
+        "denominator": 36,
+        "rate": 0.5555555555555556
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 34,
+          "unverified": 2,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 33,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 6,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 28,
+          "unverified": 2,
+          "accuracy": {
+            "numerator": 6,
+            "denominator": 6,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 6,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 30,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 6,
+            "denominator": 6,
+            "rate": 1
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "chatgpt-search/brand": {
+      "observations": 6,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 6,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 4,
+        "denominator": 6,
+        "rate": 0.6666666666666666
+      },
+      "brandMentions": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 2,
+          "incorrect": 2,
+          "no_answer": 2,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 6,
+            "rate": 0.3333333333333333
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "chatgpt-search/url": {
+      "observations": 6,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 6,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "brandMentions": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 2,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 1,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "chatgpt-search/agent": {
+      "observations": 3,
+      "completed": 3,
+      "retrievalEvidence": {
+        "enabled": 3,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 3,
+        "denominator": 3,
+        "rate": 1
+      },
+      "brandMentions": {
+        "numerator": 3,
+        "denominator": 3,
+        "rate": 1
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 2,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 1,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 1,
+          "denominator": 3,
+          "rate": 0.3333333333333333
+        },
+        "textDrafts": 1,
+        "capabilityLimited": 3,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "gigachat/discovery": {
+      "observations": 36,
+      "completed": 33,
+      "retrievalEvidence": {
+        "enabled": 33,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 33,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 3,
+      "domainCitations": {
+        "numerator": 11,
+        "denominator": 33,
+        "rate": 0.3333333333333333
+      },
+      "brandMentions": {
+        "numerator": 11,
+        "denominator": 33,
+        "rate": 0.3333333333333333
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 33,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 6,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 27,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 6,
+            "denominator": 6,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 4,
+          "incorrect": 0,
+          "no_answer": 2,
+          "not_applicable": 27,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 4,
+            "denominator": 6,
+            "rate": 0.6666666666666666
+          }
+        },
+        "contacts": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 30,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "gigachat/brand": {
+      "observations": 6,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 6,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 6,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "brandMentions": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 2,
+          "incorrect": 4,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 6,
+            "rate": 0.3333333333333333
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "gigachat/url": {
+      "observations": 6,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 6
+      },
+      "excludedFromComparison": 6,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 6,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 6,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 6,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 6,
+            "denominator": 6,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "gigachat/agent": {
+      "observations": 3,
+      "completed": 3,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 3
+      },
+      "excludedFromComparison": 3,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 2,
+        "denominator": 3,
+        "rate": 0.6666666666666666
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 2,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 1,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 1,
+          "incorrect": 2,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 1,
+            "denominator": 3,
+            "rate": 0.3333333333333333
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1
+        },
+        "textDrafts": 3,
+        "capabilityLimited": 3,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "gemini/discovery": {
+      "observations": 39,
+      "completed": 21,
+      "retrievalEvidence": {
+        "enabled": 13,
+        "disabled": 0,
+        "unknown": 8
+      },
+      "excludedFromComparison": 8,
+      "pending": 0,
+      "unavailable": 18,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 21,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 21,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 21,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 21,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 21,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 21,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "gemini/brand": {
+      "observations": 6,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 6,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "gemini/url": {
+      "observations": 6,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 6,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "gemini/agent": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "perplexity/discovery": {
+      "observations": 3,
+      "completed": 2,
+      "retrievalEvidence": {
+        "enabled": 2,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 1,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "bing-copilot/discovery": {
+      "observations": 1,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 1,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "yandex-alice-webchat/discovery": {
+      "observations": 36,
+      "completed": 1,
+      "retrievalEvidence": {
+        "enabled": 1,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 1,
+      "pending": 35,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 1,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 1,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 1,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 1,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "yandex-alice-webchat/brand": {
+      "observations": 6,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 6,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "yandex-alice-webchat/url": {
+      "observations": 6,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 6,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "yandex-alice-webchat/agent": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 3,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    }
+  },
+  "byProductModeAndScenario": {
+    "[\"chatgpt-search\",\"ChatGPT Search, guest\",\"\",\"Фактический регион не проверен\",\"ru\",true,\"discovery\"]": {
+      "observations": 36,
+      "completed": 36,
+      "retrievalEvidence": {
+        "enabled": 36,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 19,
+        "denominator": 36,
+        "rate": 0.5277777777777778
+      },
+      "brandMentions": {
+        "numerator": 20,
+        "denominator": 36,
+        "rate": 0.5555555555555556
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 34,
+          "unverified": 2,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 33,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 6,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 28,
+          "unverified": 2,
+          "accuracy": {
+            "numerator": 6,
+            "denominator": 6,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 6,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 30,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 6,
+            "denominator": 6,
+            "rate": 1
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"chatgpt-search\",\"ChatGPT Search, guest\",\"\",\"Фактический регион не проверен\",\"ru\",true,\"brand\"]": {
+      "observations": 6,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 6,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 4,
+        "denominator": 6,
+        "rate": 0.6666666666666666
+      },
+      "brandMentions": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 2,
+          "incorrect": 2,
+          "no_answer": 2,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 6,
+            "rate": 0.3333333333333333
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"chatgpt-search\",\"ChatGPT Search, guest\",\"\",\"Фактический регион не проверен\",\"ru\",true,\"url\"]": {
+      "observations": 6,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 6,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "brandMentions": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 2,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 1,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"chatgpt-search\",\"ChatGPT Search, guest\",\"\",\"Фактический регион не проверен\",\"ru\",true,\"agent\"]": {
+      "observations": 3,
+      "completed": 3,
+      "retrievalEvidence": {
+        "enabled": 3,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 3,
+        "denominator": 3,
+        "rate": 1
+      },
+      "brandMentions": {
+        "numerator": 3,
+        "denominator": 3,
+        "rate": 1
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 2,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 1,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 1,
+          "denominator": 3,
+          "rate": 0.3333333333333333
+        },
+        "textDrafts": 1,
+        "capabilityLimited": 3,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gigachat\",\"Гига\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",true,\"discovery\"]": {
+      "observations": 34,
+      "completed": 33,
+      "retrievalEvidence": {
+        "enabled": 33,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 33,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 1,
+      "domainCitations": {
+        "numerator": 11,
+        "denominator": 33,
+        "rate": 0.3333333333333333
+      },
+      "brandMentions": {
+        "numerator": 11,
+        "denominator": 33,
+        "rate": 0.3333333333333333
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 33,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 6,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 27,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 6,
+            "denominator": 6,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 4,
+          "incorrect": 0,
+          "no_answer": 2,
+          "not_applicable": 27,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 4,
+            "denominator": 6,
+            "rate": 0.6666666666666666
+          }
+        },
+        "contacts": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 30,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gigachat\",\"Гига\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",null,\"discovery\"]": {
+      "observations": 2,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 2,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gigachat\",\"Гига\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",true,\"brand\"]": {
+      "observations": 6,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 6,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 6,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "brandMentions": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 2,
+          "incorrect": 4,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 6,
+            "rate": 0.3333333333333333
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gigachat\",\"Гига\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",null,\"url\"]": {
+      "observations": 6,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 6
+      },
+      "excludedFromComparison": 6,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 6,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 6,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 6,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 6,
+            "denominator": 6,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gigachat\",\"Гига\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",null,\"agent\"]": {
+      "observations": 3,
+      "completed": 3,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 3
+      },
+      "excludedFromComparison": 3,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 2,
+        "denominator": 3,
+        "rate": 0.6666666666666666
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 2,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 1,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 1,
+          "incorrect": 2,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 1,
+            "denominator": 3,
+            "rate": 0.3333333333333333
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1
+        },
+        "textDrafts": 3,
+        "capabilityLimited": 3,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 3,
+          "rate": 0
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gemini\",\"Gemini Авто, временный чат\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",null,\"discovery\"]": {
+      "observations": 5,
+      "completed": 5,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 5
+      },
+      "excludedFromComparison": 5,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 5,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 5,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 5,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 5,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 5,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 5,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gemini\",\"Gemini Авто, временный чат\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",true,\"discovery\"]": {
+      "observations": 13,
+      "completed": 13,
+      "retrievalEvidence": {
+        "enabled": 13,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 13,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 13,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 13,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 13,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 13,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 13,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gemini\",\"Gemini Apps, доступ заблокирован до чата\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",null,\"discovery\"]": {
+      "observations": 18,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 18,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gemini\",\"Gemini Apps, доступ заблокирован до чата\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",null,\"brand\"]": {
+      "observations": 6,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 6,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gemini\",\"Gemini Apps, доступ заблокирован до чата\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",null,\"url\"]": {
+      "observations": 6,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 6,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gemini\",\"Gemini Apps, доступ заблокирован до чата\",\"\",\"Фактический регион не проверен; Тверь — целевой регион протокола.\",\"ru\",null,\"agent\"]": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"gemini\",\"Gemini Авто, uncontrolled (обычный чат)\",\"\",\"Фактический регион не проверен; запрос о Твери\",\"ru\",null,\"discovery\"]": {
+      "observations": 3,
+      "completed": 3,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 3
+      },
+      "excludedFromComparison": 3,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 3,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"perplexity\",\"Perplexity Search, guest\",\"Not disclosed in UI\",\"Тверь в запросе; регион сервиса не установлен\",\"ru\",true,\"discovery\"]": {
+      "observations": 3,
+      "completed": 2,
+      "retrievalEvidence": {
+        "enabled": 2,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 1,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 2,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 2,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"bing-copilot\",\"Copilot sign-in screen; chat unavailable\",\"\",\"Регион сервиса не установлен\",\"ru\",null,\"discovery\"]": {
+      "observations": 1,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 0,
+      "unavailable": 1,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"yandex-alice-webchat\",\"Веб-чат Алисы AI; Интеллект: Авто; новый обычный диалог\",\"не показана\",\"Тверь в запросе; физический регион не подтверждён\",\"ru\",true,\"discovery\"]": {
+      "observations": 1,
+      "completed": 1,
+      "retrievalEvidence": {
+        "enabled": 1,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 1,
+      "pending": 0,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 1,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 1,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 1,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 1,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 1,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"yandex-alice-webchat\",\"Интеллект: Авто, новый диалог\",\"\",\"Фактический регион не проверен; запрос о Твери\",\"ru\",null,\"discovery\"]": {
+      "observations": 35,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 35,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"yandex-alice-webchat\",\"Интеллект: Авто, новый диалог\",\"\",\"Фактический регион не проверен; запрос о Твери\",\"ru\",null,\"brand\"]": {
+      "observations": 6,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 6,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"yandex-alice-webchat\",\"Интеллект: Авто, новый диалог\",\"\",\"Фактический регион не проверен; запрос о Твери\",\"ru\",null,\"url\"]": {
+      "observations": 6,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 6,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "[\"yandex-alice-webchat\",\"Интеллект: Авто, новый диалог\",\"\",\"Фактический регион не проверен; запрос о Твери\",\"ru\",null,\"agent\"]": {
+      "observations": 3,
+      "completed": 0,
+      "retrievalEvidence": {
+        "enabled": 0,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 0,
+      "pending": 3,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    }
+  },
+  "byQuery": {
+    "supplier-1": {
+      "observations": 19,
+      "completed": 15,
+      "retrievalEvidence": {
+        "enabled": 10,
+        "disabled": 0,
+        "unknown": 5
+      },
+      "excludedFromComparison": 9,
+      "pending": 2,
+      "unavailable": 2,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 2,
+        "denominator": 15,
+        "rate": 0.13333333333333333
+      },
+      "brandMentions": {
+        "numerator": 2,
+        "denominator": 15,
+        "rate": 0.13333333333333333
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 15,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 15,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 1,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 14,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 2,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 13,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "supplier-2": {
+      "observations": 12,
+      "completed": 9,
+      "retrievalEvidence": {
+        "enabled": 9,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 3,
+      "pending": 3,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 6,
+        "denominator": 9,
+        "rate": 0.6666666666666666
+      },
+      "brandMentions": {
+        "numerator": 6,
+        "denominator": 9,
+        "rate": 0.6666666666666666
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 9,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 2,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 7,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 1,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 8,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 6,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 6,
+            "denominator": 6,
+            "rate": 1
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "supplier-3": {
+      "observations": 12,
+      "completed": 9,
+      "retrievalEvidence": {
+        "enabled": 9,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 3,
+      "pending": 3,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 2,
+        "denominator": 9,
+        "rate": 0.2222222222222222
+      },
+      "brandMentions": {
+        "numerator": 2,
+        "denominator": 9,
+        "rate": 0.2222222222222222
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 9,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 9,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 2,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 7,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 1,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 8,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 1,
+            "denominator": 1,
+            "rate": 1
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "price-1": {
+      "observations": 12,
+      "completed": 9,
+      "retrievalEvidence": {
+        "enabled": 9,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 3,
+      "pending": 3,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 1,
+        "denominator": 9,
+        "rate": 0.1111111111111111
+      },
+      "brandMentions": {
+        "numerator": 2,
+        "denominator": 9,
+        "rate": 0.2222222222222222
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 7,
+          "unverified": 2,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 9,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 9,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 9,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "price-2": {
+      "observations": 12,
+      "completed": 8,
+      "retrievalEvidence": {
+        "enabled": 8,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 2,
+      "pending": 3,
+      "unavailable": 0,
+      "errors": 1,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 8,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 8,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 8,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 8,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 8,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 8,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "price-3": {
+      "observations": 12,
+      "completed": 9,
+      "retrievalEvidence": {
+        "enabled": 6,
+        "disabled": 0,
+        "unknown": 3
+      },
+      "excludedFromComparison": 6,
+      "pending": 3,
+      "unavailable": 0,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 9,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 9,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 9,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 9,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 9,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 9,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "conditions-1": {
+      "observations": 12,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 6,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 3,
+      "pending": 3,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 3,
+        "denominator": 6,
+        "rate": 0.5
+      },
+      "brandMentions": {
+        "numerator": 3,
+        "denominator": 6,
+        "rate": 0.5
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "conditions-2": {
+      "observations": 12,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 6,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 3,
+      "pending": 3,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "brandMentions": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "conditions-3": {
+      "observations": 12,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 6,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 3,
+      "pending": 3,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "brandMentions": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 2,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 4,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 5,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 1,
+          "accuracy": {
+            "numerator": 5,
+            "denominator": 5,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "conditions-4": {
+      "observations": 12,
+      "completed": 5,
+      "retrievalEvidence": {
+        "enabled": 5,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 2,
+      "pending": 3,
+      "unavailable": 3,
+      "errors": 1,
+      "domainCitations": {
+        "numerator": 4,
+        "denominator": 5,
+        "rate": 0.8
+      },
+      "brandMentions": {
+        "numerator": 4,
+        "denominator": 5,
+        "rate": 0.8
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 5,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 2,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 1,
+          "incorrect": 0,
+          "no_answer": 2,
+          "not_applicable": 1,
+          "unverified": 1,
+          "accuracy": {
+            "numerator": 1,
+            "denominator": 3,
+            "rate": 0.3333333333333333
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 5,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "materials-1": {
+      "observations": 12,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 6,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 3,
+      "pending": 3,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 6,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 6,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "materials-2": {
+      "observations": 12,
+      "completed": 5,
+      "retrievalEvidence": {
+        "enabled": 5,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 2,
+      "pending": 3,
+      "unavailable": 3,
+      "errors": 1,
+      "domainCitations": {
+        "numerator": 0,
+        "denominator": 5,
+        "rate": 0
+      },
+      "brandMentions": {
+        "numerator": 0,
+        "denominator": 5,
+        "rate": 0
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 5,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 5,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 5,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 5,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "brand-1": {
+      "observations": 12,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 6,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 3,
+      "pending": 3,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 4,
+        "denominator": 6,
+        "rate": 0.6666666666666666
+      },
+      "brandMentions": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 2,
+          "incorrect": 2,
+          "no_answer": 2,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 6,
+            "rate": 0.3333333333333333
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "brand-2": {
+      "observations": 12,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 6,
+        "disabled": 0,
+        "unknown": 0
+      },
+      "excludedFromComparison": 3,
+      "pending": 3,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "brandMentions": {
+        "numerator": 6,
+        "denominator": 6,
+        "rate": 1
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 2,
+          "incorrect": 4,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 6,
+            "rate": 0.3333333333333333
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "url-1": {
+      "observations": 12,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 3,
+        "disabled": 0,
+        "unknown": 3
+      },
+      "excludedFromComparison": 3,
+      "pending": 3,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 3,
+        "denominator": 6,
+        "rate": 0.5
+      },
+      "brandMentions": {
+        "numerator": 3,
+        "denominator": 6,
+        "rate": 0.5
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 6,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 6,
+            "denominator": 6,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "contacts": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "url-2": {
+      "observations": 12,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 3,
+        "disabled": 0,
+        "unknown": 3
+      },
+      "excludedFromComparison": 3,
+      "pending": 3,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 3,
+        "denominator": 6,
+        "rate": 0.5
+      },
+      "brandMentions": {
+        "numerator": 3,
+        "denominator": 6,
+        "rate": 0.5
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 3,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 3,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 3,
+            "denominator": 3,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 5,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 1,
+          "accuracy": {
+            "numerator": 5,
+            "denominator": 5,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    },
+    "form-1": {
+      "observations": 12,
+      "completed": 6,
+      "retrievalEvidence": {
+        "enabled": 3,
+        "disabled": 0,
+        "unknown": 3
+      },
+      "excludedFromComparison": 3,
+      "pending": 3,
+      "unavailable": 3,
+      "errors": 0,
+      "domainCitations": {
+        "numerator": 3,
+        "denominator": 6,
+        "rate": 0.5
+      },
+      "brandMentions": {
+        "numerator": 5,
+        "denominator": 6,
+        "rate": 0.8333333333333334
+      },
+      "facts": {
+        "priceAndUnit": {
+          "correct": 0,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 6,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 0,
+            "denominator": 0,
+            "rate": null
+          }
+        },
+        "measurement": {
+          "correct": 5,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 1,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 5,
+            "denominator": 5,
+            "rate": 1
+          }
+        },
+        "delivery": {
+          "correct": 2,
+          "incorrect": 0,
+          "no_answer": 0,
+          "not_applicable": 4,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 2,
+            "denominator": 2,
+            "rate": 1
+          }
+        },
+        "contacts": {
+          "correct": 4,
+          "incorrect": 2,
+          "no_answer": 0,
+          "not_applicable": 0,
+          "unverified": 0,
+          "accuracy": {
+            "numerator": 4,
+            "denominator": 6,
+            "rate": 0.6666666666666666
+          }
+        }
+      },
+      "agent": {
+        "draftPrepared": {
+          "numerator": 4,
+          "denominator": 6,
+          "rate": 0.6666666666666666
+        },
+        "textDrafts": 4,
+        "capabilityLimited": 6,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 6,
+          "rate": 0
+        },
+        "taskSucceeded": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "submitted": 0
+      }
+    }
+  },
+  "interpretation": "Discovery, brand, URL-reading and agent results are separate. Use byProductModeAndScenario to keep guest/authenticated modes, models, regions and retrieval evidence separate. webSearch=null means retrieval was not established, not a failed answer. Alice's standalone web chat is not the quick answer in the search results. Unmeasured rates are null. Citation requires a verified URL; brand mention alone does not count. No causal inference or lead count is derived from answers."
+}

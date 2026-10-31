@@ -1,0 +1,45 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "brand-2",
+  "repeat": 3,
+  "status": "completed",
+  "observedAt": "2026-10-30T23:08:24.224Z",
+  "region": "Фактический регион не проверен",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Kuhnitver и Мебельщик в Твери — одна компания?",
+  "urls": [],
+  "answer": "Судя по найденным данным, да, Kuhnitver и «Мебельщик» в Твери, скорее всего, связаны и относятся к одному мебельному производству.\n\nНашёл несколько совпадений:\n\nОдин и тот же телефон: +7 915 722-00-75.\n\nОдин и тот же сайт: kuhnitver.ru .\n\nОдин и тот же контакт: Алексей.\n\nВ Яндекс Картах организация «Мебельщик» указана по адресу Авангардная, 25А, а в контактах Kuhnitver фигурирует тот же номер телефона. \nYandex\n+1\n\nПри этом Kuhnitver указывает шоурум и производство по адресу: ул. Николая Корыткова, 3, стр. 1. \nKuhnitver\n+1\n\nМой вывод: это, вероятно, одна команда или одно производство, работающее под разными названиями. Но юридическое тождество (одно и то же ИП или ООО) пока не подтверждено.\n\nЕсли вы собираетесь заказывать у них кухню, я бы попросил реквизиты организации и проверил, кто именно будет указан исполнителем в договоре. Это позволит установить связь наверняка.",
+  "sources": [
+    {
+      "title": "kuhnitver.ru",
+      "url": "https://kuhnitver.ru/?utm_source=chatgpt.com"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "unverified",
+    "measurement": "unverified",
+    "delivery": "unverified",
+    "contacts": "unverified"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-brand-2-3.json",
+  "notes": "Exact protocol prompt; fresh empty guest dialog; Search visibly active. No brand/domain hints added to discovery. Capture selects only observed assistant content DIV next to its heading; Response-actions/ad sibling UI excluded. Sponsored sibling excluded: false. Non-citation map/opaque-token links excluded: 0. Model/physical region/server personalization unverified.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "All ordinary visible assistant-answer citation anchors captured; no global Sources control observed. Additional inline source cards without exposed URLs remain unresolved. Ads/map credits/feedback are not citations. No hidden state or blocked-domain fetch.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Kuhnitver и Мебельщик в Твери — одна компания?"
+}

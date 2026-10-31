@@ -1,0 +1,33 @@
+{
+  "observedAt": "2026-10-30T22:30:52.803Z",
+  "queryId": "conditions-1",
+  "repeat": 3,
+  "method": "Clicked visible+4 child of aggregate citation to expand all5 used-source cards; ordinary Open buttons; exact new-tab URLs observed; closed own opened tabs after capture. No hidden state or guessed URL.",
+  "visibleCitationGroup": "«Спартак Мебель» +4",
+  "sources": [
+    {
+      "title": "«Спартак Мебель» — Услуга «Замер помещения» в Твери",
+      "url": "https://spartakmeb.ru/services/zamer-pomeshcheniya/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "Kuhnitver — Кухни на заказ в Твери от производителя",
+      "url": "https://kuhnitver.ru/?utm_source=chatgpt.com",
+      "verified": true,
+      "verificationEvidence": "docs/seo/measurement/observations-after-chatgpt-source-addendum-conditions-1-3.json"
+    },
+    {
+      "title": "Выезд замерщика",
+      "url": "https://kupiti-kuhni.ru/services/vyezd-zamershchika/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "Стоимость услуг по замеру кухни — цена в Твери, 2026 год",
+      "url": "https://profi.ru/geo-tver/remont/zamer-kuhni/price/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "Услуги по замеру кухни в Твери",
+      "url": "https://profi.ru/geo-tver/remont/zamer-kuhni/?utm_source=chatgpt.com"
+    }
+  ],
+  "auditClicksNotCustomerTraffic": true,
+  "rawAnswerUnchanged": true
+}

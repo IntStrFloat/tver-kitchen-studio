@@ -61,5 +61,14 @@
     "Not reaching a dashboard does not prove that no Bing account or verified site already exists.",
     "AI Performance and indexing metrics remain unknown; no missing report or zero value is inferred.",
     "The VK safety restriction was not retried or bypassed by this separate task."
-  ]
+  ],
+  "rootHandoff": {
+    "refreshedAtUtc": "2026-10-31T00:40:23.980Z",
+    "tabId": "929039014",
+    "pageTitle": "Sign in to your account",
+    "emailFieldVisible": true,
+    "credentialsEntered": false,
+    "ownershipGranted": false,
+    "oauthParametersRetained": false
+  }
 }

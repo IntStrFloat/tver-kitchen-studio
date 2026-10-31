@@ -1,0 +1,84 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "gigachat",
+  "mode": "Гига",
+  "model": "",
+  "queryId": "brand-1",
+  "repeat": 3,
+  "status": "completed",
+  "observedAt": "2026-10-30T23:15:25.869Z",
+  "region": "Фактический регион не проверен; Тверь — целевой регион протокола.",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Где находится Kuhnitver и как связаться?",
+  "urls": [],
+  "answer": "Kuhnitver — это студия кухонной мебели, которая находится в городе Тверь. \n\nАктуальный адрес шоурума и производства:\nг. Тверь, ул. Николая Корыткова, 3, строение 1.2 источника\n\nРежим работы:\nПонедельник — суббота: с 10:00 до 19:00.\nВоскресенье — выходной.2 источника\n\nКак связаться:\n\nОсновной телефон: +7 (4822) 47-70-81.2 источника\nМессенджер Max: +7 915 722 00 75 (в карточке Яндекс Бизнеса компания может отображаться под названием «Мебельщик»).2 источника\nВКонтакте: официальная группа vk.com/kuhnitver.\nvk\n\nПеред визитом рекомендуется позвонить, чтобы менеджеры подготовили образцы материалов под ваш стиль.\nkuhnitver\n Замер помещения стоит 1 500 рублей, но эта сумма вычитается из стоимости кухни при оформлении заказа.2 источника Компания производит, доставляет и устанавливает кухни по всей Тверской области.\nkuhnitver",
+  "sources": [
+    {
+      "title": "kuhnitver\nКонтакты Kuhnitver — адрес шоурума, телефон, режим работы...",
+      "url": "https://kuhnitver.ru/contacts"
+    },
+    {
+      "title": "avito\ntver-kuhni - официальная страница во всех регионах, отзывы на...",
+      "url": "https://www.avito.ru/brands/8c77990ce1fefdd97392747890da95a3"
+    },
+    {
+      "title": "kuhnitver\nКухни на заказ в Твери от производителя | Kuhnitver",
+      "url": "https://kuhnitver.ru/"
+    },
+    {
+      "title": "yandex\nМебельщик, мебель для кухни, Авангардная ул.... — Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/mebelshchik/192529825516/"
+    },
+    {
+      "title": "vk\nКУХНИ НА ЗАКАЗ В ТВЕРИ. ШКАФЫ-КУПЕ | Кухни на заказ...",
+      "url": "https://vk.ru/kuhnitver"
+    },
+    {
+      "title": "kuhni-tver\nELMI - Кухни на заказ в Твери от производителя",
+      "url": "https://kuhni-tver.ru/"
+    },
+    {
+      "title": "zoon\nНовости и сообщения с официальной страницы в соцсетях...",
+      "url": "https://zoon.ru/tver/shops/optovo-roznichnaya_kompaniya_disambar-market/social/"
+    },
+    {
+      "title": "kuhni_tver.tilda\nТверские Кухни",
+      "url": "https://kuhni_tver.tilda.ws/page1html"
+    },
+    {
+      "title": "metriya\nКухни на заказ в Твери от Метрия по индивидуальным размерам",
+      "url": "https://metriya.ru/"
+    },
+    {
+      "title": "kuhni-tver69\nКонтактные данные производителя кухонь",
+      "url": "https://kuhni-tver69.ru/contacts.html"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "not_applicable",
+    "measurement": "correct",
+    "delivery": "correct",
+    "contacts": "correct"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-gigachat-answer-brand-1-3.json",
+  "notes": "Поиск подтверждён UI: Изучил 10 страниц\n+7. Оценка Kuhnitver по опубликованному реестру: адрес, основной телефон, Max, часы и связь с названием Мебельщик переданы верно. Замер 1500 с зачётом и работа по Тверской области соответствуют сайту. VK-ссылка совпадает с опубликованной на сайте, однако доступность/владение профилем через VK не проверялись; ссылка не открывалась.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "Новый диалог и один фактический вопрос проверены. Память/персонализация существующего аккаунта не подтверждены выключенными; глобальные настройки не менялись.",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Только Kuhnitver; сведения конкурентов не оценивались.",
+  "sourceCoverage": "Все ссылки из раскрытого списка источников текущего ответа.",
+  "comparisonEligible": false,
+  "comparisonExclusionReason": "Память и персонализация аккаунта не подтверждены выключенными; наблюдение описательное, строгое парное сравнение отключено.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Где находится Kuhnitver и как связаться?",
+  "metadataReviewedAt": "2026-10-30T23:57:37.830Z"
+}

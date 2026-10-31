@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-30T23:59:06.659Z",
+  "filesScanned": 89,
+  "corrections": [
+    {
+      "queryId": "price-3",
+      "repeat": 1,
+      "evidence": "docs/seo/measurement/observations-after-gigachat-answer-price-3-1.json",
+      "redactions": {
+        "kind": "account_greeting",
+        "scope": "greeting only",
+        "answerBodyAndSourcesOtherwiseUnchanged": true
+      }
+    },
+    {
+      "queryId": "price-3",
+      "repeat": 2,
+      "evidence": "docs/seo/measurement/observations-after-gigachat-answer-price-3-2.json",
+      "redactions": {
+        "kind": "account_greeting",
+        "scope": "greeting only",
+        "answerBodyAndSourcesOtherwiseUnchanged": true
+      }
+    },
+    {
+      "queryId": "form-1",
+      "repeat": 2,
+      "evidence": "docs/seo/measurement/observations-after-gigachat-answer-form-1-2.json",
+      "redactions": {
+        "kind": "account_identity",
+        "scope": "draft sender field only",
+        "answerBodyAndSourcesOtherwiseUnchanged": true
+      }
+    }
+  ],
+  "identityFlags": [],
+  "emailFlags": [],
+  "privateSessionUrlFlags": [],
+  "authenticationUrlFlags": [],
+  "originalsRetainedOnlyInPrivateTaskUiTrace": true,
+  "unredactedTrackedBackupCreated": false,
+  "newCapturesRedactedBeforeSave": true,
+  "primaryDatasets": {
+    "gemini": {
+      "primarySlots": 51,
+      "completed": 18,
+      "unavailable": 33,
+      "errors": 0,
+      "completeRawMatches": 18,
+      "retrievalEvidence": {
+        "enabled": 13,
+        "disabled": 0,
+        "unknown": 5
+      },
+      "excludedFromComparison": 5,
+      "discovery": {
+        "numerator": 0,
+        "denominator": 18,
+        "rate": 0
+      },
+      "agentSubmitted": 0
+    },
+    "gigachat": {
+      "primarySlots": 51,
+      "completed": 48,
+      "unavailable": 0,
+      "errors": 3,
+      "completeRawMatches": 48,
+      "retrievalEvidence": {
+        "enabled": 39,
+        "disabled": 0,
+        "unknown": 9
+      },
+      "excludedFromComparison": 48,
+      "discovery": {
+        "numerator": 11,
+        "denominator": 33,
+        "rate": 0.3333333333333333
+      },
+      "agentSubmitted": 0
+    }
+  },
+  "geminiExcludedUncontrolledRows": 3,
+  "geminiInvalidAssociationRowsPreserved": 2,
+  "rawAnswerAndSourceContentIntegrity": true,
+  "notes": "Отсутствующий доступ/незавершённые ответы не являются0цитатами; sourcecoverage и память описаны отдельно. Компания/клиент не получали настоящих заявок."
+}

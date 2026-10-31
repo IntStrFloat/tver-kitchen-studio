@@ -1,0 +1,53 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "price-1",
+  "repeat": 2,
+  "status": "completed",
+  "observedAt": "2026-10-30T22:09:15.911Z",
+  "region": "Фактический регион не проверен; запрос о Твери",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Сколько стоит угловая кухня 3 метра в Твери?",
+  "urls": [],
+  "answer": "В Твери угловая кухня длиной 3 метра (Г-образная) на заказ сейчас стоит ориентировочно от 90 000 до 150 000 рублей. Цена зависит от материала фасадов, столешницы и фурнитуры.\n\nПримерные цены в Твери\n\nВариант кухни\n\n\t\n\nСтоимость\n\n\n\n\nЭконом, ЛДСП\n\n\t\n\n65–90 тыс. ₽\n\n\n\n\nСредний класс, МДФ\n\n\t\n\n95–140 тыс. ₽\n\n\n\n\nХороший вариант, МДФ и качественная фурнитура\n\n\t\n\n140–190 тыс. ₽\n\n\n\n\nПремиум\n\n\t\n\nот 200 тыс. ₽\n\nНашёл конкретные предложения местных производителей:\n\nФабрика «Тритон»  — угловые кухни от 41 000 ₽ за погонный метр. Замер и расчёт бесплатные.\n\nKuhnitver  — пример угловой кухни 3 м за 95–130 тыс. ₽.\n\nКаталог Kuhnitver  — варианты от производителя.\n\nДавайте посчитаем вашу кухню\n\nПодскажите, пожалуйста:\n\nФасады хотите ЛДСП или МДФ?\n\nВерхние шкафы нужны до потолка или стандартной высоты?\n\nНужна ли установка и сборка?\n\nМогу подобрать вариант угловой кухни на 3 метра в Твери с бюджетом до 100 000 рублей, чтобы получилось недорого, но красиво.",
+  "sources": [
+    {
+      "title": "Фабрика «Тритон»",
+      "url": "https://lp.mebel69.ru/kuhni/uglovye/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "Kuhnitver",
+      "url": "https://kuhnitver.ru/price?utm_source=chatgpt.com"
+    },
+    {
+      "title": "Каталог Kuhnitver",
+      "url": "https://kuhnitver.ru/?utm_source=chatgpt.com"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "unverified",
+    "measurement": "unverified",
+    "delivery": "unverified",
+    "contacts": "unverified"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-price-1-2.json",
+  "notes": "Exact protocol prompt in a fresh empty guest UI dialog; Search visibly active. No brand/domain hints added to discovery. Model, physical region and server personalization unverified. Non-citation map/feedback/opaque-token links excluded: 0.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "All ordinary visible answer citation anchors captured; no global Sources control observed. Inline source cards may expose titles without URL. No hidden state or unknown/blocked-domain navigation; citation presence is an observed minimum.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Сколько стоит угловая кухня 3 метра в Твери?"
+}

@@ -1,0 +1,84 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "gigachat",
+  "mode": "Гига",
+  "model": "",
+  "queryId": "brand-1",
+  "repeat": 1,
+  "status": "completed",
+  "observedAt": "2026-10-30T23:10:44.624Z",
+  "region": "Фактический регион не проверен; Тверь — целевой регион протокола.",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Где находится Kuhnitver и как связаться?",
+  "urls": [],
+  "answer": "Kuhnitver — это студия кухонь на заказ, которая находится в городе Тверь.\n\nАктуальный адрес:\n\nг. Тверь, ул. Николая Корыткова, 3 ст1 (шоурум и производство).2 источника\nРежим работы: Понедельник–Суббота с 10:00 до 19:00. Воскресенье — выходной.2 источника\n\nКак связаться:\n\nОсновной телефон: +7 (4822) 47-70-81.2 источника\nМессенджер Max: +7 915 722 00 75.\nkuhnitver\nTelegram: +7 904 009 59 04.\nkuhni-tver\nЭлектронная почта: info@kuhni-tver.ru.\nkuhni-tver\nСайт: kuhnitver.ru.2 источника\n\nВажные детали:\n\nЗона обслуживания: Компания производит, доставляет и устанавливает кухни по всей Тверской области (включая Торжок, Ржев, Конаково, Кимры, Вышний Волочёк, Бежецк, Нелидово). Доставка по Твери включена в стоимость, по области оплачивается отдельно.2 источника\nЗамер: Стоимость замера составляет 1 500 ₽. При последующем заказе кухни эта сумма вычитается из её стоимости.2 источника\nГарантия: Предоставляется гарантия сроком 1 год на мебель и выполненные работы.\nkuhnitver\nСроки: Изготовление кухни занимает от 20 рабочих дней после подписания договора и утверждения проекта.\nkuhnitver\n\nПеред визитом рекомендуется позвонить по основному телефону, чтобы согласовать встречу и подготовить интересующие образцы материалов.2 источника",
+  "sources": [
+    {
+      "title": "kuhnitver\nКонтакты Kuhnitver — адрес шоурума, телефон, режим работы...",
+      "url": "https://kuhnitver.ru/contacts"
+    },
+    {
+      "title": "avito\ntver-kuhni - официальная страница во всех регионах, отзывы на...",
+      "url": "https://www.avito.ru/brands/8c77990ce1fefdd97392747890da95a3"
+    },
+    {
+      "title": "kuhnitver\nКухни на заказ в Твери от производителя | Kuhnitver",
+      "url": "https://kuhnitver.ru/"
+    },
+    {
+      "title": "yandex\nМебельщик, мебель для кухни, Авангардная ул.... — Яндекс Карты",
+      "url": "https://yandex.ru/maps/org/mebelshchik/192529825516/"
+    },
+    {
+      "title": "vk\nКУХНИ НА ЗАКАЗ В ТВЕРИ. ШКАФЫ-КУПЕ | Кухни на заказ...",
+      "url": "https://vk.ru/kuhnitver"
+    },
+    {
+      "title": "kuhni-tver\nELMI - Кухни на заказ в Твери от производителя",
+      "url": "https://kuhni-tver.ru/"
+    },
+    {
+      "title": "zoon\nНовости и сообщения с официальной страницы в соцсетях...",
+      "url": "https://zoon.ru/tver/shops/optovo-roznichnaya_kompaniya_disambar-market/social/"
+    },
+    {
+      "title": "kuhni_tver.tilda\nТверские Кухни",
+      "url": "https://kuhni_tver.tilda.ws/page1html"
+    },
+    {
+      "title": "metriya\nКухни на заказ в Твери от Метрия по индивидуальным размерам",
+      "url": "https://metriya.ru/"
+    },
+    {
+      "title": "kuhni-tver69\nКонтактные данные производителя кухонь",
+      "url": "https://kuhni-tver69.ru/contacts.html"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "not_applicable",
+    "measurement": "correct",
+    "delivery": "correct",
+    "contacts": "incorrect"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-gigachat-answer-brand-1-1.json",
+  "notes": "Поиск подтверждён UI: Изучил 10 страниц\n+7. Оценка только Kuhnitver: адрес, основной телефон и Max совпали с текущим сайтом, но ответ дополнительно приписал Telegram/email из источника ELMI на другом домене. Подтверждённая почта Kuhnitver — m-btd@mail.ru. Поэтому composite contacts=incorrect. Замер 1500 с зачётом и доставка по Твери включена/по области отдельно переданы верно.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "Новый диалог и один фактический вопрос проверены. Память/персонализация существующего аккаунта не подтверждены выключенными; глобальные настройки не менялись.",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Только Kuhnitver; сведения конкурентов не оценивались.",
+  "sourceCoverage": "Все ссылки из раскрытого списка источников текущего ответа.",
+  "comparisonEligible": false,
+  "comparisonExclusionReason": "Память и персонализация аккаунта не подтверждены выключенными; наблюдение описательное, строгое парное сравнение отключено.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Где находится Kuhnitver и как связаться?",
+  "metadataReviewedAt": "2026-10-30T23:57:37.830Z"
+}

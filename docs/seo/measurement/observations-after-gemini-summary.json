@@ -1,6 +1,6 @@
 {
   "protocolId": "kuhnitver-ai-search-2026-10-30",
-  "generatedAt": "2026-10-30T22:28:36.987Z",
+  "generatedAt": "2026-10-31T00:40:23.954Z",
   "overall": {
     "observations": 51,
     "completed": 18,
@@ -75,6 +75,14 @@
     },
     "agent": {
       "draftPrepared": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "textDrafts": 0,
+      "capabilityLimited": 0,
+      "browserActionAttempts": 0,
+      "siteFieldsFilled": {
         "numerator": 0,
         "denominator": 0,
         "rate": null
@@ -166,6 +174,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -248,6 +264,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null
@@ -338,6 +362,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -420,6 +452,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null
@@ -512,6 +552,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -594,6 +642,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null
@@ -684,6 +740,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -766,6 +830,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null
@@ -858,6 +930,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -940,6 +1020,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null
@@ -1030,6 +1118,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -1112,6 +1208,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null
@@ -1202,6 +1306,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -1284,6 +1396,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null
@@ -1376,6 +1496,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -1458,6 +1586,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null
@@ -1548,6 +1684,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -1630,6 +1774,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null
@@ -1720,6 +1872,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -1802,6 +1962,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null
@@ -1892,6 +2060,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -1974,6 +2150,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null
@@ -2064,6 +2248,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -2146,6 +2338,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null
@@ -2236,6 +2436,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -2318,6 +2526,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null
@@ -2408,6 +2624,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -2490,6 +2714,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null
@@ -2580,6 +2812,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -2666,6 +2906,14 @@
           "denominator": 0,
           "rate": null
         },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
         "taskSucceeded": {
           "numerator": 0,
           "denominator": 0,
@@ -2748,6 +2996,14 @@
       },
       "agent": {
         "draftPrepared": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "textDrafts": 0,
+        "capabilityLimited": 0,
+        "browserActionAttempts": 0,
+        "siteFieldsFilled": {
           "numerator": 0,
           "denominator": 0,
           "rate": null

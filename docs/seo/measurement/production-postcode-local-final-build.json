@@ -1,0 +1,11 @@
+{
+  "recordedAtUtc": "2026-10-31T00:00:24.421Z",
+  "method": "Read generated local production artifacts after successful final build; not a live production HTTP result",
+  "applicationRevision": "1004281a14ad25828ee41cde70c23bf9bccba623",
+  "buildId": "JBPAxvaFKKQpUBOAJfAPZ",
+  "generatedRoutes": 43,
+  "sitemapUrls": 36,
+  "contactLastmod": "2026-10-31",
+  "contactFindings": [],
+  "passed": true
+}

@@ -1,0 +1,57 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "conditions-1",
+  "repeat": 2,
+  "status": "completed",
+  "observedAt": "2026-10-30T22:23:56.055Z",
+  "region": "Фактический регион не проверен; запрос о Твери",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Сколько стоит замер кухни в Твери?",
+  "urls": [],
+  "answer": "В Твери замер кухни стоит примерно от 700 до 1 500 ₽, если заказывать его отдельно.\n\nНашёл конкретные предложения на 2026 год:\n\nКомпания\n\n\t\n\nСтоимость замера\n\n\n\n\nСпартак Мебель\n\n\t\n\n700 ₽\n\n\n\n\nМебелькомплект\n\n\t\n\n1 000 ₽\n\n\n\n\nKuhnitver\n\n\t\n\n1 500 ₽\n\n\n\n\nПрофи.ру (частные мастера)\n\n\t\n\nот 1 230 ₽\n\nИсточники: Спартак Мебель , Мебелькомплект , Kuhnitver , Профи.ру .\n\nЕсть и бесплатный замер у некоторых производителей кухонь — обычно при условии дальнейшего заказа мебели у них.\n\nМой ориентир по цене\n\n700–1 000 ₽ — нормальная цена за выезд и замер.\n\n1 200–1 500 ₽ — если дополнительно делают подробный замерный лист.\n\nБесплатно — если замер входит в заказ кухни.\n\nУточните, пожалуйста: вам нужен просто замер помещения с размерами стен, розеток и коммуникаций или полноценный замерный лист для изготовления кухни? Это влияет на стоимость.",
+  "sources": [
+    {
+      "title": "Спартак Мебель",
+      "url": "https://spartakmeb.ru/services/zamer-pomeshcheniya/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "Мебелькомплект",
+      "url": "https://kupiti-kuhni.ru/services/vyezd-zamershchika/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "Kuhnitver",
+      "url": "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit?utm_source=chatgpt.com"
+    },
+    {
+      "title": "Профи.ру",
+      "url": "https://profi.ru/geo-tver/remont/zamer-kuhni/price/?utm_source=chatgpt.com"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "unverified",
+    "measurement": "unverified",
+    "delivery": "unverified",
+    "contacts": "unverified"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-conditions-1-2.json",
+  "notes": "Exact protocol prompt in a fresh empty guest UI dialog; Search visibly active. No brand/domain hints added to discovery. Model, physical region and server personalization unverified. Non-citation map/feedback/opaque-token links excluded: 0.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "All ordinary visible answer citation anchors captured; no global Sources control observed. Inline source cards may expose titles without URL. No hidden state or unknown/blocked-domain navigation; citation presence is an observed minimum.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Сколько стоит замер кухни в Твери?"
+}

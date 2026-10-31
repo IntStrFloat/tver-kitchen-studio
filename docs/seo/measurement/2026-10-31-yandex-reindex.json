@@ -35,5 +35,14 @@
     "Queue acceptance and processing are not guarantees of indexing, refreshed snippets, rankings or AI citations.",
     "The site overview still warns that aggregate data updates are temporarily delayed.",
     "No repeated requests beyond the daily quota or recurring automation were created."
-  ]
+  ],
+  "followUp": {
+    "recordedAtUtc": "2026-10-30T23:14:45.499Z",
+    "allTenCurrentBatchRowsProcessed": true,
+    "visibleStatus": "Заявка обработана",
+    "originalSubmissionTime": "31.10.2026 1:17",
+    "screenshot": "docs/seo/measurement/screenshots/yandex-reindex-2026-10-31.jpg",
+    "screenshotBytes": 137081,
+    "indexingProven": false
+  }
 }

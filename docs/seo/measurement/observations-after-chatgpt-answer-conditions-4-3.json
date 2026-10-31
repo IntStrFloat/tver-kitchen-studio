@@ -1,0 +1,45 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "conditions-4",
+  "repeat": 3,
+  "status": "completed",
+  "observedAt": "2026-10-30T22:42:06.723Z",
+  "region": "Фактический регион не проверен; запрос о Твери",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Сколько стоит доставка кухни в Ржев?",
+  "urls": [],
+  "answer": "Стоимость доставки кухонного гарнитура в Ржев зависит от города отправления, габаритов кухни и условий продавца.\n\nНашёл ориентир: компания Kuhnitver указывает доставку кухни из Твери в Ржев от 5 000 ₽, срок — 3–5 дней. \nKuhnitver\n+1\n\nЧтобы назвать точную стоимость, уточните: из какого города нужно доставить кухню — из Москвы, Твери или другого города?",
+  "sources": [
+    {
+      "title": "Доставка и установка кухонь в Твери и Тверской области | Kuhnitver",
+      "url": "https://kuhnitver.ru/dostavka?utm_source=chatgpt.com"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "unverified",
+    "measurement": "unverified",
+    "delivery": "unverified",
+    "contacts": "unverified"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-conditions-4-3.json",
+  "notes": "Exact protocol prompt in a fresh empty guest UI dialog; Search visibly active. No brand/domain hints added to discovery. Model, physical region and server personalization unverified. Non-citation map/feedback/opaque-token links excluded: 0.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "Target used-source URL was resolved through an ordinary visible citation/Open click and observed newly opened public website-tab URL. No hidden state/guessed URL. Auditor citation click is not customer traffic; other inaccessible inline URLs remain unresolved.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Сколько стоит доставка кухни в Ржев?"
+}

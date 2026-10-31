@@ -1,0 +1,84 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "gigachat",
+  "mode": "Гига",
+  "model": "",
+  "queryId": "brand-2",
+  "repeat": 2,
+  "status": "completed",
+  "observedAt": "2026-10-30T23:24:58.729Z",
+  "region": "Фактический регион не проверен; Тверь — целевой регион протокола.",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Kuhnitver и Мебельщик в Твери — одна компания?",
+  "urls": [],
+  "answer": "Нет, это не одна компания. \n\nKuhnitver — это самостоятельная фабрика кухонной мебели в Твери. У компании есть собственное производство и шоурум по адресу: г. Тверь, ул. Николая Корыткова, 3 ст1. Телефон: +7 (4822) 47-70-81.\nkuhnitver\n\n«Мебельщик» — это другое название, которое в поисковой выдаче Твери чаще всего относится к совершенно другим организациям. Например, в городе работает мебельная фабрика «Партнёр» (сайт partner-mebel.pro), которая также производит кухни и другую корпусную мебель, но является отдельным юридическим лицом.\npartner-mebel\n Кроме того, в Твери существует множество других мебельных компаний со схожими названиями (например, «Мебель Ок», «Руссини», tver-kuhni.ru), которые также не имеют отношения к Kuhnitver.3 источника\n\nУ этих компаний разные адреса производства и офисов, разные контактные телефоны и разные сайты. Kuhnitver специализируется именно на кухнях на заказ, в то время как другие упомянутые производители предлагают более широкий ассортимент корпусной мебели или работают под другими брендами.",
+  "sources": [
+    {
+      "title": "kuhnitver\nКухни на заказ в Твери от производителя | Kuhnitver",
+      "url": "https://kuhnitver.ru/"
+    },
+    {
+      "title": "vk\nНаписать сообщение @metriya_kuhni_tver | ВКонтакте",
+      "url": "https://vk.me/metriya_kuhni_tver"
+    },
+    {
+      "title": "vk\ntver-kuhni.ru |Кухни| Тверь| Честные цены | Привет! Мы — Роберт...",
+      "url": "https://vk.ru/tverkuhniru"
+    },
+    {
+      "title": "m.vkvideo\nКУХНИ НА ЗАКАЗ В ТВЕРИ. ШКАФЫ-КУПЕ — смотреть онлайн все...",
+      "url": "https://m.vkvideo.ru/@kuhnitver"
+    },
+    {
+      "title": "tver-kuhni.clients\nДизайн проект - tver-kuhni.ru",
+      "url": "https://tver-kuhni.clients.site/service/dizajn-proekt/TYCOON_7503421212"
+    },
+    {
+      "title": "avito\nКухни на заказ по честным ценам купить в Твери по низкой цене",
+      "url": "https://www.avito.ru/tver/mebel_i_interer/kuhni_na_zakaz_po_chestnym_tsenam_7917774732"
+    },
+    {
+      "title": "productcenter\nФабрика кухонной мебели \"Руссини\", г.Тверь. Каталог: Кухонная мебель. Продажа оптом по цене производителя. Ищем дилеров.",
+      "url": "https://productcenter.ru/producers/4091/fabrika-kukhonnoi-miebieli-russini"
+    },
+    {
+      "title": "partner-mebel\nО компании - Мебельная фабрика Партнер г. Тверь",
+      "url": "https://partner-mebel.pro/o-kompanii"
+    },
+    {
+      "title": "t\nTelegram: View @mebel_tver",
+      "url": "https://t.me/mebel_tver"
+    },
+    {
+      "title": "mebel-ok\nМебель от производителя в Твери – фабрика «Мебель Ок»",
+      "url": "https://mebel-ok.com/"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "not_applicable",
+    "measurement": "not_applicable",
+    "delivery": "not_applicable",
+    "contacts": "incorrect"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-gigachat-answer-brand-2-2.json",
+  "notes": "Поиск подтверждён UI: Изучил 10 страниц\n+7. Проверяемая связь с принадлежащей владельцу карточкой Мебельщик передана неверно: ответ отрицает связь и обсуждает посторонние организации с похожими названиями. Адрес/основной телефон Kuhnitver в ответе сами по себе верны; contacts=incorrect относится к запрошенному сопоставлению названий. Юридические связи других компаний не устанавливались.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "Новый диалог и один фактический вопрос проверены. Память/персонализация существующего аккаунта не подтверждены выключенными; глобальные настройки не менялись.",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Только Kuhnitver; сведения конкурентов не оценивались.",
+  "sourceCoverage": "Все ссылки из раскрытого списка источников текущего ответа.",
+  "comparisonEligible": false,
+  "comparisonExclusionReason": "Память и персонализация аккаунта не подтверждены выключенными; наблюдение описательное, строгое парное сравнение отключено.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Kuhnitver и Мебельщик в Твери — одна компания?",
+  "metadataReviewedAt": "2026-10-30T23:57:37.830Z"
+}

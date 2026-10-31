@@ -1,0 +1,82 @@
+{
+  "checkedAt": "2026-10-30T23:33:29.113Z",
+  "scope": "docs/seo/measurement/observations-after-chatgpt*.json",
+  "jsonFilesChecked": 60,
+  "protocolValidation": "passed",
+  "queries": 17,
+  "independentReplies": 51,
+  "completed": 51,
+  "rawAnswerRecords": 51,
+  "rawObservationAnswerMismatches": 0,
+  "privacy": {
+    "opaqueOrAdTrackingUrlsFound": 0,
+    "privateChatUrlsFound": 0,
+    "cookieOrAuthorizationValuesFound": 0,
+    "knownAccountEmailIdentifiersFound": 0,
+    "accountGreetingCandidatesFound": 0,
+    "sponsoredSuffixesInAssistantAnswers": 0,
+    "profileCollection": "Guest UI; only assistant answer/content links were captured. No account sidebar, cookies or private chat URL was collected.",
+    "publicBusinessContacts": "Public business names, phones and emails remain when part of the actual answer; they are not account identity."
+  },
+  "captureCorrection": {
+    "queryId": "brand-1",
+    "repeat": 1,
+    "kind": "exclude separate sponsored UI sibling",
+    "explicitMetadataInRawAndMain": true,
+    "actualAssistantBodyPreserved": true,
+    "unfavorableEntityConfusionPreserved": true,
+    "trackedAdCopyRetained": false,
+    "historyRewriteRequired": false
+  },
+  "sourceCoverage": {
+    "verifiedCitations": {
+      "numerator": 32,
+      "denominator": 51,
+      "rate": 0.6274509803921569
+    },
+    "discovery": {
+      "numerator": 19,
+      "denominator": 36,
+      "rate": 0.5277777777777778
+    },
+    "brand": {
+      "numerator": 4,
+      "denominator": 6,
+      "rate": 0.6666666666666666
+    },
+    "urlProvided": {
+      "numerator": 6,
+      "denominator": 6,
+      "rate": 1
+    },
+    "agentTextResponses": {
+      "numerator": 3,
+      "denominator": 3,
+      "rate": 1
+    },
+    "minimumOnly": true,
+    "knownUnresolvedTargetCard": {
+      "queryId": "price-1",
+      "repeat": 3
+    },
+    "sourceAuditVisits": "Ordinary manual source-opening checks are audit traffic, not qualified customer acquisitions."
+  },
+  "agent": {
+    "actualFullReplies": 3,
+    "capabilityLimited": 3,
+    "textDrafts": 1,
+    "siteFieldsFilled": 0,
+    "successfulSiteActions": 0,
+    "realSubmissions": 0
+  },
+  "comparison": {
+    "phase": "after",
+    "predeploymentAiBaseline": 0,
+    "causalEffect": null,
+    "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7"
+  },
+  "evidencePreservation": {
+    "firstThreeRawAnswers": "Original captured files retained; no original hash baseline was recorded, so no original-hash claim is made.",
+    "laterSourceAndFactMetadata": "Derived main rows and explicit addenda are enriched; full actual assistant text stays equal to its raw record."
+  }
+}

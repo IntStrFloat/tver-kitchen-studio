@@ -1,0 +1,65 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "supplier-2",
+  "repeat": 3,
+  "status": "completed",
+  "observedAt": "2026-10-30T22:04:20.579Z",
+  "region": "Фактический регион не проверен; запрос о Твери",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Производители кухонь в Твери с собственным производством",
+  "urls": [],
+  "answer": "В Твери нашёл несколько компаний, которые заявляют о наличии собственного производства кухонь, а не просто продают мебель сторонних фабрик.\n\nЯ бы в первую очередь рассмотрел следующие варианты.\n\nПроизводители кухонь в Твери\n \n\n1. Метрия\n\nСобственный цех в Твери\n\nАдрес: набережная Афанасия Никитина, 33.\n\nБолее 15 лет работы.\n\nИндивидуальные проекты, изготовление и установка.\n\nЕсть собственный салон и дизайнеры.\n\nТелефон: +7 920 696-63-66.\n\nСайт: metriya.ru  \nМетрия\n\n \n\n2. Руссини\n\nСобственная мебельная фабрика\n\nАдрес: ул. Коняевская, 7.\n\nРаботает с 2001 года.\n\nКлассические и современные кухни.\n\nМДФ, массив, различные виды фасадов.\n\nФурнитура Blum и Hettich.\n\nТелефон: +7 (4822) 45-20-04.\n\nСайт: russini.ru  \naboutpartner.ru\n+1\n\n \n\n3. \nТритон\n\nСобственная фабрика\n\nАдрес: ул. Коминтерна, 105.\n\nСобственное производство с 1997 года.\n\nКухни, шкафы, гардеробные.\n\nСредний срок изготовления — до 30 дней.\n\nГарантия 12 месяцев.\n\nТелефон: +7 (4822) 509-777.\n\nСайт: mebel69.ru  \nФабрика мебели «Тритон»\n\n \n\n4. \nKuhnitver\n\nСобственное производство\n\nАдрес: ул. Николая Корыткова, 3, стр. 1.\n\nПроизводство с 2014 года.\n\nИзготовление от 20 рабочих дней.\n\nФурнитура Blum и Hettich.\n\nГарантия 1 год.\n\nСайт: kuhnitver.ru  \nKuhnitver\n+1\n\n \n\n5. Мебель ОК\n\nАдрес: Сахаровское шоссе, 9.\n\nСобственное производство.\n\nКухонная и корпусная мебель.\n\nИзготовление по индивидуальным размерам.\n\nТелефон: +7 (4822) 415-462.\n\nСайт: mebel-ok.com  \nфабрика «Мебель Ок»\n\n \n\n6. Любимая кухня\n\nСалон: проспект Победы, 14.\n\nФабричное производство.\n\nИзготовление кухонь от 15 дней по заявлению компании.\n\nКухни и корпусная мебель на заказ.\n\nСайт: tver.lovekuhnya.ru  \n«ЛК», Тверь\n\nГде я бы начал сравнение\n\nМой предварительный список для обращения:\n\nРуссини — если интересует именно крупная мебельная фабрика.\n\nТритон — если важны собственное производство и опыт работы.\n\nМетрия — если нужен индивидуальный дизайнерский проект.\n\nKuhnitver — если хочется заказать кухню непосредственно у местного производителя.\n\nReset view\nExpand map\n4.9\nKukhni I Mebel' Na Zakaz V Tveri - Metriya\n4.5\nRUSSINI, салон кухонной мебели\n4.3\n5.0\nKuhnitver\n4.7\nМебель ОК* (салон и производство)\n5.0\nLyubimaya Kukhnya\n© Mapbox © OpenStreetMap Improve this map\nKukhni I Mebel' Na Zakaz V Tveri - Metriya\n★ 4.9 · Furniture maker\nClosed\nRUSSINI, салон кухонной мебели\n★ 4.5 · Furniture store\nClosed\nТритон\n★ 4.3 · Furniture store\nClosed\nKuhnitver\n★ 5 · Building materials supplier\nClosed\nМебель ОК* (салон и производство)\n★ 4.7 · Furniture store\nClosed\nLyubimaya Kukhnya\n★ 5 · Kitchen furniture store\nClosed\nДавайте уточним, каких производителей вы ищете\n\nВы хотите заказать кухню для себя или ищете производителей для сотрудничества?\n\nИ ещё один важный момент: вам нужны именно полноценные производства в Твери, где есть собственные станки, цех раскроя, кромления и сборки, а не компании, которые только проектируют кухни и отдают заказы на сторону?\n\nЕсли второй вариант — могу составить более строгий список фабрик, отсеяв обычные салоны и посредников.",
+  "sources": [
+    {
+      "title": "metriya.ru",
+      "url": "https://metriya.ru/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "russini.ru",
+      "url": "https://russini.ru/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "mebel69.ru",
+      "url": "https://lp.mebel69.ru/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "kuhnitver.ru",
+      "url": "https://kuhnitver.ru/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "mebel-ok.com",
+      "url": "https://mebel-ok.com/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "tver.lovekuhnya.ru",
+      "url": "https://tver.lovekuhnya.ru/?utm_source=chatgpt.com"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "unverified",
+    "measurement": "unverified",
+    "delivery": "unverified",
+    "contacts": "unverified"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-supplier-2-3.json",
+  "notes": "Exact protocol prompt in a fresh empty guest UI dialog; Search visibly active. No brand/domain hints added to discovery. Model, physical region and server personalization unverified. Non-citation map/feedback/opaque-token links excluded: 4.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "All ordinary visible answer citation anchors captured; no global Sources control observed. Inline source cards may expose titles without URL. No hidden state or unknown/blocked-domain navigation; citation presence is an observed minimum.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Производители кухонь в Твери с собственным производством"
+}

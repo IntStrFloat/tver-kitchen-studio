@@ -1,0 +1,17 @@
+{
+  "observedAt": "2026-10-30T22:20:20.051Z",
+  "queryId": "conditions-1",
+  "repeat": 1,
+  "method": "Ordinary CUA click on visible Kuhnitver citation pill opened a new public website tab; exact URL observed in browser tab inventory. No URL guessed/hidden state read.",
+  "visibleCitationLabel": "Kuhnitver",
+  "observedPageTitle": "Замер кухни в Твери: чек-лист подготовки | Kuhnitver",
+  "source": {
+    "title": "Kuhnitver — Замер кухни в Твери: чек-лист подготовки",
+    "url": "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit?utm_source=chatgpt.com",
+    "verified": true,
+    "verificationEvidence": "docs/seo/measurement/observations-after-chatgpt-source-addendum-conditions-1-1.json"
+  },
+  "status": 200,
+  "auditClickNotCustomerTraffic": true,
+  "rawAnswerUnchanged": true
+}

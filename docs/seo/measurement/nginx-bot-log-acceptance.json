@@ -1,0 +1,402 @@
+{
+  "startedAt": "2026-10-30T23:03:31.474396+00:00",
+  "phase": "complete",
+  "activeFile": "/etc/nginx/sites-enabled/kuhnitver.ru",
+  "newLog": "/var/log/nginx/kuhnitver-bots.log",
+  "stateDirectory": "/var/tmp/kuhnitver-nginx-bot-log-20261031-26a3691cd76d",
+  "applied": true,
+  "rolledBack": false,
+  "sourceAddressesExported": false,
+  "rawLogLinesExported": false,
+  "newLogTruncated": false,
+  "excludedApiPrefixes": [
+    "/api",
+    "/capacity-api"
+  ],
+  "appOrApiRestarted": false,
+  "beforeSha256": "07994f8873e51a1e39c59c8ebcdd0e632f12cb889947bbcc210d576fef6ca8a3",
+  "candidateSha256": "26a3691cd76de9efdf88c1de097857bb7e4282dc6475632c255fc5af39206348",
+  "capacityBeforeSha256": "6868425a056614fc11726dab4ec3e446b402229b8a0f730d558fa4152b1e8b84",
+  "inactiveBeforeSha256": "5b0196e6dab42757c298795d1ae562dacb7627f2328bf8804e0c93a64ec50df7",
+  "appBefore": {
+    "WorkingDirectory": "/var/www/tver-kitchen-studio-releases/5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+    "MainPID": "3282195",
+    "ActiveState": "active"
+  },
+  "existingLogrotate": {
+    "unchangedSha256": "c6f585f3a98e424c30c5208f2f52c8e39665b76744cd5bcc523efdee0a7d69ee",
+    "globCoversNewFile": true,
+    "period": "daily",
+    "retainedRotations": 14
+  },
+  "backup": "/var/tmp/kuhnitver-nginx-bot-log-20261031-26a3691cd76d/nginx-bot-log-active-before.conf",
+  "backupMode": "0o600",
+  "logFile": {
+    "preexisting": false,
+    "regularFile": true,
+    "symlink": false,
+    "mode": "0o640",
+    "owner": "www-data",
+    "group": "adm",
+    "initialBytes": 0,
+    "truncated": false
+  },
+  "beforeResponses": [
+    {
+      "path": "/",
+      "status": 200,
+      "cacheControl": [
+        "no-cache"
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "etag": "\"6ywdn9pfq63m9x\"",
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+      ],
+      "bodySha256": "416953182ab0f6762f1a392fe6f107cf0d2d8adc00859d24514dc8bd8f5d8f91"
+    },
+    {
+      "path": "/contacts",
+      "status": 200,
+      "cacheControl": [
+        "no-cache"
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "etag": "\"dq7c9w1l211ngx\"",
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+      ],
+      "bodySha256": "fd5d325592e7d271167499a7632d5eb0d11bf4cf8045ed8e99df78d504273ee6"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "cacheControl": [
+        "no-cache"
+      ],
+      "contentType": "text/plain",
+      "etag": null,
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+      ],
+      "bodySha256": "76ac4fae81c5f4265ec62204990a9962c58fd9bc28956106c803cd568ab734b0"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cacheControl": [
+        "no-cache"
+      ],
+      "contentType": "application/xml",
+      "etag": null,
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+      ],
+      "bodySha256": "2969c65d2b329a9161453d120110b943b1cba35cd02dfe14679ba75e4f7c4a05"
+    },
+    {
+      "path": "/blog.rss",
+      "status": 200,
+      "cacheControl": [
+        "no-cache"
+      ],
+      "contentType": "application/rss+xml; charset=utf-8",
+      "etag": null,
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+      ],
+      "bodySha256": "b31d94ef7590a51cf33b021d7eefd9057d9478e5b93aaddb2753c42fe47287ca"
+    },
+    {
+      "path": "/uslugi.yml",
+      "status": 200,
+      "cacheControl": [
+        "no-cache"
+      ],
+      "contentType": "application/xml; charset=utf-8",
+      "etag": null,
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+      ],
+      "bodySha256": "cb4537c382ce150943ae4de2fd528aeb39fb008d8250269cab11931ad856f265"
+    },
+    {
+      "path": "/llms.txt",
+      "status": 200,
+      "cacheControl": [
+        "no-cache"
+      ],
+      "contentType": "text/plain; charset=utf-8",
+      "etag": null,
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+      ],
+      "bodySha256": "18385ebd674c19dbbda5b11ee40e575b69f24625f200e2baff33f42c78a190ac"
+    },
+    {
+      "path": "/_next/static/chunks/6c84bf83fa2a6aed.css",
+      "status": 200,
+      "cacheControl": [
+        "public, max-age=31536000, immutable"
+      ],
+      "contentType": "text/css; charset=UTF-8",
+      "etag": "W/\"12cb1-1a18ea2aad9\"",
+      "vary": [
+        "Accept-Encoding"
+      ],
+      "bodySha256": "06c16662fdb34aece8d31590e84ed3ec2e2cf413a4b73b8b6e8ea9ee2c4f12dd"
+    },
+    {
+      "path": "/_next/static/chunks/806bdb8e4a6a9b95.js",
+      "status": 200,
+      "cacheControl": [
+        "public, max-age=31536000, immutable"
+      ],
+      "contentType": "application/javascript; charset=UTF-8",
+      "etag": "W/\"97d8-1a18ea2aada\"",
+      "vary": [
+        "Accept-Encoding"
+      ],
+      "bodySha256": "75dcd02f1ebada9b1e2a59092f8a4f065581c787f19f668d64533d16e3f9031a"
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "cacheControl": [
+        "s-maxage=31536000"
+      ],
+      "contentType": "text/x-component",
+      "etag": null,
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+      ],
+      "bodySha256": "d48e745e2039f8e39e46db3014e7a885a6cf30013f1c33478ffb46cd0e32eefd"
+    },
+    {
+      "path": "/portfolio/nginx-bot-log-acceptance-missing",
+      "status": 404,
+      "cacheControl": [
+        "private, no-cache, no-store, max-age=0, must-revalidate"
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "etag": "\"4tigiu39n8svh\"",
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+      ],
+      "bodySha256": "1295aa0741e3e9f2e103d746d3294613941b7b40e1f389386325aa598cf29836"
+    }
+  ],
+  "updatedAt": "2026-10-30T23:03:32.682623+00:00",
+  "configTest": {
+    "command": [
+      "/usr/sbin/nginx",
+      "-t"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "nginx: the configuration file /etc/nginx/nginx.conf syntax is ok\nnginx: configuration file /etc/nginx/nginx.conf test is successful"
+  },
+  "reload": {
+    "command": [
+      "systemctl",
+      "reload",
+      "nginx"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "logReadiness": {
+    "attempts": 2,
+    "rawHostVerified": true,
+    "schemaVerified": true,
+    "syntheticClaimedProbeRecorded": true,
+    "syntheticProbeIsVerifiedBot": false,
+    "probeExcludedFromRealBotMetrics": true,
+    "oldCombinedAlsoRecordedProbe": true,
+    "queryValuesAbsent": true,
+    "rawUserAgentAbsent": true,
+    "sourceAddressStayedLocal": true,
+    "readyAtUtc": "2026-10-30T23:03:32.317933+00:00"
+  },
+  "ordinaryBrowserProbe": {
+    "oldCombinedRecorded": true,
+    "newBotStreamRecorded": false
+  },
+  "completedAt": "2026-10-30T23:03:32.682561+00:00",
+  "afterSha256": "26a3691cd76de9efdf88c1de097857bb7e4282dc6475632c255fc5af39206348",
+  "afterResponses": [
+    {
+      "path": "/",
+      "status": 200,
+      "cacheControl": [
+        "no-cache"
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "etag": "\"6ywdn9pfq63m9x\"",
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+      ],
+      "bodySha256": "416953182ab0f6762f1a392fe6f107cf0d2d8adc00859d24514dc8bd8f5d8f91"
+    },
+    {
+      "path": "/contacts",
+      "status": 200,
+      "cacheControl": [
+        "no-cache"
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "etag": "\"dq7c9w1l211ngx\"",
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+      ],
+      "bodySha256": "fd5d325592e7d271167499a7632d5eb0d11bf4cf8045ed8e99df78d504273ee6"
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "cacheControl": [
+        "no-cache"
+      ],
+      "contentType": "text/plain",
+      "etag": null,
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+      ],
+      "bodySha256": "76ac4fae81c5f4265ec62204990a9962c58fd9bc28956106c803cd568ab734b0"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cacheControl": [
+        "no-cache"
+      ],
+      "contentType": "application/xml",
+      "etag": null,
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+      ],
+      "bodySha256": "2969c65d2b329a9161453d120110b943b1cba35cd02dfe14679ba75e4f7c4a05"
+    },
+    {
+      "path": "/blog.rss",
+      "status": 200,
+      "cacheControl": [
+        "no-cache"
+      ],
+      "contentType": "application/rss+xml; charset=utf-8",
+      "etag": null,
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+      ],
+      "bodySha256": "b31d94ef7590a51cf33b021d7eefd9057d9478e5b93aaddb2753c42fe47287ca"
+    },
+    {
+      "path": "/uslugi.yml",
+      "status": 200,
+      "cacheControl": [
+        "no-cache"
+      ],
+      "contentType": "application/xml; charset=utf-8",
+      "etag": null,
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+      ],
+      "bodySha256": "cb4537c382ce150943ae4de2fd528aeb39fb008d8250269cab11931ad856f265"
+    },
+    {
+      "path": "/llms.txt",
+      "status": 200,
+      "cacheControl": [
+        "no-cache"
+      ],
+      "contentType": "text/plain; charset=utf-8",
+      "etag": null,
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+      ],
+      "bodySha256": "18385ebd674c19dbbda5b11ee40e575b69f24625f200e2baff33f42c78a190ac"
+    },
+    {
+      "path": "/_next/static/chunks/6c84bf83fa2a6aed.css",
+      "status": 200,
+      "cacheControl": [
+        "public, max-age=31536000, immutable"
+      ],
+      "contentType": "text/css; charset=UTF-8",
+      "etag": "W/\"12cb1-1a18ea2aad9\"",
+      "vary": [
+        "Accept-Encoding"
+      ],
+      "bodySha256": "06c16662fdb34aece8d31590e84ed3ec2e2cf413a4b73b8b6e8ea9ee2c4f12dd"
+    },
+    {
+      "path": "/_next/static/chunks/806bdb8e4a6a9b95.js",
+      "status": 200,
+      "cacheControl": [
+        "public, max-age=31536000, immutable"
+      ],
+      "contentType": "application/javascript; charset=UTF-8",
+      "etag": "W/\"97d8-1a18ea2aada\"",
+      "vary": [
+        "Accept-Encoding"
+      ],
+      "bodySha256": "75dcd02f1ebada9b1e2a59092f8a4f065581c787f19f668d64533d16e3f9031a"
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "cacheControl": [
+        "s-maxage=31536000"
+      ],
+      "contentType": "text/x-component",
+      "etag": null,
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+      ],
+      "bodySha256": "d48e745e2039f8e39e46db3014e7a885a6cf30013f1c33478ffb46cd0e32eefd"
+    },
+    {
+      "path": "/portfolio/nginx-bot-log-acceptance-missing",
+      "status": 404,
+      "cacheControl": [
+        "private, no-cache, no-store, max-age=0, must-revalidate"
+      ],
+      "contentType": "text/html; charset=utf-8",
+      "etag": "\"4tigiu39n8svh\"",
+      "vary": [
+        "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch, Accept-Encoding"
+      ],
+      "bodySha256": "1295aa0741e3e9f2e103d746d3294613941b7b40e1f389386325aa598cf29836"
+    }
+  ],
+  "htmlConditional304": {
+    "path": "/",
+    "status": 304,
+    "cacheControl": [
+      "no-cache"
+    ],
+    "contentType": null,
+    "etag": "\"6ywdn9pfq63m9x\"",
+    "vary": [
+      "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+    ],
+    "bodySha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "summary": {
+    "hostAwareCandidateLogEnabled": true,
+    "ordinaryChromeExcluded": true,
+    "claimedOnlySpoofProbeVerifiedAsSchema": true,
+    "oldCombinedRetained": true,
+    "apiExclusionVerifiedByOwnedFixture": true,
+    "freshnessPreserved": true,
+    "immutableAssetsPreserved": true,
+    "rscAndPrivate404Preserved": true,
+    "appPidAndDirectoryUnchanged": true,
+    "capacitySnippetByteIdentical": true,
+    "inactiveConfigByteIdentical": true,
+    "logrotateUnchanged": true,
+    "sourceAddressesExported": false,
+    "rawLogLinesExported": false
+  }
+}

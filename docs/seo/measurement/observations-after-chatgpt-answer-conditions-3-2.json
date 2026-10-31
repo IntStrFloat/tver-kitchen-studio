@@ -1,0 +1,53 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "conditions-3",
+  "repeat": 2,
+  "status": "completed",
+  "observedAt": "2026-10-30T22:38:09.751Z",
+  "region": "Фактический регион не проверен; запрос о Твери",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Кто доставляет кухни из Твери в Конаково?",
+  "urls": [],
+  "answer": "Из Твери в Конаково кухни и кухонные гарнитуры могут доставить несколько компаний.\n\nВот варианты, которые стоит рассмотреть:\n\n🚚 Кто может перевезти кухню\n\nТК «Ваш переезд» — +7 905 600-74-51. Междугородняя перевозка мебели и грузов.\n\nГрузовичкоф — организует перевозки Тверь — Конаково, от 5 000 ₽. Есть грузчики, упаковка и подъём на этаж. Заказать перевозку .\n\nМаксим — можно заказать грузовую машину с водителем. Заказать грузоперевозку .\n\nKuhnitver — непосредственно производит кухни в Твери и доставляет в Конаково. Доставка от 3 500 ₽. Сайт производителя .\n\nУточните один момент\n\nВам нужна:\n\nДоставка уже купленной кухни из магазина или от производителя?\n\nПеревозка кухни частным перевозчиком (машина + грузчики)?\n\nДоставка с подъёмом на этаж и сборкой?\n\nИ ещё: кухня новая, в разобранном виде, в упаковках?\n\nТогда смогу подобрать наиболее подходящий вариант и сориентировать по стоимости.",
+  "sources": [
+    {
+      "title": "Заказать перевозку",
+      "url": "https://tver.gruzovichkof.ru/gruzoperevozki-iz-tveri-v-konakovo?utm_source=chatgpt.com"
+    },
+    {
+      "title": "Заказать грузоперевозку",
+      "url": "https://tver.taximaxim.ru/cargo/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "Сайт производителя",
+      "url": "https://kuhnitver.ru/kuhni/konakovo?utm_source=chatgpt.com"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "unverified",
+    "measurement": "unverified",
+    "delivery": "unverified",
+    "contacts": "unverified"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-conditions-3-2.json",
+  "notes": "Exact protocol prompt in a fresh empty guest UI dialog; Search visibly active. No brand/domain hints added to discovery. Model, physical region and server personalization unverified. Non-citation map/feedback/opaque-token links excluded: 0.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "All ordinary visible answer citation anchors captured; no global Sources control observed. Inline source cards may expose titles without URL. No hidden state or unknown/blocked-domain navigation; citation presence is an observed minimum.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Кто доставляет кухни из Твери в Конаково?"
+}

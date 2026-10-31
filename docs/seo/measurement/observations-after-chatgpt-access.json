@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-10-30T21:25:50Z",
+  "product": "ChatGPT web",
+  "entryUrl": "https://chatgpt.com/",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "inspection": "Native CUA browser UI in the existing Chrome profile; fresh dedicated tab.",
+  "authentication": "not signed in",
+  "interfaceLanguage": "en",
+  "temporaryChat": {
+    "availableInInspectedUi": false,
+    "enabled": false
+  },
+  "webSearch": {
+    "controlVisible": true,
+    "selected": false
+  },
+  "model": null,
+  "region": {
+    "requestedForPlannedQuery": "Тверь, Россия",
+    "actualBrowserLocationVerified": false
+  },
+  "actualUiEvidence": [
+    "Landing page and product popover offer authentication/registration.",
+    "The inspected guest product menu does not offer a Temporary Chat toggle.",
+    "The composer attachment menu exposes a Web search checkbox, currently unchecked.",
+    "The footer describes guest-chat use for model improvement; this interface does not establish the required Temporary Chat behavior."
+  ],
+  "actions": {
+    "inspectedProductMenu": true,
+    "inspectedComposerMenu": true,
+    "loggedIn": false,
+    "acceptedNewTerms": false,
+    "changedAccountSettings": false,
+    "enabledWebSearch": false,
+    "submittedQueries": 0
+  },
+  "outcome": "Required temporary-chat protocol cannot be met in the currently accessible unauthenticated UI.",
+  "limits": [
+    "One actual access check blocks all three planned repeats; it is not three completed independent conversations.",
+    "Search control is visible. This evidence does not claim that ChatGPT Search itself is unavailable.",
+    "No AI answer, source list, citation result or factual-accuracy result was obtained.",
+    "No historical baseline is inferred from this after-deployment access check.",
+    "No account identity, emails, visitor data, cookies, credentials or hidden application state were collected."
+  ],
+  "screenshot": {
+    "capturedVia": "CUA getScreenshot",
+    "tabId": "929038898",
+    "persistedLocalFile": false
+  }
+}

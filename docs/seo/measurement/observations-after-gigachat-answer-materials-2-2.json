@@ -1,0 +1,80 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "gigachat",
+  "mode": "Гига",
+  "model": "",
+  "queryId": "materials-2",
+  "repeat": 2,
+  "status": "completed",
+  "observedAt": "2026-10-30T23:03:37.522Z",
+  "region": "Фактический регион не проверен; Тверь — целевой регион протокола.",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Blum или Hettich для кухни: в чём различия?",
+  "urls": [],
+  "answer": "Blum (Австрия) и Hettich (Германия) — два главных конкурента на рынке мебельной фурнитуры. Оба бренда производят продукцию экстра-класса, но их философия, ассортимент и ценовая политика различаются. \n\nОсновные различия между ними:\n\nКритерий\tBlum\tHettich\nНадежность и ресурс\tАбсолютный лидер. Стандартные петли выдерживают от 80 000 до 100 000+ циклов. Гарантия — до 25 лет.2 источника\tДемонстрирует стабильные 80 000+ циклов. Гарантия — до 20 лет.2 источника\nПлавность хода\tЭталон мягкости. Система BLUMOTION обеспечивает абсолютно бесшумное закрывание.\nspb.shkaf-kupe\n\tХод более плотный, но такой же мягкий. Отлично справляется с массивными фасадами.\nspb.shkaf-kupe\n\nКлючевые технологии\tAventos — лучшие подъемные механизмы для верхних шкафов. LegraBox — люксовый сегмент ящиков с минималистичным дизайном. Tandem/Tandembox — скрытые направляющие. Tip-On — открывание нажатием.2 источника\tArciTech / AvanTech YOU — системы для тяжелых ящиков (до 80 кг). Quadro — направляющие с абсолютной точностью. InnoTech — ящики со встроенной двойной боковиной. ProfiTech — система двойных боковин.2 источника\nЦена\tПремиум-сегмент. В среднем на 15–20% дороже Hettich при сравнении аналогичных систем.3 источника\tСредний-высокий сегмент. Более доступная цена при сохранении высокого качества.3 источника\nАссортимент\tУзкая специализация на фурнитуре для кухонь, акцент на подъемные системы и скрытый монтаж.\ndms-spb\n\tОгромный ассортимент, включая складные системы, двери-купе, гардеробные лифты и фурнитуру для шкафов.2 источника\nДоступность в России\tСложности с логистикой, поиском склада и получением гарантии.\nklever-sm\n\tПрямые поставки, понятные цены и широкая складская программа в РФ.\nklever-sm\n\nЧто выбрать для конкретной кухни:\n\nВыбирайте Blum, если: у вас много верхних шкафов и вам нужны лучшие в мире подъемные механизмы (Aventos). Если вы перфекционист, для которого критически важна эталонная мягкость закрывания (BLUMOTION), строгий минимализм (серия LegraBox) и максимальная долговечность (гарантия 25 лет).2 источника\nВыбирайте Hettich, если: вы делаете кухню с акцентом на внутренний дизайн (например, темные ящики ArciTech), планируете широкие нижние базы для хранения тяжелой посуды (AvanTech YOU выдерживает до 80 кг) или хотите встроенную подсветку в ящиках. Также это лучший выбор, если важна доступность комплектующих на российском рынке и более гуманная цена.2 источника\n\nВажные нюансы:\n\nСовместимость. Не рекомендуется смешивать фурнитуру разных брендов в одной конструкции (например, петли Blum и ящики Hettich), так как у них различаются ходы, крепления и принципы регулировки. Это может привести к невозможности точной настройки зазоров.\nmedyn\nПодделки. Из-за высокой популярности фурнитуру Blum чаще подделывают. Покупать продукцию обоих брендов следует только у официальных дилеров с проверкой сертификатов.\nmassiv-murom\nКомбинирование. Грамотные мебельщики часто комбинируют бренды, чтобы получить лучшее от обоих: на тяжелые нижние ящики ставят Hettich AvanTech YOU, а на верхние шкафы — подъемники Blum AVENTOS.\ndomstil44",
+  "sources": [
+    {
+      "title": "dms-spb\nHettich, Blum или Hafele — кто лучший? Сравниваем 3-х лидеров...",
+      "url": "https://dms-spb.ru/catalog/product54790/"
+    },
+    {
+      "title": "domstil44\nHettich или Blum: какую фурнитуру выбрать для кухни в 2026 году | ТД Домашний Стиль",
+      "url": "https://domstil44.ru/blog/hettich-ili-blum-kakuyu-furnituru-vybrat/"
+    },
+    {
+      "title": "massiv-murom\nФурнитура Блюм или Хеттих, что выбрать?",
+      "url": "https://massiv-murom.ru/o-mebeli/kakuyu-furnituru-vybrat-blyum-ili-khettikh/"
+    },
+    {
+      "title": "spb.shkaf-kupe\nBlum, Hettich или Boyard? Честное сравнение мебельной...",
+      "url": "https://spb.shkaf-kupe.ru/article/chestnoe-sravnenie-blum-hettich-boyard/"
+    },
+    {
+      "title": "mf-apelsin\nФурнитура Blum или Hettich - что лучше: сравнение петель...",
+      "url": "https://mf-apelsin.ru/news/furnitura_dlya_mebeli_kukhni_hettich_ili_blum_chto_obshchego_i_razlichnogo_/"
+    },
+    {
+      "title": "klever-sm\nBlum vs Hettich — что лучше для кухни на заказ?",
+      "url": "https://klever-sm.ru/articles/x8ux3dr2s1-vechnii-spor-blum-vs-hettich-kto-kruche"
+    },
+    {
+      "title": "medyn\nФурнитура Blum, Hettich и аналоги — сравнение систем - Медынь - ваш кухонный эксперт",
+      "url": "https://medyn.su/materialy-i-fasady-kuhon/furnitura-blum-hettich"
+    },
+    {
+      "title": "tdfurnitur\nФурнитура Hettich или BLUM - TDFURNITUR - розница и опт",
+      "url": "https://tdfurnitur.com/furnitura-hettich-ili-blum/"
+    },
+    {
+      "title": "luxhomemebel\nМебельная фурнитура — Blum, Hettich, DTC: различия и цены | Lux Home Mebel",
+      "url": "https://www.luxhomemebel.uz/ru/blog/mebelnaya-furnitura-blum-hettich-dtc"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "not_applicable",
+    "measurement": "not_applicable",
+    "delivery": "not_applicable",
+    "contacts": "not_applicable"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-gigachat-answer-materials-2-2.json",
+  "notes": "Поиск подтверждён UI: Изучил 9 страниц\n+6.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "Новый диалог и один фактический вопрос проверены. Память/персонализация существующего аккаунта не подтверждены выключенными; глобальные настройки не менялись.",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Только Kuhnitver; сведения конкурентов не оценивались.",
+  "sourceCoverage": "Все ссылки из раскрытого списка источников текущего ответа.",
+  "comparisonEligible": false,
+  "comparisonExclusionReason": "Память и персонализация аккаунта не подтверждены выключенными; наблюдение описательное, строгое парное сравнение отключено.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Blum или Hettich для кухни: в чём различия?",
+  "metadataReviewedAt": "2026-10-30T23:57:37.830Z"
+}

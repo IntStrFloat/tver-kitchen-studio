@@ -1,0 +1,47 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "url-1",
+  "repeat": 2,
+  "status": "completed",
+  "observedAt": "2026-10-30T23:12:08.384Z",
+  "region": "Фактический регион не проверен",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "По этой странице объясни цену замера и условие зачёта",
+  "urls": [
+    "https://kuhnitver.ru/contacts"
+  ],
+  "answer": "На странице Kuhnitver указаны следующие условия:\n\n1. Стоимость замера\n1 500 ₽\n\nЭто фиксированная стоимость замера помещения для будущей кухни.\n\nВо время замера специалист:\n\nСнимает точные размеры помещения.\n\nФиксирует расположение коммуникаций.\n\nПолучает данные, необходимые для проектирования кухни.\n\n2. Условие зачёта стоимости\nЗасчитывается при заказе кухни\n\nЕсли вы заказываете кухню у Kuhnitver, уплаченные за замер 1 500 ₽ вычитаются из стоимости кухни.\n\nНапример:\n\nСитуация\n\n\t\n\nИтог\n\n\n\n\nЗамер без заказа кухни\n\n\t\n\n1 500 ₽\n\n\n\n\nЗамер + заказ кухни за 150 000 ₽\n\n\t\n\n150 000 ₽ к оплате\n\n\n\n\nСтоимость замера\n\n\t\n\nУже учтена в цене кухни\n\nТо есть это не скидка сверх стоимости замера, а возврат его стоимости через уменьшение суммы заказа.\n\n3. Важное условие для выезда\n\nЕсли замер проводится за пределами Твери, по Тверской области:\n\nВозможные дорожные расходы согласовываются заранее.\n\nУсловия выезда обсуждаются до записи.\n\nМой вывод\n\nЗамер стоит 1 500 ₽, но при последующем заказе кухни эта сумма полностью засчитывается в стоимость заказа.\n\nЧто стоит дополнительно уточнить у компании: засчитывается ли замер при любом заказе кухни независимо от суммы и срока оформления заказа.\n\nКонтактный телефон: +7 (4822) 47-70-81.\n\nИсточник: Официальная страница контактов Kuhnitver .",
+  "sources": [
+    {
+      "title": "Официальная страница контактов Kuhnitver",
+      "url": "https://kuhnitver.ru/contacts?utm_source=chatgpt.com"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "unverified",
+    "measurement": "unverified",
+    "delivery": "unverified",
+    "contacts": "unverified"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-url-1-2.json",
+  "notes": "Exact protocol prompt; fresh empty guest dialog; Search visibly active. No brand/domain hints added to discovery. Capture selects only observed assistant content DIV next to its heading; Response-actions/ad sibling UI excluded. Sponsored sibling excluded: false. Non-citation map/opaque-token links excluded: 0. Model/physical region/server personalization unverified.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "All ordinary visible assistant-answer citation anchors captured; no global Sources control observed. Additional inline source cards without exposed URLs remain unresolved. Ads/map credits/feedback are not citations. No hidden state or blocked-domain fetch.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "По этой странице объясни цену замера и условие зачёта\n\nhttps://kuhnitver.ru/contacts"
+}

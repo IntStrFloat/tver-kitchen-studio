@@ -1,0 +1,31 @@
+{
+  "observedAt": "2026-10-30T23:06:27.378Z",
+  "source": "Owner confirmations30October2026 and public current contacts page",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "publicContactPageStatus": 200,
+  "currentPrimaryTelHrefPresent": true,
+  "oldPhoneLiteralPresent": false,
+  "expected": {
+    "primaryPhone": "+74822477081",
+    "maxPhone": "+79157220075",
+    "address": "Тверь, Николая Корыткова,3стр1",
+    "measurementRub": 1500,
+    "measurementCreditedOnKitchenOrder": true,
+    "minProductionWorkingDays": 20,
+    "productionStartsAfter": "contract and project approval",
+    "warrantyYears": 1,
+    "tverDeliveryIncluded": true,
+    "installationIncludedInKitchenCost": true,
+    "konakovoDeliveryFromRub": 3500,
+    "rzhevDeliveryFromRub": 5000,
+    "kitchenPriceMode": "individual quote",
+    "legalExecutorName": "not confirmed",
+    "linkedFormerBusinessProfile": "Мебельщик, прежний адрес Авангардная25А"
+  },
+  "currentCityTimingCheck": {
+    "observedAt": "2026-10-30T23:22:30.450Z",
+    "status": 200,
+    "publishesAfterReadinessText": true,
+    "legacy2to3DaysLiteralPresent": false
+  }
+}

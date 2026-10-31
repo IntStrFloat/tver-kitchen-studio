@@ -1,0 +1,87 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "gigachat",
+  "mode": "Гига",
+  "model": "",
+  "queryId": "conditions-3",
+  "repeat": 3,
+  "status": "completed",
+  "observedAt": "2026-10-30T22:36:47.698Z",
+  "region": "Фактический регион не проверен; Тверь — целевой регион протокола.",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Кто доставляет кухни из Твери в Конаково?",
+  "urls": [],
+  "answer": "Доставку кухонных гарнитуров из Твери в Конаково осуществляют несколько типов организаций:\n\nПроизводители кухонь с собственной доставкой\n\n«КухниТверь» — тверской производитель, который прямо указывает на своем сайте, что производит кухни в Твери и доставляет их в Конаково. Стоимость доставки начинается от 3 500 рублей. В услугу также входят замер, создание проекта, изготовление (от 20 рабочих дней) и профессиональный монтаж.\nkuhnitver\n«Любимая кухня» — фабрика, предлагающая бережную доставку в срок по договору. На сайте компании есть видео процесса отгрузки со склада, что подтверждает наличие собственной логистики.\ntver.lovekuhnya\n«Пелизма» — производитель, который в описании этапов работы (от заявки до установки) прямо указывает, что осуществляет доставку и установку готовых гарнитуров.\ndom.pelizma\n\nТранспортные и экспедиционные компании\nЕсли вы заказываете кухню у частного мастера или в компании без своего автопарка, для перевозки можно нанять профильных грузоперевозчиков:\n\n«RossTransCo» — транспортно-экспедиционная компания, для которой перевозки из Твери в Конаково являются одним из основных направлений. Расстояние между городами составляет 77,9 км. Компания предлагает различные типы транспорта (от «Газелей» до фур и рефрижераторов), обязательное страхование груза и материальную ответственность за его сохранность.\ntver.rosstransco\nЧастные перевозчики на Авито — на этой площадке размещено более 2600 объявлений об услугах по перевозке мебели в Конаково. Там можно найти как частных водителей, так и небольшие компании, сравнить цены и почитать отзывы.\navito\n\nМестные установщики\nВ самом Конаково работают компании, которые могут забрать готовый гарнитур в Твери и привезти его для монтажа. Например, «Кухни Плюс» (ул. Баскакова, 5) — это местный салон, который может организовать доставку под ключ, если вы заказываете у них сборку и установку стороннего гарнитура.\nyandex",
+  "sources": [
+    {
+      "title": "avito\nперевозка мебели в Конаково - цены и отзывы | Услуги на Авито",
+      "url": "https://www.avito.ru/konakovo/predlozheniya_uslug/tag/perevozka-mebeli"
+    },
+    {
+      "title": "konakovoregion\nПокушать | Конаковский муниципальный округ Тверской области",
+      "url": "https://www.konakovoregion.ru/ru/node/3600"
+    },
+    {
+      "title": "kuhnitver\nКухни на заказ в Конаково от производителя — доставка...",
+      "url": "https://kuhnitver.ru/kuhni/konakovo"
+    },
+    {
+      "title": "tver.rosstransco\nГрузоперевозки из Твери в Конаково",
+      "url": "https://tver.rosstransco.com/prices/konakovo"
+    },
+    {
+      "title": "yandex\nКухни Плюс, мебель на заказ, ул. Баскакова, 5, Конаково",
+      "url": "https://yandex.ru/maps/org/kukhni_plyus/179706930956/"
+    },
+    {
+      "title": "tver.lovekuhnya\nДоставка и монтаж кухни в Твери | Фабрика Любимая кухня",
+      "url": "https://tver.lovekuhnya.ru/delivery/"
+    },
+    {
+      "title": "ru.gorodwiki\nДоставка готовой еды Твери отзывы",
+      "url": "https://ru.gorodwiki.ru/tver/dostavka-gotovoy-edyi"
+    },
+    {
+      "title": "tver.poryadok\nПосуда для приготовления пищи - купить недорого в Твери - интернет-магазин Порядок.ру",
+      "url": "https://tver.poryadok.ru/catalog/dlya_prigotovleniya/"
+    },
+    {
+      "title": "dom.pelizma\nКухни на заказ в Твери от производителя.",
+      "url": "https://dom.pelizma.ru/kukhni/"
+    },
+    {
+      "title": "tver.gorko\nБанкет на 200, 250 человек в Твери — 7 ресторанов с банкетными залами",
+      "url": "https://tver.gorko.ru/%D1%80%D0%B5%D1%81%D1%82%D0%BE%D1%80%D0%B0%D0%BD%D1%8B?capacity=10"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "not_applicable",
+    "measurement": "not_applicable",
+    "delivery": "correct",
+    "contacts": "not_applicable"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-gigachat-answer-conditions-3-3.json",
+  "notes": "Поиск подтверждён UI: Изучил 10 страниц\n+7.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "Новый диалог и один фактический вопрос проверены. Память/персонализация существующего аккаунта не подтверждены выключенными; глобальные настройки не менялись.",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Только Kuhnitver; сведения конкурентов не оценивались.",
+  "sourceCoverage": "Все ссылки из раскрытого списка источников текущего ответа.",
+  "comparisonEligible": false,
+  "comparisonExclusionReason": "Память и персонализация аккаунта не подтверждены выключенными; наблюдение описательное, строгое парное сравнение отключено.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Кто доставляет кухни из Твери в Конаково?",
+  "factAssessmentNotes": "Источник kuhnitver и явный тариф Конаково от 3500 совпадают с сайтом. Упоминание замера без цены не оценивается как отдельный ответ о его стоимости.",
+  "factsReviewedAt": "2026-10-30T23:22:53.608Z",
+  "factReference": "docs/seo/measurement/observations-after-gigachat-facts-reference.json",
+  "metadataReviewedAt": "2026-10-30T23:57:37.830Z"
+}

@@ -1,0 +1,1179 @@
+{
+  "collected_at_utc": "2026-10-30T22:48:27.795510+00:00",
+  "site": "https://kuhnitver.ru",
+  "current_app_commit": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "scope": "shared-server/path-filtered",
+  "window_start_utc": "2026-10-30T21:09:00+00:00",
+  "window_start_moscow": "2026-10-31T00:09:00+03:00",
+  "window_end_utc": "2026-10-30T22:47:14+00:00",
+  "window_end_moscow": "2026-10-31T01:47:14+03:00",
+  "window_duration_minutes": 98.23,
+  "log_coverage_reaches_start": true,
+  "log_sources": [
+    {
+      "name": "access.log",
+      "snapshot_bytes": 1018080,
+      "snapshot_sha256": "1e0adccb008ea655bf3d2ab2dcbfb40c8049d92d7bb3b0e66f3261ab50e8ca3e",
+      "first_record_utc": "2026-10-30T00:03:14+00:00",
+      "last_record_utc": "2026-10-30T22:47:14+00:00",
+      "all_requests_in_selected_window": 1651
+    }
+  ],
+  "log_snapshot_method": "Read only the current log and, only if required for release-window coverage, up to two recent rotations; no 14-day rerun.",
+  "unparsed_lines_in_selected_files": 72,
+  "known_public_page_paths": 36,
+  "excluded_claimed_bot_records": {},
+  "host_attribution": {
+    "host_recorded_in_combined_log": false,
+    "exact_domain_attribution_possible": false,
+    "other_domain_names_exported": false,
+    "filter": "Current canonical kitchen sitemap paths, actual public assets, safe _next static paths and five meta feeds only. Explicit non-kitchen absolute targets and unknown/API paths excluded."
+  },
+  "crawlers": {
+    "Googlebot": {
+      "claimed_requests_in_public_path_scope": 3,
+      "verified_requests": 2,
+      "unverified_claimed_requests": 1,
+      "verified_unique_source_count": 2,
+      "source_verification_results": {
+        "dns_domain_mismatch": 1,
+        "verified_official_ip_range": 2
+      },
+      "verified_statuses": {
+        "200": 2
+      },
+      "verified_http_errors": 0,
+      "verified_403": 0,
+      "verified_429": 0,
+      "verified_5xx": 0,
+      "verified_unique_public_path_count": 2,
+      "verified_public_paths": [
+        {
+          "path": "/privacy",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T22:40:43+00:00",
+          "last_request_utc": "2026-10-30T22:40:43+00:00"
+        },
+        {
+          "path": "/robots.txt",
+          "category": "robots",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T22:17:47+00:00",
+          "last_request_utc": "2026-10-30T22:17:47+00:00"
+        }
+      ],
+      "verified_nonrobots_get_2xx": 1,
+      "verified_nonrobots_get_2xx_unique_paths": [
+        "/privacy"
+      ],
+      "verified_content_page_path_get_2xx": 1,
+      "verified_content_page_paths_get_2xx": [
+        "/privacy"
+      ],
+      "verified_rsc_query_requests": 0,
+      "verified_requests_with_explicit_target_host": 0
+    },
+    "YandexBot": {
+      "claimed_requests_in_public_path_scope": 24,
+      "verified_requests": 23,
+      "unverified_claimed_requests": 1,
+      "verified_unique_source_count": 23,
+      "source_verification_results": {
+        "verified_forward_confirmed_reverse_dns": 23,
+        "dns_domain_mismatch": 1
+      },
+      "verified_statuses": {
+        "200": 23
+      },
+      "verified_http_errors": 0,
+      "verified_403": 0,
+      "verified_429": 0,
+      "verified_5xx": 0,
+      "verified_unique_public_path_count": 18,
+      "verified_public_paths": [
+        {
+          "path": "/b2b",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T22:17:29+00:00",
+          "last_request_utc": "2026-10-30T22:17:29+00:00"
+        },
+        {
+          "path": "/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
+          "category": "content_page_path",
+          "requests": 2,
+          "methods": {
+            "GET": 2
+          },
+          "statuses": {
+            "200": 2
+          },
+          "get_2xx_content_responses": 2,
+          "first_request_utc": "2026-10-30T21:16:21+00:00",
+          "last_request_utc": "2026-10-30T22:17:28+00:00"
+        },
+        {
+          "path": "/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T22:17:27+00:00",
+          "last_request_utc": "2026-10-30T22:17:27+00:00"
+        },
+        {
+          "path": "/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T22:17:30+00:00",
+          "last_request_utc": "2026-10-30T22:17:30+00:00"
+        },
+        {
+          "path": "/blog/top-10-oshibok-pri-zakaze-kuhni",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T22:17:29+00:00",
+          "last_request_utc": "2026-10-30T22:17:29+00:00"
+        },
+        {
+          "path": "/blog/uglovaya-vs-pryamaya-kuhnya",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T22:17:27+00:00",
+          "last_request_utc": "2026-10-30T22:17:27+00:00"
+        },
+        {
+          "path": "/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T22:17:27+00:00",
+          "last_request_utc": "2026-10-30T22:17:27+00:00"
+        },
+        {
+          "path": "/catalog",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:21+00:00",
+          "last_request_utc": "2026-10-30T21:16:21+00:00"
+        },
+        {
+          "path": "/catalog/belaya",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:32+00:00",
+          "last_request_utc": "2026-10-30T21:16:32+00:00"
+        },
+        {
+          "path": "/dostavka",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:18+00:00",
+          "last_request_utc": "2026-10-30T21:16:18+00:00"
+        },
+        {
+          "path": "/faq",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:20+00:00",
+          "last_request_utc": "2026-10-30T21:16:20+00:00"
+        },
+        {
+          "path": "/kuhni/konakovo",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T22:17:28+00:00",
+          "last_request_utc": "2026-10-30T22:17:28+00:00"
+        },
+        {
+          "path": "/kuhni/nelidovo",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:22+00:00",
+          "last_request_utc": "2026-10-30T21:16:22+00:00"
+        },
+        {
+          "path": "/kuhni/rzheve",
+          "category": "content_page_path",
+          "requests": 4,
+          "methods": {
+            "GET": 4
+          },
+          "statuses": {
+            "200": 4
+          },
+          "get_2xx_content_responses": 4,
+          "first_request_utc": "2026-10-30T21:16:22+00:00",
+          "last_request_utc": "2026-10-30T22:17:29+00:00"
+        },
+        {
+          "path": "/kuhni/tveri",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:20+00:00",
+          "last_request_utc": "2026-10-30T21:16:20+00:00"
+        },
+        {
+          "path": "/portfolio",
+          "category": "content_page_path",
+          "requests": 2,
+          "methods": {
+            "GET": 2
+          },
+          "statuses": {
+            "200": 2
+          },
+          "get_2xx_content_responses": 2,
+          "first_request_utc": "2026-10-30T21:16:19+00:00",
+          "last_request_utc": "2026-10-30T22:17:30+00:00"
+        },
+        {
+          "path": "/price",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:21+00:00",
+          "last_request_utc": "2026-10-30T21:16:21+00:00"
+        },
+        {
+          "path": "/robots.txt",
+          "category": "robots",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:22:47+00:00",
+          "last_request_utc": "2026-10-30T21:22:47+00:00"
+        }
+      ],
+      "verified_nonrobots_get_2xx": 22,
+      "verified_nonrobots_get_2xx_unique_paths": [
+        "/b2b",
+        "/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
+        "/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
+        "/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+        "/blog/top-10-oshibok-pri-zakaze-kuhni",
+        "/blog/uglovaya-vs-pryamaya-kuhnya",
+        "/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+        "/catalog",
+        "/catalog/belaya",
+        "/dostavka",
+        "/faq",
+        "/kuhni/konakovo",
+        "/kuhni/nelidovo",
+        "/kuhni/rzheve",
+        "/kuhni/tveri",
+        "/portfolio",
+        "/price"
+      ],
+      "verified_content_page_path_get_2xx": 22,
+      "verified_content_page_paths_get_2xx": [
+        "/b2b",
+        "/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
+        "/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
+        "/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+        "/blog/top-10-oshibok-pri-zakaze-kuhni",
+        "/blog/uglovaya-vs-pryamaya-kuhnya",
+        "/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+        "/catalog",
+        "/catalog/belaya",
+        "/dostavka",
+        "/faq",
+        "/kuhni/konakovo",
+        "/kuhni/nelidovo",
+        "/kuhni/rzheve",
+        "/kuhni/tveri",
+        "/portfolio",
+        "/price"
+      ],
+      "verified_rsc_query_requests": 0,
+      "verified_requests_with_explicit_target_host": 0
+    },
+    "YandexOther": {
+      "claimed_requests_in_public_path_scope": 19,
+      "verified_requests": 19,
+      "unverified_claimed_requests": 0,
+      "verified_unique_source_count": 16,
+      "source_verification_results": {
+        "verified_forward_confirmed_reverse_dns": 16
+      },
+      "verified_statuses": {
+        "200": 19
+      },
+      "verified_http_errors": 0,
+      "verified_403": 0,
+      "verified_429": 0,
+      "verified_5xx": 0,
+      "verified_unique_public_path_count": 18,
+      "verified_public_paths": [
+        {
+          "path": "/_next/static/chunks/290343fc528ea5a9.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:27+00:00",
+          "last_request_utc": "2026-10-30T21:16:27+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/4795983d160c44a9.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:28+00:00",
+          "last_request_utc": "2026-10-30T21:16:28+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/51ae45811cf875c5.js",
+          "category": "public_asset",
+          "requests": 2,
+          "methods": {
+            "GET": 2
+          },
+          "statuses": {
+            "200": 2
+          },
+          "get_2xx_content_responses": 2,
+          "first_request_utc": "2026-10-30T21:16:21+00:00",
+          "last_request_utc": "2026-10-30T21:16:28+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/63696c3ad805eed6.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:27+00:00",
+          "last_request_utc": "2026-10-30T21:16:27+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/69be39811437728d.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:25+00:00",
+          "last_request_utc": "2026-10-30T21:16:25+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/806bdb8e4a6a9b95.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:25+00:00",
+          "last_request_utc": "2026-10-30T21:16:25+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/90ccfb195cce6c7c.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:25+00:00",
+          "last_request_utc": "2026-10-30T21:16:25+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/d2be314c3ece3fbe.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:25+00:00",
+          "last_request_utc": "2026-10-30T21:16:25+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/e5e610f97b1892fc.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:29+00:00",
+          "last_request_utc": "2026-10-30T21:16:29+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/e6c5e219d5c37dcc.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T22:17:30+00:00",
+          "last_request_utc": "2026-10-30T22:17:30+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/ea80403269d20319.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:24+00:00",
+          "last_request_utc": "2026-10-30T21:16:24+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/f4950dcf5ab3f249.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:30+00:00",
+          "last_request_utc": "2026-10-30T21:16:30+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/f66243b682969d69.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:29+00:00",
+          "last_request_utc": "2026-10-30T21:16:29+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/ff1a16fafef87110.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:26+00:00",
+          "last_request_utc": "2026-10-30T21:16:26+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/ff4b1dd0a59c645a.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:26+00:00",
+          "last_request_utc": "2026-10-30T21:16:26+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-530ec205386641cc.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:30+00:00",
+          "last_request_utc": "2026-10-30T21:16:30+00:00"
+        },
+        {
+          "path": "/favicon.ico",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:31+00:00",
+          "last_request_utc": "2026-10-30T21:16:31+00:00"
+        },
+        {
+          "path": "/favicon.svg",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:31+00:00",
+          "last_request_utc": "2026-10-30T21:16:31+00:00"
+        }
+      ],
+      "verified_nonrobots_get_2xx": 19,
+      "verified_nonrobots_get_2xx_unique_paths": [
+        "/_next/static/chunks/290343fc528ea5a9.js",
+        "/_next/static/chunks/4795983d160c44a9.js",
+        "/_next/static/chunks/51ae45811cf875c5.js",
+        "/_next/static/chunks/63696c3ad805eed6.js",
+        "/_next/static/chunks/69be39811437728d.js",
+        "/_next/static/chunks/806bdb8e4a6a9b95.js",
+        "/_next/static/chunks/90ccfb195cce6c7c.js",
+        "/_next/static/chunks/d2be314c3ece3fbe.js",
+        "/_next/static/chunks/e5e610f97b1892fc.js",
+        "/_next/static/chunks/e6c5e219d5c37dcc.js",
+        "/_next/static/chunks/ea80403269d20319.js",
+        "/_next/static/chunks/f4950dcf5ab3f249.js",
+        "/_next/static/chunks/f66243b682969d69.js",
+        "/_next/static/chunks/ff1a16fafef87110.js",
+        "/_next/static/chunks/ff4b1dd0a59c645a.js",
+        "/_next/static/chunks/turbopack-530ec205386641cc.js",
+        "/favicon.ico",
+        "/favicon.svg"
+      ],
+      "verified_content_page_path_get_2xx": 0,
+      "verified_content_page_paths_get_2xx": [],
+      "verified_rsc_query_requests": 0,
+      "verified_requests_with_explicit_target_host": 0
+    },
+    "bingbot": {
+      "claimed_requests_in_public_path_scope": 15,
+      "verified_requests": 14,
+      "unverified_claimed_requests": 1,
+      "verified_unique_source_count": 4,
+      "source_verification_results": {
+        "verified_forward_confirmed_reverse_dns": 4,
+        "dns_domain_mismatch": 1
+      },
+      "verified_statuses": {
+        "200": 14
+      },
+      "verified_http_errors": 0,
+      "verified_403": 0,
+      "verified_429": 0,
+      "verified_5xx": 0,
+      "verified_unique_public_path_count": 14,
+      "verified_public_paths": [
+        {
+          "path": "/",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:36+00:00",
+          "last_request_utc": "2026-10-30T21:16:36+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/4795983d160c44a9.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:52+00:00",
+          "last_request_utc": "2026-10-30T21:16:52+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/51ae45811cf875c5.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:52+00:00",
+          "last_request_utc": "2026-10-30T21:16:52+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/5585a30138cc31da.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:17:02+00:00",
+          "last_request_utc": "2026-10-30T21:17:02+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/63696c3ad805eed6.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:52+00:00",
+          "last_request_utc": "2026-10-30T21:16:52+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/6c84bf83fa2a6aed.css",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:56+00:00",
+          "last_request_utc": "2026-10-30T21:16:56+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/90ccfb195cce6c7c.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:51+00:00",
+          "last_request_utc": "2026-10-30T21:16:51+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/a976fd6af4c914ea.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:56+00:00",
+          "last_request_utc": "2026-10-30T21:16:56+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/f4950dcf5ab3f249.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:56+00:00",
+          "last_request_utc": "2026-10-30T21:16:56+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/f66243b682969d69.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:17:01+00:00",
+          "last_request_utc": "2026-10-30T21:17:01+00:00"
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-530ec205386641cc.js",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:17:01+00:00",
+          "last_request_utc": "2026-10-30T21:17:01+00:00"
+        },
+        {
+          "path": "/catalog/premium",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T22:05:49+00:00",
+          "last_request_utc": "2026-10-30T22:05:49+00:00"
+        },
+        {
+          "path": "/fonts/inter-cyrillic-variable.woff2",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:51+00:00",
+          "last_request_utc": "2026-10-30T21:16:51+00:00"
+        },
+        {
+          "path": "/fonts/inter-latin-variable.woff2",
+          "category": "public_asset",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T21:16:56+00:00",
+          "last_request_utc": "2026-10-30T21:16:56+00:00"
+        }
+      ],
+      "verified_nonrobots_get_2xx": 14,
+      "verified_nonrobots_get_2xx_unique_paths": [
+        "/",
+        "/_next/static/chunks/4795983d160c44a9.js",
+        "/_next/static/chunks/51ae45811cf875c5.js",
+        "/_next/static/chunks/5585a30138cc31da.js",
+        "/_next/static/chunks/63696c3ad805eed6.js",
+        "/_next/static/chunks/6c84bf83fa2a6aed.css",
+        "/_next/static/chunks/90ccfb195cce6c7c.js",
+        "/_next/static/chunks/a976fd6af4c914ea.js",
+        "/_next/static/chunks/f4950dcf5ab3f249.js",
+        "/_next/static/chunks/f66243b682969d69.js",
+        "/_next/static/chunks/turbopack-530ec205386641cc.js",
+        "/catalog/premium",
+        "/fonts/inter-cyrillic-variable.woff2",
+        "/fonts/inter-latin-variable.woff2"
+      ],
+      "verified_content_page_path_get_2xx": 2,
+      "verified_content_page_paths_get_2xx": [
+        "/",
+        "/catalog/premium"
+      ],
+      "verified_rsc_query_requests": 0,
+      "verified_requests_with_explicit_target_host": 0
+    },
+    "OAI-SearchBot": {
+      "claimed_requests_in_public_path_scope": 1,
+      "verified_requests": 0,
+      "unverified_claimed_requests": 1,
+      "verified_unique_source_count": 0,
+      "source_verification_results": {
+        "not_in_current_official_ip_ranges": 1
+      },
+      "verified_statuses": {},
+      "verified_http_errors": 0,
+      "verified_403": 0,
+      "verified_429": 0,
+      "verified_5xx": 0,
+      "verified_unique_public_path_count": 0,
+      "verified_public_paths": [],
+      "verified_nonrobots_get_2xx": 0,
+      "verified_nonrobots_get_2xx_unique_paths": [],
+      "verified_content_page_path_get_2xx": 0,
+      "verified_content_page_paths_get_2xx": [],
+      "verified_rsc_query_requests": 0,
+      "verified_requests_with_explicit_target_host": 0
+    },
+    "GPTBot": {
+      "claimed_requests_in_public_path_scope": 1,
+      "verified_requests": 0,
+      "unverified_claimed_requests": 1,
+      "verified_unique_source_count": 0,
+      "source_verification_results": {
+        "not_in_current_official_ip_ranges": 1
+      },
+      "verified_statuses": {},
+      "verified_http_errors": 0,
+      "verified_403": 0,
+      "verified_429": 0,
+      "verified_5xx": 0,
+      "verified_unique_public_path_count": 0,
+      "verified_public_paths": [],
+      "verified_nonrobots_get_2xx": 0,
+      "verified_nonrobots_get_2xx_unique_paths": [],
+      "verified_content_page_path_get_2xx": 0,
+      "verified_content_page_paths_get_2xx": [],
+      "verified_rsc_query_requests": 0,
+      "verified_requests_with_explicit_target_host": 0
+    },
+    "ChatGPT-User": {
+      "claimed_requests_in_public_path_scope": 5,
+      "verified_requests": 4,
+      "unverified_claimed_requests": 1,
+      "verified_unique_source_count": 3,
+      "source_verification_results": {
+        "not_in_current_official_ip_ranges": 1,
+        "verified_official_ip_range": 3
+      },
+      "verified_statuses": {
+        "200": 4
+      },
+      "verified_http_errors": 0,
+      "verified_403": 0,
+      "verified_429": 0,
+      "verified_5xx": 0,
+      "verified_unique_public_path_count": 4,
+      "verified_public_paths": [
+        {
+          "path": "/",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T22:04:13+00:00",
+          "last_request_utc": "2026-10-30T22:04:13+00:00"
+        },
+        {
+          "path": "/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T22:04:34+00:00",
+          "last_request_utc": "2026-10-30T22:04:34+00:00"
+        },
+        {
+          "path": "/contacts",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T22:04:22+00:00",
+          "last_request_utc": "2026-10-30T22:04:22+00:00"
+        },
+        {
+          "path": "/dostavka",
+          "category": "content_page_path",
+          "requests": 1,
+          "methods": {
+            "GET": 1
+          },
+          "statuses": {
+            "200": 1
+          },
+          "get_2xx_content_responses": 1,
+          "first_request_utc": "2026-10-30T22:04:17+00:00",
+          "last_request_utc": "2026-10-30T22:04:17+00:00"
+        }
+      ],
+      "verified_nonrobots_get_2xx": 4,
+      "verified_nonrobots_get_2xx_unique_paths": [
+        "/",
+        "/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+        "/contacts",
+        "/dostavka"
+      ],
+      "verified_content_page_path_get_2xx": 4,
+      "verified_content_page_paths_get_2xx": [
+        "/",
+        "/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+        "/contacts",
+        "/dostavka"
+      ],
+      "verified_rsc_query_requests": 0,
+      "verified_requests_with_explicit_target_host": 0
+    }
+  },
+  "oai_searchbot_observation": {
+    "verified_requests": 0,
+    "verified_nonrobots_get_2xx_observed": false,
+    "verified_nonrobots_get_2xx": 0,
+    "verified_content_page_path_get_2xx": 0,
+    "paths_beyond_robots": [],
+    "domain_specific_confirmation": false
+  },
+  "privacy": "No source addresses, user identifiers, request query values, cookies, referrers, raw logs or contact data exported. Address verification performed only in server memory.",
+  "read_only": true,
+  "server_configuration_changed": false,
+  "limits": [
+    "The shared combined log does not contain Host: verified provider origin plus a known public path is not exact domain attribution.",
+    "UA-only probes and ordinary Chrome requests are not treated as verified robots; claimed UAs need official ranges or forward-confirmed reverse DNS.",
+    "Some genuine provider requests may have been triggered by this audit; origin verification does not establish organic discovery.",
+    "GET 2xx to a sitemap path is a response on a public content path; the combined log does not store Content-Type, so HTML versus RSC cannot always be established.",
+    "This short, path-filtered window is not directly comparable to the historical 14-day counts; it is not evidence of improved citations, rankings, conversions or recommendations.",
+    "Current provider ranges/DNS can differ from historical assignments."
+  ],
+  "before_baseline": "2026-10-30-crawlers-before.json",
+  "official_ip_range_sources": {
+    "Googlebot": {
+      "url": "https://developers.google.com/static/crawling/ipranges/common-crawlers.json",
+      "retrieved_at_utc": "2026-10-30T22:48:16.820927+00:00",
+      "retrieval": "ok",
+      "sha256": "9fed79f9f61f72acc6bc0fc689e686da4e1bca75b1629385859f0ce19f9ca5b9",
+      "prefix_count": 317,
+      "published_at": "2026-10-30T15:46:20.000000",
+      "failed_attempts": []
+    },
+    "OAI-SearchBot": {
+      "url": "https://openai.com/searchbot.json",
+      "retrieved_at_utc": "2026-10-30T22:48:16.822427+00:00",
+      "retrieval": "ok",
+      "sha256": "81806b1665e9bbbc5e0f307b847ad34f7027abc19e0d2d5d3eca1864bf361be6",
+      "prefix_count": 39,
+      "published_at": "2026-01-02T11:00:00.000000",
+      "failed_attempts": []
+    },
+    "GPTBot": {
+      "url": "https://openai.com/gptbot.json",
+      "retrieved_at_utc": "2026-10-30T22:48:16.822427+00:00",
+      "retrieval": "ok",
+      "sha256": "a24d1fa34f094d303400bdf13c45c5e9726e0b553780d16a52f9ba1b790acc72",
+      "prefix_count": 18,
+      "published_at": "2026-09-22T02:00:07.000000",
+      "failed_attempts": []
+    },
+    "ChatGPT-User": {
+      "url": "https://openai.com/chatgpt-user.json",
+      "retrieved_at_utc": "2026-10-30T22:48:16.823178+00:00",
+      "retrieval": "ok",
+      "sha256": "9d4d2d9db7a781488f3bbf7ed1327229a7e5a308918e63fd2ecbe2a4f6b90a45",
+      "prefix_count": 235,
+      "published_at": "2026-10-27T18:04:58.004307",
+      "failed_attempts": []
+    }
+  },
+  "verification_documentation": {
+    "Googlebot": "https://developers.google.com/crawling/docs/crawlers-fetchers/verify-google-requests",
+    "Yandex": "https://yandex.ru/support/webmaster/ru/robot-workings/check-yandex-robots",
+    "Bing": "https://www.bing.com/webmasters/help/how-to-verify-bingbot-3905dc26",
+    "OpenAI": "https://developers.openai.com/api/docs/bots"
+  },
+  "nginx_log_scope": {
+    "nginx_config_valid": true,
+    "own_vhost_name_directives": 3,
+    "other_domain_vhost_name_directives": 0,
+    "non_domain_default_name_directives": 1,
+    "global_access_log": [
+      {
+        "path": "/var/log/nginx/access.log",
+        "format": "combined"
+      }
+    ],
+    "defined_formats": [],
+    "combined_format_records_host": false,
+    "logrotate_relevant_lines": [
+      "/var/log/nginx/*.log {",
+      "\tdaily",
+      "\tmissingok",
+      "\trotate 14",
+      "\tcompress",
+      "\tdelaycompress",
+      "\tnotifempty",
+      "\tcreate 0640 www-data adm",
+      "\tsharedscripts",
+      "\t\tinvoke-rc.d nginx rotate >/dev/null 2>&1"
+    ],
+    "host_aware_log_exists": false
+  },
+  "window_context": {
+    "release_start_supplied_by_task_utc": "2026-10-30T21:09:00+00:00",
+    "nginx_freshness_applied_during_window_utc": "2026-10-30T22:33:26+00:00",
+    "attribution_or_causal_improvement_claimed": false
+  },
+  "host_aware_logging_proposal": {
+    "applied": false,
+    "exact_domain_logging_available_for_this_window": false,
+    "scope": "Proposed separate restricted local candidate-bot log within own HTTPS apex vhost, with raw Host and URI without args. Current shared log/history not rewritten."
+  }
+}

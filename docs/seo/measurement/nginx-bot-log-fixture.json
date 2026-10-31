@@ -1,0 +1,95 @@
+{
+  "checked_at_utc": "2026-10-30T22:59:55.004517+00:00",
+  "passed": true,
+  "cases_passed": 12,
+  "cases": [
+    {
+      "case": "Ordinary Chrome omitted from bot stream",
+      "new_bot_records_added": 0,
+      "old_combined_records_added": 1,
+      "passed": true
+    },
+    {
+      "case": "Spoofed UA recorded as claimed only",
+      "new_bot_records_added": 1,
+      "old_combined_records_added": 1,
+      "passed": true
+    },
+    {
+      "case": "Raw Host preserved without normalization",
+      "new_bot_records_added": 1,
+      "old_combined_records_added": 1,
+      "passed": true
+    },
+    {
+      "case": "Absent Host does not fall back to vhost",
+      "new_bot_records_added": 1,
+      "old_combined_records_added": 1,
+      "passed": true
+    },
+    {
+      "case": "API candidate bot excluded: /api",
+      "new_bot_records_added": 0,
+      "old_combined_records_added": 1,
+      "passed": true
+    },
+    {
+      "case": "API candidate bot excluded: /api/fixture",
+      "new_bot_records_added": 0,
+      "old_combined_records_added": 1,
+      "passed": true
+    },
+    {
+      "case": "API candidate bot excluded: /capacity-api",
+      "new_bot_records_added": 0,
+      "old_combined_records_added": 1,
+      "passed": true
+    },
+    {
+      "case": "API candidate bot excluded: /capacity-api/fixture",
+      "new_bot_records_added": 0,
+      "old_combined_records_added": 1,
+      "passed": true
+    },
+    {
+      "case": "API candidate bot excluded: /API/fixture",
+      "new_bot_records_added": 0,
+      "old_combined_records_added": 1,
+      "passed": true
+    },
+    {
+      "case": "API candidate bot excluded: /CAPACITY-API/fixture",
+      "new_bot_records_added": 0,
+      "old_combined_records_added": 1,
+      "passed": true
+    },
+    {
+      "case": "Prefix boundary preserves public candidate: /apiary",
+      "new_bot_records_added": 1,
+      "old_combined_records_added": 1,
+      "passed": true
+    },
+    {
+      "case": "Prefix boundary preserves public candidate: /capacity-apiary",
+      "new_bot_records_added": 1,
+      "old_combined_records_added": 1,
+      "passed": true
+    }
+  ],
+  "private_fields_absent": true,
+  "raw_host_without_fallback_verified": true,
+  "spoofed_ua_is_claimed_not_verified": true,
+  "all_requests_still_in_legacy_combined": true,
+  "excluded_api_prefixes": [
+    "/api",
+    "/capacity-api"
+  ],
+  "fixture_process_stopped": true,
+  "owned_state_directory": "/var/tmp/kuhnitver-nginx-bot-log-fixture-i6o7v0xj",
+  "fixture_pid": 3394854,
+  "fixture_port": 57429,
+  "source_addresses_exported": false,
+  "raw_log_lines_exported": false,
+  "production_mutated": false,
+  "app_or_capacity_api_contacted": false
+}

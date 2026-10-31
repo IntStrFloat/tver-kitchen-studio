@@ -1,0 +1,40 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "conditions-1",
+  "repeat": 3,
+  "status": "completed",
+  "observedAt": "2026-10-30T22:24:35.123Z",
+  "region": "Фактический регион не проверен; запрос о Твери",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Сколько стоит замер кухни в Твери?",
+  "urls": [],
+  "answer": "В Твери стоимость замера кухни зависит от того, у кого заказывать услугу.\n\nПо найденным предложениям на 2026 год:\n\nКомпания / сервис\n\n\t\n\nСтоимость замера\n\n\n\n\nСпартак Мебель\n\n\t\n\n700 ₽\n\n\n\n\nМебелькомплект\n\n\t\n\n1 000 ₽\n\n\n\n\nKuhnitver\n\n\t\n\n1 500 ₽\n\n\n\n\nЧастные замерщики на Профи.ру\n\n\t\n\nот 300–1 230 ₽\n\nИсточники: \n«Спартак Мебель»\n+4\n\nВажный момент: у некоторых компаний стоимость замера возвращается при заказе кухни. Например:\n\nСпартак Мебель — 700 ₽ возвращают при заказе мебели.\n\nМебелькомплект — 1 000 ₽ возвращают при заказе кухни.\n\nKuhnitver — 1 500 ₽ вычитают из стоимости кухни.\n\nМой ориентир: если нужен только замер помещения без заказа кухни, разумно рассчитывать примерно на 700–1 500 ₽.\n\nМогу также помочь определить, сколько брать за выездной замер кухни, если вы планируете сами оказывать такую услугу в Твери.",
+  "sources": [],
+  "facts": {
+    "priceAndUnit": "unverified",
+    "measurement": "unverified",
+    "delivery": "unverified",
+    "contacts": "unverified"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-conditions-1-3.json",
+  "notes": "Exact protocol prompt in a fresh empty guest UI dialog; Search visibly active. No brand/domain hints added to discovery. Model, physical region and server personalization unverified. Non-citation map/feedback/opaque-token links excluded: 0.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "All ordinary visible answer citation anchors captured; no global Sources control observed. Inline source cards may expose titles without URL. No hidden state or unknown/blocked-domain navigation; citation presence is an observed minimum.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Сколько стоит замер кухни в Твери?"
+}

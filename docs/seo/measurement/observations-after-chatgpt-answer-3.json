@@ -1,0 +1,42 @@
+{
+  "observedAt": "2026-10-30T21:32:15Z",
+  "phase": "after",
+  "product": "ChatGPT Search, guest",
+  "model": null,
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "queryId": "supplier-1",
+  "repeat": 3,
+  "prompt": "Где заказать кухню по размерам в Твери?",
+  "freshDialogBeforePrompt": true,
+  "webSearchVisiblyEnabled": true,
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "requestedRegion": "Тверь, Россия",
+  "language": "ru",
+  "capture": "Visible response DOM innerText. Service heading removed and blank-line whitespace normalized. Response text retained in full; citation anchors collected from that same visible response. Decorative image contents are not represented as factual project evidence.",
+  "answer": "В Твери есть несколько компаний, где можно заказать кухню по индивидуальным размерам, с замером, 3D-проектом, изготовлением и установкой. Я бы посоветовала сравнить несколько вариантов, прежде чем вносить предоплату.\n\nГде заказать кухню в Твери\n\n1. Метрия\n\nСтоит рассмотреть\n\nАдрес: наб. Афанасия Никитина, 33.\n\nТелефон: +7 (920) 167-37-77.\n\nСобственное производство, замер, дизайн-проект и установка.\n\nЗаявляют гарантию 5 лет.\n\nСайт и каталог кухонь\n\n2. Любимая кухня\n\nАдрес: пр. Победы, 14, ТЦ «Галерея мебели», 3 этаж.\n\nТелефон: +7 (920) 153-97-62.\n\nИзготовление от 15 дней по заявлению компании.\n\nГарантия 3 года.\n\nСайт и каталог\n\n3. Атлас Люкс\n\nАдрес: б-р Радищева, 4.\n\nТелефон: +7 (905) 129-87-80.\n\nКлассические и современные кухни, нестандартные планировки.\n\nСайт и каталог\n\n4. Perfetti\n\nМЦ «Спартак», ул. Спартака, 47.\n\nОТК «Тандем», пр-т Октябрьский, 70.\n\nТелефон: +7 (920) 171-33-22.\n\nБесплатный замер при заказе, индивидуальное проектирование.\n\nСайт и примеры кухонь\n\n5. Kuhnitver\n\nАдрес: ул. Николая Корыткова, 3, стр. 1.\n\nСобственное производство.\n\nЗаявленный срок изготовления от 20 рабочих дней.\n\nЗамер и установка.\n\nСайт и каталог\n\nДавайте подберём вам хорошую кухню\n\nМогу помочь выбрать, где лучше заказать по соотношению цена/качество.\n\nПодскажите, пожалуйста:\n\n1. Какой бюджет планируете?\n\nДо 100 000 ₽\n\n100–150 тысяч ₽\n\n150–250 тысяч ₽\n\n250–400 тысяч ₽\n\nБолее 400 тысяч ₽\n\n2. Какая кухня нужна?\n\nПрямая\n\nУгловая\n\nП-образная\n\n3. Какой стиль нравится?\n\nСовременная минималистичная\n\nКлассическая\n\nСкандинавская\n\nЛофт\n\nЕщё один важный вопрос: вам нужна недорогая кухня, но чтобы выглядела дорого, или главное — качественные материалы и надёжная фурнитура?\n\nПо вашим ответам смогу сузить список до 2–3 наиболее подходящих производителей в Твери.",
+  "sources": [
+    {
+      "title": "Сайт и каталог кухонь",
+      "url": "https://metriya.ru/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "Сайт и каталог",
+      "url": "https://tver.lovekuhnya.ru/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "Сайт и каталог",
+      "url": "https://tver-atlaslux.ru/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "Сайт и примеры кухонь",
+      "url": "https://perfetti.ru/?utm_source=chatgpt.com"
+    },
+    {
+      "title": "Сайт и каталог",
+      "url": "https://kuhnitver.ru/?utm_source=chatgpt.com",
+      "verified": true,
+      "verificationEvidence": "docs/seo/measurement/observations-after-chatgpt-link-check.json"
+    }
+  ]
+}

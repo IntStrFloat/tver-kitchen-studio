@@ -1,0 +1,45 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "conditions-2",
+  "repeat": 2,
+  "status": "completed",
+  "observedAt": "2026-10-30T22:34:27.377Z",
+  "region": "Фактический регион не проверен; запрос о Твери",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Срок изготовления кухни на заказ в Твери",
+  "urls": [],
+  "answer": "В Твери изготовление кухни на заказ обычно занимает от 20 до 45 рабочих дней после согласования проекта и внесения предоплаты.\n\nПо данным местных производителей:\n\nКомпания\n\n\t\n\nЗаявленный срок\n\n\n\n\nKuhnitver\n\n\t\n\nот 20 рабочих дней \nKuhnitver\n+1\n\n\n\n\nМебельный центр «Галерея Мебели»\n\n\t\n\n25–45 дней \nМЦ \"Галерея Мебели\"Тверь\n\n\n\n\nКухни ЗОВ\n\n\t\n\nот 2 до 8 недель \nКухни ЗОВ Твери\n\n\n\n\nМебель69\n\n\t\n\nдо 30 дней \nФабрика мебели «Тритон»\n\nСколько занимает весь процесс?\n\nЗамер и проектирование — 3–7 дней.\n\nИзготовление — 20–45 рабочих дней.\n\nДоставка и монтаж — 2–4 дня.\n\nИтого: ориентируйтесь примерно на 1–2 месяца от первого замера до готовой кухни.\n\nСрок зависит от материала фасадов, столешницы, сложности конструкции и загруженности производства.\n\nВажный вопрос\n\nВы хотите узнать сроки для собственной кухни или сравниваете предложения мебельных компаний в Твери? Могу помочь найти производителей с самыми короткими сроками изготовления.",
+  "sources": [
+    {
+      "title": "Вопросы и ответы о кухнях на заказ в Твери — FAQ | Kuhnitver",
+      "url": "https://kuhnitver.ru/faq?utm_source=chatgpt.com"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "unverified",
+    "measurement": "unverified",
+    "delivery": "unverified",
+    "contacts": "unverified"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-conditions-2-2.json",
+  "notes": "Exact protocol prompt in a fresh empty guest UI dialog; Search visibly active. No brand/domain hints added to discovery. Model, physical region and server personalization unverified. Non-citation map/feedback/opaque-token links excluded: 0.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "Target used-source URL was resolved through an ordinary visible citation/Open click and observed newly opened public website-tab URL. No hidden state/guessed URL. Auditor citation click is not customer traffic; other inaccessible inline URLs remain unresolved.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Срок изготовления кухни на заказ в Твери"
+}

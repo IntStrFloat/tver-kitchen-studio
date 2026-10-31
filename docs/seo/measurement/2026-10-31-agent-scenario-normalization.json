@@ -1,0 +1,142 @@
+{
+  "recordedAtUtc": "2026-10-31T00:10:26.291Z",
+  "reason": "Normalize draft semantics across the two chat products. Search/chat replies are completed responses; text draft presence is not observed website actuation.",
+  "rawAnswerTextChanged": false,
+  "sourceUrlsChanged": false,
+  "observationDatesChanged": false,
+  "rawCaptureMetadataPreserved": true,
+  "changes": [
+    {
+      "product": "chatgpt",
+      "queryId": "form-1",
+      "repeat": 1,
+      "previousAssessment": {
+        "draftPrepared": false,
+        "draftKind": "intake_questions",
+        "textDraftVisible": false,
+        "siteFieldsFilled": false,
+        "taskSucceeded": false,
+        "submitted": false,
+        "capabilityLimited": true
+      },
+      "assessment": {
+        "draftPrepared": false,
+        "draftKind": "intake_questions",
+        "textDraftVisible": false,
+        "siteFieldsFilled": false,
+        "taskSucceeded": null,
+        "submitted": false,
+        "capabilityLimited": true,
+        "taskAttempted": false
+      }
+    },
+    {
+      "product": "chatgpt",
+      "queryId": "form-1",
+      "repeat": 2,
+      "previousAssessment": {
+        "draftPrepared": false,
+        "draftKind": "intake_questions",
+        "textDraftVisible": false,
+        "siteFieldsFilled": false,
+        "taskSucceeded": false,
+        "submitted": false,
+        "capabilityLimited": true
+      },
+      "assessment": {
+        "draftPrepared": false,
+        "draftKind": "intake_questions",
+        "textDraftVisible": false,
+        "siteFieldsFilled": false,
+        "taskSucceeded": null,
+        "submitted": false,
+        "capabilityLimited": true,
+        "taskAttempted": false
+      }
+    },
+    {
+      "product": "chatgpt",
+      "queryId": "form-1",
+      "repeat": 3,
+      "previousAssessment": {
+        "draftPrepared": true,
+        "draftKind": "text",
+        "textDraftVisible": true,
+        "siteFieldsFilled": false,
+        "taskSucceeded": false,
+        "submitted": false,
+        "capabilityLimited": true
+      },
+      "assessment": {
+        "draftPrepared": true,
+        "draftKind": "text",
+        "textDraftVisible": true,
+        "siteFieldsFilled": false,
+        "taskSucceeded": null,
+        "submitted": false,
+        "capabilityLimited": true,
+        "taskAttempted": false
+      }
+    },
+    {
+      "product": "gigachat",
+      "queryId": "form-1",
+      "repeat": 1,
+      "previousAssessment": {
+        "draftPrepared": false,
+        "submitted": false,
+        "taskSucceeded": null
+      },
+      "assessment": {
+        "draftPrepared": true,
+        "submitted": false,
+        "taskSucceeded": null,
+        "draftKind": "text",
+        "textDraftVisible": true,
+        "taskAttempted": false,
+        "siteFieldsFilled": false,
+        "capabilityLimited": true
+      }
+    },
+    {
+      "product": "gigachat",
+      "queryId": "form-1",
+      "repeat": 2,
+      "previousAssessment": {
+        "draftPrepared": false,
+        "submitted": false,
+        "taskSucceeded": null
+      },
+      "assessment": {
+        "draftPrepared": true,
+        "submitted": false,
+        "taskSucceeded": null,
+        "draftKind": "text",
+        "textDraftVisible": true,
+        "taskAttempted": false,
+        "siteFieldsFilled": false,
+        "capabilityLimited": true
+      }
+    },
+    {
+      "product": "gigachat",
+      "queryId": "form-1",
+      "repeat": 3,
+      "previousAssessment": {
+        "draftPrepared": false,
+        "submitted": false,
+        "taskSucceeded": null
+      },
+      "assessment": {
+        "draftPrepared": true,
+        "submitted": false,
+        "taskSucceeded": null,
+        "draftKind": "text",
+        "textDraftVisible": true,
+        "taskAttempted": false,
+        "siteFieldsFilled": false,
+        "capabilityLimited": true
+      }
+    }
+  ]
+}

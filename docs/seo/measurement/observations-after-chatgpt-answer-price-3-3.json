@@ -1,0 +1,40 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "price-3",
+  "repeat": 3,
+  "status": "completed",
+  "observedAt": "2026-10-30T22:16:58.162Z",
+  "region": "Фактический регион не проверен; запрос о Твери",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Чем цена за погонный метр отличается от полной сметы?",
+  "urls": [],
+  "answer": "Цена за погонный метр — это стоимость одного метра изделия или конструкции, а полная смета — это общая стоимость всего проекта с учётом материалов, работ, дополнительных элементов и сопутствующих расходов.\n\nВ чём разница?\n\nДопустим, вы заказываете кухонный гарнитур или шкаф.\n\nЦена за погонный метр\n\n\t\n\nПолная смета\n\n\n\n\nСтоимость одного метра\n\n\t\n\nСтоимость всего заказа\n\n\n\n\nОбычно ориентировочная цена\n\n\t\n\nИтоговая стоимость проекта\n\n\n\n\nМожет включать только базовую комплектацию\n\n\t\n\nУчитывает конкретные материалы и комплектующие\n\n\n\n\nНе всегда учитывает монтаж\n\n\t\n\nМожет включать доставку, монтаж и дополнительные работы\n\nПример расчёта\n\nДопустим, цена составляет 20 000 ₽ за погонный метр, а длина конструкции — 4 метра.\n\nБазовая стоимость: 20 000 × 4 = 80 000 ₽.\n\nДополнительные материалы и комплектующие: 25 000 ₽.\n\nМонтаж: 10 000 ₽.\n\nДоставка: 5 000 ₽.\n\nИтоговая стоимость по смете\n\n120 000 ₽\n\nВместо ориентировочных 80 000 ₽ по погонным метрам\n\nПочему это важно?\n\nЦена за погонный метр удобна для предварительной оценки бюджета, но она не всегда отражает реальную стоимость заказа.\n\nПолная смета позволяет заранее увидеть:\n\nКакие материалы входят в стоимость.\n\nКакие работы оплачиваются отдельно.\n\nСколько стоят фурнитура и комплектующие.\n\nВключены ли доставка и монтаж.\n\nКакова окончательная сумма к оплате.\n\nМой совет: при сравнении предложений от разных компаний ориентируйтесь на полную смету, а не только на цену за погонный метр. Так вы сможете сравнить действительно одинаковую комплектацию.",
+  "sources": [],
+  "facts": {
+    "priceAndUnit": "not_applicable",
+    "measurement": "not_applicable",
+    "delivery": "not_applicable",
+    "contacts": "not_applicable"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-price-3-3.json",
+  "notes": "Exact protocol prompt in a fresh empty guest UI dialog; Search visibly active. No brand/domain hints added to discovery. Model, physical region and server personalization unverified. Non-citation map/feedback/opaque-token links excluded: 0.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "All ordinary visible answer citation anchors captured; no global Sources control observed. Inline source cards may expose titles without URL. No hidden state or unknown/blocked-domain navigation; citation presence is an observed minimum.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Чем цена за погонный метр отличается от полной сметы?"
+}

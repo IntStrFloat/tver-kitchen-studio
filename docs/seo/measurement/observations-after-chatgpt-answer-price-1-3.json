@@ -1,0 +1,40 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "price-1",
+  "repeat": 3,
+  "status": "completed",
+  "observedAt": "2026-10-30T22:09:43.252Z",
+  "region": "Фактический регион не проверен; запрос о Твери",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Сколько стоит угловая кухня 3 метра в Твери?",
+  "urls": [],
+  "answer": "В Твери угловая кухня длиной около 3 метров стоит ориентировочно от 50 000 до 150 000 рублей. Если нужна кухня на заказ с нормальными фасадами, столешницей и фурнитурой, я бы рассчитывал на 90 000–130 000 рублей.\n\nЦены в Твери\n\nВот несколько реальных ценовых ориентиров:\n\nВариант\n\n\t\n\nСтоимость\n\n\n\n\nБюджетная готовая кухня\n\n\t\n\n50 000–65 000 ₽\n\n\n\n\nЛДСП, простые фасады\n\n\t\n\n65 000–90 000 ₽\n\n\n\n\nМДФ, плёночные фасады\n\n\t\n\n90 000–130 000 ₽\n\n\n\n\nМДФ, хорошая фурнитура\n\n\t\n\n130 000–180 000 ₽\n\nПо местным предложениям:\n\nМебельная фабрика Мебель69 — угловые кухни от 41 000 ₽ за погонный метр. \nФабрика мебели «Тритон»\n\nKuhnitver — угловые кухни от 95 000 ₽, пример кухни 3 м — 95 000–130 000 ₽. \nKuhnitver\n\nКухни Z — готовый вариант «Угловая 3» от 140 400 ₽. \ntver.kuhni-z.ru\n\nДавайте прикинем стоимость вашей кухни\n\nУточните, пожалуйста:\n\n3 метра — это общая длина двух сторон (например, 2 м + 1 м) или по 3 метра каждая сторона?\n\nФасады хотите ЛДСП или МДФ?\n\nНужна ли установка?\n\nМогу подобрать вариант недорогой угловой кухни в Твери до 80 000 рублей или рассчитать более качественную кухню под ваш бюджет.",
+  "sources": [],
+  "facts": {
+    "priceAndUnit": "unverified",
+    "measurement": "unverified",
+    "delivery": "unverified",
+    "contacts": "unverified"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-price-1-3.json",
+  "notes": "Exact protocol prompt in a fresh empty guest UI dialog; Search visibly active. No brand/domain hints added to discovery. Model, physical region and server personalization unverified. Non-citation map/feedback/opaque-token links excluded: 0.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "All ordinary visible answer citation anchors captured; no global Sources control observed. Inline source cards may expose titles without URL. No hidden state or unknown/blocked-domain navigation; citation presence is an observed minimum.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Сколько стоит угловая кухня 3 метра в Твери?"
+}

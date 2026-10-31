@@ -1,0 +1,36 @@
+--- a/etc/nginx/sites-enabled/kuhnitver.ru
++++ b/etc/nginx/sites-enabled/kuhnitver.ru
+@@ -0,0 +1,28 @@
++# Candidate family only: official source-address verification remains mandatory.
++map $http_user_agent $kuhnitver_claimed_bot_family {
++    default "";
++    ~*Googlebot Googlebot;
++    ~*YandexBot YandexBot;
++    ~*Yandex YandexOther;
++    ~*bingbot bingbot;
++    ~*OAI-SearchBot OAI-SearchBot;
++    ~*GPTBot GPTBot;
++    ~*ChatGPT-User ChatGPT-User;
++    ~*PerplexityBot PerplexityBot;
++    ~*Perplexity-User Perplexity-User;
++}
++
++# Existing capacity endpoints are /capacity-api and /capacity-api/.
++# Keep API traffic outside the new stream; existing combined logging remains.
++map $uri $kuhnitver_bot_log_family {
++    default $kuhnitver_claimed_bot_family;
++    "~*^/(api|capacity-api)(/|$)" "";
++}
++
++# Local-only source address supports official IP/FCrDNS verification.
++# Raw Host avoids $host fallback falsely attributing hostless requests.
++log_format kuhnitver_bot_observation escape=json
++    '{"time":"$time_iso8601","host":"$http_host","vhost":"$server_name",'
++    '"source_addr":"$remote_addr","method":"$request_method","uri":"$uri",'
++    '"status":"$status","claimed_bot":"$kuhnitver_claimed_bot_family"}';
++
+@@ -58,0 +87,4 @@
++    # Preserve existing combined logging; add a local candidate-bot stream.
++    access_log /var/log/nginx/access.log combined;
++    access_log /var/log/nginx/kuhnitver-bots.log kuhnitver_bot_observation if=$kuhnitver_bot_log_family;
++

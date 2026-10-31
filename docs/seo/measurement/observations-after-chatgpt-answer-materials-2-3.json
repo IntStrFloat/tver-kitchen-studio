@@ -1,0 +1,40 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "materials-2",
+  "repeat": 3,
+  "status": "completed",
+  "observedAt": "2026-10-30T22:50:32.598Z",
+  "region": "Фактический регион не проверен; запрос о Твери",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Blum или Hettich для кухни: в чём различия?",
+  "urls": [],
+  "answer": "Blum и Hettich — два очень достойных австрийско-немецких производителя мебельной фурнитуры. Оба подходят для качественной кухни, но у них есть различия в конструкциях, механизмах, регулировках и цене.\n\nЕсли коротко: Blum я бы выбрал как универсальный вариант для кухни с акцентом на плавность и удобство, Hettich — как очень сильную альтернативу с широким выбором конструктивных решений. Но многое зависит от конкретной серии фурнитуры.\n\n1. Главное отличие\n \n\nBlum\n\nАвстрия\n\nСильная сторона — системы ящиков и подъёмные механизмы.\n\nОтличная плавность хода.\n\nХорошо продуманная система регулировок.\n\n \n\nHettich\n\nГермания\n\nСильная сторона — разнообразие систем и конструкций.\n\nХорошие направляющие и петли.\n\nШирокие возможности индивидуальной комплектации.\n\n2. Сравнение по важным параметрам\n\nКритерий\n\n\t\n\nBlum\n\n\t\n\nHettich\n\n\n\n\nПетли\n\n\t\n\nОтличные\n\n\t\n\nОтличные\n\n\n\n\nНаправляющие\n\n\t\n\nОчень плавные\n\n\t\n\nОчень плавные\n\n\n\n\nСистемы ящиков\n\n\t\n\nLEGRABOX, TANDEMBOX\n\n\t\n\nAvanTech YOU, ArciTech\n\n\n\n\nПодъёмники фасадов\n\n\t\n\nAVENTOS\n\n\t\n\nFеrrari? Нет — Sensys и другие решения для фасадов\n\n\n\n\nДоводчики\n\n\t\n\nBLUMOTION\n\n\t\n\nSilent System\n\n\n\n\nОткрывание нажатием\n\n\t\n\nTIP-ON\n\n\t\n\nPush to open\n\n\n\n\nКачество сборки\n\n\t\n\nПремиум\n\n\t\n\nПремиум\n\n\n\n\nЦена\n\n\t\n\nЧасто выше\n\n\t\n\nЗависит от серии, иногда выгоднее\n\nВ предыдущей таблице важное уточнение: у Blum подъёмники называются AVENTOS, у Hettich есть собственные решения для подъёмных и раздвижных фасадов, а Sensys — это серия петель Hettich.\n\n3. Какие серии стоит сравнивать\n \n\nBlum LEGRABOX\n\nПремиальная система ящиков с тонкими металлическими боковинами. Хороший выбор для современной кухни.\n\n \n\nHettich AvanTech YOU\n\nПрямой конкурент LEGRABOX. Большие возможности персонализации боковин и внутреннего оформления.\n\n \n\nBlum AVENTOS\n\nПодъёмные механизмы для верхних шкафов. Особенно удобны для широких фасадов.\n\n \n\nHettich Sensys\n\nОчень удачная серия петель со встроенным доводчиком.\n\nОбе марки предлагают решения с высокой нагрузкой, доводчиками и открыванием без ручек. Сравнение характеристик конкретных систем есть в технических каталогах производителей. \nOstermann\n+2\n\n4. Что я рекомендую для кухни\n\nМой подход:\n\nЯщики: Blum LEGRABOX или Hettich AvanTech YOU.\n\nПетли: Blum CLIP top BLUMOTION или Hettich Sensys.\n\nВерхние шкафы: Blum AVENTOS — очень хороший вариант.\n\nНаправляющие: сравнивать конкретные серии, а не только производителя.\n\nНе стоит переплачивать исключительно за логотип Blum. Хорошо подобранная фурнитура Hettich может оказаться не менее удачным решением.\n\n5. Самое важное — уточнить комплектацию\n\nЕсть три момента, которые влияют на итоговое качество:\n\nКакая именно серия ящиков установлена.\n\nЕсть ли доводчики на всех дверцах и ящиках.\n\nКто и насколько качественно выполняет монтаж и регулировку.\n\nМой итог: если стоимость одинаковая и серии сопоставимы, я бы немного склонялся к Blum. Но между LEGRABOX и бюджетной линейкой Hettich я бы выбрал LEGRABOX, а между LEGRABOX и AvanTech YOU уже сравнивал бы конкретные комплектации.\n\nУточню один момент: вы сейчас выбираете фурнитуру для новой кухни на заказ или сравниваете два предложения от мебельщиков?\n\nЕсли пришлёте комплектации Blum и Hettich с ценами, я смогу сказать, где действительно лучше фурнитура, а где просто переплата за бренд.",
+  "sources": [],
+  "facts": {
+    "priceAndUnit": "not_applicable",
+    "measurement": "not_applicable",
+    "delivery": "not_applicable",
+    "contacts": "not_applicable"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-materials-2-3.json",
+  "notes": "Exact protocol prompt in a fresh empty guest UI dialog; Search visibly active. No brand/domain hints added to discovery. Model, physical region and server personalization unverified. Non-citation map/feedback/opaque-token links excluded: 0.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "All ordinary visible answer citation anchors captured; no global Sources control observed. Inline source cards may expose titles without URL. No hidden state or unknown/blocked-domain navigation; citation presence is an observed minimum.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Blum или Hettich для кухни: в чём различия?"
+}

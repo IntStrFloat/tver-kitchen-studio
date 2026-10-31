@@ -1,0 +1,60 @@
+[
+  {
+    "observedAt": "2026-10-30T21:28:57.858Z",
+    "requestedUrl": "https://kuhnitver.ru/?utm_source=chatgpt.com",
+    "finalUrl": "https://kuhnitver.ru/?utm_source=chatgpt.com",
+    "status": 200,
+    "canonical": "https://kuhnitver.ru",
+    "title": "Кухни на заказ в Твери от производителя | Kuhnitver",
+    "verified": true,
+    "method": "Read-only HTTP GET; no form submission."
+  },
+  {
+    "observedAt": "2026-10-30T22:11:26.226Z",
+    "requestedUrl": "https://kuhnitver.ru/price?utm_source=chatgpt.com",
+    "method": "Read-only HTTP GET from audit; no form submission.",
+    "finalUrl": "https://kuhnitver.ru/price?utm_source=chatgpt.com",
+    "status": 200,
+    "verified": true
+  },
+  {
+    "observedAt": "2026-10-30T22:24:21.187Z",
+    "requestedUrl": "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit?utm_source=chatgpt.com",
+    "method": "Read-only HTTP GET from audit; no form submission.",
+    "finalUrl": "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit?utm_source=chatgpt.com",
+    "status": 200,
+    "verified": true
+  },
+  {
+    "observedAt": "2026-10-30T22:34:17.165Z",
+    "requestedUrl": "https://kuhnitver.ru/faq?utm_source=chatgpt.com",
+    "method": "Read-only HTTP GET from audit; no form submission.",
+    "finalUrl": "https://kuhnitver.ru/faq?utm_source=chatgpt.com",
+    "status": 200,
+    "verified": true
+  },
+  {
+    "observedAt": "2026-10-30T22:38:54.769Z",
+    "requestedUrl": "https://kuhnitver.ru/kuhni/konakovo?utm_source=chatgpt.com",
+    "method": "Read-only HTTP GET from audit; no form submission.",
+    "finalUrl": "https://kuhnitver.ru/kuhni/konakovo?utm_source=chatgpt.com",
+    "status": 200,
+    "verified": true
+  },
+  {
+    "observedAt": "2026-10-30T22:41:47.312Z",
+    "requestedUrl": "https://kuhnitver.ru/dostavka?utm_source=chatgpt.com",
+    "method": "Read-only HTTP GET from audit; no form submission.",
+    "finalUrl": "https://kuhnitver.ru/dostavka?utm_source=chatgpt.com",
+    "status": 200,
+    "verified": true
+  },
+  {
+    "observedAt": "2026-10-30T23:12:03.190Z",
+    "requestedUrl": "https://kuhnitver.ru/contacts?utm_source=chatgpt.com",
+    "method": "Read-only HTTP GET from audit; no form submission.",
+    "finalUrl": "https://kuhnitver.ru/contacts?utm_source=chatgpt.com",
+    "status": 200,
+    "verified": true
+  }
+]

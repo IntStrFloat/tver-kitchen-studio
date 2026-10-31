@@ -1,0 +1,176 @@
+{
+  "sha": "1004281a14ad25828ee41cde70c23bf9bccba623",
+  "branch": "codex/ai-search-optimization",
+  "release": "/var/www/tver-kitchen-studio-releases/1004281a14ad25828ee41cde70c23bf9bccba623",
+  "staging_unit": "kuhnitver-stage-postcode-1004281a14ad",
+  "staging_port": 3108,
+  "started_at_utc": "2026-10-30T23:49:10.244581+00:00",
+  "completed_at_utc": "2026-10-30T23:49:26.721473+00:00",
+  "steps": [
+    {
+      "command": [
+        "/usr/bin/npm",
+        "run",
+        "build"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "systemd-run",
+        "--unit=kuhnitver-stage-postcode-1004281a14ad",
+        "--collect",
+        "--property=WorkingDirectory=/var/www/tver-kitchen-studio-releases/1004281a14ad25828ee41cde70c23bf9bccba623",
+        "--property=EnvironmentFile=-/etc/tver-kitchen-studio.env",
+        "--setenv=NODE_ENV=production",
+        "--setenv=PORT=3108",
+        "/usr/bin/npm",
+        "run",
+        "start",
+        "--",
+        "-H",
+        "127.0.0.1",
+        "-p",
+        "3108"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/usr/bin/node",
+        "scripts/seo-audit.mjs",
+        "--base-url",
+        "http://127.0.0.1:3108",
+        "--canonical-origin",
+        "https://kuhnitver.ru",
+        "--output",
+        "/var/tmp/kuhnitver-stage-1004281a14ad/production-postcode-server-staging.json",
+        "--strict"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "/var/tmp/kuhnitver-stage-1004281a14ad/check-postcode.py",
+        "--base-url",
+        "http://127.0.0.1:3108",
+        "--output",
+        "/var/tmp/kuhnitver-stage-1004281a14ad/postcode-check.json",
+        "--sitemap-baseline",
+        "/var/tmp/kuhnitver-stage-1004281a14ad/previous-stage-sitemap.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "phase": "ready-for-root-promotion",
+  "dependency_reuse": {
+    "strategy": "reuse-isolated-dependencies-after-owned-worktree-move",
+    "source_staging_sha": "46109aa87058ca92bb97b2b504808ab83f1ea907",
+    "source_active_release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+    "package_input_hashes": {
+      "package.json": "e4762077d9a415a5da970bccef2e7803cbd94436fdf6bba7c2d1aaa7e280d019",
+      "package-lock.json": "183c23a6fb19f1448535746b33a4d8587dbc6518f375a35b7680ebe90d827bbf"
+    },
+    "new_dependencies": false,
+    "network_install": false
+  },
+  "worktree_transition": {
+    "previous_staging_sha": "46109aa87058ca92bb97b2b504808ab83f1ea907",
+    "new_staging_sha": "1004281a14ad25828ee41cde70c23bf9bccba623",
+    "old_preview_stopped_after_ownership_check": true,
+    "previous_build_finished": true,
+    "processes_and_locks_checked": true,
+    "resolved_paths_checked": true,
+    "worktree_moved_from": "/var/www/tver-kitchen-studio-releases/46109aa87058ca92bb97b2b504808ab83f1ea907",
+    "worktree_moved_to": "/var/www/tver-kitchen-studio-releases/1004281a14ad25828ee41cde70c23bf9bccba623",
+    "generated_next_env_preserved": true,
+    "dependencies_reused_without_copy_or_install": true,
+    "parallel_build_started": false,
+    "previous_dependency_package_hashes": {
+      "package.json": "e4762077d9a415a5da970bccef2e7803cbd94436fdf6bba7c2d1aaa7e280d019",
+      "package-lock.json": "183c23a6fb19f1448535746b33a4d8587dbc6518f375a35b7680ebe90d827bbf"
+    }
+  },
+  "next_build_id": "PYIz_95rYbkW20mXKrrSL",
+  "acceptance_summary": {
+    "sitemapUrls": 36,
+    "http200": 36,
+    "uniqueTitles": 36,
+    "singleH1": 36,
+    "errors": 0,
+    "warnings": 0
+  },
+  "staging_service_active": true,
+  "original_service_active": true,
+  "original_working_directory": "/var/www/tver-kitchen-studio-releases/5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "production_switched": false,
+  "live_release_sha": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "postal_check_passed": true,
+  "sitemap_dates_passed": true,
+  "sitemap_unchanged_other_urls": 35,
+  "nginx_configuration_unchanged": true,
+  "live_pid_unchanged": true,
+  "original_snapshot_unchanged": true,
+  "original_snapshot_current": {
+    "head": "2b9702f7b0e9decfda306f1b84f19ba5edd4194b",
+    "status": "M next-env.d.ts",
+    "working_directory": "/var/www/tver-kitchen-studio-releases/5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+    "main_pid": "3282195",
+    "active": "active"
+  },
+  "unchanged_nginx_sha256": "26a3691cd76de9efdf88c1de097857bb7e4282dc6475632c255fc5af39206348",
+  "build_evidence": {
+    "static_routes_generated": 43,
+    "compiler_succeeded": true,
+    "heap_limit_mb": 1536
+  },
+  "production_switch_authorized_in_this_slice": false,
+  "sitemap_date_assertions": {
+    "passed": true,
+    "changed_urls": [
+      "https://kuhnitver.ru/contacts"
+    ],
+    "contacts_before": "2026-10-30",
+    "contacts_staged": "2026-10-31",
+    "unchanged_other_urls": 35,
+    "lastmod_by_url": {
+      "https://kuhnitver.ru": "2026-10-30",
+      "https://kuhnitver.ru/catalog": "2026-10-30",
+      "https://kuhnitver.ru/price": "2026-10-30",
+      "https://kuhnitver.ru/portfolio": "2026-10-30",
+      "https://kuhnitver.ru/about": "2026-10-30",
+      "https://kuhnitver.ru/contacts": "2026-10-31",
+      "https://kuhnitver.ru/faq": "2026-10-30",
+      "https://kuhnitver.ru/dostavka": "2026-10-30",
+      "https://kuhnitver.ru/blog": "2026-10-30",
+      "https://kuhnitver.ru/b2b": "2026-10-30",
+      "https://kuhnitver.ru/privacy": "2026-10-30",
+      "https://kuhnitver.ru/catalog/loft": "2026-10-30",
+      "https://kuhnitver.ru/catalog/skandinavskiy": "2026-10-30",
+      "https://kuhnitver.ru/catalog/minimalizm": "2026-10-30",
+      "https://kuhnitver.ru/catalog/premium": "2026-10-30",
+      "https://kuhnitver.ru/catalog/klassika": "2026-10-30",
+      "https://kuhnitver.ru/catalog/belaya": "2026-10-30",
+      "https://kuhnitver.ru/catalog/uglovye": "2026-10-30",
+      "https://kuhnitver.ru/kuhni/tveri": "2026-10-30",
+      "https://kuhnitver.ru/kuhni/torzhke": "2026-10-30",
+      "https://kuhnitver.ru/kuhni/rzheve": "2026-10-30",
+      "https://kuhnitver.ru/kuhni/konakovo": "2026-10-30",
+      "https://kuhnitver.ru/kuhni/kimrah": "2026-10-30",
+      "https://kuhnitver.ru/kuhni/vyshnem-volochke": "2026-10-30",
+      "https://kuhnitver.ru/kuhni/bezhecke": "2026-10-30",
+      "https://kuhnitver.ru/kuhni/nelidovo": "2026-10-30",
+      "https://kuhnitver.ru/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri": "2026-10-30",
+      "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik": "2026-10-30",
+      "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026": "2026-10-30",
+      "https://kuhnitver.ru/blog/uglovaya-vs-pryamaya-kuhnya": "2026-10-30",
+      "https://kuhnitver.ru/blog/top-10-oshibok-pri-zakaze-kuhni": "2026-10-30",
+      "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit": "2026-10-30",
+      "https://kuhnitver.ru/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni": "2026-10-30",
+      "https://kuhnitver.ru/blog/dizayn-kuhni-2026-idei-planirovki-i-foto": "2026-06-20",
+      "https://kuhnitver.ru/blog/chernaya-kuhnya-v-interere": "2026-06-20",
+      "https://kuhnitver.ru/blog/sroki-izgotovleniya-kuhni-na-zakaz": "2026-10-30"
+    }
+  }
+}

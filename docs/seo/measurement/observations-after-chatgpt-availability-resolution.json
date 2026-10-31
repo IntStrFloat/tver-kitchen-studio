@@ -1,0 +1,15 @@
+{
+  "observedAt": "2026-10-30T23:30:27.932Z",
+  "initialAccessEvidence": "docs/seo/measurement/observations-after-chatgpt-access.json",
+  "status": "guest-search-available-full-protocol-wave-completed",
+  "protocolQueries": 17,
+  "independentGuestUiRepeats": 3,
+  "actualSubmissions": 51,
+  "actualFullReplies": 51,
+  "completed": 51,
+  "pending": 0,
+  "unavailableReplies": 0,
+  "capabilityLimitedReplies": 3,
+  "explanation": "A named Temporary Chat toggle was absent in the initial guest check, but ordinary fresh empty guest dialogs via New chat meet the declared guest-mode protocol. Explicit Search enabled before every query. No login/new explicit terms/CAPTCHA/account-setting changes, no third-party lead submission.",
+  "evidence": "docs/seo/measurement/observations-after-chatgpt.json"
+}

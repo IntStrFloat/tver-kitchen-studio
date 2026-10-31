@@ -1,0 +1,339 @@
+{
+  "collected_at_utc": "2026-10-31T00:10:28.485250+00:00",
+  "purpose": "bounded functional-access after snapshot; not organic growth",
+  "scope": "exact-request-Host-and-apex-vhost/public-path-filtered/official-source-verified",
+  "site": "https://kuhnitver.ru",
+  "window_start_utc": "2026-10-30T23:03:32+00:00",
+  "logger_ready_at_utc": "2026-10-30T23:03:32.317933+00:00",
+  "window_start_moscow": "2026-10-31T02:03:32+03:00",
+  "window_end_actual_log_cutoff_utc": "2026-10-31T00:07:19+00:00",
+  "window_end_moscow": "2026-10-31T03:07:19+03:00",
+  "window_duration_minutes": 63.78,
+  "timestamp_precision": "nginx time_iso8601 whole seconds; logger readiness rounded down for selection",
+  "coverage_reaches_logger_start": true,
+  "log_sources": [
+    {
+      "name": "kuhnitver-bots.log",
+      "snapshot_bytes": 3820,
+      "snapshot_sha256": "8ec4831534a04a20c2a21f21b3f19b3810e78a7cded207cd525f67bd9e751824",
+      "first_record_utc": "2026-10-30T23:03:32+00:00",
+      "last_record_utc": "2026-10-31T00:07:19+00:00"
+    }
+  ],
+  "exact_host_policy": "Explicit request Host hostname kuhnitver.ru, absent/default443 port, selected apex vhost kuhnitver.ru; missing/fallback/other hosts excluded.",
+  "excluded_counts": {},
+  "invalid_records": 0,
+  "trailing_partial_lines_ignored": 0,
+  "release_context": {
+    "current_production_sha": "1004281a14ad25828ee41cde70c23bf9bccba623",
+    "pre_switch_sha": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+    "post_switch_sha": "1004281a14ad25828ee41cde70c23bf9bccba623",
+    "switch_public_health_ready_utc": "2026-10-31T00:07:18.081336+00:00",
+    "window_spans_release_transition": true,
+    "verified_requests_definitely_before_switch_ready": 6,
+    "verified_requests_definitely_after_switch_ready": 0,
+    "verified_requests_transition_or_aggregated_boundary": 0
+  },
+  "crawlers": {
+    "Googlebot": {
+      "claimed_requests": 3,
+      "verified_requests": 0,
+      "unverified_claimed_requests": 3,
+      "source_verification_results": {
+        "dns_domain_mismatch": 2
+      },
+      "verified_unique_source_count": 0,
+      "verified_http_statuses": {},
+      "verified_http_errors": 0,
+      "verified_unique_public_path_count": 0,
+      "verified_public_paths": [],
+      "verified_nonrobots_get_2xx": 0,
+      "verified_nonrobots_get_2xx_paths": [],
+      "verified_content_page_get_2xx": 0
+    },
+    "YandexBot": {
+      "claimed_requests": 3,
+      "verified_requests": 1,
+      "unverified_claimed_requests": 2,
+      "source_verification_results": {
+        "verified_forward_confirmed_reverse_dns": 1,
+        "dns_domain_mismatch": 2
+      },
+      "verified_unique_source_count": 1,
+      "verified_http_statuses": {
+        "200": 1
+      },
+      "verified_http_errors": 0,
+      "verified_unique_public_path_count": 1,
+      "verified_public_paths": [
+        {
+          "path": "/robots.txt",
+          "category": "robots",
+          "requests": 1,
+          "statuses": {
+            "200": 1
+          },
+          "first_request_utc": "2026-10-30T23:22:47+00:00",
+          "last_request_utc": "2026-10-30T23:22:47+00:00"
+        }
+      ],
+      "verified_nonrobots_get_2xx": 0,
+      "verified_nonrobots_get_2xx_paths": [],
+      "verified_content_page_get_2xx": 0
+    },
+    "YandexOther": {
+      "claimed_requests": 1,
+      "verified_requests": 1,
+      "unverified_claimed_requests": 0,
+      "source_verification_results": {
+        "verified_forward_confirmed_reverse_dns": 1
+      },
+      "verified_unique_source_count": 1,
+      "verified_http_statuses": {
+        "200": 1
+      },
+      "verified_http_errors": 0,
+      "verified_unique_public_path_count": 1,
+      "verified_public_paths": [
+        {
+          "path": "/uslugi.yml",
+          "category": "other_meta_feed",
+          "requests": 1,
+          "statuses": {
+            "200": 1
+          },
+          "first_request_utc": "2026-10-30T23:54:49+00:00",
+          "last_request_utc": "2026-10-30T23:54:49+00:00"
+        }
+      ],
+      "verified_nonrobots_get_2xx": 1,
+      "verified_nonrobots_get_2xx_paths": [
+        "/uslugi.yml"
+      ],
+      "verified_content_page_get_2xx": 0
+    },
+    "bingbot": {
+      "claimed_requests": 2,
+      "verified_requests": 0,
+      "unverified_claimed_requests": 2,
+      "source_verification_results": {
+        "dns_domain_mismatch": 2
+      },
+      "verified_unique_source_count": 0,
+      "verified_http_statuses": {},
+      "verified_http_errors": 0,
+      "verified_unique_public_path_count": 0,
+      "verified_public_paths": [],
+      "verified_nonrobots_get_2xx": 0,
+      "verified_nonrobots_get_2xx_paths": [],
+      "verified_content_page_get_2xx": 0
+    },
+    "OAI-SearchBot": {
+      "claimed_requests": 2,
+      "verified_requests": 0,
+      "unverified_claimed_requests": 2,
+      "source_verification_results": {
+        "not_in_current_official_ip_ranges": 2
+      },
+      "verified_unique_source_count": 0,
+      "verified_http_statuses": {},
+      "verified_http_errors": 0,
+      "verified_unique_public_path_count": 0,
+      "verified_public_paths": [],
+      "verified_nonrobots_get_2xx": 0,
+      "verified_nonrobots_get_2xx_paths": [],
+      "verified_content_page_get_2xx": 0
+    },
+    "GPTBot": {
+      "claimed_requests": 2,
+      "verified_requests": 0,
+      "unverified_claimed_requests": 2,
+      "source_verification_results": {
+        "not_in_current_official_ip_ranges": 2
+      },
+      "verified_unique_source_count": 0,
+      "verified_http_statuses": {},
+      "verified_http_errors": 0,
+      "verified_unique_public_path_count": 0,
+      "verified_public_paths": [],
+      "verified_nonrobots_get_2xx": 0,
+      "verified_nonrobots_get_2xx_paths": [],
+      "verified_content_page_get_2xx": 0
+    },
+    "ChatGPT-User": {
+      "claimed_requests": 6,
+      "verified_requests": 4,
+      "unverified_claimed_requests": 2,
+      "source_verification_results": {
+        "verified_official_ip_range": 3,
+        "not_in_current_official_ip_ranges": 2
+      },
+      "verified_unique_source_count": 3,
+      "verified_http_statuses": {
+        "200": 4
+      },
+      "verified_http_errors": 0,
+      "verified_unique_public_path_count": 4,
+      "verified_public_paths": [
+        {
+          "path": "/",
+          "category": "content_page_path",
+          "requests": 1,
+          "statuses": {
+            "200": 1
+          },
+          "first_request_utc": "2026-10-30T23:18:35+00:00",
+          "last_request_utc": "2026-10-30T23:18:35+00:00"
+        },
+        {
+          "path": "/contacts",
+          "category": "content_page_path",
+          "requests": 1,
+          "statuses": {
+            "200": 1
+          },
+          "first_request_utc": "2026-10-30T23:08:54+00:00",
+          "last_request_utc": "2026-10-30T23:08:54+00:00"
+        },
+        {
+          "path": "/dostavka",
+          "category": "content_page_path",
+          "requests": 1,
+          "statuses": {
+            "200": 1
+          },
+          "first_request_utc": "2026-10-30T23:12:55+00:00",
+          "last_request_utc": "2026-10-30T23:12:55+00:00"
+        },
+        {
+          "path": "/kuhni/konakovo",
+          "category": "content_page_path",
+          "requests": 1,
+          "statuses": {
+            "200": 1
+          },
+          "first_request_utc": "2026-10-30T23:12:55+00:00",
+          "last_request_utc": "2026-10-30T23:12:55+00:00"
+        }
+      ],
+      "verified_nonrobots_get_2xx": 4,
+      "verified_nonrobots_get_2xx_paths": [
+        "/",
+        "/contacts",
+        "/dostavka",
+        "/kuhni/konakovo"
+      ],
+      "verified_content_page_get_2xx": 4
+    },
+    "PerplexityBot": {
+      "claimed_requests": 2,
+      "verified_requests": 0,
+      "unverified_claimed_requests": 2,
+      "source_verification_results": {
+        "not_in_current_official_ip_ranges": 2
+      },
+      "verified_unique_source_count": 0,
+      "verified_http_statuses": {},
+      "verified_http_errors": 0,
+      "verified_unique_public_path_count": 0,
+      "verified_public_paths": [],
+      "verified_nonrobots_get_2xx": 0,
+      "verified_nonrobots_get_2xx_paths": [],
+      "verified_content_page_get_2xx": 0
+    },
+    "Perplexity-User": {
+      "claimed_requests": 0,
+      "verified_requests": 0,
+      "unverified_claimed_requests": 0,
+      "source_verification_results": {},
+      "verified_unique_source_count": 0,
+      "verified_http_statuses": {},
+      "verified_http_errors": 0,
+      "verified_unique_public_path_count": 0,
+      "verified_public_paths": [],
+      "verified_nonrobots_get_2xx": 0,
+      "verified_nonrobots_get_2xx_paths": [],
+      "verified_content_page_get_2xx": 0
+    }
+  },
+  "verified_total_requests": 6,
+  "verified_total_http_errors": 0,
+  "oai_searchbot_nonrobots_get_2xx": 0,
+  "source_addresses_exported": false,
+  "raw_logs_exported": false,
+  "query_cookie_referrer_or_body_exported": false,
+  "read_only": true,
+  "server_configuration_changed": false,
+  "organic_growth_inference": false,
+  "limits": [
+    "A normalized claimed family is only a UA candidate; official networks or forward-confirmed reverse DNS are required.",
+    "Audit UA spoofs remain unverified and are excluded from verified totals. Ordinary browser UAs are intentionally absent from this stream.",
+    "Genuine provider requests may be audit-triggered; neither their origin nor successful HTTP status proves organic discovery, citation, ranking or conversion.",
+    "Zero verified observations means no confirmation in this bounded window, not blocking.",
+    "The window can span the old and new releases; HTTP access is measured, not an effect isolated to the final postcode update.",
+    "Current DNS and official ranges can differ from past assignments. Missing range downloads must be read alongside verification results."
+  ],
+  "official_ip_range_sources": {
+    "Googlebot": {
+      "url": "https://developers.google.com/static/crawling/ipranges/common-crawlers.json",
+      "retrieved_at_utc": "2026-10-31T00:10:22.194163+00:00",
+      "retrieval": "ok",
+      "sha256": "9fed79f9f61f72acc6bc0fc689e686da4e1bca75b1629385859f0ce19f9ca5b9",
+      "prefix_count": 317,
+      "published_at": "2026-10-30T15:46:20.000000",
+      "failed_attempts": []
+    },
+    "OAI-SearchBot": {
+      "url": "https://openai.com/searchbot.json",
+      "retrieved_at_utc": "2026-10-31T00:10:22.195661+00:00",
+      "retrieval": "ok",
+      "sha256": "81806b1665e9bbbc5e0f307b847ad34f7027abc19e0d2d5d3eca1864bf361be6",
+      "prefix_count": 39,
+      "published_at": "2026-01-02T11:00:00.000000",
+      "failed_attempts": []
+    },
+    "GPTBot": {
+      "url": "https://openai.com/gptbot.json",
+      "retrieved_at_utc": "2026-10-31T00:10:22.195661+00:00",
+      "retrieval": "ok",
+      "sha256": "a24d1fa34f094d303400bdf13c45c5e9726e0b553780d16a52f9ba1b790acc72",
+      "prefix_count": 18,
+      "published_at": "2026-09-22T02:00:07.000000",
+      "failed_attempts": []
+    },
+    "ChatGPT-User": {
+      "url": "https://openai.com/chatgpt-user.json",
+      "retrieved_at_utc": "2026-10-31T00:10:22.196192+00:00",
+      "retrieval": "ok",
+      "sha256": "9d4d2d9db7a781488f3bbf7ed1327229a7e5a308918e63fd2ecbe2a4f6b90a45",
+      "prefix_count": 235,
+      "published_at": "2026-10-27T18:04:58.004307",
+      "failed_attempts": []
+    },
+    "PerplexityBot": {
+      "url": "https://www.perplexity.ai/perplexitybot.json",
+      "retrieved_at_utc": "2026-10-31T00:10:22.196192+00:00",
+      "retrieval": "ok",
+      "sha256": "063764a7bc6b262f019e7d8fb981be0f345f26bc549f08ce6a25292f981a84f2",
+      "prefix_count": 13,
+      "published_at": "2026-10-28T16:48:51.000000",
+      "failed_attempts": []
+    },
+    "Perplexity-User": {
+      "url": "https://www.perplexity.ai/perplexity-user.json",
+      "retrieved_at_utc": "2026-10-31T00:10:22.196935+00:00",
+      "retrieval": "ok",
+      "sha256": "cd0c4e9393b392e06a5f7d8c87c26099552fb646f51bfacdc6175e861ebefb33",
+      "prefix_count": 10,
+      "published_at": "2026-10-28T16:48:51.000000",
+      "failed_attempts": []
+    }
+  },
+  "verification_documentation": {
+    "Google": "https://developers.google.com/crawling/docs/crawlers-fetchers/verify-google-requests",
+    "Yandex": "https://yandex.ru/support/webmaster/ru/robot-workings/check-yandex-robots",
+    "Bing": "https://www.bing.com/webmasters/help/how-to-verify-bingbot-3905dc26",
+    "OpenAI": "https://developers.openai.com/api/docs/bots",
+    "Perplexity": "https://docs.perplexity.ai/docs/resources/perplexity-crawlers"
+  }
+}

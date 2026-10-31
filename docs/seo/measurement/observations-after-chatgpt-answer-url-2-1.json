@@ -1,0 +1,52 @@
+{
+  "protocolId": "kuhnitver-ai-search-2026-10-30",
+  "phase": "after",
+  "product": "chatgpt-search",
+  "mode": "ChatGPT Search, guest",
+  "model": "",
+  "queryId": "url-2",
+  "repeat": 1,
+  "status": "completed",
+  "observedAt": "2026-10-30T23:14:21.058Z",
+  "region": "Фактический регион не проверен",
+  "language": "ru",
+  "webSearch": true,
+  "prompt": "Сопоставь стоимость доставки в Конаково на этих двух страницах",
+  "urls": [
+    "https://kuhnitver.ru/dostavka",
+    "https://kuhnitver.ru/kuhni/konakovo"
+  ],
+  "answer": "На обеих страницах Kuhnitver указана одинаковая минимальная стоимость доставки кухни в Конаково — от 3 500 ₽.\n\nСравнение стоимости\n\nПараметр\n\n\t\n\nСтраница «Доставка»\n\n\t\n\nСтраница «Кухни в Конаково»\n\n\n\n\nСтоимость доставки\n\n\t\n\nот 3 500 ₽\n\n\t\n\nот 3 500 ₽\n\n\n\n\nСрок доставки\n\n\t\n\nСогласовывается после изготовления\n\n\t\n\n2–3 дня\n\n\n\n\nДополнительные условия\n\n\t\n\nСтоимость фиксируется в смете\n\n\t\n\nРасчёт с учётом доставки\n\nСсылки на источники\n\nСтраница «Доставка и установка»  — в таблице тарифов для Конаково указано от 3 500 ₽.\n\nСтраница «Кухни на заказ в Конаково»  — в блоке стоимости доставки также указано от 3 500 ₽.\n\nВывод\n\nРазницы в заявленной цене нет: обе страницы указывают от 3 500 ₽.\n\nЦена является минимальной, а не гарантированной фиксированной стоимостью.\n\nНа общей странице доставки уточняется, что окончательная сумма зависит от конкретного адреса, разгрузки и подъёма и фиксируется в смете.\n\nЕсть небольшое расхождение в описании сроков: на странице Конаково указано 2–3 дня, а на общей странице дата согласовывается после изготовления кухни.\n\nРекомендация: оставить стоимость от 3 500 ₽ на обеих страницах, но унифицировать описание сроков и уточнить, что окончательная цена доставки рассчитывается индивидуально.",
+  "sources": [
+    {
+      "title": "Страница «Доставка и установка»",
+      "url": "https://kuhnitver.ru/dostavka?utm_source=chatgpt.com"
+    },
+    {
+      "title": "Страница «Кухни на заказ в Конаково»",
+      "url": "https://kuhnitver.ru/kuhni/konakovo?utm_source=chatgpt.com"
+    }
+  ],
+  "facts": {
+    "priceAndUnit": "unverified",
+    "measurement": "unverified",
+    "delivery": "unverified",
+    "contacts": "unverified"
+  },
+  "agent": {
+    "draftPrepared": null,
+    "submitted": false,
+    "taskSucceeded": null
+  },
+  "evidence": "docs/seo/measurement/observations-after-chatgpt-answer-url-2-1.json",
+  "notes": "Exact protocol prompt; fresh empty guest dialog; Search visibly active. No brand/domain hints added to discovery. Capture selects only observed assistant content DIV next to its heading; Response-actions/ad sibling UI excluded. Sponsored sibling excluded: false. Non-citation map/opaque-token links excluded: 0. Model/physical region/server personalization unverified.",
+  "release": "5f952ff9cc91d454a235a24cf21c09cbe83b8ef7",
+  "memoryControl": "No account; fresh dialog; server personalization uncontrolled",
+  "actualRegionVerified": false,
+  "regionRequested": "Тверь, Россия",
+  "querySubmitted": true,
+  "factAssessmentScope": "Pending focused review of explicitly attributed Kuhnitver claims; competitor claims are not graded.",
+  "sourceCoverage": "All ordinary visible assistant-answer citation anchors captured; no global Sources control observed. Additional inline source cards without exposed URLs remain unresolved. Ads/map credits/feedback are not citations. No hidden state or blocked-domain fetch.",
+  "capture": "Visible assistant response DOM text and visible citation anchors only. No sidebar/account/private conversation URL/cookie data captured.",
+  "submittedPrompt": "Сопоставь стоимость доставки в Конаково на этих двух страницах\n\nhttps://kuhnitver.ru/dostavka\nhttps://kuhnitver.ru/kuhni/konakovo"
+}

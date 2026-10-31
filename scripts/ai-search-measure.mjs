@@ -58,10 +58,12 @@ export const PROTOCOL = {
     "Упоминание бренда, проверенная ссылка, точность фактов, клики и состоявшиеся обращения — разные показатели.",
     "Неотвеченный коммерческий вопрос отмечайте no_answer; неизвестный бизнес-факт — unverified, а не correct или incorrect.",
     "Не отправляйте реальные заявки. Для agent фиксируйте подготовку черновика и отправку раздельно; ожидается submitted=false.",
+    "Текстовый черновик и заполнение полей сайта различайте через draftKind/siteFieldsFilled. Для чата без браузерного актуатора taskAttempted=false, capabilityLimited=true и taskSucceeded=null: успешность действия на сайте не измерена.",
     "Unavailable/pending наблюдения исключаются из знаменателя выполненных запросов. Нулевой знаменатель даёт null, а не нулевую долю.",
     "Обычный завершённый ответ без подтверждённого веб-поиска записывайте с webSearch=null, а не ошибкой. true/false требуют наблюдаемого подтверждения; разные состояния поиска не объединяйте при сравнении.",
     "Известные отклонения протокола, включая персонализацию из прежних диалогов, помечайте comparisonEligible=false: ответ сохраняется, но не участвует в before/after. Два A/B-варианта одного запроса не являются независимыми повторами.",
     "Сравнивайте совпадающие продукт, режим/модель, webSearch, регион, язык, сценарий, queryId и repeat; непарные строки исключайте из before/after.",
+    "Две волны после публикации сравнивайте только с явным --post-release-baseline; сохраняйте исходные phase и даты. Такое сравнение не восстанавливает baseline до внедрения.",
     "Фиксируйте изменения модели/режима/региона и релизы сайта. Маленькая ручная выборка не доказывает причинный эффект изменений.",
   ],
   externalReports: [
@@ -158,6 +160,7 @@ function aggregate(observations) {
     return [key, { ...counts, accuracy: metric(counts.correct, counts.correct + counts.incorrect + counts.no_answer) }];
   }));
   const agents = completed.filter((item) => scenarioOf(item) === "agent");
+  const attemptedActions = agents.filter((item) => item.agent?.taskAttempted !== false && item.agent?.capabilityLimited !== true);
   return {
     observations: observations.length, completed: completed.length,
     retrievalEvidence: { enabled: completed.filter((item) => item.webSearch === true).length, disabled: completed.filter((item) => item.webSearch === false).length, unknown: completed.filter((item) => item.webSearch === null).length },
@@ -170,7 +173,11 @@ function aggregate(observations) {
     facts,
     agent: {
       draftPrepared: metric(agents.filter((item) => item.agent?.draftPrepared === true).length, agents.filter((item) => typeof item.agent?.draftPrepared === "boolean").length),
-      taskSucceeded: metric(agents.filter((item) => item.agent?.taskSucceeded === true).length, agents.filter((item) => typeof item.agent?.taskSucceeded === "boolean").length),
+      textDrafts: agents.filter((item) => item.agent?.draftPrepared === true && item.agent?.draftKind === "text").length,
+      capabilityLimited: agents.filter((item) => item.agent?.capabilityLimited === true).length,
+      browserActionAttempts: agents.filter((item) => item.agent?.taskAttempted === true).length,
+      siteFieldsFilled: metric(agents.filter((item) => item.agent?.siteFieldsFilled === true).length, agents.filter((item) => typeof item.agent?.siteFieldsFilled === "boolean").length),
+      taskSucceeded: metric(attemptedActions.filter((item) => item.agent?.taskSucceeded === true).length, attemptedActions.filter((item) => typeof item.agent?.taskSucceeded === "boolean").length),
       submitted: agents.filter((item) => item.agent?.submitted === true).length,
     },
   };
@@ -193,15 +200,21 @@ export function summarize(observations) {
   };
 }
 
-export function compare(beforeRows, afterRows) {
+export function compare(beforeRows, afterRows, { postReleaseBaseline = false } = {}) {
   validateObservations(beforeRows);
   validateObservations(afterRows);
-  if (beforeRows.some((row) => row.phase !== "before") || afterRows.some((row) => row.phase !== "after")) throw new Error("Comparison inputs must have before/after phases respectively");
+  const baselinePhase = postReleaseBaseline === true ? "after" : "before";
+  if (beforeRows.some((row) => row.phase !== baselinePhase) || afterRows.some((row) => row.phase !== "after")) {
+    throw new Error(`Comparison inputs must have ${baselinePhase}/after phases respectively; two post-release waves require --post-release-baseline`);
+  }
   const beforeCompleted = beforeRows.filter((row) => row.status === "completed" && row.comparisonEligible !== false);
   const afterCompleted = afterRows.filter((row) => row.status === "completed" && row.comparisonEligible !== false);
   const byAfter = new Map(afterCompleted.map((row) => [observationKey(row), row]));
   const pairedBefore = beforeCompleted.filter((row) => byAfter.has(observationKey(row)));
   const pairedAfter = pairedBefore.map((row) => byAfter.get(observationKey(row)));
+  if (pairedBefore.some((row, index) => Date.parse(pairedAfter[index].observedAt) <= Date.parse(row.observedAt))) {
+    throw new Error("Each matched follow-up must have an observedAt later than its baseline; preserve actual observation dates");
+  }
   const before = summarize(pairedBefore);
   const after = summarize(pairedAfter);
   const differences = {};
@@ -216,11 +229,13 @@ export function compare(beforeRows, afterRows) {
   }
   return {
     protocolId: PROTOCOL.id, generatedAt: new Date().toISOString(), matchedObservations: pairedBefore.length,
+    comparisonKind: baselinePhase === "after" ? "after-to-after" : "before-to-after",
+    comparisonPhases: { baseline: baselinePhase, followup: "after" },
     unmatchedBefore: beforeCompleted.length - pairedBefore.length, unmatchedAfter: afterCompleted.length - pairedAfter.length,
     excludedBeforeContext: beforeRows.filter((row) => row.status === "completed" && row.comparisonEligible === false).length,
     excludedAfterContext: afterRows.filter((row) => row.status === "completed" && row.comparisonEligible === false).length,
     before, after, differences,
-    limitation: "Matched manual observations only. Small, non-random samples and changing search/model behavior do not establish causal effect. Qualified inquiries/orders need separate CRM evidence.",
+    limitation: `${baselinePhase === "after" ? "Both waves were collected after deployment; this does not reconstruct a pre-deployment baseline. " : ""}Matched manual observations only. Small, non-random samples and changing search/model behavior do not establish causal effect. Qualified inquiries/orders need separate CRM evidence.`,
   };
 }
 
@@ -272,16 +287,42 @@ export function selfTest() {
   assert.throws(() => summarize([good, good]), /duplicate/);
   assert.throws(() => summarize([{ ...good, prompt: "Visit kuhnitver.ru" }]), /prompt/);
   assert.throws(() => summarize([{ ...good, observedAt: null }]), /observedAt/);
-  const compared = compare([good, fake], [{ ...good, phase: "after", sources: [] }, { ...fake, phase: "after", mode: "different mode" }]);
+  const compared = compare([good, fake], [{ ...good, phase: "after", observedAt: "2026-10-31T19:00:00Z", sources: [] }, { ...fake, phase: "after", mode: "different mode" }]);
   assert.equal(compared.matchedObservations, 1);
   assert.equal(compared.unmatchedBefore, 1);
   assert.equal(compared.differences.discovery.domainCitations.percentagePointChange, -100);
+  assert.equal(compared.comparisonKind, "before-to-after");
+  const firstWave = { ...good, phase: "after", observedAt: "2026-10-31T19:00:00Z" };
+  const laterWave = { ...firstWave, observedAt: "2026-11-14T19:00:00Z", sources: [] };
+  assert.throws(() => compare([firstWave], [laterWave]), /phases/);
+  const repeated = compare([firstWave], [laterWave], { postReleaseBaseline: true });
+  assert.equal(repeated.comparisonKind, "after-to-after");
+  assert.deepEqual(repeated.comparisonPhases, { baseline: "after", followup: "after" });
+  assert.equal(repeated.matchedObservations, 1);
+  assert.equal(repeated.differences.discovery.domainCitations.percentagePointChange, -100);
+  assert.match(repeated.limitation, /does not reconstruct a pre-deployment baseline/);
+  assert.equal(firstWave.phase, "after");
+  assert.equal(firstWave.observedAt, "2026-10-31T19:00:00Z");
+  assert.throws(() => compare([firstWave], [firstWave], { postReleaseBaseline: true }), /later/);
+  assert.throws(() => compare([laterWave], [firstWave], { postReleaseBaseline: true }), /later/);
+  assert.throws(() => compare([good], [{ ...good, phase: "after" }]), /later/);
+  const formTemplate = observationTemplate("after", ["chatgpt-search"]).find((row) => row.queryId === "form-1");
+  const textDraft = { ...good, ...formTemplate, status: "completed", observedAt: good.observedAt, webSearch: true, answer: "Текстовый черновик", evidence: "fixtures/draft.txt", agent: { draftPrepared: true, draftKind: "text", taskAttempted: false, siteFieldsFilled: false, taskSucceeded: null, capabilityLimited: true, submitted: false } };
+  const draftSummary = summarize([textDraft]).overall.agent;
+  assert.deepEqual(draftSummary.draftPrepared, metric(1, 1));
+  assert.equal(draftSummary.textDrafts, 1);
+  assert.equal(draftSummary.capabilityLimited, 1);
+  assert.equal(draftSummary.browserActionAttempts, 0);
+  assert.equal(draftSummary.taskSucceeded.rate, null);
+  const attemptedFailure = { ...textDraft, repeat: 2, agent: { ...textDraft.agent, capabilityLimited: false, taskAttempted: true, taskSucceeded: false } };
+  assert.deepEqual(summarize([textDraft, attemptedFailure]).overall.agent.taskSucceeded, metric(0, 1));
   return { passed: true };
 }
 
 async function main(args) {
   const option = (name, fallback) => { const index = args.indexOf(name); return index >= 0 ? args[index + 1] : fallback; };
   if (args.includes("--self-test")) { console.log(JSON.stringify(selfTest())); return; }
+  if (args.includes("--post-release-baseline") && !args.includes("--compare")) throw new Error("--post-release-baseline requires --compare");
   let result;
   if (args.includes("--protocol")) result = PROTOCOL;
   else if (args.includes("--init")) result = observationTemplate(option("--phase", "before"), option("--products")?.split(","));
@@ -289,10 +330,10 @@ async function main(args) {
     const beforePath = option("--before");
     const afterPath = option("--after");
     if (!beforePath || !afterPath) throw new Error("--compare needs --before FILE --after FILE");
-    result = compare(await loadObservations(beforePath), await loadObservations(afterPath));
+    result = compare(await loadObservations(beforePath), await loadObservations(afterPath), { postReleaseBaseline: args.includes("--post-release-baseline") });
   } else if (option("--input")) result = summarize(await loadObservations(option("--input")));
   else {
-    console.log("node scripts/ai-search-measure.mjs --protocol [--output FILE]\nnode scripts/ai-search-measure.mjs --init --phase before|after [--products chatgpt-search,yandex-alice] --output FILE\nnode scripts/ai-search-measure.mjs --input FILE [--output FILE]\nnode scripts/ai-search-measure.mjs --compare --before FILE --after FILE [--output FILE]\nnode scripts/ai-search-measure.mjs --self-test\nObservation templates are pending, never fabricated AI answers. JSON/JSONL inputs accepted. Separate discovery/brand/url/agent denominators.");
+    console.log("node scripts/ai-search-measure.mjs --protocol [--output FILE]\nnode scripts/ai-search-measure.mjs --init --phase before|after [--products chatgpt-search,yandex-alice] --output FILE\nnode scripts/ai-search-measure.mjs --input FILE [--output FILE]\nnode scripts/ai-search-measure.mjs --compare --before FILE --after FILE [--post-release-baseline] [--output FILE]\nnode scripts/ai-search-measure.mjs --self-test\nObservation templates are pending, never fabricated AI answers. JSON/JSONL inputs accepted. Separate discovery/brand/url/agent denominators. --post-release-baseline compares two after waves without relabelling their original phase or reconstructing a pre-deployment baseline.");
     return;
   }
   const json = `${JSON.stringify(result, null, 2)}\n`;
