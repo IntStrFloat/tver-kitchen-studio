@@ -1,5 +1,5 @@
 {
-  "recordedAt": "2026-10-31T00:44:07.378Z",
+  "recordedAt": "2026-10-31T00:56:46.380Z",
   "baseRevision": "2b9702f7b0e9decfda306f1b84f19ba5edd4194b",
   "deployedApplicationRevision": "1004281a14ad25828ee41cde70c23bf9bccba623",
   "branch": "codex/ai-search-optimization",
@@ -31,6 +31,7 @@
     "docs/seo/measurement/2026-10-31-ai-wave.md",
     "docs/seo/measurement/2026-10-31-alice-access.json",
     "docs/seo/measurement/2026-10-31-bing-access.json",
+    "docs/seo/measurement/2026-10-31-blocked-audit.json",
     "docs/seo/measurement/2026-10-31-crawlers-after.json",
     "docs/seo/measurement/2026-10-31-crawlers-after.md",
     "docs/seo/measurement/2026-10-31-ga4-access.json",
@@ -344,5 +345,6 @@
     "candidateBotLog": "/var/log/nginx/kuhnitver-bots.log",
     "botLogContainsLocallyHeldSourceAddresses": true,
     "sourceAddressesExported": false
-  }
+  },
+  "blockedAudit": "docs/seo/measurement/2026-10-31-blocked-audit.json"
 }
