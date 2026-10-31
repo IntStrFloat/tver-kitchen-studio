@@ -1,0 +1,10 @@
+{
+  "productionRelease": "16910c0aec4977031673517759576777d04f1f35",
+  "stageUnit": "kuhnitver-stage-published-16910c0aec49.service",
+  "otherPreviewUnitsStopped": false,
+  "rollbackReleasePreserved": true,
+  "completed": true,
+  "stageStopped": true,
+  "stagePortFree": true,
+  "originalCheckoutPreserved": true
+}

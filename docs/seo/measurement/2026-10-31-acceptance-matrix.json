@@ -2,19 +2,19 @@
   "schemaVersion": 1,
   "date": "2026-10-31",
   "draft": "docs/seo/2026-10-30-ai-search-audit-draft.md",
-  "deployedApplicationRevision": "1004281a14ad25828ee41cde70c23bf9bccba623",
+  "deployedApplicationRevision": "16910c0aec4977031673517759576777d04f1f35",
   "overall": "in_progress",
   "criteria": [
     {
       "id": 1,
       "status": "partial",
-      "evidence": "Owner-confirmed telephone, MAX, address string and original homepage terms are recorded in the implementation report. Unconfirmed ranges/statistics/experience claims were removed. The unconfirmed postal code was removed from HTML microdata and the shared tool address.",
-      "remaining": "Public legal executor/operator details and substantiated project materials have not been provided."
+      "evidence": "Owner-confirmed telephone, MAX, building literal and original homepage terms are recorded in the implementation report. Official GAR establishes the avenue street type; no candidate building postcode/GUID/coordinates were adopted. Unconfirmed ranges/statistics/experience claims and postal code were removed.",
+      "remaining": "Registered executor details were not identified in the reviewed primary publications; no legal entity or tax identifier will be invented or inferred from a reused phone."
     },
     {
       "id": 2,
       "status": "partial",
-      "evidence": "Public acceptance: 36/36 pages; consistent contacts, measurement, delivery, warranty, production terms, metadata, JSON-LD, RSS, service feed, llms.txt and OG image.",
+      "evidence": "Production169 public acceptance: 36/36 pages; consistent contacts, measurement, delivery, warranty, production terms, metadata, JSON-LD, RSS, service feed, llms.txt and new OG image. Shared visible/read-only-tool identity explains Kuhnitver and the owner-confirmed Mebelshchik card.",
       "remaining": "Yandex Business move is not accepted; exact map building remains ambiguous. External retrieval caches can still return prior content."
     },
     {
@@ -31,7 +31,7 @@
       "id": 5,
       "status": "partial",
       "evidence": "Verified crawler networks and real server logs checked; no 403/429/5xx for verified requests in the scoped samples. Legacy combined lacks Host: historical samples are shared-server/path-filtered. A separate domain-aware candidate stream now records raw Host and URI without query parameters; candidate family still requires official source verification. Yandex Webmaster batches processed; final 36-URL IndexNow submission HTTP200.",
-      "remaining": "Effective Google Search generative AI Include is unverified until authorized ownership access. OAI-SearchBot requests in the historical sample fetched only robots.txt; none verified in the short after window. Provider fetches can be audit-triggered and are not organic visibility evidence."
+      "remaining": "Existing GSC resource is unverified in the currently authorized account, so effective Include/Sitemap remain unobserved. New ownership was not granted. Bing account work is postponed by the user; IndexNow remains active."
     },
     {
       "id": 6,
@@ -41,8 +41,8 @@
     {
       "id": 7,
       "status": "partial",
-      "evidence": "Current images are labelled design references, not fabricated projects; real-case template is gated; published case count is zero; internal/sitemap URLs checked.",
-      "remaining": "Requested 3–5 real completed cases and 3 substantiated estimates need actual project facts/photos/permission."
+      "evidence": "One organization-published product photo is live with source attribution, separately from the design references. Original image bytes/provenance and desktop/mobile visual acceptance recorded. Real-case template remains gated; completed case count is zero; internal/sitemap URLs checked.",
+      "remaining": "Reviewed publications do not establish the 3–5 completed factual cases and 3 actual estimates originally proposed. The old110000 product price is not current pricing or an order estimate; dimensions, completion, cost and dates were not invented."
     },
     {
       "id": 8,
@@ -75,10 +75,8 @@
   ],
   "externalDependencies": [
     "Owner confirmation before adding Google ownership to the prepared account; exact action remains pending.",
-    "Bing owner sign-in.",
-    "Direct link to the existing Kuhnitver GA4 property/web stream; matching G-Z45D1032QK and key-event settings remain unverified.",
     "Yandex Business move and feed editing availability.",
-    "Exact current building, public legal executor/operator and actual completed project/estimate data."
+    "Published primary sources do not establish legal requisites, full case/estimate details or exact building equivalence; these facts remain unspecified under the source-only constraint."
   ],
   "notClaimed": [
     "Full draft completion",
@@ -88,6 +86,23 @@
     "Real mailbox delivery",
     "Native WebMCP invocation"
   ],
-  "finalPublicAcceptance": "docs/seo/measurement/2026-10-31-postcode-public-acceptance.json",
-  "aiWaveReport": "docs/seo/measurement/2026-10-31-ai-wave.md"
+  "finalPublicAcceptance": "docs/seo/measurement/2026-10-31-published-scope-public-acceptance.json",
+  "aiWaveReport": "docs/seo/measurement/2026-10-31-ai-wave.md",
+  "scopeUpdate": "docs/seo/measurement/2026-10-31-user-scope-update.json",
+  "postponedByUser": [
+    "Bing Webmaster Tools account/AI Performance",
+    "GA4 cabinet/property/key-event verification"
+  ],
+  "sourceConstraint": "Use already-published information for the remaining work; do not request unpublished facts or invent them.",
+  "publishedSourceRelease": {
+    "revision": "16910c0aec4977031673517759576777d04f1f35",
+    "publicHealthyAtUtc": "2026-10-31T08:44:36.534691+00:00",
+    "releaseEvidence": "docs/seo/measurement/production-published-scope-release.json",
+    "cleanupEvidence": "docs/seo/measurement/production-published-scope-cleanup.json",
+    "localCleanupEvidence": "docs/seo/measurement/2026-10-31-published-scope-local-cleanup.json",
+    "productionVisualEvidence": "docs/seo/measurement/2026-10-31-published-gallery-production-visual.json",
+    "indexNowEvidence": "docs/seo/measurement/indexnow-published-scope-submission.json",
+    "googleOwnershipAction": "docs/seo/measurement/2026-10-31-prepared-gsc-action.json",
+    "googleOwnershipConfirmation": "pending; no file publication or grant"
+  }
 }

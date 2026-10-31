@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-10-31T08:19:31.597Z",
+  "recordedAt": "2026-10-31T08:20:18.099Z",
+  "timezone": "Europe/Moscow",
+  "status": "published_business_email_not_listed_in_existing_account_picker",
+  "browser": {
+    "bindingId": "1",
+    "existingBindingReused": true,
+    "browserProfileChanged": false,
+    "securitySettingsChanged": false
+  },
+  "publicBusinessEmail": "m-btd@mail.ru",
+  "publicBusinessEmailSource": "https://kuhnitver.ru/contacts",
+  "entryUrl": "https://search.google.com/search-console",
+  "visibleUrl": "https://search.google.com/search-console/welcome",
+  "method": {
+    "ordinaryGoogleAccountPickerOpened": true,
+    "visibleAccountIframeInspected": true,
+    "iframeName": "account",
+    "nativeOrHiddenAccountStateInspected": false,
+    "checkWasExactEmailMatch": true
+  },
+  "checks": {
+    "accountPickerContentLoaded": true,
+    "accountFrameRendered": true,
+    "targetEmailPresentInRenderedPicker": false,
+    "targetEmailPresentInVisibleAccessibilityTree": false,
+    "additionalAccountsDisclosureFound": false,
+    "passwordOrOtpPromptEncountered": false
+  },
+  "actions": {
+    "knownBusinessAccountSelected": false,
+    "otherAccountSelected": false,
+    "addAccountClicked": false,
+    "newSignInStarted": false,
+    "passwordOrOtpEntered": false,
+    "newTermsAccepted": false,
+    "verifyClicked": false,
+    "newOwnershipOrPermissionsGranted": false,
+    "verificationFilePublished": false
+  },
+  "googleSearchConsole": {
+    "verifiedResourceInspected": false,
+    "effectiveInclude": null,
+    "sitemapCabinetState": null,
+    "reason": "Точный опубликованный business email не найден среди уже доступных аккаунтов текущего picker. Другие неизвестные аккаунты не выбирались."
+  },
+  "htmlVerificationMeta": {
+    "comparisonPerformed": false,
+    "tagChanged": false,
+    "reason": "Требуемый подтверждённый ресурс/ожидаемый tag этого business account недоступен; новый verification flow не открывался."
+  },
+  "privacy": {
+    "otherNamesOrEmailsRecorded": false,
+    "rawAccountPickerDumpSaved": false,
+    "accountAuthenticationUrlsOrTokensRecorded": false
+  },
+  "scopeLimits": [
+    "Вывод относится только к существующим видимым сессиям текущего Chrome binding, не к существованию Google-аккаунта или владению доменом вообще.",
+    "Business email может быть контактным адресом, а подтверждённый ресурс — в другом аккаунте; такие связи не угадывались.",
+    "Для продолжения нужен указанный владельцем уже авторизованный известный аккаунт либо его самостоятельный выбор; новые входы/права не создавались."
+  ],
+  "explicitlySkipped": [
+    "Bing",
+    "GA4 cabinet",
+    "Gemini",
+    "Google sorry",
+    "VK"
+  ],
+  "sharedFilesChanged": false
+}

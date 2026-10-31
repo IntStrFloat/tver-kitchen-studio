@@ -1,0 +1,159 @@
+{
+  "scope": "published-source-gallery-production",
+  "url": "https://kuhnitver.ru/portfolio",
+  "browser_binding": "Existing Chrome 1; only new owned QA/saver tabs were used",
+  "timestamps": {
+    "started_at": "2026-10-31T08:45:33Z",
+    "desktop_captured_at": "2026-10-31T08:46:05.313Z",
+    "mobile_captured_at": "2026-10-31T08:46:56.910Z",
+    "completed_at": "2026-10-31T08:47:36Z",
+    "elapsed_seconds_measured": 123,
+    "clock_source": "clock.curr_time for run start/end; Date().toISOString() immediately after each successful CUA screenshot",
+    "measured_scope": "Live inspection, screenshot capture, helper ACKs, viewport restoration, own-tab cleanup and JPEG metadata verification; final JSON serialization excluded"
+  },
+  "visual_verdict": {
+    "score": 95,
+    "verdict": "pass",
+    "category_match": true,
+    "differences": [],
+    "suggestions": [],
+    "reasoning": "Опубликованный figure сохраняет проверенный стиль портфолио; фотография показана целиком, подпись и ссылка на источник читаются на desktop и узком экране. При CSS-ширине 390 px горизонтального переполнения нет, мобильная панель действий не закрывает карточку."
+  },
+  "threshold": 90,
+  "threshold_passed": true,
+  "next_actions": [],
+  "parent_visual_review": {
+    "accepted": true,
+    "score": 95,
+    "note": "Root reported opening both production JPEGs and accepting 95/pass: full photo framing, readable caption/source, fixed mobile CTA clear of the card."
+  },
+  "checks": {
+    "new_live_figure_present": true,
+    "live_page_title": "Фото кухни и дизайн-референсы в Твери | Kuhnitver",
+    "image_alt": "Кухня с тёмными рамочными фасадами и светлой рабочей поверхностью",
+    "caption_readable_desktop": true,
+    "caption_readable_mobile": true,
+    "source_link_visible": true,
+    "source_link_text": "Источник: карточка «Мебельщик» в Яндекс Картах",
+    "source_link_href": "https://yandex.com/maps/org/mebelshchik/192529825516/prices/",
+    "published_photo_separate_from_design_references": true,
+    "unintended_image_crop_observed": false,
+    "visible_image_distortion_observed": false,
+    "desktop_horizontal_overflow": false,
+    "mobile_horizontal_overflow": false,
+    "mobile_fixed_cta_covers_card": false
+  },
+  "captures": {
+    "desktop": {
+      "helper_path": "C:/Users/Dima2/Documents/kuhnitver/tver-kitchen-studio/.omx/reports/published-source-gallery/production-desktop.jpg",
+      "tracked_path": "docs/seo/measurement/screenshots/published-scope-production-desktop.jpg",
+      "tracked_copy_owner": "Root",
+      "saver_ack": "Снимок production-desktop сохранён.",
+      "jpeg": {
+        "width_px": 1425,
+        "height_px": 1200,
+        "bytes": 123967
+      },
+      "requested_device_metrics": {
+        "width": 1440,
+        "height": 1200,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      },
+      "observed_css_viewport": {
+        "width": 1440,
+        "height": 1200
+      },
+      "document_client_width": 1425,
+      "document_scroll_width": 1425,
+      "figure": {
+        "top": 391.960205078125,
+        "bottom": 1031.9459838867188,
+        "width": 1023.991455078125,
+        "height": 639.9857788085938
+      },
+      "image": {
+        "natural_width": 512,
+        "natural_height": 640,
+        "rendered_width": 511.9886169433594,
+        "rendered_height": 639.9857788085938,
+        "object_fit": "fill"
+      }
+    },
+    "mobile": {
+      "helper_path": "C:/Users/Dima2/Documents/kuhnitver/tver-kitchen-studio/.omx/reports/published-source-gallery/production-mobile.jpg",
+      "tracked_path": "docs/seo/measurement/screenshots/published-scope-production-mobile.jpg",
+      "tracked_copy_owner": "Root",
+      "saver_ack": "Снимок production-mobile сохранён.",
+      "jpeg": {
+        "width_px": 375,
+        "height_px": 1500,
+        "bytes": 79803
+      },
+      "requested_device_metrics": {
+        "width": 390,
+        "height": 1500,
+        "deviceScaleFactor": 1,
+        "mobile": false
+      },
+      "observed_css_viewport": {
+        "width": 390,
+        "height": 1500
+      },
+      "document_client_width": 375,
+      "document_scroll_width": 375,
+      "figure": {
+        "top": 451.9460144042969,
+        "bottom": 1348.0539245605469,
+        "width": 342.5567932128906,
+        "height": 896.10791015625
+      },
+      "caption": {
+        "top": 880.1420288085938,
+        "bottom": 1348.053955078125
+      },
+      "image": {
+        "natural_width": 390,
+        "natural_height": 487,
+        "rendered_width": 342.5567932128906,
+        "rendered_height": 428.1960144042969,
+        "object_fit": "fill"
+      },
+      "standard_phone_height_check": {
+        "requested_css_width": 390,
+        "requested_height": 844,
+        "observed_css_viewport": {
+          "width": 390,
+          "height": 845
+        },
+        "document_client_width": 375,
+        "document_scroll_width": 375,
+        "horizontal_overflow": false
+      },
+      "note": "A 390 px CSS viewport was used. CUA JPEG excludes the 15 px native scrollbar, so saved content is 375 px wide. Long viewport height shows the full figure and caption; standard phone-height geometry was checked separately."
+    }
+  },
+  "cleanup": {
+    "owned_viewport_override_restored": true,
+    "saver_tab_closed": true,
+    "owned_production_tab_closed": true,
+    "gsc_handoff_tab_untouched": true,
+    "browser_profile_or_global_flags_changed": false,
+    "new_browser_or_profile_created": false,
+    "site_leads_submitted": false,
+    "business_account_changes": false,
+    "saver_form_submissions": 2
+  },
+  "verification": {
+    "helper_ack_received_for_both": true,
+    "both_jpegs_opened_for_metadata": true,
+    "preview_verdict_modified": false,
+    "manifest_or_shared_docs_modified": false,
+    "app_source_modified": false,
+    "sole_report_write": "C:/Users/Dima2/Documents/kuhnitver/tver-kitchen-studio/docs/seo/measurement/2026-10-31-published-gallery-production-visual.json"
+  },
+  "limitations": [
+    "Responsive CSS and visible content were checked; this was not a physical-device or touch-interaction test.",
+    "Tracked screenshot copies are managed by Root; this lane saved the original JPEGs through the allowlisted local helper."
+  ]
+}

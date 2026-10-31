@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "checkedAtUtc": "2026-10-31T08:49:07.9859524Z",
+  "localScreenshotSaver": {
+    "sessionId": 26737,
+    "stoppedByCtrlC": true,
+    "interruptExitCode": 1,
+    "port": 59835,
+    "listening": false
+  },
+  "localPreview": {
+    "port": 3108,
+    "listening": false
+  },
+  "remoteCleanupEvidence": "docs/seo/measurement/production-published-scope-cleanup.json",
+  "productionRelease": "16910c0aec4977031673517759576777d04f1f35",
+  "gscHandoffPreserved": true,
+  "googleOwnershipGranted": false,
+  "otherProcessesStopped": false
+}

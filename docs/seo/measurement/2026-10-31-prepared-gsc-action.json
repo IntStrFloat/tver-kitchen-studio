@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "preparedAt": "2026-10-31T08:38:48.963Z",
+  "comparisonCheckedAt": "2026-10-31T08:31:06.777Z",
+  "resource": "https://kuhnitver.ru/",
+  "resourceType": "URL-prefix",
+  "method": "HTML-file verification",
+  "currentUiState": "Ownership verification dialog; HTML-file method expanded; final button not pressed",
+  "account": {
+    "currentAuthenticatedAccountRead": true,
+    "exactEmailDisclosedOnlyToRootPrivateMessage": true,
+    "emailOrOtherIdentityRecordedInThisReport": false,
+    "accountChanged": false
+  },
+  "file": {
+    "privatePreparedDirectory": ".omx/prepared-google-verification/",
+    "exactFilenameAndContentRecordedPrivately": true,
+    "filenameOrPrivateTokenPublishedInReport": false,
+    "bytes": 53,
+    "sha256": "beb0fb2e41ab0b40451278a8d2f0abc8b98e10986f135c22806c3202e1216f30",
+    "vendorDownloadRead": true,
+    "priorDownloadExists": true,
+    "privatePreparedCopyExists": true,
+    "allThreeByteIdentical": true,
+    "contentMatchesCurrentUiExpectedFilename": true
+  },
+  "publiclyPresent": false,
+  "publicFileHttpStatus": 404,
+  "htmlTagComparison": {
+    "expectedCurrentTagRead": true,
+    "publishedGoogleMetaPresent": true,
+    "layoutGoogleMetaPresent": true,
+    "publishedMetaEqualsLayout": true,
+    "currentExpectedMetaEqualsPublished": false,
+    "currentExpectedMetaEqualsLayout": false,
+    "currentExpectedMetaSha256": "93992c92e29eb318231918f2fdf3e4e36f939969ec00fecdf819a6c78646c41c",
+    "publishedMetaSha256": "d327aa659bdd55a1bf63789361ae9e720cf710606bdf2cb1a16b31e07d957921",
+    "rawTagsOrPrivateTokensRecorded": false,
+    "tagChanged": false
+  },
+  "ready": {
+    "preparedArtifactReady": true,
+    "readyForUserReview": true,
+    "readyForExecutionWithoutConfirmation": false,
+    "actionTimeConfirmationRequired": true
+  },
+  "proposedAfterExplicitConfirmation": "Разместить проверенный приватно подготовленный HTML artifact в корне указанного сайта и завершить HTML-file verification для текущего аккаунта, указанного root приватно. Это выдаёт новые owner-права этому аккаунту.",
+  "privateScreenshot": {
+    "path": ".omx/reports/published-source-gallery/gsc-prepared.jpg",
+    "format": "JPEG",
+    "bytes": 91514,
+    "sha256": "5173c26723f8789259682037035adbede0af0ac0ae2c27273724f9f6046cbe9d",
+    "gitIgnored": true,
+    "realCurrentUiScreenshot": true,
+    "saverAckObserved": true,
+    "profileMenuClosed": true,
+    "otherAccountsOrEmailsVisible": false,
+    "htmlMetaTokenCollapsed": true,
+    "methodFileAndResourceVisible": true,
+    "notTrackedOrPublic": true
+  },
+  "noGrant": true,
+  "actions": {
+    "filePublished": false,
+    "verifyClicked": false,
+    "newOwnershipOrPermissionsGranted": false,
+    "newSignInOrAccountAdded": false,
+    "passwordOrOtpEntered": false,
+    "termsAccepted": false,
+    "unknownAccountSelected": false,
+    "sharedCodeOrManifestChanged": false
+  },
+  "notes": [
+    "Текущий аккаунт, точное имя файла и его содержимое сообщены только root приватно.",
+    "Публичного verification-файла нет, а текущий ожидаемый HTML-tag отличается от уже опубликованного; простая проверка старого тега не подготовлена как подходящий метод для этого аккаунта.",
+    "Подготовлена конкретная reviewable операция, но публикация proof-файла и финальное подтверждение не выполнялись."
+  ]
+}

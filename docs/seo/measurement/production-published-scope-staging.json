@@ -1,0 +1,2844 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-10-31T08:34:13.662Z",
+  "finishedAt": "2026-10-31T08:34:14.575Z",
+  "timezone": "Europe/Moscow",
+  "baseUrl": "http://127.0.0.1:3108",
+  "canonicalOrigin": "https://kuhnitver.ru",
+  "method": "Public read-only HTTP GET from auditor IP; no form submission and no browser execution.",
+  "limits": [
+    "User-Agent probes do not establish access from genuine crawler networks.",
+    "The bounded XML/parser and services_feed checks cover documented required fields and site invariants, not every provider ingestion rule or actual platform acceptance.",
+    "HTTP timing is not Core Web Vitals.",
+    "JSON-LD syntax/applicability checks do not substitute for supported provider validators.",
+    "No authenticated search-console or AI-answer observations are implied."
+  ],
+  "summary": {
+    "sitemapUrls": 36,
+    "http200": 36,
+    "uniqueTitles": 36,
+    "singleH1": 36,
+    "errors": 0,
+    "warnings": 0
+  },
+  "findings": [],
+  "pages": [
+    {
+      "url": "http://127.0.0.1:3108/",
+      "canonicalUrl": "https://kuhnitver.ru/",
+      "finalUrl": "http://127.0.0.1:3108/",
+      "status": 200,
+      "durationMs": 50,
+      "title": [
+        "Кухни на заказ в Твери от производителя | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Твери от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Твери от Kuhnitver. Планировки, материалы, индивидуальная комплектация и расчёт по размерам. Условия замера, изготовления, доставки и установки согласуются до заказа."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 195074,
+      "htmlSha256": "59dbf78111c001febbafaeaf92dd676fd28fa13f3401800687abd4fd1f16c213",
+      "textCharacters": 14757,
+      "schemaTypes": [
+        "Answer",
+        "City",
+        "ContactPoint",
+        "FAQPage",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Question",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 102
+    },
+    {
+      "url": "http://127.0.0.1:3108/catalog",
+      "canonicalUrl": "https://kuhnitver.ru/catalog",
+      "finalUrl": "http://127.0.0.1:3108/catalog",
+      "status": 200,
+      "durationMs": 88,
+      "title": [
+        "Каталог кухонь на заказ в Твери — стили, фото, цены | Kuhnitver"
+      ],
+      "h1": [
+        "Каталог кухонь на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog"
+      ],
+      "descriptions": [
+        "Каталог стилей кухонь на заказ в Твери: лофт, минимализм, скандинавский, премиум. Дизайн-референсы, материалы и особенности планировок. Индивидуальный расчёт по комплектации."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 85497,
+      "htmlSha256": "296de6606a9aeb83af1c6215bd1ccab98f0c374c883d98ee296bfb8b3419dfbf",
+      "textCharacters": 2434,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "City",
+        "CollectionPage",
+        "ContactPoint",
+        "ItemList",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 81
+    },
+    {
+      "url": "http://127.0.0.1:3108/price",
+      "canonicalUrl": "https://kuhnitver.ru/price",
+      "finalUrl": "http://127.0.0.1:3108/price",
+      "status": 200,
+      "durationMs": 106,
+      "title": [
+        "Цены на кухни на заказ в Твери — состав сметы | Kuhnitver"
+      ],
+      "h1": [
+        "Цены на кухни на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/price"
+      ],
+      "descriptions": [
+        "Как рассчитывается стоимость кухни на заказ в Твери: комплектация, материалы, фурнитура и состав сметы. Индивидуальный расчёт по размерам помещения в Kuhnitver."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 91844,
+      "htmlSha256": "da673b592e00867d8bc5ae62a227476b353937f756010496a92579cd2b0d6f4a",
+      "textCharacters": 5207,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": {
+          "prices": [
+            1500,
+            1500
+          ],
+          "credited": true,
+          "freeClaim": false
+        },
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 81
+    },
+    {
+      "url": "http://127.0.0.1:3108/portfolio",
+      "canonicalUrl": "https://kuhnitver.ru/portfolio",
+      "finalUrl": "http://127.0.0.1:3108/portfolio",
+      "status": 200,
+      "durationMs": 41,
+      "title": [
+        "Фото кухни и дизайн-референсы в Твери | Kuhnitver"
+      ],
+      "h1": [
+        "Фото кухни и дизайн-референсы"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/portfolio"
+      ],
+      "descriptions": [
+        "Фото кухни из опубликованной карточки «Мебельщик» и дизайн-референсы популярных стилей. Идеи для обсуждения планировки и индивидуальной комплектации."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 84943,
+      "htmlSha256": "24412adff2b77d4b07399fa54273e78d741fb47a2e9e9dd947befc8276282d67",
+      "textCharacters": 1998,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "City",
+        "CollectionPage",
+        "ContactPoint",
+        "ItemList",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 86
+    },
+    {
+      "url": "http://127.0.0.1:3108/about",
+      "canonicalUrl": "https://kuhnitver.ru/about",
+      "finalUrl": "http://127.0.0.1:3108/about",
+      "status": 200,
+      "durationMs": 31,
+      "title": [
+        "О компании Kuhnitver — кухни по индивидуальным размерам в Твери | Kuhnitver"
+      ],
+      "h1": [
+        "Производим кухни по вашим размерам"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/about"
+      ],
+      "descriptions": [
+        "Kuhnitver — изготовление кухонь на заказ в Твери. Как согласуются замер, комплектация, смета, проект и сроки. Доставка, монтаж и гарантийные обращения. Адрес и контакты."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 90633,
+      "htmlSha256": "9417835a88105b7ea63f5b7baa634560aee2c30851964684e75be15c419fdd6e",
+      "textCharacters": 3773,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "HowTo",
+        "HowToStep",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 82
+    },
+    {
+      "url": "http://127.0.0.1:3108/contacts",
+      "canonicalUrl": "https://kuhnitver.ru/contacts",
+      "finalUrl": "http://127.0.0.1:3108/contacts",
+      "status": 200,
+      "durationMs": 38,
+      "title": [
+        "Контакты Kuhnitver — адрес шоурума, телефон, режим работы в Твери | Kuhnitver"
+      ],
+      "h1": [
+        "Контакты"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/contacts"
+      ],
+      "descriptions": [
+        "Kuhnitver: Тверь, проспект Николая Корыткова, 3 ст1. Основной телефон +7 (4822) 47-70-81. Max +7-915-722-00-75. Пн–Сб: 10:00–19:00. Условия замера и визита согласуем заранее."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 83725,
+      "htmlSha256": "6d0517e5567abdbaecee3b2cb982feaa22387b6984efc5c75ac1abb33a01218c",
+      "textCharacters": 2622,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": {
+          "prices": [
+            1500
+          ],
+          "credited": true,
+          "freeClaim": false
+        },
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 88
+    },
+    {
+      "url": "http://127.0.0.1:3108/faq",
+      "canonicalUrl": "https://kuhnitver.ru/faq",
+      "finalUrl": "http://127.0.0.1:3108/faq",
+      "status": 200,
+      "durationMs": 40,
+      "title": [
+        "Вопросы и ответы о кухнях на заказ в Твери — FAQ | Kuhnitver"
+      ],
+      "h1": [
+        "Вопросы и ответы"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/faq"
+      ],
+      "descriptions": [
+        "Ответы на частые вопросы о заказе кухонь в Твери от производителя Kuhnitver. Сколько стоит кухня? Какие сроки изготовления? Какие материалы используете? Есть ли гарантия? Как проходит замер и установка? Подробные ответы на все вопросы о кухнях на заказ."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 106596,
+      "htmlSha256": "2fb35dba9a0d9d09d144996aeff930ebcc8f5686d7bb4cdb19de47547b158228",
+      "textCharacters": 5689,
+      "schemaTypes": [
+        "Answer",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "FAQPage",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Question",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": {
+          "prices": [
+            1500,
+            1500
+          ],
+          "credited": true,
+          "freeClaim": false
+        },
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "http://127.0.0.1:3108/dostavka",
+      "canonicalUrl": "https://kuhnitver.ru/dostavka",
+      "finalUrl": "http://127.0.0.1:3108/dostavka",
+      "status": 200,
+      "durationMs": 39,
+      "title": [
+        "Доставка и установка кухонь в Твери и Тверской области | Kuhnitver"
+      ],
+      "h1": [
+        "Доставка и установка кухонь"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/dostavka"
+      ],
+      "descriptions": [
+        "Доставка по Твери включена в стоимость кухни. Доставка по Тверской области оплачивается отдельно; тарифы по городам приведены на странице доставки. Точную стоимость, дату, разгрузку и подъём согласуем для конкретного адреса до заказа и указываем в смете."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 82162,
+      "htmlSha256": "f48fcbf988ed57ca261486b036140cc84d90a7b061b0e63b70aab9da7cd13d3c",
+      "textCharacters": 3509,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": [
+          {
+            "city": "Тверь",
+            "price": 0
+          },
+          {
+            "city": "Торжок",
+            "price": 3000
+          },
+          {
+            "city": "Ржев",
+            "price": 5000
+          },
+          {
+            "city": "Конаково",
+            "price": 3500
+          },
+          {
+            "city": "Кимры",
+            "price": 4000
+          },
+          {
+            "city": "Вышний Волочёк",
+            "price": 5000
+          },
+          {
+            "city": "Бежецк",
+            "price": 6000
+          },
+          {
+            "city": "Нелидово",
+            "price": 7000
+          }
+        ],
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 47
+    },
+    {
+      "url": "http://127.0.0.1:3108/blog",
+      "canonicalUrl": "https://kuhnitver.ru/blog",
+      "finalUrl": "http://127.0.0.1:3108/blog",
+      "status": 200,
+      "durationMs": 42,
+      "title": [
+        "Блог о кухнях — статьи, советы и руководства по выбору | Kuhnitver"
+      ],
+      "h1": [
+        "Блог о кухнях"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog"
+      ],
+      "descriptions": [
+        "Экспертные статьи от производителя кухонь Kuhnitver. Как выбрать материал для фасадов: МДФ, массив или акрил? Какая планировка кухни лучше? Сколько стоит кухня на заказ? Состав сметы и этапы изготовления. Тренды дизайна кухонь 2025–2026. Читайте и делайте осознанный выбор."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 86565,
+      "htmlSha256": "8c3b7b88e0a72adbf894535f5ad8c1c9b0901147eecd4611d99a80081f7c8653",
+      "textCharacters": 2705,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 45
+    },
+    {
+      "url": "http://127.0.0.1:3108/b2b",
+      "canonicalUrl": "https://kuhnitver.ru/b2b",
+      "finalUrl": "http://127.0.0.1:3108/b2b",
+      "status": 200,
+      "durationMs": 55,
+      "title": [
+        "Мебель для бизнеса на заказ в Твери — офис, торговля, HoReCa | Kuhnitver"
+      ],
+      "h1": [
+        "Мебель для бизнеса на заказ"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/b2b"
+      ],
+      "descriptions": [
+        "Мебель для бизнеса на заказ в Твери: офисы, торговые помещения, гостиницы и учебные учреждения. Индивидуальная комплектация по ТЗ, согласование сметы, документов, сроков, доставки и монтажа до заказа."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 190786,
+      "htmlSha256": "c9b0a1fe563ca5a1e479ab20759acaf1b162ef85f9ffda5ad7823da442519533",
+      "textCharacters": 10596,
+      "schemaTypes": [
+        "Answer",
+        "BreadcrumbList",
+        "BusinessAudience",
+        "City",
+        "ContactPoint",
+        "FAQPage",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Question",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 70
+    },
+    {
+      "url": "http://127.0.0.1:3108/privacy",
+      "canonicalUrl": "https://kuhnitver.ru/privacy",
+      "finalUrl": "http://127.0.0.1:3108/privacy",
+      "status": 200,
+      "durationMs": 48,
+      "title": [
+        "Политика конфиденциальности | Kuhnitver"
+      ],
+      "h1": [
+        "Политика конфиденциальности"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/privacy"
+      ],
+      "descriptions": [
+        "Политика обработки персональных данных Kuhnitver: какие данные мы собираем через формы на сайте, цели обработки, передача третьим лицам и права пользователя."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 72097,
+      "htmlSha256": "98f613a7de92a87eb74524fd1b9ca08bd594dda0b1aa7ee86833e99eb2c888f4",
+      "textCharacters": 3937,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 55
+    },
+    {
+      "url": "http://127.0.0.1:3108/catalog/loft",
+      "canonicalUrl": "https://kuhnitver.ru/catalog/loft",
+      "finalUrl": "http://127.0.0.1:3108/catalog/loft",
+      "status": 200,
+      "durationMs": 43,
+      "title": [
+        "Кухни в стиле лофт на заказ в Твери — цены, фото, материалы | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни в стиле Лофт на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog/loft"
+      ],
+      "descriptions": [
+        "Кухни в стиле лофт на заказ в Твери от производителя Kuhnitver. Фасады МДФ Soft-touch, столешницы из массива дуба, фурнитура Blum. Индустриальный дизайн с кирпичными и металлическими акцентами. Индивидуальная комплектация и расчёт по размерам."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 92562,
+      "htmlSha256": "bee16695512f617779195d9250d302a68052716e22fe5000692712269a3f9664",
+      "textCharacters": 3516,
+      "schemaTypes": [
+        "AdministrativeArea",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 27
+    },
+    {
+      "url": "http://127.0.0.1:3108/catalog/skandinavskiy",
+      "canonicalUrl": "https://kuhnitver.ru/catalog/skandinavskiy",
+      "finalUrl": "http://127.0.0.1:3108/catalog/skandinavskiy",
+      "status": 200,
+      "durationMs": 28,
+      "title": [
+        "Скандинавские кухни на заказ в Твери — светлый дизайн, цены | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни в стиле Скандинавский на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog/skandinavskiy"
+      ],
+      "descriptions": [
+        "Скандинавские кухни на заказ в Твери от производителя Kuhnitver. Светлые пастельные фасады из крашеного МДФ, столешницы из искусственного камня, фурнитура Hettich. Максимальная функциональность для малых площадей. Индивидуальный подбор комплектации и расчёт."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 93012,
+      "htmlSha256": "b142df2cb9b2e227b8d350fb1aec23b679563ec7a6f9fe8807d1b89f7740291d",
+      "textCharacters": 3509,
+      "schemaTypes": [
+        "AdministrativeArea",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 27
+    },
+    {
+      "url": "http://127.0.0.1:3108/catalog/minimalizm",
+      "canonicalUrl": "https://kuhnitver.ru/catalog/minimalizm",
+      "finalUrl": "http://127.0.0.1:3108/catalog/minimalizm",
+      "status": 200,
+      "durationMs": 34,
+      "title": [
+        "Кухни в стиле минимализм на заказ в Твери — без ручек, push-to-open | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни в стиле Минимализм на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog/minimalizm"
+      ],
+      "descriptions": [
+        "Минималистичные кухни на заказ в Твери от производителя Kuhnitver. Гладкие акриловые фасады без ручек, системы push-to-open, столешницы Dekton. Встроенная техника, скрытые системы хранения, интегрированная подсветка. Идеально для современных квартир. Индивидуальный расчёт по размерам."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 92678,
+      "htmlSha256": "3f901a7b2fd1440b54ca1dc10815fe3bccadb49012303c809ebd625d0ef3fb01",
+      "textCharacters": 3387,
+      "schemaTypes": [
+        "AdministrativeArea",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 19
+    },
+    {
+      "url": "http://127.0.0.1:3108/catalog/premium",
+      "canonicalUrl": "https://kuhnitver.ru/catalog/premium",
+      "finalUrl": "http://127.0.0.1:3108/catalog/premium",
+      "status": 200,
+      "durationMs": 47,
+      "title": [
+        "Премиум кухни на заказ в Твери — итальянские фасады, мрамор | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни в стиле Премиум на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog/premium"
+      ],
+      "descriptions": [
+        "Премиум кухни на заказ в Твери от производителя Kuhnitver. Эксклюзивные итальянские фасады, столешницы из натурального мрамора, фурнитура Blum премиум-класса. Индивидуальный дизайн-проект, планировка для выбранной техники. Комплектацию и смету согласуем до заказа."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 92646,
+      "htmlSha256": "3e6c654cbc1609ab8eea8e48bc7b7b5e3d5fb10cf3dd8a5c8ba7143bea33537b",
+      "textCharacters": 3432,
+      "schemaTypes": [
+        "AdministrativeArea",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 30
+    },
+    {
+      "url": "http://127.0.0.1:3108/catalog/klassika",
+      "canonicalUrl": "https://kuhnitver.ru/catalog/klassika",
+      "finalUrl": "http://127.0.0.1:3108/catalog/klassika",
+      "status": 200,
+      "durationMs": 44,
+      "title": [
+        "Классические кухни на заказ в Твери — фрезерованные фасады, цены | Kuhnitver"
+      ],
+      "h1": [
+        "Классические кухни на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog/klassika"
+      ],
+      "descriptions": [
+        "Классические кухни на заказ в Твери от производителя Kuhnitver. Фрезерованные фасады из МДФ и массива, эмаль и патина, фурнитура Blum. Тёплая палитра и декор под классический интерьер. Индивидуальная комплектация, доставка и установка по согласованной смете."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 92886,
+      "htmlSha256": "23f33c64212b4feddaa5f0c6e0bbfa7ccbe28205b81228391c02b66ba8897f34",
+      "textCharacters": 3499,
+      "schemaTypes": [
+        "AdministrativeArea",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 16
+    },
+    {
+      "url": "http://127.0.0.1:3108/catalog/belaya",
+      "canonicalUrl": "https://kuhnitver.ru/catalog/belaya",
+      "finalUrl": "http://127.0.0.1:3108/catalog/belaya",
+      "status": 200,
+      "durationMs": 31,
+      "title": [
+        "Белые кухни на заказ в Твери — матовые и глянцевые, цены | Kuhnitver"
+      ],
+      "h1": [
+        "Белые кухни на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog/belaya"
+      ],
+      "descriptions": [
+        "Белые кухни на заказ в Твери от производителя Kuhnitver. Матовая эмаль или глянец, крашеный МДФ, фурнитура Blum и Hettich. Светлый дизайн, который расширяет пространство и подходит под любой интерьер. Индивидуальная комплектация и расчёт по размерам."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 92800,
+      "htmlSha256": "7b17522253ef6eee2bd9218e8f07df12a106931a58621e27bc8ede30ebbf1f24",
+      "textCharacters": 3557,
+      "schemaTypes": [
+        "AdministrativeArea",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 16
+    },
+    {
+      "url": "http://127.0.0.1:3108/catalog/uglovye",
+      "canonicalUrl": "https://kuhnitver.ru/catalog/uglovye",
+      "finalUrl": "http://127.0.0.1:3108/catalog/uglovye",
+      "status": 200,
+      "durationMs": 20,
+      "title": [
+        "Угловые кухни на заказ в Твери — Г-образные, цены и фото | Kuhnitver"
+      ],
+      "h1": [
+        "Угловые кухни на заказ в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/catalog/uglovye"
+      ],
+      "descriptions": [
+        "Угловые (Г-образные) кухни на заказ в Твери от производителя Kuhnitver. Эргономичное использование угла, выдвижные механизмы Blum, любые фасады и размеры. Индивидуальная комплектация, доставка и установка по согласованной смете."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 92725,
+      "htmlSha256": "1d5c0716764f060dd6fe8ff28d649f9be7b64adc1a9b46566830c269ea805343",
+      "textCharacters": 3579,
+      "schemaTypes": [
+        "AdministrativeArea",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 8
+    },
+    {
+      "url": "http://127.0.0.1:3108/kuhni/tveri",
+      "canonicalUrl": "https://kuhnitver.ru/kuhni/tveri",
+      "finalUrl": "http://127.0.0.1:3108/kuhni/tveri",
+      "status": 200,
+      "durationMs": 35,
+      "title": [
+        "Кухни на заказ в Твери от производителя — доставка и установка | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Твери от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/tveri"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Твери от Kuhnitver. Доставка: Включена в стоимость кухни. Замер стоит 1 500 ₽. При заказе кухни эта сумма вычитается из её стоимости. Выезд по Тверской области и возможные дорожные расходы согласуем до записи. На замере фиксируем размеры помещения и расположение коммуникаций. Комплектацию и смету согласуем до заказа."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 97891,
+      "htmlSha256": "87e17909f6d72cf6079be1dd9367860fbe78a959342baf2be85cc3a9c2f51500",
+      "textCharacters": 3132,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver",
+        "phone": "+7 (4822) 47-70-81"
+      },
+      "renderedFacts": {
+        "measurement": {
+          "prices": [
+            1500
+          ],
+          "credited": true,
+          "freeClaim": false
+        },
+        "delivery": {
+          "city": "Тверь",
+          "prices": [
+            0
+          ]
+        },
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "http://127.0.0.1:3108/kuhni/torzhke",
+      "canonicalUrl": "https://kuhnitver.ru/kuhni/torzhke",
+      "finalUrl": "http://127.0.0.1:3108/kuhni/torzhke",
+      "status": 200,
+      "durationMs": 55,
+      "title": [
+        "Кухни на заказ в Торжке от производителя — доставка и установка | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Торжке от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/torzhke"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Торжке от Kuhnitver. Доставка: от 3 000 ₽. Замер стоит 1 500 ₽. При заказе кухни эта сумма вычитается из её стоимости. Выезд по Тверской области и возможные дорожные расходы согласуем до записи. На замере фиксируем размеры помещения и расположение коммуникаций. Комплектацию и смету согласуем до заказа."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 97646,
+      "htmlSha256": "02d0bf4d112046d86866c523effbb80d8e72706a89f69ba47bee62092bd87d82",
+      "textCharacters": 3128,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver",
+        "phone": "+7 (4822) 47-70-81"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": {
+          "city": "Торжок",
+          "prices": [
+            3000
+          ]
+        },
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "http://127.0.0.1:3108/kuhni/rzheve",
+      "canonicalUrl": "https://kuhnitver.ru/kuhni/rzheve",
+      "finalUrl": "http://127.0.0.1:3108/kuhni/rzheve",
+      "status": 200,
+      "durationMs": 64,
+      "title": [
+        "Кухни на заказ в Ржеве от производителя — доставка и установка | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Ржеве от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/rzheve"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Ржеве от Kuhnitver. Доставка: от 5 000 ₽. Замер стоит 1 500 ₽. При заказе кухни эта сумма вычитается из её стоимости. Выезд по Тверской области и возможные дорожные расходы согласуем до записи. На замере фиксируем размеры помещения и расположение коммуникаций. Комплектацию и смету согласуем до заказа."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 97420,
+      "htmlSha256": "dd088784e5bf66ef03bc76f20c175acf67d826a22ea453ebe33835dd9cbf55c4",
+      "textCharacters": 3101,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver",
+        "phone": "+7 (4822) 47-70-81"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": {
+          "city": "Ржев",
+          "prices": [
+            5000
+          ]
+        },
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "http://127.0.0.1:3108/kuhni/konakovo",
+      "canonicalUrl": "https://kuhnitver.ru/kuhni/konakovo",
+      "finalUrl": "http://127.0.0.1:3108/kuhni/konakovo",
+      "status": 200,
+      "durationMs": 49,
+      "title": [
+        "Кухни на заказ в Конаково от производителя — доставка и установка | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Конаково от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/konakovo"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Конаково от Kuhnitver. Доставка: от 3 500 ₽. Замер стоит 1 500 ₽. При заказе кухни эта сумма вычитается из её стоимости. Выезд по Тверской области и возможные дорожные расходы согласуем до записи. На замере фиксируем размеры помещения и расположение коммуникаций. Комплектацию и смету согласуем до заказа."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 97891,
+      "htmlSha256": "b99efb47888c5181b0a81f9fde37b1f0a652261e238035d87e1dd22af2933413",
+      "textCharacters": 3143,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver",
+        "phone": "+7 (4822) 47-70-81"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": {
+          "city": "Конаково",
+          "prices": [
+            3500
+          ]
+        },
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "http://127.0.0.1:3108/kuhni/kimrah",
+      "canonicalUrl": "https://kuhnitver.ru/kuhni/kimrah",
+      "finalUrl": "http://127.0.0.1:3108/kuhni/kimrah",
+      "status": 200,
+      "durationMs": 48,
+      "title": [
+        "Кухни на заказ в Кимрах от производителя — доставка и установка | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Кимрах от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/kimrah"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Кимрах от Kuhnitver. Доставка: от 4 000 ₽. Замер стоит 1 500 ₽. При заказе кухни эта сумма вычитается из её стоимости. Выезд по Тверской области и возможные дорожные расходы согласуем до записи. На замере фиксируем размеры помещения и расположение коммуникаций. Комплектацию и смету согласуем до заказа."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 97376,
+      "htmlSha256": "456cf25474008955117df91473ae7ac0fc49ba363e11ee85c0021a17f2b4c22a",
+      "textCharacters": 3073,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver",
+        "phone": "+7 (4822) 47-70-81"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": {
+          "city": "Кимры",
+          "prices": [
+            4000
+          ]
+        },
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "http://127.0.0.1:3108/kuhni/vyshnem-volochke",
+      "canonicalUrl": "https://kuhnitver.ru/kuhni/vyshnem-volochke",
+      "finalUrl": "http://127.0.0.1:3108/kuhni/vyshnem-volochke",
+      "status": 200,
+      "durationMs": 42,
+      "title": [
+        "Кухни на заказ в Вышнем Волочке от производителя — доставка и установка | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Вышнем Волочке от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/vyshnem-volochke"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Вышнем Волочке от Kuhnitver. Доставка: от 5 000 ₽. Замер стоит 1 500 ₽. При заказе кухни эта сумма вычитается из её стоимости. Выезд по Тверской области и возможные дорожные расходы согласуем до записи. На замере фиксируем размеры помещения и расположение коммуникаций. Комплектацию и смету согласуем до заказа."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 98459,
+      "htmlSha256": "2c525cb490bcc43432416586f9b81895e5dd4189eb96d11a0a0b633b6d00a119",
+      "textCharacters": 3152,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver",
+        "phone": "+7 (4822) 47-70-81"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": {
+          "city": "Вышний Волочёк",
+          "prices": [
+            5000
+          ]
+        },
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "http://127.0.0.1:3108/kuhni/bezhecke",
+      "canonicalUrl": "https://kuhnitver.ru/kuhni/bezhecke",
+      "finalUrl": "http://127.0.0.1:3108/kuhni/bezhecke",
+      "status": 200,
+      "durationMs": 54,
+      "title": [
+        "Кухни на заказ в Бежецке от производителя — доставка и установка | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Бежецке от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/bezhecke"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Бежецке от Kuhnitver. Доставка: от 6 000 ₽. Замер стоит 1 500 ₽. При заказе кухни эта сумма вычитается из её стоимости. Выезд по Тверской области и возможные дорожные расходы согласуем до записи. На замере фиксируем размеры помещения и расположение коммуникаций. Комплектацию и смету согласуем до заказа."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 97217,
+      "htmlSha256": "fb0f5d8a3514f232a5c9dfb3b1c11d6e4f4e543a4775cbb220fff02dfdb5784c",
+      "textCharacters": 3057,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver",
+        "phone": "+7 (4822) 47-70-81"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": {
+          "city": "Бежецк",
+          "prices": [
+            6000
+          ]
+        },
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "http://127.0.0.1:3108/kuhni/nelidovo",
+      "canonicalUrl": "https://kuhnitver.ru/kuhni/nelidovo",
+      "finalUrl": "http://127.0.0.1:3108/kuhni/nelidovo",
+      "status": 200,
+      "durationMs": 47,
+      "title": [
+        "Кухни на заказ в Нелидово от производителя — доставка и установка | Kuhnitver"
+      ],
+      "h1": [
+        "Кухни на заказ в Нелидово от производителя"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/kuhni/nelidovo"
+      ],
+      "descriptions": [
+        "Кухни на заказ в Нелидово от Kuhnitver. Доставка: от 7 000 ₽. Замер стоит 1 500 ₽. При заказе кухни эта сумма вычитается из её стоимости. Выезд по Тверской области и возможные дорожные расходы согласуем до записи. На замере фиксируем размеры помещения и расположение коммуникаций. Комплектацию и смету согласуем до заказа."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 97408,
+      "htmlSha256": "1bdf6804b5b0baa671324ecc7e57855b9e7ebbbf77b4207e511a3c32c3f66692",
+      "textCharacters": 3077,
+      "schemaTypes": [
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver",
+        "phone": "+7 (4822) 47-70-81"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": {
+          "city": "Нелидово",
+          "prices": [
+            7000
+          ]
+        },
+        "contactForms": 0,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 38
+    },
+    {
+      "url": "http://127.0.0.1:3108/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
+      "canonicalUrl": "https://kuhnitver.ru/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
+      "finalUrl": "http://127.0.0.1:3108/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
+      "status": 200,
+      "durationMs": 51,
+      "title": [
+        "Как выбрать кухню на заказ в Твери — руководство 2026 | Kuhnitver"
+      ],
+      "h1": [
+        "Как выбрать кухню на заказ в Твери: полное руководство"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri"
+      ],
+      "descriptions": [
+        "Полное руководство по выбору кухни на заказ в Твери: бюджет, стили, материалы, проверка производителя. Советы от Kuhnitver."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 83125,
+      "htmlSha256": "02d1554f648570a92faa39930610c857e1c958103d2ffec1e921c57a22b33729",
+      "textCharacters": 3439,
+      "schemaTypes": [
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 2,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 6
+    },
+    {
+      "url": "http://127.0.0.1:3108/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+      "canonicalUrl": "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+      "finalUrl": "http://127.0.0.1:3108/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+      "status": 200,
+      "durationMs": 46,
+      "title": [
+        "МДФ, массив или пластик для кухни — что лучше | Kuhnitver"
+      ],
+      "h1": [
+        "Какой материал для кухни лучше: МДФ, массив или пластик"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik"
+      ],
+      "descriptions": [
+        "Как сравнить МДФ с эмалью, HPL, акрил и деревянные фасады: основание, кромки, уход и состав сметы. Практическая таблица и сведения производителя материалов."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 88902,
+      "htmlSha256": "afe8683b06f51f2efa44f43363ef688d10fea573eae1647e23e39c9a65b11ea5",
+      "textCharacters": 4077,
+      "schemaTypes": [
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 2,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 7
+    },
+    {
+      "url": "http://127.0.0.1:3108/blog/skolko-stoit-kuhnya-na-zakaz-2026",
+      "canonicalUrl": "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026",
+      "finalUrl": "http://127.0.0.1:3108/blog/skolko-stoit-kuhnya-na-zakaz-2026",
+      "status": 200,
+      "durationMs": 36,
+      "title": [
+        "Стоимость кухни в Твери: погонный метр и полная смета | Kuhnitver"
+      ],
+      "h1": [
+        "Сколько стоит кухня на заказ в 2026 году в Твери"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026"
+      ],
+      "descriptions": [
+        "Как складывается стоимость кухни на заказ в Твери: погонный метр, полная смета, фасады, фурнитура и монтаж. Как сравнить комплектации и запросить расчёт."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 93468,
+      "htmlSha256": "49e4a21565a977e2de722441f751a7a1ae857904b5f2181423162b890da67d6b",
+      "textCharacters": 4788,
+      "schemaTypes": [
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 2,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 5
+    },
+    {
+      "url": "http://127.0.0.1:3108/blog/uglovaya-vs-pryamaya-kuhnya",
+      "canonicalUrl": "https://kuhnitver.ru/blog/uglovaya-vs-pryamaya-kuhnya",
+      "finalUrl": "http://127.0.0.1:3108/blog/uglovaya-vs-pryamaya-kuhnya",
+      "status": 200,
+      "durationMs": 32,
+      "title": [
+        "Угловая или прямая кухня — какую выбрать | Kuhnitver"
+      ],
+      "h1": [
+        "Угловая vs прямая кухня: что выбрать для вашей квартиры"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/uglovaya-vs-pryamaya-kuhnya"
+      ],
+      "descriptions": [
+        "Сравнение угловой и прямой кухни: плюсы, минусы, для каких помещений подходят. Советы по выбору планировки от производителя в Твери."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 81077,
+      "htmlSha256": "f8b1f24c2c502004b7adef9043543800b72128eacacf149a62067c48b1c983d9",
+      "textCharacters": 3182,
+      "schemaTypes": [
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 2,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 3
+    },
+    {
+      "url": "http://127.0.0.1:3108/blog/top-10-oshibok-pri-zakaze-kuhni",
+      "canonicalUrl": "https://kuhnitver.ru/blog/top-10-oshibok-pri-zakaze-kuhni",
+      "finalUrl": "http://127.0.0.1:3108/blog/top-10-oshibok-pri-zakaze-kuhni",
+      "status": 200,
+      "durationMs": 30,
+      "title": [
+        "10 ошибок при заказе кухни — как избежать | Kuhnitver"
+      ],
+      "h1": [
+        "ТОП-10 ошибок при заказе кухни, которых стоит избежать"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/top-10-oshibok-pri-zakaze-kuhni"
+      ],
+      "descriptions": [
+        "ТОП-10 ошибок при заказе кухни на заказ: экономия на фурнитуре, отсутствие 3D-проекта, неправильная планировка. Советы от производителя в Твери."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 83671,
+      "htmlSha256": "0e61a5fc6f0e88a064d6b45c968663ac7bf49c18bcd3424baf910e9978ef4ac5",
+      "textCharacters": 3622,
+      "schemaTypes": [
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 2,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 4
+    },
+    {
+      "url": "http://127.0.0.1:3108/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+      "canonicalUrl": "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+      "finalUrl": "http://127.0.0.1:3108/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+      "status": 200,
+      "durationMs": 23,
+      "title": [
+        "Замер кухни в Твери: чек-лист подготовки | Kuhnitver"
+      ],
+      "h1": [
+        "Замер кухни в Твери: что подготовить к визиту замерщика"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit"
+      ],
+      "descriptions": [
+        "Как подготовиться к замеру кухни в Твери: что измерить самим, какие документы нужны, на что обратить внимание замерщика. Стоимость и порядок замера."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 86161,
+      "htmlSha256": "4248adb51722f0cc4ae5574157e7716030fe674320b56d4e9818220afdae238e",
+      "textCharacters": 4287,
+      "schemaTypes": [
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 2,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 7
+    },
+    {
+      "url": "http://127.0.0.1:3108/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
+      "canonicalUrl": "https://kuhnitver.ru/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
+      "finalUrl": "http://127.0.0.1:3108/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
+      "status": 200,
+      "durationMs": 21,
+      "title": [
+        "Кварц или мрамор для столешницы кухни — сравнение | Kuhnitver"
+      ],
+      "h1": [
+        "Кварц или мрамор: какая столешница для кухни лучше"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni"
+      ],
+      "descriptions": [
+        "Кварц или мрамор для кухонной столешницы: таблица по уходу, горячей посуде, кислотам и составу сметы. Ссылки на инструкции производителей."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 89514,
+      "htmlSha256": "fd9c7a0e7dc47255ab097f326eeeb32a1a4b267382dd90a4a3701ad3f293fdc4",
+      "textCharacters": 4180,
+      "schemaTypes": [
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 2,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 3
+    },
+    {
+      "url": "http://127.0.0.1:3108/blog/dizayn-kuhni-2026-idei-planirovki-i-foto",
+      "canonicalUrl": "https://kuhnitver.ru/blog/dizayn-kuhni-2026-idei-planirovki-i-foto",
+      "finalUrl": "http://127.0.0.1:3108/blog/dizayn-kuhni-2026-idei-planirovki-i-foto",
+      "status": 200,
+      "durationMs": 69,
+      "title": [
+        "Дизайн кухни 2026: современные идеи, планировки и фото | Kuhnitver"
+      ],
+      "h1": [
+        "Дизайн кухни 2026: современные идеи, планировки и фото"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/dizayn-kuhni-2026-idei-planirovki-i-foto"
+      ],
+      "descriptions": [
+        "Идеи дизайна кухни 2026: планировки, современные фасады, цвета, встроенная техника и освещение. Практические советы для кухни на заказ в Твери."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 109600,
+      "htmlSha256": "6bf2e65265c702a3598dfd0befe9c39b0647bbc21de7eee58f4b6ed8178f7b54",
+      "textCharacters": 8951,
+      "schemaTypes": [
+        "Answer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "FAQPage",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Question",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 2,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 5
+    },
+    {
+      "url": "http://127.0.0.1:3108/blog/chernaya-kuhnya-v-interere",
+      "canonicalUrl": "https://kuhnitver.ru/blog/chernaya-kuhnya-v-interere",
+      "finalUrl": "http://127.0.0.1:3108/blog/chernaya-kuhnya-v-interere",
+      "status": 200,
+      "durationMs": 68,
+      "title": [
+        "Чёрная кухня в интерьере: сочетания цветов, плюсы и минусы | Kuhnitver"
+      ],
+      "h1": [
+        "Чёрная кухня в интерьере: с чем сочетать и насколько она практична"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/chernaya-kuhnya-v-interere"
+      ],
+      "descriptions": [
+        "Чёрная кухня в интерьере: как сочетать чёрные фасады с деревом, белой столешницей, фартуком и техникой. Плюсы, минусы и советы для кухни на заказ."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 108643,
+      "htmlSha256": "86768880537fa6fdc350b03ad784c15639f84b7cb3c9c646f174ff386c611ff3",
+      "textCharacters": 8676,
+      "schemaTypes": [
+        "Answer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "FAQPage",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Question",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 2,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 3
+    },
+    {
+      "url": "http://127.0.0.1:3108/blog/sroki-izgotovleniya-kuhni-na-zakaz",
+      "canonicalUrl": "https://kuhnitver.ru/blog/sroki-izgotovleniya-kuhni-na-zakaz",
+      "finalUrl": "http://127.0.0.1:3108/blog/sroki-izgotovleniya-kuhni-na-zakaz",
+      "status": 200,
+      "durationMs": 61,
+      "title": [
+        "Срок изготовления кухни на заказ: этапы и точка отсчёта | Kuhnitver"
+      ],
+      "h1": [
+        "Срок изготовления кухни: этапы от замера до установки"
+      ],
+      "canonical": [
+        "https://kuhnitver.ru/blog/sroki-izgotovleniya-kuhni-na-zakaz"
+      ],
+      "descriptions": [
+        "Как согласовать срок кухни на заказ: замер, проект, изготовление, доставка и монтаж. От чего зависит дата и что подготовить до установки."
+      ],
+      "robots": [
+        {
+          "name": "robots",
+          "content": "index, follow"
+        },
+        {
+          "name": "googlebot",
+          "content": "index, follow"
+        }
+      ],
+      "xRobotsTag": null,
+      "htmlBytes": 98163,
+      "htmlSha256": "8cb3fefcb09100eab8393b7f5a6698eeef441957f6851b22142ba0eadea7e900",
+      "textCharacters": 5218,
+      "schemaTypes": [
+        "Answer",
+        "Article",
+        "BreadcrumbList",
+        "City",
+        "ContactPoint",
+        "FAQPage",
+        "ImageObject",
+        "ListItem",
+        "LocalBusiness",
+        "OfferCatalog",
+        "OpeningHoursSpecification",
+        "Organization",
+        "PostalAddress",
+        "Question",
+        "Service",
+        "SiteNavigationElement",
+        "State",
+        "WebPage",
+        "WebSite"
+      ],
+      "offers": [],
+      "localBusiness": {
+        "name": "Kuhnitver"
+      },
+      "renderedFacts": {
+        "measurement": null,
+        "delivery": null,
+        "contactForms": 2,
+        "essentialH1Visible": true
+      },
+      "jsonldErrors": [],
+      "inboundLinks": 3
+    }
+  ],
+  "robots": {
+    "status": 200,
+    "text": "User-Agent: *\nAllow: /\nDisallow: /api/\nDisallow: /admin/\nDisallow: /private/\n\nHost: https://kuhnitver.ru\nSitemap: https://kuhnitver.ru/sitemap.xml\n"
+  },
+  "feeds": {
+    "rss": {
+      "status": 200,
+      "contentType": "application/rss+xml; charset=utf-8",
+      "durationMs": 10,
+      "retired": false,
+      "itemCount": 10,
+      "xmlValid": true
+    },
+    "yml": {
+      "status": 200,
+      "contentType": "application/xml; charset=utf-8",
+      "durationMs": 9,
+      "retired": false,
+      "itemCount": 9,
+      "xmlValid": true,
+      "format": "services_feed",
+      "executorCount": 1,
+      "numericPrices": [],
+      "serviceUrls": [
+        "https://kuhnitver.ru/catalog/loft",
+        "https://kuhnitver.ru/catalog/skandinavskiy",
+        "https://kuhnitver.ru/catalog/minimalizm",
+        "https://kuhnitver.ru/catalog/premium",
+        "https://kuhnitver.ru/catalog/klassika",
+        "https://kuhnitver.ru/catalog/belaya",
+        "https://kuhnitver.ru/catalog/uglovye",
+        "https://kuhnitver.ru/price",
+        "https://kuhnitver.ru/dostavka"
+      ]
+    }
+  },
+  "llms": {
+    "status": 200
+  },
+  "notFound": {
+    "status": 404,
+    "robots": [
+      {
+        "name": "robots",
+        "content": "noindex"
+      },
+      {
+        "name": "robots",
+        "content": "noindex, nofollow"
+      }
+    ]
+  },
+  "utmCanonical": [
+    "https://kuhnitver.ru"
+  ],
+  "redirects": [
+    {
+      "url": "http://127.0.0.1:3108/catalog/loft/",
+      "status": 308,
+      "location": "/catalog/loft"
+    }
+  ],
+  "bots": [
+    {
+      "name": "Googlebot",
+      "status": 200,
+      "durationMs": 20
+    },
+    {
+      "name": "YandexBot",
+      "status": 200,
+      "durationMs": 21
+    },
+    {
+      "name": "OAI-SearchBot",
+      "status": 200,
+      "durationMs": 31
+    },
+    {
+      "name": "ChatGPT-User",
+      "status": 200,
+      "durationMs": 33
+    },
+    {
+      "name": "GPTBot",
+      "status": 200,
+      "durationMs": 17
+    },
+    {
+      "name": "PerplexityBot",
+      "status": 200,
+      "durationMs": 17
+    },
+    {
+      "name": "bingbot",
+      "status": 200,
+      "durationMs": 12
+    }
+  ],
+  "publishedScopeCheck": {
+    "passed": true,
+    "pages_checked": 36,
+    "pages": [
+      {
+        "url": "https://kuhnitver.ru",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/catalog",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/price",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/portfolio",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/about",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/contacts",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/faq",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/dostavka",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/blog",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/b2b",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/privacy",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/catalog/loft",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/catalog/skandinavskiy",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/catalog/minimalizm",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/catalog/premium",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/catalog/klassika",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/catalog/belaya",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/catalog/uglovye",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/kuhni/tveri",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/kuhni/torzhke",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/kuhni/rzheve",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/kuhni/konakovo",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/kuhni/kimrah",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/kuhni/vyshnem-volochke",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/kuhni/bezhecke",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/kuhni/nelidovo",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/blog/uglovaya-vs-pryamaya-kuhnya",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/blog/top-10-oshibok-pri-zakaze-kuhni",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/blog/dizayn-kuhni-2026-idei-planirovki-i-foto",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/blog/chernaya-kuhnya-v-interere",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      },
+      {
+        "url": "https://kuhnitver.ru/blog/sroki-izgotovleniya-kuhni-na-zakaz",
+        "status": 200,
+        "avenue_street_schema": true,
+        "postal_fields": 0,
+        "global_og_card_current": true
+      }
+    ],
+    "postal_fields": 0,
+    "street": "проспект Николая Корыткова, 3 ст1",
+    "building_literal_preserved": true,
+    "shared_identity_contacts_faq_llms_and_readonly_tool": true,
+    "published_photo_attributed_not_a_completed_case": true,
+    "portfolio_current_price_110000_absent": true,
+    "portfolio_offer_absent": true,
+    "completed_case_urls": 0,
+    "design_references_preserved": true,
+    "assets": [
+      {
+        "path": "/images/published/yandex-kitchen.jpg",
+        "status": 200,
+        "content_type": "image/jpeg",
+        "bytes": 94917,
+        "sha256": "a5a36c54ed987ab8111519e5a8e1d7b40f81640995adbb42d0a5db320f30674d",
+        "matches_release_bytes": true
+      },
+      {
+        "path": "/og-image-20261031.jpg",
+        "status": 200,
+        "content_type": "image/jpeg",
+        "bytes": 127087,
+        "sha256": "ced3ea316cf73fc0f75b24ba8393a71df2ccf6c0b08f6813e0cc23ea0fac3148",
+        "matches_release_bytes": true
+      },
+      {
+        "path": "/og-image.jpg",
+        "status": 200,
+        "content_type": "image/jpeg",
+        "bytes": 127087,
+        "sha256": "ced3ea316cf73fc0f75b24ba8393a71df2ccf6c0b08f6813e0cc23ea0fac3148",
+        "matches_release_bytes": true
+      },
+      {
+        "path": "/og-image.svg",
+        "status": 200,
+        "content_type": "image/svg+xml",
+        "bytes": 239678,
+        "sha256": "f2c4caccd671f08cc2f618373de8ccae63f1587e09bca9b2d1f017c209902b8f",
+        "matches_release_bytes": true
+      }
+    ],
+    "geometry": {
+      "public/images/published/yandex-kitchen.jpg": {
+        "format": "jpeg",
+        "width": 646,
+        "height": 807
+      },
+      "public/og-image-20261031.jpg": {
+        "format": "jpeg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    "commercial_terms_unchanged": true,
+    "primary_phone_unchanged": true,
+    "verification_google772_not_published": true,
+    "editorial_dates": {
+      "affected_urls": [
+        "https://kuhnitver.ru",
+        "https://kuhnitver.ru/about",
+        "https://kuhnitver.ru/b2b",
+        "https://kuhnitver.ru/contacts",
+        "https://kuhnitver.ru/faq",
+        "https://kuhnitver.ru/kuhni/tveri",
+        "https://kuhnitver.ru/portfolio",
+        "https://kuhnitver.ru/privacy"
+      ],
+      "affected_count": 8,
+      "changed_urls": [
+        "https://kuhnitver.ru",
+        "https://kuhnitver.ru/about",
+        "https://kuhnitver.ru/b2b",
+        "https://kuhnitver.ru/faq",
+        "https://kuhnitver.ru/kuhni/tveri",
+        "https://kuhnitver.ru/portfolio",
+        "https://kuhnitver.ru/privacy"
+      ],
+      "actual_changed_count": 7,
+      "unchanged_date_count": 29,
+      "unaffected_scope_urls": 28,
+      "contacts_already_on_31": true,
+      "lastmod_by_url": {
+        "https://kuhnitver.ru": "2026-10-31",
+        "https://kuhnitver.ru/catalog": "2026-10-30",
+        "https://kuhnitver.ru/price": "2026-10-30",
+        "https://kuhnitver.ru/portfolio": "2026-10-31",
+        "https://kuhnitver.ru/about": "2026-10-31",
+        "https://kuhnitver.ru/contacts": "2026-10-31",
+        "https://kuhnitver.ru/faq": "2026-10-31",
+        "https://kuhnitver.ru/dostavka": "2026-10-30",
+        "https://kuhnitver.ru/blog": "2026-10-30",
+        "https://kuhnitver.ru/b2b": "2026-10-31",
+        "https://kuhnitver.ru/privacy": "2026-10-31",
+        "https://kuhnitver.ru/catalog/loft": "2026-10-30",
+        "https://kuhnitver.ru/catalog/skandinavskiy": "2026-10-30",
+        "https://kuhnitver.ru/catalog/minimalizm": "2026-10-30",
+        "https://kuhnitver.ru/catalog/premium": "2026-10-30",
+        "https://kuhnitver.ru/catalog/klassika": "2026-10-30",
+        "https://kuhnitver.ru/catalog/belaya": "2026-10-30",
+        "https://kuhnitver.ru/catalog/uglovye": "2026-10-30",
+        "https://kuhnitver.ru/kuhni/tveri": "2026-10-31",
+        "https://kuhnitver.ru/kuhni/torzhke": "2026-10-30",
+        "https://kuhnitver.ru/kuhni/rzheve": "2026-10-30",
+        "https://kuhnitver.ru/kuhni/konakovo": "2026-10-30",
+        "https://kuhnitver.ru/kuhni/kimrah": "2026-10-30",
+        "https://kuhnitver.ru/kuhni/vyshnem-volochke": "2026-10-30",
+        "https://kuhnitver.ru/kuhni/bezhecke": "2026-10-30",
+        "https://kuhnitver.ru/kuhni/nelidovo": "2026-10-30",
+        "https://kuhnitver.ru/blog/kak-vybrat-kuhnyu-na-zakaz-v-tveri": "2026-10-30",
+        "https://kuhnitver.ru/blog/materialy-dlya-kuhni-mdf-massiv-plastik": "2026-10-30",
+        "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026": "2026-10-30",
+        "https://kuhnitver.ru/blog/uglovaya-vs-pryamaya-kuhnya": "2026-10-30",
+        "https://kuhnitver.ru/blog/top-10-oshibok-pri-zakaze-kuhni": "2026-10-30",
+        "https://kuhnitver.ru/blog/zamer-kuhni-v-tveri-chto-podgotovit": "2026-10-30",
+        "https://kuhnitver.ru/blog/kvarc-vs-mramor-stoleshnica-dlya-kuhni": "2026-10-30",
+        "https://kuhnitver.ru/blog/dizayn-kuhni-2026-idei-planirovki-i-foto": "2026-06-20",
+        "https://kuhnitver.ru/blog/chernaya-kuhnya-v-interere": "2026-06-20",
+        "https://kuhnitver.ru/blog/sroki-izgotovleniya-kuhni-na-zakaz": "2026-10-30"
+      }
+    }
+  },
+  "stagingRelease": {
+    "sha": "16910c0aec4977031673517759576777d04f1f35",
+    "port": 3108,
+    "production_switched": false,
+    "unchanged_live_release_sha": "1004281a14ad25828ee41cde70c23bf9bccba623"
+  }
+}

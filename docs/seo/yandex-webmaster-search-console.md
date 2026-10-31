@@ -1,6 +1,6 @@
 # Поисковые кабинеты, карточка бизнеса и измерения Kuhnitver
 
-Обновлено 30 октября 2026 года. Это руководство по сопровождению действующего сайта [kuhnitver.ru](https://kuhnitver.ru/). Подтверждённые итоги конкретного выпуска и последние статусы внешних операций записываются в [отчёт внедрения](2026-10-30-implementation.md). Наличие кода в репозитории, доступного фида или verification-meta не означает, что соответствующая настройка принята внешним сервисом.
+Обновлено 31 октября 2026 года. Это руководство по сопровождению действующего сайта [kuhnitver.ru](https://kuhnitver.ru/). Подтверждённые итоги конкретного выпуска и последние статусы внешних операций записываются в [отчёт внедрения](2026-10-30-implementation.md). Наличие кода в репозитории, доступного фида или verification-meta не означает, что соответствующая настройка принята внешним сервисом.
 
 ## Данные сайта
 
@@ -10,7 +10,7 @@
 | Канонический домен | `https://kuhnitver.ru` без www |
 | Основной телефон | +7 (4822) 47-70-81 |
 | Отдельный номер Max | +7 915 722 00 75 |
-| Действующий адрес | Тверь, ул. Николая Корыткова, 3 ст1 |
+| Действующий адрес | Тверь, проспект Николая Корыткова, 3 ст1 |
 | Стоимость кухни | Индивидуальный расчёт по размерам и комплектации |
 | Замер | 1 500 ₽; при заказе сумма вычитается из стоимости кухни; дорожные расходы области согласуются заранее |
 | Изготовление | От 20 рабочих дней после подписания договора и утверждения проекта; точный график в договоре |
@@ -48,6 +48,10 @@
 Обход через счётчик Метрики уже был включён для `110021238`. Эта настройка помогает обнаруживать страницы, но не заменяет sitemap, внутренние ссылки и проверку индексирования.
 
 В разделе эффективности используйте «Видимость сайта в Алисе AI»: сохраняйте доступные упоминания, запросы, URL и период. Выборка отчёта ограничена условиями сервиса; она не охватывает весь потенциальный спрос. [Описание отчёта Яндекса](https://yandex.ru/support/webmaster/ru/service/alice-answers).
+
+## Ограничения текущего этапа
+
+31.10.2026 владелец отложил Bing Webmaster Tools и настройку GA4 в кабинете. Существующие клиентские события GA4 и IndexNow не отключаются. Остальные данные берутся из опубликованных источников. Реальные кейсы/сметы и юридические реквизиты не выводятся из фото, старой товарной цены или совпадающего телефона.
 
 ## Google Search Console
 
@@ -121,7 +125,7 @@ AI-показы могут входить в общий Web-отчёт: их н�
 
 ## Bing, IndexNow и браузерные агенты
 
-В [Bing Webmaster Tools](https://www.bing.com/webmasters/) проверьте существующий ресурс, права, sitemap, индексирование и доступность AI Performance. Отчёт относится к поддерживаемым поверхностям; цитирование не означает переход или обращение.
+Этот кабинет отложен владельцем на текущем этапе. При его возобновлении в [Bing Webmaster Tools](https://www.bing.com/webmasters/) проверьте существующий ресурс, права, sitemap, индексирование и доступность AI Performance. Отчёт относится к поддерживаемым поверхностям; цитирование не означает переход или обращение.
 
 IndexNow использует опубликованный `/indexnow-key.txt`. Скрипт `scripts/indexnow.mjs` по умолчанию проверяет production без отправки, а `--submit` выполняет один POST после проверки sitemap, ключа и canonical всех страниц. Результат 200/202 подтверждает получение уведомления; индексация и цитирование проверяются отдельно. [Спецификация IndexNow](https://www.indexnow.org/documentation).
 
@@ -132,9 +136,15 @@ IndexNow использует опубликованный `/indexnow-key.txt`. 
 Используйте [единый протокол измерений](measurement/README.md) и [`protocol.json`](measurement/protocol.json). [Исходный HTTP-замер](measurement/2026-10-30-before.json) содержит 35 страниц до изменений; [локальная приёмка](measurement/local-acceptance.json) — 36 страниц обновлённой сборки. Эти отчёты не являются замером доли AI-рекомендаций.
 
 ```powershell
-node scripts/seo-audit.mjs --base-url https://kuhnitver.ru --strict --output docs/seo/measurement/after.json
-node scripts/ai-search-measure.mjs --init --phase after --products yandex-alice,chatgpt-search,gemini,gigachat --output docs/seo/measurement/observations-after.json
-node scripts/ai-search-measure.mjs --compare --before docs/seo/measurement/observations-before.json --after docs/seo/measurement/observations-after.json --output docs/seo/measurement/comparison.json
+$wave = Get-Date -Format 'yyyy-MM-dd-HHmmss'
+node scripts/seo-audit.mjs --base-url https://kuhnitver.ru --strict --output "docs/seo/measurement/http-followup-$wave.json"
+node scripts/ai-search-measure.mjs --init --phase after --products yandex-alice,chatgpt-search,gemini,gigachat --output "docs/seo/measurement/observations-followup-$wave.json"
+```
+
+Заполните новый файл фактическими наблюдениями. Существующие `observations-before.json` и `observations-after.json` сохраняйте: первая волна после публикации не заменяет отсутствующий AI-baseline до внедрения. После заполнения последующей волны сравнивайте её с первой явно как две волны после публикации:
+
+```powershell
+node scripts/ai-search-measure.mjs --compare --post-release-baseline --before docs/seo/measurement/observations-after.json --after "docs/seo/measurement/observations-followup-$wave.json" --output "docs/seo/measurement/comparison-followup-$wave.json"
 ```
 
 Запросы без бренда, вопросы о бренде, чтение переданного URL и подготовку формы анализируйте отдельно. Фиксируйте режим продукта, модель, регион Тверь, язык, наличие веб-поиска, время, полный ответ и проверенные источники. `pending` и «нет данных» не входят в знаменатель завершённых запросов. Историческую долю цитирования нельзя достроить поздними ответами.
