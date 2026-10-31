@@ -1,4 +1,4 @@
-import { SITE_CONFIG } from "@/lib/seo";
+import { SITE_CONFIG, BUSINESS_IDENTITY_TEXT } from "@/lib/seo";
 import { COMMERCIAL_TERMS, kitchenStyles, cities, blogPosts } from "@/lib/data";
 import { getPublishedPortfolioCases } from "@/lib/portfolio";
 
@@ -13,6 +13,8 @@ export function GET(): Response {
     "> Кухни по индивидуальным размерам в Твери и Тверской области. Публичные условия и способы обращения.",
     "",
     `Адрес: ${SITE_CONFIG.address.locality}, ${SITE_CONFIG.address.street}. Основной телефон: ${SITE_CONFIG.phone}. Max: ${SITE_CONFIG.maxPhone}. Контакты подтверждены ${SITE_CONFIG.contactsVerifiedAt}.`,
+    BUSINESS_IDENTITY_TEXT,
+    `[Карточка «${SITE_CONFIG.businessCard.name}»](${SITE_CONFIG.businessCard.url})`,
     "",
     COMMERCIAL_TERMS.pricingText,
     COMMERCIAL_TERMS.measurementText,
@@ -28,7 +30,7 @@ export function GET(): Response {
     link("Доставка и установка", "/dostavka", "условия по городам; дату согласуют после готовности кухни"),
     link("Вопросы и ответы", "/faq"),
     link("Получить предварительный расчёт", "/#quiz", "форма заявки; расчёт готовит специалист после уточнения комплектации"),
-    link("Идеи кухонь", "/portfolio", "дизайн-референсы; иллюстрации не подтверждают выполнение заказов"),
+    link("Фото и идеи кухонь", "/portfolio", "фото из карточки «Мебельщик» с источником и отдельная подборка дизайн-референсов"),
     "",
     "## Каталог направлений",
     ...kitchenStyles.map((style) => link(style.heading ?? style.name, `/catalog/${style.slug}`, "изготовление на заказ, индивидуальная смета")),

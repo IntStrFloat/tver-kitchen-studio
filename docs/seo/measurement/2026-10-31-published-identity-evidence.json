@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "observedAtUtc": "2026-10-31T07:45:16.207931+00:00",
+  "captureTimezone": "Europe/Moscow",
+  "auditDate": "2026-10-31",
+  "scope": "Bounded read-only verification of already-published business identity and address; no accounts, messages, record changes or inferred legal entity",
+  "status": "partial_confirmation_legal_entity_and_exact_building_unresolved",
+  "confirmedPublicBusinessFacts": {
+    "brand": "Kuhnitver",
+    "website": "https://kuhnitver.ru/",
+    "mainTelephone": "+74822477081",
+    "maxTelephone": "+79157220075",
+    "email": "m-btd@mail.ru",
+    "publishedAddressLiteral": "г. Тверь, ул. Николая Корыткова, 3 ст1",
+    "ownerSuppliedAddressLiteral": "Николая Корыткова 3 ст1, Тверь",
+    "businessCard": {
+      "name": "Мебельщик",
+      "id": "192529825516",
+      "url": "https://yandex.ru/maps/org/mebelshchik/192529825516/",
+      "publishedOldAddress": "Тверь, Авангардная улица, 25А, 170027",
+      "publishedMainTelephone": "+74822477081",
+      "publishedWebsite": "https://kuhnitver.ru/",
+      "ownerConfirmationContext": "Owner-confirmed card in the existing chat; no reauthentication attempted in this audit"
+    },
+    "brandCardRelationship": {
+      "status": "public_reciprocal_link_and_same_phone_observed",
+      "evidence": [
+        "The website contacts page links this exact existing Yandex card and explains its former address.",
+        "The public Yandex card points to kuhnitver.ru and displays the same owner-confirmed main telephone."
+      ],
+      "limits": "This supports the brand-to-card relationship, not a registered legal entity or a new building coordinate."
+    },
+    "sources": [
+      "S01",
+      "S02",
+      "S03"
+    ]
+  },
+  "legalExecutor": {
+    "status": "not_identified_from_reviewed_primary_publications",
+    "registeredLegalName": null,
+    "legalForm": null,
+    "inn": null,
+    "ogrnOrOgrnip": null,
+    "operatorIdentity": "The live privacy page names the Kuhnitver studio team and contact channels; a registered person/entity and tax/registration identifiers were not observed.",
+    "reviewedPrimarySources": [
+      "S01",
+      "S02",
+      "S03"
+    ],
+    "egrulOrEgripMatchAccepted": false,
+    "reasonNoRegistryIdentityAdopted": "No unique legal identifier or explicit first-party linkage from the domain/owned card to a registered executor was found. Similar business names, a matching area/address or a reused telephone are insufficient.",
+    "negativeInferenceProhibited": "This does not establish that the business is unregistered or that no identifying document exists elsewhere."
+  },
+  "addressVerification": {
+    "currentPublicationIsOwnerLiteral": true,
+    "officialStreetTypeSupported": "проспект",
+    "currentSiteStreetType": "улица (ул.)",
+    "garCandidate": {
+      "source": "S04",
+      "canonicalAddress": "Тверская область, г.о. город Тверь, г. Тверь, пр-кт Николая Корыткова, д. 3 к. 1",
+      "objectId": "20055174",
+      "fiasId": "28dfc8e4-7906-4e9f-85da-a025f9b0e55a",
+      "postalCode": "170024",
+      "recordStatus": "Актуальна",
+      "recordCreatedDate": "2012-08-30",
+      "recordUpdatedDate": "2023-09-23",
+      "street": "проспект Николая Корыткова",
+      "houseNumber": "3",
+      "corpus": "1",
+      "businessOccupancyVerified": false
+    },
+    "ordinarySearchInputsObserved": [
+      {
+        "input": "Тверская область, город Тверь, проспект Николая Корыткова, дом 3, строение 1",
+        "topBuildingSuggestion": "д. 3 к. 1"
+      },
+      {
+        "input": "Тверская область, город Тверь, проспект Николая Корыткова, дом 3/1",
+        "topBuildingSuggestion": "д. 3 к. 1"
+      }
+    ],
+    "exactEquivalenceOf3str1And3slash1And3corpus1Established": false,
+    "newBusinessCoordinatesVerified": false,
+    "safeInterpretation": "The official record establishes a currently valid address for house3 corpus1 and supports the avenue street type. Search autocomplete is not proof that the owner literal3str1, a map label3/1 and that corpus are the same business premises.",
+    "doNotPublishGarCandidatePostalCodeOrFiasIdAsBusinessConfirmed": true,
+    "sources": [
+      "S01",
+      "S03",
+      "S04"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "url": "https://kuhnitver.ru/contacts",
+      "publisher": "Kuhnitver",
+      "method": "Public web fetch",
+      "freshness": "Tool labels current crawl today; owner-confirmed corrected telephone and current address are visible",
+      "factsObserved": [
+        "Kuhnitver brand",
+        "Main +74822477081",
+        "Separate Max +79157220075",
+        "Current address literal with3str1",
+        "m-btd@mail.ru",
+        "Link to exact Мебельщик card192529825516 with a visible explanation of former address"
+      ],
+      "sourceIndependence": "Current business publication; it mirrors owner-provided facts and is not independent proof of legal registration or unit equivalence."
+    },
+    {
+      "id": "S02",
+      "url": "https://kuhnitver.ru/privacy",
+      "publisher": "Kuhnitver",
+      "method": "Fresh CUA public browser UI, no login",
+      "pageUpdatedDateDisplayed": "2026-10-30",
+      "factsObserved": [
+        "Requests go to the Kuhnitver studio team",
+        "Contact telephone/email/current address",
+        "No registered legal name, ИП/ООО form, INN or OGRN observed in this live page"
+      ],
+      "sourceIndependence": "Live current policy was read directly because the web fetch returned a stale historical copy."
+    },
+    {
+      "id": "S03",
+      "url": "https://yandex.ru/maps/org/mebelshchik/192529825516/",
+      "publisher": "Yandex Maps; existing owner-confirmed business card",
+      "method": "Public CUA UI overview and Подробнее об организации/features, without cabinet entry",
+      "factsObserved": [
+        "Name Мебельщик",
+        "Old Avangardnaya25А address",
+        "Main +74822477081 now visible publicly",
+        "Website kuhnitver.ru",
+        "Public features information contains business categories but no registered entity/INN/OGRN observed"
+      ],
+      "notAccessed": [
+        "Owner edit/cabinet controls",
+        "Private profile details",
+        "Social network links"
+      ]
+    },
+    {
+      "id": "S04",
+      "url": "https://fias.nalog.ru/Search/IndexWithPath?objectId=20055174&addressType=2&fullName=%D0%A2%D0%B2%D0%B5%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C%2C%20%D0%B3.%D0%BE.%20%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%20%D0%A2%D0%B2%D0%B5%D1%80%D1%8C%2C%20%D0%B3.%20%D0%A2%D0%B2%D0%B5%D1%80%D1%8C%2C%20%D0%BF%D1%80-%D0%BA%D1%82%20%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0%D1%8F%20%D0%9A%D0%BE%D1%80%D1%8B%D1%82%D0%BA%D0%BE%D0%B2%D0%B0%2C%20%D0%B4.%203%20%D0%BA.%201&path=1252720.95249381.1253106.1254601.20055174",
+      "publisher": "ФНС России, ФИАС / Государственный адресный реестр",
+      "method": "Public UI, Municipal division; automatic Moscow location filter reset; query, selected building candidate, Find, Детальная информация",
+      "factsObserved": [
+        "Canonical avenue address for house3 corpus1",
+        "Active GAR record objectId20055174",
+        "FIAS28dfc8e4-7906-4e9f-85da-a025f9b0e55a",
+        "Postal170024",
+        "Last record update2023-09-23"
+      ],
+      "limitations": [
+        "No statement about which company occupies the building.",
+        "Autocomplete suggestions are not exact alias or occupancy verification.",
+        "No apartment records or resident identities opened."
+      ]
+    },
+    {
+      "id": "S05",
+      "url": "https://kuhnitver.ru/privacy",
+      "publisher": "Kuhnitver, cached historical version",
+      "method": "Public web tool fetch",
+      "toolCrawlAgeLabel": "4 months ago",
+      "historicalPageUpdatedDate": "2026-06-14",
+      "status": "rejected_as_current_evidence",
+      "reason": "Cached copy showed old Kominterna95 and legacy telephone; the fresh native page differs. It disclosed only the brand, not sufficient registered identity."
+    },
+    {
+      "id": "S06",
+      "url": "https://kuhnitver.ru/about",
+      "publisher": "Kuhnitver, cached historical version",
+      "method": "Public web tool fetch",
+      "toolCrawlAgeLabel": "4 months ago",
+      "status": "rejected_as_current_evidence",
+      "reason": "Old contact variants and superseded claims were visible; no legal identity was adopted from this cache."
+    },
+    {
+      "id": "S07",
+      "url": "https://kanzoboz.ru/firms/?view=616491",
+      "publisher": "КанцОбоз, secondary business directory",
+      "method": "Search result snippet only",
+      "primary": false,
+      "usedToIdentifyExecutor": false,
+      "unconfirmedCandidateName": "ООО Умный Офис",
+      "matchingHint": "The same landline appeared with the former avenue name and house3, office106а.",
+      "candidateWebsiteAsListed": "www.wise-office.ru",
+      "candidateWebsiteCheck": "https://www.wise-office.ru/ was not accessible via the web tool; no VK or other proxy workaround used.",
+      "reasonRejected": "No explicit primary link from Kuhnitver or the owned card, and no matching Max/domain publication was verified. A telephone/address coincidence is insufficient; directory tax identifiers were not transferred."
+    }
+  ],
+  "searchLog": [
+    {
+      "query": "site:kuhnitver.ru (ИНН OR ОГРН OR реквизиты OR \"ИП\" OR \"ООО\")",
+      "result": "No decisive registration identity found in the returned results; search absence is not proof of absence."
+    },
+    {
+      "query": "\"79157220075\" Тверь (мебель OR ИНН OR ОГРН) -site:vk.com -site:vk.ru",
+      "result": "No decisive independent primary identity returned."
+    },
+    {
+      "query": "\"Николая Корыткова\" \"строение 1\" Тверь мебель -site:vk.com -site:vk.ru",
+      "result": "Unrelated businesses/documents returned; no registration identifiers adopted."
+    },
+    {
+      "query": "site:fias.nalog.ru \"Корыткова\" \"Тверь\"",
+      "result": "No decisive indexed record; used official public FIAS UI instead."
+    },
+    {
+      "query": "\"47-70-81\" \"Тверь\" мебель -site:vk.com -site:vk.ru -site:vkvideo.ru",
+      "result": "Secondary-directory candidate S07 found and explicitly rejected as an executor identification."
+    }
+  ],
+  "notEstablished": [
+    "Registered contracting executor and personal-data operator",
+    "INN/OGRN/OGRNIP of Kuhnitver",
+    "Exact equivalence or occupancy for3str1,3/1 and3corpus1",
+    "Coordinates and confirmed postal code of the new business premises"
+  ],
+  "actions": {
+    "siteOrServerChanged": false,
+    "cabinetChanged": false,
+    "loginPerformed": false,
+    "accountCreated": false,
+    "messageSent": false,
+    "captchaSolved": false,
+    "vkDirectApiOrSearchCacheAccessed": false,
+    "otherSharedDocumentsChanged": false,
+    "aiAnswersUsedForTaxIdentifiers": false
+  },
+  "recommendationsForRoot": [
+    "Use current published phones, Max, email and visible brand-card relationship as verified public business information.",
+    "Street type can be checked against the official avenue record; keep the building literal unresolved rather than silently changing it to a different unit.",
+    "Do not invent or import legal requisites from similarly named, nearby or telephone-matching entities.",
+    "Do not treat historical web caches or official address existence as proof of a registered contracting executor."
+  ]
+}

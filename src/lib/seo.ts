@@ -8,7 +8,7 @@ export const SITE_CONFIG = {
   titleTemplate: "%s | Kuhnitver",
   defaultDescription:
     "Кухни на заказ в Твери от Kuhnitver. Планировки, материалы, индивидуальная комплектация и расчёт по размерам. Условия замера, изготовления, доставки и установки согласуются до заказа.",
-  defaultOgImage: "https://kuhnitver.ru/og-image-20261030.jpg",
+  defaultOgImage: "https://kuhnitver.ru/og-image-20261031.jpg",
   locale: "ru_RU",
   language: "ru",
   phone: "+7 (4822) 47-70-81",
@@ -18,14 +18,15 @@ export const SITE_CONFIG = {
   maxPhoneClean: "+79157220075",
   email: "m-btd@mail.ru",
   address: {
-    street: "ул. Николая Корыткова, 3 ст1",
+    street: "проспект Николая Корыткова, 3 ст1",
     venue: "",
     locality: "Тверь",
     region: "Тверская область",
     country: "RU",
   },
-  // Телефоны и адрес подтверждены владельцем в чате 30.10.2026.
-  contactsVerifiedAt: "2026-10-30",
+  // Телефоны и обозначение здания — ответ владельца 30.10.2026.
+  // Тип «проспект» уточнён 31.10.2026 по ГАР; 3 ст1 не подменяется на 3 к1.
+  contactsVerifiedAt: "2026-10-31",
   businessCard: {
     name: "Мебельщик",
     url: "https://yandex.ru/maps/org/192529825516/",
@@ -47,6 +48,10 @@ export const SITE_CONFIG = {
     // Показываем maxPhone текстом + tel:, без deep-link. См. также maxPhone.
   },
 } as const;
+
+// Связь подтверждается ответом владельца и взаимными опубликованными ссылками.
+// Это связь сайта с карточкой студии, а не заявление о юридическом наименовании.
+export const BUSINESS_IDENTITY_TEXT = `${SITE_CONFIG.name} — сайт студии кухонь в Твери. «${SITE_CONFIG.businessCard.name}» — название карточки этой же студии в Яндекс Картах. В карточке указаны наш сайт ${new URL(SITE_CONFIG.url).hostname} и основной телефон ${SITE_CONFIG.phone}. Там может оставаться адрес до переезда; для визита используйте ${SITE_CONFIG.address.locality}, ${SITE_CONFIG.address.street} и предварительно свяжитесь с нами.`;
 
 export function formatTitleWithBrand(title: string): string {
   const titleWithoutBrand = title

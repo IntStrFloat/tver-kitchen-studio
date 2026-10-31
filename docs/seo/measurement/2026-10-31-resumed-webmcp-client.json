@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-31T07:46:50.480Z",
+  "pageUrl": "https://kuhnitver.ru/contacts",
+  "origin": "https://kuhnitver.ru",
+  "status": "limited_native_client_api_unavailable",
+  "probe": {
+    "transport": "CUA tab-scoped native CDP capability",
+    "command": "Runtime.evaluate",
+    "readonlyDomFacadeUsed": false,
+    "returnByValue": true,
+    "awaitPromise": true,
+    "mainOriginOnly": true,
+    "crossOriginTargetsUsed": false
+  },
+  "result": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "secureContext": true,
+    "documentModelContextType": "undefined",
+    "navigatorModelContextType": "undefined"
+  },
+  "nativeClientApiExposed": false,
+  "toolsEnumeration": {
+    "attempted": false,
+    "registeredToolNames": null,
+    "reason": "Оба native API отсутствуют в текущем HTTPS-контексте клиента."
+  },
+  "readOnlyToolCallsPerformed": [],
+  "publishedFactComparison": {
+    "performed": false,
+    "reason": "getTools и вызовы инструментов не выполнялись при отсутствии native API."
+  },
+  "browserFlagsChanged": false,
+  "profileChanged": false,
+  "extensionsInstalled": false,
+  "polyfillUsed": false,
+  "pageOrSiteCodeModified": false,
+  "crossOriginActionsPerformed": false,
+  "formPostsPerformed": false,
+  "realLeadsSubmitted": false,
+  "ownedProbeTabClosed": true,
+  "notes": [
+    "Это ограничение экспонирования API в текущем Chrome 156, а не доказательство ошибки кода регистрации на сайте.",
+    "Не использовались имитация API, deprecated JSON-string calls, скрытые клиентские данные или изменение флагов.",
+    "Официальная imperative API документация и object-input calls требовались только в ветке с доступным native API; эта ветка не наступила."
+  ]
+}

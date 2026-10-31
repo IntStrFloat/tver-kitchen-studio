@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-31",
+  "source": "Owner reply in this chat after the blocked audit",
+  "instructions": {
+    "bing": "На Bing пофиг пока - продолжай по другим.",
+    "ga4Cabinet": "Скип",
+    "otherWork": "По остальным - пользуйся уже опубликованной информацией"
+  },
+  "postponedByOwner": [
+    "Bing Webmaster Tools account setup and AI Performance report",
+    "GA4 cabinet/property verification and key-event configuration"
+  ],
+  "kept": [
+    "Existing frontend GA4 tag/events and both Metrika counters",
+    "Existing IndexNow notifications independent from Bing account login",
+    "All remaining site and integration work that can be supported by published information"
+  ],
+  "publishedEvidencePolicy": [
+    "Use primary published business/official sources and existing owner-confirmed values.",
+    "Do not derive a legal executor from a similar name or a reused telephone.",
+    "Do not turn an old advertised product price into a completed-project estimate.",
+    "Keep unproven project measurements, materials, dates, costs and image authorship unspecified.",
+    "Do not request new case/requisite data as a prerequisite for the current published-source pass."
+  ],
+  "notAuthorizedByThisReply": [
+    "New account ownership or broader security-sensitive access without the separately required action-time confirmation",
+    "Bypassing the existing VK safety restriction",
+    "Declaring unpublished project/requisite facts or unverified private settings as completed"
+  ],
+  "historicalBlockedAuditPreserved": "2026-10-31-blocked-audit.json",
+  "currentDisposition": "Resumed work with explicit Bing/GA4 postponements and published-source constraint; prior missing-data requests are not repeated."
+}

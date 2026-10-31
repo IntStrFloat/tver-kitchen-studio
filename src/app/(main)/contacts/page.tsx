@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
-import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
+import { SITE_CONFIG, BUSINESS_IDENTITY_TEXT, generateWebPageSchema } from "@/lib/seo";
 import { cities, COMMERCIAL_TERMS } from "@/lib/data";
 
 export const metadata: Metadata = {
@@ -305,9 +305,8 @@ export default function ContactsPage() {
             и найдите нас в приложении.
           </p>
           <p>
-            Kuhnitver — сайт студии кухонь. В Яндекс Бизнесе наша существующая карточка называется{" "}
-            <a href={SITE_CONFIG.businessCard.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">«{SITE_CONFIG.businessCard.name}»</a>.
-            В ней может отображаться адрес до переезда; для визита используйте действующий адрес на этой странице и предварительно свяжитесь с нами.
+            {BUSINESS_IDENTITY_TEXT}{" "}
+            <a href={SITE_CONFIG.businessCard.url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Открыть карточку «{SITE_CONFIG.businessCard.name}»</a>.
           </p>
         </section>
       </div>

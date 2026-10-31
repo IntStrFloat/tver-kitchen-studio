@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { SITE_CONFIG } from "@/lib/seo";
+import { SITE_CONFIG, BUSINESS_IDENTITY_TEXT } from "@/lib/seo";
 import { cities, kitchenStyles, COMMERCIAL_TERMS } from "@/lib/data";
 
 type Tool = {
@@ -33,6 +33,9 @@ export function getBrowserTools(): Tool[] {
         if (!validInput(input, [])) return { error: "Этот инструмент не принимает параметры." };
         return {
           name: SITE_CONFIG.name,
+          alternate_name: SITE_CONFIG.businessCard.name,
+          business_card_url: SITE_CONFIG.businessCard.url,
+          identity: BUSINESS_IDENTITY_TEXT,
           phone: SITE_CONFIG.phone,
           messenger_phone: SITE_CONFIG.maxPhone,
           email: SITE_CONFIG.email,

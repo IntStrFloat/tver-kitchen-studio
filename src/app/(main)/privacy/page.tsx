@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 };
 
 const phoneDisplay = SITE_CONFIG.phone.replace(/-/g, " ");
-const lastUpdated = "30 октября 2026 года";
+const lastUpdated = "31 октября 2026 года";
 
 export default function PrivacyPage() {
   return (

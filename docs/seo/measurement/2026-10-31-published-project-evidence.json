@@ -1,0 +1,450 @@
+{
+  "research": "Опубликованные материалы проектов и смет Kuhnitver",
+  "date_local": "2026-10-31",
+  "task_scope": "Проверить, достаточно ли уже опубликованных первичных материалов для 3–5 реальных кейсов и 3 фактических смет; сохранить факты и пробелы без выдумывания.",
+  "method": {
+    "ui": "CUA browser UI, публичные страницы",
+    "web": "Поиск публичных независимых результатов для обнаружения и проверки связи профилей",
+    "business_identity_keys": [
+      "kuhnitver.ru",
+      "+74822477081",
+      "+79157220075"
+    ],
+    "account_changes": false,
+    "new_accounts": false,
+    "messages_or_contact_submissions": false,
+    "private_cabinets_read": false,
+    "vk_accessed": false,
+    "vk_api_cache_or_other_browser_bypass_used": false,
+    "ai_answers_used_as_evidence": false,
+    "client_contacts_or_addresses_recorded": false,
+    "full_personal_reviews_recorded": false,
+    "source_or_manifest_modified": false,
+    "downloaded_media_files": false,
+    "ui_account_owner_inferred_from_name": false
+  },
+  "timing": {
+    "start_utc": "2026-10-31T07:33:56Z",
+    "end_utc": "2026-10-31T07:43:07Z",
+    "elapsed_seconds_measured": 551,
+    "clock_source": "clock.curr_time",
+    "resolution_seconds": 1,
+    "scope": "От начала исследования до завершения уточнения источников, пиксельных размеров и сопоставления товарного фото; финальная сериализация и проверка JSON не включены."
+  },
+  "conclusion": {
+    "complete_factual_project_cases_ready": 0,
+    "complete_actual_estimates_ready": 0,
+    "photo_candidates_recorded": 5,
+    "advertised_product_prices_found": 1,
+    "can_build_3_to_5_complete_cases_from_verified_published_facts": false,
+    "can_build_3_actual_estimates_from_verified_published_facts": false,
+    "summary": "В Яндекс-карточке есть фотографии кухонь и один товар «Кухня» за 110000 ₽. Этого достаточно для списка фото-кандидатов, но не для подтверждённых кейсов с размерами, материалами, фактической стоимостью, датой сдачи и сроками. Текущий сайт прямо обозначает изображения как дизайн-референсы и объясняет индивидуальный расчёт.",
+    "scope_of_negative_result": "Не найдено в просмотренных разрешённых публичных источниках; это не утверждение, что у компании отсутствуют реальные заказы, сметы или архивы.",
+    "confirmed_organization_representative_product_photo_records": 1,
+    "unverified_role_gallery_photo_candidates": 4,
+    "confirmed_visitor_photo_records": 0,
+    "confirmed_visitor_photo_records_note": "Роль посетителя также не установлена: отсутствие отметки представителя не доказывает, что автор является клиентом.",
+    "eligible_for_website_provenance_gallery_now": 1,
+    "eligible_gallery_scope": "Одна запись старого товара с явным источником «Представитель организации»; без заявления о завершённом заказе и без актуального тарифа."
+  },
+  "identity_verification": {
+    "profile_url": "https://yandex.com/maps/org/mebelshchik/192529825516/",
+    "profile_name": "Мебельщик",
+    "current_public_card_phone": "+7 (4822) 47-70-81",
+    "current_public_card_website": "https://kuhnitver.ru/",
+    "linkage": "В текущем публичном интерфейсе Яндекс-карточки видны одновременно kuhnitver.ru и подтверждённый основной телефон +74822477081.",
+    "cached_search_difference": "Поисковый результат Яндекса был помечен как полученный 2 месяца назад и показывал +7 (915) 722-00-75. Для текущей связи использован прямой просмотр публичной карточки через CUA.",
+    "business_address_note": "Адрес в карточке относится к организации и может быть прежним; он не используется как адрес клиента или место исполнения выбранных кухонь."
+  },
+  "site_sources": [
+    {
+      "url": "https://kuhnitver.ru/",
+      "observation": "Блок стилей прямо называет изображения дизайн-референсами; индивидуальная комплектация и смета согласуются до заказа.",
+      "supplies_actual_project_evidence": false
+    },
+    {
+      "url": "https://kuhnitver.ru/portfolio",
+      "observed_title": "Стилевые решения и идеи для кухонь",
+      "evidence_quote": "На странице — дизайн-референсы популярных стилей",
+      "observation": "Шесть стилевых карточек ведут на каталог. В просмотренном содержимом нет индивидуальных объектов, размеров, итоговой цены заказа или даты сдачи.",
+      "supplies_actual_project_evidence": false
+    },
+    {
+      "url": "https://kuhnitver.ru/catalog",
+      "evidence_quote": "На изображениях — дизайн-референсы.",
+      "observation": "Семь направлений, материалы и механизмы приведены как варианты каталога. Эти перечни нельзя переносить на конкретные фотографии из Яндекс-карточки.",
+      "supplies_actual_project_evidence": false
+    },
+    {
+      "url": "https://kuhnitver.ru/price",
+      "observed_title": "Цены на кухни на заказ в Твери — состав сметы",
+      "displayed_update_date": "2026-10-30",
+      "observation": "В таблицах стоят «Индивидуальный расчёт», «По размерам и комплектации» и аналогичные условия. Есть структура полной сметы, но нет трёх рассчитанных заказов с суммами.",
+      "supplies_actual_estimate_evidence": false
+    },
+    {
+      "url": "https://kuhnitver.ru/blog/skolko-stoit-kuhnya-na-zakaz-2026",
+      "displayed_update_date": "2026-10-30",
+      "evidence_quote": "Это способ сравнения состава заказа, а не цены выполненных объектов.",
+      "observation": "Три варианта — базовый, с дополнительными ящиками, с другой отделкой — описывают способ сравнения одной планировки. Числовых сумм и фактических заказов в просмотренной статье нет.",
+      "supplies_actual_estimate_evidence": false
+    },
+    {
+      "url": "https://kuhnitver.ru/blog",
+      "observation": "Просмотренный список содержит десять общих руководств о выборе, материалах, стоимости, планировке, замере, столешницах, дизайне и сроках; отдельных историй выполненных заказов в списке не обнаружено.",
+      "supplies_actual_project_evidence": false
+    }
+  ],
+  "yandex_sources": {
+    "overview_url": "https://yandex.com/maps/org/mebelshchik/192529825516/",
+    "products_url": "https://yandex.com/maps/org/mebelshchik/192529825516/prices/",
+    "gallery_url": "https://yandex.com/maps/org/mebelshchik/192529825516/gallery/",
+    "gallery_count_displayed": 30,
+    "gallery_scope": "Галерея содержит кухни и другую мебель; просмотрены миниатюры и семь отдельных фото, включая сопоставление товарного изображения с фото14. Четыре самостоятельных фото-кандидата имеют неподтверждённую роль автора.",
+    "product_count_observed": 1,
+    "review_handling": "Наличие одного отзыва замечено, но его текст, имя автора и личный профиль в отчёт не скопированы. Отзыв не использован как подтверждение стоимости, размеров, сроков или даты заказа.",
+    "inspected_gallery_positions": [
+      2,
+      7,
+      9,
+      14,
+      19,
+      25,
+      26
+    ]
+  },
+  "project_candidates": [
+    {
+      "id": "Y-PRODUCT-110000",
+      "title": "Товар «Кухня» с тёмными рамочными фасадами",
+      "status": "Опубликованное товарное предложение с фото; фактический выполненный заказ и смета не подтверждены",
+      "source_url": "https://yandex.com/maps/org/mebelshchik/192529825516/prices/",
+      "image_url": "https://avatars.mds.yandex.net/get-sprav-products/9495815/2a0000018ccfa9d6fc34ee5d03ff07932544/orig",
+      "published_product_name": "Кухня",
+      "published_listing_price_rub": 110000,
+      "published_price_type": "Цена товара в Яндекс-карточке, не доказанная итоговая сумма заказа",
+      "source_label": "Давно не обновлялось. Источник: Представитель организации",
+      "price_date": null,
+      "current_price_confirmed": false,
+      "actual_order_price_rub": null,
+      "real_completed_order_confirmed": false,
+      "visual_observation": "На фото виден установленный гарнитур с тёмными рамочными фасадами, светлой рабочей поверхностью и верхними секциями с остеклением.",
+      "visual_observation_is_inference": true,
+      "dimensions": null,
+      "exact_materials": null,
+      "completion_date": null,
+      "actual_production_or_installation_duration": null,
+      "missing": [
+        "Подтверждённая привязка фотографии к конкретному выполненному заказу Kuhnitver",
+        "Размеры и схема кухни",
+        "Точная спецификация корпуса, фасадов, столешницы и фурнитуры",
+        "Фактическая итоговая стоимость и состав включённых работ",
+        "Дата завершения/сдачи заказа",
+        "Фактические даты начала и окончания либо продолжительность изготовления и монтажа"
+      ],
+      "publish_as_completed_project_now": false,
+      "image_dimensions_px": {
+        "width": 646,
+        "height": 807
+      },
+      "image_dimensions_source": "Read-only DOM image.naturalWidth/image.naturalHeight for the displayed URL; these are pixels, not kitchen dimensions.",
+      "image_alt": "Фотография",
+      "client_address_known": false,
+      "provenance_category": "confirmed_organization_representative_product_listing",
+      "organization_representative_source_explicit": true,
+      "available_caption": "Кухня 110000 ₽ Давно не обновлялось. Источник: Представитель организации",
+      "eligible_for_website_provenance_gallery": true,
+      "website_label_requirement": "Старое опубликованное товарное предложение; цена не подтверждена как текущая или фактическая сумма заказа.",
+      "source_page_url": "https://yandex.com/maps/org/mebelshchik/192529825516/prices/"
+    },
+    {
+      "id": "Y-PHOTO-02",
+      "status": "Фото-кандидат; опубликованный полный кейс не подтверждён",
+      "title": "Угловая кухня с белыми верхними и голубовато-серыми нижними фасадами",
+      "source_url": "https://yandex.com/maps/org/mebelshchik/192529825516/gallery/?ll=35.875628%2C56.833093&photos%5Bbusiness%5D=192529825516&photos%5Bid%5D=urn%3Ayandex%3Asprav%3Aphoto%3A2a00000196b9ecc1ef14f9ce93d671b94bd2&z=14",
+      "image_url": "https://avatars.mds.yandex.net/get-altay/14868744/2a00000196b9ecc1ef14f9ce93d671b94bd2/XXXL",
+      "observed_gallery_position": 2,
+      "public_photo_month": "2025-05",
+      "public_photo_month_meaning": "Интерфейс показывает «Май 2025»; это дата публикации фото, не доказанная дата изготовления или сдачи кухни.",
+      "source_role": "Фото размещено в публичной галерее принадлежащей владельцу карточки. В просмотренном фото указан пользователь-автор, но его роль представителя компании не подтверждена.",
+      "visual_observation": "На фото видна Г-образная кухня в используемом помещении, белые верхние и голубовато-серые нижние фасады с рельефным рисунком и ручками. По фото нельзя установить материал или марку.",
+      "visual_observation_is_inference": true,
+      "real_completed_order_confirmed": false,
+      "dimensions": null,
+      "exact_materials": null,
+      "actual_order_price_rub": null,
+      "completion_date": null,
+      "actual_production_or_installation_duration": null,
+      "missing": [
+        "Подтверждённая привязка фотографии к конкретному выполненному заказу Kuhnitver",
+        "Размеры и схема кухни",
+        "Точная спецификация корпуса, фасадов, столешницы и фурнитуры",
+        "Фактическая итоговая стоимость и состав включённых работ",
+        "Дата завершения/сдачи заказа",
+        "Фактические даты начала и окончания либо продолжительность изготовления и монтажа"
+      ],
+      "publish_as_completed_project_now": false,
+      "image_dimensions_px": {
+        "width": 960,
+        "height": 1280
+      },
+      "image_dimensions_source": "Read-only DOM image.naturalWidth/image.naturalHeight for the displayed URL; these are pixels, not kitchen dimensions.",
+      "image_alt": "Фотография",
+      "client_address_known": false,
+      "provenance_category": "public_user_upload_role_unverified",
+      "organization_representative_source_explicit": false,
+      "public_author_display_label": "Дмитрий Б.",
+      "available_caption": "Авангардная ул., 25А, Тверь",
+      "caption_meaning": "Адрес самой организации в карточке; не опубликованный адрес объекта или клиента.",
+      "owner_authorship_confirmed": false,
+      "eligible_for_website_provenance_gallery": false,
+      "website_publication_blocker": "В просмотренном UI нет явной отметки владельца/представителя; имя/инициал не доказывают роль автора.",
+      "source_page_url": "https://yandex.com/maps/org/mebelshchik/192529825516/gallery/?ll=35.875628%2C56.833093&photos%5Bbusiness%5D=192529825516&photos%5Bid%5D=urn%3Ayandex%3Asprav%3Aphoto%3A2a00000196b9ecc1ef14f9ce93d671b94bd2&z=14"
+    },
+    {
+      "id": "Y-PHOTO-07",
+      "status": "Фото-кандидат; опубликованный полный кейс не подтверждён",
+      "title": "Светлая прямая кухня с пеналом",
+      "source_url": "https://yandex.com/maps/org/mebelshchik/192529825516/gallery/?ll=35.875628%2C56.833093&photos%5Bbusiness%5D=192529825516&photos%5Bid%5D=urn%3Ayandex%3Asprav%3Aphoto%3A2a00000196b9ecc98166d1c6b4eb63f81204&z=14",
+      "image_url": "https://avatars.mds.yandex.net/get-altay/14398723/2a00000196b9ecc98166d1c6b4eb63f81204/XXXL",
+      "observed_gallery_position": 7,
+      "public_photo_month": "2025-05",
+      "public_photo_month_meaning": "Интерфейс показывает «Май 2025»; это дата публикации фото, не доказанная дата изготовления или сдачи кухни.",
+      "source_role": "Фото размещено в публичной галерее принадлежащей владельцу карточки. В просмотренном фото указан пользователь-автор, но его роль представителя компании не подтверждена.",
+      "visual_observation": "На фото виден светлый прямой гарнитур с рамочными фасадами, верхними секциями и пеналом со встроенными приборами. Размеры и материал не опубликованы.",
+      "visual_observation_is_inference": true,
+      "real_completed_order_confirmed": false,
+      "dimensions": null,
+      "exact_materials": null,
+      "actual_order_price_rub": null,
+      "completion_date": null,
+      "actual_production_or_installation_duration": null,
+      "missing": [
+        "Подтверждённая привязка фотографии к конкретному выполненному заказу Kuhnitver",
+        "Размеры и схема кухни",
+        "Точная спецификация корпуса, фасадов, столешницы и фурнитуры",
+        "Фактическая итоговая стоимость и состав включённых работ",
+        "Дата завершения/сдачи заказа",
+        "Фактические даты начала и окончания либо продолжительность изготовления и монтажа"
+      ],
+      "publish_as_completed_project_now": false,
+      "image_dimensions_px": {
+        "width": 960,
+        "height": 1280
+      },
+      "image_dimensions_source": "Read-only DOM image.naturalWidth/image.naturalHeight for the displayed URL; these are pixels, not kitchen dimensions.",
+      "image_alt": "Фотография",
+      "client_address_known": false,
+      "provenance_category": "public_user_upload_role_unverified",
+      "organization_representative_source_explicit": false,
+      "public_author_display_label": "Дмитрий Б.",
+      "available_caption": "Авангардная ул., 25А, Тверь",
+      "caption_meaning": "Адрес самой организации в карточке; не опубликованный адрес объекта или клиента.",
+      "owner_authorship_confirmed": false,
+      "eligible_for_website_provenance_gallery": false,
+      "website_publication_blocker": "В просмотренном UI нет явной отметки владельца/представителя; имя/инициал не доказывают роль автора.",
+      "source_page_url": "https://yandex.com/maps/org/mebelshchik/192529825516/gallery/?ll=35.875628%2C56.833093&photos%5Bbusiness%5D=192529825516&photos%5Bid%5D=urn%3Ayandex%3Asprav%3Aphoto%3A2a00000196b9ecc98166d1c6b4eb63f81204&z=14"
+    },
+    {
+      "id": "Y-PHOTO-25",
+      "status": "Фото-кандидат; опубликованный полный кейс не подтверждён",
+      "title": "Кухня со светлыми верхними и серыми нижними фасадами",
+      "source_url": "https://yandex.com/maps/org/mebelshchik/192529825516/gallery/?ll=35.875628%2C56.833093&photos%5Bbusiness%5D=192529825516&photos%5Bid%5D=urn%3Ayandex%3Asprav%3Aphoto%3A2a00000196b9ecc5c985a4b70e909f63dc74&z=14",
+      "image_url": "https://avatars.mds.yandex.net/get-altay/14506105/2a00000196b9ecc5c985a4b70e909f63dc74/XXXL",
+      "observed_gallery_position": 25,
+      "public_photo_month": "2025-05",
+      "public_photo_month_meaning": "Интерфейс показывает «Май 2025»; это дата публикации фото, не доказанная дата изготовления или сдачи кухни.",
+      "source_role": "Фото размещено в публичной галерее принадлежащей владельцу карточки. В просмотренном фото указан пользователь-автор, но его роль представителя компании не подтверждена.",
+      "visual_observation": "На фото виден установленный гарнитур со светлыми верхними, серыми нижними и антресольными секциями, рабочей поверхностью и панелью с прожилками. Есть открытая ниша прибора и незавершённые розеточные точки; завершение заказа по фото не подтверждается.",
+      "visual_observation_is_inference": true,
+      "real_completed_order_confirmed": false,
+      "dimensions": null,
+      "exact_materials": null,
+      "actual_order_price_rub": null,
+      "completion_date": null,
+      "actual_production_or_installation_duration": null,
+      "missing": [
+        "Подтверждённая привязка фотографии к конкретному выполненному заказу Kuhnitver",
+        "Размеры и схема кухни",
+        "Точная спецификация корпуса, фасадов, столешницы и фурнитуры",
+        "Фактическая итоговая стоимость и состав включённых работ",
+        "Дата завершения/сдачи заказа",
+        "Фактические даты начала и окончания либо продолжительность изготовления и монтажа"
+      ],
+      "publish_as_completed_project_now": false,
+      "image_dimensions_px": {
+        "width": 960,
+        "height": 1280
+      },
+      "image_dimensions_source": "Read-only DOM image.naturalWidth/image.naturalHeight for the displayed URL; these are pixels, not kitchen dimensions.",
+      "image_alt": "Фотография",
+      "client_address_known": false,
+      "provenance_category": "public_user_upload_role_unverified",
+      "organization_representative_source_explicit": false,
+      "public_author_display_label": "Дмитрий Б.",
+      "available_caption": "Авангардная ул., 25А, Тверь",
+      "caption_meaning": "Адрес самой организации в карточке; не опубликованный адрес объекта или клиента.",
+      "owner_authorship_confirmed": false,
+      "eligible_for_website_provenance_gallery": false,
+      "website_publication_blocker": "В просмотренном UI нет явной отметки владельца/представителя; имя/инициал не доказывают роль автора.",
+      "source_page_url": "https://yandex.com/maps/org/mebelshchik/192529825516/gallery/?ll=35.875628%2C56.833093&photos%5Bbusiness%5D=192529825516&photos%5Bid%5D=urn%3Ayandex%3Asprav%3Aphoto%3A2a00000196b9ecc5c985a4b70e909f63dc74&z=14"
+    },
+    {
+      "id": "Y-PHOTO-19",
+      "status": "Фото-кандидат; опубликованный полный кейс не подтверждён",
+      "title": "Угловая кухня со светлыми верхними и тёмными нижними фасадами",
+      "source_url": "https://yandex.com/maps/org/mebelshchik/192529825516/gallery/?ll=35.875628%2C56.833093&photos%5Bbusiness%5D=192529825516&photos%5Bid%5D=urn%3Ayandex%3Asprav%3Aphoto%3A2a00000196b9ecc761f296469d56d4226e4d&z=14",
+      "image_url": "https://avatars.mds.yandex.net/get-altay/15278128/2a00000196b9ecc761f296469d56d4226e4d/XXXL",
+      "observed_gallery_position": 19,
+      "public_photo_month": "2025-05",
+      "public_photo_month_meaning": "Интерфейс показывает «Май 2025»; это дата публикации фото, не доказанная дата изготовления или сдачи кухни.",
+      "source_role": "Фото размещено в публичной галерее принадлежащей владельцу карточки. В просмотренном фото указан пользователь-автор, но его роль представителя компании не подтверждена.",
+      "visual_observation": "На фото виден Г-образный гарнитур со светлыми верхними фасадами с древесным рисунком, тёмными нижними фасадами и антресольным рядом. Рисунок и внешний вид не доказывают материал.",
+      "visual_observation_is_inference": true,
+      "real_completed_order_confirmed": false,
+      "dimensions": null,
+      "exact_materials": null,
+      "actual_order_price_rub": null,
+      "completion_date": null,
+      "actual_production_or_installation_duration": null,
+      "missing": [
+        "Подтверждённая привязка фотографии к конкретному выполненному заказу Kuhnitver",
+        "Размеры и схема кухни",
+        "Точная спецификация корпуса, фасадов, столешницы и фурнитуры",
+        "Фактическая итоговая стоимость и состав включённых работ",
+        "Дата завершения/сдачи заказа",
+        "Фактические даты начала и окончания либо продолжительность изготовления и монтажа"
+      ],
+      "publish_as_completed_project_now": false,
+      "image_dimensions_px": {
+        "width": 1280,
+        "height": 960
+      },
+      "image_dimensions_source": "Read-only DOM image.naturalWidth/image.naturalHeight for the displayed URL; these are pixels, not kitchen dimensions.",
+      "image_alt": "Фотография",
+      "client_address_known": false,
+      "provenance_category": "public_user_upload_role_unverified",
+      "organization_representative_source_explicit": false,
+      "public_author_display_label": "Дмитрий Б.",
+      "available_caption": "Авангардная ул., 25А, Тверь",
+      "caption_meaning": "Адрес самой организации в карточке; не опубликованный адрес объекта или клиента.",
+      "owner_authorship_confirmed": false,
+      "eligible_for_website_provenance_gallery": false,
+      "website_publication_blocker": "В просмотренном UI нет явной отметки владельца/представителя; имя/инициал не доказывают роль автора.",
+      "source_page_url": "https://yandex.com/maps/org/mebelshchik/192529825516/gallery/?ll=35.875628%2C56.833093&photos%5Bbusiness%5D=192529825516&photos%5Bid%5D=urn%3Ayandex%3Asprav%3Aphoto%3A2a00000196b9ecc761f296469d56d4226e4d&z=14"
+    }
+  ],
+  "rejected_or_non_case_samples": [
+    {
+      "source_url": "https://yandex.com/maps/org/mebelshchik/192529825516/gallery/?ll=35.875628%2C56.833093&photos%5Bbusiness%5D=192529825516&photos%5Bid%5D=urn%3Ayandex%3Asprav%3Aphoto%3A2a00000196b9eaf27457c9aae9b86e0572df&z=14",
+      "observed_gallery_position": 9,
+      "observation": "Светлая угловая кухня в аккуратно оформленной композиции.",
+      "reason": "Происхождение изображения и реальность заказа не подтверждены подписью. Возможная визуализация не принята за выполненный объект.",
+      "treated_as_real_order": false
+    },
+    {
+      "source_url": "https://yandex.com/maps/org/mebelshchik/192529825516/gallery/?ll=35.875628%2C56.833093&photos%5Bbusiness%5D=192529825516&photos%5Bid%5D=urn%3Ayandex%3Asprav%3Aphoto%3A2a00000196b9ecc9ec6f3eb2655b1e499768&z=14",
+      "observed_gallery_position": 26,
+      "observation": "Отдельный шкаф/тумба с закрытыми и остеклёнными секциями.",
+      "reason": "Это не кухонный гарнитур; не включён в список кухонных кейсов.",
+      "treated_as_kitchen_case": false
+    },
+    {
+      "source_urls": [
+        "https://kuhnitver.ru/portfolio",
+        "https://kuhnitver.ru/catalog",
+        "https://kuhnitver.ru/price"
+      ],
+      "reason": "Старые примерные диапазоны и изображения стилевых/3D-референсов не приняты за фактические суммы заказов. Текущие страницы явно говорят об индивидуальном расчёте и дизайн-референсах."
+    }
+  ],
+  "independent_discovery": {
+    "queries": [
+      "\"kuhnitver.ru\" -site:vk.com -site:vk.ru",
+      "\"74822477081\" OR \"4822 47-70-81\" кухни -site:vk.com -site:vk.ru",
+      "\"79157220075\" OR \"915 722 00 75\" кухня -site:vk.com -site:vk.ru",
+      "site:kuhnitver.ru (портфолио OR \"наши работы\" OR \"проект\" OR \"смета\") -site:vk.com -site:vk.ru",
+      "\"Мебельщик\" \"Тверь\" \"47-70-81\" -site:vk.com -site:vk.ru"
+    ],
+    "useful_primary_profile_found": "https://yandex.com/maps/org/mebelshchik/192529825516/",
+    "other_reliably_linked_permitted_primary_profiles_found": [],
+    "rejected_results": "Нерелевантные телефонные/имущественные агрегаторы не открывались и не использовались.",
+    "vk_handling": "VK полностью исключён по ранее установленному safety block. Обнаруженные ссылки VK не открывались; API, другой браузер и search-cache для VK не использовались."
+  },
+  "actionable_use_of_existing_data": {
+    "can_use_now": [
+      "Одну явно атрибутированную представителю запись старого товара «Кухня» с фотографией и оговоркой об устаревшей опубликованной цене; без заявления о выполненном заказе.",
+      "Четыре отдельные фотографии использовать только как внутренние кандидаты для подтверждения происхождения, без публикации на сайте.",
+      "Структуру индивидуальной сметы со страницы /price как перечень полей, а не числовой расчёт."
+    ],
+    "cannot_infer": [
+      "Размеры по перспективе фотографии",
+      "МДФ/массив/пластик, кварц/камень/ламинат, марки и серии фурнитуры по внешнему виду",
+      "Итоговую стоимость проекта из цены товара или прежней цены за погонный метр",
+      "Срок реального заказа из общих условий изготовления",
+      "Дату сдачи из даты публикации фотографии",
+      "Авторство исполнения или права повторной публикации из одного нахождения изображения в карточке"
+    ],
+    "minimum_existing_business_records_needed_to_complete": [
+      "Сопоставление 3–5 выбранных изображений с подтверждёнными выполненными проектами",
+      "Для каждого: обезличенные размеры, материалы и спецификация, дата завершения, фактический срок",
+      "Для трёх проектов: фактическая сумма сметы, дата цены, включённые и исключённые работы",
+      "Подтверждение возможности повторно использовать выбранные фотографии"
+    ]
+  },
+  "limitations": [
+    "Исследование ограничено текущими публичными страницами сайта, подтверждённой Яндекс-карточкой и пятью поисковыми запросами; полный исторический архив сайта не просматривался.",
+    "Не все 30 фотографий открыты отдельно; семь просмотрены в деталях. Четыре самостоятельных фото-кандидата оставлены с неподтверждённой ролью автора; ещё одно сопоставлено с товарным фото, одна неоднозначная композиция и одна некухонная исключены.",
+    "Внешний вид фотографии поддерживает только визуальное описание; он не доказывает материал, исполнителя, факт оплаты или сдачу заказа.",
+    "Данные закрытых кабинетов, переписки, договоров и клиентские персональные сведения не использованы.",
+    "Это не вывод об отсутствии у компании реальных работ и не оценка SEO/AI-эффекта.",
+    "Размеры изображений считаны из текущего DOM без скачивания файлов; это размеры доставленной картинки, а не исходника камеры или физические размеры кухни."
+  ],
+  "provenance_partition": {
+    "confirmed_representative_product_records": [
+      "Y-PRODUCT-110000"
+    ],
+    "confirmed_visitor_records": [],
+    "public_user_uploads_with_unverified_role": [
+      "Y-PHOTO-02",
+      "Y-PHOTO-07",
+      "Y-PHOTO-25",
+      "Y-PHOTO-19"
+    ],
+    "rule": "Не приравнивать имя или инициалы к аккаунту владельца; не приравнивать автора без отметки представителя к клиенту. Для сайта сейчас пригодна только явно атрибутированная запись представителя.",
+    "explicit_owner_ui_signals_check": {
+      "viewed_public_photo_controls": "Лайк, подписаться, поделиться, пожаловаться, закрыть; элементы добавления фото относятся к карточке.",
+      "uploaded_by_you_label_seen": false,
+      "own_edit_or_delete_photo_controls_seen": false,
+      "representative_badge_seen_on_four_candidates": false,
+      "confirmed_owner_uid_available_for_exact_comparison": false,
+      "private_history_or_cabinet_opened": false,
+      "conclusion": "Явных признаков авторства владельца у четырёх кандидатов не найдено."
+    }
+  },
+  "product_gallery_link_check": {
+    "product_record_id": "Y-PRODUCT-110000",
+    "product_source_url": "https://yandex.com/maps/org/mebelshchik/192529825516/prices/",
+    "product_image_url": "https://avatars.mds.yandex.net/get-sprav-products/9495815/2a0000018ccfa9d6fc34ee5d03ff07932544/orig",
+    "product_image_dimensions_px": {
+      "width": 646,
+      "height": 807
+    },
+    "matching_gallery_source_url": "https://yandex.com/maps/org/mebelshchik/192529825516/gallery/?ll=35.875628%2C56.833093&photos%5Bbusiness%5D=192529825516&photos%5Bid%5D=urn%3Ayandex%3Asprav%3Aphoto%3A2a0000018cba1f7a3e80256ca4ead61d5043&z=14",
+    "matching_gallery_image_url": "https://avatars.mds.yandex.net/get-altay/11244149/2a0000018cba1f7a3e80256ca4ead61d5043/XXXL",
+    "matching_gallery_image_dimensions_px": {
+      "width": 835,
+      "height": 910
+    },
+    "matching_gallery_position": 14,
+    "matching_gallery_publication_month": "2023-12",
+    "matching_gallery_author_label": "Дмитрий Б.",
+    "matching_gallery_author_role": "Не подтверждена интерфейсом; явной роли представителя/владельца нет.",
+    "matching_gallery_available_caption": "Авангардная ул., 25А, Тверь",
+    "matching_method": "Сопоставление изображений в обычном браузерном UI: одинаковый ракурс, тёмные рамочные фасады, верхнее остекление, ручки, шахматная панель, расположение мойки и варочной поверхности. Визуально одна кухня, вероятно варианты обрезки одного снимка.",
+    "byte_identity_verified": false,
+    "media_files_downloaded": false,
+    "price_transferred_to_gallery_record": false,
+    "price_claim_scope": "110000 ₽ относится исключительно к старой товарной записи. Совпадение изображения не превращает цену в фактическую смету и не датирует её декабрём 2023 года."
+  }
+}

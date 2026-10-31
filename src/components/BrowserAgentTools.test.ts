@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 import ts from "typescript";
 // @ts-expect-error Node's type-stripping runtime requires the explicit extension.
-import { SITE_CONFIG } from "../lib/seo.ts";
+import { SITE_CONFIG, BUSINESS_IDENTITY_TEXT } from "../lib/seo.ts";
 
 // Run the real component module with a simulated browser API, without a server,
 // browser flags, extra packages, network requests or production form submissions.
@@ -22,7 +22,7 @@ function harness(withApi = true) {
   const requireMock = (name: string) => {
     if (name === "react") return { useEffect: (effect: typeof effects[number]) => effects.push(effect) };
     if (name === "@/lib/data") return mockData;
-    if (name === "@/lib/seo") return { SITE_CONFIG };
+    if (name === "@/lib/seo") return { SITE_CONFIG, BUSINESS_IDENTITY_TEXT };
     throw new Error(`Unexpected module: ${name}`);
   };
   new Function("require", "exports", "document", "window", compiled)(requireMock, exports, doc, { isSecureContext: true });
@@ -39,6 +39,9 @@ test("WebMCP exposes public read-only tools, never a lead submission action", ()
 test("WebMCP reads the same business conditions and city record as the pages", async () => {
   const { tools } = harness();
   const info = await tools[0].execute({});
+  assert.equal(info.alternate_name, "Мебельщик");
+  assert.equal(info.business_card_url, SITE_CONFIG.businessCard.url);
+  assert.match(String(info.identity), /карточки этой же студии/);
   assert.equal((info.conditions as Record<string, string>).pricingText, "Индивидуальный расчёт");
   const result = await tools[1].execute({ city_slug: "tveri" });
   assert.equal((result.cities as Record<string, string>[])[0].delivery, "По договору");
@@ -53,10 +56,11 @@ test("runtime validation rejects unknown fields, invalid types and unknown optio
   assert.ok((await tools[2].execute(null)).error);
 });
 
-test("WebMCP omits the unconfirmed postal code of the moved address", async () => {
+test("WebMCP uses the published street type and omits an unconfirmed postcode", async () => {
   const info = await harness().tools[0].execute({});
   const address = info.address as Record<string, unknown>;
   assert.equal(address.locality, "Тверь");
+  assert.match(String(address.street), /^проспект Николая Корыткова, 3 ст1$/);
   assert.equal(Object.hasOwn(address, "postalCode"), false);
 });
 

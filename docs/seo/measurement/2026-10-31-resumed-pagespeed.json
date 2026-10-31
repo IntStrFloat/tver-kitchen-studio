@@ -1,0 +1,19 @@
+{
+  "startedAt": "2026-10-31T07:50:51.103Z",
+  "finishedAt": "2026-10-31T07:50:56.155Z",
+  "url": "https://kuhnitver.ru/",
+  "strategy": "mobile",
+  "applicationRevision": "1004281a14ad25828ee41cde70c23bf9bccba623",
+  "method": "One ordinary unauthenticated PageSpeed API request on the next quota day; no retries or account/network changes",
+  "httpStatus": 429,
+  "status": "unavailable",
+  "error": {
+    "code": 429,
+    "status": "RESOURCE_EXHAUSTED",
+    "reason": "rateLimitExceeded"
+  },
+  "scores": null,
+  "metrics": null,
+  "fieldData": null,
+  "interpretation": "Current lab observation only. An unavailable request supplies no score and is not a site failure; no pre-deployment speed or AI uplift is inferred."
+}

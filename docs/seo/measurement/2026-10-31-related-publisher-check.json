@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "observedAtUtc": "2026-10-31T07:49:56.226110+00:00",
+  "captureTimezone": "Europe/Moscow",
+  "auditDate": "2026-10-31",
+  "scope": "One ordinary read-only UI navigation to the primary website suggested by secondary-source candidate S07; no executor inference without first-party linkage",
+  "candidatePublisherNameAsPreviouslyListed": "ООО Умный Офис",
+  "requestedPrimaryUrl": "https://www.wise-office.ru/",
+  "status": "not_observed_navigation_timeout",
+  "attempt": {
+    "tool": "CUA browser UI",
+    "browserSelectionRequested": "chrome",
+    "ordinaryNavigationAttempts": 1,
+    "result": "Navigation command timed out before page content was returned",
+    "statedErrorVerbatim": "Timed out after 10000ms waiting for CDP command Page.navigate.",
+    "pageContentObserved": false,
+    "pageTitleObserved": null,
+    "httpStatusObserved": null,
+    "certificateWarningObserved": false,
+    "siteSafetyRejectionObserved": false,
+    "retriesAttempted": false,
+    "alternateProtocolBrowserApiOrCacheAttempted": false
+  },
+  "requestedFirstPartyChecks": {
+    "explicitKuhnitverBrandConnection": null,
+    "linkToKuhnitverDomain": null,
+    "linkToYandexCard192529825516": null,
+    "matchingEmailM_btdMailRu": null,
+    "matchingMax79157220075": null,
+    "publishedRegisteredExecutorIdentity": null
+  },
+  "identityDecision": {
+    "firstPartyLinkageEstablished": false,
+    "candidateAcceptedAsKuhnitverExecutor": false,
+    "newLegalNameOrTaxIdentifiersAdopted": false,
+    "priorS07ConclusionChanged": false,
+    "reason": "No primary-page evidence was observed. The previously noted landline and nearby-office coincidence remains insufficient to identify the legal executor.",
+    "negativeInferenceProhibited": "The tool timeout does not prove the website is offline or that the publisher is unrelated to Kuhnitver."
+  },
+  "priorEvidenceReference": "docs/seo/measurement/2026-10-31-published-identity-evidence.json#S07",
+  "actions": {
+    "siteOrServerChanged": false,
+    "appRequisitesChanged": false,
+    "otherEvidenceFilesChanged": false,
+    "loginPerformed": false,
+    "accountCreated": false,
+    "messageSent": false,
+    "securityOrCertificateWarningBypassed": false,
+    "vkAccessAttempted": false
+  },
+  "limits": [
+    "There is no new observable first-party content for comparison with the confirmed domain, email, Max number or owned business card.",
+    "The current failure was a browser-navigation timeout, not an observed HTTP error or certificate defect.",
+    "No workaround or further retry was performed, as requested.",
+    "The official avenue street-type evidence is separate and unchanged; this check makes no building, postal-code, FIAS-ID or coordinate claim."
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-31T07:48:22.112Z",
+  "observedAt": "2026-10-31T07:46:50.480Z",
+  "timezone": "Europe/Moscow",
+  "scope": "Bounded read-only resumption through the already selected Chrome binding.",
+  "browser": {
+    "bindingId": "1",
+    "bindingReused": true,
+    "listTabsSucceeded": true,
+    "profileChanged": false,
+    "securitySettingsChanged": false
+  },
+  "yandexWebmaster": {
+    "feedsUrl": "https://webmaster.yandex.ru/site/https:kuhnitver.ru:443/admin-feeds-main/admin-feeds/?tab=FEEDS",
+    "errorsUrl": "https://webmaster.yandex.ru/site/https:kuhnitver.ru:443/admin-feeds-main/admin-feeds/?tab=ERROR",
+    "status": "service_read_only",
+    "visibleNotice": "Некоторые функции могут быть временно недоступны, инструмент «Фиды и ошибки» работает в режиме «Только для чтения».",
+    "noticeReference": "https://yandex.ru/company/news/09-10-2026-01",
+    "uploadButtonEnabled": false,
+    "dataReuseConfirmationButtonEnabled": false,
+    "registeredFeed": {
+      "url": "https://kuhnitver.ru/uslugi.yml",
+      "categoryLabel": "Исполнители",
+      "visibleStatus": "Фид не считывается",
+      "lastCheckLabel": "31 октября 2026 2:54",
+      "regionLabel": "Тверь и еще 2",
+      "otherRegionsNotExpanded": true
+    },
+    "visibleErrors": [
+      "Недостаточно данных для формирования ответа — передайте больше предложений и сетов.",
+      "Содержимое элемента name дублируется."
+    ],
+    "visibleExampleUrls": [
+      "https://kuhnitver.ru/catalog/skandinavskiy",
+      "https://kuhnitver.ru/catalog/loft",
+      "https://kuhnitver.ru/catalog/minimalizm"
+    ],
+    "writesAttempted": false,
+    "uploadDialogOpened": false,
+    "categorySelectionInspected": false,
+    "notes": [
+      "Статусы прочитаны из существующего кабинета. Не утверждается, что они относятся к последней опубликованной версии XML: кабинет показывает дату прежней проверки, а повторная загрузка недоступна.",
+      "Никаких попыток API-обхода режима чтения, изменения фида или подтверждения использования данных не выполнялось.",
+      "После восстановления записи следует сначала осмотреть категории диалога загрузки и согласовать конкретное действие для современного /uslugi.yml; в этой проверке такой диалог недоступен."
+    ]
+  },
+  "googleSearchConsole": {
+    "entryUrl": "https://search.google.com/search-console",
+    "visibleUrl": "https://search.google.com/search-console/welcome",
+    "currentAuthenticatedAccountInspected": true,
+    "accountIdentityRecorded": false,
+    "mainMenuOpened": true,
+    "resourceSelectorOpened": true,
+    "visibleKnownProperty": "https://kuhnitver.ru/",
+    "propertyGroupLabel": "Не подтверждено",
+    "verifiedResourceVisible": false,
+    "status": "no_verified_resource_access_visible_in_current_account",
+    "effectiveSearchGenerativeAiInclude": {
+      "value": null,
+      "status": "not_inspected_no_verified_resource_access"
+    },
+    "sitemapCabinet": {
+      "submittedSitemaps": null,
+      "status": "not_inspected_no_verified_resource_access"
+    },
+    "ownershipVerificationInvoked": false,
+    "newOwnershipOrPermissionsGranted": false,
+    "verificationFilePublished": false,
+    "accountSwitcherOpened": false,
+    "otherAccountSelected": false,
+    "notes": [
+      "Вывод ограничен текущим авторизованным аккаунтом и его видимым списком ресурсов. Это не утверждение, что домен нигде не подтверждён.",
+      "Пункт завершения подтверждения и кнопки добавления сайта не использовались. Google verification file не публиковался."
+    ]
+  },
+  "explicitlySkipped": [
+    "Bing",
+    "GA4 cabinet",
+    "Gemini",
+    "Google sorry",
+    "VK"
+  ],
+  "formsOrLeadsSubmitted": false,
+  "sharedCodeOrMeasurementDatasetsChanged": false
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-31",
+  "change": "улица → проспект for Николая Корыткова in Tver",
+  "basis": "Official GAR record inspected through the public FNS interface; source S04 in published-identity-evidence.",
+  "sourceEvidence": "docs/seo/measurement/2026-10-31-published-identity-evidence.json",
+  "previousPublishedAddress": "Тверь, ул. Николая Корыткова, 3 ст1",
+  "correctedPublishedAddress": "Тверь, проспект Николая Корыткова, 3 ст1",
+  "buildingLiteralSource": "Owner statement in this chat, 30.10.2026",
+  "buildingLiteralChanged": false,
+  "buildingEquivalenceClaimed": false,
+  "candidateGarBuildingOrPostalCodeAdopted": false,
+  "businessCoordinatesAdded": false,
+  "currentPriceOrCommercialTermsChanged": false,
+  "ogVersion": "og-image-20261031.jpg",
+  "editorialDatePolicy": "Advance only pages whose main content actually changes: homepage, about, contacts, portfolio, FAQ, B2B, privacy and the Tver city page. Do not date-bump other articles/cities/styles for a build or shared footer alone."
+}

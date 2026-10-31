@@ -1,0 +1,21 @@
+{
+  "observedAtUtc": "2026-10-31T08:16:03.143Z",
+  "base": "http://127.0.0.1:3108",
+  "method": "Read-only local production HTTP; no scripts/forms executed",
+  "checks": {
+    "allHttp200": true,
+    "contactsAvenue": true,
+    "entityContactExplanation": true,
+    "entityFaq": true,
+    "entityLlmIndex": true,
+    "publishedPhotoAttribution": true,
+    "photoNotCurrentPrice": true,
+    "referencesRemain": true,
+    "localImage200": true,
+    "assetHashMatches": true,
+    "serviceFeedAvenue": true
+  },
+  "passed": true,
+  "completedCaseRecordsPublished": 0,
+  "newCurrentKitchenPricesAdded": false
+}
