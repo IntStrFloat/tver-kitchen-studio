@@ -1,0 +1,43 @@
+import { cities, homepageFaqData, kitchenStyles } from "@/lib/data";
+import { SEO_TEMPLATES, SITE_CONFIG } from "@/lib/seo";
+
+const { address, maxPhone, openingHours, phone, phoneClean, url } = SITE_CONFIG;
+
+export const homepageMarkdown = [
+  `# ${SEO_TEMPLATES.home.title}`,
+  "",
+  SEO_TEMPLATES.home.description,
+  "",
+  `[Получить предварительный расчёт](${url}/#quiz)`,
+  "",
+  "## Популярные стили кухонь",
+  "",
+  ...kitchenStyles.map((style) => `- [${style.name}](${url}/catalog/${style.slug})`),
+  "",
+  `- [Весь каталог](${url}/catalog)`,
+  `- [Фото и идеи кухонь](${url}/portfolio)`,
+  "",
+  "## Из чего мы делаем кухни",
+  "",
+  `Подбираем фасады из МДФ или массива дерева, столешницы и фурнитуру под проект. [Материалы и образцы](${url}/#materials).`,
+  "",
+  "## Часто задаваемые вопросы",
+  "",
+  ...homepageFaqData.flatMap(({ question, answer }) => [`### ${question}`, "", answer, ""]),
+  `[Все вопросы и ответы](${url}/faq)`,
+  "",
+  "## География обслуживания",
+  "",
+  ...cities.map((city) => `- [${city.name}](${url}/kuhni/${city.slug})`),
+  "",
+  `[Условия доставки и установки](${url}/dostavka)`,
+  "",
+  "## Шоурум и контакты",
+  "",
+  `- Адрес: ${address.locality}, ${address.street}.`,
+  `- Телефон: [${phone}](tel:${phoneClean}). Max: ${maxPhone}.`,
+  `- ${openingHours.label}. ${openingHours.closedLabel}.`,
+  "",
+  `[Контакты Kuhnitver](${url}/contacts)`,
+  "",
+].join("\n");

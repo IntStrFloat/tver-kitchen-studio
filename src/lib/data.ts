@@ -392,6 +392,8 @@ export const extendedFaqData: FaqItem[] = [
   { question: "Как связаны Kuhnitver и «Мебельщик» в Твери?", answer: BUSINESS_IDENTITY_TEXT },
 ];
 
+export const homepageFaqData = extendedFaqData.slice(0, 8);
+
 // ===== BLOG POSTS =====
 export interface BlogPost {
   slug: string;

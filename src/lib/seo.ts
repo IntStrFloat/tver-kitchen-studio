@@ -7,7 +7,7 @@ export const SITE_CONFIG = {
   defaultTitle: "Кухни на заказ в Твери от производителя | Kuhnitver",
   titleTemplate: "%s | Kuhnitver",
   defaultDescription:
-    "Кухни на заказ в Твери от Kuhnitver. Планировки, материалы, индивидуальная комплектация и расчёт по размерам. Условия замера, изготовления, доставки и установки согласуются до заказа.",
+    "Кухни на заказ в Твери от производителя Kuhnitver. Проектируем по вашим размерам, подбираем материалы, изготавливаем, доставляем и устанавливаем.",
   defaultOgImage: "https://kuhnitver.ru/og-image-20261031.jpg",
   locale: "ru_RU",
   language: "ru",
@@ -42,12 +42,15 @@ export const SITE_CONFIG = {
     closes: "19:00",
   },
   social: {
-    vk: "https://vk.com/Kuhnitver",
+    // Сообщество из подтверждённой карточки «Мебельщик» в Яндекс Картах.
+    vk: "https://vk.ru/mebelshik69",
     // Max: персональная ссылка на профиль требует длинного хеша из самого
     // приложения (формат max.ru/u/<HASH>) — построить по номеру нельзя.
     // Показываем maxPhone текстом + tel:, без deep-link. См. также maxPhone.
   },
 } as const;
+
+const businessProfiles = [SITE_CONFIG.businessCard.url, SITE_CONFIG.social.vk] as const;
 
 // Связь подтверждается ответом владельца и взаимными опубликованными ссылками.
 // Это связь сайта с карточкой студии, а не заявление о юридическом наименовании.
@@ -97,7 +100,7 @@ export function generateLocalBusinessSchema() {
     image: SITE_CONFIG.defaultOgImage,
     logo: `${SITE_CONFIG.url}/android-chrome-512x512.png`,
     currenciesAccepted: "RUB",
-    sameAs: [SITE_CONFIG.businessCard.url],
+    sameAs: businessProfiles,
     address: {
       "@type": "PostalAddress",
       streetAddress: SITE_CONFIG.address.street,
@@ -135,7 +138,7 @@ export function generateOrganizationSchema() {
     "@id": `${SITE_CONFIG.url}/#organization`,
     name: SITE_CONFIG.name,
     url: SITE_CONFIG.url,
-    sameAs: [SITE_CONFIG.businessCard.url],
+    sameAs: businessProfiles,
     logo: `${SITE_CONFIG.url}/android-chrome-512x512.png`,
     contactPoint: {
       "@type": "ContactPoint",
