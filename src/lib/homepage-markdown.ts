@@ -10,7 +10,7 @@ export const homepageMarkdown = [
   "",
   `[Получить предварительный расчёт](${url}/#quiz)`,
   "",
-  "## Популярные стили кухонь",
+  "## Варианты кухонь на заказ",
   "",
   ...kitchenStyles.map((style) => `- [${style.name}](${url}/catalog/${style.slug})`),
   "",

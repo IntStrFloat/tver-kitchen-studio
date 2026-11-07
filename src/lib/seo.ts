@@ -8,7 +8,7 @@ export const SITE_CONFIG = {
   titleTemplate: "%s | Kuhnitver",
   defaultDescription:
     "Кухни на заказ в Твери от производителя Kuhnitver. Проектируем по вашим размерам, подбираем материалы, изготавливаем, доставляем и устанавливаем.",
-  defaultOgImage: "https://kuhnitver.ru/og-image-20261031.jpg",
+  defaultOgImage: "https://kuhnitver.ru/og-image-20261107.jpg",
   locale: "ru_RU",
   language: "ru",
   phone: "+7 (4822) 47-70-81",
@@ -18,15 +18,15 @@ export const SITE_CONFIG = {
   maxPhoneClean: "+79157220075",
   email: "m-btd@mail.ru",
   address: {
-    street: "проспект Николая Корыткова, 3 ст1",
+    street: "проспект Николая Корыткова, 3к1",
     venue: "",
     locality: "Тверь",
     region: "Тверская область",
     country: "RU",
   },
-  // Телефоны и обозначение здания — ответ владельца 30.10.2026.
-  // Тип «проспект» уточнён 31.10.2026 по ГАР; 3 ст1 не подменяется на 3 к1.
-  contactsVerifiedAt: "2026-10-31",
+  // Телефоны подтверждены владельцем 30.10.2026.
+  // Корпус 1 уточнён владельцем при выборе здания в Яндекс Картах 07.11.2026.
+  contactsVerifiedAt: "2026-11-07",
   businessCard: {
     name: "Мебельщик",
     url: "https://yandex.ru/maps/org/192529825516/",

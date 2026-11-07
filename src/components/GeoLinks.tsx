@@ -47,7 +47,7 @@ const GeoLinks = () => {
               <Link
                 href={`/kuhni/${city.slug}`}
                 className="premium-card p-5 block group h-full transition-all hover:-translate-y-1"
-                aria-label={`Кухни на заказ ${city.nameIn}`}
+                aria-label={city.slug === "tveri" ? "Замер и доставка кухни в Твери" : `Кухни на заказ ${city.nameIn}`}
               >
                 <div className="flex items-start justify-between mb-3">
                   <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -62,7 +62,7 @@ const GeoLinks = () => {
                   />
                 </div>
                 <h3 className="font-bold text-lg leading-tight mb-1">
-                  Кухни {city.nameIn}
+                  {city.slug === "tveri" ? "Замер и доставка в Твери" : `Кухни ${city.nameIn}`}
                 </h3>
                 <p className="text-xs text-muted-foreground mb-2">
                   {city.deliveryTime}

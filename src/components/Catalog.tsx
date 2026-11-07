@@ -32,7 +32,7 @@ const Catalog = () => {
             Наш каталог
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Популярные стили кухонь
+            Варианты кухонь на заказ
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Выберите стиль, который вам нравится, и мы адаптируем его под ваши

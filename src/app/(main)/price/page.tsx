@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
+import KitchenPlanningExamples from "@/components/KitchenPlanningExamples";
 import { SITE_CONFIG, generateWebPageSchema } from "@/lib/seo";
 import { COMMERCIAL_TERMS, priceData } from "@/lib/data";
 
-const description = "Как рассчитывается стоимость кухни на заказ в Твери: комплектация, материалы, фурнитура и состав сметы. Индивидуальный расчёт по размерам помещения в Kuhnitver.";
+const description = "Как рассчитывается цена кухни на заказ в Твери. Примеры комплектаций, материалы, фурнитура и состав сметы. Предварительный расчёт в Kuhnitver.";
 
 export const metadata: Metadata = {
   title: "Цены на кухни на заказ в Твери — состав сметы | Kuhnitver",
@@ -40,7 +41,7 @@ export default function PricePage() {
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Цены на кухни на заказ в Твери</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{COMMERCIAL_TERMS.pricingText}</p>
-          <p className="text-sm text-muted-foreground mt-4">Сведения обновлены: <time dateTime={COMMERCIAL_TERMS.updatedAt}>{new Date(COMMERCIAL_TERMS.updatedAt).toLocaleDateString("ru-RU", { timeZone: "UTC" })}</time>.</p>
+          <p className="text-sm text-muted-foreground mt-4">Коммерческие условия в редакции от <time dateTime={COMMERCIAL_TERMS.updatedAt}>{new Date(COMMERCIAL_TERMS.updatedAt).toLocaleDateString("ru-RU", { timeZone: "UTC" })}</time>.</p>
         </div>
 
         <div className="space-y-8 mb-16">
@@ -68,6 +69,8 @@ export default function PricePage() {
             </section>
           ))}
         </div>
+
+        <KitchenPlanningExamples />
 
         <section className="bg-secondary/30 rounded-3xl p-6 md:p-12 mb-16">
           <h2 className="text-2xl font-bold mb-4">Что указывать в полной смете</h2>

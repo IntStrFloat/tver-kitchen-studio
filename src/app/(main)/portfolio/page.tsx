@@ -3,23 +3,25 @@ import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/seo/JsonLd";
+import KitchenPlanningExamples from "@/components/KitchenPlanningExamples";
 import { SITE_CONFIG, generateCollectionPageSchema } from "@/lib/seo";
 import { projects } from "@/lib/data";
 import { getPublishedPortfolioCases } from "@/lib/portfolio";
+import { kitchenPlanningExamples } from "@/lib/kitchen-planning-examples";
+
+const description = "Фото кухни из карточки «Мебельщик», проектные примеры и дизайн-референсы. Планировки, материалы и варианты комплектации кухни на заказ в Твери.";
 
 export const metadata: Metadata = {
-  title: "Фото кухни и дизайн-референсы в Твери | Kuhnitver",
-  description:
-    "Фото кухни из опубликованной карточки «Мебельщик» и дизайн-референсы популярных стилей. Идеи для обсуждения планировки и индивидуальной комплектации.",
+  title: "Фото и примеры кухонь на заказ в Твери | Kuhnitver",
+  description,
   keywords:
     "кухни фото Тверь, идеи кухонь, стили кухонь, кухни лофт, кухни минимализм, кухни скандинавский, кухни премиум",
   alternates: {
     canonical: `${SITE_CONFIG.url}/portfolio`,
   },
   openGraph: {
-    title: "Фото кухни и дизайн-референсы в Твери | Kuhnitver",
-    description:
-      "Фото кухни из опубликованной карточки «Мебельщик» и дизайн-референсы популярных стилей. Идеи для обсуждения планировки и индивидуальной комплектации.",
+    title: "Фото и примеры кухонь на заказ в Твери | Kuhnitver",
+    description,
     url: `${SITE_CONFIG.url}/portfolio`,
     siteName: "Kuhnitver",
     locale: "ru_RU",
@@ -41,11 +43,12 @@ export default function PortfolioPage() {
     <div className="min-h-screen pt-24">
       <JsonLd
         data={generateCollectionPageSchema(
-          "Фото кухни и дизайн-референсы",
-          "Фото из опубликованной карточки «Мебельщик» и дизайн-референсы для обсуждения индивидуального проекта кухни.",
+          "Фото и примеры кухонь",
+          description,
           `${SITE_CONFIG.url}/portfolio`,
           [
             ...completedProjects.map((project) => ({ name: project.title, url: `${SITE_CONFIG.url}/portfolio/${project.slug}` })),
+            ...kitchenPlanningExamples.map((example) => ({ name: `Проектный пример «${example.title}»`, url: `${SITE_CONFIG.url}/portfolio#${example.id}` })),
             ...projects.map((project) => ({ name: `Дизайн-референс: ${project.style}`, url: `${SITE_CONFIG.url}/catalog/${project.styleSlug}` })),
           ],
         )}
@@ -59,11 +62,11 @@ export default function PortfolioPage() {
 
         <div className="text-center mb-12 max-w-3xl mx-auto">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Фото кухни и дизайн-референсы
+            Фото и примеры кухонь
           </h1>
           <p className="text-lg text-muted-foreground">
             На странице — фото кухни из опубликованной карточки «Мебельщик»
-            и дизайн-референсы популярных стилей. Планировку и комплектацию
+            и дизайн-референсы популярных стилей, а также проектные примеры с условными размерами. Планировку и комплектацию
             нового заказа обсуждаем индивидуально.
           </p>
         </div>
@@ -119,6 +122,8 @@ export default function PortfolioPage() {
             </div>
           </section>
         )}
+
+        <KitchenPlanningExamples />
 
         <section className="mb-16" aria-labelledby="design-references-title">
           <h2 id="design-references-title" className="text-2xl font-bold mb-4">

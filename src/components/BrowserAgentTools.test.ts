@@ -60,7 +60,7 @@ test("WebMCP uses the published street type and omits an unconfirmed postcode", 
   const info = await harness().tools[0].execute({});
   const address = info.address as Record<string, unknown>;
   assert.equal(address.locality, "Тверь");
-  assert.match(String(address.street), /^проспект Николая Корыткова, 3 ст1$/);
+  assert.match(String(address.street), /^проспект Николая Корыткова, 3к1$/);
   assert.equal(Object.hasOwn(address, "postalCode"), false);
 });
 

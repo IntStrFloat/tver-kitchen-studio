@@ -13,6 +13,7 @@ function esc(value: string): string {
 
 export async function GET(): Promise<Response> {
   const base = SITE_CONFIG.url;
+  const updatedAt = [COMMERCIAL_TERMS.updatedAt, SITE_CONFIG.contactsVerifiedAt, ...kitchenStyles.map((style) => style.updatedAt)].sort().at(-1);
   const services = [
     ...kitchenStyles.map((style) => ({
       id: `kuhnitver-${style.slug}`,
@@ -24,7 +25,7 @@ export async function GET(): Promise<Response> {
     { id: "kuhnitver-dostavka", name: "Доставка и установка кухни", url: `${base}/dostavka`, description: `${COMMERCIAL_TERMS.deliveryText} ${COMMERCIAL_TERMS.installationText}` },
   ];
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<services_feed date="${COMMERCIAL_TERMS.updatedAt}T00:00:00+03:00">
+<services_feed date="${updatedAt}T00:00:00+03:00">
   <source>
     <name>${esc(SITE_CONFIG.name)}</name>
     <url>${esc(base)}</url>
